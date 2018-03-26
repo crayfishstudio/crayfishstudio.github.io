@@ -11,7 +11,7 @@
         height: 100vh;
         z-index: 2;
         opacity: 1;
-        transition: all 2s cubic-bezier(0.77,0.2,0.05,1.0) 1s, opacity 1.5s ease 3s;
+        transition: all 2s cubic-bezier(0.77,0.2,0.05,1.0) 1s, opacity 1.5s ease 2.5s;
     }
     
     #back-bg {
@@ -64,6 +64,25 @@
         position: fixed;
         color: #2e2e2e;
         top: -43px;
+    }
+    
+    #scroll-text {
+        visibility: hidden;
+    }
+    
+    #social-container {
+        visibility: hidden;
+    }
+    
+    #logo-container {
+        position: fixed;
+        background-color: #101010;
+        width: 100vw;
+        height: 50px;
+    }
+    
+    #logo-text {
+        color: #fff !important;
     }
 }    
 
@@ -265,4 +284,17 @@
 #social-container {
     position: absolute;
     bottom: 5vw;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    background: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffc98f;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+   background: #ffc98f;
 }
