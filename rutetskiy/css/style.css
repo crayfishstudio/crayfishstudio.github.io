@@ -240,18 +240,6 @@
     -moz-transform: rotate(30deg);
 }
 
-.animated {
-  -webkit-animation-duration: .1s;
-  -o-animation-duration: .1s;
-  -moz-animation-duration: .1s;
-  animation-duration: .1s;
-  
-  -webkit-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
 #text-logo {
     position: absolute;
     top: 2.5vw;
