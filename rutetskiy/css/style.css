@@ -54,6 +54,19 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    #text-logo {
+        position: absolute;
+        left: 2.5vw;
+    } 
+    
+    #menu-button {
+        position: fixed;
+        color: #2e2e2e;
+        top: -43px;
+    }
+}    
+
 .main-bg {
     height: 100vh;
     background-color: #fcfcfc;
