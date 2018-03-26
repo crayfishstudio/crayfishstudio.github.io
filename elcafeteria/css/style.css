@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+.view {
+    background: url("../img/wendy-rueter-316018-unsplash.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(256, 256, 256, 0.2);
+}
+
+.top-nav-collapse {
+    background-color: rgba(256, 256, 256, 0.85);
+}
+
+.noborder {
+    border-radius: 0px;
+}
+
+.custom-header {
+    font-family: 'Neucha', cursive;
+}
+
+.light-bg {
+    padding: 30px;
+    background-color: rgba(256, 256, 256, 0.5);
+    border-radius: 20px;
+}
+
+.btn-custom {
+    box-shadow: none;
+    border-radius: 20px;
+    border: solid #2b0200 1px;
+    background-color: #2b0200;
+}
+
+.btn-custom:hover {
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.btn-custom:active {
+    box-shadow: none; 
+    border-radius: 5px;
+}
+
+.btn-custom-outline {
+    box-shadow: none;
+    border-radius: 20px;
+    border: solid #2b0200 1px;
+    color: #2b0200 !important;
+}
+
+.btn-custom-outline:hover {
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.btn-custom-outline:active {
+    box-shadow: none;
+    border-radius: 5px;
+}
+#products {
+    background-color: #e8dac7;
+}
+
+
+
+.text-neucha {
+    font-family: 'Neucha', cursive;
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 65%;
+    background-color: #2b0200;
+    margin: auto;
+}
+
+.w-60 {
+    width: 60%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: rgba(256, 256, 256, 0.85);
+    }
+    
+    .btn-custom, .btn-custom-outline {
+        width: 95%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .full-bg-img,
+    .view {
+        position: relative;
+    }
+}
+
+@media (max-width: 1070px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+    
+    .w-60 {
+        width: 90% !important;
+    }
+}
+
+.text-forfon{
+    background-color: #E8DAC7
+}
+
+.text-fonwite{
+    background-color: #ffffff
+}

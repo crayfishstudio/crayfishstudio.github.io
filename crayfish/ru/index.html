@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115777796-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115777796-1');
+    </script>
+
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico' />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script defer src="../js/fontawesome-all.js"></script>
+
+    <title>Crayfish Studio</title>
+</head>
+
+<body onload="getDocHeight()" onresize="getDocHeight()">
+    <div id="menuToggle">
+        <input type="checkbox" onclick="openNav()" id="untoggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="container">
+        <div class="row no-gutters" style="height: 0px;">
+            <div class="col-4">
+                <div class="v-line" id="vline1" style="border-left: 1px solid #3d3d3d; height: 0px;"></div>
+            </div>
+            <div class="col-4">
+                <div class="v-line" id="vline2" style="border-left: 1px solid #3d3d3d; border-right: 1px solid #3d3d3d;"></div>
+            </div>
+            <div class="col-4">
+                <div class="v-line" id="vline3" style="border-right: 1px solid #3d3d3d;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-viol">
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <div class="menu-items">
+                    <a href="#about" class="menu-item" onclick="openNav(), uncheckInput()">О нас</a><br>
+                    <a href="#prices" class="menu-item" onclick="openNav(), uncheckInput()">Цены</a><br>
+                    <a href="#portfolio" class="menu-item" onclick="openNav(), uncheckInput()">Портфолио</a><br>
+                    <a href="#contacts" class="menu-item" onclick="openNav(), uncheckInput()">Контакты</a> 
+                </div>
+            </div>
+        </div>
+        <div id="web-studio-text">
+            веб-студия
+        </div>
+        
+        <div class="container">
+            <div id="lang-toggler" class="text-white">
+                <!--<button type="button" class="btn-transp" data-toggle="tooltip" data-placement="left" title="Sorry, only EN now :(" disabled>
+                    EN
+                </button>-->
+                <ul class="languagepicker mx-0 px-0">
+                    <li><a href="#" class="btn-transp">RU</a></li>
+                    <li><a href="../ua/index.html" class="btn-transp">UA</a></li>
+                    <li><a href="../index.html" class="btn-transp">EN</a></li>
+                </ul>
+            </div>
+            <div class="row justify-content-center" style="height: 100vh">
+                <div class="img-hoverable" id="hwr">
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-lg-5 col-sm-6 col-9">
+                            <img class="img-fluid mt-10" src="../img/crayLogo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="about">
+            <div class="row justify-content-center">
+                <div class="col-sm-4"><div class="h-line mb-5"></div></div>
+                <div class="col-12 text-center text-white">
+                    <h6 class="display-4 section-header">О нас</h6>
+                    <p>Мы креативная, дружеская и молодая команда, и мы <i class="fas fa-heart text-orange"></i>нашу работу</p>
+                </div>
+            </div>
+            
+            <div class="row no-gutters mb-5">
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="../img/icon-04.png" width="30%">
+                    <h3 class="feature-header">
+                        Разработка
+                    </h3>
+                    <p class="roboto-thin px-4">
+                        Уникальные веб-решения любой сложности на основе ваших потребностей и предпочтений
+                    </p>
+                </div>
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="../img/icon-05.png" width="30%">
+                    <h3 class="feature-header">
+                        Дизайн
+                    </h3>
+                    <p class="roboto-thin px-4">
+                        2D/3D дизайнерские шедевры и анимации от лучших художников
+                    </p>
+                </div>
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="../img/icon-06.png" width="30%">
+                    <h3 class="feature-header">
+                        Продвижение
+                    </h3>
+                    <p class="roboto-thin px-4">
+                       Целевая аудитория узнает о вашем продукте и его преимуществах
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="prices">
+            <div class="row justify-content-center">
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
+                <div class="col-12 text-center text-white">
+                    <h6 class="display-4 section-header">Цены</h6>
+                    <p>Несколько вариантов работы с нами</p>
+                </div>
+            </div>
+            
+            <!--<div class="row no-gutters mt-5 mb-4 text-white text-center">
+                <div class="col-sm-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I WANT SPEED
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I WANT QUALITY
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I WANT CHEAPNESS
+                        </label>
+                    </div>
+                </div>
+            </div>-->
+            
+            <div class="row no-gutters my-5 py-3">
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Лэндинг</h3>
+                            <small class="text-muted">ваш малый бизнес-инструмент от</small>
+                            <p class="display-4 mb-0"><b>$400</b></p>
+                            <small>1 неделя</small>
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
+                                <li>
+                                    Дизайн который продаёт
+                                </li>
+                                <li>
+                                    Высокая конверсия
+                                </li>
+                                <li>
+                                    Встроенная аналитика
+                                </li>
+                            </ul>
+                            <a href="#contacts" class="btn btn-custom-white mx-auto">Я хочу это!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Интернет-магазин</h3>
+                            <small class="text-muted">ваш большой бизнес-инструмент от</small>
+                            <p class="display-4 mb-0"><b>$1000</b></p>
+                            <small>3 недели</small>
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
+                                <li>
+                                    User-friendly дизайн
+                                </li>
+                                <li>
+                                    Скорость и эффективность
+                                </li>
+                                <li>
+                                    Лёгкое управление
+                                </li>
+                            </ul>
+                            <a href="#contacts" class="btn btn-custom-white mx-auto">Я хочу это!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Уникальный проект</h3>
+                            <small class="text-muted">преимущества как у LEGO от</small>
+                            <p class="display-4 mb-0"><b>$XXX</b></p>
+                            <small>X недель</small>
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
+                                <li>
+                                    Ваш собственный дизайн
+                                </li>
+                                <li>
+                                    Ваша собственная идея
+                                </li>
+                                <li>
+                                    Неограниченная вариативность
+                                </li>
+                            </ul>
+                            <a href="#contacts" class="btn btn-custom-white mx-auto">Я хочу это!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="portfolio">
+            <div class="row justify-content-center">
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
+                <div class="col-12 text-center text-white">
+                    <h6 class="display-4 section-header">Портфолио</h6>
+                    <p>Наши лучшие проекты</p>
+                </div>
+            </div>
+            
+            <div class="row no-gutters my-5">
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="../unim-website.html" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="../img/UNIMsite.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    UNIM 
+                                    <span class="badge badge-orange">Дизайн</span>
+                                    <span class="badge badge-orange">UI/UX</span>
+                                    <span class="badge badge-orange">Уникальный</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="http://www.onprint.lviv.ua/" class="a-no-hover"  target="_blank">
+                            <img class="card-img-top" src="../img/onPrint.PNG" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    OnPrint 
+                                    <span class="badge badge-orange">UI/UX</span>
+                                    <span class="badge badge-orange">Лэндинг</span>
+                                    <span class="badge badge-orange">Стартап</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="../unim-video.html" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="../img/UNIManimation.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    UNIM
+                                    <span class="badge badge-orange">3D</span>
+                                    <span class="badge badge-orange">Анимация</span>
+                                    <span class="badge badge-orange">Промо</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="http://monaliza.lviv.ua/" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="../img/Monaliza.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    Monaliza 
+                                    <span class="badge badge-orange">Интернет-магазин</span>
+                                    <span class="badge badge-orange">UI/UX</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="../golden-case.html" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="../img/GCwebsite.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    GoldenCase
+                                    <span class="badge badge-orange">Уникальный</span>
+                                    <span class="badge badge-orange">UI/UX</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="http://monolitproperties.com" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="../img/monolit.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    Monolit
+                                    <span class="badge badge-orange">UI/UX</span>
+                                    <span class="badge badge-orange">Дизайн</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center mb-5">
+                <div class="col-md-4 px-md-1 mb-2 text-center">
+                    <a href="#contacts" class="btn btn-custom-white">Я хочу лучше!</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="contacts">
+            <div class="row justify-content-center pb-5">
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
+                <div class="col-12 text-center text-white">
+                    <h6 class="display-4 section-header">Контакты</h6>
+                    <p>Заполните форму, чтобы общаться с нами</p>
+                </div>
+            </div>
+            <form action="https://formspree.io/contact@crayfish.studio" method="POST">
+                <div class="row no-gutters mb-5 justify-content-center">
+                    <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                        <input class="form-transparent py-2" type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                        <input class="form-transparent py-2" type="tel" name="phone" placeholder=" Ваш номер телефона" required>
+                    </div>
+                    <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                        <input class="form-transparent py-2" type="email" name="_replyto" placeholder="Ваш e-mail" required>
+                    </div>
+                    <div class="col-12 px-md-1 mb-md-2 mb-3">
+                        <textarea name="text" class="form-transparent py-2" id="exampleFormControlTextarea1" rows="5" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                        <input type="submit" class="btn btn-custom-white-input mx-auto" value="Отправить!">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row no-gutters text-white text-center text-uppercase mb-3">
+                    <div class="col-md-4 my-2">
+                        <h6 class="contacts-text"><i class="fas fa-map-marker-alt text-orange"></i>Львов, Украина</h6>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <h6 class="contacts-text"><i class="fas fa-envelope text-orange"></i>contact@crayfish.studio</h6>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <h6 class="contacts-text"><i class="fab fa-telegram-plane text-orange"></i>+38 (096) 414-3851</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.toggle("menu-unwrapped");
+        }
+        
+        function uncheckInput() {
+            document.getElementById("untoggle").checked = false;
+        }
+    </script>
+    
+    <script>
+         var lastScrollTop = 0;
+            $(window).on('scroll', function() {
+                st = $(this).scrollTop();
+                if(st < lastScrollTop) {
+                    document.getElementById("menuToggle").classList.remove("hideble");
+                }
+                else {
+                    document.getElementById("menuToggle").classList.add("hideble");
+                }
+                lastScrollTop = st;
+            });
+    </script>
+    
+    <script>
+        function getDocHeight() {
+            var D = document;
+            var bh = Math.max(
+                D.body.scrollHeight, D.documentElement.scrollHeight,
+                D.body.offsetHeight, D.documentElement.offsetHeight,
+                D.body.clientHeight, D.documentElement.clientHeight
+            );
+            
+            if (window.innerWidth > 1000) {
+                document.getElementById("vline1").style.height = bh + "px";
+                document.getElementById("vline2").style.height = bh + "px";
+                document.getElementById("vline3").style.height = bh + "px";
+            } else {
+                document.getElementById("vline1").style.height = 0;
+                document.getElementById("vline2").style.height = 0;
+                document.getElementById("vline3").style.height = 0;
+            }
+        }
+    </script>
+
+    <script>
+        $('a').click(function(){
+            $('html, body').animate({
+             scrollTop: $( $(this).attr('href') ).offset().top
+            }, 1500);
+             return false;
+        });
+    </script>
+    
+</body>
+
+</html>

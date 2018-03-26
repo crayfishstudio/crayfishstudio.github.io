@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115777796-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115777796-1');
+    </script>
+
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/fontawesome-all.js"></script>
+
+    <title>Crayfish Studio</title>
+</head>
+
+<body onload="getDocHeight()" onresize="getDocHeight()">
+    <div id="menuToggle">
+        <input type="checkbox" onclick="openNav()" id="untoggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="container">
+        <div class="row no-gutters" style="height: 0px;">
+            <div class="col-4">
+                <div class="v-line" id="vline1" style="border-left: 1px solid #3d3d3d; height: 0px;"></div>
+            </div>
+            <div class="col-4">
+                <div class="v-line" id="vline2" style="border-left: 1px solid #3d3d3d; border-right: 1px solid #3d3d3d;"></div>
+            </div>
+            <div class="col-4">
+                <div class="v-line" id="vline3" style="border-right: 1px solid #3d3d3d;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-viol">
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <div class="menu-items">
+                    <a href="#about" class="menu-item" onclick="openNav(), uncheckInput()">about</a><br>
+                    <a href="#prices" class="menu-item" onclick="openNav(), uncheckInput()">prices</a><br>
+                    <a href="#portfolio" class="menu-item" onclick="openNav(), uncheckInput()">portfolio</a><br>
+                    <a href="#contacts" class="menu-item" onclick="openNav(), uncheckInput()">contacts</a> 
+                </div>
+            </div>
+        </div>
+        <div id="web-studio-text">
+            web-studio
+        </div>
+        
+        <div class="container">
+            <div id="lang-toggler" class="text-white">
+                <!--<button type="button" class="btn-transp" data-toggle="tooltip" data-placement="left" title="Sorry, only EN now :(" disabled>
+                    EN
+                </button>-->
+                <ul class="languagepicker mx-0 px-0">
+                    <li><a href="#" class="btn-transp">EN</a></li>
+                    <li><a href="ua/index.html" class="btn-transp">UA</a></li>
+                    <li><a href="ru/index.html" class="btn-transp">RU</a></li>
+                </ul>
+            </div>
+            <div class="row justify-content-center" style="height: 100vh">
+                <div class="img-hoverable" id="hwr">
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-lg-5 col-sm-6 col-9">
+                            <img class="img-fluid mt-10" src="img/crayLogo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="about">
+            <div class="row justify-content-center">
+                <div class="col-sm-4"><div class="h-line mb-5"></div></div>
+                <div class="col-12 text-center text-white">
+                    <h6 class="display-4 section-header">About</h6>
+                    <p>We are creative, friendly and young team, and we <i class="fas fa-heart text-orange"></i> our work</p>
+                </div>
+            </div>
+            
+            <div class="row no-gutters mb-5">
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="img/icon-04.png" width="30%">
+                    <h3 class="feature-header">
+                        Development
+                    </h3>
+                    <p class="roboto-thin px-4">
+                        Unique web-solutions with different complexity based on your needs and preferences
+                    </p>
+                </div>
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="img/icon-05.png" width="30%">
+                    <h3 class="feature-header">
+                        Design
+                    </h3>
+                    <p class="roboto-thin px-4">
+                        2D/3D artistic masterpieces and animations from the best artists
+                    </p>
+                </div>
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="img/icon-06.png" width="30%">
+                    <h3 class="feature-header">
+                        Promotion
+                    </h3>
+                    <p class="roboto-thin px-4">
+                        Target audience will know about your product and its benefits
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="prices">
+            <div class="row justify-content-center">
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
+                <div class="col-12 text-center text-white">
+                    <h6 class="display-4 section-header">Prices</h6>
+                    <p>Several options for working with us</p>
+                </div>
+            </div>
+            
+            <!--<div class="row no-gutters mt-5 mb-4 text-white text-center">
+                <div class="col-sm-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I WANT SPEED
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I WANT QUALITY
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I WANT CHEAPNESS
+                        </label>
+                    </div>
+                </div>
+            </div>-->
+            
+            <div class="row no-gutters my-5 py-3">
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Landing page</h3>
+                            <small class="text-muted">your small business instrument from</small>
+                            <p class="display-4 mb-0"><b>$400</b></p>
+                            <small>and 1 week</small>
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
+                                <li>
+                                    Design that sells
+                                </li>
+                                <li>
+                                    High conversion
+                                </li>
+                                <li>
+                                    Analytics included
+                                </li>
+                            </ul>
+                            <a href="#contacts" class="btn btn-custom-white mx-auto">I want it!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Internet-shop</h3>
+                            <small class="text-muted">your big business instrument from</small>
+                            <p class="display-4 mb-0"><b>$1000</b></p>
+                            <small>and 3 weeks</small>
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
+                                <li>
+                                    User-friendly design
+                                </li>
+                                <li>
+                                    Fast and effective
+                                </li>
+                                <li>
+                                    Easy management
+                                </li>
+                            </ul>
+                            <a href="#contacts" class="btn btn-custom-white mx-auto">I want it!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Custom project</h3>
+                            <small class="text-muted">advantages as in LEGO from</small>
+                            <p class="display-4 mb-0"><b>$XXX</b></p>
+                            <small>and X weeks</small>
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
+                                <li>
+                                    Your own design
+                                </li>
+                                <li>
+                                    Your own idea
+                                </li>
+                                <li>
+                                    Unlimited variation
+                                </li>
+                            </ul>
+                            <a href="#contacts" class="btn btn-custom-white mx-auto">I want it!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="portfolio">
+            <div class="row justify-content-center">
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
+                <div class="col-12 text-center text-white">
+                    <h6 class="display-4 section-header">Portfolio</h6>
+                    <p>Our best projects</p>
+                </div>
+            </div>
+            
+            <div class="row no-gutters my-5">
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="unim-website.html" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="img/UNIMsite.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    UNIM 
+                                    <span class="badge badge-orange">Design</span>
+                                    <span class="badge badge-orange">UI/UX</span>
+                                    <span class="badge badge-orange">Custom</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="http://www.onprint.lviv.ua/" class="a-no-hover"  target="_blank">
+                            <img class="card-img-top" src="img/onPrint.PNG" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    OnPrint 
+                                    <span class="badge badge-orange">UI/UX</span>
+                                    <span class="badge badge-orange">Landing</span>
+                                    <span class="badge badge-orange">Startup</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="unim-video.html" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="img/UNIManimation.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    UNIM
+                                    <span class="badge badge-orange">3D</span>
+                                    <span class="badge badge-orange">Animation</span>
+                                    <span class="badge badge-orange">Promo</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="http://monaliza.lviv.ua/" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="img/Monaliza.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    Monaliza 
+                                    <span class="badge badge-orange">Internet-shop</span>
+                                    <span class="badge badge-orange">UI/UX</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="golden-case.html" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="img/GCwebsite.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    GoldenCase
+                                    <span class="badge badge-orange">Custom</span>
+                                    <span class="badge badge-orange">UI/UX</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                    <div class="card card-portfolio-viol">
+                        <a href="http://monolitproperties.com" class="a-no-hover" target="_blank">
+                            <img class="card-img-top" src="img/monolit.jpg" alt="Card image cap">
+                            <div class="card-body py-2">
+                                <h5 class="card-text">
+                                    Monolit
+                                    <span class="badge badge-orange">UI/UX</span>
+                                    <span class="badge badge-orange">Design</span>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center mb-5">
+                <div class="col-md-4 px-md-1 mb-2 text-center">
+                    <a href="#contacts" class="btn btn-custom-white">I want better!</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="contacts">
+            <div class="row justify-content-center pb-5">
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
+                <div class="col-12 text-center text-white">
+                    <h6 class="display-4 section-header">Contacts</h6>
+                    <p>Fill out the form to chat with us</p>
+                </div>
+            </div>
+            <form action="https://formspree.io/contact@crayfish.studio" method="POST">
+                <div class="row no-gutters mb-5 justify-content-center">
+                    <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                        <input class="form-transparent py-2" type="text" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                        <input class="form-transparent py-2" type="phone" name="phone" placeholder="Your phone" required>
+                    </div>
+                    <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                        <input class="form-transparent py-2" type="email" name="_replyto" placeholder="Your email" required>
+                    </div>
+                    <div class="col-12 px-md-1 mb-md-2 mb-3">
+                        <textarea name="text" class="form-transparent py-2" id="exampleFormControlTextarea1" rows="5" placeholder="Your text..." required></textarea>
+                    </div>
+                    <div class="col-md-4 px-md-1 mb-md-2 mb-3">
+                        <input type="submit" class="btn btn-custom-white-input mx-auto" value="Send it!">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row no-gutters text-white text-center text-uppercase mb-3">
+                    <div class="col-md-4 my-2">
+                        <h6 class="contacts-text"><i class="fas fa-map-marker-alt text-orange"></i>Lviv, Ukraine</h6>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <h6 class="contacts-text"><i class="fas fa-envelope text-orange"></i>contact@crayfish.studio</h6>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <h6 class="contacts-text"><i class="fab fa-telegram-plane text-orange"></i>+38 (096) 414-3851</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.toggle("menu-unwrapped");
+        }
+        
+        function uncheckInput() {
+            document.getElementById("untoggle").checked = false;
+        }
+    </script>
+    
+    <script>
+         var lastScrollTop = 0;
+            $(window).on('scroll', function() {
+                st = $(this).scrollTop();
+                if(st < lastScrollTop) {
+                    document.getElementById("menuToggle").classList.remove("hideble");
+                }
+                else {
+                    document.getElementById("menuToggle").classList.add("hideble");
+                }
+                lastScrollTop = st;
+            });
+    </script>
+    
+    <script>
+        function getDocHeight() {
+            var D = document;
+            var bh = Math.max(
+                D.body.scrollHeight, D.documentElement.scrollHeight,
+                D.body.offsetHeight, D.documentElement.offsetHeight,
+                D.body.clientHeight, D.documentElement.clientHeight
+            );
+            
+            if (window.innerWidth > 1000) {
+                document.getElementById("vline1").style.height = bh + "px";
+                document.getElementById("vline2").style.height = bh + "px";
+                document.getElementById("vline3").style.height = bh + "px";
+            } else {
+                document.getElementById("vline1").style.height = 0;
+                document.getElementById("vline2").style.height = 0;
+                document.getElementById("vline3").style.height = 0;
+            }
+        }
+    </script>
+
+    <script>
+        $('a').click(function(){
+            $('html, body').animate({
+             scrollTop: $( $(this).attr('href') ).offset().top
+            }, 1500);
+             return false;
+        });
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/fontawesome-all.js"></script>
+    <title>UNIM Animations - Crayfish Studio Portfolio</title>
+</head>
+
+<body onload="getDocHeight()" onresize="getDocHeight()">
+    <div class="container">
+        <div class="row no-gutters" style="height: 0px;">
+            <div class="col-4">
+                <div class="v-line" id="vline1" style="border-left: 1px solid #3d3d3d; height: 0px;"></div>
+            </div>
+            <div class="col-4">
+                <div class="v-line" id="vline2" style="border-left: 1px solid #3d3d3d; border-right: 1px solid #3d3d3d;"></div>
+            </div>
+            <div class="col-4">
+                <div class="v-line" id="vline3" style="border-right: 1px solid #3d3d3d;"></div>
+            </div>
+        </div>
+    </div>	
+    
+    <div class="bg-viol">
+		<div class="container">
+			<div class="row justify-content-center no-gutters">
+				<div class="col-md-11">
+					<div class="embed-responsive embed-responsive-16by9 mt-md-5 mt-3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-t1ONPCJduk" allowfullscreen=""></iframe>
+                    </div>    
+                    <div class="embed-responsive embed-responsive-16by9 mt-md-5 mt-3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L7Li6EGhzI4" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 mt-md-5 mt-3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kRD5N9YeDF4" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 mt-md-5 mt-3 mb-5">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SX-a658k8w0" allowfullscreen=""></iframe>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script>
+         var lastScrollTop = 0;
+            $(window).on('scroll', function() {
+                st = $(this).scrollTop();
+                if(st < lastScrollTop) {
+                    document.getElementById("menuToggle").classList.remove("hideble");
+                }
+                else {
+                    document.getElementById("menuToggle").classList.add("hideble");
+                }
+                lastScrollTop = st;
+            });
+    </script>
+    
+    <script>
+        function getDocHeight() {
+            var D = document;
+            var bh = Math.max(
+                D.body.scrollHeight, D.documentElement.scrollHeight,
+                D.body.offsetHeight, D.documentElement.offsetHeight,
+                D.body.clientHeight, D.documentElement.clientHeight
+            );
+            
+            if (window.innerWidth > 1000) {
+                document.getElementById("vline1").style.height = bh + "px";
+                document.getElementById("vline2").style.height = bh + "px";
+                document.getElementById("vline3").style.height = bh + "px";
+            } else {
+                document.getElementById("vline1").style.height = 0;
+                document.getElementById("vline2").style.height = 0;
+                document.getElementById("vline3").style.height = 0;
+            }
+        }
+    </script>
+</body> 
+</html>
