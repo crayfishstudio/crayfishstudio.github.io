@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-5">
                 <div>
-                    <div id="arrow-up" class="img-arrow-up">
+                    <div id="arrow-up" class="img-arrow-up" style="z-index: 1">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -110,8 +110,9 @@
 
       		$('.img-slider').slick({
         		vertical: true,
-        		swipe: false,
+        		verticalSwiping: true,
         		speed: 1000,
+        		zIndex: -1,
         		prevArrow: false,
         		nextArrow: false,
         		asNavFor: '.text-slider'
