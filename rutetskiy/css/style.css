@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Jura');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 @media screen and (min-width: 768px) {
     #back-bg-animated {
@@ -73,7 +74,7 @@ body {
 }
 
 .main-text {
-    font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -266,7 +267,7 @@ body {
     top: 2.5vw;
     color: #101010;
     text-transform: uppercase;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
