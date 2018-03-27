@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="animate.css">
     
@@ -43,7 +45,14 @@
         <div class="row no-gutters full-h align-items-center text-md-left">
             <div class="col-md-7 p-custom">
                 <small class="text-raleway">Авторські картини з дерева</small>
-                <h1 class="main-text mt-4 mb-3">Гра світла та тіні в кожній деталі</h1>
+                <div class="text-slider">
+                	<div><h1 class="main-text mt-4 mb-3">Гра світла та тіні в кожній деталі</h1></div>
+                	<div><h1 class="main-text mt-4 mb-3">Текст 2 Текст 2 Текст 2 Текст 2</h1></div>
+                	<div><h1 class="main-text mt-4 mb-3">Текст 3 Текст 3 Текст 3 Текст 3</h1></div>
+                	<div><h1 class="main-text mt-4 mb-3">Текст 4 текст 4 текст 4 текст 4</h1></div>
+                	<div><h1 class="main-text mt-4 mb-3">текст 5 текст 5 текст 5 текст 5</h1></div>
+            	</div>
+
                 <p class="secondary-phrase">Неймовірно привабливий текст який точно змусить когось купити щось<br>і його другий рядок</p>
                 <div class="text-right mt-4">
                     <a class="btn btn-custom">Дізнатись більше<span></span><span></span></a>
@@ -67,9 +76,10 @@
         </div>
     </div>
     
-    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
     
     <script type="text/javascript">
         function loadAnim() {
@@ -81,6 +91,15 @@
         function zindexToNull() {
             document.getElementById("back-bg-animated").style.zIndex = 0;
         }
+
+        $(document).ready(function(){
+      		$('.text-slider').slick({
+        		vertical: true,
+        		speed: 1000,
+        		prevArrow: '#arrow-up',
+        		nextArrow: '#arrow-down'
+      		});
+    	});
     </script>
 </body>
 </html>
