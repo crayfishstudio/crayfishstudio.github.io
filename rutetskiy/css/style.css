@@ -11,7 +11,7 @@
         height: 100vh;
         z-index: 2;
         opacity: 1;
-        transition: all 1.5s cubic-bezier(0.77,0.2,0.05,1.0) 1s, opacity 1.5s ease 2.5s;
+        transition: all 2s cubic-bezier(0.77,0.2,0.05,1.0) 1s, opacity 1.5s ease 3s;
     }
     
     #back-bg {
@@ -213,8 +213,8 @@
     height: 1px;
     width: 15px;
     background-color: #101010;
-    transition: all .8s cubic-bezier(0.77,0.2,0.05,1.0);
-    -moz-transition: all .8s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
+    -moz-transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 .btn-custom span:nth-last-child(1) {
