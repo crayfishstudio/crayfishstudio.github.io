@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Jura');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 @media screen and (min-width: 768px) {
     #back-bg-animated {
@@ -47,47 +48,59 @@
         position: relative;
         top: 18px;
     }
+    
+    .full-h {
+        height: 100%;
+    }
+    
+    .p-custom {
+        padding-left: 5.5vw !important;
+        padding-right: 5.5vw !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    .main-text {
-        font-size: 2rem;
-    }
-    
-    #menu-button {
-        position: fixed;
-        color: #2e2e2e;
-        top: -43px;
-    }
-    
     #scroll-text {
-        visibility: hidden;
-    }
-    
-    #social-container {
-        visibility: hidden;
-    }
-    
-    #logo-container {
-        position: fixed;
-        background-color: #101010;
-        width: 100vw;
-        height: 50px;
-        z-index: 2;
-    }
-    
-    #text-logo {
-        position: absolute;
-        color: #fff !important;
-        top: 11px !important;
-    }
-    
-    #main-text-divider {
         display: none;
     }
     
+    #slider-container {
+        position: relative;
+        background-color: #101010;
+        margin-top: 52px;
+    }
+    
+    #top-line {
+        position: absolute;
+        height: 2px;
+        background-color: #ffc98f;
+        width: 100%;
+        left: 0px;
+        top: 50px;
+        z-index: 1;
+    }
+    
+    #bottom-line {
+        position: absolute;
+        height: 2px;
+        background-color: #ffc98f;
+        width: 100%;
+        left: 0px;
+        top: calc(100vw + 50px);
+        z-index: 1;
+    }
+    
+    #menu-button {
+        display: none;
+    }
+    
+    #text-logo{
+        padding-left: 15px !important;
+        top: 13px !important;
+    }
+    
     #arrow-up {
-        top: 30px !important;
+        top: 25px !important;
     }
     
     #arrow-up span:nth-last-child(1) {
@@ -95,7 +108,7 @@
     }
 
     #arrow-up span:nth-last-child(2) {
-        width: 13px !important;
+        width: 14px !important;
         transform: rotate(30deg) !important;
     }
 
@@ -105,7 +118,7 @@
     }
     
     #arrow-down {
-        bottom: 35px !important;
+        bottom: 25px !important;
     }
     
     #arrow-down span:nth-last-child(1) {
@@ -113,7 +126,7 @@
     }
 
     #arrow-down span:nth-last-child(2) {
-        width: 13px !important;
+        width: 14px !important;
         transform: rotate(30deg) !important;
     }
 
@@ -122,27 +135,35 @@
         transform: rotate(150deg) !important;
     }
     
-    #small-text {
+    .main-text {
+        font-size: 1rem;
+    }
+    
+    .p-custom {
+        padding-left: 3vw !important;
+        padding-right: 3vw !important;
+    }
+    
+    .secondary-phrase {
+        font-size: 0.75rem;
+    }
+    
+    #text-divider {
+       display: none;
+    }
+    
+    #social-container {
         display: none;
     }
-}    
-
-.p-custom {
-    padding-left: 5.5vw !important;
-    padding-right: 5.5vw !important;
-}
+}  
 
 .main-bg {
     height: 100vh;
     background-color: #fcfcfc;
 }
 
-.full-h {
-    height: 100%;
-}
-
 .main-text {
-    font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -167,7 +188,6 @@
     text-decoration: none;
 }
 
-
 #arrow-up {
     position: absolute;
     left: calc(50% - 15px);
@@ -176,6 +196,7 @@
     height: 31px;
     top: -15px;
     transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
+    z-index: 1;
 }
 
 #arrow-up span {
@@ -325,7 +346,7 @@
     top: 2.5vw;
     color: #101010;
     text-transform: uppercase;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -346,6 +367,20 @@
 ::-webkit-scrollbar-thumb:window-inactive {
    background: #ffc98f;
 }
+
 .slider-img {
     background-color: #101010;
+    border: none !important;
+}
+
+.slider-img:placeholder-shown {
+    border: none !important;
+}
+
+.text-slider {
+    border: none !important;
+}
+
+.img-noborder {
+    border: none !important;
 }
