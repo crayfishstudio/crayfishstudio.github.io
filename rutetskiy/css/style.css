@@ -46,7 +46,7 @@
     
     #scroll-text {
         position: relative;
-        top: 18px;
+        top: calc(1*(100vh - (100vw/12*5))/4 - 14px);
     }
     
     .full-h {
@@ -180,7 +180,7 @@
 #menu-button {
     position: relative;
     color: #2e2e2e;
-    top: -43px;
+    top: calc(-1*(100vh - (100vw/12*5))/4 - 12px);
 }
 
 #menu-button:hover {
