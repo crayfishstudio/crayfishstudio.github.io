@@ -26,7 +26,7 @@
         <!-- Lines and sub-line texts -->
         
         <span id="top-line">
-            <a id="menu-button" class="text-raleway" href="#">МЕНЮ</a>
+            <a id="menu-button" class="text-raleway" href="#">Меню</a>
         </span>
         <span id="bottom-line">
             <small id="scroll-text" class="text-raleway text-muted">гортай вниз щоб побачити диво</small>
@@ -35,6 +35,7 @@
         <!-- Logo, FB. Instagram -->
         
         <h4 id="text-logo" class="p-custom">Rutetskiy</h4>
+        <!--<img class="p-custom" src="img/logo128.png">-->
         <div id="social-container" class="p-custom">
             <a href="#"><img src="img/icon-instagram.png"></a>
             <a href="#" class="ml-1"><img src="img/icon-facebook.png"></a>
@@ -56,6 +57,7 @@
                     	<img class="img-fluid py-md-0 img-noborder" src="img/photo-3.png">
                     	<img class="img-fluid py-md-0 img-noborder" src="img/photo-4.png">
                     	<img class="img-fluid py-md-0 img-noborder" src="img/photo-5.png">
+                    	<img class="img-fluid py-md-0 img-noborder" src="img/photo-6.png">
                 	</div>
                     <div id="arrow-down">
                         <span></span>
@@ -68,11 +70,12 @@
                 <small class="text-raleway text-center">Авторські картини з дерева</small>
                 <div class="text-slider-container">
                     <div class="text-slider mt-md-4 mt-2 text-left">
-                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
+                        <h1 class="main-text">світла та тіні в кожній деталі Гра</h1>
+                        <h1 class="main-text">та тіні в кожній деталі Гра світла </h1>
+                        <h1 class="main-text">тіні в кожній деталі Гра світла та</h1>
+                        <h1 class="main-text">в кожній деталі Гра світла та тіні</h1>
+                        <h1 class="main-text">кожній деталі Гра світла та тіні в</h1>
+                        <h1 class="main-text">деталі Гра світла та тіні в кожній</h1>
                     </div>
                 </div>
                 <p class="secondary-phrase text-left mt-md-3 mt-1">Неймовірно привабливий текст який точно змусить когось купити щось<br id="text-divider"> і його другий рядок</p>
@@ -103,13 +106,15 @@
         $(document).ready(function(){
       		$('.text-slider').slick({
         		//vertical: true,
+                fade: true,
         		swipe: false,
         		speed: 1500,
         		prevArrow: '#arrow-down',
         		nextArrow: '#arrow-up',
         		asNavFor: '.img-slider',
                 autoplay: true,
-                autoplaySpeed: 6000
+                autoplaySpeed: 6000,
+                focusOnSelect: false
       		});
 
       		$('.img-slider').slick({
@@ -123,7 +128,8 @@
         		asNavFor: '.text-slider',
                 autoplay: true,
                 autoplaySpeed: 6000,
-                touchMove: true
+                touchMove: true,
+                focusOnSelect: false
       		});
     	});
     </script>
