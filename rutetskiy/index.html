@@ -45,6 +45,7 @@
         <div class="row no-gutters full-h align-items-center text-md-left">
             <div class="col-md-5 order-md-2">
                 <div id="slider-container">
+                    <span id="image-gradient-top"></span>
                     <div id="arrow-up">
                         <span></span>
                         <span></span>
@@ -62,22 +63,27 @@
                         <span></span>
                         <span></span>
                     </div>
+                    <span id="image-gradient-bottom"></span>
                 </div>
             </div>
             <div class="col-md-7 p-custom order-md-1 mt-2 mt-md-0">
-                <small class="text-raleway">Авторські картини з дерева</small>
-                <div class="text-slider mt-md-4 mt-2 mb-md-3 mb-1">
-                	<h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                	<h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                	<h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                	<h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                	<h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-            	</div>
-
-                <p class="secondary-phrase">Неймовірно привабливий текст який точно змусить когось купити щось<br id="text-divider"> і його другий рядок</p>
-                <div class="text-md-right mt-4">
+                <small class="text-raleway text-center">Авторські картини з дерева</small>
+                <div class="text-slider-container">
+                    <span id="text-gradient-top"></span>
+                    <div class="text-slider mt-md-4 mt-2 text-left">
+                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
+                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
+                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
+                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
+                        <h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
+                    </div>
+                    <span id="text-gradient-bottom"></span>
+                </div>
+                <p class="secondary-phrase text-left mt-md-3 mt-1">Неймовірно привабливий текст який точно змусить когось купити щось<br id="text-divider"> і його другий рядок</p>
+                <div class="text-md-right my-4">
                     <a class="btn btn-custom">Дізнатись більше<span></span><span></span></a>
                 </div>
+                <small id="scroll-text-mobile" class="text-raleway text-muted">гортай вниз щоб побачити диво</small>
             </div>
         </div>
     </div>
@@ -102,24 +108,26 @@
       		$('.text-slider').slick({
         		vertical: true,
         		swipe: false,
-        		speed: 1000,
+        		speed: 1500,
         		prevArrow: '#arrow-down',
         		nextArrow: '#arrow-up',
         		asNavFor: '.img-slider',
                 autoplay: true,
-                autoplaySpeed: 7000
+                autoplaySpeed: 6000
       		});
 
       		$('.img-slider').slick({
+                swipe: false,
         		vertical: true,
         		verticalSwiping: true,
-        		speed: 1000,
+        		speed: 1500,
         		zIndex: -1,
         		prevArrow: false,
         		nextArrow: false,
         		asNavFor: '.text-slider',
                 autoplay: true,
-                autoplaySpeed: 7000
+                autoplaySpeed: 6000,
+                touchMove: true
       		});
     	});
     </script>
