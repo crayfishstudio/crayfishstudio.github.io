@@ -428,11 +428,12 @@
 #text-logo {
     position: absolute;
     top: 2.5vw;
-    left: 4vw;
+    left: 5.5vw;
     height: 128px;
     width: 128px;
     background-image: url(../img/logo128.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #social-container {
