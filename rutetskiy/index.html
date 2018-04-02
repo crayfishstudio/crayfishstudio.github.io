@@ -15,10 +15,20 @@
 
     <title>Rutetskiy Layer Designs</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-<<<<<<< HEAD
-=======
 
->>>>>>> rutetskiy_vova
+    <style>
+    	.text-animation {
+			animation-name: anim;
+    		animation-duration: 3s;
+    		animation-iteration-count: infinite;
+    	}
+
+    	@keyframes anim {
+    		0% {opacity: 1.0;}
+    		50% {opacity: 0.1;}
+    		100% {opacity: 1.0;}
+    	}
+    </style>
 </head>
 
 <body onload="loadAnim()">
@@ -34,7 +44,7 @@
             <a id="menu-button" class="text-raleway" href="#">Меню</a>
         </span>
         <span id="bottom-line">
-            <small id="scroll-text" class="text-raleway text-muted">гортай вниз щоб побачити диво</small>
+            <small id="scroll-text" class="text-raleway text-muted text-animation">гортай вниз щоб побачити диво</small>
         </span>
         
         <!-- Logo, FB. Instagram -->
@@ -126,9 +136,7 @@
                 swipe: false,
         		vertical: true,
         		verticalSwiping: true,
-<<<<<<< HEAD
-=======
->>>>>>> rutetskiy_vova
+        		draggable: false,
         		speed: 1500,
         		zIndex: -1,
         		prevArrow: false,
