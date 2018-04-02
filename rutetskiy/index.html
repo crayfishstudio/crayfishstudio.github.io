@@ -14,6 +14,7 @@
     <script defer src="js/fontawesome-all.js"></script>
 
     <title>Rutetskiy Layer Designs</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body onload="loadAnim()">
@@ -26,7 +27,7 @@
         <!-- Lines and sub-line texts -->
         
         <span id="top-line">
-            <a id="menu-button" class="text-raleway" href="#">МЕНЮ</a>
+            <a id="menu-button" class="text-raleway" href="#">Меню</a>
         </span>
         <span id="bottom-line">
             <small id="scroll-text" class="text-raleway text-muted">гортай вниз щоб побачити диво</small>
@@ -34,7 +35,8 @@
         
         <!-- Logo, FB. Instagram -->
         
-        <h4 id="text-logo" class="p-custom">Rutetskiy</h4>
+        <span id="text-logo"></span>
+        <!--<img class="p-custom" src="img/logo128.png">-->
         <div id="social-container" class="p-custom">
             <a href="#"><img src="img/icon-instagram.png"></a>
             <a href="#" class="ml-1"><img src="img/icon-facebook.png"></a>
@@ -43,34 +45,20 @@
         <!-- Page -->
         
         <div class="row no-gutters full-h align-items-center text-md-left">
-            <div class="col-md-7 p-custom">
-                <small class="text-raleway">Авторські картини з дерева</small>
-                <div class="text-slider mt-4 mb-3">
-                	<h1 class="main-text">Гра світла та тіні в кожній деталі</h1>
-                	<h1 class="main-text">Текст 2 Текст 2 Текст 2 Текст 2</h1>
-                	<h1 class="main-text">Текст 3 Текст 3 Текст 3 Текст 3</h1>
-                	<h1 class="main-text">Текст 4 текст 4 текст 4 текст 4</h1>
-                	<h1 class="main-text">текст 5 текст 5 текст 5 текст 5</h1>
-            	</div>
-
-                <p class="secondary-phrase">Неймовірно привабливий текст який точно змусить когось купити щось<br>і його другий рядок</p>
-                <div class="text-right mt-4">
-                    <a class="btn btn-custom">Дізнатись більше<span></span><span></span></a>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div>
-                    <div id="arrow-up" class="img-arrow-up" style="z-index: 1">
+            <div class="col-md-5 order-md-2">
+                <div id="slider-container">
+                    <div id="arrow-up">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
 					<div class="img-slider">
-                    	<img class="img-fluid py-md-0" src="img/photo-1.png">
-                    	<img class="img-fluid py-md-0" src="img/photo-2.png">
-                    	<img class="img-fluid py-md-0" src="img/photo-3.png">
-                    	<img class="img-fluid py-md-0" src="img/photo-4.png">
-                    	<img class="img-fluid py-md-0" src="img/photo-5.png">
+                    	<img class="img-fluid py-md-0 img-noborder" src="img/photo-1.png">
+                    	<img class="img-fluid py-md-0 img-noborder" src="img/photo-2.png">
+                    	<img class="img-fluid py-md-0 img-noborder" src="img/photo-3.png">
+                    	<img class="img-fluid py-md-0 img-noborder" src="img/photo-4.png">
+                    	<img class="img-fluid py-md-0 img-noborder" src="img/photo-5.png">
+                    	<img class="img-fluid py-md-0 img-noborder" src="img/photo-6.png">
                 	</div>
                     <div id="arrow-down">
                         <span></span>
@@ -78,6 +66,24 @@
                         <span></span>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-7 p-custom order-md-1 mt-2 mt-md-0">
+                <small class="text-raleway text-center">Авторські картини з дерева</small>
+                <div class="text-slider-container">
+                    <div class="text-slider mt-md-4 mt-2 text-left">
+                        <h1 class="main-text">світла та тіні в кожній деталі Гра</h1>
+                        <h1 class="main-text">та тіні в кожній деталі Гра світла </h1>
+                        <h1 class="main-text">тіні в кожній деталі Гра світла та</h1>
+                        <h1 class="main-text">в кожній деталі Гра світла та тіні</h1>
+                        <h1 class="main-text">кожній деталі Гра світла та тіні в</h1>
+                        <h1 class="main-text">деталі Гра світла та тіні в кожній</h1>
+                    </div>
+                </div>
+                <p class="secondary-phrase text-left mt-md-3 mt-1">Неймовірно привабливий текст який точно змусить когось купити щось<br id="text-divider"> і його другий рядок</p>
+                <div class="text-md-right my-4">
+                    <a class="btn btn-custom">Дізнатись більше<span></span><span></span></a>
+                </div>
+                <small id="scroll-text-mobile" class="text-raleway text-muted">гортай вниз щоб побачити диво</small>
             </div>
         </div>
     </div>
@@ -100,23 +106,31 @@
 
         $(document).ready(function(){
       		$('.text-slider').slick({
-        		vertical: true,
+        		//vertical: true,
+                fade: true,
         		swipe: false,
-        		speed: 1000,
+        		speed: 1500,
         		prevArrow: '#arrow-down',
         		nextArrow: '#arrow-up',
-        		asNavFor: '.img-slider'
+        		asNavFor: '.img-slider',
+                autoplay: true,
+                autoplaySpeed: 6000,
+                focusOnSelect: false
       		});
 
       		$('.img-slider').slick({
+                swipe: false,
         		vertical: true,
         		verticalSwiping: true,
-        		draggable: false,
-        		speed: 1000,
+        		speed: 1500,
         		zIndex: -1,
         		prevArrow: false,
         		nextArrow: false,
-        		asNavFor: '.text-slider'
+        		asNavFor: '.text-slider',
+                autoplay: true,
+                autoplaySpeed: 6000,
+                touchMove: true,
+                focusOnSelect: false
       		});
     	});
     </script>
