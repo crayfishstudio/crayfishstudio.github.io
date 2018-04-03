@@ -170,6 +170,7 @@
     
     #arrow-down {
         top: calc(100vw + 20px) !important;
+        height: 20% !important;
     }
 
     #arrow-down span {
