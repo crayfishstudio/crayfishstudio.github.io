@@ -56,7 +56,7 @@
         padding-left: 5.5vw !important;
         padding-right: 5.5vw !important;
     }
-    
+
     /*#image-gradient-top {
         position: fixed;
         right: 0;
@@ -98,6 +98,11 @@
     #scroll-text-mobile {
         display: none;
     }
+
+    .hamb {
+        opacity: 0;
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -135,7 +140,7 @@
         display: none;
     }
     
-    #text-logo{
+    #text-logo {
         height: 32px !important;
         max-width: 32px !important;
         background-image: url(../img/logo32x32.png) !important;
@@ -202,7 +207,21 @@
     #social-container {
         display: none;
     }
-    
+
+    .hamb{ 
+        position: fixed;
+        opacity: 1;
+        background-color: white; 
+        height: 50px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    #text-logo {
+        position: fixed !important; 
+        z-index: 10;
+    }
+
     /*#image-gradient-top {
         position: absolute;
         left: 0;
@@ -470,3 +489,60 @@
 .img-noborder {
     border: none !important;
 }
+
+#menuToggle
+{
+    display: block;
+    position: fixed;
+    top: 14px;
+    right: 5%;
+    z-index: 3;
+    display: table;
+    transition: top 0.3s;
+}
+
+#menuToggle input
+{
+    display: block;
+    width: 36px;
+    height: 33px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2;
+}
+
+#menuToggle span
+{
+    display: block;
+    width: 36px;
+    height: 3px;
+    margin-bottom: 8px;
+    position: relative;
+    background: #000;
+    border-radius: 1px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle input:checked ~ span
+{
+    opacity: 1;
+    transform: rotate(-45deg);
+    background: #423145;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    transform: translate(2px, -8px) rotate(45deg) ;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
