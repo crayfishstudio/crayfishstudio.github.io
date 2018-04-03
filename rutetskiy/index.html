@@ -15,20 +15,6 @@
 
     <title>Rutetskiy Layer Designs</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-
-    <style>
-    	.text-animation {
-			animation-name: anim;
-    		animation-duration: 3s;
-    		animation-iteration-count: infinite;
-    	}
-
-    	@keyframes anim {
-    		0% {opacity: 1.0;}
-    		50% {opacity: 0.1;}
-    		100% {opacity: 1.0;}
-    	}
-    </style>
 </head>
 
 <body onload="loadAnim()">
@@ -36,7 +22,18 @@
         <!-- Black backgrounds -->
         
         <span id="back-bg-animated"></span>
-        <span id="back-bg"></span>
+        <span id="back-bg">
+        	<div id="arrow-up">
+        		<span></span>
+                <span></span>
+                <span></span>
+        	</div>
+        	<div id="arrow-down">
+                <span></span>
+                <span></span>
+                <span></span>
+        	</div>
+        </span>
         
         <!-- Lines and sub-line texts -->
         
@@ -61,11 +58,6 @@
         <div class="row no-gutters full-h align-items-center text-md-left">
             <div class="col-md-5 order-md-2">
                 <div id="slider-container">
-                    <div id="arrow-up">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
 					<div class="img-slider">
                     	<img class="img-fluid py-md-0 img-noborder" src="img/photo-1.png">
                     	<img class="img-fluid py-md-0 img-noborder" src="img/photo-2.png">
@@ -74,11 +66,6 @@
                     	<img class="img-fluid py-md-0 img-noborder" src="img/photo-5.png">
                     	<img class="img-fluid py-md-0 img-noborder" src="img/photo-6.png">
                 	</div>
-                    <div id="arrow-down">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                 </div>
             </div>
             <div class="col-md-7 p-custom order-md-1 mt-2 mt-md-0">
