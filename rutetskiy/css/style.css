@@ -145,6 +145,11 @@
     }
     
     #arrow-up {
+        top: 50px !important;
+        height: 20% !important;
+    }
+
+    #arrow-up span {
         top: 25px !important;
     }
     
@@ -164,7 +169,11 @@
     }
     
     #arrow-down {
-        bottom: 25px !important;
+        top: calc(100vw + 20px) !important;
+    }
+
+    #arrow-down span {
+        top: 24px !important;
     }
     
     #arrow-down span:nth-last-child(1) {
@@ -273,21 +282,20 @@
 
 #arrow-up {
     position: absolute;
-    left: calc(50% - 50px);
     cursor: pointer;
-    width: 101px;
-    height: 31px;
-    top: -15px;
+    width: 100%;
+    height: calc((100vh - (100vw/12*5))/2 + 15px);
+    min-height: 20%;
     transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
     z-index: 2;
 }
 
-#arrow-up span {
+#arrow-up span {    
     height: 1px;
     position: absolute;
     background: #fff;
     z-index: 1;
-    left: 50px;
+    top: calc((100vh - (100vw/12*5))/2 - 15px);
     transform-origin: 0px 0px;
     transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -295,7 +303,7 @@
 #arrow-up span:nth-last-child(1) {
     width: 31px;
     transform: rotate(90deg);
-}
+} 
 
 #arrow-up span:nth-last-child(2) {
     width: 10px;
@@ -309,11 +317,12 @@
 
 #arrow-down {
     position: absolute;
-    left: calc(50% + 16px);
+    left: calc(100% - 32px);
     cursor: pointer;
-    width: 101px;
-    height: 31px;
-    bottom: -15px;
+    width: 100%;
+    height: calc((100vh - (100vw/12*5))/2 + 15px);
+    min-height: 20%;
+    top: calc(100vh - 35px);
     transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
     transform-origin: 16px 16px;
     transform: rotate(180deg);
@@ -325,7 +334,8 @@
     position: absolute;
     background: #fff;
     z-index: 1;
-    left: 49px;
+    left: 50%;
+    top: calc((100vh - (100vw/12*5))/2 - 20px);
     transform-origin: 0px 0px;
     transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -469,4 +479,14 @@
 
 .img-noborder {
     border: none !important;
+}
+
+.text-animation {
+    animation: animatedText 3s infinite;
+}
+
+@keyframes animatedText {
+    0% {opacity: 1.0;}
+    50% {opacity: 0.3;}
+    100% {opacity: 1.0;}
 }
