@@ -103,6 +103,16 @@
         opacity: 0;
         position: absolute;
     }
+
+    #top-line-gallery {
+        position: absolute;
+        height: 1px;
+        background-color: #ffc98f;
+        width: 46vw;
+        left: 10vw;
+        top: 80%;
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -565,4 +575,9 @@
 {
     opacity: 0;
     transform: translateY(-20px);
+}
+
+.gallery-bg {
+    height: 100vh;
+    background-color: black;
 }
