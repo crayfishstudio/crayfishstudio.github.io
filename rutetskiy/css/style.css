@@ -108,9 +108,9 @@
         position: absolute;
         height: 1px;
         background-color: #ffc98f;
-        width: 46vw;
-        left: 10vw;
-        top: 80%;
+        width: 48vw;
+        left: 8.2vw;
+        top: calc((200vh - (-30vw/12*5))/2);
         z-index: 2;
     }
 }
