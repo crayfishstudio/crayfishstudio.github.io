@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-  	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+  	<link rel="stylesheet" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <!--<link rel="stylesheet" href="animate.css">-->
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
     
     <script defer src="js/fontawesome-all.js"></script>
 
@@ -25,7 +21,7 @@
 
 <body onload="loadAnim()">
     <div id="fullpage">
-        <div class="section"> 
+        <div class="section fp-auto-height-responsive">
             <div class="container-fluid p-0 main-bg text-center">
             <!-- Black backgrounds -->
             
@@ -45,7 +41,7 @@
                 
                 <!-- Lines and sub-line texts -->
                 
-                <span id="top-line">
+                <span id="top-line-first">
                     <a id="menu-button" class="text-raleway" href="#">Меню</a>
                 </span>
                 <span id="bottom-line">
@@ -108,45 +104,49 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section fp-auto-height-responsive">
             <div class="container-fluid p-0 gallery-bg">
+            <span id="top-line-second"></span>
                 <div class="row no-gutters full-h justify-content-center align-items-center">
-                    <div class="col-md-3">
+                    <div class="col-md-5 order-md-2">
                         <div class="row no-gutters">
-                            <div class="col-md-12 mb-2">
-                                <img class="img-fluid img-noborder" src="img/photo-12.png">
+                            <div class="col-4 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
                             </div>
-                            <div class="col-md-6 pr-md-1">
-                                <img class="img-fluid img-noborder" src="img/photo-12.png">
+                            <div class="col-4 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
                             </div>
-                            <div class="col-md-6 pl-md-1">
-                                
+                            <div class="col-4 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
+                            </div>
+                            <div class="col-6 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="row no-gutters pl-md-3">
-                            <div class="col-md-5 pr-md-3">
-                                <img class="img-fluid img-noborder" src="img/photo-12.png">
-                                <img class="img-fluid img-noborder my-md-2" src="img/photo-12.png">
-                                <img class="img-fluid img-noborder" src="img/photo-12.png">
+                    <div class="col-md-5 order-md-1">
+                        <div class="row no-gutters">
+                            <div class="col-6 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
                             </div>
-                            <div class="col-md-7 pr-md-1">
-                                <img class="img-fluid img-noborder mb-2" src="img/photo-12.png">
-                                <img class="img-fluid img-noborder" src="img/photo-12.png">
+                            <div class="col-6 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
                             </div>
                         </div>
-                    </div>  
-                    <div class="col-md-3">
-                        <div class="row no-gutters pl-md-2">
-                            <div class="col-md-6 pr-md-1">
-                                <img class="img-fluid img-noborder" src="img/photo-12.png">
+                        <div class="row no-gutters">
+                            <div class="col-4 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
                             </div>
-                             <div class="col-md-6 pl-md-1">
-                                <img class="img-fluid img-noborder" src="img/photo-12.png">
+                            <div class="col-4 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
                             </div>
-                             <div class="col-md-12 mt-2">
-                                <img class="img-fluid img-noborder" src="img/photo-12.png">
+                            <div class="col-4 p-1">
+                                <img class="img-fluid" src="img/photo-12.png">
                             </div>
                         </div>
                     </div>
@@ -155,9 +155,11 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     
     <script type="text/javascript">
         function loadAnim() {

@@ -23,7 +23,7 @@
         height: 100vh;
     }
     
-    #top-line {
+    #top-line-first {
         position: absolute;
         height: 1px;
         background-color: #ffc98f;
@@ -103,14 +103,14 @@
         opacity: 0;
         position: absolute;
     }
-
-    #top-line-gallery {
+    
+    #top-line-second {
         position: absolute;
         height: 1px;
         background-color: #ffc98f;
-        width: 48vw;
-        left: 8.2vw;
-        top: calc((200vh - (-30vw/12*5))/2);
+        width: 46vw;
+        left: 5.5vw;
+        top: calc((100vh - (100vw/12*5))/2);
         z-index: 2;
     }
 }
@@ -126,7 +126,7 @@
         margin-top: 52px;
     }
     
-    #top-line {
+    #top-line-first {
         position: absolute;
         height: 2px;
         background-color: #ffc98f;
@@ -470,7 +470,7 @@
     top: 2.5vw;
     left: 5.5vw;
     height: 128px;
-    width: 128px;
+    width: 98px;
     background-image: url(../img/logo128.png);
     background-position: center;
     background-repeat: no-repeat;
