@@ -64,44 +64,6 @@
         padding-right: 5.5vw !important;
     }
 
-    /*#image-gradient-top {
-        position: fixed;
-        right: 0;
-        height: 20px;
-        width: calc(100vw/12*5);
-        background: linear-gradient(to bottom, #101010 0%, #101010 20%, rgba(0, 0, 0,0) 100%);
-        z-index: 1;
-    }
-    
-    #image-gradient-bottom {
-        position: fixed;
-        margin-top: -20px;
-        right: 0;
-        height: 20px;
-        width: calc(100vw/12*5);
-        background: linear-gradient(to top, #101010 0%, #101010 20%, rgba(0, 0, 0, 0) 100%);
-        z-index: 1;
-    }
-    
-    #text-gradient-top {
-        position: fixed;
-        background: linear-gradient(to bottom, #fcfcfc 0%, rgba(0, 0, 0, 0) 100%);
-        width: calc(100vw/12*7 - 11vw);
-        height: 10px;
-        left: 5.5vw;
-        z-index: 2;
-    }
-    
-    #text-gradient-bottom {
-        position: fixed;
-        background: linear-gradient(to top, #fcfcfc 0%, rgba(0, 0, 0, 0) 100%);
-        width: calc(100vw/12*7 - 11vw);
-        height: 10px;
-        left: 5.5vw;
-        z-index: 2;
-        margin-top: -10px;
-    }*/
-    
     #scroll-text-mobile {
         display: none;
     }
@@ -276,42 +238,6 @@
         position: fixed !important; 
         z-index: 10;
     }
-
-    /*#image-gradient-top {
-        position: absolute;
-        left: 0;
-        height: 20px;
-        width: 100%;
-        background: linear-gradient(to bottom, #101010 0%, #101010 20%, rgba(0, 0, 0,0) 100%);
-        z-index: 1;
-    }
-    
-    #image-gradient-bottom {
-        position: absolute;
-        margin-top: -20px;
-        left: 0;
-        height: 20px;
-        width: 100%;
-        background: linear-gradient(to top, #101010 0%, #101010 20%, rgba(0, 0, 0,0) 100%);
-        z-index: 1;
-    }
-    
-    #text-gradient-top {
-        position: absolute;
-        background: linear-gradient(to bottom, #fcfcfc 0%, rgba(0, 0, 0,0) 100%);
-        width: 100%;
-        height: 5px;
-        left: 0;
-    }
-    
-     #text-gradient-bottom {
-        position: absolute;
-        background: linear-gradient(to top, #fcfcfc 0%, rgba(0, 0, 0,0) 100%);
-        width: 100%;
-        height: 5px;
-        left: 0;
-        margin-top: -5px;
-    }*/
 }  
 
 .main-bg {
@@ -565,7 +491,7 @@
 }
 
 .text-animation {
-    animation: animatedText 3s infinite;
+    animation: animatedText 2s infinite;
 }
 
 @keyframes animatedText {
@@ -574,8 +500,7 @@
     100% {opacity: 1.0;}
 }
 
-#menuToggle
-{
+#menuToggle {
     display: block;
     position: fixed;
     top: 14px;
@@ -585,8 +510,7 @@
     transition: top 0.3s;
 }
 
-#menuToggle input
-{
+#menuToggle input {
     display: block;
     width: 36px;
     height: 33px;
@@ -596,8 +520,7 @@
     z-index: 2;
 }
 
-#menuToggle span
-{
+#menuToggle span {
     display: block;
     width: 36px;
     height: 3px;
@@ -612,20 +535,17 @@
     opacity 0.55s ease;
 }
 
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(-45deg);
     background: #423145;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
     transform: translate(2px, -8px) rotate(45deg) ;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: translateY(-20px);
 }
