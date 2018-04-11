@@ -77,11 +77,9 @@
         position: absolute;
         height: 1px;
         background-color: #ffc98f;
-<<<<<<< HEAD
         width: 44.5vw;
         left: 5.5vw;
         top: calc((100vh - (100vw/12*5))/2);
-=======
         width: 48vw;
         left: 8.5vw;
         top: calc((100vh - (95vw/12*5))/2);
@@ -95,7 +93,7 @@
         width: 48vw;
         right: 8.5vw;
         bottom: calc((100vh - (95vw/12*5))/2);
->>>>>>> 4cfbae95f5228deec10530c7e53624bebba2de0f
+        4cfbae95f5228deec10530c7e53624bebba2de0f
         z-index: 2;
     }
 }
