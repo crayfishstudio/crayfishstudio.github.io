@@ -32,6 +32,16 @@
         top: calc((100vh - (100vw/12*5))/2);
         z-index: 2;
     }
+
+    #top-line-third {
+        position: absolute;
+        height: 1px;
+        background-color: #ffc98f;
+        width: 46vw;
+        left: 27vw;
+        top: calc((100vh - (92vw/12*5))/2);
+        z-index: 2;
+    }
     
     #bottom-line-first {
         position: absolute;
@@ -40,6 +50,16 @@
         width: 46vw;
         left: 27vw;
         bottom: calc((100vh - (100vw/12*5))/2);
+        z-index: 2;
+    }
+
+    #bottom-line-third {
+        position: absolute;
+        height: 1px;
+        background-color: #ffc98f;
+        width: 48vw;
+        right: 8.5vw;
+        bottom: calc((100vh - (90vw/12*5))/2);
         z-index: 2;
     }
     
@@ -62,6 +82,11 @@
     .p-custom {
         padding-left: 5.5vw !important;
         padding-right: 5.5vw !important;
+    }
+
+    .p-custom-gallery {
+        padding-left: 5.5vw !important;
+        padding-right: 10vw !important;
     }
 
     #scroll-text-mobile {
@@ -93,7 +118,6 @@
         width: 48vw;
         right: 8.5vw;
         bottom: calc((100vh - (95vw/12*5))/2);
-        4cfbae95f5228deec10530c7e53624bebba2de0f
         z-index: 2;
     }
 }
@@ -140,6 +164,10 @@
     #menu-button-second {
         display: none;
     }
+
+    #menu-button-basic {
+        display: none;
+}
     
     #text-logo {
         height: 32px !important;
@@ -223,6 +251,10 @@
         display: none
     }
 
+     #social-container-third {
+        display: none
+    }
+
     .hamb{ 
         position: fixed;
         opacity: 1;
@@ -271,12 +303,23 @@
     left: 85%;
 }
 
+#menu-button-basic {
+    color: grey;
+    position: relative;
+    top: calc(-1*(100vh - (100vw/12*5))/4 - 6px);
+}
+
 #menu-button:hover {
     color: #000;
     text-decoration: none;
 }
 
 #menu-button-second:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu-button-basic:hover {
     color: #fff;
     text-decoration: none;
 }
@@ -458,6 +501,12 @@
     right: 2.9vw;
 }
 
+#social-container-third {
+    position: absolute;
+    bottom: 1.55vw;
+    right: 2.9vw;
+}
+
 ::-webkit-scrollbar {
     width: 2px;
     background: #101010;
@@ -551,4 +600,15 @@
 .gallery-bg {
     height: 100vh;
     background-color: #101010;
+}
+
+.gallery-bg-basic {
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.gallery-bg-minor {
+    background-color: #101010; 
+    height: 100vh; 
+    z-index: -10;
 }
