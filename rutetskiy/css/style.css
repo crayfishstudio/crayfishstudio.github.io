@@ -61,8 +61,19 @@
     #gallery-text {
         color: #fff;
         position: relative;
-        top: calc(1*(100vh - (100vw/12*5))/4 - 18px);
+        top: calc(1*(100vh - (100vw/12*5))/4 - 21px);
         left: 12%;
+    }
+
+    .floral-btn {
+        position: absolute;
+        left: 14vw;
+        bottom: calc((100vh - (100vw/12*5))/2);
+        z-index: 10;
+    }
+    
+    #floral-text {
+        color: #FFF;
     }
     
     .full-h {
@@ -172,6 +183,10 @@
         background-position: center;
         top: 10px !important;
     }
+
+    #text-logo-second {
+        display: none;
+    }
     
     #arrow-up {
         top: 50px !important;
@@ -246,7 +261,7 @@
         display: none
     }
 
-     #social-container-third {
+    #social-container-third {
         display: none
     }
 
@@ -485,6 +500,26 @@
     background-repeat: no-repeat;
 }
 
+#text-logo-second {
+    position: absolute;
+    top: 0.8vw;
+    left: 8.6vw;
+    z-index: 10;
+    width: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#text-logo-third {
+    position: absolute;
+    top: 2vw;
+    left: 9vw;
+    z-index: 10;
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #social-container {
     position: absolute;
     bottom: 5vw;
@@ -492,7 +527,7 @@
 
 #social-container-second {
     position: absolute;
-    bottom: 1.1vw;
+    bottom: 1.5vw;
     right: 2.9vw;
 }
 
