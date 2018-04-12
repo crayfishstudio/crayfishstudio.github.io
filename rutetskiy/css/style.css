@@ -33,16 +33,6 @@
         z-index: 2;
     }
 
-    #top-line-third {
-        position: absolute;
-        height: 1px;
-        background-color: #ffc98f;
-        width: 46vw;
-        left: 27vw;
-        top: calc((100vh - (92vw/12*5))/2);
-        z-index: 2;
-    }
-    
     #bottom-line-first {
         position: absolute;
         height: 1px;
@@ -59,7 +49,7 @@
         background-color: #ffc98f;
         width: 48vw;
         right: 8.5vw;
-        bottom: calc((100vh - (90vw/12*5))/2);
+        bottom: calc((100vh - (95vw/12*5))/2);
         z-index: 2;
     }
     
@@ -87,6 +77,11 @@
     .p-custom-gallery {
         padding-left: 5.5vw !important;
         padding-right: 10vw !important;
+    }
+
+    .p-custom-img {
+        padding-left: 8.5vw !important;
+        padding-right: 5.5vw !important;
     }
 
     #scroll-text-mobile {
@@ -306,7 +301,7 @@
 #menu-button-basic {
     color: grey;
     position: relative;
-    top: calc(-1*(100vh - (100vw/12*5))/4 - 6px);
+    top: calc(-1*(100vh - (100vw/12*5))/4 - 12px);
 }
 
 #menu-button:hover {
