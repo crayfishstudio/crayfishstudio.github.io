@@ -1,215 +1,90 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/slick.css"/>
-  	<link rel="stylesheet" href="css/slick-theme.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="animate.css">-->
-    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
-    
-    <script defer src="js/fontawesome-all.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    <title>Rutetskiy Layer Designs</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
+        <title>Rutetskiy Layer Designs</title>
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
 
-</head>
-
-<body onload="loadAnim()">
-    <div id="fullpage">
-        <div class="section fp-auto-height-responsive">
-            <div class="container-fluid p-0 main-bg text-center">
-            <!-- Black backgrounds -->
-            
-                <span id="back-bg-animated"></span>
-                <span id="back-bg">
-                    <div id="arrow-up">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div id="arrow-down">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </span>
-                
-                <!-- Lines and sub-line texts -->
-                
-                <span id="top-line-first">
-                    <a id="menu-button" class="text-raleway" href="#">Меню</a>
-                </span>
-                <span id="bottom-line-first">
-                    <small id="scroll-text" class="text-raleway text-muted text-animation">гортай вниз щоб побачити диво</small>
-                </span>
-                
-                <!-- Logo, FB. Instagram -->
-                
-                <span id="text-logo"></span>
-                
-                <!--<img class="p-custom" src="img/logo128.png">-->
-                
-                <div id="social-container" class="p-custom">
-                    <a href="#"><img src="img/icon-instagram.png"></a>
-                    <a href="#" class="ml-1"><img src="img/icon-facebook.png"></a>
-                </div>
-                
-                <div class="hamb">
-                    <div id="menuToggle">
-                        <input type="checkbox" onclick="openNav()" id="untoggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                
-                <!-- Page -->
-                
-                <div class="row no-gutters full-h align-items-center text-md-left">
-                    <div class="col-md-5 order-md-2">
-                        <div id="slider-container">
-                            <div class="img-slider">
-                                <img class="img-fluid py-md-0 img-noborder" src="img/photo-1.png">
-                                <img class="img-fluid py-md-0 img-noborder" src="img/photo-2.png">
-                                <img class="img-fluid py-md-0 img-noborder" src="img/photo-3.png">
-                                <img class="img-fluid py-md-0 img-noborder" src="img/photo-4.png">
-                                <img class="img-fluid py-md-0 img-noborder" src="img/photo-5.png">
-                                <img class="img-fluid py-md-0 img-noborder" src="img/photo-6.png">
-                            </div>
+    <body>
+        <div class="grey-line left"></div>
+        <div class="grey-line right"></div>
+        <div class="container-fluid px-0">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-6">
+                    <div class="row no-gutters pt-custom">
+                        <div class="col-md-6 col-left">
+                           <div class="row no-gutters">
+                               <div class="col-8">
+                                   <div class="img-container">
+                                       <img src="img/3.jpg" alt="" class="img-fluid">
+                                   </div>
+                                   <h4 class="custom-header">Гра світла та тіні в кожній деталі</h4>
+                               </div>
+                               <div class="col-4">
+                                   <div class="img-container">
+                                       <img src="img/4.jpg" alt="" class="img-fluid">
+                                   </div>
+                                   <div id="rp-grey-1"></div>
+                                   <div class="img-container">
+                                       <img src="img/4.jpg" alt="" class="img-fluid">
+                                   </div>
+                               </div>  
+                           </div>
+                           <div class="row no-gutters"> 
+                               <div class="col-4">
+                                   <div class="img-container">
+                                       <img src="img/8.jpg" alt="" class="img-fluid">
+                                   </div>
+                                   <div class="img-container">
+                                       <img src="img/7.jpg" alt="" class="img-fluid">
+                                   </div>
+                               </div>
+                               <div class="col-8">
+                                   <div class="img-container">
+                                       <img src="img/1.jpg" alt="" class="img-fluid">
+                                   </div>
+                               </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="col-md-7 p-custom order-md-1 mt-2 mt-md-0">
-                        <small class="text-raleway text-center">Авторські картини з дерева</small>
-                        <div class="text-slider-container">
-                            <div class="text-slider mt-md-4 mt-2 text-left">
-                                <h1 class="main-text">світла та тіні в кожній деталі Гра</h1>
-                                <h1 class="main-text">та тіні в кожній деталі Гра світла </h1>
-                                <h1 class="main-text">тіні в кожній деталі Гра світла та</h1>
-                                <h1 class="main-text">в кожній деталі Гра світла та тіні</h1>
-                                <h1 class="main-text">кожній деталі Гра світла та тіні в</h1>
-                                <h1 class="main-text">деталі Гра світла та тіні в кожній</h1>
+                        <div class="col-md-6 col-right">
+                            <div class="row no-gutters">
+                                <div class="col">
+                                    <div class="img-container">
+                                        <img src="img/2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <p class="secondary-phrase text-left mt-md-3 mt-1">Неймовірно привабливий текст який точно змусить когось купити щось<br id="text-divider"> і його другий рядок</p>
-                        <div class="text-md-right my-4">
-                            <a class="btn btn-custom">Дізнатись більше<span></span><span></span></a>
-                        </div>
-                        <small id="scroll-text-mobile" class="text-raleway text-muted text-animation">гортай вниз щоб побачити диво</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section fp-auto-height-responsive">
-            <div class="container-fluid p-0 gallery-bg">
-            <span id="top-line-second"></span>
-                <div class="row no-gutters full-h justify-content-center align-items-center">
-                    <div class="col-md-5 order-md-2">
-                        <div class="row no-gutters">
-                            <div class="col-4 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                            <div class="col-4 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                            <div class="col-4 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                        </div>
-                        <div class="row no-gutters">
-                            <div class="col-6 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                            <div class="col-6 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                        <div class="row no-gutters">
-                            <div class="col-6 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                            <div class="col-6 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                        </div>
-                        <div class="row no-gutters">
-                            <div class="col-4 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                            <div class="col-4 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
-                            </div>
-                            <div class="col-4 p-1">
-                                <img class="img-fluid" src="img/photo-12.png">
+                            <div class="row no-gutters">
+                                <div class="col-4">
+                                    <div class="img-container">
+                                       <img src="img/4.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div id="rp-wood-1"></div>
+                                    <div class="img-container">
+                                       <img src="img/4.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="img-container">
+                                       <img src="img/10.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <h4 class="custom-header">Гра світла та тіні в кожній деталі</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    
-    <script type="text/javascript">
-        function loadAnim() {
-            document.getElementById("back-bg-animated").style.width = window.innerWidth/12*5 + "px";
-            document.getElementById("back-bg-animated").style.opacity = 0;
-            setTimeout('zindexToNull()', 3000);  
-        }
-        
-        function zindexToNull() {
-            document.getElementById("back-bg-animated").style.zIndex = 0;
-        }
-
-        $(document).ready(function(){
-      		$('.text-slider').slick({
-        		//vertical: true,
-                fade: true,
-        		swipe: false,
-        		speed: 1500,
-        		prevArrow: '#arrow-down',
-        		nextArrow: '#arrow-up',
-        		asNavFor: '.img-slider',
-                autoplay: true,
-                autoplaySpeed: 6000,
-                focusOnSelect: false
-      		});
-
-      		$('.img-slider').slick({
-                swipe: false,
-        		vertical: true,
-        		verticalSwiping: true,
-        		draggable: false,
-        		speed: 1500,
-        		zIndex: -1,
-        		prevArrow: false,
-        		nextArrow: false,
-        		asNavFor: '.text-slider',
-                autoplay: true,
-                autoplaySpeed: 6000,
-                touchMove: true,
-                focusOnSelect: false
-      		});
-    	});
-
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                scrollingSpeed: 1300,
-            });
-        });
-    </script>
-</body>
+       
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>

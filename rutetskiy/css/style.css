@@ -552,3 +552,7 @@
     height: 100vh;
     background-color: #101010;
 }
+.full-grey {
+    height: 100vh;
+    background-color: #bbb;
+}
