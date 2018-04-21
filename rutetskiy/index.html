@@ -9,11 +9,27 @@
 
         <title>Rutetskiy Layer Designs</title>
         <link rel="icon" type="image/png" href="img/favicon.png">
+        <style>
+        	
+        </style>
     </head>
 
     <body>
-        <div class="grey-line left"></div>
-        <div class="grey-line right"></div>
+        <div class="grey-line left">
+        	<div class="toggleButton" onclick="toggleFunction(this)">
+			    <div class="bar1"></div>
+			    <div class="bar2"></div>
+			    <div class="bar3"></div>
+			</div>
+        	<div class="center-container" style="height: 100%;">
+        		<img src="img/logo128.png" alt="logo" class="logo"/>
+        	</div>
+        </div>
+        <div class="grey-line right center-vertical-container transition">
+    		<h5 class="custom-header-2" id="footerClick">контакти</h5>
+    		<h5 class="custom-header-2">про нас</h5>
+    		<h5 class="custom-header-2">біле<span style="color: #EBEBEB;">/чорне<span></h5>
+        </div>
         <div class="container-fluid px-0">
             <div class="row no-gutters justify-content-center">
                 <div class="col-md-6">
@@ -74,7 +90,7 @@
                                     <div class="img-container">
                                        <img src="img/10.jpg" alt="" class="img-fluid">
                                     </div>
-                                    <h4 class="custom-header">Гра світла та тіні в кожній деталі</h4>
+                                    <h4 class="custom-header">Багатошарові картини з дерева</h4>
                                 </div>
                             </div>
                         </div>
@@ -82,9 +98,33 @@
                 </div>
             </div>
         </div>
+        <div class="footer center-container transition">
+        	<h6 class="footer-text">contact us</h6>
+        	<h6 class="footer-text">-</h6>
+        	<h6 class="footer-text">+38 (096) 65 32 586</h6>
+        	<h6 class="footer-text">-</h6>
+        	<h6 class="footer-text">rutetskiydesign@gmail.com</h6>
+        	<h6 class="footer-text">-</h6>
+			<h6 class="footer-text">Ternopil, Ukraine</h6>
+        	<h6 class="footer-text">-</h6>
+        	<h6 class="footer-text">facebook</h6>
+        	<h6 class="footer-text">-</h6>
+        	<h6 class="footer-text">instagram</h6>
+        </div>
        
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <script>
+        	$("#footerClick").click(function () {
+        		$('.transition').toggleClass('footer-transition');
+        	});
+
+        	function toggleFunction(x) {
+			    x.classList.toggle("change");
+			    $('.transition').toggleClass('menu-transition');
+			}
+        </script>
     </body>
 </html>

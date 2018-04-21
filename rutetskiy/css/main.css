@@ -22,10 +22,55 @@
     .col-right {
         padding-right: 5px !important;
     }
+
+    .footer {
+        bottom: -6%;
+    }
 }
 
 @media screen and (max-width: 767px) { 
+    .grey-line {
+        height: 10vh;
+        width: 100%;
+    }
+
+    .logo {
+        height: 90%;
+    }
+
+    .right {
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(46, 46, 46, 0.5);
+        z-index: 1;
+    }
+
+    .right h5 {
+        color: #EBEBEB;
+        margin: 3vh;
+    }
+
+    .menu-transition {
+        left: 0%;
+    }
+
+    .pt-custom {
+        padding-top: 0px !important;
+    }
+
+    .toggleButton {
+        visibility: visible !important;
+    }
     
+    .footer {
+        z-index: 2;
+        flex-direction: column;
+        height: 50% !important;
+        bottom: -50%;
+    }
 }
 
 .img-container {
@@ -62,4 +107,83 @@
     margin-top: 20px;
     margin-bottom: 10px;
     color: #696969;
+}
+
+.custom-header-2 {
+    font-family: 'Roboto Thin', sans-serif;
+    text-transform: uppercase;
+    margin: 5px; 
+    color: #696969;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-vertical-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-text {
+    margin: 0 1% 0 1%;
+    color: white;
+    font-family: 'Roboto Thin', sans-serif;
+}
+
+.footer {
+    width: 100%;
+    height: 6%;
+    position: fixed;
+    background-color: #2E2E2E;
+}
+
+.transition {
+    -webkit-transition: all 1s ease;  
+    -moz-transition: all 1s ease;  
+    -o-transition: all 1s ease;  
+    -ms-transition: all 1s ease;  
+    transition: all 1s ease;
+}
+
+.footer-transition {
+    bottom: 0;
+}
+
+.toggleButton {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 16px;
+    top: calc(10vh/2 - 18px);
+    z-index: 2;
+    visibility: hidden;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #1C1815;
+    margin: 6px 0;
+    transition: 1s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 6px);
+    transform: rotate(-45deg) translate(-3px, 6px);
+    background-color: #EBEBEB;
+    position: fixed;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+    background-color: #EBEBEB;
+    position: fixed;
 }
