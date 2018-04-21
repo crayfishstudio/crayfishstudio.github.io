@@ -34,6 +34,16 @@
         width: 100%;
     }
 
+    .pt-custom {
+        margin-top: 10vh !important;
+    }
+
+    .left {
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+    }
+
     .logo {
         height: 90%;
     }
@@ -157,10 +167,10 @@
 .toggleButton {
     display: inline-block;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     margin-left: 16px;
     top: calc(10vh/2 - 18px);
-    z-index: 2;
+    z-index: 2 !important;
     visibility: hidden;
 }
 
