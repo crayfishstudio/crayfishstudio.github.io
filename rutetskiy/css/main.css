@@ -83,6 +83,10 @@
     }
 }
 
+body {
+    background-color: #F9F5F1;
+}
+
 .img-container {
     margin: 5px;
     padding: 10px;
@@ -124,6 +128,13 @@
     text-transform: uppercase;
     margin: 5px; 
     color: #696969;
+}
+
+.custom-header-3 {
+    font-family: 'Roboto Thin', sans-serif;
+    margin: 5px; 
+    color: #696969;
+    text-align: center;
 }
 
 .center-container {
@@ -196,4 +207,82 @@
     transform: rotate(45deg) translate(-6px, -8px);
     background-color: #EBEBEB;
     position: fixed;
+}
+
+.exit {
+    position: fixed;
+    padding-top: 17px;
+    height: 5vh;
+    width: 6vw;
+    top: 10vh;
+    right: calc(100vw/8 - 3vw);
+    z-index: 3;
+}
+
+.line1 {
+    margin: auto;
+    height: 1px;
+    width: 35px;
+    transform: rotate(45deg);
+    background-color: #707070;
+}
+
+.line2 {
+    margin: auto;
+    height: 1px;
+    width: 35px;
+    transform: rotate(-45deg);
+    background-color: #707070;
+}
+
+.custom-content-2 {
+    height: 100%;
+    width: 50vw;
+    background-color: #F9F5F1;
+}
+
+.horizontal-padding-5 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-05 {
+    padding: 0.5vw;
+}
+
+.buy-button {
+    position: absolute;
+    border: 1px solid #707070;
+    width: 12vw;
+    right: 47%;
+}
+
+.buy-button-square {
+    background-color: #FFC98F; 
+    height: 18px; 
+    width: 18px; 
+    margin-left: 8px;
+}
+
+.buy-content {
+    margin: auto;
+}
+
+.buy-content h5 {
+    text-align: center; 
+    height: 24px;
+}
+
+.buy-details {
+    position: absolute;
+    left: 54%;
+}
+
+.buy-details p {
+    color: #B1B1B1;
+    font-size: 12px;
 }

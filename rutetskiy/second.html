@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <title>Floral Garden</title>
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+
+    <body>
+        <div class="toggleButton" onclick="toggleFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="grey-line left">
+            <div class="center-container" style="height: 100%;">
+                <img src="img/logo128.png" alt="logo" class="logo"/>
+            </div>
+        </div>
+        <div class="exit">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+        <div class="grey-line right center-vertical-container transition">
+            <h5 class="custom-header-2" id="footerClick">контакти</h5>
+            <h5 class="custom-header-2">про нас</h5>
+            <h5 class="custom-header-2">біле<span style="color: #EBEBEB;">/чорне<span></h5>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <div class="custom-content-2">
+                    <h1 class="custom-header-3">Floral Garden</h1>
+
+                    <div class="row justify-content-md-center horizontal-padding-5">
+                        <div class="col-md-6 padding-0">
+                            <img src="img/2.jpg" class="img-fluid padding-05">
+                            <img src="img/3.jpg" class="img-fluid padding-05">
+                        </div>
+                        <div class="col-md-4 padding-0">
+                            <img src="img/3.jpg" class="img-fluid padding-05">
+                            <img src="img/3.jpg" class="img-fluid padding-05">
+                            <p class="padding-05" style="font-size: 12px;">Неймовірний рослинний візерунок та симетрія форм, прикрасить сучасний інтерєр та додасть нотку оригінальності.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="padding-top: 2vw;">
+                        <div class="center-container buy-button">
+                            <div class="buy-button-square"></div>
+                            <div class="buy-content">
+                                <h5 class="custom-header-2">Замовити</h5>
+                            </div>
+                        </div>
+
+                        <div class="buy-details">
+                            <p>
+                                - Вага: 1кг<br/>
+                                - Розмір: 100x100 см.<br/>
+                                - Інше: 1253
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer center-container transition" style="left: 0;">
+            <h6 class="footer-text">contact us</h6>
+            <h6 class="footer-text">-</h6>
+            <h6 class="footer-text">+38 (096) 65 32 586</h6>
+            <h6 class="footer-text">-</h6>
+            <h6 class="footer-text">rutetskiydesign@gmail.com</h6>
+            <h6 class="footer-text">-</h6>
+            <h6 class="footer-text">Ternopil, Ukraine</h6>
+            <h6 class="footer-text">-</h6>
+            <h6 class="footer-text">facebook</h6>
+            <h6 class="footer-text">-</h6>
+            <h6 class="footer-text">instagram</h6>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            $("#footerClick").click(function () {
+                $('.transition').toggleClass('footer-transition');
+            });
+
+            function toggleFunction(x) {
+                x.classList.toggle("change");
+                $('.transition').toggleClass('menu-transition');
+            }
+        </script>
+    </body>
+</html>
