@@ -103,7 +103,7 @@ body {
 #rp-grey-1 {
     width: calc(100% - 10px);
     height: calc(100vh/15);
-    background-color: #fafafa;
+    background-color: #f0f0f0;
     margin: 5px;
 }
 
