@@ -13,39 +13,39 @@
 
     <body>
         <div class="toggleButton" onclick="toggleFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
         <div class="grey-line left">
             <div class="center-container" style="height: 100%;">
-                <img src="img/logo128.png" alt="logo" class="logo"/>
+                <img src="img/logo128.png" alt="logo" class="logo" onclick="goHome()" />
             </div>
         </div>
-        <div class="exit">
+        <a href="index.html" class="exit">
             <div class="line1"></div>
             <div class="line2"></div>
-        </div>
+        </div></a>
         <div class="grey-line right center-vertical-container transition">
-            <h5 class="custom-header-2" id="footerClick">контакти</h5>
-            <h5 class="custom-header-2">про нас</h5>
-            <h5 class="custom-header-2">біле<span style="color: #EBEBEB;">/чорне<span></h5>
+            <a class="custom-link" id="footerClick" style="font-size: 20px;">контакти</a>
+            <a class="custom-link" style="font-size: 20px;">про нас</a>
+            <a class="custom-link" style="font-size: 20px;">біле<span class="colors-changer">/чорне<span></a>
         </div>
 
         <div class="container-fluid">
             <div class="row no-gutters justify-content-center">
                 <div class="custom-content-2">
-                    <h1 class="custom-header-3">Floral Garden</h1>
+                    <h1 class="custom-header-3 margin-vertical-12">Floral Garden</h1>
 
                     <div class="row justify-content-md-center horizontal-padding-5">
                         <div class="col-md-6 padding-0">
-                            <img src="img/2.jpg" class="img-fluid padding-05">
-                            <img src="img/3.jpg" class="img-fluid padding-05">
+                            <img id="myImg" src="img/2.jpg" class="img-fluid padding-05 margin-vertical-12" onclick="zoomImage(this)">
+                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12" onclick="zoomImage(this)">
                         </div>
                         <div class="col-md-4 padding-0">
-                            <img src="img/3.jpg" class="img-fluid padding-05">
-                            <img src="img/3.jpg" class="img-fluid padding-05">
-                            <p class="padding-05" style="font-size: 12px;">Неймовірний рослинний візерунок та симетрія форм, прикрасить сучасний інтерєр та додасть нотку оригінальності.</p>
+                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12" onclick="zoomImage(this)">
+                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12" onclick="zoomImage(this)">
+                            <p class="padding-05 margin-vertical-12" style="font-size: 12px;">Неймовірний рослинний візерунок та симетрія форм, прикрасить сучасний інтерєр та додасть нотку оригінальності.</p>
                         </div>
                     </div>
                     
@@ -53,11 +53,11 @@
                         <div class="center-container buy-button">
                             <div class="buy-button-square"></div>
                             <div class="buy-content">
-                                <h5 class="custom-header-2">Замовити</h5>
+                                <a class="custom-link-3" style="font-size: 20px;">Замовити</a>
                             </div>
                         </div>
 
-                        <div class="buy-details">
+                        <div class="buy-details center-container">
                             <p>
                                 - Вага: 1кг<br/>
                                 - Розмір: 100x100 см.<br/>
@@ -70,18 +70,23 @@
         </div>
         </div>
 
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="img-fluid" id="img01" style="margin: auto; display: block;">
+        </div>
+
         <div class="footer center-container transition" style="left: 0;">
-            <h6 class="footer-text">contact us</h6>
-            <h6 class="footer-text">-</h6>
-            <h6 class="footer-text">+38 (096) 65 32 586</h6>
-            <h6 class="footer-text">-</h6>
-            <h6 class="footer-text">rutetskiydesign@gmail.com</h6>
-            <h6 class="footer-text">-</h6>
-            <h6 class="footer-text">Ternopil, Ukraine</h6>
-            <h6 class="footer-text">-</h6>
-            <h6 class="footer-text">facebook</h6>
-            <h6 class="footer-text">-</h6>
-            <h6 class="footer-text">instagram</h6>
+            <a class="custom-link-2">contact us</a>
+            <a class="custom-link-2">-</a>
+            <a class="custom-link-2">+38 (096) 65 32 586</a>
+            <a class="custom-link-2">-</a>
+            <a class="custom-link-2">rutetskiydesign@gmail.com</a>
+            <a class="custom-link-2">-</a>
+            <a class="custom-link-2">Ternopil, Ukraine</a>
+            <a class="custom-link-2">-</a>
+            <a class="custom-link-2">facebook</a>
+            <a class="custom-link-2">-</a>
+            <a class="custom-link-2">instagram</a>
         </div>
 
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -96,6 +101,29 @@
             function toggleFunction(x) {
                 x.classList.toggle("change");
                 $('.transition').toggleClass('menu-transition');
+            }
+
+            function goHome() {
+                location.href = "index.html";
+            }
+
+            function zoomImage(x) {
+                var modal = document.getElementById('myModal');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = x;
+                var modalImg = document.getElementById("img01");            
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    modal.style.display = "none";
+                }
             }
         </script>
     </body>

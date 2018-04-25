@@ -2,7 +2,7 @@
     .grey-line {
         position: fixed;
         height: 100vh;
-        width: calc(100vw/4);
+        width: calc(100vw/6);
         top: 0;
         background-color: #fafafa;
     }
@@ -58,7 +58,7 @@
         z-index: 1;
     }
 
-    .right h5 {
+    .right a {
         color: #EBEBEB;
         margin: 3vh;
     }
@@ -81,10 +81,64 @@
         height: 50% !important;
         bottom: -50%;
     }
+
+    .exit {
+        top: 2vh !important;
+    }
+
+    .custom-content-2 {
+        margin-top: 10vh;
+        width: 100% !important;
+    }
+
+    .custom-header-3 {
+        font-size: 32px;
+    }
+
+    .margin-vertical-12 {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .buy-button {
+        width: calc(88% + 2px) !important;
+        right: calc(6% - 1px) !important;
+    }
+
+    .buy-details {
+        position: static !important;
+        margin-top: 50px;
+    }
+
+    .custom-link {
+        color: #EBEBEB !important;
+    }
+
+    .colors-changer {
+        color: #696969 !important;
+    }
 }
 
 body {
     background-color: #F9F5F1;
+}
+
+.custom-link {
+    font-family: 'Roboto Thin', sans-serif;
+    text-transform: uppercase;
+    margin: 5px; 
+    color: #696969;
+}
+
+.custom-link-3 {
+    font-family: 'Roboto Thin', sans-serif;
+    text-transform: uppercase;
+    margin: 5px; 
+    color: #696969;
+}
+
+.colors-changer {
+    color: #EBEBEB;
 }
 
 .img-container {
@@ -150,9 +204,9 @@ body {
     flex-direction: column;
 }
 
-.footer-text {
+.custom-link-2 {
     margin: 0 1% 0 1%;
-    color: white;
+    color: #EBEBEB !important;
     font-family: 'Roboto Thin', sans-serif;
 }
 
@@ -175,6 +229,9 @@ body {
     bottom: 0;
 }
 
+
+/* START TOGGLE Button*/
+
 .toggleButton {
     display: inline-block;
     cursor: pointer;
@@ -185,7 +242,7 @@ body {
     visibility: hidden;
 }
 
-.bar1, .bar2, .bar3 {
+.bar {
     width: 35px;
     height: 4px;
     background-color: #1C1815;
@@ -193,21 +250,23 @@ body {
     transition: 1s;
 }
 
-.change .bar1 {
+.change .bar:nth-of-type(1) {
     -webkit-transform: rotate(-45deg) translate(-3px, 6px);
     transform: rotate(-45deg) translate(-3px, 6px);
     background-color: #EBEBEB;
     position: fixed;
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar:nth-of-type(2) {opacity: 0;}
 
-.change .bar3 {
+.change .bar:nth-of-type(3) {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
     background-color: #EBEBEB;
     position: fixed;
 }
+
+/* END TOGGLE Button */
 
 .exit {
     position: fixed;
@@ -215,7 +274,7 @@ body {
     height: 5vh;
     width: 6vw;
     top: 10vh;
-    right: calc(100vw/8 - 3vw);
+    right: calc(100vw/12 - 3vw);
     z-index: 3;
 }
 
@@ -285,4 +344,57 @@ body {
 .buy-details p {
     color: #B1B1B1;
     font-size: 12px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+
+/* Add Animation */
+#img01 {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
