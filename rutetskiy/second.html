@@ -12,30 +12,30 @@
     </head>
 
     <body>
-        <div id="tg" class="toggleButton" onclick="toggleFunction(this)">
+        <div id="toggle" class="toggleButton" onclick="toggleFunction(this)">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
         <div class="grey-line left">
             <div class="center-container" style="height: 100%;">
-                <img alt="logo" class="logo img-fluid" onclick="goHome()" />
+                <img id="logo" alt="logo" class="img-fluid" onclick="goHome()" />
             </div>
         </div>
-        <a href="index.html" class="exit">
-            <div class="line1"></div>
-            <div class="line2"></div>
-        </div></a>
+        <a href="index.html" class="exitToIndex">
+            <div></div>
+            <div></div>
+        </a>
         <div class="grey-line right center-vertical-container transition">
-            <a href="#" class="custom-link" id="footerClick" style="font-size: 20px;">контакти</a>
-            <a href="#" class="custom-link" style="font-size: 20px;">про нас</a>
-            <a href="#" class="custom-link" style="font-size: 20px;">біле<span class="colors-changer">/чорне<span></a>
+            <a href="#" id="footerClick">контакти</a>
+            <a href="#">про нас</a>
+            <a href="#">біле/<span class="colors-changer">чорне</span></a>
         </div>
 
         <div class="container-fluid">
             <div class="row no-gutters justify-content-center">
-                <div class="custom-content-2">
-                    <h1 class="custom-header-3 margin-vertical-12">Floral Garden</h1>
+                <div class="custom-content">
+                    <h1 class="custom-header-2 margin-vertical-12">Floral Garden</h1>
 
                     <div class="row justify-content-md-center horizontal-padding-5">
                         <div class="col-md-6 padding-0">
@@ -75,22 +75,22 @@
             <img class="img-fluid" id="img01" style="margin: auto; display: block;">
         </div>
 
-        <div class="footer center-container transition" style="left: 0;">
-            <a class="custom-link-2">contact us</a>
-            <a class="custom-link-2">-</a>
-            <a class="custom-link-2">+38 (096) 65 32 586</a>
-            <a class="custom-link-2">-</a>
-            <a class="custom-link-2">rutetskiydesign@gmail.com</a>
-            <a class="custom-link-2">-</a>
-            <a class="custom-link-2">Ternopil, Ukraine</a>
-            <a class="custom-link-2">-</a>
-            <a href="#" class="custom-link-2">facebook</a>
-            <a href="#" class="custom-link-2">-</a>
-            <a href="#" class="custom-link-2">instagram</a>
+        <div class="footer center-container transition">
+            <a class="custom-link">contact us</a>
+            <a class="custom-link">-</a>
+            <a class="custom-link">+38 (096) 65 32 586</a>
+            <a class="custom-link">-</a>
+            <a class="custom-link">rutetskiydesign@gmail.com</a>
+            <a class="custom-link">-</a>
+            <a class="custom-link">Ternopil, Ukraine</a>
+            <a class="custom-link">-</a>
+            <a href="#" class="custom-link">facebook</a>
+            <a class="custom-link">-</a>
+            <a href="#" class="custom-link">instagram</a>
 
-            <div id="sada" class="closecontacts">
-                <div class="tt"></div>
-                <div class="ttt"></div>
+            <div id="bottomContactsExit" class="closeContacts">
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
         </div>
 
@@ -103,11 +103,11 @@
                 $('.transition').toggleClass('footer-transition');
 
                 if ($(window).width() < 768) {
-                    document.getElementById("tg").click();
+                    document.getElementById("toggle").click();
                 }
             });
 
-            $("#sada").click(function () {
+            $("#bottomContactsExit").click(function () {
                 $('.transition').toggleClass('footer-transition');              
             });
 
@@ -117,16 +117,16 @@
             }
 
             if ($(window).width() < 767) {
-                $(".logo").attr("src","img/logo32x32.png");
+                $("#logo").attr("src","img/logo32x32.png");
             } else {
-                $(".logo").attr("src","img/logo128.png");
+                $("#logo").attr("src","img/logo128.png");
             }
 
             $(window).resize(function() {
                 if ($(window).width() < 767) {
-                    $(".logo").attr("src","img/logo32x32.png");
+                    $("#logo").attr("src","img/logo32x32.png");
                 } else {
-                    $(".logo").attr("src","img/logo128.png");
+                    $("#logo").attr("src","img/logo128.png");
                 }
             });
 

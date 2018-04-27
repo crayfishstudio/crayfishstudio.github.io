@@ -12,14 +12,14 @@
     </head>
 
     <body>
-    	<div id="tg" class="toggleButton" onclick="toggleFunction(this)">
+    	<div id="toggle" class="toggleButton" onclick="toggleFunction(this)">
 		    <div class="bar"></div>
 		    <div class="bar"></div>
 		    <div class="bar"></div>
 		</div>
         <div class="grey-line left">
         	<div class="center-container" style="height: 100%;">
-        		<img alt="logo" class="logo img-fluid"/>
+        		<img id="logo" alt="logo" class="img-fluid"/>
         	</div>
         </div>
         <div class="grey-line right center-vertical-container transition">
@@ -27,6 +27,7 @@
     		<a href="#">про нас</a>
     		<a href="#">біле/<span class="colors-changer">чорне</span></a>
         </div>
+
         <div class="container-fluid px-0">
             <div class="row no-gutters justify-content-center">
                 <div class="col-md-6" style="height: 100%;">
@@ -95,26 +96,27 @@
                 </div>
             </div>
         </div>
-        <div class="footer center-container transition">
-        	<a class="custom-link-2">contact us</a>
-        	<a class="custom-link-2">-</a>
-        	<a class="custom-link-2">+38 (096) 65 32 586</a>
-        	<a class="custom-link-2">-</a>
-        	<a class="custom-link-2">rutetskiydesign@gmail.com</a>
-        	<a class="custom-link-2">-</a>
-			<a class="custom-link-2">Ternopil, Ukraine</a>
-        	<a class="custom-link-2">-</a>
-        	<a href="#" class="custom-link-2">facebook</a>
-        	<a href="#" class="custom-link-2">-</a>
-        	<a href="#" class="custom-link-2">instagram</a>
 
-        	<div id="sada" class="closecontacts">
-        		<div class="tt"></div>
-        		<div class="ttt"></div>
+        <div class="footer center-container transition">
+        	<a class="custom-link">contact us</a>
+        	<a class="custom-link">-</a>
+        	<a class="custom-link">+38 (096) 65 32 586</a>
+        	<a class="custom-link">-</a>
+        	<a class="custom-link">rutetskiydesign@gmail.com</a>
+        	<a class="custom-link">-</a>
+			<a class="custom-link">Ternopil, Ukraine</a>
+        	<a class="custom-link">-</a>
+        	<a href="#" class="custom-link">facebook</a>
+        	<a class="custom-link">-</a>
+        	<a href="#" class="custom-link">instagram</a>
+
+        	<div id="bottomContactsExit" class="closeContacts">
+        		<div class="line"></div>
+        		<div class="line"></div>
         	</div>
         </div>
        
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
@@ -123,11 +125,11 @@
         		$('.transition').toggleClass('footer-transition');
 
         		if ($(window).width() < 768) {
-        			document.getElementById("tg").click();
+        			document.getElementById("toggle").click();
         		}
         	});
 
-        	$("#sada").click(function () {
+        	$("#bottomContactsExit").click(function () {
 				$('.transition').toggleClass('footer-transition');        		
         	});
 
@@ -137,16 +139,16 @@
 			}
 
 			if ($(window).width() < 767) {
-				$(".logo").attr("src","img/logo32x32.png");
+				$("#logo").attr("src","img/logo32x32.png");
 			} else {
-				$(".logo").attr("src","img/logo128.png");
+				$("#logo").attr("src","img/logo128.png");
 			}
 
 			$(window).resize(function() {
 				if ($(window).width() < 767) {
-					$(".logo").attr("src","img/logo32x32.png");
+					$("#logo").attr("src","img/logo32x32.png");
 				} else {
-					$(".logo").attr("src","img/logo128.png");
+					$("#logo").attr("src","img/logo128.png");
 				}
 			});
         </script>
