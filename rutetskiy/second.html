@@ -12,14 +12,14 @@
     </head>
 
     <body>
-        <div class="toggleButton" onclick="toggleFunction(this)">
+        <div id="tg" class="toggleButton" onclick="toggleFunction(this)">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
         <div class="grey-line left">
             <div class="center-container" style="height: 100%;">
-                <img src="img/logo128.png" alt="logo" class="logo" onclick="goHome()" />
+                <img alt="logo" class="logo img-fluid" onclick="goHome()" />
             </div>
         </div>
         <a href="index.html" class="exit">
@@ -27,9 +27,9 @@
             <div class="line2"></div>
         </div></a>
         <div class="grey-line right center-vertical-container transition">
-            <a class="custom-link" id="footerClick" style="font-size: 20px;">контакти</a>
-            <a class="custom-link" style="font-size: 20px;">про нас</a>
-            <a class="custom-link" style="font-size: 20px;">біле<span class="colors-changer">/чорне<span></a>
+            <a href="#" class="custom-link" id="footerClick" style="font-size: 20px;">контакти</a>
+            <a href="#" class="custom-link" style="font-size: 20px;">про нас</a>
+            <a href="#" class="custom-link" style="font-size: 20px;">біле<span class="colors-changer">/чорне<span></a>
         </div>
 
         <div class="container-fluid">
@@ -84,9 +84,14 @@
             <a class="custom-link-2">-</a>
             <a class="custom-link-2">Ternopil, Ukraine</a>
             <a class="custom-link-2">-</a>
-            <a class="custom-link-2">facebook</a>
-            <a class="custom-link-2">-</a>
-            <a class="custom-link-2">instagram</a>
+            <a href="#" class="custom-link-2">facebook</a>
+            <a href="#" class="custom-link-2">-</a>
+            <a href="#" class="custom-link-2">instagram</a>
+
+            <div id="sada" class="closecontacts">
+                <div class="tt"></div>
+                <div class="ttt"></div>
+            </div>
         </div>
 
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -96,12 +101,34 @@
         <script>
             $("#footerClick").click(function () {
                 $('.transition').toggleClass('footer-transition');
+
+                if ($(window).width() < 768) {
+                    document.getElementById("tg").click();
+                }
+            });
+
+            $("#sada").click(function () {
+                $('.transition').toggleClass('footer-transition');              
             });
 
             function toggleFunction(x) {
                 x.classList.toggle("change");
                 $('.transition').toggleClass('menu-transition');
             }
+
+            if ($(window).width() < 767) {
+                $(".logo").attr("src","img/logo32x32.png");
+            } else {
+                $(".logo").attr("src","img/logo128.png");
+            }
+
+            $(window).resize(function() {
+                if ($(window).width() < 767) {
+                    $(".logo").attr("src","img/logo32x32.png");
+                } else {
+                    $(".logo").attr("src","img/logo128.png");
+                }
+            });
 
             function goHome() {
                 location.href = "index.html";

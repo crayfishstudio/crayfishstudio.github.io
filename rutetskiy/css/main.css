@@ -26,11 +26,32 @@
     .footer {
         bottom: -6%;
     }
+
+    .right > a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #101010;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .right > a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
 }
 
 @media screen and (max-width: 767px) { 
     .grey-line {
-        height: 10vh;
+        height: 70px;
         width: 100%;
     }
 
@@ -44,17 +65,13 @@
         background-color: white;
     }
 
-    .logo {
-        height: 90%;
-    }
-
     .right {
         position: fixed;
         top: 0;
         left: -100vw;
         height: 100vh;
         width: 100vw;
-        background: rgba(46, 46, 46, 0.5);
+        background: rgba(46, 46, 46, 0.8);
         z-index: 1;
     }
 
@@ -73,21 +90,22 @@
 
     .toggleButton {
         visibility: visible !important;
+        top: 0 !important;
     }
     
     .footer {
         z-index: 2;
         flex-direction: column;
-        height: 50% !important;
-        bottom: -50%;
+        height: 100% !important;
+        bottom: -100%;
     }
 
     .exit {
-        top: 2vh !important;
+        top: 17px !important;
     }
 
     .custom-content-2 {
-        margin-top: 10vh;
+        margin-top: 70px;
         width: 100% !important;
     }
 
@@ -110,12 +128,37 @@
         margin-top: 50px;
     }
 
-    .custom-link {
+    .right > a {
         color: #EBEBEB !important;
     }
 
     .colors-changer {
         color: #696969 !important;
+    }
+
+    .closecontacts {
+        position: absolute;
+        padding-top: 5vh;
+        height: 10vh;
+        width: 10vh;
+        bottom: 5vh;
+        cursor: pointer;
+    }
+    
+    .tt {
+        margin: auto;
+        height: 1px;
+        width: 35px;
+        transform: rotate(45deg);
+        background-color: white;
+    }
+
+    .ttt {
+        margin: auto;
+        height: 1px;
+        width: 35px;
+        transform: rotate(-45deg);
+        background-color: white;
     }
 }
 
@@ -123,10 +166,17 @@ body {
     background-color: #F9F5F1;
 }
 
-.custom-link {
+.right > a {
     font-family: 'Roboto Thin', sans-serif;
     text-transform: uppercase;
-    margin: 5px; 
+    margin: 5px;
+    font-size: 20px;
+    color: #696969;
+    text-decoration: none;
+    position: relative;
+}
+
+.right > a:hover {
     color: #696969;
 }
 
@@ -138,7 +188,7 @@ body {
 }
 
 .colors-changer {
-    color: #EBEBEB;
+    color: #B1B1B1;
 }
 
 .img-container {
@@ -210,6 +260,10 @@ body {
     font-family: 'Roboto Thin', sans-serif;
 }
 
+.custom-link-2:hover {
+    text-decoration: none;
+}
+
 .footer {
     width: 100%;
     height: 6%;
@@ -233,37 +287,67 @@ body {
 /* START TOGGLE Button*/
 
 .toggleButton {
+    height: 70px;
+    width: 70px;
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    margin-left: 16px;
-    top: calc(10vh/2 - 18px);
+    top: -100px;
     z-index: 2 !important;
     visibility: hidden;
 }
 
 .bar {
     width: 35px;
-    height: 4px;
+    height: 3px;
     background-color: #1C1815;
-    margin: 6px 0;
     transition: 1s;
+    position: absolute;
+    left: 30%;
+}
+
+.bar:nth-of-type(1) {
+    top: calc(32% + 1px);
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.bar:nth-of-type(2) {
+    top: 50%;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.bar:nth-of-type(3) {
+    top: 68%;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
 }
 
 .change .bar:nth-of-type(1) {
-    -webkit-transform: rotate(-45deg) translate(-3px, 6px);
-    transform: rotate(-45deg) translate(-3px, 6px);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
     background-color: #EBEBEB;
-    position: fixed;
 }
 
-.change .bar:nth-of-type(2) {opacity: 0;}
+.change .bar:nth-of-type(2) {
+    opacity: 0;
+}
 
 .change .bar:nth-of-type(3) {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     background-color: #EBEBEB;
-    position: fixed;
 }
 
 /* END TOGGLE Button */
@@ -275,7 +359,7 @@ body {
     width: 6vw;
     top: 10vh;
     right: calc(100vw/12 - 3vw);
-    z-index: 3;
+    z-index: 2;
 }
 
 .line1 {
