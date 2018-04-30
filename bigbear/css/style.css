@@ -1,0 +1,23 @@
+@media screen and (min-width: 992px) {
+    #mobile-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #desktop-logo {
+        display: none;
+    }
+}
+
+#custom-navbar li {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.navbar-shadowed {
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.16);
+}
