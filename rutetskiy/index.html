@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -9,38 +9,34 @@
 
         <title>Rutetskiy Layer Designs</title>
         <link rel="icon" type="image/png" href="img/favicon.png">
-        <style>
-        	
-        </style>
     </head>
 
     <body>
-        <!--<div class="grey-line left"></div>
-        <div class="grey-line right"></div>-->
-    	<div class="toggleButton" onclick="toggleFunction(this)">
-			    <div class="bar1"></div>
-			    <div class="bar2"></div>
-			    <div class="bar3"></div>
-			</div>
+    	<div id="toggle" class="toggleButton" onclick="toggleFunction(this)">
+		    <div class="bar"></div>
+		    <div class="bar"></div>
+		    <div class="bar"></div>
+		</div>
         <div class="grey-line left">
         	<div class="center-container" style="height: 100%;">
-        		<img src="img/logo128.png" alt="logo" class="logo"/>
+        		<img id="logo" alt="logo" class="img-fluid"/>
         	</div>
         </div>
         <div class="grey-line right center-vertical-container transition">
-    		<h5 class="custom-header-2" id="footerClick">контакти</h5>
-    		<h5 class="custom-header-2">про нас</h5>
-    		<h5 class="custom-header-2">біле<span style="color: #EBEBEB;">/чорне<span></h5>
+    		<a href="#" id="footerClick">контакти</a>
+    		<a href="#">про нас</a>
+    		<a href="#">біле/<span class="colors-changer">чорне</span></a>
         </div>
+
         <div class="container-fluid px-0">
             <div class="row no-gutters justify-content-center">
-                <div class="col-md-6">
+                <div class="col-md-6" style="height: 100%;">
                     <div class="row no-gutters pt-custom">
                         <div class="col-md-6 col-left">
                            <div class="row no-gutters">
                                <div class="col-8">
                                    <div class="img-container">
-                                       <img src="img/3.jpg" alt="" class="img-fluid">
+                                       <a href="second.html"><img src="img/3.jpg" alt="" class="img-fluid"></a>
                                    </div>
                                    <h4 class="custom-header">Гра світла та тіні в кожній деталі</h4>
                                </div>
@@ -100,33 +96,61 @@
                 </div>
             </div>
         </div>
+
         <div class="footer center-container transition">
-        	<h6 class="footer-text">contact us</h6>
-        	<h6 class="footer-text">-</h6>
-        	<h6 class="footer-text">+38 (096) 65 32 586</h6>
-        	<h6 class="footer-text">-</h6>
-        	<h6 class="footer-text">rutetskiydesign@gmail.com</h6>
-        	<h6 class="footer-text">-</h6>
-			<h6 class="footer-text">Ternopil, Ukraine</h6>
-        	<h6 class="footer-text">-</h6>
-        	<h6 class="footer-text">facebook</h6>
-        	<h6 class="footer-text">-</h6>
-        	<h6 class="footer-text">instagram</h6>
+        	<a class="custom-link">contact us</a>
+        	<a class="custom-link">-</a>
+        	<a class="custom-link">+38 (096) 65 32 586</a>
+        	<a class="custom-link">-</a>
+        	<a class="custom-link">rutetskiydesign@gmail.com</a>
+        	<a class="custom-link">-</a>
+			<a class="custom-link">Ternopil, Ukraine</a>
+        	<a class="custom-link">-</a>
+        	<a href="#" class="custom-link">facebook</a>
+        	<a class="custom-link">-</a>
+        	<a href="#" class="custom-link">instagram</a>
+
+        	<div id="bottomContactsExit" class="closeContacts">
+        		<div class="line"></div>
+        		<div class="line"></div>
+        	</div>
         </div>
        
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
         <script>
         	$("#footerClick").click(function () {
         		$('.transition').toggleClass('footer-transition');
+
+        		if ($(window).width() < 768) {
+        			document.getElementById("toggle").click();
+        		}
+        	});
+
+        	$("#bottomContactsExit").click(function () {
+				$('.transition').toggleClass('footer-transition');        		
         	});
 
         	function toggleFunction(x) {
 			    x.classList.toggle("change");
 			    $('.transition').toggleClass('menu-transition');
 			}
+
+			if ($(window).width() < 767) {
+				$("#logo").attr("src","img/logo32x32.png");
+			} else {
+				$("#logo").attr("src","img/logo128.png");
+			}
+
+			$(window).resize(function() {
+				if ($(window).width() < 767) {
+					$("#logo").attr("src","img/logo32x32.png");
+				} else {
+					$("#logo").attr("src","img/logo128.png");
+				}
+			});
         </script>
     </body>
 </html>
