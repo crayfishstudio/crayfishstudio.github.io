@@ -26,7 +26,7 @@
             <div></div>
             <div></div>
         </a>
-        <div class="grey-line right center-vertical-container transition">
+        <div id="menu" class="grey-line right center-vertical-container transition">
             <a href="#" id="footerClick">контакти</a>
             <a href="#">про нас</a>
             <a href="#">біле/<span class="colors-changer">чорне</span></a>
@@ -76,12 +76,12 @@
             </div>
         </div>
 
-        <div class="footer center-container transition">
+        <div class="footer center-vertical-container transition">
             <a class="custom-link">contact us</a>
             <a class="custom-link">-</a>
             <a class="custom-link">+38 (096) 65 32 586</a>
             <a class="custom-link">-</a>
-            <a class="custom-link">rutetskiydesign@gmail.com</a>
+            <a class="custom-link dinamicFontSize">rutetskiydesign@gmail.com</a>
             <a class="custom-link">-</a>
             <a class="custom-link">Ternopil, Ukraine</a>
             <a class="custom-link">-</a>
@@ -95,6 +95,8 @@
             </div>
         </div>
 
+        <div class="closeDetails"></div>
+
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -103,18 +105,40 @@
             $("#footerClick").click(function () {
                 $('.transition').toggleClass('footer-transition');
 
+                var temp = $('.closeDetails').css("display");
+
                 if ($(window).width() < 768) {
                     document.getElementById("toggle").click();
+                } else {
+                    if (temp == "none") {
+                        $('.closeDetails').css("display", "block");                     
+                    } else {
+                        $('.closeDetails').css('display', 'none');
+                    }
                 }
             });
 
             $("#bottomContactsExit").click(function () {
-                $('.transition').toggleClass('footer-transition');              
+                $('.transition').toggleClass('footer-transition');   
+
+                if ($(window).width() >= 768) {
+                    var temp = $('.closeDetails').css("display");  
+
+                    if (temp == "none") {
+                        $('.closeDetails').css("display", "block");                     
+                    } else {
+                        $('.closeDetails').css('display', 'none');
+                    } 
+                }               
+            });
+
+            $('.closeDetails').click(function () {
+                document.getElementById("footerClick").click();
             });
 
             function toggleFunction(x) {
                 x.classList.toggle("change");
-                $('.transition').toggleClass('menu-transition');
+                $("#menu").toggleClass('menu-transition');
             }
 
             if ($(window).width() < 767) {
