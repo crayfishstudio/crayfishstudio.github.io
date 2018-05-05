@@ -1,26 +1,220 @@
-@media screen and (min-width: 992px) {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
     #mobile-logo {
+        display: none;
+    }
+    
+    .navbar-side-container {
+        min-width: 165px;
+    }
+    
+    #mobile-lang-toggler{
+        display: none;
+    }
+    
+    .selector-bar {
+        bottom: 10vh;
+    }
+    
+    #mobile-phones {
         display: none;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
     #desktop-logo {
         display: none;
+    }
+    
+    .navbar-side-container {
+        display: none;
+    }
+    
+    #mobile-lang-toggler {
+        color: #4a4a4a;
+    }
+    
+    #mobile-lang-toggler:hover {
+        text-decoration: none;
+    }
+    
+    .selector-bar {
+        bottom: 0px;
+    }
+    
+    #mobile-phones {
+        padding: 10px;
     }
 }
 
 #custom-navbar li {
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
 }
 
 .navbar-shadowed {
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.16);
 }
+
 .fa-chevron-down {
     color: #FF8C00;
+}
+
+.navbar-phone {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-yellow-custom-little {
+    width: 100%;
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.btn-yellow-custom-little:hover {
+    color: #fff;
+}
+
+#main-slider {
+    width: 100%;
+    height: 100vh;
+}
+
+.fullscreen-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-white {
+    background-color: #fff;
+}
+
+.selector-bar {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.input-pattern {
+    background-color: #fff;
+    height: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 1px 15px rgba(0,0,0,0.3);
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.h-line-bold {
+    width: 100%;
+    height: 2px;
+    background-color: #ff8c00;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.viber-icon, .whatsapp-icon, .telegram-icon {
+    color: #666;
+}
+
+.viber-icon:hover {
+    color: #8F5DB7;
+}
+
+.whatsapp-icon:hover {
+    color: #25D366;
+}
+
+.telegram-icon:hover {
+    color: #0088CC;
+}
+
+.thin {
+    width: auto;
+    right: 0;
+}
+.slider-class {
+    height: 100%;
+    width: 100%;
+}
+
+#mobile-phones {
+    color: #646464;
+    
+}
+
+.main-header {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main-phrase {
+    
+}
+
+.section-header-huge {
+    color: #4D3431;
+    letter-spacing: 2px;
+    padding-top: 80px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section-header-small {
+    color: #4D3431;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.section-description {
+    color: #707070;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hotel-card {
+    height: 250px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    /*background-color: #F4F4F4;*/
+}
+
+.section-number-include {
+    text-transform: lowercase;
+    font-weight: 300;
+}
+
+#giant-number {
+    font-weight: 500;
+    font-size: 140%;
+    border-bottom: 3px solid #ff8c00;
+}
+
+.feature-text {
+    text-transform: uppercase;
+    font-weight: 600;
 }
