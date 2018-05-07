@@ -197,11 +197,101 @@ body {
     padding-bottom: 20px;
 }
 
-.hotel-card {
-    height: 250px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-    /*background-color: #F4F4F4;*/
-}
+/* START Hotel Card */
+
+    .hotel-card {
+        height: 250px;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        /*background-color: #F4F4F4;*/
+    }
+
+    .hotel-card > .card-header {
+        height: 70%;
+        border-radius: 0px;
+    }
+
+    .hotel-card-body {
+        height: 15%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .hotel-card-body > .d-flex {
+        height: 100%; 
+        padding-bottom: 5px;
+    }
+
+    .hotel-title {
+        margin-bottom: 0px; 
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .hotel-card-footer {
+        height: 15%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: white;
+        border: none;
+    }
+
+    .hotel-card-footer > .d-flex {
+        height: 100%; 
+        padding-top: 5px;
+    }
+
+    .location-text {
+        margin-left: 5px; 
+        margin-top: 2px; 
+        font-size: 14px; 
+        float: right;
+    }
+
+    .days-ends-end-text {
+        font-size: 14px; 
+        border-bottom: 1px solid #ff8c00;
+    }
+
+    .hotel-card-price {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        height: 50px;
+        background-color: #ff8c00;
+    }
+
+    .hotel-card-price p {
+        color: white;
+        width: 100px;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .hotel-card-price-hover {
+        float: right;
+        height: 100%;
+        width: 101px;
+        display: none;
+    }
+
+    .hotel-card-price-hover p {
+        color: white;
+        width: 100px;
+        height: 30px;
+        border-left: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 7px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+/*END Hotel Card*/
 
 .section-number-include {
     text-transform: lowercase;
