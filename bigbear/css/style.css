@@ -48,6 +48,8 @@ body {
     #mobile-phones {
         padding: 10px;
     }
+
+    .hotel-card-price-hover {display: block !important;}
 }
 
 #custom-navbar li {

@@ -326,9 +326,22 @@
 
     <script>
         $(document).ready(function(){
-            $('.hotel-card').hover(function() {
-                $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+            var check = 0;
+
+            $(window).resize(function() {
+                $('.hotel-card').hover(function() {
+                    if ($(window).width() > 1199 && check == 1) {
+                        $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+                    }
+                }); 
             });
+
+            $('.hotel-card').hover(function() {
+                if ($(window).width() > 1199) {
+                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+                    check = 0;
+                }
+            }); 
         });
     </script>
 </body>
