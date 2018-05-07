@@ -5,11 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/fontawesome-all.js"></script>
 
     <title>Велика Ведмедиця</title>
@@ -73,8 +73,25 @@
     
     <div id="main-slider">
         <div class="slider-class">
-            <div class="fullscreen-img" style="background-image: url(img/ideal%20relax.jpg);">
-            
+            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/ideal%20relax.jpg);">
+                <h2>ВАШ ІДЕАЛЬНИЙ ВІДПОЧИНОК ЧЕКАЄ ВАС ТУТ</h2>
+            </div>
+            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/ideal%20relax.jpg);">
+                <h2>ВАШ ІДЕАЛЬНИЙ ВІДПОЧИНОК ЧЕКАЄ ВАС ТУТ</h2>
+            </div>
+            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/ideal%20relax.jpg);">
+                <h2>ВАШ ІДЕАЛЬНИЙ ВІДПОЧИНОК ЧЕКАЄ ВАС ТУТ</h2>
+            </div>
+            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/ideal%20relax.jpg);">
+                <h2>ВАШ ІДЕАЛЬНИЙ ВІДПОЧИНОК ЧЕКАЄ ВАС ТУТ</h2>
+            </div>
+        </div>
+        <div class="slider-arrows">
+            <div id="p-arrow" class="div-arrows" style="left: 0;">
+                <i class="fas fa-chevron-left" style="font-size: 80px; margin-left: 2vw; margin-top: 23%; color: #F0F0F0;"></i>
+            </div>
+            <div id="n-arrow" class="div-arrows" style="right: 0;">
+                <i class="fas fa-chevron-right" style="font-size: 80px; margin-right: 2vw; margin-top: 23%; float: right; color: #F0F0F0;"></i>
             </div>
         </div>
         <div class="selector-bar">
@@ -355,11 +372,35 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider-class').slick({
+                infinite: true,
+                prevArrow: '#p-arrow',
+                nextArrow: '#n-arrow',
+                speed: 1000
+            });
+        });
+    </script>
+
     <script>
         $(document).ready(function(){
-            $('.hotel-card').hover(function() {
-                $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+            var check = 0;
+
+            $(window).resize(function() {
+                $('.hotel-card').hover(function() {
+                    if ($(window).width() > 1199 && check == 1) {
+                        $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+                    }
+                }); 
             });
+
+            $('.hotel-card').hover(function() {
+                if ($(window).width() > 1199) {
+                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+                    check = 0;
+                }
+            }); 
         });
     </script>
 </body>
