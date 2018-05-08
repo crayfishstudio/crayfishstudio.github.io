@@ -22,6 +22,20 @@ body, footer {
     #mobile-phones {
         display: none;
     }
+
+    .feedback-card {
+        width: 50vw;
+        padding-left: 75px;
+    }
+
+    .profile-image {
+        left: -75px;
+        top: calc(50% - 75px);
+    }
+
+    .feedback-slider-arrows {
+        left: calc(50% - 65vw/2 - 75px/2) !important;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -50,6 +64,16 @@ body, footer {
     }
 
     .hotel-card-price-hover {display: block !important;}
+
+    .feedback-card {
+        padding-top: 20px;
+        margin-top: 140px !important;
+    }
+
+    .profile-image {
+        left: calc(50% - 75px);
+        top: -130px;
+    }
 }
 
 #custom-navbar li {
@@ -360,3 +384,33 @@ body, footer {
     background-color: #ff8c00 !important;
     display: table;
 }
+
+/*START Feedback Card*/
+    
+    .feedback-card {
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 0px;
+        border: none;
+        margin: 20px;
+    }
+
+    .feedback-card .card-footer {
+        border: none;
+        background-color: white;
+    }
+
+    .profile-image {
+        position: absolute;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+        width: 150px;
+        height: 150px;
+    }
+
+    .feedback-slider-arrows {
+        position: absolute;
+        width: 65vw;
+        left: calc(50% - 65vw/2);
+    }
+
+/*END Feedback Card*/
+ 
