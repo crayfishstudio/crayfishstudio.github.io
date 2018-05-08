@@ -362,10 +362,37 @@
                         <i class="fas fa-chevron-right" style="font-size: 60px; float: right; color: #ff8c00;"></i>
                     </div>
                 </div>
+                <div class="feedback-button">
+                    <p>Залишити відгук</p>
+                    <p>Всі відгуки</p>
+                </div>
             </div>
         </div>
     </div>
     
+    <div class="container-fluid"  style="background-color: #f4f4f4; padding-top: 30px; padding-left: 0; padding-right: 0;">
+        <div style="width: 100%; background-color: #848484;">
+            <div class="selector-bar" style="position: static; width: 100%;">
+                <div class="container px-1">
+                    <div class="row justify-content-center no-gutters py-md-3 py-1">
+                        <div class="col-lg-2 col-md-3 col-6 my-1">
+                            <div class="input-pattern"></div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 my-1">
+                            <div class="input-pattern"></div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern"></div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern" style="background-color: #ff8c00"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="black-footer">
         <div class="container-fluid">
             <div class="row justify-content-center pb-5">
@@ -452,13 +479,28 @@
         $(document).ready(function(){
             var check = 0;
 
+            $('.hotel-card').hover(function() {
+                if ($(window).width() > 1199) {
+                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+                    check = 0;
+                }
+            });
+
+            if ($(window).width() > 1199) {
+                var sliderWidth = $('.feedback-slider').height()/2 - 30 + "px";
+                $("#feedback-slider-arrows-id").css("bottom", sliderWidth);
+            } else {
+                var sliderWidth = $('.feedback-slider').height() - 115 + "px";  
+                $("#feedback-slider-arrows-id").css("bottom", sliderWidth);
+            }
+
             $(window).resize(function() {
                 if ($(window).width() > 1199) {
-                    var sliderWidth = $('.feedback-slider').height()/2 - 25 + "px";
-                    document.getElementById("feedback-slider-arrows-id").style.bottom = sliderWidth;
+                    var sliderWidth = $('.feedback-slider').height()/2 - 30 + "px";
+                    $("#feedback-slider-arrows-id").css("bottom", sliderWidth);
                 } else {
                     var sliderWidth = $('.feedback-slider').height() - 115 + "px";  
-                    document.getElementById("feedback-slider-arrows-id").style.bottom = sliderWidth; 
+                    $("#feedback-slider-arrows-id").css("bottom", sliderWidth);
                 }
 
                 $('.hotel-card').hover(function() {
@@ -467,21 +509,6 @@
                     }
                 }); 
             });
-
-            $('.hotel-card').hover(function() {
-                if ($(window).width() > 1199) {
-                    $(this).find('.hotel-card-price-hover').animae({idth: 'toggle'});
-                    check = 0;
-                }
-            });
-
-            if ($(window).width() > 1199) {
-                var sliderWidth = $('.feedback-slider').height()/2 - 25 + "px";
-                document.getElementById("feedback-slider-arrows-id").style.bottom = sliderWidth;
-            } else {
-                var sliderWidth = $('.feedback-slider').height() - 115 + "px";  
-                document.getElementById("feedback-slider-arrows-id").style.bottom = sliderWidth; 
-            }
         });
     </script>
 </body>
