@@ -301,9 +301,44 @@
     
     <div class="container-fluid">
         <div class="row text-center">
-            <div class="col">
+            <div class="col" style="padding: 0;">
                 <h2 class="section-header-huge">більше ніж просто відпочинок</h2>
                 <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <div class="rest-slider">
+                    <div style="padding: 20px;">
+                        <div class="rest-image" style="background: url(img/ideal%20relax.jpg); background-size: 100%; background-position: center;">
+                        </div>
+                        <div class="rest-details">
+                            <h4>ПОЇЗДКИ НА КВАДРОЦИКЛАХ</h4>
+                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div class="rest-image" style="background: url(img/dpx_0259.jpg); background-size: 100%; background-position: center;">
+                        </div>
+                        <div class="rest-details">
+                            <h4>КВАДРОЦИКЛАХ ПОЇЗДКИ НА</h4>
+                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div class="rest-image" style="background: url(img/ideal%20relax.jpg); background-size: 100%; background-position: center;">
+                        </div>
+                        <div class="rest-details">
+                            <h4>ПОЇЗДКИ КВАДРОЦИКЛАХ НА</h4>
+                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div class="rest-image" style="background: url(img/dpx_0259.jpg); background-size: 100%; background-position: center;">
+                        </div>
+                        <div class="rest-details">
+                            <h4>НА ПОЇЗДКИ КВАДРОЦИКЛАХ</h4>
+                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
+                <nav class="rest-dots"></nav>
             </div>
         </div>
     </div>
@@ -370,7 +405,7 @@
         </div>
     </div>
     
-    <div class="container-fluid"  style="background-color: #f4f4f4; padding-top: 30px; padding-left: 0; padding-right: 0;">
+    <div class="container-fluid" style="background-color: #f4f4f4; padding-top: 30px; padding-left: 0; padding-right: 0;">
         <div style="width: 100%; background-color: #848484;">
             <div class="selector-bar" style="position: static; width: 100%;">
                 <div class="container px-1">
@@ -459,6 +494,21 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            $('.rest-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                fade: true,
+                arrows: false,
+                speed: 2000,
+                dots: true,
+                appendDots: $('.rest-dots'),
+                dotsClass: 'custom-dots',
+                customPaging: function (slider, i) {
+                    return '<a class="dot" role="button"></a>';
+                }
+            });
+
             $('.slider-class').slick({
                 infinite: true,
                 prevArrow: '#p-arrow',
