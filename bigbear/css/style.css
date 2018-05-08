@@ -105,12 +105,14 @@ body, footer {
     .rest-details {
         width: 80vw !important;
         margin-top: -30px !important;
-        margin-left: 5vw !important;
+        margin-left: calc(50% - 40vw) !important;
+        padding-right: 25px !important;
+        padding-bottom: 40px !important;
     }
 
     .rest-dots {
-        right: 10vw !important;
-        bottom: 75px !important;
+        right: calc(50% - 36px) !important;
+        bottom: 40px !important;
     }
 }
 
@@ -298,6 +300,8 @@ body, footer {
     .hotel-card > .card-header {
         height: 70%;
         border-radius: 0px;
+        background-size: cover !important; 
+        background-position: center !important;
     }
 
     .hotel-card-body {
@@ -439,6 +443,8 @@ body, footer {
 
     .profile-image {
         position: absolute;
+        background-size: cover !important; 
+        background-position: center !important;
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
         width: 150px;
         height: 150px;
@@ -471,9 +477,8 @@ body, footer {
 }
 
 .rest-image {
-    background: url(img/dpx_0259.jpg); 
-    background-size: 100%; 
-    background-position: center;
+    background-size: cover !important; 
+    background-position: center !important;
     padding-top: 20px;
     width: 70vw;
     height: 60vh;
@@ -509,7 +514,7 @@ body, footer {
 }
 
 .rest-dots .custom-dots li {
-    margin: 0 0 0 .5em;
+    margin: 0 0 0 8px;
     display: inline-block;
     list-style: none;
 }
