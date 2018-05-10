@@ -25,7 +25,7 @@
             <a id="mobile-lang-toggler" class="font-weight-bold" href="#"><i class="fas fa-chevron-down mr-2"></i>УКР</a>
                 <div class="dropdown-content" style="left: 6px;">
                     <a class="toggler-a font-weight-bold" style="color: rgba(0, 0, 0, 0.5);" href="#">РУС</a>
-                    <div class="h-line-bold"></div>
+                    <div class="h-line-bold" style="margin: 4px 0px 4px 0px;"></div>
                     <a class="toggler-a font-weight-bold" style="color: rgba(0, 0, 0, 0.5);" href="#">ENG</a>
                 </div>
             </a>
@@ -69,9 +69,9 @@
                         <i class="fas fa-chevron-down mr-2"></i>
                         УКР</a>
                         <div class="dropdown-content">
-                            <a class="nav-link font-weight-bold" href="#">РУС</a>
-                            <div class="h-line-bold"></div>
-                            <a class="nav-link font-weight-bold" href="#">ENG</a>
+                            <a class="nav-link font-weight-bold" style="padding: 4px;" href="#">РУС</a>
+                            <div class="h-line-bold" style="margin: 4px 0px 4px 0px;"></div>
+                            <a class="nav-link font-weight-bold" style="padding: 4px;" href="#">ENG</a>
                         </div>
                     </a>
                 </div>
@@ -104,20 +104,63 @@
         </div>
         <div class="selector-bar">
             <div class="container px-1">
-                <div class="row justify-content-center no-gutters py-md-3 py-1">
-                    <div class="col-lg-2 col-md-3 col-6 my-1">
-                        <div class="input-pattern"></div>
+                <form>
+                    <div class="row justify-content-center no-gutters py-md-3 py-1">
+                        <div class="col-lg-2 col-md-3 col-6 my-1">
+                            <div class="input-pattern">
+                                <input id="location" type="text" name="location" placeholder="Місто або готель" disabled />
+                                <i class="fas fa-map-marker-alt input-icon"></i>
+                                <div class="input-dropdown">
+                                    <p class="input-location d-flex align-items-center">Яремче</p>
+                                    <p class="input-location d-flex align-items-center">Буковель</p>
+                                    <div class="h-line-bold" style="margin: 0;"></div>
+                                    <p class="input-location d-flex align-items-center">Ведмежий Двір</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 my-1">
+                            <div class="input-pattern"></div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern">
+                                <p id="guests" class="input-text">Кількість гостей</p>
+                                <i class="fas fa-male input-icon"></i>
+                                <div class="input-dropdown">
+                                    <div class="input-members d-flex justify-content-between">
+                                        <p>Дорослі</p>
+                                        <span>
+                                            <span id="adults_plus">
+                                                <i class="fas fa-plus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
+                                            </span>
+                                            <input id="adults" type="number" name="adults" min="0" value="0" disabled />
+                                            <span id="adults_minus">
+                                                <i class="fas fa-minus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="input-members d-flex justify-content-between">
+                                        <p>Діти<br/><sup>5-12 років</sup></p>
+                                        <span>
+                                            <span id="children_plus">
+                                                <i class="fas fa-plus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
+                                            </span>
+                                            <input id="children" type="number" name="children" min="0" value="0" disabled />
+                                            <span id="children_minus">
+                                                <i class="fas fa-minus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <p style="padding-left: 6px; color: rgba(0,0,0,0.5); margin: 8px 0px 6px 0px;"><sub>діти до 5 років - безкоштовно</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern">
+                                <input type="submit" value="ПЕРЕВІРИТИ ЦІНИ"/>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 my-1">
-                        <div class="input-pattern"></div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 my-1">
-                        <div class="input-pattern"></div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 my-1">
-                        <div class="input-pattern" style="background-color: #ff8c00"></div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -569,6 +612,52 @@
                     }
                 }); 
             });
+
+
+            $('.input-location').click(function() {
+                $("#location").val($(this).text());
+            });
+
+            $("#adults_plus").click(function() {
+                var val = 1 + +$("#adults").val();
+                $("#adults").val(val);
+                check_input_guests();
+            });
+
+            $("#adults_minus").click(function() {
+                var val = -1 + +$("#adults").val();
+                if (val < 0) {
+                    val = 0;
+                }
+                $("#adults").val(val);
+                check_input_guests();
+            });
+
+            $("#children_plus").click(function() {
+                var val = 1 + +$("#children").val();
+                $("#children").val(val);
+                check_input_guests();
+            });
+
+            $("#children_minus").click(function() {
+                var val = -1 + +$("#children").val();
+                if (val < 0) {
+                    val = 0;
+                }
+                $("#children").val(val);
+                check_input_guests();
+            });
+
+            function check_input_guests() {
+                var adults = $("#adults").val();
+                var children = $("#children").val();
+
+                if (adults == "0" && children == "0") {
+                    $("#guests").text("Кількість гостей");
+                } else {
+                    $("#guests").text(adults + " дорослих " + children + " дітей");
+                }
+            }
         });
     </script>
 </body>
