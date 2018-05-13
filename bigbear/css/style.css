@@ -895,3 +895,6 @@ body, footer {
     }
 /*BB iconic font end*/
 
+::placeholder {
+    color: #969696;
+}
