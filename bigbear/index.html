@@ -120,7 +120,7 @@
                 <i class="fas fa-chevron-right fa-4x" style="margin-right: 2vw; margin-top: 43vh; float: right; color: #fff;"></i>
             </div>
         </div>
-        <div class="selector-bar">
+        <div id="selector-bar-id" class="selector-bar">
             <div class="container-fluid px-1">
                 <form>
                     <div class="row justify-content-center no-gutters py-md-3 py-1">
@@ -629,6 +629,9 @@
                 $('#datepicker').blur();
             });
 
+            var selectorbarheight = $('#selector-bar-id').height() + "px";
+            $('.overflow-hidden').css("height", selectorbarheight);
+
             var inputwidth = $('#div-datepicker').width() + "px";
             $('.datepicker').css("width", inputwidth);
 
@@ -670,6 +673,12 @@
                         $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
                     }
                 }); 
+
+                var selectorbarheight = $('#selector-bar-id').height() + "px";
+                $('.overflow-hidden').css("height", selectorbarheight);
+
+                var inputwidth = $('#div-datepicker').width() + "px";
+                $('.datepicker').css("width", inputwidth);
             });
 
 
