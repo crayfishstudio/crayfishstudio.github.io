@@ -268,7 +268,7 @@ body, footer {
         font-size: 20px;
     }
 
-    .input-pattern input:disabled {
+    .input-pattern input {
         width: calc(100% - 6px);
         height: 40px;
         border: none;
@@ -326,6 +326,84 @@ body, footer {
         height: 40px;
         border: none;
         color: white;
+    }
+
+    .datepicker-container {
+        width: 100%;
+    }
+
+    .datepicker {
+        border-radius: 0px;
+        margin-top: -12px;
+        border: none;
+        box-shadow: 0px 1px 15px rgba(0,0,0,0.3);
+    }
+
+    .datepicker--cell {
+        border-radius: 0px;
+    }
+
+    .datepicker--cell.-focus- {background: #f0f0f0;}
+
+    .datepicker--cell.-current- {color: #ff8c00;}
+
+    .datepicker--cell.-current-.-focus- {color: #4a4a4a;}
+
+    .datepicker--cell.-current-.-in-range- {color: white;}
+
+    .datepicker--cell.-in-range- {
+        background-color: #ff8c00;
+        color: white;
+        border-radius: 0;
+    }
+
+    .datepicker--cell.-in-range-.-focus- {
+        background-color: #ff8c00;
+        opacity: 0.2;
+    }
+
+    .datepicker--cell.-disabled- {
+        cursor: default;
+        color: #aeaeae; 
+    }
+
+    .datepicker--cell.-disabled-.-focus- {
+        background-color: #ff8c00;
+        opacity: 0.2;
+        color: white;
+    }
+
+    .datepicker--cell.-disabled-.-in-range- {
+        background-color: #ff8c00;
+        opacity: 0.2;
+    }
+
+    .datepicker--cell.-disabled-.-current-.-focus- {
+        background-color: #ff8c00;
+        opacity: 0.2;
+    }
+
+    .datepicker--cell.-range-from- {
+        border: 0px;
+        background-color: #ff8c00;
+        border-radius: 0px; 
+    }
+
+    .datepicker--cell.-range-to- {
+        border: 0px;
+        background-color: #ff8c00;
+        border-radius: 0px; 
+        color: white;
+    }
+
+    .datepicker--cell.-range-from-.-range-to- {
+        border-radius: 0px; 
+    }
+    .datepicker--cell.-selected-.-focus- {
+      background: #ff8c00; }
+
+    .datepicker--pointer {
+        display: none;
     }
 
 /*END Form*/

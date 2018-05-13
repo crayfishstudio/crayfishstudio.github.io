@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/datepicker.css">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/fontawesome-all.js"></script>
 
@@ -141,8 +141,8 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-3 col-6 my-1">
-                            <div class="input-pattern">
-                                <input type="text" class="form-control" id="datepicker" style="cursor: pointer" placeholder="Дата"/>
+                            <div id="div-datepicker" class="input-pattern">
+                                <input type='text' data-language='en' data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker" style="cursor: pointer" placeholder="Дата"/>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-3 my-1">
@@ -563,7 +563,8 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/datepicker.en.js"></script>
     <script src="js/slick.min.js"></script>
 
     <script type="text/javascript">
@@ -601,7 +602,31 @@
 
     <script>
         $(document).ready(function(){
-            $('#datepicker').datepicker();
+            $('#div-datepicker').mouseover(function() {
+                $('#datepicker').focus();
+            });
+
+            $('.datepicker').mouseover(function() {
+                $('#datepicker').focus();
+            });
+
+            $('#div-datepicker').mouseout(function() {
+                $('#datepicker').blur();
+            });
+
+            $('.datepicker').mouseout(function() {
+                $('#datepicker').blur();
+            });
+
+            var inputwidth = $('#div-datepicker').width() + "px";
+            $('.datepicker').css("width", inputwidth);
+
+            $('#datepicker').datepicker({
+                range: true,
+                minDate: new Date(),
+                dateFormat: "dd.mm.yyyy"
+            });
+            $('#datepicker').data('datepicker');
 
             var check = 0;
 
