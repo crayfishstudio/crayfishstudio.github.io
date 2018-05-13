@@ -335,6 +335,12 @@ body, footer {
         margin-left: 8px;
     }
 
+    .input-pattern input:focus {outline: none;}
+
+    .input-pattern input {
+        color: grey;
+    }
+
     .input-pattern input[type=submit] {
         background-color: #ff8c00;
         width: 100%;
@@ -358,13 +364,47 @@ body, footer {
         border-radius: 0px;
     }
 
+    .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+        color: #fff;
+        background: #ff8c00;
+        opacity: 0.2; 
+    }
+
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+        background: #ff8c00;
+        color: #fff;
+    }
+
+    .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+        color: #fff;
+        background: #ff8c00;
+        opacity: 0.2; 
+    }
+
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+        color: #fff;
+        background: #ff8c00;
+        opacity: 0.2; 
+    }
+
     .datepicker--cell.-focus- {background: #f0f0f0;}
 
     .datepicker--cell.-current- {color: #ff8c00;}
 
-    .datepicker--cell.-current-.-focus- {color: #4a4a4a;}
+    .datepicker--cell.-current-.-focus- {
+        color: white;
+        background-color: #ff8c00;
+    }
 
-    .datepicker--cell.-current-.-in-range- {color: white;}
+    .datepicker--cell.-current-.-in-range- {
+        color: white;
+        background-color: #ff8c00;
+    }
+
+    .datepicker--cell.-current-.-range-from- {
+        color: white;
+        background-color: #ff8c00;
+    }
 
     .datepicker--cell.-in-range- {
         background-color: #ff8c00;
@@ -402,6 +442,7 @@ body, footer {
         border: 0px;
         background-color: #ff8c00;
         border-radius: 0px; 
+        color: white;
     }
 
     .datepicker--cell.-range-to- {
@@ -411,15 +452,11 @@ body, footer {
         color: white;
     }
 
-    .datepicker--cell.-range-from-.-range-to- {
-        border-radius: 0px; 
-    }
-    .datepicker--cell.-selected-.-focus- {
-      background: #ff8c00; }
+    .datepicker--cell.-range-from-.-range-to- {border-radius: 0px;}
 
-    .datepicker--pointer {
-        display: none;
-    }
+    .datepicker--cell.-selected-.-focus- {background: #ff8c00;}
+
+    .datepicker--pointer {display: none;}
 
 /*END Form*/
 
