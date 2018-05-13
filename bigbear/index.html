@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/datepicker.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/fontawesome-all.js"></script>
 
@@ -119,7 +120,9 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-3 col-6 my-1">
-                            <div class="input-pattern"></div>
+                            <div class="input-pattern">
+                                <input type="text" class="form-control" id="datepicker" placeholder="Дата" />
+                            </div>
                         </div>
                         <div class="col-lg-2 col-md-3 my-1">
                             <div class="input-pattern">
@@ -543,6 +546,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/slick.min.js"></script>
 
     <script type="text/javascript">
@@ -580,6 +584,8 @@
 
     <script>
         $(document).ready(function(){
+            $('#datepicker').datepicker();
+
             var check = 0;
 
             $('.hotel-card').hover(function() {
