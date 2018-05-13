@@ -83,18 +83,33 @@
         <div class="slider-class">
             <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/idealrelax.jpg);">
                 <h1>ВАШ ІДЕАЛЬНИЙ ВІДПОЧИНОК<br class="text-divider"> ЧЕКАЄ ВАС ТУТ</h1>
+                <div class="selector-bar overflow-hidden" style="background-image: url(img/idealrelax.jpg);">
+                    <div class="main-blur"></div>
+                </div>
             </div>
             <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/familyresort.jpg);">
                 <h1>СІМЕЙНИЙ ВІДПОЧИНОК<br class="text-divider"> У КАРПАТАХ</h1>
+                <div class="selector-bar overflow-hidden" style="background-image: url(img/familyresort.jpg);">
+                    <div class="main-blur"></div>
+                </div>
             </div>
             <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/ecohotel.jpg);">
                 <h1>СПРАВЖНІЙ ЕКО-ГОТЕЛЬ<br class="text-divider"> У ЯРЕМЧЕ</h1>
+                <div class="selector-bar overflow-hidden" style="background-image: url(img/ecohotel.jpg);">
+                    <div class="main-blur"></div>
+                </div>
             </div>
             <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/pool.jpg);">
                 <h1>БАСЕЙН<br class="text-divider"> З ПІДІГРІВОМ</h1>
+                <div class="selector-bar overflow-hidden" style="background-image: url(img/pool.jpg);">
+                    <div class="main-blur"></div>
+                </div>
             </div>
             <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/owncotedge.jpg);">
                 <h1>ВЛАСНИЙ КОТЕДЖ<br class="text-divider"> НА ЧАС ВІДПУСТКИ</h1>
+                <div class="selector-bar overflow-hidden" style="background-image: url(img/owncotedge.jpg);">
+                    <div class="main-blur"></div>
+                </div>
             </div>
         </div>
         <div class="slider-arrows">
@@ -105,69 +120,67 @@
                 <i class="fas fa-chevron-right" style="font-size: 80px; margin-right: 2vw; margin-top: 23%; float: right; color: #F0F0F0;"></i>
             </div>
         </div>
-        <div class="selector-bar" style="background-image: url(img/idealrelax.jpg);">
-            <div class="main-blur">
-                <div class="container px-1">
-                    <form>
-                        <div class="row justify-content-center no-gutters py-md-3 py-1">
-                            <div class="col-lg-2 col-md-3 col-6 my-1">
-                                <div class="input-pattern">
-                                    <input id="location" type="text" name="location" placeholder="Місто або готель" disabled />
-                                    <i class="fas fa-map-marker-alt input-icon"></i>
-                                    <div class="input-dropdown">
-                                        <p class="input-location d-flex align-items-center">Яремче</p>
-                                        <p class="input-location d-flex align-items-center">Буковель</p>
-                                        <div class="h-line-bold" style="margin: 0;"></div>
-                                        <p class="input-location d-flex align-items-center">Ведмежий Двір</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-6 my-1">
-                                <div class="input-pattern">
-                                    <input type="text" class="form-control" id="datepicker" placeholder="Дата" />
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3 my-1">
-                                <div class="input-pattern">
-                                    <p id="guests" class="input-text">Кількість гостей</p>
-                                    <i class="fas fa-male input-icon"></i>
-                                    <div class="input-dropdown">
-                                        <div class="input-members d-flex justify-content-between">
-                                            <p>Дорослі</p>
-                                            <span>
-                                                <span id="adults_plus">
-                                                    <i class="fas fa-plus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
-                                                </span>
-                                                <input id="adults" type="number" name="adults" min="0" value="0" disabled />
-                                                <span id="adults_minus">
-                                                    <i class="fas fa-minus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
-                                                </span>
-                                            </span>
-                                        </div>
-                                        <div class="input-members d-flex justify-content-between">
-                                            <p>Діти<br/><sup>5-12 років</sup></p>
-                                            <span>
-                                                <span id="children_plus">
-                                                    <i class="fas fa-plus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
-                                                </span>
-                                                <input id="children" type="number" name="children" min="0" value="0" disabled />
-                                                <span id="children_minus">
-                                                    <i class="fas fa-minus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
-                                                </span>
-                                            </span>
-                                        </div>
-                                        <p style="padding-left: 6px; color: rgba(0,0,0,0.5); margin: 8px 0px 6px 0px;"><sub>діти до 5 років - безкоштовно</sub></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3 my-1">
-                                <div class="input-pattern">
-                                    <input type="submit" value="ПЕРЕВІРИТИ ЦІНИ" style="cursor: pointer"/>
+        <div class="selector-bar">
+            <div class="container px-1">
+                <form>
+                    <div class="row justify-content-center no-gutters py-md-3 py-1">
+                        <div class="col-lg-2 col-md-3 col-6 my-1">
+                            <div class="input-pattern">
+                                <input id="location" type="text" name="location" placeholder="Місто або готель" disabled />
+                                <i class="fas fa-map-marker-alt input-icon"></i>
+                                <div class="input-dropdown">
+                                    <p class="input-location d-flex align-items-center">Яремче</p>
+                                    <p class="input-location d-flex align-items-center">Буковель</p>
+                                    <div class="h-line-bold" style="margin: 0;"></div>
+                                    <p class="input-location d-flex align-items-center">Ведмежий Двір</p>
                                 </div>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="col-lg-2 col-md-3 col-6 my-1">
+                            <div class="input-pattern">
+                                <input type="text" class="form-control" id="datepicker" placeholder="Дата" />
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern">
+                                <p id="guests" class="input-text">Кількість гостей</p>
+                                <i class="fas fa-male input-icon"></i>
+                                <div class="input-dropdown">
+                                    <div class="input-members d-flex justify-content-between">
+                                        <p>Дорослі</p>
+                                        <span>
+                                            <span id="adults_plus">
+                                                <i class="fas fa-plus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
+                                            </span>
+                                            <input id="adults" type="number" name="adults" min="0" value="0" disabled />
+                                            <span id="adults_minus">
+                                                <i class="fas fa-minus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="input-members d-flex justify-content-between">
+                                        <p>Діти<br/><sup>5-12 років</sup></p>
+                                        <span>
+                                            <span id="children_plus">
+                                                <i class="fas fa-plus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
+                                            </span>
+                                            <input id="children" type="number" name="children" min="0" value="0" disabled />
+                                            <span id="children_minus">
+                                                <i class="fas fa-minus" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 3px;"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <p style="padding-left: 6px; color: rgba(0,0,0,0.5); margin: 8px 0px 6px 0px;"><sub>діти до 5 років - безкоштовно</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern">
+                                <input type="submit" value="ПЕРЕВІРИТИ ЦІНИ" style="cursor: pointer"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
