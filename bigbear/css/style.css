@@ -46,6 +46,10 @@ body, footer {
     .feedback-button {
         left: calc(50% - 25vw + 75px/2);
     }
+    
+    .fullscreen-img h1 {
+        font-size: 60px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -127,6 +131,14 @@ body, footer {
         right: calc(50% - 36px) !important;
         bottom: 40px !important;
     }
+    
+    .fullscreen-img h1 {
+        font-size: 30px;
+    }
+    
+    .text-divider {
+        display: none;
+    }
 }
 
 #custom-navbar li {
@@ -173,13 +185,13 @@ body, footer {
     background-position: center;
 }
 
-.fullscreen-img h2 {
+.fullscreen-img h1 {
     color: white;
-    font-size: 40px;
     font-weight: 600;
     text-align: center;
     padding-left: 14vw;
     padding-right: 14vw;
+    text-shadow: 0px 0px 40px #000000;
 }
 
 .slider-arrows {
