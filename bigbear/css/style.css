@@ -553,7 +553,7 @@ body, footer {
 /* START Hotel Card */
 
     .hotel-card {
-        height: 250px;
+        height: calc(100% - 32px);
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
         border: none;
         border-radius: 0px;
@@ -562,21 +562,21 @@ body, footer {
     }
 
     .hotel-card > .card-header {
-        height: 70%;
+        height: 76%;
         border-radius: 0px;
         background-size: cover !important; 
         background-position: center !important;
     }
 
     .hotel-card-body {
-        height: 15%;
+        height: 12%;
         padding-top: 0px;
         padding-bottom: 0px;
     }
 
     .hotel-card-body > .d-flex {
         height: 100%; 
-        padding-bottom: 5px;
+        padding-bottom: 0.5%;
     }
 
     .hotel-title {
@@ -586,7 +586,7 @@ body, footer {
     }
 
     .hotel-card-footer {
-        height: 15%;
+        height: 12%;
         padding-top: 0px;
         padding-bottom: 0px;
         background-color: white;
@@ -595,7 +595,7 @@ body, footer {
 
     .hotel-card-footer > .d-flex {
         height: 100%; 
-        padding-top: 5px;
+        padding-top: 0.5%;
     }
 
     .location-text {
@@ -613,37 +613,32 @@ body, footer {
     .hotel-card-price {
         position: absolute;
         top: -10px;
-        left: 20px;
-        height: 50px;
+        left: 30px;
         background-color: #ff8c00;
     }
 
-    .hotel-card-price p {
+    .price-p {
         color: white;
-        width: 100px;
-        margin-top: 12px;
-        margin-bottom: 0px;
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
+        display: inline;
+        margin-bottom: 0;
     }
 
     .hotel-card-price-hover {
         float: right;
         height: 100%;
-        width: 101px;
         display: none;
     }
 
     .hotel-card-price-hover p {
         color: white;
-        width: 100px;
-        height: 30px;
+        height: calc(100% - 30px);
+        margin-top: 15px;
         border-left: 1px solid white;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 7px;
         text-align: center;
-        font-size: 12px;
+        vertical-align: middle;
+        font-size: 14px;
     }
 
 /*END Hotel Card*/
