@@ -179,8 +179,8 @@ body, footer {
 
 .btn-yellow-custom-little:hover {
     background-color: #fff;
-    color: #ff8c00 !important;
-    border: 1px solid #ff8c00;
+    color: #4D3431 !important;
+    border: 1px solid #4D3431;
 }
 
 .btn-yellow-custom-little:hover {
@@ -301,7 +301,7 @@ body, footer {
     }
 
     .input-pattern:hover .input-dropdown {
-        display: block;
+           display: block;
     }
 
     .input-location {
@@ -933,3 +933,4 @@ body, footer {
 ::placeholder {
     color: #969696;
 }
+
