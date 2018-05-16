@@ -577,8 +577,7 @@ body, footer {
 
     .hotel-card-body {
         height: 12%;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding: 0px 5% 0px 5%;
     }
 
     .hotel-card-body > .d-flex {
@@ -594,8 +593,7 @@ body, footer {
 
     .hotel-card-footer {
         height: 12%;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding: 0px 5% 0px 5%;
         background-color: white;
         border: none;
     }
@@ -606,7 +604,6 @@ body, footer {
     }
 
     .location-text {
-        margin-left: 5px; 
         margin-top: 2px; 
         font-size: 14px; 
         float: right;
@@ -638,14 +635,19 @@ body, footer {
         display: none;
     }
 
+    .hotel-card-price-hover:before {
+        position: absolute;
+        content: "";
+        top: 15%;
+        bottom: 15%;
+        width: 1px;
+        background-color: white;
+    }
+
     .hotel-card-price-hover p {
         color: white;
-        height: calc(100% - 30px);
-        margin-top: 15px;
-        border-left: 1px solid white;
+        margin: 0;
         text-align: center;
-        vertical-align: middle;
-        font-size: 14px;
     }
 
 /*END Hotel Card*/

@@ -216,8 +216,35 @@
                     <div class="card-footer hotel-card-footer">
                         <div class="d-flex justify-content-between align-items-start">
                             <div>
-                                <i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                <p class="location-text">Яремче</p>
+                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
+                                Яремче</p>
+                            </div>
+                            <p class="days-ends-end-text">Залишилось 3 номери</p>
+                        </div>
+                    </div>
+                    <div class="hotel-card-price">
+                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
+                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong>200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
+                        </div>
+                        <div class="hotel-card-price-hover">
+                            <p>ЗАБРОНЮВАТИ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="card hotel-card m-lg-1 mt-lg-3">
+                    <div class="card-header" style="background: url(img/dpx_0259.jpg);"></div>
+                    <div class="card-body hotel-card-body">
+                        <div class="d-flex align-items-end">
+                            <h4 class="card-title hotel-title">Готель ВЕДМЕЖИЙ ДВІР</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer hotel-card-footer">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
+                                Яремче</p>
                             </div>
                             <p class="days-ends-end-text">Залишилось 3 номери</p>
                         </div>
@@ -243,8 +270,8 @@
                     <div class="card-footer hotel-card-footer">
                         <div class="d-flex justify-content-between align-items-start">
                             <div>
-                                <i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                <p class="location-text">Яремче</p>
+                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
+                                Яремче</p>
                             </div>
                             <p class="days-ends-end-text">Залишилось 3 номери</p>
                         </div>
@@ -270,8 +297,8 @@
                     <div class="card-footer hotel-card-footer">
                         <div class="d-flex justify-content-between align-items-start">
                             <div>
-                                <i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                <p class="location-text">Яремче</p>
+                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
+                                Яремче</p>
                             </div>
                             <p class="days-ends-end-text">Залишилось 3 номери</p>
                         </div>
@@ -297,35 +324,8 @@
                     <div class="card-footer hotel-card-footer">
                         <div class="d-flex justify-content-between align-items-start">
                             <div>
-                                <i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                <p class="location-text">Яремче</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
-                        </div>
-                    </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
-                        </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/dpx_0259.jpg);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Готель ВЕДМЕЖИЙ ДВІР</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                <p class="location-text">Яремче</p>
+                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
+                                Яремче</p>
                             </div>
                             <p class="days-ends-end-text">Залишилось 3 номери</p>
                         </div>
@@ -811,13 +811,20 @@
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
-
             $('.price-p-div').width($('.col-xl-4').width() * 0.3);
+
+            $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
+            $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
+            $('.hotel-title').css("font-size", $('.col-xl-4').width() * 0.033);
+            $('.days-ends-end-text').css("font-size", $('.col-xl-4').width() * 0.03);
+            $('.location-text').css("font-size", $('.col-xl-4').width() * 0.03);
+
+            $('.hotel-card-price-hover').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
+            $('.hotel-card-price-hover').find("p").css("margin-top", $('.hotel-card-price').height()/2 - $('.col-xl-4').width() * 0.03 * 0.7);
             
             $('.hotel-card-price-hover').find("p").width($('.col-xl-4').width() * 0.3);
-            $('.hotel-card-price-hover').find("p").css("padding-top", $('.hotel-card-price-hover').height() * 0.5 - 25);
 
-            $('.hotel-card-price-hover').width($('.col-lg-4').width() * 0.3 + 1);
+            $('.hotel-card-price-hover').width($('.col-xl-4').width() * 0.3 + 1);
             //------
 
             var check = 0;
@@ -842,18 +849,23 @@
 
         $(window).resize(function() {
             //hotel card settings
-            $('.col-xl-4').height($('.col-xl-4').width() * 0.75);
+            $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
-
             $('.price-p-div').width($('.col-xl-4').width() * 0.3);
+
+            $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
+            $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
+            $('.hotel-title').css("font-size", $('.col-xl-4').width() * 0.033);
+            $('.days-ends-end-text').css("font-size", $('.col-xl-4').width() * 0.03);
+            $('.location-text').css("font-size", $('.col-xl-4').width() * 0.03);
+
+            $('.hotel-card-price-hover').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
+            $('.hotel-card-price-hover').find("p").css("margin-top", $('.hotel-card-price').height()/2 - $('.col-xl-4').width() * 0.03 * 0.7);
             
             $('.hotel-card-price-hover').find("p").width($('.col-xl-4').width() * 0.3);
-            $('.hotel-card-price-hover').find("p").css("padding-top", $('.hotel-card-price-hover').height() * 0.5 - 25);
 
             $('.hotel-card-price-hover').width($('.col-xl-4').width() * 0.3 + 1);
             //------
-
-            $('.col-lg-4').height($('.col-lg-4').width() * 0.75);
 
             if ($(window).width() > 1199) {
                 var sliderWidth = $('.feedback-slider').height()/2 - 30 + "px";
