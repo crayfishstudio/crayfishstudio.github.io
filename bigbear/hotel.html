@@ -32,7 +32,7 @@
         </div>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto align-items-center text-center mt-2 mt-xl-0" id="custom-navbar">
+            <ul class="navbar-nav mx-auto align-items-center text-center mt-2 mt-xl-0" id="custom-navbar-thin">
                 <div class="navbar-side-container text-left">
                     <span class="nav-link navbar-phone" href="#">
                         <div class="dropdown">
@@ -55,11 +55,17 @@
                 <li class="nav-item">
                     <a class="nav-link my-1" href="#">про нас</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link my-1" href="#">номери</a>
+                </li>
                 <li class="nav-item text-center my-xl-1">
                     <a id="desktop-logo" href="#"><img class="img-fluid mx-center" src="img/logo.png" width="140px"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-1" href="#">відгуки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-1" href="#">акції</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-1" href="#">контакти</a>
@@ -138,24 +144,24 @@
                                     <div class="input-members d-flex justify-content-between">
                                         <p>Дорослі</p>
                                         <span>
-                                            <span id="adults_plus">
-                                                <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                            </span>
-                                            <input id="adults" type="number" name="adults" min="0" value="0" readonly="readonly" />
                                             <span id="adults_minus">
                                                 <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                            </span>
+                                            <input id="adults" type="number" name="adults" min="0" value="0" readonly="readonly" />
+                                            <span id="adults_plus">
+                                                <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
                                             </span>
                                         </span>
                                     </div>
                                     <div class="input-members d-flex justify-content-between">
                                         <p>Діти<br/><sup>5-12 років</sup></p>
                                         <span>
-                                            <span id="children_plus">
-                                                <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                            </span>
-                                            <input id="children" type="number" name="children" min="0" value="0" readonly="readonly" />
                                             <span id="children_minus">
                                                 <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                            </span>
+                                            <input id="children" type="number" name="children" min="0" value="0" readonly="readonly" />
+                                            <span id="children_plus">
+                                                <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
                                             </span>
                                         </span>
                                     </div>
@@ -183,17 +189,17 @@
         <div class="h-line-bold"></div>
     </div>
     
-    <div class="container-fluid pb-5">
+    <div class="container-fluid px-sm-5">
         <div class="row text-center">
             <div class="col">
-                <h2 class="section-header-huge">СІМЕЙНИЙ ГОТЕЛЬ "ВЕЛИКА ВЕДМЕДИЦЯ"</h2>
-                <h4 class="section-header-small">в яремче</h4>
+                <h2 class="section-header-huge">МЕРЕЖА ГОТЕЛІВ "ВЕЛИКА ВЕДМЕДИЦЯ"</h2>
+                <h4 class="section-header-small">в яремче та буковелі</h4>
                 <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             </div>
         </div>
-        <div class="row justify-content-center no-gutters px-md-5 px-0 mb-5">
-            <div class="col-lg-4 px-1">
-                <div class="card hotel-card m-lg-1 mt-lg-3 mt-3">
+        <div class="row justify-content-center no-gutters px-md-5 px-0">
+            <div class="col-xl-4">
+                <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/dpx_0259.jpg);"></div>
                     <div class="card-body hotel-card-body">
                         <div class="d-flex align-items-end">
@@ -210,8 +216,8 @@
                         </div>
                     </div>
                     <div class="hotel-card-price">
-                        <div style="height: 100%; width: 100px; float: left;">
-                            <p>від <strong style="font-size: 18px;">200</strong> грн</p>
+                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
+                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
                         </div>
                         <div class="hotel-card-price-hover">
                             <p>ЗАБРОНЮВАТИ</p>
@@ -219,8 +225,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 px-1">
-                <div class="card hotel-card m-lg-1 mt-lg-3 mt-3">
+            <div class="col-xl-4">
+                <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/dpx_0259.jpg);"></div>
                     <div class="card-body hotel-card-body">
                         <div class="d-flex align-items-end">
@@ -237,8 +243,8 @@
                         </div>
                     </div>
                     <div class="hotel-card-price">
-                        <div style="height: 100%; width: 100px; float: left;">
-                            <p>від <strong style="font-size: 18px;">200</strong> грн</p>
+                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
+                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
                         </div>
                         <div class="hotel-card-price-hover">
                             <p>ЗАБРОНЮВАТИ</p>
@@ -246,8 +252,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 px-1 my-1">
-                <div class="card hotel-card m-lg-1 mt-lg-3 mt-3">
+            <div class="col-xl-4">
+                <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/dpx_0259.jpg);"></div>
                     <div class="card-body hotel-card-body">
                         <div class="d-flex align-items-end">
@@ -264,8 +270,8 @@
                         </div>
                     </div>
                     <div class="hotel-card-price">
-                        <div style="height: 100%; width: 100px; float: left;">
-                            <p>від <strong style="font-size: 18px;">200</strong> грн</p>
+                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
+                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
                         </div>
                         <div class="hotel-card-price-hover">
                             <p>ЗАБРОНЮВАТИ</p>
@@ -375,33 +381,33 @@
             </div>
         </div>
         
-        <div class="row px-5 md-2">
-            <div class="col-md-3 col-6" style="background-color:#f4f4f4">
-                <h6 class="feature-text">Проживання в<br>готельних номерах</h5>
+        <div class="row px-5 mb-2">
+            <div class="col-md-3 col-6 mx-1" style="background-color:#f4f4f4">
+                <h5 class="feature-text">Проживання в<br>готельних номерах</h5>
             </div>
             <div class="col-md-3 col-6">
-                <h6 class="feature-text">Сніданки</h5>
+                <h5 class="feature-text">Сніданки</h5>
             </div>
             <div class="col-md-3 col-6" style="background-color:#f4f4f4">
-                <h6 class="feature-text">Користування<br>альтанками та зеленою <br> зоною відпочинку</h5>
+                <h5 class="feature-text">Користування<br>альтанками та зеленою <br> зоною відпочинку</h5>
             </div>
             <div class="col-md-3 col-6">
-                <h6 class="feature-text">Автостоянка</h5>
+                <h5 class="feature-text">Автостоянка</h5>
             </div> 
         </div>
         
         <div class="row px-5">
             <div class="col-md-3 col-6 py-2">
-                <h6 class="feature-text">Користування<br>басейном</h5>
+                <h5 class="feature-text">Користування<br>басейном</h5>
             </div>
             <div class="col-md-3 col-6" style="background-color:#f4f4f4">
-                <h6 class="feature-text">Користування<br>мангалом</h5>
+                <h5 class="feature-text">Користування<br>мангалом</h5>
             </div>
             <div class="col-md-3 col-6">
-                <h6 class="feature-text">Wi-Fi на всій території</h5>
+                <h5 class="feature-text">Wi-Fi на всій території</h5>
             </div>
             <div class="col-md-3 col-6" style="background-color:#f4f4f4">
-                <h6 class="feature-text">Користування<br>конференц-залом<br>та дитячою кімнатою</h5>
+                <h5 class="feature-text">Користування<br>конференц-залом<br>та дитячою кімнатою</h5>
             </div> 
         </div>
         
@@ -410,10 +416,9 @@
                 <a style="border-bottom: 3px solid #ff8c00">Показати більше послуг</a>
             </div>
         </div>
-    </div>
-            
+    </div>    
 
-    <div class="container-fluid py-sm-5 py-3"  style="background-color: #f4f4f4">
+    <div class="container-fluid pb-5"  style="background-color: #f4f4f4">
         <div class="row text-center">
             <div class="col">
                 <h2 class="section-header-huge">Відгуки наших відвідувачів</h2>
@@ -475,7 +480,6 @@
         </div>
     </div>
     
-    
     <div class="container-fluid px-1" style="background-color: #747474">
         <form>
             <div class="row justify-content-center no-gutters py-md-4 py-1">
@@ -528,7 +532,6 @@
         </form>
     </div>
     
-
     <footer class="black-footer py-4">
         <div class="container-fluid">
             <div class="row justify-content-center pb-5">
@@ -572,7 +575,6 @@
                     <a href="#" class="text-white">White House</a><br>
                     <a href="#" class="text-white">Dream House</a><br>
                     <a href="#" class="text-white">У Марка</a><br>
-                    <i class="bb-toy-bold"></i>
                 </div>
             </div>
             <div class="row justify-content-center pb-3">
@@ -584,7 +586,7 @@
                 <div class="col-md-7 order-md-1 mt-md-3 mt-5">
                     <p class="footer-text">
                         All right reserved © BigBear 2018<br>
-                        Designed by <a href="crayfish.studio" class="text-white">Crayfish Studio</a> with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i>
+                        Designed by <a href="http://www.crayfish.studio" class="text-white" target="_blank">Crayfish Studio</a> with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i>
                     </p>
                 </div>
             </div>
