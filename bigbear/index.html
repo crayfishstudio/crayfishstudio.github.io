@@ -433,7 +433,7 @@
                 <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 <div class="feedback-slider">
                     <div class="d-flex justify-content-center">
-                        <div class="card feedback-card">
+                        <div id="test" class="card feedback-card">
                             <div class="card-body">
                                 <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
@@ -472,14 +472,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="feedback-slider-arrows-id" class="feedback-slider-arrows">
-                    <div id="feedback-arrow-left">
-                        <i class="fas fa-chevron-left" style="font-size: 60px; float: left; color: #ff8c00;"></i>
-                    </div>
-                    <div id="feedback-arrow-right">
-                        <i class="fas fa-chevron-right" style="font-size: 60px; float: right; color: #ff8c00;"></i>
-                    </div>
-                </div>
                 <div class="feedback-button">
                     <a href="#">Всі відгуки</a>
                     <a href="#">Залишити відгук</a>
@@ -487,7 +479,14 @@
             </div>
         </div>
     </div>
-    
+    <div id="feedback-slider-arrows-id" class="feedback-slider-arrows">
+        <div id="feedback-arrow-left">
+            <i class="fas fa-chevron-left" style="font-size: 60px; float: left; color: #ff8c00;"></i>
+        </div>
+        <div id="feedback-arrow-right">
+            <i class="fas fa-chevron-right" style="font-size: 60px; float: right; color: #ff8c00;"></i>
+        </div>
+    </div>
     
     <div class="container-fluid px-1" style="background-color: #747474">
         <form>
@@ -807,6 +806,34 @@
     </script>
 
     <script>
+        $(".input-dropdown").each(function() {
+            $(this).css({
+                top: 100 + "%"
+            });
+
+            if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()){
+                $(this).css({
+                    top: - $(this).height()
+                });
+            }
+        });
+
+        $(window).scroll(function() {
+            $(".input-dropdown").each(function() {
+                $(this).css({
+                    top: 100 + "%"
+                });
+
+                if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()){
+                    $(this).css({
+                        top: - $(this).height()
+                    });
+                }
+            });
+        });
+        </script>
+
+    <script>
         $(document).ready(function(){
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
@@ -837,11 +864,9 @@
             });
 
             if ($(window).width() > 1199) {
-                var sliderWidth = $('.feedback-slider').height()/2 - 30 + "px";
-                $("#feedback-slider-arrows-id").css("bottom", sliderWidth);
+                $("#feedback-slider-arrows-id").css("top", $("#test").offset().top + $('#test').height()/2 - 30);
             } else {
-                var sliderWidth = $('.feedback-slider').height() - 115 + "px";  
-                $("#feedback-slider-arrows-id").css("bottom", sliderWidth);
+                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top + 40);
             }
         });
 
@@ -868,11 +893,9 @@
             //------
 
             if ($(window).width() > 1199) {
-                var sliderWidth = $('.feedback-slider').height()/2 - 30 + "px";
-                $("#feedback-slider-arrows-id").css("bottom", sliderWidth);
+                $("#feedback-slider-arrows-id").css("top", $("#test").offset().top + $('#test').height()/2 - 30);
             } else {
-                var sliderWidth = $('.feedback-slider').height() - 115 + "px";  
-                $("#feedback-slider-arrows-id").css("bottom", sliderWidth);
+                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top + 40);
             }
 
             $('.hotel-card').hover(function() {
