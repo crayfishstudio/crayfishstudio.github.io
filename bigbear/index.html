@@ -351,6 +351,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid py-sm-5 py-3"  style="background-color: #f4f4f4">
         <div class="row no-gutters text-center">
             <div class="col-md-3 col-6 py-2">
@@ -480,11 +481,13 @@
         </div>
     </div>
     <div id="feedback-slider-arrows-id" class="feedback-slider-arrows">
-        <div id="feedback-arrow-left">
-            <i class="fas fa-chevron-left" style="font-size: 60px; float: left; color: #ff8c00;"></i>
+        <div id="feedback-arrow-left" class="arrow-left">
+            <div></div>
+            <div></div>
         </div>
-        <div id="feedback-arrow-right">
-            <i class="fas fa-chevron-right" style="font-size: 60px; float: right; color: #ff8c00;"></i>
+        <div id="feedback-arrow-right" class="arrow-right">
+            <div></div>
+            <div></div>
         </div>
     </div>
     
@@ -573,6 +576,8 @@
                             <p class="text-white">
                                 +38 (097) 514 4702<br>
                                 +38 (097) 514 4702<br>
+                                 <a href="#"><i class="fab fa-telegram-plane text-white"></i></a><br>
+                                hotel.vedmedycya@gmail.com<br>
                                 <a href="#"><i class="fab fa-viber text-white mr-1"></i></a>
                                 <a href="#"><i class="fab fa-whatsapp text-white mr-1"></i></a>
                                 Україна, м. Яремче, вул. Вітовського 5А
@@ -862,9 +867,16 @@
             });
 
             if ($(window).width() > 1199) {
-                $("#feedback-slider-arrows-id").css("top", $("#test").offset().top + $('#test').height()/2 - 30);
+                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
+                $(".feedback-slider-arrows").height($("#test").height());
+                $(".feedback-slider-arrows").width($("#test").width() + 320);
+                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top + 40);
+                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
+                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
+                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
+                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
             }
         });
 
@@ -891,9 +903,15 @@
             //------
 
             if ($(window).width() > 1199) {
-                $("#feedback-slider-arrows-id").css("top", $("#test").offset().top + $('#test').height()/2 - 30);
+                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
+                $(".feedback-slider-arrows").height($("#test").height());
+                $(".feedback-slider-arrows").width($("#test").width() + 320);
+                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top + 40);
+                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
+                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
+                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
+                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
             }
 
             $('.hotel-card').hover(function() {
