@@ -212,7 +212,7 @@
             </div>
         </div>
         <div class="row justify-content-center no-gutters px-md-5 px-0">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-6 p-2">
                 <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/hotels/u_marka.JPG);"></div>
                     <div class="card-body hotel-card-body">
@@ -245,7 +245,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-6 p-2">
                 <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/hotels/bigbear.JPG);"></div>
                     <div class="card-body hotel-card-body">
@@ -272,7 +272,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-6 p-2">
                 <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/hotels/dreamhouse.jpg);"></div>
                     <div class="card-body hotel-card-body">
@@ -299,7 +299,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="align-self-center fake col-xl-2" style="left: -96px;"></div>
+            <div class="col-xl-4 col-lg-6 p-2">
                 <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/hotels/beardvir.jpg);"></div>
                     <div class="card-body hotel-card-body">
@@ -326,7 +327,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-6 p-2">
                 <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/hotels/whitehouse.jpg);"></div>
                     <div class="card-body hotel-card-body">
@@ -353,6 +354,10 @@
                     </div>
                 </div>
             </div>
+            <div class="align-self-center fake col-xl-2" style="right: -96px;"></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
     
@@ -449,7 +454,8 @@
                     <div class="d-flex justify-content-center">
                         <div id="test" class="card feedback-card">
                             <div class="card-body">
-                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn... <a href="#" style="color: #ff8c00">Читати повністю</a></p>
+                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn... 
+                                <a href="#" style="color: #ff8c00;">Читати повністю</a></p>
                             </div>
                             <div class="card-footer">
                                 <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
@@ -882,6 +888,7 @@
         $(document).ready(function(){
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
+            $('.fake').height($('.col-xl-4').width() * 0.5);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
             $('.price-p-div').width($('.col-xl-4').width() * 0.3);
             $('.old-price').css("left", $('.price-p-div').width()/2 - $('.old-price').width()/2);
@@ -930,6 +937,7 @@
         $(window).resize(function() {
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
+            $('.fake').height($('.col-xl-4').width() * 0.5);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
             $('.price-p-div').width($('.col-xl-4').width() * 0.3);
             $('.old-price').css("left", $('.price-p-div').width()/2 - $('.old-price').width()/2);

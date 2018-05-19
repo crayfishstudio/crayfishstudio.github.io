@@ -50,6 +50,11 @@ body, footer {
     .features-icon {
         font-size: 7rem;
     }
+
+    .fake {
+        background-color: #F4F4F4; 
+        position: relative; 
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -143,8 +148,8 @@ body, footer {
         font-size: 4rem;
     }
 
-    .overflow-hidden {
-
+    .fake {
+        display: none;
     }
 }
 
