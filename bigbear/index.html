@@ -114,10 +114,16 @@
         </div>
         <div class="slider-arrows">
             <div id="p-arrow" class="div-arrows" style="left: 0;">
-                <i class="fas fa-chevron-left fa-4x" style="margin-left: 2vw; margin-top: 43vh; color: #fff;"></i>
+                <div class="arrow-left">
+                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                </div>
             </div>
             <div id="n-arrow" class="div-arrows" style="right: 0;">
-                <i class="fas fa-chevron-right fa-4x" style="margin-right: 2vw; margin-top: 43vh; float: right; color: #fff;"></i>
+                <div class="arrow-right">
+                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                </div>
             </div>
         </div>
         <div id="selector-bar-id" class="selector-bar">
@@ -223,12 +229,18 @@
                         </div>
                     </div>
                     <div class="hotel-card-price">
+                        <p class="old-price" style="text-decoration: line-through;">100</p>
                         <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong>200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
+                            <p class="price-p" style="margin-right: 6px;">від</p>
+                            <p class="price-p discount-price"><strong>200</strong></p>
+                            <p class="price-p" style="margin-left: 6px;">грн</p>
                         </div>
                         <div class="hotel-card-price-hover">
                             <p>ЗАБРОНЮВАТИ</p>
                         </div>
+                    </div>
+                    <div class="hotel-card-discount">
+                        <p>ЗНИЖКА 20%</p>
                     </div>
                 </div>
             </div>
@@ -696,13 +708,6 @@
                 }
             });
 
-            $('#datepicker').datepicker({
-                range: true,
-                minDate: new Date(),
-                dateFormat: "dd.mm"
-            });
-            $('#datepicker').data('datepicker');
-
             $('#datepicker-2').datepicker({
                 range: true,
                 minDate: new Date(),
@@ -809,6 +814,29 @@
     </script>
 
     <script>
+        $('#datepicker').datepicker({
+            range: true,
+            minDate: new Date(),
+            dateFormat: "dd.mm",
+            position: "bottom left"
+        });
+        $('#datepicker').data('datepicker');
+
+        if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+            $('#datepicker').datepicker().data('datepicker').update({
+                position: "top left"
+            });
+
+            $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+        }
+
+        $('#datepicker-2').datepicker({
+            range: true,
+            minDate: new Date(),
+            dateFormat: "dd.mm"
+        });
+        $('#datepicker-2').data('datepicker');
+
         $(".input-dropdown").each(function() {
             $(this).css({
                 top: 100 + "%"
@@ -833,6 +861,22 @@
                     });
                 }
             });
+
+            $('#datepicker').datepicker().data('datepicker').update({
+                position: "top left"
+            });            
+
+            $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
+
+            if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+                $('.datepickers-container').css("top", 0)
+
+                $('#datepicker').datepicker().data('datepicker').update({
+                    position: "top left"
+                });            
+
+                $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+            }
         });
         </script>
 
@@ -842,6 +886,9 @@
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
             $('.price-p-div').width($('.col-xl-4').width() * 0.3);
+            $('.old-price').css("left", $('.price-p-div').width()/2 - $('.old-price').width()/2);
+            $('.old-price').css("font-size", $('.col-xl-4').width() * 0.025);
+            $('.hotel-card-discount').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
 
             $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
             $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
@@ -887,6 +934,9 @@
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
             $('.price-p-div').width($('.col-xl-4').width() * 0.3);
+            $('.old-price').css("left", $('.price-p-div').width()/2 - $('.old-price').width()/2);
+            $('.old-price').css("font-size", $('.col-xl-4').width() * 0.025);
+            $('.hotel-card-discount').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
 
             $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
             $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);

@@ -643,6 +643,31 @@ body, footer {
         background-color: #ff8c00;
     }
 
+    .hotel-card-discount {
+        position: absolute;
+        width: calc(30% + 2px);
+        left: 30px;
+        top: 21%;
+        text-align: center;
+        padding: 1%;
+        color: white;
+        background-color: #d23a00;
+    }
+
+    .hotel-card-discount p {
+        margin: 0;
+    }
+
+    .old-price {
+        position: absolute;
+        color: white;
+        top: 23%;
+    }
+
+    .discount-price {
+        margin-top: 24px;
+    }
+
     .price-p {
         color: white;
         text-align: center;
