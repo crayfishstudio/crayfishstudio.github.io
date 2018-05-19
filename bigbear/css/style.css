@@ -1038,3 +1038,28 @@ body, footer {
 .arrow-right div:nth-of-type(2) {
     transform: rotate(-45deg) translate(-18px,28px);
 }
+.hover-underline {
+    transition: border-width 0.3s; 
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.hover-underline:hover {
+    border-bottom: #ff8c00 5px solid;
+    margin-bottom: -1px !important;
+    transition: all 0.3s;
+}
+
+.submit-button {
+    width: 100%;
+    height: 100%;
+    background-color: #ff8c00;
+    border: none;
+    cursor: pointer;    
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.submit-button:hover {
+    background-color: #ff6c00;
+}
