@@ -25,8 +25,8 @@
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);2
-        -webkit-transition: .25s linear;
-        transition: .25s linear;
+        -webkit-transition: .25s cubic-bezier(0.77,0.2,0.05,1.0);
+        transition: .25s cubic-bezier(0.77,0.2,0.05,1.0);
     }
 
     .right > a:hover:before {
@@ -197,6 +197,10 @@
     .buy-details {
         position: static !important;
     }
+    
+    .lang-active {
+        color: #EBEBEB !important;
+    }
 }
 
 body {
@@ -223,11 +227,11 @@ body {
 /*START Animations*/
 
 .transition {
-    -webkit-transition: all 1s ease;  
-    -moz-transition: all 1s ease;  
-    -o-transition: all 1s ease;  
-    -ms-transition: all 1s ease;  
-    transition: all 1s ease;
+    -webkit-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);  
+    -moz-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);  
+    -o-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);  
+    -ms-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);  
+    transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 .footer-transition {right: 0;}
@@ -237,11 +241,11 @@ body {
 /*START Right Menu Buttons*/
 
 .right > a {
-    font-family: 'Roboto Thin', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
     text-transform: uppercase;
     margin: 5px;
     font-size: 20px;
-    color: #696969;
+    color: #666;
     text-decoration: none;
     position: relative;
 }
@@ -257,8 +261,16 @@ body {
     padding: 10px;
     background-color: #2e2e2e;
     cursor: pointer;
+    border-bottom: 0px solid #fff;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: all cubic-bezier(0.77,0.2,0.05,1.0) 0.5s;
+}
+
+.img-container:hover {
+    padding: 15px;
+    background-color: #1C1815;
+    border-bottom: 15px solid #e6b58b;
 }
 
 .pt-custom {padding-top: calc(100vh/12);}
@@ -453,4 +465,33 @@ body {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+.lang-changer {
+    font-family: 'Roboto Light', sans-serif;
+    text-transform: uppercase;
+    margin: 5px;
+    font-size: 20px;
+    color: #969696;
+    position: relative;    
+}
+
+.lang-active {
+    color: #666;
+}
+
+.lang-active:hover {
+    color: #666;    
+}
+
+.lang-active:hover {
+     text-decoration: none;    
+}
+
+.lang-noactive {
+    color: #969696 !important;
+}
+
+.lang-noactive:hover {
+    text-decoration: none;
 }
