@@ -551,6 +551,7 @@ body, footer {
 
 #mobile-phones {
     color: #646464;
+    -webkit-color: #646464 !important;
 }
 
 .main-header {
@@ -1067,4 +1068,8 @@ body, footer {
 
 .submit-button:hover {
     background-color: #ff6c00;
+}
+
+.phones-included {
+    -webkit-color: #fff !important;
 }
