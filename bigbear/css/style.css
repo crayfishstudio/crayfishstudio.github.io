@@ -1084,3 +1084,94 @@ body, footer {
     display: table-cell;
     vertical-align: middle;
 }
+
+.apart-card {
+    width: 100%;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.apart-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.apart-header {
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 3px solid #ff8c00;
+}
+
+.text-orange {
+    color: #ff8c00;
+}
+
+.text-brown-param {
+    color: #4D3431;
+    font-weight: 300;
+}
+
+.apart-hotel {
+    color: #707070;
+    font-weight: 400;
+}
+
+.apart-description {
+    color: #707070;
+}
+
+.apart-text-muted {
+    color: #aaa;
+}
+
+.icons-row i {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.apart-total-price {
+    color: #4D3431;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.apart-old-total-price {
+    color: #4D3431;
+    font-weight: 300;
+    text-decoration: line-through;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.btn-yellow-overline {
+    border: 1px solid #ff8c00;
+    border-radius: 0;
+    color: #ff8c00;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+.btn-yellow-overline:hover {
+    color: #fff;
+    background-color: #ff8c00;
+}
+
+.btn-yellow {
+    border: 1px solid #ff8c00;
+    border-radius: 0;
+    color: #fff;
+    background-color: #ff8c00;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+.btn-yellow:hover {
+    color: #fff;
+    border: 1px solid #4D3431;
+}
