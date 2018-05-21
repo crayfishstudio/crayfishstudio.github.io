@@ -76,6 +76,8 @@
         </div>
 
         <div class="footer center-vertical-container transition">
+            <a href="#" id="bottomOrderExit" class="custom-link" data-toggle="modal" data-target="#exampleModalCenter">замовити дзвінок</a>
+        	<span class="custom-link">-</span>
         	<a class="custom-link">+38 (096) 65 32 586</a>
         	<span class="custom-link">-</span>
         	<a class="custom-link">info@rutetskiy.com</a>
@@ -85,14 +87,44 @@
         	<a href="#" class="custom-link">facebook</a>
         	<span class="custom-link">-</span>
         	<a href="#" class="custom-link">instagram</a>
-           
-            <div id="bottomContactsExit" class="closeContacts">
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+
+        	<div id="bottomContactsExit" class="closeContacts">
+        		<div class="line"></div>
+        		<div class="line"></div>
+        	</div>
         </div>
 
         <div class="closeDetails"></div>
+       
+        <div class="modal fade modal-custom" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 0">
+              <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLongTitle">ЗАМОВЛЕННЯ %Картина_нейм%</h5>
+              </div>
+              <div class="modal-body" style="text-align: center !important">
+                <p>наш менеджер невдовзі зв'яжеться з вами</p>
+                <form>
+                  <div class="form-group">
+                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ім'я">
+                  </div>
+                  <div class="form-group">
+                    <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Номер телефону">
+                  </div>
+                  <div class="form-group">
+                    <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Електронна скринька">
+                  </div>
+                  <div class="form-group">
+                    <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Ваша адреса">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" style="width: 100%">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
