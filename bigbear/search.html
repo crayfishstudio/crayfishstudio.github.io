@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/fontawesome-all.js"></script>
 
-    <title>Велика Ведмедиця</title>
+    <title>Пошук ідеального номеру - Велика Ведмедиця</title>
 </head>
 
 <body>
@@ -55,12 +55,18 @@
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">про нас</a>
                 </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link my-1 hover-underline" href="#">номери</a>
+                </li>-->
                 <li class="nav-item text-center my-xl-1">
                     <a id="desktop-logo" href="#"><img class="img-fluid mx-center" src="img/logo.png" width="140px"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">відгуки</a>
                 </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link my-1 hover-underline" href="#">акції</a>
+                </li>-->
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">контакти</a>
                 </li>
@@ -87,62 +93,19 @@
                     <div class="main-blur"></div>
                 </div>
             </div>
-            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/headers/familyresort.jpg);">
-                <h1>СІМЕЙНИЙ ВІДПОЧИНОК<br class="text-divider"> У КАРПАТАХ</h1>
-                <div class="selector-bar overflow-hidden" style="background-image: url(img/headers/familyresort.jpg);">
-                    <div class="main-blur"></div>
-                </div>
-            </div>
-            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/headers/ecohotel.jpg);">
-                <h1>СПРАВЖНІЙ ЕКО-ГОТЕЛЬ<br class="text-divider"> У ЯРЕМЧЕ</h1>
-                <div class="selector-bar overflow-hidden" style="background-image: url(img/headers/ecohotel.jpg);">
-                    <div class="main-blur"></div>
-                </div>
-            </div>
-            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/headers/pool.jpg);">
-                <h1>БАСЕЙН<br class="text-divider"> З ПІДІГРІВОМ</h1>
-                <div class="selector-bar overflow-hidden" style="background-image: url(img/headers/pool.jpg);">
-                    <div class="main-blur"></div>
-                </div>
-            </div>
-            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/headers/owncotedge.jpg);">
-                <h1>ВЛАСНИЙ КОТЕДЖ<br class="text-divider"> НА ЧАС ВІДПУСТКИ</h1>
-                <div class="selector-bar overflow-hidden" style="background-image: url(img/headers/owncotedge.jpg);">
-                    <div class="main-blur"></div>
-                </div>
-            </div>
         </div>
         <div class="slider-arrows">
             <div id="p-arrow" class="div-arrows" style="left: 0;">
-                <div class="arrow-left">
-                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
-                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
-                </div>
+                <i class="fas fa-chevron-left fa-4x" style="margin-left: 2vw; margin-top: 43vh; color: #fff;"></i>
             </div>
             <div id="n-arrow" class="div-arrows" style="right: 0;">
-                <div class="arrow-right">
-                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
-                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
-                </div>
+                <i class="fas fa-chevron-right fa-4x" style="margin-right: 2vw; margin-top: 43vh; float: right; color: #fff;"></i>
             </div>
         </div>
         <div id="selector-bar-id" class="selector-bar">
             <div class="container-fluid px-1">
                 <form>
-                    <div class="row justify-content-center no-gutters py-md-3 py-1">
-                        <div class="col-lg-2 col-md-3 col-6 my-1">
-                            <div class="input-pattern">
-                                <input id="location" type="text" name="location" placeholder="Готель/місто" style="cursor: pointer" readonly="readonly" />
-                                <i class="fas fa-map-marker-alt input-icon"></i>
-                                <div class="input-dropdown px-2">
-                                    <p class="input-location d-flex align-items-center">Велика Ведмедиця</p>
-                                    <p class="input-location d-flex align-items-center">Ведмежий Двір</p>
-                                    <p class="input-location d-flex align-items-center">White House</p>
-                                    <p class="input-location d-flex align-items-center">Dream House</p>
-                                    <p class="input-location d-flex align-items-center">У Марка</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row justify-content-center no-gutters py-md-3 py-1 px-5">
                         <div class="col-lg-2 col-md-3 col-6 my-1">
                             <div id="div-datepicker" class="input-pattern">
                                 <i class="fas fa-calendar-alt input-icon"></i>
@@ -184,6 +147,24 @@
                         </div>
                         <div class="col-lg-2 col-md-3 my-1">
                             <div class="input-pattern">
+                                <p id="guests" class="input-text" style="color: #969696">Категорія</p>
+                                <i class="fas fa-star input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern">
+                                <p id="guests" class="input-text" style="color: #969696">Корпус</p>
+                                <i class="fas fa-home input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern">
+                                <p id="guests" class="input-text" style="color: #969696">Сортування</p>
+                                <i class="fas fa-sort-alpha-up input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 my-1">
+                            <div class="input-pattern">
                                 <button type="submit" class="submit-button">ПЕРЕВІРИТИ ЦІНИ</button>
                             </div>
                         </div>
@@ -197,23 +178,30 @@
         <i class="fas fa-phone fa-2x my-2" style="color: #ff8c00"></i>
         <h5 class="mt-2">+38 (097) 514 4702</h5>
         <h5 class="mb-3">+38 (050) 514 4702</h5>
-        <h6 class="mb-3">або пишіть у месенджери</h6>
+        <h6 class="mb-3">або пишіть у месенджери:</h6>
         <a href="#" style="color: #8F5DB7"><i class="fab fa-viber fa-2x"></i></a>
         <a href="#" style="color: #25D366"><i class="fab fa-whatsapp fa-2x mx-4"></i></a>
         <a href="#" style="color: #0088CC"><i class="fab fa-telegram-plane fa-2x"></i></a>
         <div class="h-line-bold"></div>
     </div>
     
-    <div class="container-fluid px-sm-5">
+    <div class="container-fluid px-sm-5 pb-5">
         <div class="row text-center">
             <div class="col">
-                <h2 class="section-header-huge">МЕРЕЖА ГОТЕЛІВ "ВЕЛИКА ВЕДМЕДИЦЯ"</h2>
-                <h4 class="section-header-small">в яремче та буковелі</h4>
-                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <h2 class="section-header-huge">ЗНАЙДЕНО 4 ІДЕАЛЬНИЗ НОМЕРИ</h2>
+                <p class="section-description">У ціну усіх номерів включені безкоштовні сніданок, чай, кава та проживання дітей віком до 5 років (для номерів з місткістю від двох людей)</p>
             </div>
         </div>
-        <div class="row justify-content-center no-gutters px-md-5 px-0">
-            <div class="col-xl-4 col-lg-6 p-2">
+    </div>
+
+    <div class="container-fluid pb-5"  style="background-color: #f4f4f4">
+        <div class="row text-center">
+            <div class="col">
+                <h2 class="section-header-huge pb-5">Вільні номери на схожі дати</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center no-gutters px-md-5 px-0 pb-3">
+            <div class="col-xl-4">
                 <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/hotels/u_marka.JPG);"></div>
                     <div class="card-body hotel-card-body">
@@ -231,22 +219,16 @@
                         </div>
                     </div>
                     <div class="hotel-card-price">
-                        <p class="old-price" style="text-decoration: line-through;">100</p>
                         <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p>
-                            <p class="price-p discount-price"><strong>200</strong></p>
-                            <p class="price-p" style="margin-left: 6px;">грн</p>
+                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong>200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
                         </div>
                         <div class="hotel-card-price-hover">
                             <p>ЗАБРОНЮВАТИ</p>
                         </div>
                     </div>
-                    <div class="hotel-card-discount">
-                        <p>ЗНИЖКА 20%</p>
-                    </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 p-2">
+            <div class="col-xl-4">
                 <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/hotels/bigbear.JPG);"></div>
                     <div class="card-body hotel-card-body">
@@ -273,7 +255,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 p-2">
+            <div class="col-xl-4">
                 <div class="card hotel-card m-lg-1 mt-lg-3">
                     <div class="card-header" style="background: url(img/hotels/dreamhouse.jpg);"></div>
                     <div class="card-body hotel-card-body">
@@ -300,280 +282,7 @@
                     </div>
                 </div>
             </div>
-            <div class="align-self-center fake col-xl-2" style="left: -96px;"></div>
-            <div class="col-xl-4 col-lg-6 p-2">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/hotels/beardvir.jpg);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Готель ВЕДМЕЖИЙ ДВІР</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                Буковель</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
-                        </div>
-                    </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
-                        </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 p-2">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/hotels/whitehouse.jpg);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Елітний котедж WHITE HOUSE</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                Буковель</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
-                        </div>
-                    </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
-                        </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="align-self-center fake col-xl-2" style="right: -96px;"></div>
-            <div></div>
-            <div></div>
-            <div></div>
         </div>
-    </div>
-    
-    <div class="container-fluid">
-        <div class="row justify-content-center px-md-5 px-0 text-center">
-            <div class="col">
-                <h2 class="section-header-huge section-number-include">понад <span id="giant-number">10 000</span> гостей</h2>
-                <p class="section-description">відвідали наш готельний комплекс за 6 років</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid py-sm-5 py-3"  style="background-color: #f4f4f4">
-        <div class="row no-gutters text-center">
-            <div class="col-md-3 col-6 py-2 my-2">
-                <i class="bb-pool features-icon"></i>
-                <h5 class="feature-text">басейн<br>з підігрівом</h5>
-            </div>
-            <div class="col-md-3 col-6 py-2 my-2">
-                <i class="bb-feedback features-icon"></i>
-                <h5 class="feature-text">більш ніж<br>999 відгуків</h5>
-            </div>
-            <div class="col-md-3 col-6 py-2 my-2">
-                <i class="bb-feedback features-icon"></i>
-                <h5 class="feature-text">рейтинг на<br>booking.com</h5>
-            </div>
-            <div class="col-md-3 col-6 py-2 my-2">
-                <i class="bb-toy-thin features-icon"></i>
-                <h5 class="feature-text">розваги<br>для дітей</h5>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col" style="padding: 0;">
-                <h2 class="section-header-huge">більше ніж просто відпочинок</h2>
-                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <div class="rest-slider">
-                    <div style="padding: 20px;">
-                        <div class="rest-image" style="background: url(img/impressions/familyrelax.jpg);"></div>
-                        <div class="rest-details">
-                            <h4>ПОЇЗДКИ НА КВАДРОЦИКЛАХ</h4>
-                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        </div>
-                    </div>
-                    <div style="padding: 20px;">
-                        <div class="rest-image" style="background: url(img/impressions/gutsuls.jpg);"></div>
-                        <div class="rest-details">
-                            <h4>КВАДРОЦИКЛАХ ПОЇЗДКИ НА</h4>
-                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        </div>
-                    </div>
-                    <div style="padding: 20px;">
-                        <div class="rest-image" style="background: url(img/impressions/horsewalk.jpg);"></div>
-                        <div class="rest-details">
-                            <h4>ПОЇЗДКИ КВАДРОЦИКЛАХ НА</h4>
-                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        </div>
-                    </div>
-                    <div style="padding: 20px;">
-                        <div class="rest-image" style="background: url(img/impressions/karpathians.jpg);"></div>
-                        <div class="rest-details">
-                            <h4>НА ПОЇЗДКИ КВАДРОЦИКЛАХ</h4>
-                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        </div>
-                    </div>
-                    <div style="padding: 20px;">
-                        <div class="rest-image" style="background: url(img/impressions/quadbikes.jpg);"></div>
-                        <div class="rest-details">
-                            <h4>НА ПОЇЗДКИ КВАДРОЦИКЛАХ</h4>
-                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        </div>
-                    </div>
-                    <div style="padding: 20px;">
-                        <div class="rest-image" style="background: url(img/impressions/rafting.jpg);"></div>
-                        <div class="rest-details">
-                            <h4>НА ПОЇЗДКИ КВАДРОЦИКЛАХ</h4>
-                            <p style="text-align: left; margin-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        </div>
-                    </div>
-                </div>
-                <nav class="rest-dots"></nav>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid pb-5"  style="background-color: #f4f4f4">
-        <div class="row text-center">
-            <div class="col">
-                <h2 class="section-header-huge">Відгуки наших відвідувачів</h2>
-                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <div class="feedback-slider">
-                    <div class="d-flex justify-content-center">
-                        <div id="test" class="card feedback-card">
-                            <div class="card-body">
-                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn... 
-                                <a href="#" style="color: #ff8c00;">Читати повністю</a></p>
-                            </div>
-                            <div class="card-footer">
-                                <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
-                                <p style="float: left; margin-left: 5px;">Mark</p>
-                                <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 10px; color: #707070;">20.02.2018</p>
-                            </div>
-                            <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="card feedback-card">
-                            <div class="card-body">
-                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                            <div class="card-footer">
-                                <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
-                                <p style="float: left; margin-left: 5px;">Mark</p>
-                                <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 5px; color: #707070;">20.02.2018</p>
-                            </div>
-                            <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="card feedback-card">
-                            <div class="card-body">
-                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                            <div class="card-footer">
-                                <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
-                                <p style="float: left; margin-left: 5px;">Mark</p>
-                                <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 5px; color: #707070;">20.02.2018</p>
-                            </div>
-                            <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback-button">
-                    <a href="#">Всі відгуки</a>
-                    <a href="#">Залишити відгук</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="feedback-slider-arrows-id" class="feedback-slider-arrows">
-        <div id="feedback-arrow-left" class="arrow-left">
-            <div></div>
-            <div></div>
-        </div>
-        <div id="feedback-arrow-right" class="arrow-right">
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    
-    <div class="container-fluid px-1" style="background-color: #747474">
-        <form>
-            <div class="row justify-content-center no-gutters py-md-4 py-1">
-                <div class="col-lg-2 col-md-3 col-6 my-1">
-                    <div class="input-pattern">
-                        <input id="location-2" type="text" name="location" placeholder="Готель/місто" style="cursor: pointer" readonly="readonly" />
-                        <i class="fas fa-map-marker-alt input-icon"></i>
-                        <div class="input-dropdown px-2">
-                            <p class="input-location d-flex align-items-center">Велика Ведмедиця</p>
-                            <p class="input-location d-flex align-items-center">Ведмежий Двір</p>
-                            <p class="input-location d-flex align-items-center">White House</p>
-                            <p class="input-location d-flex align-items-center">Dream House</p>
-                            <p class="input-location d-flex align-items-center">У Марка</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-6 my-1">
-                    <div id="div-datepicker-2" class="input-pattern">
-                        <i class="fas fa-calendar-alt input-icon"></i>
-                        <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker-2" style="cursor: pointer" placeholder="Дата"
-                        readonly="readonly"/>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 my-1">
-                    <div class="input-pattern">
-                        <p id="guests-2" class="input-text" style="color: #969696">Кількість гостей</p>
-                        <i class="fas fa-male input-icon"></i>
-                        <div class="input-dropdown">
-                            <div class="input-members d-flex justify-content-between">
-                                <p>Дорослі</p>
-                                <span>
-                                    <span id="adults_plus-2">
-                                        <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                    <input id="adults-2" type="number" name="adults" min="0" value="0" readonly="readonly" />
-                                    <span id="adults_minus-2">
-                                        <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="input-members d-flex justify-content-between">
-                                <p>Діти<br/><sup>5-12 років</sup></p>
-                                <span>
-                                    <span id="children_plus-2">
-                                        <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                    <input id="children-2" type="number" name="children" min="0" value="0" readonly="readonly" />
-                                    <span id="children_minus-2">
-                                        <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                </span>
-                            </div>
-                            <p style="padding-left: 6px; color: rgba(0,0,0,0.5); margin: 8px 0px 6px 0px;"><sub>діти до 5 років - безкоштовно</sub></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 my-1">
-                    <div class="input-pattern">
-                        <button type="submit" class="submit-button">ПЕРЕВІРИТИ ЦІНИ</button>
-                    </div>
-                </div>
-            </div>
-        </form>
     </div>
 
     <footer class="black-footer py-4">
@@ -593,10 +302,10 @@
                             <p class="text-white phones-included">
                                 +38 (097) 514 4702<br>
                                 +38 (097) 514 4702<br>
+                                <a href="#"><i class="fab fa-viber text-white mr-1"></i></a>
+                                 <a href="#"><i class="fab fa-whatsapp text-white mr-1"></i></a>
                                  <a href="#"><i class="fab fa-telegram-plane text-white"></i></a><br>
                                 hotel.vedmedycya@gmail.com<br>
-                                <a href="#"><i class="fab fa-viber text-white mr-1"></i></a>
-                                <a href="#"><i class="fab fa-whatsapp text-white mr-1"></i></a>
                                 Україна, м. Яремче, вул. Вітовського 5А
                             </p>
                         </div>
@@ -713,6 +422,13 @@
                 }
             });
 
+            $('#datepicker').datepicker({
+                range: true,
+                minDate: new Date(),
+                dateFormat: "dd.mm"
+            });
+            $('#datepicker').data('datepicker');
+
             $('#datepicker-2').datepicker({
                 range: true,
                 minDate: new Date(),
@@ -819,29 +535,6 @@
     </script>
 
     <script>
-        $('#datepicker').datepicker({
-            range: true,
-            minDate: new Date(),
-            dateFormat: "dd.mm",
-            position: "bottom left"
-        });
-        $('#datepicker').data('datepicker');
-
-        if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
-            $('#datepicker').datepicker().data('datepicker').update({
-                position: "top left"
-            });
-
-            $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
-        }
-
-        $('#datepicker-2').datepicker({
-            range: true,
-            minDate: new Date(),
-            dateFormat: "dd.mm"
-        });
-        $('#datepicker-2').data('datepicker');
-
         $(".input-dropdown").each(function() {
             $(this).css({
                 top: 100 + "%"
@@ -866,22 +559,6 @@
                     });
                 }
             });
-
-            $('#datepicker').datepicker().data('datepicker').update({
-                position: "top left"
-            });            
-
-            $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
-
-            if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
-                $('.datepickers-container').css("top", 0)
-
-                $('#datepicker').datepicker().data('datepicker').update({
-                    position: "top left"
-                });            
-
-                $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
-            }
         });
         </script>
 
@@ -889,12 +566,8 @@
         $(document).ready(function(){
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
-            $('.fake').height($('.col-xl-4').width() * 0.5);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
             $('.price-p-div').width($('.col-xl-4').width() * 0.3);
-            $('.old-price').css("left", $('.price-p-div').width()/2 - $('.old-price').width()/2);
-            $('.old-price').css("font-size", $('.col-xl-4').width() * 0.025);
-            $('.hotel-card-discount').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
 
             $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
             $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
@@ -938,12 +611,8 @@
         $(window).resize(function() {
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
-            $('.fake').height($('.col-xl-4').width() * 0.5);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
             $('.price-p-div').width($('.col-xl-4').width() * 0.3);
-            $('.old-price').css("left", $('.price-p-div').width()/2 - $('.old-price').width()/2);
-            $('.old-price').css("font-size", $('.col-xl-4').width() * 0.025);
-            $('.hotel-card-discount').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
 
             $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
             $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
