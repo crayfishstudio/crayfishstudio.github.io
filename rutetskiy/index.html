@@ -13,10 +13,11 @@
 
     <body onload="loadAnim()">
         <div id="loader">
-            <!--<img class="img-fluid" src="img/logo128.png" style="position: fixed; margin-top: calc(50vh - 64px); margin-right: calc(50vw - 47px)">-->
-            <span id="layer-2"></span>
-            <span id="layer-1"></span>
             <span id="layer-3"></span>
+            <span id="layer-2">
+                <img class="img-fluid" src="img/logo128.png" style="position: absolute; margin-top: calc(50vh - 64px); right: calc(50vw - 47px)">
+            </span>
+            <span id="layer-1"></span>
         </div>
     
     	<div id="toggle" class="toggleButton" onclick="toggleFunction(this)">
@@ -135,7 +136,8 @@
             function loadAnim() {
                 document.getElementById("layer-1").style.width = 0;
                 document.getElementById("layer-2").style.width = 0;
-                setTimeout('zindexToNull()', 3000);  
+                document.getElementById("layer-3").style.width = 0;
+                setTimeout('zindexToNull()', 5000);  
             }
 
             function zindexToNull() {
