@@ -136,11 +136,11 @@
                                 <input id="location" type="text" name="location" placeholder="Готель/місто" style="cursor: pointer" readonly="readonly" />
                                 <i class="fas fa-map-marker-alt input-icon"></i>
                                 <div class="input-dropdown px-2">
-                                    <p class="input-location d-flex align-items-center">Велика Ведмедиця</p>
-                                    <p class="input-location d-flex align-items-center">Ведмежий Двір</p>
-                                    <p class="input-location d-flex align-items-center">White House</p>
-                                    <p class="input-location d-flex align-items-center">Dream House</p>
-                                    <p class="input-location d-flex align-items-center">У Марка</p>
+                                    <p class="input-location d-flex align-items-center"><span>Велика Ведмедиця<br/><sub> (Яремче)</sub></span></p>
+                                    <p class="input-location d-flex align-items-center"><span>Ведмежий Двір<br/><sub> (Яремче)</sub></span></p>
+                                    <p class="input-location d-flex align-items-center"><span>White House<br/><sub> (Яремче)</sub></span></p>
+                                    <p class="input-location d-flex align-items-center"><span>Dream House<br/><sub> (Яремче)</sub></span></p>
+                                    <p class="input-location d-flex align-items-center"><span>У Марка<br/><sub> (Яремче)</sub></span></p>
                                 </div>
                             </div>
                         </div>
@@ -380,8 +380,8 @@
                 <i class="bb-feedback features-icon"></i>
                 <h5 class="feature-text">більш ніж<br>999 відгуків</h5>
             </div>
-            <div class="col-md-3 col-6 py-2 my-2">
-                <i class="bb-feedback features-icon"></i>
+            <div id="booking-id" class="col-md-3 col-6 py-2 my-2">
+                <p class="booking-icon">9.1<br><sup><small style="color: grey;"><sup><small>out of 10</small></sup></small></sup></p>
                 <h5 class="feature-text">рейтинг на<br>booking.com</h5>
             </div>
             <div class="col-md-3 col-6 py-2 my-2">
@@ -518,11 +518,11 @@
                         <input id="location-2" type="text" name="location" placeholder="Готель/місто" style="cursor: pointer" readonly="readonly" />
                         <i class="fas fa-map-marker-alt input-icon"></i>
                         <div class="input-dropdown px-2">
-                            <p class="input-location d-flex align-items-center">Велика Ведмедиця</p>
-                            <p class="input-location d-flex align-items-center">Ведмежий Двір</p>
-                            <p class="input-location d-flex align-items-center">White House</p>
-                            <p class="input-location d-flex align-items-center">Dream House</p>
-                            <p class="input-location d-flex align-items-center">У Марка</p>
+                            <p class="input-location d-flex align-items-center"><span>Велика Ведмедиця<br/><sub> (Яремче)</sub></span></p>
+                            <p class="input-location d-flex align-items-center"><span>Ведмежий Двір<br/><sub> (Яремче)</sub></span></p>
+                            <p class="input-location d-flex align-items-center"><span>White House<br/><sub> (Яремче)</sub></span></p>
+                            <p class="input-location d-flex align-items-center"><span>Dream House<br/><sub> (Яремче)</sub></span></p>
+                            <p class="input-location d-flex align-items-center"><span>У Марка<br/><sub> (Яремче)</sub></span></p>
                         </div>
                     </div>
                 </div>
@@ -886,6 +886,22 @@
 
     <script>
         $(document).ready(function(){
+
+            $('.booking-icon').css({
+                "border-style": "solid",
+                "border-color": "#ff8c00",
+                "border-width": $("#booking-id").width() * 0.01,
+                "width": $("#booking-id").width() * 0.25,
+                "border-radius": "50%",
+                "color": "#ff8c00",
+                "font-size": $("#booking-id").width() * 0.1,
+                "padding": $("#booking-id").width() * 0.03,
+                "line-height": "120%"
+            });
+
+            $('.booking-icon').css("margin", "auto");
+            $('.booking-icon').height($('.booking-icon').width());
+
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
             $('.fake').height($('.col-xl-4').width() * 0.5);
@@ -935,6 +951,21 @@
         var x = 0;
 
         $(window).resize(function() {
+            $('.booking-icon').css({
+                "border-style": "solid",
+                "border-color": "#ff8c00",
+                "border-width": $("#booking-id").width() * 0.01,
+                "width": $("#booking-id").width() * 0.25,
+                "border-radius": "50%",
+                "color": "#ff8c00",
+                "font-size": $("#booking-id").width() * 0.1,
+                "padding": $("#booking-id").width() * 0.03,
+                "line-height": "120%"
+            });
+
+            $('.booking-icon').css("margin", "auto");
+            $('.booking-icon').height($('.booking-icon').width());
+
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
             $('.fake').height($('.col-xl-4').width() * 0.5);
