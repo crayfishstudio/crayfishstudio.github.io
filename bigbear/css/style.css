@@ -552,6 +552,7 @@ body, footer {
 
 #mobile-phones {
     color: #646464;
+    -webkit-color: #646464 !important;
 }
 
 .main-header {
@@ -1070,3 +1071,9 @@ body, footer {
     background-color: #ff6c00;
 }
 
+<<<<<<< HEAD
+=======
+.phones-included {
+    -webkit-color: #fff !important;
+}
+>>>>>>> cef99591eaa1df6369a34f216b18b9df742974c3
