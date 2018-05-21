@@ -1073,3 +1073,13 @@ body, footer {
 .phones-included {
     -webkit-color: #fff !important;
 }
+
+.vert-aligner-container {
+    min-height: calc(100vw/7);
+    display: table;
+}
+
+.vert-aligner {
+    display: table-cell;
+    vertical-align: middle;
+}
