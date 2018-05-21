@@ -11,7 +11,7 @@
         <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
 
-    <body onload="loadAnim()">
+    <body onload="loadAnim()" on>
         <div id="loader">
             <span id="layer-3"></span>
             <span id="layer-2">
@@ -136,7 +136,7 @@
             function loadAnim() {
                 document.getElementById("layer-1").style.width = 0;
                 document.getElementById("layer-2").style.width = 0;
-                document.getElementById("layer-3").style.width = 0;
+                document.getElementById("layer-3").style.height = 0;
                 setTimeout('zindexToNull()', 5000);  
             }
 
