@@ -153,6 +153,16 @@ body, footer {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .apart-image {
+        height: calc(100vw/1.8) !important;
+    }
+    
+    .apart-header {
+        font-size: 150%;
+    }
+}
+
 #custom-navbar li {
     letter-spacing: 2px;
     text-transform: uppercase;
