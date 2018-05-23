@@ -1062,8 +1062,8 @@ body, footer {
 }
 
 .hover-underline:hover {
-    border-bottom: #ff8c00 5px solid;
-    margin-bottom: -1px !important;
+    border-bottom: #ff8c00 3px solid;
+    margin-bottom: 1px !important;
     transition: all 0.3s;
 }
 
@@ -1110,7 +1110,7 @@ body, footer {
 .apart-header {
     text-transform: uppercase;
     font-weight: 400;
-    border-bottom: 3px solid #ff8c00;
+    border-bottom: 2px solid #ff8c00;
 }
 
 .text-orange {
@@ -1128,7 +1128,7 @@ body, footer {
 }
 
 .apart-description {
-    color: #707070;
+    color: #808080;
 }
 
 .apart-text-muted {
@@ -1183,5 +1183,5 @@ body, footer {
 
 .btn-yellow:hover {
     color: #fff;
-    border: 1px solid #4D3431;
+    background-color: #ff6c00;
 }
