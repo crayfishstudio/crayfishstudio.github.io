@@ -161,6 +161,19 @@ body, footer {
     .apart-header {
         font-size: 150%;
     }
+    
+    .icons-row i {
+        font-size: 20px !important;
+        margin: 5px !important;
+    }
+    
+    .halfscreen-img {
+        height: 100vh !important;
+    }
+    
+    .main-form {
+        bottom: 0vh !important;
+    }
 }
 
 #custom-navbar li {
@@ -221,12 +234,13 @@ body, footer {
     background-position: center;
 }
 
-.fullscreen-img h1 {
+.fullscreen-img h1,
+.halfscreen-img h1{
     color: white;
     font-weight: 900;
     text-align: center;
-    padding-left: 14vw;
-    padding-right: 14vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     text-shadow: 0px 0px 40px #000000;
     letter-spacing: 5px;
 }
@@ -1062,7 +1076,7 @@ body, footer {
 }
 
 .hover-underline:hover {
-    border-bottom: #ff8c00 3px solid;
+    border-bottom: #ff8c00 2px solid;
     margin-bottom: 1px !important;
     transition: all 0.3s;
 }
@@ -1184,4 +1198,61 @@ body, footer {
 .btn-yellow:hover {
     color: #fff;
     background-color: #ff6c00;
+}
+
+.price-bar {
+    background-color: #ff8c00;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.apart-old-price {
+    text-decoration: line-through;
+    margin-bottom: -2px;
+    font-weight: 300;
+}
+
+.apart-price {
+    font-weight: 700;
+    margin-bottom: -7px;
+}
+
+.bar-container {
+    position: absolute;
+    right: 20px;
+    top: -10px;
+}
+
+.sale-bar {
+    background-color: #D23A00;
+    text-align: center;
+}
+
+.sale-text {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 7px;
+    font-weight: 400;
+}
+
+.halfscreen-img {
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.main-form {
+    position: absolute;
+    bottom: 40vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
 }

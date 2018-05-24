@@ -85,25 +85,16 @@
         </div>  
     </nav>
     
-    <div id="main-slider">
-        <div class="slider-class">
-            <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/headers/idealrelax.jpg);">
-                <h1>ВАШ ІДЕАЛЬНИЙ ВІДПОЧИНОК<br class="text-divider"> ЧЕКАЄ ВАС ТУТ</h1>
-                <div class="selector-bar overflow-hidden" style="background-image: url(img/headers/idealrelax.jpg);">
-                    <div class="main-blur"></div>
-                </div>
+    <!--<div id="main-slider">
+        <div class="fullscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/headers/idealrelax.jpg);">
+            <h1>ВАШ ІДЕАЛЬНИЙ ВІДПОЧИНОК<br class="text-divider"> ЧЕКАЄ ВАС ТУТ</h1>
+            <div class="selector-bar overflow-hidden" style="background-image: url(img/headers/search.jpg);">
+                <div class="main-blur"></div>
             </div>
         </div>
-        <div class="slider-arrows">
-            <div id="p-arrow" class="div-arrows" style="left: 0;">
-                <i class="fas fa-chevron-left fa-4x" style="margin-left: 2vw; margin-top: 43vh; color: #fff;"></i>
-            </div>
-            <div id="n-arrow" class="div-arrows" style="right: 0;">
-                <i class="fas fa-chevron-right fa-4x" style="margin-right: 2vw; margin-top: 43vh; float: right; color: #fff;"></i>
-            </div>
-        </div>
+        
         <div id="selector-bar-id" class="selector-bar">
-            <div class="container-fluid px-1">
+            <div class="container-fluid m-0">
                 <form>
                     <div class="row justify-content-center no-gutters py-md-3 py-1 px-md-5">
                         <div class="col-lg-2 col-md-3 my-1">
@@ -163,13 +154,69 @@
                                 <i class="fas fa-sort-alpha-up input-icon"></i>
                             </div>
                         </div>-->
-                        <div class="col-lg-2 col-md-3 my-1">
+                        <!--<div class="col-lg-2 col-md-3 my-1">
                             <div class="input-pattern">
                                 <button type="submit" class="submit-button">ПЕРЕВІРИТИ ЦІНИ</button>
                             </div>
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>-->
+    
+    <div id="main-view">
+        <div class="halfscreen-img d-flex align-items-center justify-content-center" style="background-image: url(img/headers/search.jpg);">
+            <h1 class="pb-5">ВАШ ІДЕАЛЬНИЙ ВІДПОЧИНОК<br class="text-divider"> ЧЕКАЄ ВАС ТУТ</h1>
+        </div>
+        <div class="main-form">
+            <div class="container-fluid px-1">
+                <div class="row no-gutters justify-content-center py-md-3 py-1 px-md-5">
+                    <div class="col-lg-2 col-md-3 my-1">
+                        <div id="div-datepicker" class="input-pattern">
+                            <i class="fas fa-calendar-alt input-icon"></i>
+                            <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker" style="cursor: pointer" placeholder="Дата" readonly="readonly"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 my-1">
+                        <div class="input-pattern">
+                            <p id="guests" class="input-text" style="color: #969696">Кількість гостей</p>
+                            <i class="fas fa-male input-icon"></i>
+                            <div class="input-dropdown">
+                                <div class="input-members d-flex justify-content-between">
+                                    <p>Дорослі</p>
+                                    <span>
+                                        <span id="adults_minus">
+                                            <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                        </span>
+                                        <input id="adults" type="number" name="adults" min="0" value="0" readonly="readonly" />
+                                        <span id="adults_plus">
+                                            <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="input-members d-flex justify-content-between">
+                                    <p>Діти<br/><sup>5-12 років</sup></p>
+                                    <span>
+                                        <span id="children_minus">
+                                            <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                        </span>
+                                        <input id="children" type="number" name="children" min="0" value="0" readonly="readonly" />
+                                        <span id="children_plus">
+                                            <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <p style="padding-left: 6px; color: rgba(0,0,0,0.5); margin: 8px 0px 6px 0px;"><sub>діти до 5 років - безкоштовно</sub></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 my-1">
+                        <div class="input-pattern">
+                            <button type="submit" class="submit-button">ПЕРЕВІРИТИ ЦІНИ</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -194,13 +241,24 @@
         </div>
     </div>
     
-    <div class="container-fluid">
-        <div class="row justify-content-center">
+    <div class="container-fluid pb-5">
+        <div class="row justify-content-center pb-5">
+            <!-- APARTMENT CARD START -->
             <div class="col-md-11">
                 <div class="apart-card">
                     <div class="row no-gutters">
                         <div class="col-md-6">
                             <div class="apart-image" style="background-image: url(img/dpx_0259.jpg)"></div>
+                            <div class="bar-container">
+                                <div class="price-bar">
+                                    <p class="apart-old-price">6000</p>
+                                    <h4 class="apart-price">4500</h4>
+                                    <small>UAH за ніч</small>
+                                </div>
+                                <div class="sale-bar">
+                                    <h5 class="sale-text">Знижка 50%</h5>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 p-md-4 p-3">
                             <div class="row">
@@ -235,14 +293,14 @@
                             </div>
                             <div class="row mt-4 align-items-end no-gutters">
                                 <div class="col-md-4">
-                                    <div class="row no-gutters justify-content-center text-md-left text-center mb-md-0 mb-3">
-                                        <div class="col-md-12 col-3 align-self-center">
+                                    <div class="row no-gutters justify-content-center mb-md-0 mb-3">
+                                        <div class="col-md-12 col-6 text-center text-md-left align-self-center">
                                             <p class="apart-old-total-price"><b>12000 uah</b></p>
                                         </div>
                                         <div class="col-md-12 col-6 align-self-center">
                                             <h3 class="apart-total-price">9000 uah</h3>
                                         </div>
-                                        <div class="col-md-12 col-3 align-self-center">
+                                        <div class="col text-md-left text-center">
                                             <small class="apart-hotel">з 24.05 по 26.05 (2 ночі)</small>
                                         </div>
                                     </div>   
@@ -254,6 +312,7 @@
                     </div>
                 </div>
             </div>
+            <!-- APARTMENT CARD END -->
         </div>
     </div>
 
@@ -417,39 +476,9 @@
     <script src="js/slick.min.js"></script>
     
     <!--sliders-->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.rest-slider').slick({
-                autoplay: true,
-                autoplaySpeed: 2000,
-                infinite: true,
-                fade: true,
-                arrows: false,
-                speed: 2000,
-                dots: true,
-                appendDots: $('.rest-dots'),
-                dotsClass: 'custom-dots',
-                customPaging: function (slider, i) {
-                    return '<a class="dot" role="button"></a>';
-                }
-            });
-
-            $('.slider-class').slick({
-                infinite: true,
-                prevArrow: '#p-arrow',
-                nextArrow: '#n-arrow',
-                speed: 1000
-            });
-
-            $('.feedback-slider').slick({
-                infinite: true,
-                prevArrow: '#feedback-arrow-left',
-                nextArrow: '#feedback-arrow-right',
-                speed: 1000
-            });
-        });
-    </script>
+    <script type="text/javascript"></script>
         
+    <!--form-->
     <!--form-->
     <script type="text/javascript">
         $(document).ready(function() {
@@ -484,13 +513,6 @@
                     $('#datepicker-2').blur();
                 }
             });
-
-            $('#datepicker').datepicker({
-                range: true,
-                minDate: new Date(),
-                dateFormat: "dd.mm"
-            });
-            $('#datepicker').data('datepicker');
 
             $('#datepicker-2').datepicker({
                 range: true,
@@ -598,6 +620,29 @@
     </script>
 
     <script>
+        $('#datepicker').datepicker({
+            range: true,
+            minDate: new Date(),
+            dateFormat: "dd.mm",
+            position: "bottom left"
+        });
+        $('#datepicker').data('datepicker');
+
+        if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+            $('#datepicker').datepicker().data('datepicker').update({
+                position: "top left"
+            });
+
+            $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+        }
+
+        $('#datepicker-2').datepicker({
+            range: true,
+            minDate: new Date(),
+            dateFormat: "dd.mm"
+        });
+        $('#datepicker-2').data('datepicker');
+
         $(".input-dropdown").each(function() {
             $(this).css({
                 top: 100 + "%"
@@ -622,6 +667,22 @@
                     });
                 }
             });
+
+            $('#datepicker').datepicker().data('datepicker').update({
+                position: "top left"
+            });            
+
+            $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
+
+            if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+                $('.datepickers-container').css("top", 0)
+
+                $('#datepicker').datepicker().data('datepicker').update({
+                    position: "top left"
+                });            
+
+                $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+            }
         });
         </script>
 
