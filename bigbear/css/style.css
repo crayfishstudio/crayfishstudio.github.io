@@ -1134,7 +1134,7 @@ body, footer {
 }
 
 .text-orange {
-    color: #ff8c00;
+    color: #ff8c00 !important;
 }
 
 .text-brown-param {
@@ -1295,7 +1295,7 @@ body, footer {
 .small-features p {
     font-weight: 300;
     color: #707070;
-    margin-bottom: 0px;
+    margin-bottom: 3px;
 }
 
 .order-card {
@@ -1310,4 +1310,10 @@ body, footer {
     position: absolute;
     margin-top: 13px;
     right: 45px;
+}
+
+.rules-header {
+    color: #4D3431;
+    font-weight: 500;
+    margin-bottom: px;
 }
