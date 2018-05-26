@@ -1141,7 +1141,7 @@ body, footer {
 }
 
 .text-orange {
-    color: #ff8c00;
+    color: #ff8c00 !important;
 }
 
 .text-brown-param {
@@ -1302,7 +1302,7 @@ body, footer {
 .small-features p {
     font-weight: 300;
     color: #707070;
-    margin-bottom: 0px;
+    margin-bottom: 3px;
 }
 
 .order-card {
@@ -1319,6 +1319,7 @@ body, footer {
     right: 45px;
 }
 
+<<<<<<< HEAD
 .apart-price {
     width: 50%; 
     margin: 8px;
@@ -1362,3 +1363,10 @@ body, footer {
     color: white; 
     font-size: 12px;
 }
+=======
+.rules-header {
+    color: #4D3431;
+    font-weight: 500;
+    margin-bottom: px;
+}
+>>>>>>> 731f57687234885c288698924c6b119176d05a5f
