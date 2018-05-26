@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .slider-class .slick-slide {
+            width: 60vw;
+            padding: 0 8px 0 8px;
+        }
+    </style>
     <script defer src="js/fontawesome-all.js"></script>
 
     <title>Пошук ідеального номеру - Велика Ведмедиця</title>
@@ -84,6 +90,33 @@
             </ul>
         </div>  
     </nav>
+
+    <div id="main-slider">
+        <div class="slider-class">
+            <div class="fullscreen-img-2" style="background-image: url(img/headers/idealrelax.jpg);">
+            </div>
+            <div class="fullscreen-img-2" style="background-image: url(img/headers/familyresort.jpg);">
+            </div>
+            <div class="fullscreen-img-2" style="background-image: url(img/headers/ecohotel.jpg);">
+            </div>
+            <div class="fullscreen-img-2" style="background-image: url(img/headers/pool.jpg);">
+            </div>
+        </div>
+        <div class="slider-arrows">
+            <div id="p-arrow" class="div-arrows" style="left: 0;">
+                <div class="arrow-left">
+                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                </div>
+            </div>
+            <div id="n-arrow" class="div-arrows" style="right: 0;">
+                <div class="arrow-right">
+                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
    
     <div class="container-fluid px-sm-5 pb-3">
         <div class="row pt-5 pb-4">
@@ -161,14 +194,55 @@
             <div class="col-md-4 text-md-right text-center">
                 <small style="font-weight: 300; color: #4D3431">Вартість вказана для <i class="fa fa-male align-text-top text-orange"></i> х8, максимальна місткість - <i class="fa fa-male align-text-top text-orange"></i> х12</small>
                 <div class="order-card mt-4">
-                    <div id="div-datepicker" class="input-pattern">
-                        <i class="fas fa-calendar-alt order-form-icon"></i>
-                        <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker" style="cursor: pointer" placeholder="Дати" readonly="readonly"/>
+                    <div class="d-flex justify-content-center" style="margin-left: -15%;">
+                        <div class="apart-price" style="background-color: #707070;">
+                            <p style="color: #FFF;">4500 UAH<br/><span style="color: #FFF;"><sup>UAH за ніч</sup></span></p>
+                        </div>
+                        <div class="apart-price" style="background-color: white;">
+                            <p style="color: #000;">9000 UAH<br/><span style="color: rgba(0, 0, 0, .5);"><sup>UAH за 4 ночі</sup></span></p>
+                        </div>
                     </div>
                     <div id="div-datepicker" class="input-pattern">
                         <i class="fas fa-calendar-alt order-form-icon"></i>
-                        <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker" style="cursor: pointer" placeholder="Дати" readonly="readonly"/>
+                        <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker" style="cursor: pointer;" placeholder="Дати" readonly="readonly"/>
                     </div>
+                    <div style="margin-top: 16px;" class="input-pattern d-flex justify-content-between">
+                        <p id="guests" class="input-text" style="color: #969696; float: left; margin-left: 4px;">Кількість гостей</p>
+                        <i class="fas fa-male order-form-icon"></i>
+                        <div class="input-dropdown">
+                            <div class="input-members d-flex justify-content-between">
+                                <p style="margin-left: 6px;">Дорослі</p>
+                                <span>
+                                    <span id="adults_minus">
+                                        <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                    </span>
+                                    <input id="adults" type="number" name="adults" min="0" value="0" readonly="readonly" />
+                                    <span id="adults_plus">
+                                        <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="input-members d-flex justify-content-between">
+                                <p style="text-align: left; margin-left: 6px;">Діти<br/><sup>5-12 років</sup></p>
+                                <span>
+                                    <span id="children_minus">
+                                        <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                    </span>
+                                    <input id="children" type="number" name="children" min="0" value="0" readonly="readonly" />
+                                    <span id="children_plus">
+                                        <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
+                                    </span>
+                                </span>
+                            </div>
+                            <p style="padding-left: 12px; color: rgba(0,0,0,0.5); margin: 8px 0px 6px 0px; float: left;"><sub>діти до 5 років - безкоштовно</sub></p>
+                        </div>
+                    </div>
+                    <div class="apart-left">
+                        <p>ЗАЛИШИЛОСЬ ВСЬОГО 3 НОМЕРИ</p>
+                    </div>
+                    <div class="apart-buy">
+                        <p>ЗАБРОНЮВАТИ</p>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -335,7 +409,17 @@
     <script src="js/slick.min.js"></script>
     
     <!--sliders-->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.slider-class').slick({
+            infinite: true,
+            prevArrow: '#p-arrow',
+            nextArrow: '#n-arrow',
+            speed: 1000,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+        });
+    </script>
         
     <!--form-->
     <!--form-->
@@ -503,26 +587,30 @@
         $('#datepicker-2').data('datepicker');
 
         $(".input-dropdown").each(function() {
+            $(this).width($(".input-pattern").width());
+
             $(this).css({
-                top: 100 + "%"
+                top: 256
             });
 
             if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()){
                 $(this).css({
-                    top: - $(this).height()
+                    top: 218 - $(this).height()
                 });
             }
         });
 
         $(window).scroll(function() {
             $(".input-dropdown").each(function() {
+                $(this).width($(".input-pattern").width());
+
                 $(this).css({
-                    top: 100 + "%"
+                    top: 256
                 });
 
                 if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()){
                     $(this).css({
-                        top: - $(this).height()
+                        top: 218 - $(this).height()
                     });
                 }
             });
