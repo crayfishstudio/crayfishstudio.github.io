@@ -174,6 +174,12 @@ body, footer {
     .main-form {
         bottom: 0vh !important;
     }
+    
+    .order-card {
+        background-color: #f4f4f4;
+        width: 100% !important;
+        margin-left: 0px !mportant;
+    }
 }
 
 #custom-navbar li {
@@ -1248,11 +1254,60 @@ body, footer {
     background-position: center;
 }
 
-
-
 .main-form {
     position: absolute;
     bottom: 40vh;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
+}
+
+.apart-features-row {
+    text-align: center;
+}
+
+.apart-features-row small {
+    color: #707070;
+}
+
+.apart-features-row i {
+    font-size: 40px;    
+    padding: 15px;
+}
+
+
+.full-width-line {
+    width: 100%;
+    border-bottom: solid 1px #ff8c00;
+}
+
+.apart-page-section-header {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #4D3431;
+}
+
+.apart-page-sect-desc {
+    font-weight: 300;
+    color: #707070;
+    margin-bottom: 0px;
+}
+
+.small-features p {
+    font-weight: 300;
+    color: #707070;
+    margin-bottom: 0px;
+}
+
+.order-card {
+    background-color: #f4f4f4;
+    width: calc(100% - 15px);
+    margin-left: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);   
+}
+
+.order-form-icon {
+    position: absolute;
+    margin-top: 13px;
+    right: 45px;
 }
