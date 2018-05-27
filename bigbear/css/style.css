@@ -1148,6 +1148,7 @@ body, footer {
 .vert-aligner-container {
     min-height: calc(100vw/7);
     display: table;
+    width: 100%;
 }
 
 .vert-aligner {
