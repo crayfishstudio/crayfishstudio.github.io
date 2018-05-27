@@ -1429,3 +1429,12 @@ body, footer {
 .phone-clickable, .phone-clickable:hover {
     color: #4d3431;
 }
+
+.arrow-right:hover div, .arrow-left:hover div {
+    background-color: #ff6c00;
+    transition: background-color 0.3s;
+}
+
+.arrow-right, .arrow-left {
+    cursor: pointer;    
+}
