@@ -185,6 +185,28 @@ body, footer {
         width: 100% !important;
         margin-left: 0px !mportant;
     }
+    
+    .price-bar {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        font-size: 80% !important;
+        
+    }
+    
+    .bar-container {
+        position: absolute;
+         
+        display: flex;
+    }
+    
+    .sale-bar {
+        max-height: 34px;
+        margin-left: 15px;
+    }
+    
+    .sale-text {
+        font-size: 110%;
+    }
 }
 
 #custom-navbar li {
@@ -1275,7 +1297,7 @@ body, footer {
 .main-form {
     position: absolute;
     bottom: 40vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
 }
 
