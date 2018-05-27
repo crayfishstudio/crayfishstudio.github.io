@@ -151,6 +151,11 @@ body, footer {
     .fake {
         display: none;
     }
+    
+    .small-card-image {
+        width: 100%;
+        height: calc(100vw/1.7) !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -672,7 +677,7 @@ body, footer {
     .location-text {
         margin-top: 2px; 
         font-size: 14px; 
-        float: right;
+        color: #4D3431;
     }
 
     .days-ends-end-text {
@@ -1367,4 +1372,28 @@ body, footer {
     color: #4D3431;
     font-weight: 500;
     margin-bottom: px;
+}
+
+.apart-small-card {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.small-card-image {
+    width: 100%;
+    height: calc(100vw/6);
+    background-size: cover;
+    background-position: center;
+}
+
+.small-card-header {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.alt-dates {
+    color: #D23A00;
+}
+.small-card-hotel {
+    border-bottom: 2px solid #ff8c00;
 }
