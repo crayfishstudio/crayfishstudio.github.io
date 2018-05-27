@@ -898,6 +898,12 @@ body, footer {
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.footer-icon-container:hover {
+    background-color: #ff6c00;
 }
 
 /*BB iconic font start*/
@@ -1235,7 +1241,7 @@ body, footer {
     font-weight: 300;
 }
 
-.apart-price {
+.apart-price-h {
     font-weight: 700;
     margin-bottom: -7px;
 }
@@ -1396,4 +1402,8 @@ body, footer {
 }
 .small-card-hotel {
     border-bottom: 2px solid #ff8c00;
+}
+
+.phone-clickable, .phone-clickable:hover {
+    color: #4d3431;
 }
