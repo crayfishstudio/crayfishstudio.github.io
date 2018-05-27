@@ -1220,13 +1220,12 @@ body, footer {
 .vert-aligner-container {
     min-height: calc(100vw/7);
     display: table;
+    width: 100%;
 }
 
 .vert-aligner {
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
-    align-self: center;
 }
 
 .apart-card {
