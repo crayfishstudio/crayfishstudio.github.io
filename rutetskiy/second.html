@@ -39,12 +39,12 @@
 
                     <div class="row justify-content-md-center horizontal-padding-5">
                         <div class="col-md-6 padding-0">
-                            <img id="myImg" src="img/2.jpg" class="img-fluid padding-05 margin-vertical-12" onclick="zoomImage(this)">
-                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12" onclick="zoomImage(this)">
+                            <img id="myImg" src="img/2.jpg" class="img-fluid padding-05 margin-vertical-12"  data-action="zoom">
+                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12"  data-action="zoom">
                         </div>
                         <div class="col-md-4 padding-0">
-                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12" onclick="zoomImage(this)">
-                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12" onclick="zoomImage(this)">
+                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12"  data-action="zoom">
+                            <img src="img/3.jpg" class="img-fluid padding-05 margin-vertical-12" data-action="zoom">
                             <p class="padding-05 margin-vertical-12" style="font-size: 12px;">Неймовірний рослинний візерунок та симетрія форм, прикрасить сучасний інтерєр та додасть нотку оригінальності.</p>
                         </div>
                     </div>
@@ -129,6 +129,9 @@
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <link href="css/zoom.css" rel="stylesheet">
+        <script src="js/zoom.js"></script>
+        <script src="js/transition.js"></script>
 
         <script>
             $("#footerClick").click(function () {
