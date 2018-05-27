@@ -1154,6 +1154,7 @@ body, footer {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
+    align-self: center;
 }
 
 .apart-card {
