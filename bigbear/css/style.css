@@ -1493,6 +1493,36 @@ body, footer {
     text-transform: uppercase;
 }
 
+.apart-small-card-buy {
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    height: 20%;
+    width: 30%;
+    background-color: #ff8c00;
+}
+
+.apart-small-card-buy p {
+    color: white;
+    margin-top: 8%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.apart-small-discount {
+    position: absolute;
+    width: 30%;
+    top: 17%;
+    left: 10%;
+    background-color: #d23a00;
+}
+
+.apart-small-discount p {
+    margin: 0;
+    color: white;
+    font-size: 12px;
+}
+
 .alt-dates {
     color: #D23A00;
 }
