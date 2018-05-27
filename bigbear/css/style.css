@@ -55,6 +55,18 @@ body, footer {
         background-color: #F4F4F4; 
         position: relative; 
     }
+
+    .main-slider-apart {
+        height: 100%;
+    }
+
+    .slider-class-2 {
+        height: 100%;   
+    }
+
+    .margin-left-15 {
+        margin-left: -15%;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -156,6 +168,22 @@ body, footer {
         width: 100%;
         height: calc(100vw/1.7) !important;
     }
+
+    .main-slider-apart {
+        height: 40vh !important;
+    }
+
+    .slider-class-2 {
+        height: 40vh;   
+    }
+
+    .height-40 {
+        height: 40vh !important;
+    }
+
+    .fullscreen-img-2 {
+        height: 40vh !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -183,7 +211,11 @@ body, footer {
     .order-card {
         background-color: #f4f4f4;
         width: 100% !important;
-        margin-left: 0px !mportant;
+        margin-left: 0px !important;
+    }
+
+    .mobile-text-center {
+        text-align: center;
     }
 }
 
@@ -236,6 +268,10 @@ body, footer {
 #main-slider {
     width: 100%;
     height: 100%;
+}
+
+.main-slider-apart {
+    width: 100%;
 }
 
 .fullscreen-img {
@@ -592,6 +628,10 @@ body, footer {
     width: 100%;
 }
 
+.slider-class-2 {
+    width: 100%;   
+}
+
 #mobile-phones {
     color: #646464;
     -webkit-color: #646464 !important;
@@ -620,6 +660,38 @@ body, footer {
     letter-spacing: 2px;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+.section-text-huge {
+    -webkit-color: #4D3431;
+    color: #4D3431;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 0;
+}
+
+.section-text-huge .fa-star {
+    color: #ff8c00;
+    font-size: 22px;
+    padding: 0px 4px 0px 4px;
+}
+
+.section-text-small {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #4D3431;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.section-text-small .fa-star {
+    color: #ff8c00;
+    font-size: 22px;
+    float: right;
+    padding: 0px 4px 0px 4px;
 }
 
 .section-description {
