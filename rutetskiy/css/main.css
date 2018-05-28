@@ -340,7 +340,6 @@ body {
 
 .custom-header-2 {
     font-family: 'Roboto Thin', sans-serif;
-    margin: 5px; 
     color: #696969;
     text-align: center;
 }
@@ -383,10 +382,7 @@ body {
 .line:nth-of-type(1) {transform: rotate(45deg);}
 .line:nth-of-type(2) {transform: rotate(-45deg);}
 
-.horizontal-padding-5 {
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
+
 
 .padding-0 {padding: 0;}
 
