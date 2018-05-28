@@ -161,7 +161,7 @@
         <div class="row justify-content-center mt-5">
             <div class="col-md-6">
                 <h4 class="apart-page-section-header mb-3 mobile-text-center">Включено у вартість</h4>
-                <div class="row text-orange text-center no-gutters d-flex">
+                <div id="justify" class="row text-orange text-center no-gutters d-flex">
                     <div class="col-md-2 col-4">
                         <i class="bb-breakfast fa-3x mobile-text-center"></i><br>
                         <small class="mobile-text-center">Чайник</small>
@@ -188,7 +188,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-md-right text-center">
-                <small style="font-weight: 300; color: #4D3431">Вартість вказана для <i class="fa fa-male align-text-top text-orange"></i> х8, максимальна місткість - <i class="fa fa-male align-text-top text-orange"></i> х12</small>
+                <small id="people_max" style="font-weight: 300; color: #4D3431">Вартість вказана для <i class="fa fa-male align-text-top text-orange"></i> х8, максимальна місткість - <i class="fa fa-male align-text-top text-orange"></i> х12</small>
                 <div class="order-card mt-4">
                     <div class="d-flex justify-content-center margin-left-15">
                         <div class="apart-price" style="background-color: #707070;">
@@ -237,7 +237,7 @@
                         <p>ЗАЛИШИЛОСЬ ВСЬОГО 3 НОМЕРИ</p>
                     </div>
                     <div class="apart-buy">
-                        <p>ЗАБРОНЮВАТИ</p>
+                        <a href="#" class="btn btn-yellow" style="padding: 2px; margin: 0;">ЗАБРОНЮВАТИ</a>
                     </div>
                 </div>                   
             </div>
@@ -291,34 +291,34 @@
                 </div>
                 <div class="col-xl px-xl-5">
                     <p class="section-text-small">чистота
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                     </p>
                     <p class="section-text-small">затишок
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                     </p>
                 </div>
                 <div class="col-xl px-xl-5">
                     <p class="section-text-small">розсташування
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                     </p>
                     <p class="section-text-small">смачна кухня
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                     </p>
                 </div>
             </div>
@@ -415,6 +415,7 @@
                     <div class="apart-small-card-buy">
                         <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
                     </div>
+                    <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
                     <div class="apart-small-discount">
                         <p class="text-center py-1 text-uppercase">знижка 50%</p>
                     </div>
@@ -442,6 +443,7 @@
                     <div class="apart-small-card-buy">
                         <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
                     </div>
+                    <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
                 </div>
             </div>
             <div class="col-lg-4 my-4 px-2">
@@ -466,6 +468,7 @@
                     <div class="apart-small-card-buy">
                         <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
                     </div>
+                    <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
                 </div>
             </div>
         </div>
@@ -753,12 +756,12 @@
             $(this).width($(".input-pattern").width());
 
             $(this).css({
-                top: 256
+                top: 244 + $("#people_max").height()
             });
 
             if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()){
                 $(this).css({
-                    top: 218 - $(this).height()
+                    top: 206 + $("#people_max").height() - $(this).height()
                 });
             }
         });
@@ -768,12 +771,12 @@
                 $(this).width($(".input-pattern").width());
 
                 $(this).css({
-                    top: 256
+                    top: 244 + $("#people_max").height()
                 });
 
                 if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()){
                     $(this).css({
-                        top: 218 - $(this).height()
+                        top: 206 + $("#people_max").height() - $(this).height()
                     });
                 }
             });
@@ -826,17 +829,26 @@
                 }
             });
 
+            $('.apart-small-card').hover(function() {
+                if ($(window).width() > 1199) {
+                    $(this).find('.apart-small-card-buy-hover').animate({width: 'toggle'});
+                }
+            });
+
             if ($(window).width() > 1199) {
                 $(".feedback-slider-arrows").css("top", $("#test").offset().top);
                 $(".feedback-slider-arrows").height($("#test").height());
                 $(".feedback-slider-arrows").width($("#test").width() + 320);
                 $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
 
+                $("#justify").removeClass("justify-content-center");
             } else {
                 $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
                 $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
                 $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
                 $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+
+                $("#justify").addClass("justify-content-center");
             }
         });
 
@@ -866,11 +878,15 @@
                 $(".feedback-slider-arrows").height($("#test").height());
                 $(".feedback-slider-arrows").width($("#test").width() + 320);
                 $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+
+                $("#justify").removeClass("justify-content-center");
             } else {
                 $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
                 $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
                 $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
                 $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+
+                $("#justify").addClass("justify-content-center");
             }
 
             $('.hotel-card').hover(function() {
@@ -878,6 +894,12 @@
                     $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
                 }
             }); 
+
+            $('.apart-small-card').hover(function() {
+                if ($(window).width() > 1199) {
+                    $(this).find('.apart-small-card-buy-hover').animate({width: 'toggle'});
+                }
+            });
 
             var selectorbarheight = $('#selector-bar-id').height() + "px";
             $('.overflow-hidden').css("height", selectorbarheight);

@@ -170,19 +170,23 @@ body, footer {
     }
 
     .main-slider-apart {
-        height: 40vh !important;
+        height: 60vh !important;
     }
 
     .slider-class-2 {
-        height: 40vh;   
+        height: 60vh;   
     }
 
     .height-40 {
-        height: 40vh !important;
+        height: 60vh !important;
     }
 
     .fullscreen-img-2 {
-        height: 40vh !important;
+        height: 60vh !important;
+    }
+
+    .apart-small-card-buy-hover {
+        display: block !important;
     }
 }
 
@@ -1478,6 +1482,7 @@ body, footer {
 .apart-small-card {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    cursor: pointer;
 }
 
 .small-card-image {
@@ -1506,6 +1511,33 @@ body, footer {
     margin-top: 8%;
     font-size: 24px;
     font-weight: 600;
+}
+
+.apart-small-card-buy-hover {
+    position: absolute;
+    display: none;
+    height: 20%;
+    width: 30%;
+    top: -5%;
+    left: 40%;
+    background-color: #ff8c00;
+}
+
+.apart-small-card-buy-hover:before {
+    position: absolute;
+    content: "";
+    top: 15%;
+    bottom: 15%;
+    width: 1px;
+    background-color: white;
+}
+
+.apart-small-card-buy-hover p {
+    color: white;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 80%;
 }
 
 .apart-small-discount {
