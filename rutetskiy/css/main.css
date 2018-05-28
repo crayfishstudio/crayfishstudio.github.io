@@ -554,3 +554,10 @@ body {
 .modal-custom {
     z-index: 1500;
 }
+
+.about-image {
+    width: 100%;
+    height: calc(100vw/12);
+    background-position: center;
+    background-size: cover;
+}

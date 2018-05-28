@@ -28,7 +28,7 @@
         </a>
         <div id="menu" class="grey-line right center-vertical-container transition">
             <a href="#" id="footerClick">контакти</a>
-            <a href="#">про нас</a>
+            <a href="about.html">про нас</a>
             <p class="lang-changer"><a href="#" class="lang-active">УКР</a>/<a href="#" class="lang-noactive">ENG</a>/<a href="#" class="lang-noactive">РУС</a></p>
         </div>
 
@@ -60,7 +60,7 @@
                         <div class="center-container buy-button">
                             <div class="buy-button-square"></div>
                             <div class="buy-content">
-                                <a href="#" class="custom-link-3" style="font-size: 20px;">Замовити</a>
+                                <a href="#" class="custom-link-3" style="font-size: 20px;"  data-toggle="modal" data-target="#exampleModalCenter">Замовити</a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="footer center-vertical-container transition">
-            <a href="#" id="bottomOrderExit" class="custom-link" data-toggle="modal" data-target="#exampleModalCenter">замовити дзвінок</a>
+            <a href="#" id="bottomOrderExit" class="custom-link"  data-toggle="modal" data-target="#exampleModalCenter2">замовити дзвінок</a>
         	<span class="custom-link">-</span>
         	<a class="custom-link">+38 (096) 65 32 586</a>
         	<span class="custom-link">-</span>
@@ -106,16 +106,13 @@
                 <p>наш менеджер невдовзі зв'яжеться з вами</p>
                 <form action="post1.php" method="post">
                   <div class="form-group">
-                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я">
-                  </div>
-                  <div class="form-group">
-                    <input type="phone" class="form-control" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
-                  </div>
-                  <div class="form-group">
-                    <input type="phone" class="form-control" id="exampleInputPassword1" name="user_email" placeholder="Електронна скринька">
-                  </div>
-                  <div class="form-group">
-                    <input type="phone" class="form-control" id="exampleInputPassword1" name="user_adres" placeholder="Ваша адреса">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Прізвище">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_email" placeholder="Номер телефону">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Електронна адреса">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Місто">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Номер складу Нової Пошти">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="user_adres" placeholder="Ваш коментар">
                   </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary" style="width: 100%">Save changes</button>
@@ -126,6 +123,34 @@
           </div>
         </div>
 
+        <div class="modal fade modal-custom" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 0">
+              <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLongTitle">ЗАПИТ НА СПІВПРАЦЮ</h5>
+              </div>
+              <div class="modal-body" style="text-align: center !important">
+                <p>наш менеджер невдовзі зв'яжеться з вами</p>
+                <form action="post1.php" method="post">
+                  <div class="form-group">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я контактної особи">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Назва компанії та посада">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_email" placeholder="Тип компанії">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Веб-сайт">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Електронна скринька">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Свідоцтво реєстрації в ЄДРПОУ">
+                    <input type="text" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Тема листа">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="user_adres" placeholder="Текст листа">
+                  </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" style="width: 100%">Save changes</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+       
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
