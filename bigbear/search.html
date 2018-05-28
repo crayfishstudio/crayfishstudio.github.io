@@ -170,7 +170,25 @@
                 <div class="apart-card">
                     <div class="row no-gutters">
                         <div class="col-md-6">
-                            <div class="apart-image" style="background-image: url(img/dpx_0259.jpg)"></div>
+                            <div class="apart-image-slider">
+                                <div class="apart-image" style="background-image: url(img/dpx_0259.jpg)"></div>
+                                <div class="apart-image" style="background-image: url(img/dpx_0259.jpg)"></div>
+                                <div class="apart-image" style="background-image: url(img/dpx_0259.jpg)"></div>
+                            </div>
+                            <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%;">
+                                <div id="p-arrow" class="div-arrows" style="left: 0; height: 100%;">
+                                    <div class="arrow-left">
+                                        <div style="background-color: #FFF;"></div>
+                                        <div style="background-color: #FFF;"></div>
+                                    </div>
+                                </div>
+                                <div id="n-arrow" class="div-arrows" style="right: 0; height: 100%;">
+                                    <div class="arrow-right">
+                                        <div style="background-color: #FFF;"></div>
+                                        <div style="background-color: #FFF;"></div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="bar-container">
                                 <div class="price-bar">
                                     <p class="apart-old-price">6000</p>
@@ -401,6 +419,19 @@
         $(function () {
           $('[data-toggle="tooltip"]').tooltip()
         })
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(".apart-image-slider").slick({
+                infinite: true,
+                prevArrow: '#p-arrow',
+                nextArrow: '#n-arrow',
+                speed: 1000
+            });
+
+            $(".apart-image").height($(".apart-image-slider").height());
+        });
     </script>
         
     <!--form-->
