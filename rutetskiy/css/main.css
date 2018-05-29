@@ -10,6 +10,8 @@ html {
         width: calc(100vw/6);
         top: 0;
         background-color: #fafafa;
+        z-index: 1;
+        transition: all 1s;
     }
 
     .right {right: 0;}
@@ -30,8 +32,8 @@ html {
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);2
-        -webkit-transition: .25s cubic-bezier(0.77,0.2,0.05,1.0);
-        transition: .25s cubic-bezier(0.77,0.2,0.05,1.0);
+        -webkit-transition: .7s cubic-bezier(0.77,0.2,0.05,1.0);
+        transition: .5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
 
     .right > a:hover:before {
@@ -81,6 +83,7 @@ html {
     
     #logo {
         width: 94px;
+        cursor: pointer;
     }
     
     .exitToIndex {
@@ -560,4 +563,22 @@ body {
     height: calc(100vw/12);
     background-position: center;
     background-size: cover;
+}
+
+.btn-order {
+    color: #2e2e2e;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: solid 1px #2e2e2e;
+    background-color: transparent;
+    width: 100%;
+}
+
+.btn-order:hover {
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+#footerClick {
+    cursor: pointer;
 }
