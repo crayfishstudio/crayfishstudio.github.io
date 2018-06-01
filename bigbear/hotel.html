@@ -107,10 +107,16 @@
         </div>
         <div class="slider-arrows">
             <div id="p-arrow" class="div-arrows" style="left: 0;">
-                <i class="fas fa-chevron-left fa-4x" style="margin-left: 2vw; margin-top: 43vh; color: #fff;"></i>
+                <div class="arrow-left">
+                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                </div>
             </div>
             <div id="n-arrow" class="div-arrows" style="right: 0;">
-                <i class="fas fa-chevron-right fa-4x" style="margin-right: 2vw; margin-top: 43vh; float: right; color: #fff;"></i>
+                <div class="arrow-right">
+                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                </div>
             </div>
         </div>
         <div id="selector-bar-id" class="selector-bar">
@@ -186,89 +192,6 @@
                 <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             </div>
         </div>
-        <div class="row justify-content-center no-gutters px-md-5 px-0 pb-3">
-            <div class="col-xl-4">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/hotels/u_marka.JPG);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Котедж У МАРКА</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                Яремче</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
-                        </div>
-                    </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong>200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
-                        </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/hotels/bigbear.JPG);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Готель ВЕЛИКА ВЕДМЕДИЦЯ</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                Яремче</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
-                        </div>
-                    </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
-                        </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/hotels/dreamhouse.jpg);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Елітний котедж DREAM HOUSE</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                Яремче</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
-                        </div>
-                    </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
-                        </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="container-fluid pb-5"  style="background-color: #f4f4f4">
@@ -283,8 +206,8 @@
                 <i class="bb-few-minutes features-icon"></i>
                 <h5 class="feature-text">8 хвилин<br>до центру</h5>
             </div>
-            <div class="col-md-3 col-6 py-2 my-2 mb-5">
-                <i class="bb-feedback features-icon"></i>
+            <div id="booking-id" class="col-md-3 col-6 py-2 my-2 mb-5">
+                <p class="booking-icon">9.1<br><sup><small style="color: grey;"><sup><small>out of 10</small></sup></small></sup></p>
                 <h5 class="feature-text">рейтинг на<br>booking.com</h5>
             </div>
             <div class="col-md-3 col-6 py-2 my-2 mb-5">
@@ -800,6 +723,21 @@
 
     <script>
         $(document).ready(function(){
+            $('.booking-icon').css({
+                "border-style": "solid",
+                "border-color": "#ff8c00",
+                "border-width": $("#booking-id").width() * 0.01,
+                "width": $(".bb-toy-thin").height(),
+                "border-radius": "50%",
+                "color": "#ff8c00",
+                "font-size": $(".bb-toy-thin").width() * 0.3,
+                "padding": $(".bb-toy-thin").height() * 0.15,
+                "line-height": "120%"
+            });
+
+            $('.booking-icon').css("margin", "auto");
+            $('.booking-icon').height($('.booking-icon').width());
+
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
@@ -836,6 +774,21 @@
         });
         var x = 0;
         $(window).resize(function() {
+            $('.booking-icon').css({
+                "border-style": "solid",
+                "border-color": "#ff8c00",
+                "border-width": $("#booking-id").width() * 0.01,
+                "width": $(".bb-toy-thin").height(),
+                "border-radius": "50%",
+                "color": "#ff8c00",
+                "font-size": $(".bb-toy-thin").width() * 0.3,
+                "padding": $(".bb-toy-thin").height() * 0.15,
+                "line-height": "120%"
+            });
+
+            $('.booking-icon').css("margin", "auto");
+            $('.booking-icon').height($('.booking-icon').width());
+
             //hotel card settings
             $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
             $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
