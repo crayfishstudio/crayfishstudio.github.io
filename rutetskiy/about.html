@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120148823-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-120148823-1');
+        </script>
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,7 +20,14 @@
         <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
 
-    <body>
+    <body onload="loadAnim()">
+        <div id="loader">
+            <span id="layer-3"></span>
+            <span id="layer-2">
+                <img class="img-fluid" src="img/logo128.png" style="width: 94px; position: absolute; margin-top: calc(50vh - 64px); left: calc(50vw - 47px)">
+            </span>
+            <span id="layer-1"></span>
+        </div>
         <div id="toggle" class="toggleButton" onclick="toggleFunction(this)">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -19,7 +35,7 @@
         </div>
         <div class="grey-line left">
             <div class="center-container" style="height: 100%;">
-                <img id="logo" alt="logo" class="img-fluid" onclick="goHome()"/>
+                <img id="logo" alt="logo" class="img-fluid" onclick="goToPage('index.html')"/>
             </div>
         </div>
         <a href="index.html" class="exitToIndex">
@@ -28,16 +44,67 @@
         </a>
         <div id="menu" class="grey-line right center-vertical-container transition">
             <a href="#" id="footerClick">контакти</a>
-            <a href="">про нас</a>
+            <a href="#">про нас</a>
             <p class="lang-changer"><a href="#" class="lang-active">УКР</a>/<a href="#" class="lang-noactive">ENG</a>/<a href="#" class="lang-noactive">РУС</a></p>
         </div>
 
         <div class="container-fluid">
             <div class="row no-gutters justify-content-center">
-                <div class="col-md-6 px-2 px-md-3">
+                <div class="col-md-6 px-2 px-md-3 text-center">
                     <h1 class="custom-header-2 mb-4 mt-5">Про нас</h1>
-
-                    <div class="about-image" style="background-image: url(img/MVF_5396.jpg)"></div>
+                    <div class="about-image mb-3" style="background-image: url(img/some-picture/13.jpg)"></div>
+                    <small class="about-text">Rutetskiy Designs - це мистецько-дизайнерський проект, метою якого є створення унікальних елементів декору інтер'єру. Наш фокус - багатошарові картини з фанери, але це лише початок. Усі ми прості люди, які просто вирішили зробити щось круте, і вірили в успіх. Почуття прекрасного, вогонь в очах - от що рухає нами. Основний акцент картин - геометричний арт, а також гра світла і тіні</small>
+                    
+                    <div class="row no-gutters mt-5">
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="img/ruted.jpg" data-action="zoom">
+                        </div>
+                        <div class="col-md-9 pl-md-3 text-md-left">
+                            <small class="about-text"><b>Рутецький Едуард, автор проекту</b><br><br>А також роботяга. Ріжу на лазері, клею, шліфую, доводжу до потрібної кондиції виріб:) Мене завжди тягнуло до прекрасного, хоч все життя займався чимось "технічним". Для себе я знайшов компромісне рішення - робити вироби мистецтва, користуючись технологіями. Одного разу я побачив досить круті багатошарові ансаблі з паперу, і подумав, що можна створити об'ємні картини з фанери. Все почалося з ідеї і палкого бажання, і перетворилось в те, що ви бачите на цьому сайті :) </small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5">
+                        <div class="col-md-3 order-md-2">
+                            <img class="img-fluid" src="img/M_larionova.jpg" data-action="zoom">
+                        </div>
+                        <div class="col-md-9 pr-md-3 text-md-right order-md-1">
+                            <small class="about-text"><b>Мар'яна Ларіонова, дизайнер, архітектор картин</b><br><br>Власне, картини придумували разом, але малювала вона. Дизайер в такому проекті - це серце, мотор. Ми почали з геометричних артів, а там точність грає дуже важливу роль. Освіта архітектора зіграла не останню роль, Мар'яна збудувала для нас макети</small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5">
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="img/eldakh.jpg" data-action="zoom">
+                        </div>
+                        <div class="col-md-9 pl-md-3 text-md-left">
+                            <small class="about-text"><b>Любомир Дах і <a href="http://crayfish.studio">crayfish.studio</a> - веб-розробники, автори сайту</b><br><br>Хороший проект потребує хорошого сайту, це аксіома. З пошуком виконавців були складнощі, бо бютжет був невеликий, а хотілось щось оригінальне, як то кажуть "з нуля". Коли почав спілкуватись з цими хлопцями то одразу відчув, що ми на одній хвилі. Спілкуватись було просто, ідеї мої хапали на льоту. Дякую за терпіння і професіоналізм в умовах постійних правок і стислих термінів</small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5">
+                        <div class="col-md-3 order-md-2">
+                            <img class="img-fluid" src="img/galyna_rutetska.jpg" data-action="zoom">
+                        </div>
+                        <div class="col-md-9 pr-md-3 text-md-right order-md-1">
+                            <small class="about-text"><b>Галина Рутецька, SMM, друга половинка, критик, натхнення</b><br><br>Ця дівчина зробила мене щасливим в житті і підтримувала на усіх етапах шляху до втілення. Вона перша повірила в мене, і давала мені сили йти далі незважаючи на складнощі. Її вклад можливо не так помітний оком, але, повірте, без неї цього би не вийшло </small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5">
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="img/M_feshchur.jpg" data-action="zoom">
+                        </div>
+                        <div class="col-md-9 pl-md-3 text-md-left">
+                            <small class="about-text"><b>Михайло Фещур, фотограф від Бога</b><br><br>Дядько з досвідом, дядько зі смаком. На колінці з підручних матеріалів зробить крутий ансабль, зловить ракурс, і перетворить купу мотлоху на шедевр. Дякую за круті фотки, за поради, за ваше бачення</small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5">
+                        <div class="col">
+                            <small class="about-text">Окреме дякую батькам. Подарували життя, можливоті, дали мені досвід. Підтримували, радили, вірили<br><br>З питань співпраці, виставок - звертайтесь, будь ласка за телефоном/ел. поштою, вказаними в контактах. </small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters my-5 pb-3">
+                        <div class="col">
+                            <button class="btn btn-order"   data-toggle="modal" data-target="#exampleModalCenter2">співпраця</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,29 +137,50 @@
 
         <div class="closeDetails"></div>
        
-        <div class="modal fade modal-custom" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+        <div class="modal fade modal-custom" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content" style="border-radius: 0">
-              <div class="modal-header">
-                <h5 class="modal-title text-center" id="exampleModalLongTitle">ЗАМОВЛЕННЯ %Картина_нейм%</h5>
+              <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="exampleModalLongTitle">ЗАПИТ НА СПІВПРАЦЮ</h5>
               </div>
               <div class="modal-body" style="text-align: center !important">
                 <p>наш менеджер невдовзі зв'яжеться з вами</p>
                 <form action="post1.php" method="post">
                   <div class="form-group">
-                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я">
-                  </div>
-                  <div class="form-group">
-                    <input type="phone" class="form-control" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
-                  </div>
-                  <div class="form-group">
-                    <input type="phone" class="form-control" id="exampleInputPassword1" name="user_email" placeholder="Електронна скринька">
-                  </div>
-                  <div class="form-group">
-                    <input type="phone" class="form-control" id="exampleInputPassword1" name="user_adres" placeholder="Ваша адреса">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я контактної особи">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Назва компанії та посада">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_email" placeholder="Тип компанії">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Веб-сайт">
+                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Електронна скринька">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Свідоцтво реєстрації в ЄДРПОУ">
+                    <input type="text" class="form-control mb-1" id="exampleInputPassword1" name="user_adres" placeholder="Тема листа">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="user_adres" placeholder="Текст листа">
                   </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary" style="width: 100%">Save changes</button>
+                        <button type="submit" class="btn btn-order">Відправити заявку</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal fade modal-custom" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 0">
+              <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="exampleModalLongTitle">ЗАЛИШТЕ СВОЇ КОНТАКТИ</h5>
+              </div>
+              <div class="modal-body" style="text-align: center !important">
+                <p>наш менеджер невдовзі зв'яжеться з вами</p>
+                <form action="post.php" method="post">
+                  <div class="form-group">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="user_phone" placeholder="Ваш коментар">
+                  </div>
+                    <div class="modal-footer">
+                    <button type="submit" class="btn btn-order" style="width: 100%">Відправити</button>
                     </div>
                 </form>
               </div>
@@ -106,6 +194,7 @@
         <link href="css/zoom.css" rel="stylesheet">
         <script src="js/zoom.js"></script>
         <script src="js/transition.js"></script>
+        <script src="js/trns.js"></script>
 
         <script>
             $("#footerClick").click(function () {

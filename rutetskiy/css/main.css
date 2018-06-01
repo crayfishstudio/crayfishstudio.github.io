@@ -1,6 +1,11 @@
 html {
     font-family: 'Roboto Light', sans-serif;
     letter-spacing: 2px;
+    background-color: #fff;
+}
+
+body {
+    transition: opacity 0.4s;
 }
 
 @media screen and (min-width: 768px) { 
@@ -11,7 +16,7 @@ html {
         top: 0;
         background-color: #fafafa;
         z-index: 1;
-        transition: all 1s;
+        transition: all 1.5s;
     }
 
     .right {right: 0;}
@@ -198,7 +203,10 @@ html {
         width: 100% !important;
     }
 
-    .custom-header-2 {font-size: 32px;}
+    .custom-header-2 {
+        font-size: 32px;
+        padding-top: 50px; 
+    }
 
     .margin-vertical-12 {
         margin-top: 12px;
@@ -530,7 +538,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    transition: all 1.25s cubic-bezier(0.77,0.2,0.05,1.0) 1s;
+    transition: all 1.25s cubic-bezier(0.77,0.2,0.05,1.0) 0.5s;
 }
 
 #layer-2 {
@@ -540,7 +548,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #F9F5F1;
-    transition: all 1.5s cubic-bezier(0.77,0.2,0.05,1.0) 2.25s;
+    transition: all 1.5s cubic-bezier(0.77,0.2,0.05,1.0) 1.75s;
     overflow: hidden;
 }
 
@@ -551,7 +559,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #f0f0f0;
-    transition: all 1.25s cubic-bezier(0.77,0.2,0.05,1.0) 3.75s;
+    transition: all 1.25s cubic-bezier(0.77,0.2,0.05,1.0) 3.25s;
 }
 
 .modal-custom {
@@ -581,4 +589,8 @@ body {
 
 #footerClick {
     cursor: pointer;
+}
+.about-text {
+    letter-spacing: 1px;
+    color: #666;
 }
