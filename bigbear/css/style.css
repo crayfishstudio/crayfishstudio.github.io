@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 body, footer {
     font-family: 'Roboto', sans-serif;
 }
@@ -1601,4 +1603,8 @@ body, footer {
 
 .arrow-right, .arrow-left {
     cursor: pointer;    
+}
+
+.booking-icon {
+    font-family: 'Oswald', sans-serif;
 }

@@ -369,7 +369,7 @@
                 <h5 class="feature-text">більш ніж<br>999 відгуків</h5>
             </div>
             <div id="booking-id" class="col-md-3 col-6 py-2 my-2">
-                <p class="booking-icon">9.1<br><sup><small style="color: grey;"><sup><small>out of 10</small></sup></small></sup></p>
+                <p class="booking-icon">9.1<br><sup><small style="color: grey;"><sup><small style="font-family: Roboto">out of 10</small></sup></small></sup></p>
                 <h5 class="feature-text">рейтинг на<br>booking.com</h5>
             </div>
             <div class="col-md-3 col-6 py-2 my-2">
@@ -450,7 +450,7 @@
                                 <p style="float: left; margin-left: 5px;">Mark</p>
                                 <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 10px; color: #707070;">20.02.2018</p>
                             </div>
-                            <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
+                            <div id="profile-huge" class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -487,76 +487,40 @@
             </div>
         </div>
     </div>
-    <div id="feedback-slider-arrows-id" class="feedback-slider-arrows">
-        <div id="feedback-arrow-left" class="arrow-left">
-            <div></div>
-            <div></div>
-        </div>
-        <div id="feedback-arrow-right" class="arrow-right">
-            <div></div>
-            <div></div>
+
+    <div id="feedback-arrow-left" class="temp" style="position: absolute;">
+        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+            <div class="arrow-left">
+                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
+                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
+            </div>
         </div>
     </div>
-    
+    <div id="feedback-arrow-right" class="temp" style="position: absolute;">
+        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+            <div class="arrow-right">
+                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
+                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid px-1" style="background-color: #747474">
         <form>
             <div class="row justify-content-center no-gutters py-md-4 py-1">
                 <div class="col-lg-2 col-md-3 col-6 my-1">
                     <div class="input-pattern">
-                        <input id="location-2" type="text" name="location" placeholder="Готель/місто" style="cursor: pointer" readonly="readonly" />
-                        <i class="fas fa-map-marker-alt input-icon"></i>
-                        <div class="input-dropdown px-2">
-                            <p class="input-location d-flex align-items-center"><span>Велика Ведмедиця<br/><sub> (Яремче)</sub></span></p>
-                            <p class="input-location d-flex align-items-center"><span>Ведмежий Двір<br/><sub> (Яремче)</sub></span></p>
-                            <p class="input-location d-flex align-items-center"><span>White House<br/><sub> (Яремче)</sub></span></p>
-                            <p class="input-location d-flex align-items-center"><span>Dream House<br/><sub> (Яремче)</sub></span></p>
-                            <p class="input-location d-flex align-items-center"><span>У Марка<br/><sub> (Яремче)</sub></span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-6 my-1">
-                    <div id="div-datepicker-2" class="input-pattern">
-                        <i class="fas fa-calendar-alt input-icon"></i>
-                        <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker-2" style="cursor: pointer" placeholder="Дата"
-                        readonly="readonly"/>
+                        <input type="text" placeholder="Ім'я"/>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 my-1">
                     <div class="input-pattern">
-                        <p id="guests-2" class="input-text" style="color: #969696">Кількість гостей</p>
-                        <i class="fas fa-male input-icon"></i>
-                        <div class="input-dropdown">
-                            <div class="input-members d-flex justify-content-between">
-                                <p>Дорослі</p>
-                                <span>
-                                    <span id="adults_plus-2">
-                                        <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                    <input id="adults-2" type="number" name="adults" min="0" value="0" readonly="readonly" />
-                                    <span id="adults_minus-2">
-                                        <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="input-members d-flex justify-content-between">
-                                <p>Діти<br/><sup>5-12 років</sup></p>
-                                <span>
-                                    <span id="children_plus-2">
-                                        <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                    <input id="children-2" type="number" name="children" min="0" value="0" readonly="readonly" />
-                                    <span id="children_minus-2">
-                                        <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                </span>
-                            </div>
-                            <p style="padding-left: 6px; color: rgba(0,0,0,0.5); margin: 8px 0px 6px 0px;"><sub>діти до 5 років - безкоштовно</sub></p>
-                        </div>
+                        <input type="text" placeholder="Номер телефону"/>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 my-1">
                     <div class="input-pattern">
-                        <button type="submit" class="submit-button">ПЕРЕВІРИТИ ЦІНИ</button>
+                        <button type="submit" class="submit-button">ЗВ'ЯЗАТИСЬ З НАМИ</button>
                     </div>
                 </div>
             </div>
@@ -874,16 +838,15 @@
 
     <script>
         $(document).ready(function(){
-
             $('.booking-icon').css({
                 "border-style": "solid",
                 "border-color": "#ff8c00",
                 "border-width": $("#booking-id").width() * 0.01,
-                "width": $(".bb-feedback").height(),
+                "width": $(".bb-toy-thin").height(),
                 "border-radius": "50%",
                 "color": "#ff8c00",
-                "font-size": $(".bb-feedback").width() * 0.25,
-                "padding": $(".bb-feedback").height() * 0.15,
+                "font-size": $(".bb-toy-thin").width() * 0.35,
+                "padding": $(".bb-toy-thin").height() * 0.12,
                 "line-height": "120%"
             });
 
@@ -911,7 +874,7 @@
             $('.hotel-card-price-hover').find("p").width($('.col-xl-4').width() * 0.3);
 
             $('.hotel-card-price-hover').width($('.col-xl-4').width() * 0.3 + 1);
-            //------
+            //------d
 
             var check = 0;
 
@@ -922,32 +885,51 @@
                 }
             });
 
-            if ($(window).width() > 1199) {
-                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
-                $(".feedback-slider-arrows").height($("#test").height());
-                $(".feedback-slider-arrows").width($("#test").width() + 320);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+            $(".temp").height(150);
+            $(".temp").width(150);
+            $(".temp").css("top", $("#profile-huge").offset().top);
+            $(".temp").css("left", $("#profile-huge").offset().left - 150);
 
+            if ($(window).width() > 1199) {
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + $('#test').width() + 150);
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
-                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
-                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+                if ((($(window).width() - 150)/2) < 150) {
+                    $(".temp").width(($(window).width() - 150)/2);
+                }
+                $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
+                $(".temp").css("top", $("#profile-huge").offset().top + 40);
             }
         });
 
         var x = 0;
 
         $(window).resize(function() {
+            $(".temp").height(150);
+            $(".temp").width(150);
+            $(".temp").css("top", $("#profile-huge").offset().top);
+            $(".temp").css("left", $("#profile-huge").offset().left - 150);
+
+            if ($(window).width() > 1199) {
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + $('#test').width() + 150);
+            } else {
+                if ((($(window).width() - 150)/2) < 150) {
+                    $(".temp").width(($(window).width() - 150)/2);
+                }
+                $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
+                $(".temp").css("top", $("#profile-huge").offset().top + 40);
+            }
+
             $('.booking-icon').css({
                 "border-style": "solid",
                 "border-color": "#ff8c00",
                 "border-width": $("#booking-id").width() * 0.01,
-                "width": $(".bb-feedback").height(),
+                "width": $(".bb-toy-thin").height(),
                 "border-radius": "50%",
                 "color": "#ff8c00",
-                "font-size": $(".bb-feedback").width() * 0.25,
-                "padding": $(".bb-feedback").height() * 0.15,
+                "font-size": $(".bb-toy-thin").width() * 0.35,
+                "padding": $(".bb-toy-thin").height() * 0.12,
                 "line-height": "120%"
             });
 
@@ -976,18 +958,6 @@
 
             $('.hotel-card-price-hover').width($('.col-xl-4').width() * 0.3 + 1);
             //------
-
-            if ($(window).width() > 1199) {
-                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
-                $(".feedback-slider-arrows").height($("#test").height());
-                $(".feedback-slider-arrows").width($("#test").width() + 320);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-            } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
-                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
-                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-            }
 
             $('.hotel-card').hover(function() {
                 if ($(window).width() > 1199 && check == 1) {

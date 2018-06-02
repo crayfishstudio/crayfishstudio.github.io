@@ -345,7 +345,7 @@
                         <p style="float: left; margin-left: 5px;">Mark</p>
                         <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 10px; color: #707070;">20.02.2018</p>
                     </div>
-                    <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
+                    <div id="profile-huge" class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                 </div>
             </div>
             <div class="d-flex justify-content-center">
@@ -381,14 +381,20 @@
         </div>
     </div>
 
-    <div id="feedback-slider-arrows-id" class="feedback-slider-arrows">
-        <div id="feedback-arrow-left" class="arrow-left">
-            <div></div>
-            <div></div>
+    <div id="feedback-arrow-left" class="temp" style="position: absolute;">
+        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+            <div class="arrow-left">
+                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
+                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
+            </div>
         </div>
-        <div id="feedback-arrow-right" class="arrow-right">
-            <div></div>
-            <div></div>
+    </div>
+    <div id="feedback-arrow-right" class="temp" style="position: absolute;">
+        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+            <div class="arrow-right">
+                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
+                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
+            </div>
         </div>
     </div>
     
@@ -802,12 +808,15 @@
         });
         $('#datepicker').data('datepicker');
 
+        $('.datepickers-container').css("left", $('.datepickers-container').offset().top - 306);
+
         if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
             $('#datepicker').datepicker().data('datepicker').update({
                 position: "top left"
             });
 
             $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+            $('.datepickers-container').css("left", $('.datepickers-container').offset().top - 30);
         }
 
         $('#datepicker-2').datepicker({
@@ -851,6 +860,7 @@
             });            
 
             $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
+            $('.datepickers-container').css("left", $('.datepickers-container').offset().top - 306);
 
             if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
                 $('.datepickers-container').css("top", 0)
@@ -860,75 +870,54 @@
                 });            
 
                 $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+                $('.datepickers-container').css("left", $('.datepickers-container').offset().top - 30);
             }
         });
         </script>
 
     <script>
         $(document).ready(function(){
-            //hotel card settings
-
-            //------
-
-            var check = 0;
-
-            $('.hotel-card').hover(function() {
-                if ($(window).width() > 1199) {
-                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
-                    check = 0;
-                }
-            });
-
             $('.apart-small-card').hover(function() {
                 if ($(window).width() > 1199) {
                     $(this).find('.apart-small-card-buy-hover').animate({width: 'toggle'});
                 }
             });
 
+            $(".temp").height(150);
+            $(".temp").width(150);
+            $(".temp").css("top", $("#profile-huge").offset().top);
+            $(".temp").css("left", $("#profile-huge").offset().left - 150);
+
             if ($(window).width() > 1199) {
-                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
-                $(".feedback-slider-arrows").height($("#test").height());
-                $(".feedback-slider-arrows").width($("#test").width() + 320);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-
-                $("#justify").removeClass("justify-content-center");
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + $('#test').width() + 150);
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
-                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
-                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-
-                $("#justify").addClass("justify-content-center");
+                if ((($(window).width() - 150)/2) < 150) {
+                    $(".temp").width(($(window).width() - 150)/2);
+                }
+                $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
+                $(".temp").css("top", $("#profile-huge").offset().top + 20);
             }
         });
 
         var x = 0;
 
         $(window).resize(function() {
-            //hotel card settings
-
+            $(".temp").height(150);
+            $(".temp").width(150);
+            $(".temp").css("top", $("#profile-huge").offset().top);
+            $(".temp").css("left", $("#profile-huge").offset().left - 150);
 
             if ($(window).width() > 1199) {
-                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
-                $(".feedback-slider-arrows").height($("#test").height());
-                $(".feedback-slider-arrows").width($("#test").width() + 320);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-
-                $("#justify").removeClass("justify-content-center");
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + $('#test').width() + 150);
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
-                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
-                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-
-                $("#justify").addClass("justify-content-center");
-            }
-
-            $('.hotel-card').hover(function() {
-                if ($(window).width() > 1199 && check == 1) {
-                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+                if ((($(window).width() - 150)/2) < 150) {
+                    $(".temp").width(($(window).width() - 150)/2);
                 }
-            }); 
+                $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
+                $(".temp").css("top", $("#profile-huge").offset().top + 40);
+            }
 
             $('.apart-small-card').hover(function() {
                 if ($(window).width() > 1199) {
