@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120148823-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-120148823-1');
+        </script>
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <title>Rutetskiy Layer Designs</title>
+        <title>Rutetskiy Designs</title>
         <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
 
-    <body onload="loadAnim()" on>
+    <body onload="loadAnim()">
         <div id="loader">
             <span id="layer-3"></span>
             <span id="layer-2">
@@ -31,90 +40,92 @@
         	</div>
         </div>
         <div id="menu" class="grey-line right center-vertical-container transition">
-    		<a id="footerClick">контакти</a>
-    		<a href="about.html">про нас</a>
+            <a id="footerClick">контакти</a>
+            <a href="#" onclick="goToPage('about.html')">про нас</a>
             <p class="lang-changer"><a href="#" class="lang-active">УКР</a>/<a href="#" class="lang-noactive">ENG</a>/<a href="#" class="lang-noactive">РУС</a></p>
         </div>
 
         <div class="container-fluid px-0">
             <div class="row no-gutters justify-content-center">
                 <div class="col-md-6" style="height: 100%;">
-                    <div class="row no-gutters pt-custom">
-                        <div class="col-md-6 col-left px-2 px-md-0">
+                    <div class="row no-gutters pt-custom px-2 px-md-0">
+                        <div class="col-md-6 col-left">
                            <div class="row no-gutters">
                                <div class="col-8">
-                                   <a href="ashanti-1.html">
+                                   <span onclick="goToPage('ashanti.html')">
                                        <div class="img-container">
                                            <img src="img/3.jpg" alt="" class="img-fluid">
                                        </div>
-                                   </a>
+                                   </span>
                                    <h4 class="custom-header">Гра світла та тіні в кожній деталі</h4>
                                </div>
                                <div class="col-4">
-                                 <a href="sun-sining-1.html">
+                                 <span onclick="goToPage('sun-sining.html')">
                                     <div class="img-container">
                                        <img src="img/4.jpg" alt="" class="img-fluid">
                                     </div>
-                                  </a>   
+                                  </span>   
                                 <div id="rp-grey-1"></div>
-                                    <a href="sun-sining-1.html">
+                                    <span onclick="goToPage('codex.html')">
                                         <div class="img-container">
-                                            <img src="img/4.jpg" alt="" class="img-fluid">
+                                            <img src="img/6.jpg" alt="" class="img-fluid">
                                         </div>
-                                   </a>    
+                                    </span>    
                                </div>  
                            </div>
                            <div class="row no-gutters"> 
                                <div class="col-4">
-                                   <a href="lotus-1.html">
+                                   <span onclick="goToPage('lotus.html')">
                                         <div class="img-container">
                                             <img src="img/8.jpg" alt="" class="img-fluid">
                                         </div>
-                                   </a> 
-                                   <a href="flower-1.html">
-                                   <div class="img-container">
-                                       <img src="img/7.jpg" alt="" class="img-fluid">
-                                   </div>
-                                   </a>   
+                                   </span> 
+                                   <span onclick="goToPage('flower.html')">
+                                       <div class="img-container">
+                                           <img src="img/7.jpg" alt="" class="img-fluid">
+                                       </div>
+                                   </span>   
                                </div>
                                <div class="col-8">
-                                   <a href="lette-1.html">
-                                   <div class="img-container">
-                                       <img src="img/1.jpg" alt="" class="img-fluid">
-                                   </div>
-                                   </a>   
+                                   <span onclick="goToPage('lette.html')">
+                                       <div class="img-container">
+                                           <img src="img/1.jpg" alt="" class="img-fluid">
+                                       </div>
+                                   </span>   
                                </div>
                            </div>
                         </div>
                         <div class="col-md-6 col-right">
                             <div class="row no-gutters">
                                 <div class="col">
-                                    <a href="asterion-1.html">
-                                    <div class="img-container">
-                                        <img src="img/2.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    </a>    
+                                    <span onclick="goToPage('asterion.html')">
+                                        <div class="img-container">
+                                            <img src="img/2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </span>    
                                 </div>
                             </div>
                             <div class="row no-gutters">
                                 <div class="col-4">
-                                    <a href="sun-sining-1.html">
-                                    <div class="img-container">
-                                       <img src="img/4.jpg" alt="" class="img-fluid">
-                                    </div>    
+                                    <span onclick="goToPage('ratio.html')">
+                                        <div class="img-container">
+                                           <img src="img/5.jpg" alt="" class="img-fluid">
+                                        </div>    
+                                    </span>   
                                     <div id="rp-wood-1"></div>
-                                    <div class="img-container">
-                                       <img src="img/4.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    </a>    
+                                    <span onclick="goToPage('arktur.html')">
+                                        <div class="img-container">
+                                           <img src="img/9.jpg" alt="" class="img-fluid">
+                                        </div> 
+                                    </span>
                                 </div>
                                 <div class="col-8">
-                                    <a href="floral-garden-1.html">
-                                    <div class="img-container">
-                                       <img src="img/10.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <h4 class="custom-header">Далі буде більше...</h4>
-                                    </a>    
+                                    <span onclick="goToPage('floral-garden.html')">
+                                        <div class="img-container">
+                                           <img src="img/10.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </span>  
+                                    <h4 class="custom-header">Далі буде більше...</h4>  
                                 </div>
                             </div>
                         </div>
@@ -147,19 +158,19 @@
         <div class="modal fade modal-custom" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content" style="border-radius: 0">
-              <div class="modal-header">
-                <h5 class="modal-title text-center" id="exampleModalLongTitle">ЗАЛИШТЕ СВОЇ КОНТАКТИ</h5>
+              <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="exampleModalLongTitle">ЗАЛИШТЕ СВОЇ КОНТАКТИ</h5>
               </div>
               <div class="modal-body" style="text-align: center !important">
                 <p>наш менеджер невдовзі зв'яжеться з вами</p>
                 <form action="post.php" method="post">
                   <div class="form-group">
-                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я">
-                    <input type="phone" class="form-control" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
-                    <input type="text" class="form-control" id="exampleInputPassword1" name="user_phone" placeholder="Ваш коментар">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" name="user_name" placeholder="Ім'я">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="user_feedback" placeholder="Ваш коментар">
                   </div>
                     <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary" style="width: 100%">Save changes</button>
+                    <button type="submit" class="btn btn-order" style="width: 100%">Відправити</button>
                     </div>
                 </form>
               </div>
@@ -170,19 +181,7 @@
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-
-        <script type="text/javascript">
-            function loadAnim() {
-                document.getElementById("layer-1").style.width = 0;
-                document.getElementById("layer-2").style.width = 0;
-                document.getElementById("layer-3").style.width = 0;
-                setTimeout('zindexToNull()', 5000);  
-            }
-
-            function zindexToNull() {
-                document.getElementById("loader").style.zIndex = 0;
-            }
-        </script>
+        <script src="js/trns.js"></script>
        
         <script>
         	$("#footerClick").click(function () {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 body, footer {
     font-family: 'Roboto', sans-serif;
 }
@@ -247,6 +249,11 @@ body, footer {
     .sale-text {
         font-size: 110%;
     }
+    
+    .section-number-include {
+        font-size: 150%;
+        padding-top: 20px !important;
+    }
 }
 
 #custom-navbar li {
@@ -313,7 +320,7 @@ body, footer {
 
 .fullscreen-img-2 {
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
 }
@@ -403,6 +410,14 @@ body, footer {
     .input-pattern input {
         width: calc(100% - 6px);
         height: 40px;
+        border: none;
+        padding-left: 6px;
+        background-color: white;
+    }
+
+    .input-pattern textarea {
+        width: 100%;
+        height: auto;
         border: none;
         padding-left: 6px;
         background-color: white;
@@ -680,7 +695,7 @@ body, footer {
     -webkit-color: #4D3431;
     color: #4D3431;
     letter-spacing: 2px;
-    padding-top: 80px;
+    padding-top: 50px;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -1318,7 +1333,7 @@ body, footer {
 .btn-yellow {
     border: 1px solid #ff8c00;
     border-radius: 0;
-    color: #fff;
+    color: #fff !important;
     background-color: #ff8c00;
     text-transform: uppercase;
     width: 100%;
@@ -1481,12 +1496,7 @@ body, footer {
    font-size: 12px; 
 }
 
-.apart-buy {
-   background-color: #ff8c00; 
-   margin: 16px 2px 0px 2px; 
-   cursor: pointer; 
-   width: calc(100% - 4px); 
-}
+
 
 .apart-buy p {
     padding: 8px;
@@ -1601,4 +1611,33 @@ body, footer {
 
 .arrow-right, .arrow-left {
     cursor: pointer;    
+}
+
+.booking-icon {
+    font-family: 'Oswald', sans-serif;
+}
+.no-rounds {
+    border-radius: 0px !important;
+}
+
+.impression-input {
+    width: 100%;
+    border: none;
+    padding: 8px;    
+}
+
+.impression-input:focus {
+    outline: none;
+    color: #707070;
+}
+
+.apart-buy {
+    padding: 3px;
+}
+
+.h-line-thin {
+    width: 80%;
+    margin-left: 10%;
+    height: 1px;
+    background-color: #ff8c00;
 }

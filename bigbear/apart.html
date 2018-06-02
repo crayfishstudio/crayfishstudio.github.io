@@ -237,12 +237,12 @@
                         <p>ЗАЛИШИЛОСЬ ВСЬОГО 3 НОМЕРИ</p>
                     </div>
                     <div class="apart-buy">
-                        <a href="#" class="btn btn-yellow" style="padding: 2px; margin: 0;">ЗАБРОНЮВАТИ</a>
+                        <a class="btn btn-yellow" data-toggle="modal" data-target="#exampleModal">ЗАБРОНЮВАТИ</a>
                     </div>
                 </div>                   
             </div>
         </div>
-        <div class="row px-xl-5 mb-4 mt-5">
+        <div class="row px-xl-5 px-3 mb-4 mt-5">
             <div class="col-lg-2 col-md-4 mb-4">
                 <i class="far fa-clock text-orange rules-icon"></i>
                 <h5 class="rules-header">Заселення</h5>
@@ -312,7 +312,7 @@
                     </p>
                 </div>
                 <div class="col-xl px-xl-5">
-                    <p class="section-text-small">розсташування
+                    <p class="section-text-small">розташування
                     <i class="far fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -345,7 +345,7 @@
                         <p style="float: left; margin-left: 5px;">Mark</p>
                         <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 10px; color: #707070;">20.02.2018</p>
                     </div>
-                    <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
+                    <div id="profile-huge" class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                 </div>
             </div>
             <div class="d-flex justify-content-center">
@@ -381,14 +381,20 @@
         </div>
     </div>
 
-    <div id="feedback-slider-arrows-id" class="feedback-slider-arrows">
-        <div id="feedback-arrow-left" class="arrow-left">
-            <div></div>
-            <div></div>
+    <div id="feedback-arrow-left" class="temp" style="position: absolute;">
+        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+            <div class="arrow-left">
+                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
+                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
+            </div>
         </div>
-        <div id="feedback-arrow-right" class="arrow-right">
-            <div></div>
-            <div></div>
+    </div>
+    <div id="feedback-arrow-right" class="temp" style="position: absolute;">
+        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+            <div class="arrow-right">
+                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
+                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
+            </div>
         </div>
     </div>
     
@@ -398,9 +404,9 @@
                 <h2 class="section-header-huge pb-5">Cхожі номери</h2>
             </div>
         </div>
-        <div class="row justify-content-center no-gutters px-md-5 px-0 pb-3">
-            <div class="col-lg-4 my-4 px-2">
-                <div class="apart-small-card ">
+        <div class="row justify-content-center no-gutters px-md-5 px-0">
+            <div class="col-xl-4 col-lg-6 p-2 mt-4">
+                <div class="apart-small-card">
                     <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
                     <div class="row pt-3  px-md-4 px-3">
                         <div class="col-8">
@@ -427,8 +433,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 my-4 px-2">
-                <div class="apart-small-card ">
+            <div class="col-xl-4 col-lg-6 p-2 mt-4">
+                <div class="apart-small-card">
                     <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
                     <div class="row pt-3  px-md-4 px-3">
                         <div class="col-8">
@@ -452,8 +458,8 @@
                     <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
                 </div>
             </div>
-            <div class="col-lg-4 my-4 px-2">
-                <div class="apart-small-card ">
+            <div class="col-xl-4 col-lg-6 p-2 mt-4">
+                <div class="apart-small-card">
                     <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
                     <div class="row pt-3  px-md-4 px-3">
                         <div class="col-8">
@@ -475,6 +481,9 @@
                         <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
                     </div>
                     <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
+                    <div class="apart-small-discount">
+                        <p class="text-center py-1 text-uppercase">знижка 50%</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -488,20 +497,43 @@
         </div>
     </div>
    
+    <div class="container-fluid px-1" style="background-color: #747474">
+        <form>
+            <div class="row justify-content-center no-gutters py-md-4 py-1">
+                <div class="col-lg-2 col-md-3 my-1">
+                    <div class="input-pattern">
+                        <input type="text" placeholder="Ім'я"/>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 my-1">
+                    <div class="input-pattern">
+                        <input type="text" placeholder="Номер телефону"/>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 my-1">
+                    <div class="input-pattern">
+                        <a class="btn btn-yellow" data-toggle="modal" data-target="#exampleModal" style="height: 100%; padding: 8px;">ЗВ'ЯЗАТИСЬ З НАМИ</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+   
     <footer class="black-footer py-md-4 py-0">
         <div class="container-fluid">
             <div class="row justify-content-center pb-5">
-                <div class="col-md-4 pt-md-5 pt-3">
+                <div class="col-md-5 pt-md-5 pt-3">
                     <h6 class="footer-header mb-3">Контакти</h6>
                     <div class="row no-gutters">
-                        <div class="col-3">
+                        <div class="col-md-3 col-4">
                             <p class="footer-text">
-                                Тел.<br><br><br>
+                                Тел.<br><br>
+                                Написати<br>
                                 e-mail<br>
                                 Адреса
                             </p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-md-9 col-8">
                             <p class="text-white phones-included">
                                 <a href="tel:+380975144702" class="text-white">+38 (097) 514 4702</a><br>
                                 <a href="tel:+380975144702" class="text-white">+38 (097) 514 4702</a><br>
@@ -514,7 +546,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
                 <div class="col-md-2 col-6 pt-5">
                     <h6 class="footer-header mb-3">про нас</h6>
                     <a href="#" class="text-white">Послуги</a><br>
@@ -548,6 +580,62 @@
             </div>
         </div>
     </footer>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content no-rounds">
+                <div class="container-fluid px-0">
+                    <div class="row justify-content-center my-4 px-4">
+                        <div class="col text-center">
+                            <h5 class="section-header-huge" style="padding-top: 0px; margin-bottom: 0px">підтвердження бронювання номеру</h5>
+                        </div>
+                    </div>
+                    <div class="h-line-thin"></div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 class="section-header-huge" style="padding-top: 30px;">напівлюкс із каміном</h3>
+                            <h6 class="section-header-small mb-4">Елітний котедж велика ведмедиця, яремче</h6>
+                        </div>
+                    </div>
+                    <div class="row px-md-5 px-4">
+                        <div class="col-7">
+                            <p class="text-muted"><i class="fa fa-male align-text-top text-orange"></i> х8: 5 дорослих та 3 дитини</p>
+                        </div>
+                        <div class="col-5 text-right">
+                            <p class="text-muted">з 20.08 по 22.08 <i class="fas fa-calendar-alt align-text-top text-orange"></i></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <h2 class="section-header-huge py-4" style="padding-top: 0px;">9000 UAH</h2>
+                        </div>
+                    </div>
+                    <div class="row text-center py-4 px-4 no-gutters" style="background-color: #f4f4f4">
+                        <div class="col-md-6 my-1">
+                            <div class="input-pattern">
+                                <input type="text" placeholder="Ім'я"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-1">
+                            <div class="input-pattern">
+                                <input type="text" placeholder="Телефон"/>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="input-pattern">
+                                <input type="text" placeholder="Електронна скринька"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  justify-content-center my-3">
+                        <div class="col-md-6 col-10">
+                            <button type="button" class="btn btn-yellow" data-dismiss="modal">Забронювати</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -743,12 +831,15 @@
         });
         $('#datepicker').data('datepicker');
 
+        $('.datepickers-container').css("left", $('.datepickers-container').offset().top - 306);
+
         if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
             $('#datepicker').datepicker().data('datepicker').update({
                 position: "top left"
             });
 
             $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+            $('.datepickers-container').css("left", $('.datepickers-container').offset().top - 30);
         }
 
         $('#datepicker-2').datepicker({
@@ -792,6 +883,7 @@
             });            
 
             $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
+            $('.datepickers-container').css("left", $('.datepickers-container').offset().top - 306);
 
             if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
                 $('.datepickers-container').css("top", 0)
@@ -801,105 +893,54 @@
                 });            
 
                 $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+                $('.datepickers-container').css("left", $('.datepickers-container').offset().top - 30);
             }
         });
         </script>
 
     <script>
         $(document).ready(function(){
-            //hotel card settings
-            $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
-            $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
-            $('.price-p-div').width($('.col-xl-4').width() * 0.3);
-
-            $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
-            $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
-            $('.hotel-title').css("font-size", $('.col-xl-4').width() * 0.033);
-            $('.days-ends-end-text').css("font-size", $('.col-xl-4').width() * 0.03);
-            
-
-            $('.hotel-card-price-hover').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
-            $('.hotel-card-price-hover').find("p").css("margin-top", $('.hotel-card-price').height()/2 - $('.col-xl-4').width() * 0.03 * 0.7);
-            
-            $('.hotel-card-price-hover').find("p").width($('.col-xl-4').width() * 0.3);
-
-            $('.hotel-card-price-hover').width($('.col-xl-4').width() * 0.3 + 1);
-            //------
-
-            var check = 0;
-
-            $('.hotel-card').hover(function() {
-                if ($(window).width() > 1199) {
-                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
-                    check = 0;
-                }
-            });
-
             $('.apart-small-card').hover(function() {
                 if ($(window).width() > 1199) {
                     $(this).find('.apart-small-card-buy-hover').animate({width: 'toggle'});
                 }
             });
 
+            $(".temp").height(150);
+            $(".temp").width(150);
+            $(".temp").css("top", $("#profile-huge").offset().top);
+            $(".temp").css("left", $("#profile-huge").offset().left - 150);
+
             if ($(window).width() > 1199) {
-                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
-                $(".feedback-slider-arrows").height($("#test").height());
-                $(".feedback-slider-arrows").width($("#test").width() + 320);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-
-                $("#justify").removeClass("justify-content-center");
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + $('#test').width() + 150);
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
-                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
-                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-
-                $("#justify").addClass("justify-content-center");
+                if ((($(window).width() - 150)/2) < 150) {
+                    $(".temp").width(($(window).width() - 150)/2);
+                }
+                $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
+                $(".temp").css("top", $("#profile-huge").offset().top + 20);
             }
         });
 
         var x = 0;
 
         $(window).resize(function() {
-            //hotel card settings
-            $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
-            $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
-            $('.price-p-div').width($('.col-xl-4').width() * 0.3);
-
-            $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
-            $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
-            $('.hotel-title').css("font-size", $('.col-xl-4').width() * 0.033);
-            $('.days-ends-end-text').css("font-size", $('.col-xl-4').width() * 0.03);
-            
-            $('.hotel-card-price-hover').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
-            $('.hotel-card-price-hover').find("p").css("margin-top", $('.hotel-card-price').height()/2 - $('.col-xl-4').width() * 0.03 * 0.7);
-            
-            $('.hotel-card-price-hover').find("p").width($('.col-xl-4').width() * 0.3);
-
-            $('.hotel-card-price-hover').width($('.col-xl-4').width() * 0.3 + 1);
-            //------
+            $(".temp").height(150);
+            $(".temp").width(150);
+            $(".temp").css("top", $("#profile-huge").offset().top);
+            $(".temp").css("left", $("#profile-huge").offset().left - 150);
 
             if ($(window).width() > 1199) {
-                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
-                $(".feedback-slider-arrows").height($("#test").height());
-                $(".feedback-slider-arrows").width($("#test").width() + 320);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-
-                $("#justify").removeClass("justify-content-center");
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + $('#test').width() + 150);
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
-                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
-                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-
-                $("#justify").addClass("justify-content-center");
-            }
-
-            $('.hotel-card').hover(function() {
-                if ($(window).width() > 1199 && check == 1) {
-                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+                if ((($(window).width() - 150)/2) < 150) {
+                    $(".temp").width(($(window).width() - 150)/2);
                 }
-            }); 
+                $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
+                $(".temp").css("top", $("#profile-huge").offset().top + 40);
+            }
 
             $('.apart-small-card').hover(function() {
                 if ($(window).width() > 1199) {

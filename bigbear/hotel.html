@@ -107,17 +107,23 @@
         </div>
         <div class="slider-arrows">
             <div id="p-arrow" class="div-arrows" style="left: 0;">
-                <i class="fas fa-chevron-left fa-4x" style="margin-left: 2vw; margin-top: 43vh; color: #fff;"></i>
+                <div class="arrow-left">
+                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                </div>
             </div>
             <div id="n-arrow" class="div-arrows" style="right: 0;">
-                <i class="fas fa-chevron-right fa-4x" style="margin-right: 2vw; margin-top: 43vh; float: right; color: #fff;"></i>
+                <div class="arrow-right">
+                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                </div>
             </div>
         </div>
         <div id="selector-bar-id" class="selector-bar">
             <div class="container-fluid px-1 main-form" style="bottom: 1vh;">
                 <form>
                     <div class="row justify-content-center no-gutters py-md-3 py-1">
-                        <div class="col-lg-2 col-md-3 col-6 my-1">
+                        <div class="col-lg-2 col-md-3 my-1">
                             <div id="div-datepicker" class="input-pattern">
                                 <i class="fas fa-calendar-alt input-icon"></i>
                                 <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker" style="cursor: pointer" placeholder="Дата" readonly="readonly"/>
@@ -186,85 +192,142 @@
                 <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             </div>
         </div>
-        <div class="row justify-content-center no-gutters px-md-5 px-0 pb-3">
-            <div class="col-xl-4">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/hotels/u_marka.JPG);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Котедж У МАРКА</h4>
+        
+        <div class="row justify-content-center no-gutters px-md-5 px-0">
+            <div class="col-xl-4 col-lg-6 p-2 mt-4">
+                <div class="apart-small-card">
+                    <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
+                    <div class="row pt-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        </div>
+                        <div class="col-4 text-right">
+                            <small class="alt-dates">з 05.10 по 08.10</small>
                         </div>
                     </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                Яремче</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
+                    <div class="row pb-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <small class="small-card-hotel">Eлітний котедж ВЕЛИКА ВЕДМЕДИЦЯ</small>
+                        </div>
+                        <div class="col-4 text-right">
+                            <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i> Яремче</p>
                         </div>
                     </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong>200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
-                        </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
-                        </div>
+                    <div class="apart-small-card-buy">
+                        <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
                     </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/hotels/bigbear.JPG);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Готель ВЕЛИКА ВЕДМЕДИЦЯ</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                Яремче</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
-                        </div>
-                    </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
-                        </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
-                        </div>
+                    <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
+                    <div class="apart-small-discount">
+                        <p class="text-center py-1 text-uppercase">знижка 50%</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
-                <div class="card hotel-card m-lg-1 mt-lg-3">
-                    <div class="card-header" style="background: url(img/hotels/dreamhouse.jpg);"></div>
-                    <div class="card-body hotel-card-body">
-                        <div class="d-flex align-items-end">
-                            <h4 class="card-title hotel-title">Елітний котедж DREAM HOUSE</h4>
+            <div class="col-xl-4 col-lg-6 p-2 mt-4">
+                <div class="apart-small-card">
+                    <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
+                    <div class="row pt-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        </div>
+                        <div class="col-4 text-right">
+                            <small class="alt-dates">з 05.10 по 08.10</small>
                         </div>
                     </div>
-                    <div class="card-footer hotel-card-footer">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i>
-                                Яремче</p>
-                            </div>
-                            <p class="days-ends-end-text">Залишилось 3 номери</p>
+                    <div class="row pb-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <small class="small-card-hotel">Eлітний котедж ВЕЛИКА ВЕДМЕДИЦЯ</small>
+                        </div>
+                        <div class="col-4 text-right">
+                            <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i> Яремче</p>
                         </div>
                     </div>
-                    <div class="hotel-card-price">
-                        <div class="price-p-div d-flex justify-content-center align-items-center" style="height: 100%; float: left;">
-                            <p class="price-p" style="margin-right: 6px;">від</p><p class="price-p"><strong style="font-size: 24px;">200</strong></p><p class="price-p" style="margin-left: 6px;">грн</p>
+                    <div class="apart-small-card-buy">
+                        <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
+                    </div>
+                    <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 p-2 mt-4">
+                <div class="apart-small-card">
+                    <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
+                    <div class="row pt-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <h5 class="small-card-header">напівлюкс із каміном</h5>
                         </div>
-                        <div class="hotel-card-price-hover">
-                            <p>ЗАБРОНЮВАТИ</p>
+                        <div class="col-4 text-right">
+                            <small class="alt-dates">з 05.10 по 08.10</small>
                         </div>
+                    </div>
+                    <div class="row pb-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <small class="small-card-hotel">Eлітний котедж ВЕЛИКА ВЕДМЕДИЦЯ</small>
+                        </div>
+                        <div class="col-4 text-right">
+                            <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i> Яремче</p>
+                        </div>
+                    </div>
+                    <div class="apart-small-card-buy">
+                        <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
+                    </div>
+                    <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
+                    <div class="apart-small-discount">
+                        <p class="text-center py-1 text-uppercase">знижка 50%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 p-2 mt-4">
+                <div class="apart-small-card">
+                    <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
+                    <div class="row pt-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        </div>
+                        <div class="col-4 text-right">
+                            <small class="alt-dates">з 05.10 по 08.10</small>
+                        </div>
+                    </div>
+                    <div class="row pb-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <small class="small-card-hotel">Eлітний котедж ВЕЛИКА ВЕДМЕДИЦЯ</small>
+                        </div>
+                        <div class="col-4 text-right">
+                            <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i> Яремче</p>
+                        </div>
+                    </div>
+                    <div class="apart-small-card-buy">
+                        <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
+                    </div>
+                    <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
+                    <div class="apart-small-discount">
+                        <p class="text-center py-1 text-uppercase">знижка 50%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 p-2 mt-4">
+                <div class="apart-small-card">
+                    <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
+                    <div class="row pt-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        </div>
+                        <div class="col-4 text-right">
+                            <small class="alt-dates">з 05.10 по 08.10</small>
+                        </div>
+                    </div>
+                    <div class="row pb-3  px-md-4 px-3">
+                        <div class="col-8">
+                            <small class="small-card-hotel">Eлітний котедж ВЕЛИКА ВЕДМЕДИЦЯ</small>
+                        </div>
+                        <div class="col-4 text-right">
+                            <p class="location-text"><i class="fas fa-map-marker-alt" style="color: #ff8c00"></i> Яремче</p>
+                        </div>
+                    </div>
+                    <div class="apart-small-card-buy">
+                        <p class="text-center">100<br/><sup><sup style="font-weight: 300;">UAH за ніч</sup></sup></p>
+                    </div>
+                    <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
+                    <div class="apart-small-discount">
+                        <p class="text-center py-1 text-uppercase">знижка 50%</p>
                     </div>
                 </div>
             </div>
@@ -283,8 +346,8 @@
                 <i class="bb-few-minutes features-icon"></i>
                 <h5 class="feature-text">8 хвилин<br>до центру</h5>
             </div>
-            <div class="col-md-3 col-6 py-2 my-2 mb-5">
-                <i class="bb-feedback features-icon"></i>
+            <div id="booking-id" class="col-md-3 col-6 py-2 my-2 mb-5">
+                <p class="booking-icon">9.1<br><sup><small style="color: grey;"><sup><small style="font-family: Roboto">out of 10</small></sup></small></sup></p>
                 <h5 class="feature-text">рейтинг на<br>booking.com</h5>
             </div>
             <div class="col-md-3 col-6 py-2 my-2 mb-5">
@@ -410,7 +473,7 @@
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                        <h5 class="mb-4">Wi-Fi на всій території</h5>
-                        <i class="bb-wifi-orange fa-5x"></i>
+                        <i class="bb-wifi-orange fa-5x p-1"></i>
                    </div> 
                 </div>
             </div>
@@ -441,14 +504,15 @@
                     <div class="d-flex justify-content-center">
                         <div id="test" class="card feedback-card">
                             <div class="card-body">
-                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn... <a href="#" style="color: #ff8c00">Читати повністю</a></p>
+                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn... 
+                                <a href="#" style="color: #ff8c00; z-index: 1000">Читати повністю</a></p>
                             </div>
                             <div class="card-footer">
                                 <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
                                 <p style="float: left; margin-left: 5px;">Mark</p>
                                 <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 10px; color: #707070;">20.02.2018</p>
                             </div>
-                            <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
+                            <div id="profile-huge" class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -480,68 +544,44 @@
                 </div>
                 <div class="feedback-button">
                     <a href="#">Всі відгуки</a>
-                    <a href="#">Залишити відгук</a>
+                    <a href="#" data-toggle="modal" data-target="#exampleModal2">Залишити відгук</a>
                 </div>
             </div>
         </div>
     </div>
-    <div id="feedback-slider-arrows-id" class="feedback-slider-arrows">
-        <div id="feedback-arrow-left" class="arrow-left">
-            <div></div>
-            <div></div>
+    <div id="feedback-arrow-left" class="temp" style="position: absolute;">
+        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+            <div class="arrow-left">
+                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
+                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
+            </div>
         </div>
-        <div id="feedback-arrow-right" class="arrow-right">
-            <div></div>
-            <div></div>
+    </div>
+    <div id="feedback-arrow-right" class="temp" style="position: absolute;">
+        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+            <div class="arrow-right">
+                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
+                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
+            </div>
         </div>
     </div>
     
     <div class="container-fluid px-1" style="background-color: #747474">
         <form>
             <div class="row justify-content-center no-gutters py-md-4 py-1">
-                <div class="col-lg-2 col-md-3 col-6 my-1">
-                    <div id="div-datepicker-2" class="input-pattern">
-                        <i class="fas fa-calendar-alt input-icon"></i>
-                        <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here" id="datepicker-2" style="cursor: pointer" placeholder="Дата"
-                        readonly="readonly"/>
+                <div class="col-lg-2 col-md-3 my-1">
+                    <div class="input-pattern">
+                        <input type="text" placeholder="Ім'я"/>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 my-1">
                     <div class="input-pattern">
-                        <p id="guests-2" class="input-text" style="color: #969696">Кількість гостей</p>
-                        <i class="fas fa-male input-icon"></i>
-                        <div class="input-dropdown">
-                            <div class="input-members d-flex justify-content-between">
-                                <p>Дорослі</p>
-                                <span>
-                                    <span id="adults_plus-2">
-                                        <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                    <input id="adults-2" type="number" name="adults" min="0" value="0" readonly="readonly" />
-                                    <span id="adults_minus-2">
-                                        <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="input-members d-flex justify-content-between">
-                                <p>Діти<br/><sup>5-12 років</sup></p>
-                                <span>
-                                    <span id="children_plus-2">
-                                        <i class="fas fa-plus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                    <input id="children-2" type="number" name="children" min="0" value="0" readonly="readonly" />
-                                    <span id="children_minus-2">
-                                        <i class="fas fa-minus fa-lg" style="background-color: rgba(0,0,0,0.1); border-radius: 50%; color: #ff8c00; padding: 4px;"></i>
-                                    </span>
-                                </span>
-                            </div>
-                            <p style="padding-left: 6px; color: rgba(0,0,0,0.5); margin: 8px 0px 6px 0px;"><sub>діти до 5 років - безкоштовно</sub></p>
-                        </div>
+                        <input type="text" placeholder="Номер телефону"/>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 my-1">
                     <div class="input-pattern">
-                        <button type="submit" class="submit-button">ПЕРЕВІРИТИ ЦІНИ</button>
+                        <a class="btn btn-yellow" data-toggle="modal" data-target="#exampleModal" style="height: 100%; padding: 8px;">ЗВ'ЯЗАТИСЬ З НАМИ</a>
                     </div>
                 </div>
             </div>
@@ -551,17 +591,18 @@
     <footer class="black-footer py-md-4 py-0">
         <div class="container-fluid">
             <div class="row justify-content-center pb-5">
-                <div class="col-md-4 pt-md-5 pt-3">
+                <div class="col-md-5 pt-md-5 pt-3">
                     <h6 class="footer-header mb-3">Контакти</h6>
                     <div class="row no-gutters">
-                        <div class="col-3">
+                        <div class="col-md-3 col-4">
                             <p class="footer-text">
-                                Тел.<br><br><br>
+                                Тел.<br><br>
+                                Написати<br>
                                 e-mail<br>
                                 Адреса
                             </p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-md-9 col-8">
                             <p class="text-white phones-included">
                                 <a href="tel:+380975144702" class="text-white">+38 (097) 514 4702</a><br>
                                 <a href="tel:+380975144702" class="text-white">+38 (097) 514 4702</a><br>
@@ -574,7 +615,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
                 <div class="col-md-2 col-6 pt-5">
                     <h6 class="footer-header mb-3">про нас</h6>
                     <a href="#" class="text-white">Послуги</a><br>
@@ -608,6 +649,97 @@
             </div>
         </div>
     </footer>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content no-rounds">
+                <div class="container-fluid">
+                    <div class="row justify-content-center my-5">
+                        <i class="bb-like fa-10x"></i>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <h2 class="section-header-huge" style="padding-top: 0px;">дякуємо!</h2>
+                            <h6 class="section-header-small" style="text-transform: lowercase">наш менеджер невдовзі перетелефонує вам</h6>
+                        </div>
+                    </div>
+                    <div class="row  justify-content-center my-5">
+                        <div class="col-md-6 col-10">
+                            <button type="button" class="btn btn-yellow" data-dismiss="modal">Зрозуміло</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content no-rounds">
+                <div class="container-fluid px-0">
+                    <div class="row justify-content-center my-4 px-4">
+                        <div class="col text-center">
+                            <h5 class="section-header-huge" style="padding-top: 0px; margin-bottom: 0px">залиште свій відгук про відпочинок!</h5>
+                        </div>
+                    </div>
+                    <div class="row text-center py-4 px-4 no-gutters" style="background-color: #f4f4f4">
+                        <div class="col-md-6 my-1">
+                            <div class="input-pattern">
+                                <input type="text" placeholder="Прізвище"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-1">
+                            <div class="input-pattern">
+                                <input type="text" placeholder="Ім'я"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col px-5">
+                            <p class="section-text-small">чистота
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            </p>
+                            <p class="section-text-small">затишок
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            </p>
+                            <p class="section-text-small">розташування
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            </p>
+                            <p class="section-text-small">смачна кухня
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center py-4 px-4 no-gutters" style="background-color: #f4f4f4">
+                        <div class="col my-1">
+                            <textarea rows="3" placeholder="Опишіть ваші враження" class="impression-input" wrap="soft"></textarea>
+                        </div>
+                    </div>
+                    <div class="row  justify-content-center my-3">
+                        <div class="col-md-6 col-10">
+                            <button type="button" class="btn btn-yellow" data-dismiss="modal">Відправити відгук</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -774,6 +906,22 @@
     </script>
 
     <script>
+        $('#datepicker').datepicker({
+            range: true,
+            minDate: new Date(),
+            dateFormat: "dd.mm",
+            position: "bottom left"
+        });
+        $('#datepicker').data('datepicker');
+
+        if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+            $('#datepicker').datepicker().data('datepicker').update({
+                position: "top left"
+            });
+
+            $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+        }
+
         $(".input-dropdown").each(function() {
             $(this).css({
                 top: 100 + "%"
@@ -795,78 +943,92 @@
                     });
                 }
             });
+
+            $('#datepicker').datepicker().data('datepicker').update({
+                position: "top left"
+            });            
+
+            $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
+
+            if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+                $('.datepickers-container').css("top", 0)
+
+                $('#datepicker').datepicker().data('datepicker').update({
+                    position: "top left"
+                });            
+
+                $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+            }
         });
         </script>
 
     <script>
         $(document).ready(function(){
-            //hotel card settings
-            $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
-            $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
-            $('.price-p-div').width($('.col-xl-4').width() * 0.3);
-            $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
-            $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
-            $('.hotel-title').css("font-size", $('.col-xl-4').width() * 0.033);
-            $('.days-ends-end-text').css("font-size", $('.col-xl-4').width() * 0.03);
-            $('.location-text').css("font-size", $('.col-xl-4').width() * 0.03);
-            $('.hotel-card-price-hover').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
-            $('.hotel-card-price-hover').find("p").css("margin-top", $('.hotel-card-price').height()/2 - $('.col-xl-4').width() * 0.03 * 0.7);
-            
-            $('.hotel-card-price-hover').find("p").width($('.col-xl-4').width() * 0.3);
-            $('.hotel-card-price-hover').width($('.col-xl-4').width() * 0.3 + 1);
-            //------
-            var check = 0;
-            $('.hotel-card').hover(function() {
-                if ($(window).width() > 1199) {
-                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
-                    check = 0;
-                }
+            $('.booking-icon').css({
+                "border-style": "solid",
+                "border-color": "#ff8c00",
+                "border-width": $("#booking-id").width() * 0.01,
+                "width": $(".bb-toy-thin").height(),
+                "border-radius": "50%",
+                "color": "#ff8c00",
+                "font-size": $(".bb-toy-thin").width() * 0.35,
+                "padding": $(".bb-toy-thin").height() * 0.12,
+                "line-height": "120%"
             });
+
+            $('.booking-icon').css("margin", "auto");
+            $('.booking-icon').height($('.booking-icon').width());
+
+            
+            $(".temp").height(150);
+            $(".temp").width(150);
+            $(".temp").css("top", $("#profile-huge").offset().top);
+            $(".temp").css("left", $("#profile-huge").offset().left - 150);
+
             if ($(window).width() > 1199) {
-                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
-                $(".feedback-slider-arrows").height($("#test").height());
-                $(".feedback-slider-arrows").width($("#test").width() + 320);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + $('#test').width() + 150);
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
-                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
-                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+                if ((($(window).width() - 150)/2) < 150) {
+                    $(".temp").width(($(window).width() - 150)/2);
+                }
+                $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
+                $(".temp").css("top", $("#profile-huge").offset().top + 40);
             }
         });
         var x = 0;
         $(window).resize(function() {
-            //hotel card settings
-            $('.col-xl-4').height($('.col-xl-4').width() * 0.76);
-            $('.hotel-card-price').height($('.col-xl-4').width() * 0.15);
-            $('.price-p-div').width($('.col-xl-4').width() * 0.3);
-            $('.price-p').css("font-size", $('.col-xl-4').width() * 0.025);
-            $('.price-p').find("strong").css("font-size", $('.col-xl-4').width() * 0.045);
-            $('.hotel-title').css("font-size", $('.col-xl-4').width() * 0.033);
-            $('.days-ends-end-text').css("font-size", $('.col-xl-4').width() * 0.03);
-            $('.location-text').css("font-size", $('.col-xl-4').width() * 0.03);
-            $('.hotel-card-price-hover').find("p").css("font-size", $('.col-xl-4').width() * 0.03);
-            $('.hotel-card-price-hover').find("p").css("margin-top", $('.hotel-card-price').height()/2 - $('.col-xl-4').width() * 0.03 * 0.7);
-            
-            $('.hotel-card-price-hover').find("p").width($('.col-xl-4').width() * 0.3);
-            $('.hotel-card-price-hover').width($('.col-xl-4').width() * 0.3 + 1);
-            //------
+            $('.booking-icon').css({
+                "border-style": "solid",
+                "border-color": "#ff8c00",
+                "border-width": $("#booking-id").width() * 0.01,
+                "width": $(".bb-toy-thin").height(),
+                "border-radius": "50%",
+                "color": "#ff8c00",
+                "font-size": $(".bb-toy-thin").width() * 0.35,
+                "padding": $(".bb-toy-thin").height() * 0.12,
+                "line-height": "120%"
+            });
+
+            $('.booking-icon').css("margin", "auto");
+            $('.booking-icon').height($('.booking-icon').width());
+
+            $(".temp").height(150);
+            $(".temp").width(150);
+            $(".temp").css("top", $("#profile-huge").offset().top);
+            $(".temp").css("left", $("#profile-huge").offset().left - 150);
+
             if ($(window).width() > 1199) {
-                $(".feedback-slider-arrows").css("top", $("#test").offset().top);
-                $(".feedback-slider-arrows").height($("#test").height());
-                $(".feedback-slider-arrows").width($("#test").width() + 320);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + $('#test').width() + 150);
             } else {
-                $("#feedback-slider-arrows-id").css("top", $(".profile-image").offset().top);
-                $(".feedback-slider-arrows").height($(".profile-image").height() - 20);
-                $(".feedback-slider-arrows").width($(".profile-image").width() + 200);
-                $(".feedback-slider-arrows").css("left", $(window).width() / 2 - $(".feedback-slider-arrows").width() / 2);
-            }
-            $('.hotel-card').hover(function() {
-                if ($(window).width() > 1199 && check == 1) {
-                    $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
+                if ((($(window).width() - 150)/2) < 150) {
+                    $(".temp").width(($(window).width() - 150)/2);
                 }
-            }); 
+                $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
+                $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
+                $(".temp").css("top", $("#profile-huge").offset().top + 40);
+            }
+
             var selectorbarheight = $('#selector-bar-id').height() + "px";
             $('.overflow-hidden').css("height", selectorbarheight);
             var inputwidth = $('#div-datepicker').width() + "px";

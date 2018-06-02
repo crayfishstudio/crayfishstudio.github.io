@@ -12,19 +12,29 @@ $time=date("H:i"); // часы:минуты:секунды
 // Принимаем данные с формы 
  
 $name=$_POST['user_name']; 
-$phone=$_POST['user_phone']; 
+$company=$_POST['company']; 
+$type=$_POST['type']; 
+$web=$_POST['web']; 
 $email=$_POST['user_email'];
-$adres=$_POST['user_adres'];
+$code=$_POST['code'];
+$theme=$_POST['theme'];
+$letter=$_POST['letter'];
 
 // Проверяем валидность e-mail 
  
 
 
 $msg=" 
-Ім'я: $name
-Телефон: $phone 
+Заявка на співпрацю
+
+Тема листа: $theme
+Ім'я контактної особи: $name
+Назва компанії та посада: $company
+Веб-сайт: $web
 Email: $email
-Адрес: $adres
+Сідоцтво реєстрації в ЄДРПОУ: $code
+
+Текст листа: $letter
 "; 
 
  // Отправляем письмо админу  
@@ -34,11 +44,9 @@ mail("$adminemail", "$date $time Повідомлення
 // Выводим сообщение пользователю 
  
 print "<script language='Javascript'><!-- 
-function reload() {location.replace('http://rutetskiy.com')}; setTimeout('reload()', 6000); 
+function reload() {location.replace('http://rutetskiy.com')}; setTimeout('reload()', 0); 
 //--></script> 
  
-$msg 
- 
-<p>Повідомлення відправленно, скоро тут буде щось цікавіше (або ні)...</p>"; 
+
 exit; 
 ?>
