@@ -11,42 +11,42 @@ $time=date("H:i"); // часы:минуты:секунды
  
 // Принимаем данные с формы 
  
-$name=$_POST['user_name']; 
-$company=$_POST['company']; 
-$type=$_POST['type']; 
-$web=$_POST['web']; 
-$email=$_POST['user_email'];
-$code=$_POST['code'];
-$theme=$_POST['theme'];
-$letter=$_POST['letter'];
+$name=$_POST['user_name'];
+$sname=$_POST['user_sname'];
+$phone=$_POST['user_phone']; 
+$email=$_POST['user_email']; 
+$town=$_POST['town']; 
+$number=$_POST['number']; 
+$feedback=$_POST['feedback']; 
+$pname=$_POST['pname']; 
+
 
 // Проверяем валидность e-mail 
  
 
 
 $msg=" 
-Заявка на співпрацю
-
-Тема листа: $theme
-Ім'я контактної особи: $name
-Назва компанії та посада: $company
-Веб-сайт: $web
-Email: $email
-Сідоцтво реєстрації в ЄДРПОУ: $code
-
-Текст листа: $letter
+Ім'я: $name
+Прізвище: $sname
+E-mail: $email
+Телефон: $phone 
+Місто: $town 
+Номер складу Нової пошти: $number
+Коментар: $feedback
+Назва картини: $pname
 "; 
 
  // Отправляем письмо админу  
-mail("$adminemail", "$date $time Повідомлення 
-від $name", "$msg");  
+mail("$adminemail", "$date $time Повідомлення від $name", "$msg");  
  
 // Выводим сообщение пользователю 
  
 print "<script language='Javascript'><!-- 
-function reload() {location.replace('http://rutetskiy.com')}; setTimeout('reload()', 0); 
+function reload() {location.replace('http://rutetskiy.com')}; setTimeout('reload()', 6000); 
 //--></script> 
  
-
+$msg 
+ 
+<p>Повідомлення відправленно, скоро тут буде щось цікавіше (або ні)...</p>";  
 exit; 
 ?>
