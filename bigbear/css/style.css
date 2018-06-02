@@ -1641,3 +1641,15 @@ body, footer {
     height: 1px;
     background-color: #ff8c00;
 }
+
+
+
+.apart-photo-title {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+}
