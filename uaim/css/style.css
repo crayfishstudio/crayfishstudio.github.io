@@ -1,0 +1,51 @@
+
+.bg-turquoise {
+    background-color: rgb(71,136,132);
+}
+
+.v-lines {
+    border-left: 1px solid rgb(48,92,90);
+    border-right: 1px solid rgb(48,92,90);
+    font-size: 110%;
+}
+
+.h-line {
+    height: 1px;
+    width: 100%;
+}
+
+.text-nav {
+    font-size: 150%;
+}
+
+.img-size {
+    height: 80%;
+    width: 100%;
+}
+
+.img-icon {
+    height: 70%;
+    width: 60%;
+}
+
+.black-footer {
+    background-color: rgb(46,46,46);
+}
+
+.footer-text {
+    color: rgb(148,148,148);
+}
+
+.text-turquoise {
+    color: rgb(71,136,132);
+}
+
+
+.btn-text {
+    color: aliceblue;
+    width:100%;
+}
+
+.no-rounds {
+    border-radius: 0px;
+}
