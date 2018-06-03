@@ -36,6 +36,11 @@ body, footer {
         margin-left: 92px !important;
     }
 
+    .feedback-card .card-body p {
+        text-align: left; 
+        margin-bottom: 0px;
+    }
+
     .profile-image {
         left: -75px;
         top: calc(50% - 75px);
@@ -56,6 +61,14 @@ body, footer {
     .fake {
         background-color: #F4F4F4; 
         position: relative; 
+    }
+
+    .fake-right {
+        right: -96px;
+    }
+
+    .fake-left {
+        left: -96px;
     }
 
     .main-slider-apart {
@@ -447,7 +460,7 @@ body, footer {
     }
 
     .input-text {
-        color: rgba(0,0,0,0.5);
+        color: #969696;
         margin: 0px;
         padding: 8px;
     }
@@ -685,6 +698,10 @@ body, footer {
     transition: opacity 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease; 
+}
+
+.toogler-a {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .toggler-a:hover {
@@ -940,6 +957,7 @@ body, footer {
 
     .old-price {
         position: absolute;
+        text-decoration: line-through;
         color: white;
         top: 23%;
     }
@@ -954,6 +972,10 @@ body, footer {
         font-size: 14px;
         display: inline;
         margin-bottom: 0;
+    }
+
+    .price-p strong {
+        font-size: 24px;
     }
 
     .hotel-card-price-hover {
@@ -1030,6 +1052,24 @@ body, footer {
         padding: 0px 30px 10px 30px;
     }
 
+    .feedback-card .card-footer .fa-facebook-square {
+       float: left; 
+       margin-top: 2px; 
+    }
+
+    .feedback-card .card-footer .name {
+        float: left; 
+        margin-left: 5px;
+    }
+
+    .feedback-card .card-footer .date {
+        float: right; 
+        font-size: 12px; 
+        margin-top: 5px; 
+        padding-right: 5px; 
+        color: #707070;
+    }
+
     .profile-image {
         position: absolute;
         background-size: cover !important; 
@@ -1087,6 +1127,11 @@ body, footer {
     color: white;
     font-size: 24px;
     font-weight: 600;
+}
+
+.rest-details p {
+    text-align: left; 
+    margin-bottom: 0;
 }
 
 .rest-dots {
@@ -1299,6 +1344,16 @@ body, footer {
 .f-arrow-right div {
     margin-right: 50px;
     background-color: #ff8c00;
+}
+
+.main-arrow-left div {
+    background-color: #FFF !important; 
+    margin-left: 2vw;
+}
+
+.main-arrow-right div {
+    background-color: #FFF !important; 
+    margin-right: 2vw;
 }
 
 .arrow-left div {
@@ -1673,6 +1728,10 @@ body, footer {
     font-weight: 600;
 }
 
+.apart-small-card-buy p sup {
+   font-weight: 300; 
+}
+
 .apart-small-card-buy-hover {
     position: absolute;
     padding: 31px 0px 32px;
@@ -1745,6 +1804,12 @@ body, footer {
 .booking-icon {
     font-family: 'Oswald', sans-serif;
 }
+
+.booking-icon small {
+    color: grey;
+    font-family: Roboto;
+}
+
 .no-rounds {
     border-radius: 0px !important;
 }
@@ -1788,4 +1853,180 @@ body, footer {
 .a-card:hover {
     text-decoration: none;
     color: black;
+}
+
+#p-arrow {
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    height: 100vh; 
+    width: 10vw; 
+    cursor: pointer;
+}
+
+#n-arrow {
+    position: absolute; 
+    right: 0;
+    top: 0; 
+    height: 100vh; 
+    width: 10vw; 
+    cursor: pointer;  
+}
+
+.left-6-px {
+    left: 6px;
+}
+
+.marginy-4-px {
+    margin: 4px 0px;
+}
+
+.padding-4-px {
+    padding: 4px;
+}
+
+.bottom-1-vh {
+    bottom: 1vh;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.fa-minus, .fa-plus {
+    background-color: rgba(0,0,0,0.1); 
+    border-radius: 50%; 
+    color: #ff8c00; 
+    padding: 4px;
+}
+
+.children-up-to-5 {
+    padding-left: 6px;
+    color: rgba(0,0,0,0.5); 
+    margin: 8px 0px 6px 0px;
+}
+
+.color-ff8c00 {
+    color: #ff8c00;
+}
+
+.color-viber {
+    color: #8f5db7;
+}
+
+.color-whatsapp {
+   color: #25D366; 
+}
+
+.color-telegram {
+    color: #0088CC;
+}
+
+.price-p-div {
+    height: 100%; 
+    float: left;
+}
+
+.margin-right-6-px {
+    margin-right: 6px;    
+}
+
+.margin-left-6-px {
+    margin-left: 6px;
+}
+
+.back-f4f4f4 {
+    background-color: #f4f4f4;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.div-a-f {
+    width: 100%;
+    height: 100%; 
+    top: 0;  
+}
+
+.back-747474 {
+    background-color: #747474;
+}
+
+.get-in-touch-btn {
+    height: 100%; 
+    padding: 8px;
+}
+
+.border-0  {
+    border: 0;
+}
+
+.back-0f0f0f {
+    background-color: #0f0f0f;
+}
+
+.line-1-ff8c00 {
+   height: 1px; 
+   background-color: #ff8c00; 
+}
+
+#people-max {
+    font-weight: 300; 
+    color: #4D3431
+}
+
+.back-707070 {
+    background-color: #707070;
+}
+
+.color-black {
+    color: black;
+}
+
+.text-line {
+    text-decoration: line-through;
+}
+
+.color-white {
+    color: white;
+}
+
+.new-price-apart span {
+    color: #FFF; 
+    font-size: 10px;
+}
+
+.back-white {
+    background-color: white;
+}
+
+.float-left {
+    float: left;
+}
+
+.color-opacity-5 {
+    color: rgba(0, 0, 0, .5);
+}
+
+.div-arrows-apart-img-slider {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%;  
+}
+
+.div-arrows-apart-img-slider #p-arrow {
+    left: 0;
+    height: 100%;
+}
+
+.div-arrows-apart-img-slider #n-arrow {
+    right: 0; 
+    height: 100%;
 }
