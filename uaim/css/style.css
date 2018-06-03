@@ -46,6 +46,11 @@
     width:100%;
 }
 
+
 .no-rounds {
     border-radius: 0px;
+}
+
+.bg-grey {
+    background-color: #fcfcfc;
 }
