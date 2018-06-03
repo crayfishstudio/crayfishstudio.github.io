@@ -181,11 +181,18 @@ body, footer {
     }
 
     .main-slider-apart {
-        height: 60vh !important;
+        height: calc(60vh + 52px) !important;
+    }
+
+    .apart-photo-title {
+        width: 100vw !important;
+        bottom: 0 !important;
+        background-color: #eeeeee !important;
+        color: black !important;
     }
 
     .slider-class-2 {
-        height: 60vh;   
+        height: calc(60vh + 52px);   
     }
 
     .fullscreen-img-2 {
@@ -193,7 +200,7 @@ body, footer {
     }
 
     .apart-small-card-buy-hover {
-        display: block !important;
+        width: 120px !important;
     }
 
     #feedback-arrow-left {
@@ -287,6 +294,18 @@ body, footer {
     #p-arrow {display: none !important;}
     #n-arrow {display: none !important;}
     .main-dots {bottom: 25vh !important;}
+
+    .apart-small-card-buy p {
+        font-size: 19px !important;
+    }
+
+    .apart-small-card-buy-hover {
+        padding: 23px 0px 24px !important;
+    }
+
+    .apart-small-discount {
+        top: 65px !important;
+    }
 }
 
 #custom-navbar li {
@@ -967,7 +986,7 @@ body, footer {
 
 #giant-number {
     font-weight: 500;
-    font-size: 140%;
+    font-size: 80%;
     border-bottom: 3px solid #ff8c00;
 }
 
@@ -1286,7 +1305,7 @@ body, footer {
     position: absolute;
     top: calc(50% - 22px);
     left: 25px;
-    width: 40px;
+    width: 40px;    
     height: 5px;
     background-color: #ff8c00;
 }
@@ -1656,12 +1675,16 @@ body, footer {
 
 .apart-small-card-buy-hover {
     position: absolute;
-    display: none;
     padding: 31px 0px 32px;
-    width: 120px;
+    width: 0px;
     top: -10px;
     left: 160px;
     background-color: #ff8c00;
+    overflow: hidden;
+    -webkit-transition: width .4s ease-in-out;
+    -moz-transition: width .4s ease-in-out;
+    -o-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
 }
 
 .apart-small-card-buy-hover:before {
@@ -1671,6 +1694,10 @@ body, footer {
     bottom: 15%;
     width: 1px;
     background-color: white;
+}
+
+.apart-small-card:hover .apart-small-card-buy-hover {
+    width: 120px;
 }
 
 .apart-small-card-buy-hover p {
@@ -1752,4 +1779,13 @@ body, footer {
     font-weight: 400;
     position: absolute;
     bottom: 40px;
+}
+
+.a-card {
+    color: black;
+}
+
+.a-card:hover {
+    text-decoration: none;
+    color: black;
 }
