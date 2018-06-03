@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- НАВБАР ЯКИЙ МОЖНА (ТРЕБА) ВИНЕСТИ В ОКРЕМИЙ ФАЙЛ -->
     <nav class="navbar navbar-expand-xl navbar-light navbar-shadowed fixed-top navbar-white">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,6 +33,7 @@
         </div>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <!-- id="custom-navbar-thin" - коли буде 6 посилань в шапці (зараз 4, бо 2 закоментовано)-->
             <ul class="navbar-nav mx-auto align-items-center text-center mt-2 mt-xl-0" id="custom-navbar">
                 <div class="navbar-side-container text-left">
                     <span class="nav-link navbar-phone" href="#">
@@ -86,6 +88,7 @@
             </ul>
         </div>  
     </nav>
+    <!-- НАВБАР ЯКИЙ МОЖНА (ТРЕБА) ВИНЕСТИ В ОКРЕМИЙ ФАЙЛ -->
     
     <div id="main-slider">
         <div class="slider-class">
@@ -118,6 +121,7 @@
                 <div></div>
             </div>
         </div>
+        <!-- форма пошуку номеру -->
         <div id="selector-bar-id" class="selector-bar">
             <div class="container-fluid px-1 main-form bottom-1-vh">
                 <form>
@@ -170,6 +174,7 @@
                 </form>
             </div>
         </div>
+        <!-- форма пошуку номеру -->
     </div>
    
     <div id="mobile-phones" class="text-center">
@@ -193,6 +198,7 @@
         </div>
         
         <div class="row justify-content-center no-gutters px-md-5 px-0">
+            <!-- Типова мала карточка номеру -->
             <div class="col-xl-4 col-lg-6 p-2 mt-4">
                 <a href="#" class="a-card">
                     <div class="apart-small-card">
@@ -223,6 +229,7 @@
                     </div>
                 </a>
             </div>
+            <!-- Типова мала карточка номеру -->
             <div class="col-xl-4 col-lg-6 p-2 mt-4">
                 <a href="#" class="a-card">
                     <div class="apart-small-card">
@@ -343,6 +350,7 @@
         </div>
     </div>
 
+    <!-- Розділ фіч -->
     <div class="container-fluid pb-5 back-f4f4f4">
         <div class="row text-center">
             <div class="col">
@@ -356,6 +364,7 @@
                 <h5 class="feature-text">8 хвилин<br>до центру</h5>
             </div>
             <div id="booking-id" class="col-md-3 col-6 py-2 my-2 mb-5">
+                <!-- Оцінка з букінгу -->
                 <p class="booking-icon">9.1<br><sup><small><sup><small>out of 10</small></sup></small></sup></p>
                 <h5 class="feature-text">рейтинг на<br>booking.com</h5>
             </div>
@@ -379,6 +388,7 @@
         </div>
     </div>
     
+    <!-- Блок вражень -->
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col padding-0">
@@ -432,7 +442,8 @@
             </div>
         </div>
     </div>
-
+   
+    <!-- Блок послуг -->
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col">
@@ -504,6 +515,7 @@
         </div>
     </div>
    
+    <!-- Блок відгуків -->
     <div class="container-fluid pb-5 back-f4f4f4">
         <div class="row text-center">
             <div class="col">
@@ -511,6 +523,7 @@
                 <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 <div class="container-fluid position-relative">
                     <div class="feedback-slider">
+                        <!-- Типова картка відгуку -->
                         <div class="d-flex justify-content-center">
                             <div id="test" class="card feedback-card">
                                 <div class="card-body">
@@ -525,6 +538,7 @@
                                 <div id="profile-huge" class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                             </div>
                         </div>
+                        <!-- Типова картка відгуку -->
                         <div class="d-flex justify-content-center">
                             <div class="card feedback-card">
                                 <div class="card-body">
@@ -577,6 +591,7 @@
         </div>
     </div>
     
+    <!-- Форма замовлення зворотнього дзвінка -->
     <div class="container-fluid px-1 back-747474">
         <form>
             <div class="row justify-content-center no-gutters py-md-4 py-1">
@@ -661,6 +676,7 @@
         </div>
     </footer>
     
+    <!-- Модальне вікно подяки -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content no-rounds">
@@ -684,6 +700,7 @@
         </div>
     </div>
     
+    <!-- Модальне вікно відгуку -->
     <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content no-rounds">
@@ -792,6 +809,7 @@
                 infinite: true,
                 prevArrow: '#feedback-arrow-left',
                 nextArrow: '#feedback-arrow-right',
+                adaptiveHeight: true,
                 speed: 1000
             });
         });

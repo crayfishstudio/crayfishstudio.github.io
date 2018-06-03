@@ -169,7 +169,7 @@ body, footer {
 
     .rest-dots {
         right: calc(50% - 60px) !important;
-        bottom: 40px !important;
+        bottom: 25px !important;
     }
     
     .fullscreen-img h1 {
@@ -1705,7 +1705,7 @@ body, footer {
 
 .small-card-image {
     width: 100%;
-    height: calc(100vw/6);
+    height: calc(100vw/7);
     background-size: cover;
     background-position: center;
 }
@@ -1910,6 +1910,10 @@ body, footer {
 
 .color-ff8c00 {
     color: #ff8c00;
+}
+
+.color-ff8c00:hover {
+    color: #ff6c00;
 }
 
 .color-viber {
