@@ -99,18 +99,17 @@
                 <h1>ВЛАСНИЙ КОТЕДЖ<br class="text-divider"> НА ЧАС ВІДПУСТКИ</h1>
             </div>
         </div>
-        <div class="slider-arrows">
-            <div id="p-arrow" class="div-arrows" style="left: 0;">
-                <div class="arrow-left">
-                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
-                    <div style="background-color: #FFF; margin-left: 2vw;"></div>
-                </div>
+        <nav class="main-dots"></nav>
+        <div id="p-arrow" style="position: absolute; left: 0; top: 0; height: 100vh; width: 10vw; cursor: pointer;">
+            <div class="arrow-left">
+                <div style="background-color: #FFF; margin-left: 2vw;"></div>
+                <div style="background-color: #FFF; margin-left: 2vw;"></div>
             </div>
-            <div id="n-arrow" class="div-arrows" style="right: 0;">
-                <div class="arrow-right">
-                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
-                    <div style="background-color: #FFF; margin-right: 2vw;"></div>
-                </div>
+        </div>
+        <div id="n-arrow" style="position: absolute; right: 0; top: 0; height: 100vh; width: 10vw; cursor: pointer;">
+            <div class="arrow-right">
+                <div style="background-color: #FFF; margin-right: 2vw;"></div>
+                <div style="background-color: #FFF; margin-right: 2vw;"></div>
             </div>
         </div>
         <div id="selector-bar-id" class="selector-bar">
@@ -438,45 +437,63 @@
             <div class="col">
                 <h2 class="section-header-huge">Відгуки наших відвідувачів</h2>
                 <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <div class="feedback-slider">
-                    <div class="d-flex justify-content-center">
-                        <div id="test" class="card feedback-card">
-                            <div class="card-body">
-                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn... 
-                                <a href="#" style="color: #ff8c00; z-index: 1000">Читати повністю</a></p>
+                <div class="container-fluid" style="position: relative;">
+                    <div class="feedback-slider">
+                        <div class="d-flex justify-content-center">
+                            <div id="test" class="card feedback-card">
+                                <div class="card-body">
+                                    <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn... 
+                                    <a href="#" style="color: #ff8c00; z-index: 1000">Читати повністю</a></p>
+                                </div>
+                                <div class="card-footer">
+                                    <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
+                                    <p style="float: left; margin-left: 5px;">Mark</p>
+                                    <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 10px; color: #707070;">20.02.2018</p>
+                                </div>
+                                <div id="profile-huge" class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                             </div>
-                            <div class="card-footer">
-                                <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
-                                <p style="float: left; margin-left: 5px;">Mark</p>
-                                <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 10px; color: #707070;">20.02.2018</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="card feedback-card">
+                                <div class="card-body">
+                                    <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
+                                    <p style="float: left; margin-left: 5px;">Mark</p>
+                                    <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 5px; color: #707070;">20.02.2018</p>
+                                </div>
+                                <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                             </div>
-                            <div id="profile-huge" class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="card feedback-card">
+                                <div class="card-body">
+                                    <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
+                                    <p style="float: left; margin-left: 5px;">Mark</p>
+                                    <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 5px; color: #707070;">20.02.2018</p>
+                                </div>
+                                <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="card feedback-card">
-                            <div class="card-body">
-                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div id="feedback-arrow-left">
+                        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+                            <div class="arrow-left f-arrow-left">
+                                <div></div>
+                                <div></div>
                             </div>
-                            <div class="card-footer">
-                                <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
-                                <p style="float: left; margin-left: 5px;">Mark</p>
-                                <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 5px; color: #707070;">20.02.2018</p>
-                            </div>
-                            <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="card feedback-card">
-                            <div class="card-body">
-                                <p style="text-align: left; margin-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div id="feedback-arrow-right">
+                        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
+                            <div class="arrow-right f-arrow-right">
+                                <div></div>
+                                <div></div>
                             </div>
-                            <div class="card-footer">
-                                <i class="fab fa-facebook-square" style="float: left; margin-top: 2px;"></i>
-                                <p style="float: left; margin-left: 5px;">Mark</p>
-                                <p style="float: right; font-size: 12px; margin-top: 5px; padding-right: 5px; color: #707070;">20.02.2018</p>
-                            </div>
-                            <div class="profile-image" style="background: url(img/dpx_0259.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -484,23 +501,6 @@
                     <a href="#">Всі відгуки</a>
                     <a href="#">Залишити відгук</a>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="feedback-arrow-left" class="temp" style="position: absolute;">
-        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
-            <div class="arrow-left">
-                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
-                <div style="background-color: #ff8c00; margin-right: 20px;"></div>
-            </div>
-        </div>
-    </div>
-    <div id="feedback-arrow-right" class="temp" style="position: absolute;">
-        <div class="div-arrows" style="width: 100%; height: 100%; top: 0;">
-            <div class="arrow-right">
-                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
-                <div style="background-color: #ff8c00; margin-left: 20px;"></div>
             </div>
         </div>
     </div>
@@ -618,7 +618,13 @@
                 infinite: true,
                 prevArrow: '#p-arrow',
                 nextArrow: '#n-arrow',
-                speed: 1000
+                speed: 1000,
+                dots: true,
+                appendDots: $('.main-dots'),
+                dotsClass: 'custom-dots',
+                customPaging: function (slider, i) {
+                    return '<a class="dot" role="button"></a>';
+                }
             });
 
             $('.feedback-slider').slick({
@@ -886,7 +892,7 @@
                 }
             });
 
-            $(".temp").height(150);
+            /*$(".temp").height(150);
             $(".temp").width(150);
             $(".temp").css("top", $("#profile-huge").offset().top);
             $(".temp").css("left", $("#profile-huge").offset().left - 150);
@@ -900,13 +906,13 @@
                 $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
                 $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
                 $(".temp").css("top", $("#profile-huge").offset().top + 40);
-            }
+            }*/
         });
 
         var x = 0;
 
         $(window).resize(function() {
-            $(".temp").height(150);
+            /*$(".temp").height(150);
             $(".temp").width(150);
             $(".temp").css("top", $("#profile-huge").offset().top);
             $(".temp").css("left", $("#profile-huge").offset().left - 150);
@@ -920,7 +926,7 @@
                 $(".temp").css("left", $("#profile-huge").offset().left - $(".temp").width());
                 $("#feedback-arrow-right").css("left", $("#profile-huge").offset().left + 150);
                 $(".temp").css("top", $("#profile-huge").offset().top + 40);
-            }
+            }*/
 
             $('.booking-icon').css({
                 "border-style": "solid",

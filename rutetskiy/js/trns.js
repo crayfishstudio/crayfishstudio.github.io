@@ -7,8 +7,8 @@ function loadAnim() {
 
     document.getElementById("layer-1").style.width = 0;
     document.getElementById("layer-2").style.width = 0;
-    document.getElementById("layer-3").style.width = 0;
-    setTimeout('zindexToNull()', 4500);  
+    
+    setTimeout('zindexToNull()', 3300);  
 }
 
 function zindexToNull() {
