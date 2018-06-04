@@ -169,7 +169,7 @@ body, footer {
 
     .rest-dots {
         right: calc(50% - 60px) !important;
-        bottom: 25px !important;
+        bottom: 23px !important;
     }
     
     .fullscreen-img h1 {
@@ -1010,7 +1010,7 @@ body, footer {
 
 #giant-number {
     font-weight: 500;
-    font-size: 80%;
+    font-size: 140%;
     border-bottom: 3px solid #ff8c00;
 }
 
@@ -1139,7 +1139,7 @@ body, footer {
 .rest-dots {
     position: absolute;
     right: 26vw;
-    bottom: 46px;
+    bottom: 22px;
 }
 
 .rest-dots .custom-dots {
