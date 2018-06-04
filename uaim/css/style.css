@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    font-family: 'Roboto', sans-serif !important;
+}
 
 .bg-turquoise {
     background-color: rgb(71,136,132);
@@ -7,6 +12,7 @@
     border-left: 1px solid rgb(48,92,90);
     border-right: 1px solid rgb(48,92,90);
     font-size: 110%;
+    
 }
 
 .h-line {
@@ -16,11 +22,6 @@
 
 .text-nav {
     font-size: 150%;
-}
-
-.img-size {
-    height: 80%;
-    width: 100%;
 }
 
 .img-icon {
@@ -55,8 +56,13 @@
     background-color: #fcfcfc;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@media screen and (max-width:768px) {
+    .v-lines {
+    border-left: none;
+    border-right: none;
+    }
+}
 
-.roboto {
-    font-family: 'Roboto', sans-serif;
+.shadowed {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
