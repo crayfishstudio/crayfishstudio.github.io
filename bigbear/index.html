@@ -14,6 +14,8 @@
     <script defer src="js/fontawesome-all.js"></script>
 
     <title>Велика Ведмедиця</title>
+    
+    <meta name="description" content="description content">
 </head>
 
 <body>
@@ -106,7 +108,7 @@
                 <div></div>
             </div>
         </div>
-        <div id="n-arrow" style="">
+        <div id="n-arrow">
             <div class="arrow-right main-arrow-right">
                 <div></div>
                 <div></div>
@@ -144,7 +146,7 @@
                                         <p>Дорослі</p>
                                         <span>
                                             <span id="adults_minus">
-                                                <i class="fas fa-minus fa-lg add-member-btn" style=""></i>
+                                                <i class="fas fa-minus fa-lg add-member-btn"></i>
                                             </span>
                                             <input id="adults" type="number" name="adults" min="0" value="0" readonly="readonly" />
                                             <span id="adults_plus">
@@ -220,7 +222,7 @@
                     <div class="hotel-card-price">
                         <p class="old-price">100</p>
                         <div class="price-p-div d-flex justify-content-center align-items-center">
-                            <p class="price-p margin-right-6-px" style="">від</p>
+                            <p class="price-p margin-right-6-px">від</p>
                             <p class="price-p discount-price"><strong>200</strong></p>
                             <p class="price-p margin-right-6-px">грн</p>
                         </div>
@@ -456,7 +458,7 @@
                                     <a href="#" class="color-ff8c00">Читати повністю</a></p>
                                 </div>
                                 <div class="card-footer">
-                                    <i class="fab fa-facebook-square"></i>
+                                    <i class="fab fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Відгук взято з Facebook"></i>
                                     <p class="name">Mark</p>
                                     <p class="date">20.02.2018</p>
                                 </div>
@@ -469,7 +471,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <i class="fab fa-facebook-square"></i>
+                                    <i class="fab fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Відгук взято з Facebook"></i>
                                     <p class="name">Mark</p>
                                     <p class="date">20.02.2018</p>
                                 </div>
@@ -482,7 +484,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <i class="fab fa-facebook-square"></i>
+                                    <i class="fab fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Відгук взято з Facebook"></i>
                                     <p class="name">Mark</p>
                                     <p class="date">20.02.2018</p>
                                 </div>
@@ -525,7 +527,7 @@
                 </div>
                 <div class="col-lg-2 col-md-3 my-1">
                     <div class="input-pattern">
-                        <input type="text" placeholder="Номер телефону"/>
+                        <input type="tel" placeholder="Номер телефону"/>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 my-1">
@@ -636,6 +638,10 @@
                     return '<a class="dot" role="button"></a>';
                 }
             });
+            
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
 
             $('.feedback-slider').slick({
                 infinite: true,
