@@ -181,38 +181,6 @@ function setBookingIcon() {
     $('.booking-icon').height($('.booking-icon').width());
 }
 
-function setHotelCard() {
-    //hotel card settings
-    $('.div-hotel-card').height($('.div-hotel-card').width() * 0.76);
-    $('.fake').height($('.div-hotel-card').width() * 0.5);
-    $('.hotel-card-price').height($('.div-hotel-card').width() * 0.15);
-    $('.price-p-div').width($('.div-hotel-card').width() * 0.3);
-    $('.old-price').css("left", $('.price-p-div').width()/2 - $('.old-price').width()/2);
-    $('.old-price').css("font-size", $('.div-hotel-card').width() * 0.025);
-    $('.hotel-card-discount').find("p").css("font-size", $('.div-hotel-card').width() * 0.03);
-
-    $('.price-p').css("font-size", $('.div-hotel-card').width() * 0.025);
-    $('.price-p').find("strong").css("font-size", $('.div-hotel-card').width() * 0.045);
-    $('.hotel-title').css("font-size", $('.div-hotel-card').width() * 0.033);
-    $('.days-ends-end-text').css("font-size", $('.div-hotel-card').width() * 0.03);
-    $('.location-text').css("font-size", $('.div-hotel-card').width() * 0.03);
-
-    $('.hotel-card-price-hover').find("p").css("font-size", $('.div-hotel-card').width() * 0.03);
-    $('.hotel-card-price-hover').find("p").css("margin-top", $('.hotel-card-price').height()/2 - $('.div-hotel-card').width() * 0.03 * 0.7);
-    
-    $('.hotel-card-price-hover').find("p").width($('.div-hotel-card').width() * 0.3);
-
-    $('.hotel-card-price-hover').width($('.div-hotel-card').width() * 0.3 + 1);
-    //------d
-
-    $('.hotel-card').hover(function() {
-        if ($(window).width() > 1199) {
-            $(this).find('.hotel-card-price-hover').animate({width: 'toggle'});
-            $('.hotel-card').finish();
-        }
-    });
-}
-
 function animateValue(id, start, end, duration, step) {
     var range = end - start;
     var current = start;
@@ -242,7 +210,6 @@ function isScrolledIntoView(elem) {
 
 $(document).ready(function(){
     setBookingIcon();
-    setHotelCard();
 });
 
 $('#datepicker').datepicker({
@@ -314,7 +281,6 @@ $(window).scroll(function() {
 
 $(window).resize(function() {
     setBookingIcon();
-    setHotelCard();
 
     var selectorbarheight = $('#selector-bar-id').height() + "px";
     $('.overflow-hidden').css("height", selectorbarheight);
