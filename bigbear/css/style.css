@@ -61,6 +61,7 @@ body, footer {
     .fake {
         background-color: #F4F4F4; 
         position: relative; 
+        height: 200px;
     }
 
     .fake-right {
@@ -867,10 +868,13 @@ body, footer {
     font-size: 16px;
 }
 
-.section-text-small .fa-star {
+.div-stars {
+    margin-top: 10px;
+}
+
+.div-stars .fa-star {
     color: #ff8c00;
     font-size: 22px;
-    float: right;
     padding: 0px 4px 0px 4px;
 }
 
@@ -1717,6 +1721,7 @@ body, footer {
 .small-card-header {
     font-weight: 500;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 .apart-small-card-buy {
@@ -1870,6 +1875,8 @@ body, footer {
     cursor: pointer;
 }
 
+#p-arrow:hover .main-arrow-left div {background-color: #ff8c00 !important;}
+
 #n-arrow {
     position: absolute; 
     right: 0;
@@ -1878,6 +1885,8 @@ body, footer {
     width: 10vw; 
     cursor: pointer;  
 }
+
+#n-arrow:hover .main-arrow-right div {background-color: #ff8c00 !important;}
 
 .left-6-px {
     left: 6px;
@@ -2006,9 +2015,9 @@ body, footer {
     color: white;
 }
 
-.new-price-apart span {
+.new-price-apart {
     color: #FFF; 
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .back-white {
@@ -2042,4 +2051,20 @@ body, footer {
 }
 .back-yellow {
     background-color: #ff8c00;
+}
+
+.left-click {
+    height: 100%;
+    position: absolute; 
+    left: 0; 
+    width: 30%; 
+    cursor: pointer;
+}
+
+.right-click {
+    height: 100%;
+    position: absolute; 
+    right: 0; 
+    width: 30%; 
+    cursor: pointer;
 }
