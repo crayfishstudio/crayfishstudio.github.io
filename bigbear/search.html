@@ -204,12 +204,12 @@
                         </div>
                         <div class="col-md-6 p-md-4 p-3">
                             <div class="row">
-                                <div class="col-xl-7 col-md-6 mb-md-0 mb-3">
+                                <div class="col-xl-6 col-md-6 mb-md-0 mb-3">
                                     <h3 class="apart-header pb-2">Напівлюкс із каміном</h3>
                                     <small class="apart-hotel">Елітний котедж DREAM HOUSE</small>
                                 </div>
                                 <div class="col-md-3 col-6 text-md-right"><p class="text-brown-param">Вміщає: <i class="fa fa-male align-text-top text-orange"></i> х8</p></div>
-                                <div class="col-xl-2 col-md-3 col-6 text-right"><p class="text-brown-param"><i class="fa fa-map-marker-alt align-text-top text-orange"></i> Яремче</p></div>
+                                <div class="col-xl-3 col-md-3 col-6 text-right"><p class="text-brown-param"><i class="fa fa-map-marker-alt align-text-top text-orange"></i> Яремче</p></div>
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -277,7 +277,7 @@
                             <small class="alt-dates">з 05.10 по 08.10</small>
                         </div>
                     </div>
-                    <div class="row pb-3  px-md-4 px-3">
+                    <div class="row pb-1  px-md-4 px-3">
                         <div class="col-8">
                             <small class="small-card-hotel">Eлітний котедж ВЕЛИКА ВЕДМЕДИЦЯ</small>
                         </div>
@@ -286,7 +286,7 @@
                         </div>
                     </div>
                     <div class="apart-small-card-buy">
-                        <p class="text-center">100<br/><sup><sup>UAH за ніч</sup></sup></p>
+                        <p class="text-center font-19">100<br/><sup><sup>UAH за ніч</sup></sup></p>
                     </div>
                     <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
                     <div class="apart-small-discount">
@@ -307,7 +307,7 @@
                                 <small class="alt-dates">з 05.10 по 08.10</small>
                             </div>
                         </div>
-                        <div class="row pb-3  px-md-4 px-3">
+                        <div class="row pb-1  px-md-4 px-3">
                             <div class="col-8">
                                 <small class="small-card-hotel">Eлітний котедж ВЕЛИКА ВЕДМЕДИЦЯ</small>
                             </div>
@@ -316,7 +316,7 @@
                             </div>
                         </div>
                         <div class="apart-small-card-buy">
-                            <p class="text-center">100<br/><sup><sup>UAH за ніч</sup></sup></p>
+                            <p class="text-center font-19">100<br/><sup><sup>UAH за ніч</sup></sup></p>
                         </div>
                         <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
                     </div>
@@ -334,7 +334,7 @@
                                 <small class="alt-dates">з 05.10 по 08.10</small>
                             </div>
                         </div>
-                        <div class="row pb-3  px-md-4 px-3">
+                        <div class="row pb-1  px-md-4 px-3">
                             <div class="col-8">
                                 <small class="small-card-hotel">Eлітний котедж ВЕЛИКА ВЕДМЕДИЦЯ</small>
                             </div>
@@ -343,7 +343,7 @@
                             </div>
                         </div>
                         <div class="apart-small-card-buy">
-                            <p class="text-center">100<br/><sup><sup>UAH за ніч</sup></sup></p>
+                            <p class="text-center font-19">100<br/><sup><sup>UAH за ніч</sup></sup></p>
                         </div>
                         <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
                         <div class="apart-small-discount">
@@ -445,243 +445,7 @@
     <script src="js/datepicker.min.js"></script>
     <script src="js/datepicker.en.js"></script>
     <script src="js/slick.min.js"></script>
-    
-    <script type="text/javascript">
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-
-    <script>
-        $(document).ready(function() {
-            $(".apart-image-slider").slick({
-                infinite: true,
-                prevArrow: '#p-arrow',
-                nextArrow: '#n-arrow',
-                speed: 1000
-            });
-
-            $(".apart-image").height($(".apart-image-slider").height());
-        });
-    </script>
-        
-    <!--form-->
-    <!--form-->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#div-datepicker').mouseover(function() {
-                $('#datepicker').focus();
-            });
-
-            $('#div-datepicker-2').mouseover(function() {
-                $('#datepicker-2').focus();
-            });
-
-            $('.datepicker').mouseover(function() {
-                if (window.event.pageY < 1500) {
-                    $('#datepicker').focus();
-                } else { 
-                    $('#datepicker-2').focus();
-                }
-            });
-
-            $('#div-datepicker').mouseout(function() {
-                $('#datepicker').blur();
-            });
-
-            $('#div-datepicker-2').mouseout(function() {
-                $('#datepicker-2').blur();
-            });
-
-            $('.datepicker').mouseout(function() {
-                if (window.event.pageY < 1500) {
-                    $('#datepicker').blur();
-                } else {
-                    $('#datepicker-2').blur();
-                }
-            });
-
-            $('#datepicker-2').datepicker({
-                range: true,
-                minDate: new Date(),
-                dateFormat: "dd.mm"
-            });
-            $('#datepicker-2').data('datepicker');
-
-            var selectorbarheight = $('#selector-bar-id').height() + "px";
-            $('.overflow-hidden').css("height", selectorbarheight);
-
-            var inputwidth = $('#div-datepicker').width() + "px";
-            $('.datepicker').css("width", inputwidth);
-
-            $('.input-location').click(function() {
-                if (window.event.pageY < 1500) {
-                    $("#location").val($(this).text());
-                } else {
-                    $("#location-2").val($(this).text());
-                }
-            });
-
-            $("#adults_plus").click(function() {
-                var val = 1 + +$("#adults").val();
-                $("#adults").val(val);
-                check_input_guests();
-            });
-
-            $("#adults_minus").click(function() {
-                var val = -1 + +$("#adults").val();
-                if (val < 0) {
-                    val = 0;
-                }
-                $("#adults").val(val);
-                check_input_guests();
-            });
-
-            $("#children_plus").click(function() {
-                var val = 1 + +$("#children").val();
-                $("#children").val(val);
-                check_input_guests();
-            });
-
-            $("#children_minus").click(function() {
-                var val = -1 + +$("#children").val();
-                if (val < 0) {
-                    val = 0;
-                }
-                $("#children").val(val);
-                check_input_guests();
-            });
-
-            function check_input_guests() {
-                var adults = $("#adults").val();
-                var children = $("#children").val();
-
-                if (adults == "0" && children == "0") {
-                    $("#guests").text("Кількість гостей");
-                } else {
-                    $("#guests").text(adults + " дорослих, " + children + " дітей");
-                }
-            }
-
-            $("#adults_plus-2").click(function() {
-                var val = 1 + +$("#adults-2").val();
-                $("#adults-2").val(val);
-                check_input_guests_2();
-            });
-
-            $("#adults_minus-2").click(function() {
-                var val = -1 + +$("#adults-2").val();
-                if (val < 0) {
-                    val = 0;
-                }
-                $("#adults-2").val(val);
-                check_input_guests_2();
-            });
-
-            $("#children_plus-2").click(function() {
-                var val = 1 + +$("#children-2").val();
-                $("#children-2").val(val);
-                check_input_guests_2();
-            });
-
-            $("#children_minus-2").click(function() {
-                var val = -1 + +$("#children-2").val();
-                if (val < 0) {
-                    val = 0;
-                }
-                $("#children-2").val(val);
-                check_input_guests_2();
-            });
-
-            function check_input_guests_2() {
-                var adults = $("#adults-2").val();
-                var children = $("#children-2").val();
-
-                if (adults == "0" && children == "0") {
-                    $("#guests-2").text("Кількість гостей");
-                } else {
-                    $("#guests-2").text(adults + " дорослих, " + children + " дітей");
-                }
-            }
-        });
-    </script>
-
-    <script>
-        $('#datepicker').datepicker({
-            range: true,
-            minDate: new Date(),
-            dateFormat: "dd.mm",
-            position: "bottom left"
-        });
-        $('#datepicker').data('datepicker');
-
-        if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
-            $('#datepicker').datepicker().data('datepicker').update({
-                position: "top left"
-            });
-
-            $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
-        }
-
-        $('#datepicker-2').datepicker({
-            range: true,
-            minDate: new Date(),
-            dateFormat: "dd.mm"
-        });
-        $('#datepicker-2').data('datepicker');
-
-        $(".input-dropdown").each(function() {
-            $(this).css({
-                top: 100 + "%"
-            });
-
-            if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()){
-                $(this).css({
-                    top: - $(this).height()
-                });
-            }
-        });
-
-        $(window).scroll(function() {
-            $(".input-dropdown").each(function() {
-                $(this).css({
-                    top: 100 + "%"
-                });
-
-                if ($(this).offset().top + $(this).outerHeight() > $(window).innerHeight() + $(window).scrollTop()){
-                    $(this).css({
-                        top: - $(this).height()
-                    });
-                }
-            });
-
-            $('#datepicker').datepicker().data('datepicker').update({
-                position: "top left"
-            });            
-
-            $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
-
-            if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
-                $('.datepickers-container').css("top", 0)
-
-                $('#datepicker').datepicker().data('datepicker').update({
-                    position: "top left"
-                });            
-
-                $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
-            }
-        });
-        </script>
-
-    <script>
-        $(window).resize(function() {
-            var selectorbarheight = $('#selector-bar-id').height() + "px";
-            $('.overflow-hidden').css("height", selectorbarheight);
-
-            var inputwidth = $('#div-datepicker').width() + "px";
-            $('.datepicker').css("width", inputwidth);
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
