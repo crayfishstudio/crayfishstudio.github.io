@@ -8,11 +8,18 @@ html {
     background-color: rgb(71,136,132);
 }
 
-.v-lines {
-    border-left: 1px solid rgb(48,92,90);
+.v-line-right {
     border-right: 1px solid rgb(48,92,90);
-    font-size: 110%;
-    
+    padding-right: 50px;
+}
+
+.v-line-left{
+    border-left: 1px solid rgb(48,92,90);
+    padding-left: 50px;
+}
+
+.font-size {
+       font-size: 120%;
 }
 
 .h-line {
@@ -52,9 +59,12 @@ html {
 }
 
 @media screen and (max-width:768px) {
-    .v-lines {
+    .v-line-left {
     border-left: none;
-    border-right: none;
+    padding-left: 0px;
+    }
+    .v-line-right {
+      border-right: none;
     }
 }
 
