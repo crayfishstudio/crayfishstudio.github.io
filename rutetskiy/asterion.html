@@ -61,9 +61,11 @@
                             <img src="img/Asterion/7.jpg" class="img-fluid padding-05 margin-vertical-12" data-action="zoom">
                             <p class="padding-05 margin-vertical-12" style="font-size: 14px;">
                             Cонце. Зірка, що подарувала нам Життя. Як не повернеш - завжди ідеальна<br><br>
+                            <small class="text-muted">
                                 - Вага: 3 кг<br/>
                                 - Розмір: 640x400х24 см.<br/>
                                 - Матеріал: фанера високої якості, еко-клей
+                            </small>
                             </p>
                             <a href="#" class="btn btn-order d-flex ml-md-2" data-toggle="modal" data-target="#exampleModalCenter"><div style="margin-top: 4px" class="mr-2 buy-button-square"></div>Хочу таку</a>
                         </div>
@@ -110,13 +112,12 @@
                 <p>наш менеджер невдовзі зв'яжеться з вами</p>
                 <form action="post2.php" method="post">
                   <div class="form-group">
-                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я">
-                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_sname" placeholder="Прізвище">
-                    <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
-                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_email" placeholder="Електронна адреса">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я та прізвище">
+                    <input required type="tel" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
+                    <input type="email" class="form-control mb-1" id="exampleInputPassword1" name="user_email" placeholder="Email">
                     <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="town" placeholder="Місто">
                     <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="number" placeholder="Номер складу Нової Пошти">
-                    <input type="text" class="form-control" id="exampleInputPassword1" name="feedback" placeholder="Ваш коментар">
+                      <textarea type="text" rows="3" class="form-control" id="exampleInputPassword1" name="feedback" placeholder="Ваш коментар"></textarea>
                     <input type="text" style="display:none" value="asterion" name="pname">
                   </div>
                     <div class="modal-footer">

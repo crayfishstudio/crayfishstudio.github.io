@@ -12,7 +12,6 @@ $time=date("H:i"); // часы:минуты:секунды
 // Принимаем данные с формы 
  
 $name=$_POST['user_name'];
-$sname=$_POST['user_sname'];
 $phone=$_POST['user_phone']; 
 $email=$_POST['user_email']; 
 $town=$_POST['town']; 
@@ -27,7 +26,6 @@ $pname=$_POST['pname'];
 
 $msg=" 
 Ім'я: $name
-Прізвище: $sname
 E-mail: $email
 Телефон: $phone 
 Місто: $town 

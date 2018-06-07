@@ -13,11 +13,8 @@ $time=date("H:i"); // часы:минуты:секунды
  
 $name=$_POST['user_name']; 
 $company=$_POST['company']; 
-$type=$_POST['type']; 
 $web=$_POST['web']; 
 $email=$_POST['user_email'];
-$code=$_POST['code'];
-$theme=$_POST['theme'];
 $letter=$_POST['letter'];
 
 // Проверяем валидность e-mail 
@@ -27,12 +24,10 @@ $letter=$_POST['letter'];
 $msg=" 
 Заявка на співпрацю
 
-Тема листа: $theme
 Ім'я контактної особи: $name
 Назва компанії та посада: $company
 Веб-сайт: $web
 Email: $email
-Сідоцтво реєстрації в ЄДРПОУ: $code
 
 Текст листа: $letter
 "; 
