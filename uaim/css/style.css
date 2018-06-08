@@ -5,7 +5,7 @@ html {
 }
 
 .bg-turquoise {
-    background-color: rgb(71,136,132);
+    background-color: #478884;
 }
 
 .v-line-right {
@@ -40,7 +40,7 @@ html {
 }
 
 .text-turquoise {
-    color: rgb(71,136,132);
+    color: #478884;
 }
 
 
@@ -65,12 +65,20 @@ html {
     }
     .v-line-right {
       border-right: none;
+      padding-right: 0px;
     }
 }
 
 .shadowed {
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
+
 .white-hover:hover {
     color: #fff;
+}
+
+.green-hower:hover {
+    color: #478884;
+    background-color: #fff;
+    border: 1px solid #478884;
 }
