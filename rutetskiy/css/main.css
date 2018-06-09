@@ -247,6 +247,10 @@ body {
     .exitToIndex {
         left: calc(100vw/12 - 4vw);
     }
+    
+    .about-image {
+        height: calc(100vw/4) !important;
+    }
 }
 
 /*START Center Alighment*/
