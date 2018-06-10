@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+h1 {
+    font-family: 'Poiret One', cursive;
+}
+
 html {
     font-family: 'Roboto Light', sans-serif;
     letter-spacing: 2px;
@@ -53,7 +59,7 @@ body {
     
    
 
-    .col-right {padding-right: 5px !important;}
+   
 
     .footer {right: calc(-100vw/6);}
 
@@ -211,7 +217,7 @@ body {
     }
 
     .custom-header-2 {
-        font-size: 32px;
+        
         padding-top: 50px; 
     }
 
@@ -240,6 +246,10 @@ body {
     
     .exitToIndex {
         left: calc(100vw/12 - 4vw);
+    }
+    
+    .about-image {
+        height: calc(100vw/4) !important;
     }
 }
 
@@ -353,7 +363,6 @@ body {
 }
 
 .custom-header-2 {
-    font-family: 'Roboto Thin', sans-serif;
     color: #696969;
     text-align: center;
 }

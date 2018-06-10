@@ -5,14 +5,21 @@ html {
 }
 
 .bg-turquoise {
-    background-color: rgb(71,136,132);
+    background-color: #478884;
 }
 
-.v-lines {
-    border-left: 1px solid rgb(48,92,90);
+.v-line-right {
     border-right: 1px solid rgb(48,92,90);
-    font-size: 110%;
-    
+    padding-right: 50px;
+}
+
+.v-line-left{
+    border-left: 1px solid rgb(48,92,90);
+    padding-left: 50px;
+}
+
+.font-size {
+       font-size: 120%;
 }
 
 .h-line {
@@ -33,7 +40,7 @@ html {
 }
 
 .text-turquoise {
-    color: rgb(71,136,132);
+    color: #478884;
 }
 
 
@@ -52,12 +59,26 @@ html {
 }
 
 @media screen and (max-width:768px) {
-    .v-lines {
+    .v-line-left {
     border-left: none;
-    border-right: none;
+    padding-left: 0px;
+    }
+    .v-line-right {
+      border-right: none;
+      padding-right: 0px;
     }
 }
 
 .shadowed {
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.white-hover:hover {
+    color: #fff;
+}
+
+.green-hower:hover {
+    color: #478884;
+    background-color: #fff;
+    border: 1px solid #478884;
 }
