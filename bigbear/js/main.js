@@ -173,7 +173,6 @@ function setBookingIcon() {
         "border-radius": "50%",
         "color": "#ff8c00",
         "font-size": $(".bb-toy-thin").width() * 0.4,
-        "font-style": "normal",
         "padding": $(".bb-toy-thin").height() * 0.16,
         "line-height": "120%"
     });
