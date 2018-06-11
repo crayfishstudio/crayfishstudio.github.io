@@ -318,10 +318,6 @@ body, footer {
         font-size: 13px !important;
     }
 
-    .apart-small-card-buy-hover {
-        padding: 23px 0px 24px !important;
-    }
-
     .apart-small-discount {
         top: 65px !important;
     }
@@ -1791,10 +1787,6 @@ p.discount {
     -moz-transition: width .4s ease-in-out;
     -o-transition: width .4s ease-in-out;
     transition: width .4s ease-in-out;
-}
-
-.apart-small-hover-hotel {
-    padding: 26px 0px 27px !important;
 }
 
 .apart-small-card-buy-hover:before {
