@@ -26,11 +26,11 @@
         </button>
         <a id="mobile-logo" class="mx-auto" href="#"><img class="img-fluid" src="img/logo.png" width="100px"></a>
         <div class="navbar-side-mobile text-right dropdown">
-            <a id="mobile-lang-toggler" class="font-weight-bold" href="#"><i class="fas fa-chevron-down mr-2"></i>УКР</a>
+            <a id="mobile-lang-toggler" class="font-weight-bold" href="#"><i class="fas fa-chevron-down mr-2 text-uppercase"></i>УКР</a>
             <div class="dropdown-content left-6-px">
-                <a class="toggler-a font-weight-bold" href="#">РУС</a>
+                <a class="toggler-a font-weight-bold text-uppercase" href="#">РУС</a>
                 <div class="h-line-bold marginy-4-px"></div>
-                <a class="toggler-a font-weight-bold" href="#">ENG</a>
+                <a class="toggler-a font-weight-bold text-uppercase" href="#">ENG</a>
             </div>  
         </div>
         
@@ -76,14 +76,14 @@
                     <a class="nav-link my-1 hover-underline" href="#">контакти</a>
                 </li>
                 <div class="navbar-side-container-2 text-right dropdown">
-                    <a class="nav-link font-weight-bold" href="#">
+                    <a class="nav-link font-weight-bold text-uppercase" href="#">
                         <i class="fas fa-chevron-down mr-2"></i>
                         УКР
                     </a>
                     <div class="dropdown-content">
-                        <a class="nav-link font-weight-bold padding-4-px" href="#">РУС</a>
+                        <a class="nav-link font-weight-bold padding-4-px text-uppercase" href="#">РУС</a>
                         <div class="h-line-bold marginy-4-px"></div>
-                        <a class="nav-link font-weight-bold padding-4-px" href="#">ENG</a>
+                        <a class="nav-link font-weight-bold padding-4-px text-uppercase" href="#">ENG</a>
                     </div>   
                 </div>
             </ul>
@@ -207,7 +207,7 @@
                     </div>
                     <div id="div-datepicker" class="input-pattern mt-1">
                         <i class="fas fa-calendar-alt order-form-icon"></i>
-                        <input type='text' data-language="en" data-multiple-dates-separator=" - " class="datepicker-here cursor-pointer pl-2" id="datepicker" placeholder="Дати" readonly="readonly"/>
+                        <input type='text' data-language="ua" data-multiple-dates-separator=" - " class="datepicker-here cursor-pointer pl-2" id="datepicker" placeholder="Дати" readonly="readonly"/>
                     </div>
                     <div class="input-pattern d-flex justify-content-between mt-3">
                         <p id="guests" class="input-text float-left">Кількість гостей</p>
@@ -241,10 +241,10 @@
                         </div>
                     </div>
                     <div class="apart-left">
-                        <p>ЗАЛИШИЛОСЬ ВСЬОГО 3 НОМЕРИ</p>
+                        <p class="text-uppercase">ЗАЛИШИЛОСЬ ВСЬОГО 3 НОМЕРИ</p>
                     </div>
                     <div class="apart-buy">
-                        <a class="btn btn-yellow" data-toggle="modal" data-target="#exampleModal">ЗАБРОНЮВАТИ</a>
+                        <a class="btn btn-yellow text-uppercase" data-toggle="modal" data-target="#exampleModal">ЗАБРОНЮВАТИ</a>
                     </div>
                 </div>                   
             </div>
@@ -369,7 +369,7 @@
                             <a href="#" class="color-ff8c00">Читати повністю</a></p>
                         </div>
                         <div class="card-footer">
-                            <i class="fab fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Відгук взято з Facebook"></i>
+                            <i class="fab fa-facebook-square"></i>
                             <p class="name">Mark</p>
                             <p class="date">20.02.2018</p>
                         </div>
@@ -382,7 +382,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="card-footer">
-                            <i class="fab fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Відгук взято з Facebook"></i>
+                            <i class="fab fa-facebook-square"></i>
                             <p class="name">Mark</p>
                             <p class="date">20.02.2018</p>
                         </div>
@@ -395,7 +395,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="card-footer">
-                            <i class="fab fa-facebook-square" data-toggle="tooltip" data-placement="top" title="Відгук взято з Facebook"></i>
+                            <i class="fab fa-facebook-square"></i>
                             <p class="name">Mark</p>
                             <p class="date">20.02.2018</p>
                         </div>
@@ -453,11 +453,11 @@
                                 <p class="location-text"><i class="fas fa-map-marker-alt color-ff8c00"></i> Яремче</p>
                             </div>
                         </div>
-                        <div class="apart-small-card-buy">
-                            <p class="text-center font-19">100<br/><sup><sup>UAH за ніч</sup></sup></p>
+                        <div class="apart-small-card-buy d-flex flex-column justify-content-center">
+                            <p class="text-center font-19 d-flex flex-column">100<sup class="pt-3"><sup>UAH за ніч</sup></sup></p>
                         </div>
                         <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
-                        <div class="apart-small-discount">
+                        <div class="apart-small-discount-hotel">
                             <p class="text-center py-1 text-uppercase">знижка 50%</p>
                         </div>
                     </div>
@@ -483,8 +483,8 @@
                                 <p class="location-text"><i class="fas fa-map-marker-alt color-ff8c00"></i> Яремче</p>
                             </div>
                         </div>
-                        <div class="apart-small-card-buy">
-                            <p class="text-center font-19">100<br/><sup><sup>UAH за ніч</sup></sup></p>
+                        <div class="apart-small-card-buy d-flex flex-column justify-content-center">
+                            <p class="text-center font-19 d-flex flex-column">100<sup class="pt-3"><sup>UAH за ніч</sup></sup></p>
                         </div>
                         <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
                     </div>
@@ -510,11 +510,11 @@
                                 <p class="location-text"><i class="fas fa-map-marker-alt color-ff8c00"></i> Яремче</p>
                             </div>
                         </div>
-                        <div class="apart-small-card-buy font-19">
-                            <p class="text-center">100<br/><sup><sup>UAH за ніч</sup></sup></p>
+                        <div class="apart-small-card-buy d-flex flex-column justify-content-center">
+                            <p class="text-center font-19 d-flex flex-column">100<sup class="pt-3"><sup>UAH за ніч</sup></sup></p>
                         </div>
                         <div class="apart-small-card-buy-hover"><p class="d-flex justify-content-center align-items-center">ЗАБРОНЮВАТИ</p></div>
-                        <div class="apart-small-discount">
+                        <div class="apart-small-discount-hotel">
                             <p class="text-center py-1 text-uppercase">знижка 50%</p>
                         </div>
                     </div>
@@ -546,7 +546,7 @@
                 </div>
                 <div class="col-lg-2 col-md-3 my-1">
                     <div class="input-pattern">
-                        <a class="btn btn-yellow get-in-touch-btn" data-toggle="modal" data-target="#exampleModal">ЗВ'ЯЗАТИСЬ З НАМИ</a>
+                        <a class="btn btn-yellow get-in-touch-btn text-uppercase" data-toggle="modal" data-target="#exampleModal">ЗВ'ЯЗАТИСЬ З НАМИ</a>
                     </div>
                 </div>
             </div>
@@ -675,7 +675,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/datepicker.min.js"></script>
-    <script src="js/datepicker.en.js"></script>
+    <script src="js/datepicker.ua.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -318,10 +318,6 @@ body, footer {
         font-size: 13px !important;
     }
 
-    .apart-small-card-buy-hover {
-        padding: 23px 0px 24px !important;
-    }
-
     .apart-small-discount {
         top: 65px !important;
     }
@@ -1741,26 +1737,25 @@ body, footer {
     top: -10px;
     left: 40px;
     width: 120px;
+    height: 70px;
     background-color: #ff8c00;
 }
 
 .apart-small-card-buy p {
     color: white;
-    margin: 10px 20px 0px;
+    margin: 0px 20px;
     font-size: 24px;
     font-weight: 600;
 }
 
 p.discount {
     color: white;
-    margin: 8px 11px !important;
     font-size: 24px;
     font-weight: 600;
 }
 
 .apart-small-card-buy-hotel-p {
     color: white;
-    margin: 20px 20px !important;
     font-size: 12px !important;
     font-weight: 300 !important;
 }
@@ -1782,7 +1777,7 @@ p.discount {
 
 .apart-small-card-buy-hover {
     position: absolute;
-    padding: 31px 0px 32px;
+    height: 70px;
     width: 0px;
     top: -10px;
     left: 160px;
@@ -1792,10 +1787,6 @@ p.discount {
     -moz-transition: width .4s ease-in-out;
     -o-transition: width .4s ease-in-out;
     transition: width .4s ease-in-out;
-}
-
-.apart-small-hover-hotel {
-    padding: 26px 0px 27px !important;
 }
 
 .apart-small-card-buy-hover:before {
@@ -1869,11 +1860,6 @@ p.discount {
 
 .booking-icon {
     font-family: 'Oswald', sans-serif;
-}
-
-.booking-icon small {
-    color: grey;
-    font-family: Roboto;
 }
 
 .no-rounds {
