@@ -168,12 +168,13 @@ function setBookingIcon() {
     $('.booking-icon').css({
         "border-style": "solid",
         "border-color": "#ff8c00",
-        "border-width": $("#booking-id").width() * 0.01,
+        "border-width": $("#feature").find(".col-md-3").width() * 0.01,
         "width": $(".bb-toy-thin").height(),
         "border-radius": "50%",
         "color": "#ff8c00",
-        "font-size": $(".bb-toy-thin").width() * 0.35,
-        "padding": $(".bb-toy-thin").height() * 0.12,
+        "font-size": $(".bb-toy-thin").width() * 0.4,
+        "font-style": "normal",
+        "padding": $(".bb-toy-thin").height() * 0.16,
         "line-height": "120%"
     });
 

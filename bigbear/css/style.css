@@ -1862,11 +1862,6 @@ p.discount {
     font-family: 'Oswald', sans-serif;
 }
 
-.booking-icon small {
-    color: grey;
-    font-family: Roboto;
-}
-
 .no-rounds {
     border-radius: 0px !important;
 }
