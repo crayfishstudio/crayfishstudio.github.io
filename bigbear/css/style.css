@@ -1498,7 +1498,6 @@ body, footer {
 .apart-old-total-price {
     color: #4D3431;
     font-weight: 300;
-    text-decoration: line-through;
     margin-bottom: 0px;
     text-transform: uppercase;
 }
@@ -1546,7 +1545,6 @@ body, footer {
 }
 
 .apart-old-price {
-    text-decoration: line-through;
     margin-bottom: -2px;
     font-weight: 300;
 }
@@ -1762,7 +1760,6 @@ p.discount {
 
 .old-price-hotel-card {
     margin-top: 6px;
-    text-decoration: line-through;
 }
 
 .apart-small-card-buy-hotel-p strong {
@@ -2120,4 +2117,33 @@ font-size: 1.7rem;
 
 .shadow-hover:hover {
     box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.custom-line-throught {
+    position: relative;
+}
+
+.old-price-hotel-card.custom-line-throught::after{
+    left: 10%;
+    width: 80%;   
+}
+
+.apart-old-price.custom-line-throught::after{
+    left: 10%;
+    width: 80%;   
+}
+
+p.apart-old-total-price .custom-line-throught::after {
+    border-bottom: 1px solid #4D3431;
+    width: 110%;
+    left: -5%;
+}
+
+.custom-line-throught::after {
+    content: '';
+    border-bottom: 1px solid white;
+    position: absolute;
+    left: -15%;
+    top: calc(50% - 1px);
+    width: 130%;
 }
