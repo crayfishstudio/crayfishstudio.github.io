@@ -152,6 +152,9 @@ $(document).ready(function() {
 
     $("#adults_plus").click(function() {
         var val = 1 + +$("#adults").val();
+        if (val > 8) {
+            val = 8;
+        }
         $("#adults").val(val);
         check_input_guests();
     });
@@ -161,12 +164,16 @@ $(document).ready(function() {
         if (val < 0) {
             val = 0;
         }
+
         $("#adults").val(val);
         check_input_guests();
     });
 
     $("#children_plus").click(function() {
         var val = 1 + +$("#children").val();
+        if (val > 4) {
+            val = 4;
+        }
         $("#children").val(val);
         check_input_guests();
     });

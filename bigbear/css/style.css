@@ -548,11 +548,20 @@ body, footer {
         margin: 0;
         padding-top: 8px;
         color: rgba(0,0,0,0.5);
+        text-align: left !important;
     }
 
     .input-members input {
         width: 30px !important;
-        margin-left: 8px;
+        padding: 0px !important;
+        padding-left: 6px !important;
+        margin-left: 8px !important;
+    }
+
+    .input-members button {
+        background-color: white;
+        border: 0px;
+        outline: 0px;
     }
 
     .input-pattern input:focus {outline: none;}
@@ -1969,6 +1978,7 @@ p.discount {
     padding-left: 6px;
     color: rgba(0,0,0,0.5); 
     margin: 8px 0px 6px 0px;
+    text-align: left !important;
 }
 
 .color-ff8c00 {
