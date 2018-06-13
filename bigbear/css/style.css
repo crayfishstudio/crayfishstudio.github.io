@@ -672,6 +672,13 @@ body, footer {
         color: white;
     }
 
+    .datepicker--cell.-range-to-.-current- {
+        border: 0px;
+        background-color: #ff8c00;
+        border-radius: 0px; 
+        color: white;
+    }
+
     .datepicker--cell.-range-from-.-range-to- {border-radius: 0px;}
 
     .datepicker--cell.-selected-.-focus- {background: #ff8c00;}

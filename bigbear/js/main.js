@@ -111,7 +111,7 @@ $(document).ready(function() {
 
         $('.datepicker--cell-day').hover(function() {
             if (!$(this).hasClass("-disabled-")) {
-                var month = $(this).attr("data-month");
+                var month = (parseInt($(this).attr("data-month")) + 1).toString();
                 var day = $(this).text();
 
                 if (day.length == 1) {
@@ -119,7 +119,7 @@ $(document).ready(function() {
                 }
 
                 if (month.length == 1) {
-                    month = "0" + $(this).attr("data-month");
+                    month = "0" + (parseInt($(this).attr("data-month")) + 1).toString();
                 }
 
                 if(selectedData.length < 10) {
@@ -308,10 +308,8 @@ $(window).scroll(function() {
     });
 
     $('#datepicker').datepicker().data('datepicker').update({
-        position: "top left"
+        position: "bottom left"
     });            
-
-    $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
 
     if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
         $('.datepickers-container').css("top", 0)
