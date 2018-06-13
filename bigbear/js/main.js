@@ -330,10 +330,12 @@ $(window).scroll(function() {
         $('.datepickers-container').css("top", 0);
     }
 
-    if (isScrolledIntoView("#giant-number")) {
-        if (check == true) {
-            check = false;
-            animateValue("giant-number", 9821, 10000, 5000, 1);   
+    if (document.getElementById('giant-number')) {
+        if (isScrolledIntoView("#giant-number")) {
+            if (check == true) {
+                check = false;
+                animateValue("giant-number", 9821, 10000, 5000, 1);   
+            }
         }
     }
 });
