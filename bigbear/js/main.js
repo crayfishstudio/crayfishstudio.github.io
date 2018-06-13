@@ -210,6 +210,16 @@ function isScrolledIntoView(elem) {
 
 $(document).ready(function(){
     setBookingIcon();
+
+    $("#input-drop-location").click(function() {
+        $(this).removeClass("add-drop");
+    });
+
+    $("#pattern-location").hover(function() {
+        $("#input-drop-location").addClass("add-drop");
+    }, function() {
+        $("#input-drop-location").removeClass("add-drop");
+    });
 });
 
 $('#datepicker').datepicker({

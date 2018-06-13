@@ -509,7 +509,7 @@ body, footer {
     }
 
 
-    .input-pattern:hover .input-dropdown {
+    .add-drop {
         visibility: visible;
         opacity: 1;
         -webkit-transform: translate(0);
