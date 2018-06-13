@@ -92,25 +92,55 @@ $(".apart-image-slider").slick({
 $(".apart-image").height($(".apart-image-slider").height());
 //END SLiders
 
+var unvisibleDatepicker = true;
+var selectedData = "";
+
 //Start form 
 $(document).ready(function() {
-    $('#div-datepicker').mouseover(function() {
+    $('#div-datepicker').hover(function() {
         $('#datepicker').focus();
-    });
-
-    $('.datepicker').mouseover(function() {
-        $('#datepicker').focus();
-    });
-
-    $('#div-datepicker').mouseout(function() {
+        unvisibleDatepicker = true;
+    }, function() {
         $('#datepicker').blur();
     });
 
-    $('.datepicker').mouseout(function() {
+    $('.datepicker').hover(function() {
+        if (unvisibleDatepicker == true) {
+            $('#datepicker').focus();
+        }
+
+        $('.datepicker--cell-day').hover(function() {
+            if (!$(this).hasClass("-disabled-")) {
+                var month = $(this).attr("data-month");
+                var day = $(this).text();
+
+                if (day.length == 1) {
+                    day = "0" + $(this).text();
+                }
+
+                if (month.length == 1) {
+                    month = "0" + $(this).attr("data-month");
+                }
+
+                if(selectedData.length < 10) {
+                    $("#datepicker").val(selectedData + day + "." + month);
+                }
+            }
+        }, function() {
+            if (selectedData.length > 5 && selectedData.length < 10) {
+                $("#datepicker").val(selectedData + "дата виїзду");
+            } else if(selectedData.length > 10) {
+                $("#datepicker").val(selectedData);
+            } else {
+                $("#datepicker").val("");
+            }
+        });
+    }, function() {
         $('#datepicker').blur();
     });
 
-    var selectorbarheight = $('#selector-bar-id').height() + "px";
+
+     var selectorbarheight = $('#selector-bar-id').height() + "px";
     $('.overflow-hidden').css("height", selectorbarheight);
 
     var inputwidth = $('#div-datepicker').width() + "px";
@@ -227,10 +257,16 @@ $('#datepicker').datepicker({
     minDate: new Date(),
     dateFormat: "dd.mm",
     position: "bottom left",
+    autoClose: true,
     onSelect: function() {
         var temp = $("#datepicker").val();
+        selectedData = temp;
+
         if (temp.length == 5) {
             $("#datepicker").val($("#datepicker").val() + " - дата виїзду");
+            selectedData += " - ";
+        } else {
+            unvisibleDatepicker = false;
         }
     }
 });
