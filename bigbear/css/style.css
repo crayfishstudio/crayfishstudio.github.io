@@ -514,7 +514,6 @@ body, footer {
         transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
     }
 
-
     .add-drop {
         visibility: visible;
         opacity: 1;

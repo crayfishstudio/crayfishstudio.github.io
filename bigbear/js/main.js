@@ -215,10 +215,10 @@ $(document).ready(function(){
         $(this).removeClass("add-drop");
     });
 
-    $("#pattern-location").hover(function() {
-        $("#input-drop-location").addClass("add-drop");
+    $(".input-pattern").hover(function() {
+        $(this).find(".input-dropdown").addClass("add-drop");
     }, function() {
-        $("#input-drop-location").removeClass("add-drop");
+        $(this).find(".input-dropdown").removeClass("add-drop");
     });
 });
 
