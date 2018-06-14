@@ -2160,3 +2160,8 @@ p.apart-old-total-price .custom-line-throught::after {
     top: calc(50% - 1px);
     width: 130%;
 }
+
+#people_max {
+    color: #707070;
+    font-size: 100%;
+}
