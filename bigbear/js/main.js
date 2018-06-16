@@ -82,12 +82,18 @@ if ($(window).width() > 1199) {
     $(".slider-class-2").find(".slick-slide").css("padding", "0px");
 }
 
-$(".apart-image-slider").slick({
-    infinite: true,
-    prevArrow: '#p-arrow',
-    nextArrow: '#n-arrow',
-    speed: 1000
+$(".apart-image-slider").each(function() {
+    var nArrow = $(this).parent().find('.n-apart-arrow');
+    var pArrow = $(this).parent().find('.p-apart-arrow');
+
+    $(this).slick({
+        infinite: true,
+        prevArrow: pArrow,
+        nextArrow: nArrow,
+        speed: 1000
+    });
 });
+
 
 $(".apart-image").height($(".apart-image-slider").height());
 //END SLiders

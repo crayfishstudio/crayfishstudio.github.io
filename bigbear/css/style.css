@@ -1933,7 +1933,7 @@ p.discount {
     color: black;
 }
 
-#p-arrow {
+#p-arrow, .p-apart-arrow {
     position: absolute; 
     left: 0; 
     top: 0; 
@@ -1944,7 +1944,7 @@ p.discount {
 
 #p-arrow:hover .main-arrow-left div {background-color: #ff8c00 !important;}
 
-#n-arrow {
+#n-arrow, .n-apart-arrow {
     position: absolute; 
     right: 0;
     top: 0; 
@@ -2109,12 +2109,12 @@ p.discount {
     width: 100%;  
 }
 
-.div-arrows-apart-img-slider #p-arrow {
+.div-arrows-apart-img-slider .p-apart-arrow {
     left: 0;
     height: 100%;
 }
 
-.div-arrows-apart-img-slider #n-arrow {
+.div-arrows-apart-img-slider .n-apart-arrow {
     right: 0; 
     height: 100%;
 }
