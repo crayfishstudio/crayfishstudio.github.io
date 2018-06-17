@@ -1979,7 +1979,7 @@ p.discount {
     background-color: rgba(0,0,0,0.1); 
     border-radius: 50%; 
     color: #ff8c00; 
-    padding: 4px;
+    padding: 4px !important;
 }
 
 .children-up-to-5 {
