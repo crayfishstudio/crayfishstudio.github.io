@@ -530,10 +530,12 @@ body {
 
 .lang-noactive {
     color: #969696 !important;
+    cursor: pointer;
 }
 
 .lang-noactive:hover {
     text-decoration: none;
+    color: #EBEBEB;
 }
 
 #loader {
