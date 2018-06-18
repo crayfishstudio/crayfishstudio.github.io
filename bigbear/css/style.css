@@ -1475,6 +1475,7 @@ body, footer {
 
 .apart-image {
     width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
 }
@@ -2223,4 +2224,12 @@ p.apart-old-total-price .custom-line-throught::after {
 .phone-discount-card {
     color: #4D3431 !important;
     font-weight: 600;
+}
+
+.apart-image-slider .slick-list, .apart-image-slider .slick-track, .apart-image-slider .slick-slide, .apart-image-slider .slick-slide div, .apart-image-slider .slick-slide div.apart-image {
+    height: 100% !important;
+}
+
+.display-none {
+    display: none;
 }
