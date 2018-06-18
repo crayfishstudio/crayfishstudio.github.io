@@ -1981,6 +1981,7 @@ p.discount {
     border-radius: 50%; 
     color: #ff8c00; 
     padding: 4px;
+    cursor: pointer;
 }
 
 .children-up-to-5 {
