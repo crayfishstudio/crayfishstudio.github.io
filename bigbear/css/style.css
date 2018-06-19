@@ -568,8 +568,11 @@ body, footer {
 
     .input-members button {
         background-color: white;
+        color: white;
+        border-radius: 50%;
         border: 0px;
         outline: 0px;
+        padding: 0;
     }
 
     .input-pattern input:focus {outline: none;}
@@ -1862,11 +1865,12 @@ p.discount {
 .apart-small-discount-hotel p {
     margin: 0;
     color: white;
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .alt-dates {
     color: #D23A00;
+    font-size: 12px;
 }
 .small-card-hotel {
     border-bottom: 2px solid #ff8c00;
@@ -1979,8 +1983,10 @@ p.discount {
 .add-member-btn {
     background-color: rgba(0,0,0,0.1); 
     border-radius: 50%; 
-    color: #ff8c00; 
-    padding: 4px;
+    color: #ff8c00;
+    height: 22px;
+    width: 22px !important;
+    padding: 6px;
 }
 
 .children-up-to-5 {

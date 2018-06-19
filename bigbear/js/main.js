@@ -253,23 +253,15 @@ function isScrolledIntoView(elem) {
 
 $(document).ready(function(){
     setBookingIcon();
-    var checkInputDropdown = false;
 
-    $(".input-location").click(function() {
-        $(this).parent().removeClass("add-drop");
-        checkInputDropdown = true;
-    });
-
-    $(".input-pattern").click(function() {
-        if(!checkInputDropdown) {
-            $(this).find(".input-dropdown").addClass("add-drop");
-            checkInputDropdown = false;
-        }
-    });
+    if ($(window).width() > 798) {
+        $(".input-location").click(function() {
+            $(this).parent().removeClass("add-drop");
+        });
+    }   
 
     $(".input-pattern").hover(function() {
         $(this).find(".input-dropdown").addClass("add-drop");
-        checkInputDropdown = false;
     }, function() {
         $(this).find(".input-dropdown").removeClass("add-drop");
     });
