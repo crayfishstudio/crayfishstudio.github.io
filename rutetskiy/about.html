@@ -18,6 +18,8 @@
 
         <title>Про нас</title>
         <link rel="icon" type="image/png" href="img/favicon.png">
+        
+        <meta name="keywords" content="картини, декор, настінний декор, картини з дерева, багатошарові картини, декор модерн, декор на стіну, новинки декору, сучасний декор, панно, деревянное панно, арт, настенное панно, про нас, інформація">
     </head>
 
     <body onload="loadAnim()">
@@ -45,7 +47,7 @@
            <a style="cursor: pointer" onclick="goToPage('index.html')">головна</a>
             <a href="#" id="footerClick">контакти</a>
             <a href="#">про нас</a>
-            <p class="lang-changer"><a href="#" class="lang-active">УКР</a>/<a href="#" class="lang-noactive">ENG</a>/<a href="#" class="lang-noactive">РУС</a></p>
+            <p class="lang-changer"><a href="#" class="lang-active">УКР</a>/<a onclick="goToPage('en/about.html')" class="lang-noactive">ENG</a></p>
         </div>
 
         <div class="container-fluid">
@@ -53,14 +55,14 @@
                 <div class="col-md-6 px-2 px-md-3 pt-5 pt-md-0 text-center">
                     <!--<h1 class="custom-header-2 mb-4 mt-5">Про нас</h1>-->
                     <div class="about-image mb-3 mt-5" style="background-image: url(img/13.jpg)"></div>
-                    <small class="about-text">Rutetskiy Designs - це мистецько-дизайнерський проект, метою якого є створення унікальних елементів декору інтер'єру. Наш фокус - багатошарові картини з фанери. Почуття прекрасного, вогонь в очах - от що рухає нами. Основний акцент картин - геометричний арт, а також гра світла і тіні</small>
+                    <small class="about-text">Rutetskiy Designs - це мистецько-дизайнерський проект, метою якого є створення унікальних елементів декору інтер'єру. Наш фокус - багатошарові картини з фанери. Почуття прекрасного, вогонь в очах - от що рухає нами. Основний акцент картин - геометричний арт, гра світла і тіні</small>
                     
                     <div class="row no-gutters mt-5">
                         <div class="col-md-3">
                             <img class="img-fluid" src="img/ruted.jpg" data-action="zoom">
                         </div>
                         <div class="col-md-9 pl-md-3 text-md-left">
-                            <small class="about-text"><b>Рутецький Едуард, автор проекту, технічний спеціаліст</b><br><br>Мене завжди тягнуло до прекрасного, хоч все життя займався чимось "технічним". Для себе я знайшов компромісне рішення - робити вироби мистецтва, користуючись сучасною технікою. Одного разу я побачив досить круті багатошарові ансаблі з паперу, і подумав, що можна створити об'ємні картини з фанери. Все почалося з ідеї і палкого бажання, і перетворилось в те, що ви бачите на цьому сайті</small>
+                            <small class="about-text"><b>Рутецький Едуард, автор проекту, технічний спеціаліст</b><br><br>Мене завжди тягнуло до прекрасного, хоч все життя займався чимось "технічним". Для себе я знайшов компромісне рішення - робити вироби мистецтва, користуючись сучасною технікою</small>
                         </div>
                     </div>
                     <div class="row no-gutters mt-5">
@@ -68,7 +70,7 @@
                             <img class="img-fluid" src="img/M_larionova.jpg" data-action="zoom">
                         </div>
                         <div class="col-md-9 pr-md-3 text-md-right order-md-1">
-                            <small class="about-text"><b>Мар'яна Ларіонова, дизайнер</b><br><br>Дизайер в такому проекті - це серце, мотор. Почали ми з геометричних артів, а там точність грає дуже важливу роль. Освіта архітектора зіграла не останню роль, Марьяна фактично збудувала для нас макети</small>
+                            <small class="about-text"><b>Мар'яна Ларіонова, дизайнер</b><br><br>Одна з перших долучилась до проекту, перетворила ідеї в самобутні дизайни</small>
                         </div>
                     </div>
                     <div class="row no-gutters mt-5">
@@ -76,28 +78,12 @@
                             <img class="img-fluid" src="img/eldahok.jpg" data-action="zoom">
                         </div>
                         <div class="col-md-9 pl-md-3 text-md-left">
-                            <small class="about-text"><b>Любомир Дах і <a href="http://crayfish.studio">crayfish.studio</a> - веб-розробники, автори сайту</b><br><br>Хороший проект потребує хорошого сайту, це аксіома. Пошук виконавців для веб-сайту - завжди непростий процес, є багато факторів які впливають на вибір. Коли почав спілкуватись з цими хлопцями то одразу відчув, що ми на одній хвилі. Ідеї мої ловили на льоту і приклали купу зусиль, щоб втілити їх в життя</small>
-                        </div>
-                    </div>
-                    <div class="row no-gutters mt-5">
-                        <div class="col-md-3 order-md-2">
-                            <img class="img-fluid" src="img/galyna_rutetska.jpg" data-action="zoom">
-                        </div>
-                        <div class="col-md-9 pr-md-3 text-md-right order-md-1">
-                            <small class="about-text"><b>Галина Рутецька, SMM, друга половинка</b><br><br>Ця дівчина зробила мене щасливим в житті і підтримувала на усіх етапах шляху до втілення. Вона перша повірила в мене, і давала мені сили йти далі незважаючи на складнощі. Її вклад можливо не так помітний оком, але, повірте, без неї нічого би не вийшло</small>
-                        </div>
-                    </div>
-                    <div class="row no-gutters mt-5">
-                        <div class="col-md-3">
-                            <img class="img-fluid" src="img/M_feshchur.jpg" data-action="zoom">
-                        </div>
-                        <div class="col-md-9 pl-md-3 text-md-left">
-                            <small class="about-text"><b>Михайло Фещур, фотограф</b><br><br>Дядько з досвідом, фотоаппарат в руках тримає з дитинства. Автор фото, і просто дуже приємна людина</small>
+                            <small class="about-text"><b>Любомир Дах і <a href="http://crayfish.studio">crayfish.studio</a> - веб-розробники, автори сайту</b><br><br>Хороший проект потребує хорошого сайту, це аксіома. Коли почав спілкуватись з цими хлопцями то одразу відчув, що ми на одній хвилі</small>
                         </div>
                     </div>
                     <div class="row no-gutters my-5 pb-3">
                         <div class="col">
-                            <button class="btn btn-order"   data-toggle="modal" data-target="#exampleModalCenter2">співпрацювати</button>
+                            <button class="btn btn-order"   data-toggle="modal" data-target="#exampleModalCenter2">співпраця</button>
                         </div>
                     </div>
                 </div>
@@ -122,7 +108,7 @@
         	<span class="custom-link">-</span>
         	<a href="https://www.facebook.com/RutetskiyDesigns/?ti=as" target="_blank" class="custom-link">facebook</a>
         	<span class="custom-link">-</span>
-        	<a href="#" class="custom-link">instagram</a>
+        	<a href="https://www.instagram.com/rutetskiy/" target="_blank" class="custom-link">instagram</a>
 
         	<div id="bottomContactsExit" class="closeContacts">
         		<div class="line"></div>

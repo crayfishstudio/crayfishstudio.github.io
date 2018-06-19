@@ -4,6 +4,12 @@ body, footer {
     font-family: 'Roboto', sans-serif;
 }
 
+@media screen and (min-width: 1400px) {
+    .rules-header {
+        margin-top: 3px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     #mobile-logo {
         display: none;
@@ -100,6 +106,14 @@ body, footer {
 
     .navbar-side-mobile {
         width: 65px;
+    }
+
+    .navbar-side-mobile a {
+        color: rgba(0, 0, 0, .5);
+    }
+
+    .navbar-side-mobile a:hover {
+        color: #4a4a4a;
     }
     
     #mobile-lang-toggler {
@@ -508,8 +522,7 @@ body, footer {
         transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
     }
 
-
-    .input-pattern:hover .input-dropdown {
+    .add-drop {
         visibility: visible;
         opacity: 1;
         -webkit-transform: translate(0);
@@ -543,11 +556,23 @@ body, footer {
         margin: 0;
         padding-top: 8px;
         color: rgba(0,0,0,0.5);
+        text-align: left !important;
     }
 
     .input-members input {
         width: 30px !important;
-        margin-left: 8px;
+        padding: 0px !important;
+        padding-left: 6px !important;
+        margin-left: 8px !important;
+    }
+
+    .input-members button {
+        background-color: white;
+        color: white;
+        border-radius: 50%;
+        border: 0px;
+        outline: 0px;
+        padding: 0;
     }
 
     .input-pattern input:focus {outline: none;}
@@ -661,6 +686,13 @@ body, footer {
     }
 
     .datepicker--cell.-range-to- {
+        border: 0px;
+        background-color: #ff8c00;
+        border-radius: 0px; 
+        color: white;
+    }
+
+    .datepicker--cell.-range-to-.-current- {
         border: 0px;
         background-color: #ff8c00;
         border-radius: 0px; 
@@ -1446,6 +1478,7 @@ body, footer {
 
 .apart-image {
     width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
 }
@@ -1498,7 +1531,6 @@ body, footer {
 .apart-old-total-price {
     color: #4D3431;
     font-weight: 300;
-    text-decoration: line-through;
     margin-bottom: 0px;
     text-transform: uppercase;
 }
@@ -1546,7 +1578,6 @@ body, footer {
 }
 
 .apart-old-price {
-    text-decoration: line-through;
     margin-bottom: -2px;
     font-weight: 300;
 }
@@ -1762,7 +1793,6 @@ p.discount {
 
 .old-price-hotel-card {
     margin-top: 6px;
-    text-decoration: line-through;
 }
 
 .apart-small-card-buy-hotel-p strong {
@@ -1835,11 +1865,12 @@ p.discount {
 .apart-small-discount-hotel p {
     margin: 0;
     color: white;
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .alt-dates {
     color: #D23A00;
+    font-size: 12px;
 }
 .small-card-hotel {
     border-bottom: 2px solid #ff8c00;
@@ -1907,7 +1938,7 @@ p.discount {
     color: black;
 }
 
-#p-arrow {
+#p-arrow, .p-apart-arrow {
     position: absolute; 
     left: 0; 
     top: 0; 
@@ -1918,7 +1949,7 @@ p.discount {
 
 #p-arrow:hover .main-arrow-left div {background-color: #ff8c00 !important;}
 
-#n-arrow {
+#n-arrow, .n-apart-arrow {
     position: absolute; 
     right: 0;
     top: 0; 
@@ -1952,14 +1983,17 @@ p.discount {
 .add-member-btn {
     background-color: rgba(0,0,0,0.1); 
     border-radius: 50%; 
-    color: #ff8c00; 
-    padding: 4px;
+    color: #ff8c00;
+    height: 22px;
+    width: 22px !important;
+    padding: 6px;
 }
 
 .children-up-to-5 {
     padding-left: 6px;
     color: rgba(0,0,0,0.5); 
     margin: 8px 0px 6px 0px;
+    text-align: left !important;
 }
 
 .color-ff8c00 {
@@ -2050,6 +2084,7 @@ p.discount {
 
 .text-line {
     text-decoration: line-through;
+    margin-bottom: 10px !important;
 }
 
 .color-white {
@@ -2058,7 +2093,7 @@ p.discount {
 
 .new-price-apart {
     color: #FFF; 
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .back-white {
@@ -2081,12 +2116,12 @@ p.discount {
     width: 100%;  
 }
 
-.div-arrows-apart-img-slider #p-arrow {
+.div-arrows-apart-img-slider .p-apart-arrow {
     left: 0;
     height: 100%;
 }
 
-.div-arrows-apart-img-slider #n-arrow {
+.div-arrows-apart-img-slider .n-apart-arrow {
     right: 0; 
     height: 100%;
 }
@@ -2120,4 +2155,87 @@ font-size: 1.7rem;
 
 .shadow-hover:hover {
     box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.custom-line-throught {
+    position: relative;
+}
+
+.old-price-hotel-card.custom-line-throught::after{
+    left: 10%;
+    width: 80%;   
+}
+
+.apart-old-price.custom-line-throught::after{
+    left: 10%;
+    width: 80%;   
+}
+
+p.apart-old-total-price .custom-line-throught::after {
+    border-bottom: 1px solid #4D3431;
+    width: 110%;
+    left: -5%;
+}
+
+.custom-line-throught::after {
+    content: '';
+    border-bottom: 1px solid white;
+    position: absolute;
+    left: -15%;
+    top: calc(50% - 1px);
+    width: 130%;
+}
+
+#people_max {
+    color: #707070;
+    font-size: 100%;
+}
+
+.huge-discount-card {
+    width: 100%;
+    border: 2px solid #ff8c00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.huge-discount-card p {
+    color: rgba(0, 0, 0, .5);
+}
+
+.huge-discount-card-img {
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.huge-discount-card h2 {
+    font-weight: 600 !important;
+    padding: 30px !important;
+}
+
+.huge-discount-card-p {
+    width: 100%;
+    padding: 0px 30px 30px 30px;
+}
+
+.huge-discount-card .btn-yellow {
+    width: auto !important;
+}
+
+.countdown-p {
+    font-size: 34px;
+    font-weight: 100;
+}
+
+.phone-discount-card {
+    color: #4D3431 !important;
+    font-weight: 600;
+}
+
+.apart-image-slider .slick-list, .apart-image-slider .slick-track, .apart-image-slider .slick-slide, .apart-image-slider .slick-slide div, .apart-image-slider .slick-slide div.apart-image {
+    height: 100% !important;
+}
+
+.display-none {
+    display: none;
 }

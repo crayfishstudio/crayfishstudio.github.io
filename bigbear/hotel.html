@@ -36,15 +36,15 @@
         </div>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <!-- id="custom-navbar-thin" - коли буде 6 посилань в шапці (зараз 4, бо 2 закоментовано)-->
-            <ul class="navbar-nav mx-auto align-items-center text-center mt-2 mt-xl-0" id="custom-navbar">
+            <ul class="navbar-nav mx-auto align-items-center text-center mt-2 mt-xl-0" id="custom-navbar-thin">
                 <div class="navbar-side-container text-left">
                     <span class="nav-link navbar-phone" href="#">
                         <div class="dropdown">
                             +38 (097) 514 4702
                             <i class="fas fa-chevron-down ml-2"></i><br>
                             <div class="dropdown-content">
-                                +38 (097) 514 4702
+                                <p>+38 (097) 514 4702</p>
+                                <p>+38 (097) 514 4702</p>
                                 <div class="h-line-bold"></div>
                                 <small class="text-muted">написати в месенджер</small><br>
                                 <div class="mb-2"></div>
@@ -62,18 +62,18 @@
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">про нас</a>
                 </li>
-                <!--<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">номери</a>
-                </li>-->
+                </li>
                 <li class="nav-item text-center my-xl-1">
                     <a id="desktop-logo" href="#"><img class="img-fluid mx-center" src="img/logo.png" width="140px"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">відгуки</a>
                 </li>
-                <!--<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">акції</a>
-                </li>-->
+                </li>
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">контакти</a>
                 </li>
@@ -143,25 +143,25 @@
                                     <div class="input-members d-flex justify-content-between">
                                         <p>Дорослі</p>
                                         <span>
-                                            <span id="adults_minus">
+                                            <button id="adults_minus" type="button">
                                                 <i class="fas fa-minus fa-lg add-member-btn"></i>
-                                            </span>
+                                            </button>
                                             <input id="adults" type="number" name="adults" min="0" value="0" readonly="readonly" />
-                                            <span id="adults_plus">
+                                            <button id="adults_plus" type="button">
                                                 <i class="fas fa-plus fa-lg add-member-btn"></i>
-                                            </span>
+                                            </button>
                                         </span>
                                     </div>
                                     <div class="input-members d-flex justify-content-between">
                                         <p>Діти<br/><sup>5-12 років</sup></p>
                                         <span>
-                                            <span id="children_minus">
+                                            <button id="children_minus"type="button">
                                                 <i class="fas fa-minus fa-lg add-member-btn"></i>
-                                            </span>
+                                            </button>
                                             <input id="children" type="number" name="children" min="0" value="0" readonly="readonly" />
-                                            <span id="children_plus">
+                                            <button id="children_plus" type="button">
                                                 <i class="fas fa-plus fa-lg add-member-btn"></i>
-                                            </span>
+                                            </button>
                                         </span>
                                     </div>
                                     <p class="children-up-to-5"><sub>діти до 5 років - безкоштовно</sub></p>
@@ -206,12 +206,12 @@
                 <a href="#" class="a-card">
                     <div class="apart-small-card shadow-hover">
                         <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
-                        <div class="row pt-3  px-md-4 px-3">
-                            <div class="col-8">
-                                <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        <div class="row pt-3 mb-1 px-md-4 px-3">
+                            <div class="col-7 d-flex align-items-end">
+                                <h5 class="small-hotel-header m-0">Напівлюкс із каміном</h5>
                             </div>
-                            <div class="col-4 text-right">
-                                <small class="alt-dates">з 05.10 по 08.10</small>
+                            <div class="col-5 text-right">
+                                <p class="alt-dates m-0">з 05.10 по 08.10</p>
                             </div>
                         </div>
                         <div class="row pb-1  px-md-4 px-3">
@@ -237,12 +237,12 @@
                 <a href="#" class="a-card">
                     <div class="apart-small-card shadow-hover">
                         <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
-                        <div class="row pt-3  px-md-4 px-3">
-                            <div class="col-8">
-                                <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        <div class="row pt-3 mb-1 px-md-4 px-3">
+                            <div class="col-7 d-flex align-items-end">
+                                <h5 class="small-hotel-header m-0">Напівлюкс із каміном</h5>
                             </div>
-                            <div class="col-4 text-right">
-                                <small class="alt-dates">з 05.10 по 08.10</small>
+                            <div class="col-5 text-right">
+                                <p class="alt-dates m-0">з 05.10 по 08.10</p>
                             </div>
                         </div>
                         <div class="row pb-1  px-md-4 px-3">
@@ -264,12 +264,12 @@
                 <a href="#" class="a-card">
                     <div class="apart-small-card shadow-hover">
                         <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
-                        <div class="row pt-3  px-md-4 px-3">
-                            <div class="col-8">
-                                <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        <div class="row pt-3 mb-1 px-md-4 px-3">
+                            <div class="col-7 d-flex align-items-end">
+                                <h5 class="small-hotel-header m-0">Напівлюкс із каміном</h5>
                             </div>
-                            <div class="col-4 text-right">
-                                <small class="alt-dates">з 05.10 по 08.10</small>
+                            <div class="col-5 text-right">
+                                <p class="alt-dates m-0">з 05.10 по 08.10</p>
                             </div>
                         </div>
                         <div class="row pb-1  px-md-4 px-3">
@@ -295,12 +295,12 @@
                 <a href="#" class="a-card">
                     <div class="apart-small-card shadow-hover">
                         <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
-                        <div class="row pt-3  px-md-4 px-3">
-                            <div class="col-8">
-                                <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        <div class="row pt-3 mb-1 px-md-4 px-3">
+                            <div class="col-7 d-flex align-items-end">
+                                <h5 class="small-hotel-header m-0">Напівлюкс із каміном</h5>
                             </div>
-                            <div class="col-4 text-right">
-                                <small class="alt-dates">з 05.10 по 08.10</small>
+                            <div class="col-5 text-right">
+                                <p class="alt-dates m-0">з 05.10 по 08.10</p>
                             </div>
                         </div>
                         <div class="row pb-1  px-md-4 px-3">
@@ -325,12 +325,12 @@
                 <a href="#" class="a-card">
                     <div class="apart-small-card shadow-hover">
                         <div class="small-card-image" style="background-image: url(img/hotels/beardvir.jpg)"></div>
-                        <div class="row pt-3  px-md-4 px-3">
-                            <div class="col-8">
-                                <h5 class="small-card-header">напівлюкс із каміном</h5>
+                        <div class="row pt-3 mb-1 px-md-4 px-3">
+                            <div class="col-7 d-flex align-items-end">
+                                <h5 class="small-hotel-header m-0">Напівлюкс із каміном</h5>
                             </div>
-                            <div class="col-4 text-right">
-                                <small class="alt-dates">з 05.10 по 08.10</small>
+                            <div class="col-5 text-right">
+                                <p class="alt-dates m-0">з 05.10 по 08.10</p>
                             </div>
                         </div>
                         <div class="row pb-1  px-md-4 px-3">
@@ -475,14 +475,14 @@
             </div>
         </div>
         <div class="row text-center align-items-center justify-content-center no-gutters px-md-5 px-0 pb-5">
-            <div class="col-lg-3 col-md-6 p-5 back-f4f4f4">
+            <div class="col-lg-3 p-5 back-f4f4f4">
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                         <h5>Проживання в готельних номерах</h5>
                    </div> 
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 p-5">
+            <div class="col-lg-3 p-5">
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                         <h5 class="mb-4">Безкоштовні сніданки</h5>
@@ -490,14 +490,14 @@
                    </div> 
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 p-5 back-f4f4f4">
+            <div class="col-lg-3 p-5 back-f4f4f4">
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                         <h5>Користування альтанкою та зеленою зоною відпочинку</h5>
                    </div> 
                 </div>     
             </div>
-            <div class="col-lg-3 col-md-6 p-5">
+            <div class="col-lg-3 p-5">
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                         <h5 class="mb-4">Зручна автостоянка</h5>
@@ -505,14 +505,14 @@
                    </div> 
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 p-5 order-lg-6 back-f4f4f4">
+            <div class="col-lg-3 p-5 order-lg-6 back-f4f4f4">
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                         <h5>Користування мангалом</h5>
                    </div> 
                 </div> 
             </div>
-            <div class="col-lg-3 col-md-6 p-5 order-lg-7 ">
+            <div class="col-lg-3 p-5 order-lg-7 ">
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                        <h5 class="mb-4">Wi-Fi на всій території</h5>
@@ -520,14 +520,14 @@
                    </div> 
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 p-5 order-lg-8 back-f4f4f4">
+            <div class="col-lg-3 p-5 order-lg-8 back-f4f4f4">
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                         <h5>Користування конференц-залом та дитячою кіматою</h5>
                    </div> 
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 p-5 order-lg-5">
+            <div class="col-lg-3 p-5 order-lg-5">
                 <div class="vert-aligner-container">
                    <div class="vert-aligner">
                         <h5 class="mb-4">Користування басейном</h5>
@@ -635,7 +635,8 @@
                 </div>
             </div>
         </form>
-
+    </div>
+   
     <footer class="black-footer py-md-4 py-0">
         <div class="container-fluid">
             <div class="row justify-content-center pb-5">
@@ -746,35 +747,39 @@
                     </div>
                     <div class="row my-2">
                         <div class="col px-5">
-                            <p class="section-text-small">чистота
-                            <i class="far fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <p class="section-text-small modal-stars">чистота
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
                             </p>
-                            <p class="section-text-small">затишок
-                            <i class="far fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <p class="section-text-small modal-stars">затишок
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
                             </p>
-                            <p class="section-text-small">розташування
-                            <i class="far fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <p class="section-text-small modal-stars">розташування
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
                             </p>
-                            <p class="section-text-small">смачна кухня
-                            <i class="far fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <p class="section-text-small modal-stars">смачна кухня
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
+                            <i class="far fa-star float-right mx-1 color-ff8c00"></i>
                             </p>
                         </div>
+                        <input class="display-none" type="number" name="cleanliness" min="0" max="5" value="0">
+                        <input class="display-none" type="number" name="cosiness" min="0" max="5" value="0">
+                        <input class="display-none" type="number" name="location" min="0" max="5" value="0">
+                        <input class="display-none" type="number" name="deliciously" min="0" max="5" value="0">
                     </div>
                     <div class="row text-center py-4 px-4 no-gutters back-f4f4f4">
                         <div class="col my-1">
@@ -798,6 +803,7 @@
     <script src="js/datepicker.ua.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/stars-feedback.js"></script>
 </body>
 
 </html>

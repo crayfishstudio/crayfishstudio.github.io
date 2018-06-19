@@ -35,7 +35,7 @@
         </div>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto align-items-center text-center mt-2 mt-xl-0" id="custom-navbar">
+            <ul class="navbar-nav mx-auto align-items-center text-center mt-2 mt-xl-0" id="custom-navbar-thin">
                 <div class="navbar-side-container text-left">
                     <span class="nav-link navbar-phone" href="#">
                         <div class="dropdown">
@@ -61,11 +61,17 @@
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">про нас</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link my-1 hover-underline" href="#">номери</a>
+                </li>
                 <li class="nav-item text-center my-xl-1">
                     <a id="desktop-logo" href="#"><img class="img-fluid mx-center" src="img/logo.png" width="140px"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">відгуки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-1 hover-underline" href="#">акції</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-1 hover-underline" href="#">контакти</a>
@@ -121,7 +127,7 @@
                 <form>
                     <div class="row justify-content-center no-gutters py-md-3 py-1">
                         <div class="col-lg-2 col-md-3 col-6 my-1">
-                            <div class="input-pattern">
+                            <div id="pattern-location" class="input-pattern">
                                 <input disabled id="location" type="text" name="location" placeholder="Готель/місто" readonly="readonly" class="cursor-pointer"/>
                                 <i class="fas fa-map-marker-alt input-icon"></i>
                                 <div id="input-drop-location" class="input-dropdown px-2">
@@ -136,7 +142,7 @@
                         <div class="col-lg-2 col-md-3 col-6 my-1">
                             <div id="div-datepicker" class="input-pattern">
                                 <i class="fas fa-calendar-alt input-icon"></i>
-                                <input type='text' data-language="ua" data-multiple-dates-separator=" - " class="datepicker-here cursor-pointer" id="datepicker" placeholder="Дати" readonly="readonly"/>
+                                <input type='text' data-language="ua" data-multiple-dates-separator=" - " class="datepicker-here cursor-pointer" id="datepicker" placeholder="Оберіть дати" readonly="readonly"/>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-3 my-1">
@@ -147,25 +153,25 @@
                                     <div class="input-members d-flex justify-content-between">
                                         <p>Дорослі</p>
                                         <span>
-                                            <span id="adults_minus">
+                                            <button id="adults_minus" type="button">
                                                 <i class="fas fa-minus fa-lg add-member-btn"></i>
-                                            </span>
+                                            </button>
                                             <input id="adults" type="number" name="adults" min="0" value="0" readonly="readonly" />
-                                            <span id="adults_plus">
+                                            <button id="adults_plus" type="button">
                                                 <i class="fas fa-plus fa-lg add-member-btn"></i>
-                                            </span>
+                                            </button>
                                         </span>
                                     </div>
                                     <div class="input-members d-flex justify-content-between">
                                         <p>Діти<br/><sup>5-12 років</sup></p>
                                         <span>
-                                            <span id="children_minus">
+                                            <button id="children_minus"type="button">
                                                 <i class="fas fa-minus fa-lg add-member-btn"></i>
-                                            </span>
+                                            </button>
                                             <input id="children" type="number" name="children" min="0" value="0" readonly="readonly" />
-                                            <span id="children_plus">
+                                            <button id="children_plus" type="button">
                                                 <i class="fas fa-plus fa-lg add-member-btn"></i>
-                                            </span>
+                                            </button>
                                         </span>
                                     </div>
                                     <p class="children-up-to-5"><sub>діти до 5 років - безкоштовно</sub></p>
@@ -318,7 +324,7 @@
                             </div>
                         </div>
                         <div class="apart-small-card-buy d-flex flex-column justify-content-center">
-                            <p class="text-center apart-small-card-buy-hotel-p d-flex align-items-center justify-content-between">від <span class="d-flex flex-column"><span class="old-price-hotel-card">200</span><strong>100</strong></span> грн</p>
+                            <p class="text-center apart-small-card-buy-hotel-p d-flex align-items-center justify-content-between">від <span class="d-flex flex-column"><span class="old-price-hotel-card custom-line-throught">200</span><strong>100</strong></span> грн</p>
                         </div>
                         <div class="apart-small-card-buy-hover apart-small-hover-hotel"><p class="d-flex justify-content-center align-items-center text-uppercase">ЗАБРОНЮВАТИ</p></div>
                         <div class="apart-small-discount-hotel">

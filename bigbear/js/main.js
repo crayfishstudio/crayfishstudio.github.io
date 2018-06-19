@@ -82,35 +82,71 @@ if ($(window).width() > 1199) {
     $(".slider-class-2").find(".slick-slide").css("padding", "0px");
 }
 
-$(".apart-image-slider").slick({
-    infinite: true,
-    prevArrow: '#p-arrow',
-    nextArrow: '#n-arrow',
-    speed: 1000
+$(".apart-image-slider").each(function() {
+    var nArrow = $(this).parent().find('.n-apart-arrow');
+    var pArrow = $(this).parent().find('.p-apart-arrow');
+
+    $(this).slick({
+        infinite: true,
+        prevArrow: pArrow,
+        nextArrow: nArrow,
+        speed: 1000
+    });
 });
+
 
 $(".apart-image").height($(".apart-image-slider").height());
 //END SLiders
 
+var unvisibleDatepicker = true;
+var selectedData = "";
+
 //Start form 
 $(document).ready(function() {
-    $('#div-datepicker').mouseover(function() {
+    $('#div-datepicker').hover(function() {
         $('#datepicker').focus();
-    });
-
-    $('.datepicker').mouseover(function() {
-        $('#datepicker').focus();
-    });
-
-    $('#div-datepicker').mouseout(function() {
+        unvisibleDatepicker = true;
+    }, function() {
         $('#datepicker').blur();
     });
 
-    $('.datepicker').mouseout(function() {
+    $('.datepicker').hover(function() {
+        if (unvisibleDatepicker == true) {
+            $('#datepicker').focus();
+        }
+
+        $('.datepicker--cell-day').hover(function() {
+            if (!$(this).hasClass("-disabled-")) {
+                var month = (parseInt($(this).attr("data-month")) + 1).toString();
+                var day = $(this).text();
+
+                if (day.length == 1) {
+                    day = "0" + $(this).text();
+                }
+
+                if (month.length == 1) {
+                    month = "0" + (parseInt($(this).attr("data-month")) + 1).toString();
+                }
+
+                if(selectedData.length < 10) {
+                    $("#datepicker").val(selectedData + day + "." + month);
+                }
+            }
+        }, function() {
+            if (selectedData.length > 5 && selectedData.length < 10) {
+                $("#datepicker").val(selectedData + "дата виїзду");
+            } else if(selectedData.length > 10) {
+                $("#datepicker").val(selectedData);
+            } else {
+                $("#datepicker").val("");
+            }
+        });
+    }, function() {
         $('#datepicker').blur();
     });
 
-    var selectorbarheight = $('#selector-bar-id').height() + "px";
+
+     var selectorbarheight = $('#selector-bar-id').height() + "px";
     $('.overflow-hidden').css("height", selectorbarheight);
 
     var inputwidth = $('#div-datepicker').width() + "px";
@@ -122,6 +158,9 @@ $(document).ready(function() {
 
     $("#adults_plus").click(function() {
         var val = 1 + +$("#adults").val();
+        if (val > 8) {
+            val = 8;
+        }
         $("#adults").val(val);
         check_input_guests();
     });
@@ -131,12 +170,16 @@ $(document).ready(function() {
         if (val < 0) {
             val = 0;
         }
+
         $("#adults").val(val);
         check_input_guests();
     });
 
     $("#children_plus").click(function() {
         var val = 1 + +$("#children").val();
+        if (val > 4) {
+            val = 4;
+        }
         $("#children").val(val);
         check_input_guests();
     });
@@ -210,6 +253,18 @@ function isScrolledIntoView(elem) {
 
 $(document).ready(function(){
     setBookingIcon();
+
+    if ($(window).width() > 798) {
+        $(".input-location").click(function() {
+            $(this).parent().removeClass("add-drop");
+        });
+    }   
+
+    $(".input-pattern").hover(function() {
+        $(this).find(".input-dropdown").addClass("add-drop");
+    }, function() {
+        $(this).find(".input-dropdown").removeClass("add-drop");
+    });
 });
 
 $('#datepicker').datepicker({
@@ -217,10 +272,16 @@ $('#datepicker').datepicker({
     minDate: new Date(),
     dateFormat: "dd.mm",
     position: "bottom left",
+    autoClose: true,
     onSelect: function() {
         var temp = $("#datepicker").val();
+        selectedData = temp;
+
         if (temp.length == 5) {
             $("#datepicker").val($("#datepicker").val() + " - дата виїзду");
+            selectedData += " - ";
+        } else {
+            unvisibleDatepicker = false;
         }
     }
 });
@@ -262,25 +323,27 @@ $(window).scroll(function() {
     });
 
     $('#datepicker').datepicker().data('datepicker').update({
-        position: "top left"
+        position: "bottom left"
     });            
 
-    $('.datepickers-container').css("top", 260 + $('.input-pattern').height());
-
     if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
-        $('.datepickers-container').css("top", 0)
+        $('.datepickers-container').css("top", 0);
 
         $('#datepicker').datepicker().data('datepicker').update({
             position: "top left"
         });            
 
         $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+    } else {
+        $('.datepickers-container').css("top", 0);
     }
 
-    if (isScrolledIntoView("#giant-number")) {
-        if (check == true) {
-            check = false;
-            animateValue("giant-number", 9821, 10000, 5000, 1);   
+    if (document.getElementById('giant-number')) {
+        if (isScrolledIntoView("#giant-number")) {
+            if (check == true) {
+                check = false;
+                animateValue("giant-number", 9821, 10000, 5000, 1);   
+            }
         }
     }
 });
