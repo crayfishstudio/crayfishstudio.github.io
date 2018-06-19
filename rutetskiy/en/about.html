@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120148823-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-120148823-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <title>About</title>
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        
+        <meta name="keywords" content="картини, декор, настінний декор, картини з дерева, багатошарові картини, декор модерн, декор на стіну, новинки декору, сучасний декор, панно, деревянное панно, арт, настенное панно, про нас, інформація">
+    </head>
+
+    <body onload="loadAnim()">
+        <div id="loader">
+            <span id="layer-2">
+                <img class="img-fluid" src="img/logo128.png" style="width: 94px; position: absolute; margin-top: calc(50vh - 64px); right: calc(50vw - 47px)">
+            </span>
+            <span id="layer-1"></span>
+        </div>
+        <div id="toggle" class="toggleButton" onclick="toggleFunction(this)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="grey-line left">
+            <div class="center-container" style="height: 100%;">
+                <img id="logo" alt="logo" class="img-fluid" onclick="goToPage('index.html')"/>
+            </div>
+        </div>
+        <a href="index.html" class="exitToIndex">
+            <div></div>
+            <div></div>
+        </a>
+        <div id="menu" class="grey-line right center-vertical-container transition">
+           <a style="cursor: pointer" onclick="goToPage('index.html')">Home</a>
+            <a href="#" id="footerClick">Contacts</a>
+            <a href="#">About</a>
+            <p class="lang-changer"><a href="#" class="lang-active">ENG</a>/<a onclick="goToPage('../about.html')" class="lang-noactive">УКР</a></p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-6 px-2 px-md-3 pt-5 pt-md-0 text-center">
+                    <!--<h1 class="custom-header-2 mb-4 mt-5">Про нас</h1>-->
+                    <div class="about-image mb-3 mt-5" style="background-image: url(img/13.jpg)"></div>
+                    <small class="about-text">Rutetskiy Designs is a project focused on creating state-of-art interior decor. We specialize on making layered wall decor using plywood. The resulting beauty and passion of creating something unique is what motivates us. The key features of our pieces are sacred geometry and intricate shadowing</small>
+                    
+                    <div class="row no-gutters mt-5">
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="img/ruted.jpg" data-action="zoom">
+                        </div>
+                        <div class="col-md-9 pl-md-3 text-md-left">
+                            <small class="about-text"><b>Eduard Rutetskiy, Founder and Chief Technologist</b><br><br>I always leaned towards art though all my life I've been doing "techy" work. The compromise arised as I've found how I can make art using technology</small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5">
+                        <div class="col-md-3 order-md-2">
+                            <img class="img-fluid" src="img/M_larionova.jpg" data-action="zoom">
+                        </div>
+                        <div class="col-md-9 pr-md-3 text-md-right order-md-1">
+                            <small class="about-text"><b>Mariana Larionova, Designer</b><br><br>She was the first who joined me in this project. Thanks to her my ideas turned into esteemed designs</small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-5">
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="img/eldahok.jpg" data-action="zoom">
+                        </div>
+                        <div class="col-md-9 pl-md-3 text-md-left">
+                            <small class="about-text"><b>Lyubomyr Dakh and <a href="http://crayfish.studio">crayfish.studio</a> - Web Developers</b><br><br>A good project needs a good website. Thats a given. When I started talking to this guys I just realized that we're absolutly synched</small>
+                        </div>
+                    </div>
+                    <div class="row no-gutters my-5 pb-3">
+                        <div class="col">
+                            <button class="btn btn-order"   data-toggle="modal" data-target="#exampleModalCenter2">collaboration</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal transition">
+            <div class="center-container" style="position: absolute; height: 100%; width: 100%; left: 0; right: 0;">
+                <img class="img-fluid" id="img01">
+                <span class="close">&times;</span>
+            </div>
+        </div>
+
+        <div class="footer center-vertical-container transition">
+            <!--<a href="#" id="bottomOrderExit" class="custom-link"  data-toggle="modal" data-target="#exampleModalCenter2">замовити дзвінок</a>
+        	<span class="custom-link">-</span>-->
+        	<a class="custom-link">+38 (096) 65 32 586</a>
+        	<span class="custom-link">-</span>
+        	<a class="custom-link">info@rutetskiy.com</a>
+        	<span class="custom-link">-</span>
+			<a class="custom-link">Ternopil, Ukraine</a>
+        	<span class="custom-link">-</span>
+        	<a href="https://www.facebook.com/RutetskiyDesigns/?ti=as" target="_blank" class="custom-link">facebook</a>
+        	<span class="custom-link">-</span>
+        	<a href="https://www.instagram.com/rutetskiy/" target="_blank" class="custom-link">instagram</a>
+
+        	<div id="bottomContactsExit" class="closeContacts">
+        		<div class="line"></div>
+        		<div class="line"></div>
+        	</div>
+        </div>
+
+        <div class="closeDetails"></div>
+       
+        <div class="modal fade modal-custom" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 0">
+              <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="exampleModalLongTitle">COLLABORATION REQUEST</h5>
+              </div>
+              <div class="modal-body" style="text-align: center !important">
+                <p>our manager will contact you shortly</p>
+                <form action="post1.php" method="post">
+                  <div class="form-group">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Name">
+                    <input type="text" class="form-control mb-1" id="exampleInputPassword1" name="company" placeholder="Company name">
+                    <input type="text" class="form-control mb-1" id="exampleInputPassword1" name="web" placeholder="Web-site">
+                    <input required type="text" class="form-control mb-1" id="exampleInputPassword1" name="user_email" placeholder="Email">
+                      <textarea type="text" rows="3" class="form-control" id="exampleInputPassword1" name="letter" placeholder="Message text"></textarea>
+                  </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-order">send request</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--<div class="modal fade modal-custom" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 0">
+              <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="exampleModalLongTitle">ЗАЛИШТЕ СВОЇ КОНТАКТИ</h5>
+              </div>
+              <div class="modal-body" style="text-align: center !important">
+                <p>наш менеджер невдовзі зв'яжеться з вами</p>
+                <form action="post.php" method="post">
+                  <div class="form-group">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="feedback" placeholder="Ваш коментар">
+                  </div>
+                    <div class="modal-footer">
+                    <button type="submit" class="btn btn-order" style="width: 100%">Відправити</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>-->
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/zoom.css" rel="stylesheet">
+        <script src="js/zoom.js"></script>
+        <script src="js/transition.js"></script>
+        <script src="js/trns.js"></script>
+
+        <script>
+            $("#footerClick").click(function () {
+                $('.transition').toggleClass('footer-transition');
+
+                var temp = $('.closeDetails').css("display");
+
+                if ($(window).width() < 768) {
+                    document.getElementById("toggle").click();
+                } else {
+                    if (temp == "none") {
+                        $('.closeDetails').css("display", "block");                     
+                    } else {
+                        $('.closeDetails').css('display', 'none');
+                    }
+                }
+            });
+
+            $("#bottomContactsExit").click(function () {
+                $('.transition').toggleClass('footer-transition');   
+
+                if ($(window).width() >= 768) {
+                    var temp = $('.closeDetails').css("display");  
+
+                    if (temp == "none") {
+                        $('.closeDetails').css("display", "block");                     
+                    } else {
+                        $('.closeDetails').css('display', 'none');
+                    } 
+                }               
+            });
+
+            $('.closeDetails').click(function () {
+                document.getElementById("footerClick").click();
+            });
+
+            function toggleFunction(x) {
+                x.classList.toggle("change");
+                $("#menu").toggleClass('menu-transition');
+            }
+
+            if ($(window).width() < 767) {
+                $("#logo").attr("src","img/logo32x32.png");
+            } else {
+                $("#logo").attr("src","img/logo128.png");
+            }
+
+            $(window).resize(function() {
+                if ($(window).width() < 767) {
+                    $("#logo").attr("src","img/logo32x32.png");
+                } else {
+                    $("#logo").attr("src","img/logo128.png");
+                }
+            });
+
+            function goHome() {
+                location.href = "index.html";
+            }
+
+            function zoomImage(x) {
+                var modal = document.getElementById('myModal');
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = x;
+                var modalImg = document.getElementById("img01");            
+                modal.style.zIndex = "1";
+                modalImg.src = img.src;
+
+                $("#myModal").fadeTo(300, 1.0);
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    $("#myModal").fadeTo(300, 0.0);
+
+                    setTimeout(back, 1000);
+                }
+
+                function back(){
+                    modal.style.zIndex = "-1";
+                }
+            }
+        </script>
+    </body>
+</html>

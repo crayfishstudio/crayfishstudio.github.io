@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120148823-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-120148823-1');
+        </script>
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <title>Lotus - Rutetskiy Designs</title>
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        
+        <meta name="keywords" content="картини, декор, настінний декор, картини з дерева, багатошарові картини, декор модерн, декор на стіну, новинки декору, сучасний декор, панно, деревянное панно, арт, настенное панно, Lotus">
+    </head>
+
+    <body onload="loadAnim()">
+        <div id="loader">
+            <span id="layer-2">
+                <img class="img-fluid" src="img/logo128.png" style="width: 94px; position: absolute; margin-top: calc(50vh - 64px); right: calc(50vw - 47px)">
+            </span>
+            <span id="layer-1"></span>
+        </div>
+        <div id="toggle" class="toggleButton" onclick="toggleFunction(this)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="grey-line left">
+            <div class="center-container" style="height: 100%;">
+                <img id="logo" alt="logo" class="img-fluid" onclick="goToPage('index.html')"/>
+            </div>
+        </div>
+        <a href="index.html" class="exitToIndex">
+            <div></div>
+            <div></div>
+        </a>
+        <div id="menu" class="grey-line right center-vertical-container transition">
+           <a style="cursor: pointer" onclick="goToPage('index.html')">Home</a>
+            <a href="#" id="footerClick">Contacts</a>
+            <a href="#">About</a>
+            <p class="lang-changer"><a href="#" class="lang-active">ENG</a>/<a onclick="goToPage('../lotus.html')" class="lang-noactive">УКР</a></p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-6 px-2 px-md-3">
+                    <h1 class="custom-header-2 mt-5 mb-4">Lotus</h1>
+                    <div class="row justify-content-md-center mb-5">
+                        <div class="col-md-7 text-right padding-0">
+                            <img id="myImg" src="img/Lotus/1.jpg" class="img-fluid padding-05 margin-vertical-12"  data-action="zoom">
+                            <img src="img/Lotus/3.jpg" class="img-fluid padding-05 margin-vertical-12"  data-action="zoom">
+                        </div>
+                        <div class="col-md-5 padding-0">
+                            <img src="img/Lotus/4.jpg"  class="img-fluid padding-05 margin-vertical-12"  data-action="zoom">
+                            <img src="img/Lotus/2.jpg" class="img-fluid padding-05 margin-vertical-12" data-action="zoom">
+                            <p class="padding-05 margin-vertical-12" style="font-size: 14px;">
+                                - Weight: 4 kg<br/>
+                                - Size: 150x150 mm
+                            </p>
+                            <a href="#" class="btn btn-order d-flex ml-md-2" data-toggle="modal" data-target="#exampleModalCenter"><div style="margin-top: 4px" class="mr-2 buy-button-square"></div>I want it</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal transition">
+            <div class="center-container" style="position: absolute; height: 100%; width: 100%; left: 0; right: 0;">
+                <img class="img-fluid" id="img01">
+                <span class="close">&times;</span>
+            </div>
+        </div>
+
+        <div class="footer center-vertical-container transition">
+            <!--<a href="#" id="bottomOrderExit" class="custom-link"  data-toggle="modal" data-target="#exampleModalCenter2">замовити дзвінок</a>
+        	<span class="custom-link">-</span>-->
+        	<a class="custom-link">+38 (096) 65 32 586</a>
+        	<span class="custom-link">-</span>
+        	<a class="custom-link">info@rutetskiy.com</a>
+        	<span class="custom-link">-</span>
+			<a class="custom-link">Ternopil, Ukraine</a>
+        	<span class="custom-link">-</span>
+        	<a href="https://www.facebook.com/RutetskiyDesigns/?ti=as" target="_blank" class="custom-link">facebook</a>
+        	<span class="custom-link">-</span>
+        	<a href="https://www.instagram.com/rutetskiy/" target="_blank" class="custom-link">instagram</a>
+
+        	<div id="bottomContactsExit" class="closeContacts">
+        		<div class="line"></div>
+        		<div class="line"></div>
+        	</div>
+        </div>
+
+        <div class="modal fade modal-custom" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 0">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title" id="exampleModalLongTitle">ENTER YOYR DETAILS</h5>
+                    </div>
+                    <div class="modal-body" style="text-align: center !important">
+                        <p>our manager will contact you shortly</p>
+                        <form action="post2.php" method="post">
+                            <div class="form-group">
+                                <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Name">
+                                <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_sname" placeholder="Surname">
+                                <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Phone number">
+                                <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_email" placeholder="E-mail">
+                                <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="town" placeholder="City">
+                                <input required type="phone" class="form-control mb-1" id="exampleInputPassword1" name="number" placeholder="Adress">
+                                <input type="text" class="form-control" id="exampleInputPassword1" name="feedback" placeholder="Your comment">
+                                <input type="text" style="display:none" value="lotus" name="pname">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-order">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-custom" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 0">
+              <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="exampleModalLongTitle">ЗАЛИШТЕ СВОЇ КОНТАКТИ</h5>
+              </div>
+              <div class="modal-body" style="text-align: center !important">
+                <p>наш менеджер невдовзі зв'яжеться з вами</p>
+                <form action="post.php" method="post">
+                  <div class="form-group">
+                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_name" placeholder="Ім'я">
+                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="feedback" placeholder="Ваш коментар">
+                  </div>
+                    <div class="modal-footer">
+                    <button type="submit" class="btn btn-order" style="width: 100%">Відправити</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/zoom.css" rel="stylesheet">
+        <script src="js/zoom.js"></script>
+        <script src="js/transition.js"></script>
+        <script src="js/trns.js"></script>
+
+        <script>
+            $("#footerClick").click(function () {
+                $('.transition').toggleClass('footer-transition');
+
+                var temp = $('.closeDetails').css("display");
+
+                if ($(window).width() < 768) {
+                    document.getElementById("toggle").click();
+                } else {
+                    if (temp == "none") {
+                        $('.closeDetails').css("display", "block");                     
+                    } else {
+                        $('.closeDetails').css('display', 'none');
+                    }
+                }
+            });
+
+            $("#bottomContactsExit").click(function () {
+                $('.transition').toggleClass('footer-transition');   
+
+                if ($(window).width() >= 768) {
+                    var temp = $('.closeDetails').css("display");  
+
+                    if (temp == "none") {
+                        $('.closeDetails').css("display", "block");                     
+                    } else {
+                        $('.closeDetails').css('display', 'none');
+                    } 
+                }               
+            });
+
+            $('.closeDetails').click(function () {
+                document.getElementById("footerClick").click();
+            });
+
+            function toggleFunction(x) {
+                x.classList.toggle("change");
+                $("#menu").toggleClass('menu-transition');
+            }
+
+            if ($(window).width() < 767) {
+                $("#logo").attr("src","img/logo32x32.png");
+            } else {
+                $("#logo").attr("src","img/logo128.png");
+            }
+
+            $(window).resize(function() {
+                if ($(window).width() < 767) {
+                    $("#logo").attr("src","img/logo32x32.png");
+                } else {
+                    $("#logo").attr("src","img/logo128.png");
+                }
+            });
+
+            function goHome() {
+                location.href = "index.html";
+            }
+
+            function zoomImage(x) {
+                var modal = document.getElementById('myModal');
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = x;
+                var modalImg = document.getElementById("img01");            
+                modal.style.zIndex = "1";
+                modalImg.src = img.src;
+
+                $("#myModal").fadeTo(300, 1.0);
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    $("#myModal").fadeTo(300, 0.0);
+
+                    setTimeout(back, 1000);
+                }
+
+                function back(){
+                    modal.style.zIndex = "-1";
+                }
+            }
+        </script>
+    </body>
+</html>
