@@ -13,11 +13,11 @@ $time=date("H:i"); // часы:минуты:секунды
  
 $name=$_POST['user_name'];
 $phone=$_POST['user_phone']; 
-$email=$_POST['user_email']; 
+/*$email=$_POST['user_email']; 
 $town=$_POST['town']; 
 $number=$_POST['number']; 
-$feedback=$_POST['feedback']; 
-$pname=$_POST['pname']; 
+$feedback=$_POST['feedback'];*/
+$pname=$_POST['pname'];
 
 
 // Проверяем валидность e-mail 
@@ -26,16 +26,12 @@ $pname=$_POST['pname'];
 
 $msg=" 
 Ім'я: $name
-E-mail: $email
-Телефон: $phone 
-Місто: $town 
-Номер складу Нової пошти: $number
-Коментар: $feedback
+Телефон: $phone
 Назва картини: $pname
 "; 
 
  // Отправляем письмо админу  
-mail("$adminemail", "$date $time Повідомлення від $name", "$msg");  
+mail("$adminemail", "$date $time Повідомлення від $name, надіслане з англійської версії сайту", "$msg");  
  
 // Выводим сообщение пользователю 
  
