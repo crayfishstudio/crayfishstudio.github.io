@@ -254,16 +254,29 @@ function isScrolledIntoView(elem) {
 $(document).ready(function(){
     setBookingIcon();
 
-    if ($(window).width() > 798) {
-        $(".input-location").click(function() {
-            $(this).parent().removeClass("add-drop");
-        });
-    }   
+    $(".input-location").click(function() {
+        $(this).parent().removeClass("add-drop");
+    });
 
-    $(".input-pattern").hover(function() {
-        $(this).find(".input-dropdown").addClass("add-drop");
-    }, function() {
-        $(this).find(".input-dropdown").removeClass("add-drop");
+    if ($(window).width() < 798) {
+        $(".input-pattern").click(function() {
+            $(this).find(".input-dropdown").addClass("add-drop");
+        }, function() {
+            $(this).find(".input-dropdown").removeClass("add-drop");
+        });
+    } else {
+        $(".input-pattern").hover(function() {
+            $(this).find(".input-dropdown").addClass("add-drop");
+        }, function() {
+            $(this).find(".input-dropdown").removeClass("add-drop");
+        });
+    }
+
+    $('.raty').raty({
+        starOff: 'icon-star-empty',
+        starOn: 'icon-star-full',
+        starType: 'i',
+        hints: ['', '', '', '', '']
     });
 });
 
