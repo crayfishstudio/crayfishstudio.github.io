@@ -266,12 +266,14 @@ $(document).ready(function(){
         $(this).find(".input-dropdown").removeClass("add-drop");
     });
 
-    $('.raty').raty({
-        starOff: 'icon-star-empty',
-        starOn: 'icon-star-full',
-        starType: 'i',
-        hints: ['', '', '', '', '']
-    });
+    if ($('.raty').length) {
+        $('.raty').raty({
+            starOff: 'icon-star-empty',
+            starOn: 'icon-star-full',
+            starType: 'i',
+            hints: ['', '', '', '', '']
+        });
+    }
 });
 
 $('#datepicker').datepicker({
@@ -294,12 +296,14 @@ $('#datepicker').datepicker({
 });
 $('#datepicker').data('datepicker');
 
-if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
-    $('#datepicker').datepicker().data('datepicker').update({
-        position: "top left"
-    });
+if (document.getElementById('datepicker')) {
+    if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+        $('#datepicker').datepicker().data('datepicker').update({
+            position: "top left"
+        });
 
-    $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+        $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+    }
 }
 
 $(".input-dropdown").each(function() {
@@ -329,21 +333,23 @@ $(window).scroll(function() {
         }
     });
 
-    $('#datepicker').datepicker().data('datepicker').update({
-        position: "bottom left"
-    });            
-
-    if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
-        $('.datepickers-container').css("top", 0);
-
+    if (document.getElementById('datepicker')) {
         $('#datepicker').datepicker().data('datepicker').update({
-            position: "top left"
+            position: "bottom left"
         });            
 
-        $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
-    } else {
-        $('.datepickers-container').css("top", 0);
-    }
+        if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+            $('.datepickers-container').css("top", 0);
+
+            $('#datepicker').datepicker().data('datepicker').update({
+                position: "top left"
+            });            
+
+            $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+        } else {
+            $('.datepickers-container').css("top", 0);
+        }
+    }   
 
     if (document.getElementById('giant-number')) {
         if (isScrolledIntoView("#giant-number")) {
