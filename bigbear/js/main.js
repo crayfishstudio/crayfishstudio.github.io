@@ -258,19 +258,13 @@ $(document).ready(function(){
         $(this).parent().removeClass("add-drop");
     });
 
-    if ($(window).width() < 798) {
-        $(".input-pattern").click(function() {
-            $(this).find(".input-dropdown").addClass("add-drop");
-        }, function() {
-            $(this).find(".input-dropdown").removeClass("add-drop");
-        });
-    } else {
-        $(".input-pattern").hover(function() {
-            $(this).find(".input-dropdown").addClass("add-drop");
-        }, function() {
-            $(this).find(".input-dropdown").removeClass("add-drop");
-        });
-    }
+    $(".input-pattern").mouseover(function() {
+        $(this).find(".input-dropdown").addClass("add-drop");
+    });
+
+    $(".input-pattern").mouseout(function() {
+        $(this).find(".input-dropdown").removeClass("add-drop");
+    });
 
     $('.raty').raty({
         starOff: 'icon-star-empty',
