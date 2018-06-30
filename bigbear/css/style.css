@@ -55,14 +55,6 @@ body, footer {
     .feedback-button {
         margin-left: calc(50% - 25vw + 75px/2);
     }
-
-    .width-not-full {
-        width: calc(50vw - 75px);
-    }
-
-    .margin-left-166px {
-        margin-left: 166px !important;
-    }
     
     .fullscreen-img h1 {
         font-size: 60px;
@@ -96,10 +88,6 @@ body, footer {
 
     .margin-left-15 {
         margin-left: -11%;
-    }
-
-    .huge-404 {
-        font-size: 150px !important;
     }
 }
 
@@ -267,14 +255,6 @@ body, footer {
     .main-dots-2 {
         bottom: 54px !important;
     }
-
-    .huge-404 {
-        font-size: 150px !important;
-    }
-
-    #selector-bar-id h2 {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -354,14 +334,6 @@ body, footer {
 
     .apart-small-discount {
         top: 65px !important;
-    }
-
-    .fullscreen-img p {
-        font-size: 20px !important;
-    }
-
-    .huge-404 {
-        font-size: 100px !important;
     }
 }
 
@@ -447,12 +419,6 @@ body, footer {
     letter-spacing: 5px;
 }
 
-.fullscreen-img p {
-    color: white;
-    text-shadow: 0px 0px 40px #000000;
-    font-size: 30px;
-}
-
 .slider-arrows {
     position: absolute;
     height: 100%;
@@ -475,12 +441,6 @@ body, footer {
     position: absolute;
     width: 100%;
     min-height: 80px;
-}
-
-#selector-bar-id h2 {
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 500;
 }
 
 .overflow-hidden {
@@ -814,11 +774,6 @@ body, footer {
 .slider-class {
     height: 100%;
     width: 100%;
-}
-
-.class-full-404 {
-    height: 100%;
-    width: 100%;   
 }
 
 .main-dots {
@@ -1182,19 +1137,6 @@ body, footer {
     text-decoration: none;
     color: #2e2e2e;
 } 
-
-.feedback-button-a {
-    margin-left: 20px;
-    border-bottom: 3px solid #ff8c00;
-    font-size: 16px;
-    float: right;
-    color: #707070;
-}
-
-.feedback-button-a:hover {
-    text-decoration: none;
-    color: #2e2e2e;  
-}
 
 .rest-slider {
     width: 100%;
@@ -2060,10 +2002,6 @@ p.discount {
     bottom: 1vh;
 }
 
-.bottom-0-vh {
-    bottom: 0vh;
-}
-
 .cursor-pointer {
     cursor: pointer;
 }
@@ -2326,12 +2264,4 @@ p.apart-old-total-price .custom-line-throught::after {
 
 .display-none {
     display: none;
-}
-
-.font-12 {
-    font-size: 12px;
-}
-
-.margin-top-0 {
-    margin-top: 0px !important;
 }
