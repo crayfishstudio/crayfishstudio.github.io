@@ -42,6 +42,7 @@ $('.feedback-slider').slick({
 
 if ($(window).width() > 1199) {
     $('.slider-class-2').slick({
+        slidesToShow: 3,
         infinite: true,
         prevArrow: '#p-arrow',
         nextArrow: '#n-arrow',
@@ -64,6 +65,7 @@ if ($(window).width() > 1199) {
     });
 } else {
     $('.slider-class-2').slick({
+        slidesToShow: 3,
         infinite: true,
         prevArrow: '#p-arrow',
         nextArrow: '#n-arrow',
