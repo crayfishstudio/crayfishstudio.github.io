@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-@font-face {
-    font-family: 'Funcity';
-    src: url('../fonts/funcitylevel2stencil-webfont.woff2') format('woff2'),
-         url('../fonts/funcitylevel2stencil-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html {
     font-family: 'Roboto', sans-serif !important;
 }
@@ -53,7 +45,7 @@ html {
 
 
 .btn-text {
-    color: #fff !important;
+    color: aliceblue;
     width:100%;
 }
 
@@ -86,41 +78,7 @@ html {
 }
 
 .green-hower:hover {
-    color: #478884 !important;
+    color: #478884;
     background-color: #fff;
     border: 1px solid #478884;
-}
-
-.logo-font {
-    font-family: 'Roboto Thin';
-    font-size: 2rem;
-}
-
-.main-slide {
-    width: 100%;
-    height: 60vh !important;
-    background-size: cover;
-}
-
-.bottom-text {
-    position: absolute;
-    background-color: rgba(256, 256, 256, 0.5);
-    width: 100%;
-    bottom: 0px;
-}
-
-
-
-.turqoise-bottom {
-    position: absolute;
-    background-color: rgba(256, 256, 256, 0.3);
-    bottom: 0px;
-    padding: 10px;
-    width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-    .lg-invisible {
-        display: none;
-    }
 }
