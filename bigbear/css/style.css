@@ -55,6 +55,14 @@ body, footer {
     .feedback-button {
         margin-left: calc(50% - 25vw + 75px/2);
     }
+
+    .width-not-full {
+        width: calc(50vw - 75px);
+    }
+
+    .margin-left-166px {
+        margin-left: 166px !important;
+    }
     
     .fullscreen-img h1 {
         font-size: 60px;
@@ -88,6 +96,10 @@ body, footer {
 
     .margin-left-15 {
         margin-left: -11%;
+    }
+
+    .huge-404 {
+        font-size: 150px !important;
     }
 }
 
@@ -255,6 +267,14 @@ body, footer {
     .main-dots-2 {
         bottom: 54px !important;
     }
+
+    .huge-404 {
+        font-size: 150px !important;
+    }
+
+    #selector-bar-id h2 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -335,9 +355,6 @@ body, footer {
     .apart-small-discount {
         top: 65px !important;
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
     .fullscreen-img p {
         font-size: 20px !important;
@@ -345,13 +362,11 @@ body, footer {
 
     .huge-404 {
         font-size: 100px !important;
-=======
+    }
     
     .max-100 {
         height: 100vw;
->>>>>>> 9d6b0223345f4f56287d85e255da9855ec115d51
     }
->>>>>>> parent of 37c13c9... Revert "Merge branch 'master' of https://github.com/crayfishstudio/crayfishstudio.github.io"
 }
 
 #custom-navbar li {
@@ -427,7 +442,7 @@ body, footer {
 
 .fullscreen-img h1,
 .halfscreen-img h1,
-.fourthscreen-img{
+.fourthscreen-img {
     color: white;
     font-weight: 900;
     text-align: center;
@@ -435,6 +450,12 @@ body, footer {
     padding-right: 4vw;
     text-shadow: 0px 0px 40px #000000;
     letter-spacing: 5px;
+}
+
+.fullscreen-img p {
+    color: white;
+    text-shadow: 0px 0px 40px #000000;
+    font-size: 30px;
 }
 
 .slider-arrows {
@@ -459,6 +480,12 @@ body, footer {
     position: absolute;
     width: 100%;
     min-height: 80px;
+}
+
+#selector-bar-id h2 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .overflow-hidden {
@@ -792,6 +819,11 @@ body, footer {
 .slider-class {
     height: 100%;
     width: 100%;
+}
+
+.class-full-404 {
+    height: 100%;
+    width: 100%;   
 }
 
 .main-dots {
@@ -1162,6 +1194,19 @@ body, footer {
     text-decoration: none;
     color: #2e2e2e;
 } 
+
+.feedback-button-a {
+    margin-left: 20px;
+    border-bottom: 3px solid #ff8c00;
+    font-size: 16px;
+    float: right;
+    color: #707070;
+}
+
+.feedback-button-a:hover {
+    text-decoration: none;
+    color: #2e2e2e;  
+}
 
 .rest-slider {
     width: 100%;
@@ -2017,6 +2062,10 @@ p.discount {
     left: 6px;
 }
 
+.bottom-0-vh {
+    bottom: 0vh;
+}
+
 .marginy-4-px {
     margin: 4px 0px;
 }
@@ -2291,11 +2340,7 @@ p.apart-old-total-price .custom-line-throught::after {
 
 .display-none {
     display: none;
-<<<<<<< HEAD
 }
-=======
-}
-<<<<<<< HEAD
 
 .font-12 {
     font-size: 12px;
@@ -2303,7 +2348,8 @@ p.apart-old-total-price .custom-line-throught::after {
 
 .margin-top-0 {
     margin-top: 0px !important;
-=======
+}
+
 .fourthscreen-img {
     height: 40vh;
     width: 100%;
@@ -2321,8 +2367,6 @@ p.apart-old-total-price .custom-line-throught::after {
     height: 180px !important;
 }
 
-
-
 .max-100 {
     float: left;
 }
@@ -2330,6 +2374,12 @@ p.apart-old-total-price .custom-line-throught::after {
 .contacts-text {
     color: #4D3431;
     font-weight: 300;
->>>>>>> 9d6b0223345f4f56287d85e255da9855ec115d51
 }
->>>>>>> parent of 37c13c9... Revert "Merge branch 'master' of https://github.com/crayfishstudio/crayfishstudio.github.io"
+
+.font-12 {
+    font-size: 12px;
+}
+
+.margin-top-0 {
+    margin-top: 0px !important;
+}
