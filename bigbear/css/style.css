@@ -204,7 +204,7 @@ body, footer {
         display: none;
     }
     
-    .small-card-image {
+    .small-card-image, .service-image {
         width: 100%;
         height: calc(100vw/1.7) !important;
     }
@@ -1778,13 +1778,13 @@ body, footer {
     font-size: 20px;
 }
 
-.apart-small-card {
+.apart-small-card, .service-card {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     cursor: pointer;
 }
 
-.small-card-image {
+.small-card-image, .service-image {
     width: 100%;
     height: calc(100vw/7);
     max-height: 300px;
@@ -2280,7 +2280,7 @@ p.apart-old-total-price .custom-line-throught::after {
     display: none;
 }
 .fourthscreen-img {
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     text-align: center;
     background-size: cover;
@@ -2305,4 +2305,35 @@ p.apart-old-total-price .custom-line-throught::after {
 .contacts-text {
     color: #4D3431;
     font-weight: 300;
+}
+
+
+
+.small-service-header {
+    text-transform: uppercase;
+}
+
+.no-underline:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.no-underline {
+    color: #2e2e2e;
+}
+
+.more-button {
+    color: #707070;
+    border-bottom: 3px solid #ff8c00;
+    padding-bottom: 5px;
+}
+
+.more-button:hover {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.all-features {
+    color: #4D3431;
+    font-weight: 400;
 }
