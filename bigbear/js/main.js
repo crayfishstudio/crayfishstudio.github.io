@@ -269,11 +269,14 @@ $(document).ready(function(){
     });
 
     if ($('.raty').length) {
-        $('.raty').raty({
-            starOff: 'icon-star-empty',
-            starOn: 'icon-star-full',
-            starType: 'i',
-            hints: ['', '', '', '', '']
+        $('.raty').each(function() {
+            $(this).raty({
+                starOff: 'icon-star-empty',
+                starOn: 'icon-star-full',
+                starType: 'i',
+                hints: ['', '', '', '', ''],
+                scoreName: $(this).attr("data-scorename")
+            });
         });
     }
 });
