@@ -256,6 +256,17 @@ function isScrolledIntoView(elem) {
 $(document).ready(function(){
     setBookingIcon();
 
+    var max_height = 0;
+    $('.rest-details').each(function() {
+        if ($(this).height() > max_height) {
+            max_height = $(this).height();
+        }
+    });
+
+    $('.rest-details').each(function() {
+        $(this).height(max_height);
+    });    
+
     $(".input-location").click(function() {
         $(this).parent().removeClass("add-drop");
     });
@@ -374,4 +385,15 @@ $(window).resize(function() {
 
     var inputwidth = $('#div-datepicker').width() + "px";
     $('.datepicker').css("width", inputwidth);
+
+    var max_height = 0;
+    $('.rest-details').each(function() {
+        if ($(this).height() > max_height) {
+            max_height = $(this).height();
+        }
+    });
+
+    $('.rest-details').each(function() {
+        $(this).height(max_height);
+    });    
 });

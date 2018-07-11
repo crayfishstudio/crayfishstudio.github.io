@@ -195,7 +195,8 @@ body, footer {
     }
 
     .rest-dots {
-        right: calc(50% - 60px) !important;
+        width: 80vw;
+        right: calc(10vw - 8px) !important;
         bottom: 23px !important;
     }
     
@@ -828,7 +829,7 @@ body, footer {
 
 .main-dots {
     position: absolute;
-    left: calc(50% - 55px);
+    width: 100%;
     bottom: 3vh;
 }
 
@@ -840,6 +841,10 @@ body, footer {
     margin: 0 0 0 8px;
     display: inline-block;
     list-style: none;
+}
+
+.main-dots .custom-dots li:nth-of-type(1) {
+    margin: 0px !important;
 }
 
 .main-dots .custom-dots .dot {
@@ -863,8 +868,8 @@ body, footer {
 
 .main-dots-2 {
     position: absolute;
-    left: calc(50% - 45px);
     bottom: 25px;
+    width: 100%;
 }
 
 .main-dots-2 .custom-dots {
@@ -875,6 +880,10 @@ body, footer {
     margin: 0 0 0 8px;
     display: inline-block;
     list-style: none;
+}
+
+.main-dots-2 .custom-dots li:nth-of-type(1) {
+    margin: 0px !important;
 }
 
 .main-dots-2 .custom-dots .dot {
@@ -1242,12 +1251,11 @@ body, footer {
 
 .rest-details p {
     text-align: left; 
-    margin-bottom: 0;
 }
 
 .rest-dots {
     position: absolute;
-    right: 26vw;
+    right: calc(25vw + 16px);
     bottom: 22px !important;
 }
 
@@ -1259,6 +1267,10 @@ body, footer {
     margin: 0 0 0 8px;
     display: inline-block;
     list-style: none;
+}
+
+.rest-dots .custom-dots li:nth-of-type(1) {
+    margin: 0px !important;
 }
 
 .rest-dots .custom-dots .dot {
@@ -1805,7 +1817,8 @@ body, footer {
 
 .apart-left {
     background-color: #d23a00;
-    margin: 16px 2px 0px 2px; 
+    margin-left: 2px; 
+    margin-right: 2px; 
     width: calc(100% - 4px);
 }
 
@@ -1814,6 +1827,7 @@ body, footer {
    text-align: center; 
    color: white; 
    font-size: 12px; 
+   margin: 0;
 }
 
 .apart-buy p {
@@ -1865,7 +1879,7 @@ body, footer {
     position: absolute;
     top: -10px;
     left: 40px;
-    width: 120px;
+    width: 140px;
     height: 70px;
     background-color: #ff8c00;
 }
@@ -1908,7 +1922,7 @@ p.discount {
     height: 70px;
     width: 0px;
     top: -10px;
-    left: 160px;
+    left: 180px;
     background-color: #ff8c00;
     overflow: hidden;
     -webkit-transition: width .4s ease-in-out;
