@@ -4,7 +4,6 @@ $(function () {
 
 //Sliders start
 $('.rest-slider').slick({
-    autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     fade: true,
@@ -12,6 +11,7 @@ $('.rest-slider').slick({
     nextArrow: '.right-click',
     speed: 2000,
     dots: true,
+    adaptiveHeight: true,
     appendDots: $('.rest-dots'),
     dotsClass: 'custom-dots',
     customPaging: function (slider, i) {
@@ -256,17 +256,6 @@ function isScrolledIntoView(elem) {
 $(document).ready(function(){
     setBookingIcon();
 
-    var max_height = 0;
-    $('.rest-details').each(function() {
-        if ($(this).height() > max_height) {
-            max_height = $(this).height();
-        }
-    });
-
-    $('.rest-details').each(function() {
-        $(this).height(max_height);
-    });    
-
     $(".input-location").click(function() {
         $(this).parent().removeClass("add-drop");
     });
@@ -384,16 +373,5 @@ $(window).resize(function() {
     $('.overflow-hidden').css("height", selectorbarheight);
 
     var inputwidth = $('#div-datepicker').width() + "px";
-    $('.datepicker').css("width", inputwidth);
-
-    var max_height = 0;
-    $('.rest-details').each(function() {
-        if ($(this).height() > max_height) {
-            max_height = $(this).height();
-        }
-    });
-
-    $('.rest-details').each(function() {
-        $(this).height(max_height);
-    });    
+    $('.datepicker').css("width", inputwidth);  
 });

@@ -196,7 +196,7 @@ body, footer {
 
     .rest-dots {
         width: 80vw;
-        right: calc(10vw - 8px) !important;
+        right: 10vw !important;
         bottom: 23px !important;
     }
     
@@ -1255,7 +1255,7 @@ body, footer {
 
 .rest-dots {
     position: absolute;
-    right: calc(25vw + 16px);
+    right: 26vw;
     bottom: 22px !important;
 }
 
@@ -1879,15 +1879,15 @@ body, footer {
     position: absolute;
     top: -10px;
     left: 40px;
-    width: 140px;
+    width: 120px;
     height: 70px;
     background-color: #ff8c00;
 }
 
 .apart-small-card-buy p {
     color: white;
-    margin: 0px 20px;
-    font-size: 24px;
+    margin: 0px 15px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -1909,7 +1909,7 @@ p.discount {
 
 .apart-small-card-buy-hotel-p strong {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none !important;
 }
 
@@ -1922,7 +1922,7 @@ p.discount {
     height: 70px;
     width: 0px;
     top: -10px;
-    left: 180px;
+    left: 160px;
     background-color: #ff8c00;
     overflow: hidden;
     -webkit-transition: width .4s ease-in-out;
