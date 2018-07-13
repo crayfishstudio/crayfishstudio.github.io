@@ -4,7 +4,6 @@ $(function () {
 
 //Sliders start
 $('.rest-slider').slick({
-    autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     fade: true,
