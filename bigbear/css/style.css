@@ -2428,13 +2428,21 @@ p.apart-old-total-price .custom-line-throught::after {
     margin-top: 0px !important;
 }
 
-
-
-
-
 .description-underline {
     height: 1px;
     width: 200px;
     margin-left: calc(50% - 100px);
     background-color: #ff8c00;
+}
+
+.hided {
+    top: 15px !important;
+}
+
+#breadcrumb {
+    transition: top 1s;
+    position: fixed;
+    top: 90px;
+    left: 15px;
+    z-index: 2;
 }
