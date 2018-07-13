@@ -1815,6 +1815,10 @@ body, footer {
     height: 100%;
 }
 
+.apart-price-additional-text {
+    font-size: 12px;
+}
+
 .apart-left {
     background-color: #d23a00;
     margin-left: 2px; 
