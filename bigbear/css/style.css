@@ -2429,3 +2429,12 @@ p.apart-old-total-price .custom-line-throught::after {
 }
 
 
+
+
+
+.description-underline {
+    height: 1px;
+    width: 200px;
+    margin-left: calc(50% - 100px);
+    background-color: #ff8c00;
+}
