@@ -196,7 +196,7 @@ body, footer {
 
     .rest-dots {
         width: 80vw;
-        right: calc(10vw - 8px) !important;
+        right: 10vw !important;
         bottom: 23px !important;
     }
     
@@ -1255,7 +1255,7 @@ body, footer {
 
 .rest-dots {
     position: absolute;
-    right: calc(25vw + 16px);
+    right: 26vw;
     bottom: 22px !important;
 }
 
