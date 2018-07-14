@@ -2394,7 +2394,8 @@ p.apart-old-total-price .custom-line-throught::after {
 }
 
 .contacts-text {
-    color: #4D3431;
+    color: #4D3431 !important;
+    -webkit-color: #ff8c00 !important;
     font-weight: 300;
 }
 
