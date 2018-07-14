@@ -381,11 +381,15 @@ var lastScrollTop = 0;
 window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
    var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
    if (st > lastScrollTop){
-      console.log("scrolldown");
-       document.getElementById("breadcrumb").classList.add("hided");
+        if (document.getElementById("breadcrumb")) {
+            console.log("scrolldown");
+            document.getElementById("breadcrumb").classList.add("hided");
+        }
    } else {
-       console.log("scrollup");
-      document.getElementById("breadcrumb").classList.remove("hided");
+        if (document.getElementById("breadcrumb")) {
+            console.log("scrollup");
+            document.getElementById("breadcrumb").classList.remove("hided");
+        }
    }
    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }, false);
