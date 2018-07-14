@@ -368,6 +368,10 @@ body, footer {
     .max-100 {
         height: 100vw;
     }
+
+    .font-10 {
+        font-size: 10px !important;
+    }
 }
 
 #custom-navbar li {
@@ -1798,7 +1802,7 @@ body, footer {
 }
 
 .apart-price span {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .apart-price-discount {
@@ -1813,6 +1817,10 @@ body, footer {
     text-align: center; 
     margin: 0;
     height: 100%;
+}
+
+.apart-price-additional-text {
+    font-size: 12px;
 }
 
 .apart-left {
@@ -2445,4 +2453,9 @@ p.apart-old-total-price .custom-line-throught::after {
     top: 90px;
     left: 15px;
     z-index: 2;
+}
+
+.back-red {
+    background-color: #d23a00;
+    color: #fff !important;
 }
