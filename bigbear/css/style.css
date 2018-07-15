@@ -372,6 +372,14 @@ body, footer {
     .font-10 {
         font-size: 10px !important;
     }
+
+    .header-feedback-font {
+        font-size: 24px !important;
+    }
+
+    .bigbear-name-font {
+        font-size: 14px !important;
+    }
 }
 
 #custom-navbar li {
@@ -949,8 +957,12 @@ body, footer {
 
 .section-text-huge .fa-star {
     color: #ff8c00;
-    font-size: 22px;
-    padding: 0px 4px 0px 4px;
+    font-size: 15px;
+    margin: 0px 4px 0px 4px;
+}
+
+.section-text-huge .fa-star:nth-of-type(1) {
+    margin-left: 0px !important;
 }
 
 .section-text-small {
@@ -2354,6 +2366,7 @@ p.apart-old-total-price .custom-line-throught::after {
 .phone-discount-card {
     color: #4D3431 !important;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .apart-image-slider .slick-list, .apart-image-slider .slick-track, .apart-image-slider .slick-slide, .apart-image-slider .slick-slide div, .apart-image-slider .slick-slide div.apart-image {
