@@ -358,7 +358,7 @@ body, footer {
     }
 
     .fullscreen-img p {
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
 
     .huge-404 {
@@ -468,7 +468,7 @@ body, footer {
 .fullscreen-img p {
     color: white;
     text-shadow: 0px 0px 40px #000000;
-    font-size: 30px;
+    font-size: 23px;
 }
 
 .slider-arrows {
