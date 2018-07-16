@@ -255,6 +255,10 @@
                     modal.style.zIndex = "-1";
                 }
             }
+            
+            $('img').bind('contextmenu', function(e) {
+                return false;
+            });
         </script>
     </body>
 </html>

@@ -63,7 +63,7 @@
                             <img src="img/Ashanti/3.jpg"  class="img-fluid padding-05 margin-vertical-12"  data-action="zoom">
                             <img src="img/Ashanti/5.jpg" class="img-fluid padding-05 margin-vertical-12" data-action="zoom">
                             <p class="padding-05 margin-vertical-12" style="font-size: 14px;">
-                                - Weight: 4 kg<br/>
+                                - Weight: 15 kg<br/>
                                 - Size: 470x470х39 mm
                             </p>
                             <a href="#" class="btn btn-order d-flex ml-md-2" data-toggle="modal" data-target="#exampleModalCenter"><div style="margin-top: 4px" class="mr-2 buy-button-square"></div>I want it</a>
@@ -241,6 +241,10 @@
                     modal.style.zIndex = "-1";
                 }
             }
+            
+             $('img').bind('contextmenu', function(e) {
+                return false;
+            });
         </script>
     </body>
 </html>
