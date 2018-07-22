@@ -302,13 +302,23 @@ $('#datepicker').datepicker({
 $('#datepicker').data('datepicker');
 
 if (document.getElementById('datepicker')) {
-    if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
-        $('#datepicker').datepicker().data('datepicker').update({
-            position: "top left"
-        });
+    if ($('.input-pattern').offset().top + $('.input-pattern').height() + $('.datepicker').height() > $(window).innerHeight() + $(window).scrollTop()) {
+        $('.datepickers-container').css("top", 0);
 
-        $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+        $('.datepickers-container').css("top", $('.datepickers-container').offset().top - $('.datepicker').height() - $('.input-pattern').height());
     }
+}
+
+if (document.getElementById('datepicker')) {
+    $('.datepicker').click(function() {
+        if ($('.input-pattern').offset().top + $('.input-pattern').height() + $('.datepicker').height() > $(window).innerHeight() + $(window).scrollTop()) {
+            $('.datepickers-container').css("top", 0);
+
+            $('.datepickers-container').css("top", $('.datepickers-container').offset().top - $('.datepicker').height() - $('.input-pattern').height());
+        } else {
+            $('.datepickers-container').css("top", 0);
+        }
+    });
 }
 
 $(".input-dropdown").each(function() {
@@ -339,18 +349,10 @@ $(window).scroll(function() {
     });
 
     if (document.getElementById('datepicker')) {
-        $('#datepicker').datepicker().data('datepicker').update({
-            position: "bottom left"
-        });            
-
-        if ($('.input-pattern').offset().top + $('.input-pattern').height() + 268 > $(window).innerHeight() + $(window).scrollTop()) {
+        if ($('.input-pattern').offset().top + $('.input-pattern').height() + $('.datepicker').height() > $(window).innerHeight() + $(window).scrollTop()) {
             $('.datepickers-container').css("top", 0);
 
-            $('#datepicker').datepicker().data('datepicker').update({
-                position: "top left"
-            });            
-
-            $('.datepickers-container').css("top", $('.datepickers-container').offset().top + 24);
+            $('.datepickers-container').css("top", $('.datepickers-container').offset().top - $('.datepicker').height() - $('.input-pattern').height());
         } else {
             $('.datepickers-container').css("top", 0);
         }
