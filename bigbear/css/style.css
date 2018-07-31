@@ -276,14 +276,19 @@ body, footer {
     #selector-bar-id h2 {
         display: none;
     }
+
+    #p-arrow {display: none !important;}
+    #n-arrow {display: none !important;}
+
+    .ipad-text-center {text-align: center;}
+
+    .apart-image-slider {
+        height: calc(100vw/1.8) !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .apart-image {
-        height: calc(100vw/1.8) !important;
-    }
-
-    .apart-image-slider {
         height: calc(100vw/1.8) !important;
     }
     
@@ -341,8 +346,6 @@ body, footer {
         padding-top: 20px !important;
     }
 
-    #p-arrow {display: none !important;}
-    #n-arrow {display: none !important;}
     .main-dots {bottom: 25vh !important;}
 
     .font-19 {
