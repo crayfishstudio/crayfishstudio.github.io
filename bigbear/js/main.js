@@ -286,6 +286,7 @@ $('#datepicker').datepicker({
     minDate: new Date(),
     dateFormat: "dd.mm",
     position: "bottom left",
+    ignoreReadonly: true,
     autoClose: true,
     onSelect: function() {
         var temp = $("#datepicker").val();
