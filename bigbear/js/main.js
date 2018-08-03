@@ -148,7 +148,7 @@ $(document).ready(function() {
     });
 
 
-     var selectorbarheight = $('#selector-bar-id').height() + "px";
+    var selectorbarheight = $('#selector-bar-id').height() + "px";
     $('.overflow-hidden').css("height", selectorbarheight);
 
     var inputwidth = $('#div-datepicker').width() + "px";

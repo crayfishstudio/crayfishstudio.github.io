@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/fontawesome-all.js"></script>
 
@@ -427,18 +428,47 @@
         <form>
             <div class="row justify-content-center no-gutters py-md-4 py-1">
                 <div class="col-xl-2 col-md-3 my-1">
-                    <div class="input-pattern">
-                        <input type="text" placeholder="Ім'я"/>
+                    <div id="div-datepicker" class="input-pattern">
+                        <i class="fas fa-calendar-alt input-icon"></i>
+                        <input type='text' data-language="ua" data-multiple-dates-separator=" - " class="datepicker-here cursor-pointer" id="datepicker" placeholder="Дата" readonly="readonly"/>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-3 my-1">
                     <div class="input-pattern">
-                        <input type="tel" placeholder="Номер телефону"/>
+                        <p id="guests" class="input-text">Кількість гостей</p>
+                        <i class="fas fa-male input-icon"></i>
+                        <div class="input-dropdown">
+                            <div class="input-members d-flex justify-content-between">
+                                <p>Дорослі</p>
+                                <span>
+                                    <button id="adults_minus" type="button">
+                                        <i class="fas fa-minus fa-lg add-member-btn"></i>
+                                    </button>
+                                    <input id="adults" type="number" name="adults" min="0" value="0" readonly="readonly" />
+                                    <button id="adults_plus" type="button">
+                                        <i class="fas fa-plus fa-lg add-member-btn"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="input-members d-flex justify-content-between">
+                                <p>Діти<br/><sup>5-12 років</sup></p>
+                                <span>
+                                    <button id="children_minus"type="button">
+                                        <i class="fas fa-minus fa-lg add-member-btn"></i>
+                                    </button>
+                                    <input id="children" type="number" name="children" min="0" value="0" readonly="readonly" />
+                                    <button id="children_plus" type="button">
+                                        <i class="fas fa-plus fa-lg add-member-btn"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <p class="children-up-to-5"><sub>діти до 5 років - безкоштовно</sub></p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-3 my-1">
                     <div class="input-pattern">
-                        <a class="btn btn-yellow get-in-touch-btn text-uppercase" data-toggle="modal" data-target="#exampleModal">ЗВ'ЯЗАТИСЬ З НАМИ</a>
+                        <button type="submit" class="submit-button text-uppercase">ПЕРЕВІРИТИ ЦІНИ</button>
                     </div>
                 </div>
             </div>
@@ -510,6 +540,9 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/datepicker.ua.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
