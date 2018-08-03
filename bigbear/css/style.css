@@ -2415,7 +2415,9 @@ p.apart-old-total-price .custom-line-throught::after {
     font-weight: 300;
 }
 
-
+.contacts-text a {
+    color: #4D3431 !important;
+}
 
 .small-service-header {
     text-transform: uppercase;
