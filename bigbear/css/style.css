@@ -654,6 +654,10 @@ body, footer {
         width: 100%;
     }
 
+    .datepicker-here {
+        caret-color: transparent !important;
+    }
+
     .datepicker {
         border-radius: 0px;
         margin-top: -12px;
@@ -2511,3 +2515,4 @@ p.apart-old-total-price .custom-line-throught::after {
     text-align: justify;
     text-justify: inter-word;
 }
+
