@@ -268,6 +268,19 @@ $(document).ready(function(){
         $(this).find(".input-dropdown").removeClass("add-drop");
     });
 
+    window.onclick = function(event) {
+        var dropdowns = document.getElementsByClassName("input-dropdown");
+        var i;
+
+        for(i = 0; i < dropdowns.length; i++) {
+            if (!dropdowns[i].contains(event.target)) {
+                if (!dropdowns[i].parentElement.contains(event.target)) {
+                    dropdowns[i].classList.remove("add-drop");
+                }
+            }
+        }
+    }
+
     if ($('.raty').length) {
         $('.raty').each(function() {
             $(this).raty({
