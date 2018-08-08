@@ -1,0 +1,35 @@
+body{
+    color: #181818;
+    height: 100%;
+}
+.navbar{
+    background-color: #ffffff;
+}
+#mainSection{
+    background-image: url(../img/main-girl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rounded-circle{
+    width: 207px;
+    height: 207px;
+    text-align: center;
+    vertical-align: middle;
+    display: table;
+}
+
+
+
+.greySection{
+    background-color: #EBEBEB;
+}
+.greySection p{
+    font-size: 1.375rem;
+    font-family: Roboto light;
+}
+
+.greySection h2{
+    font-size: 3rem;
+    font-family: Cansellarist;
+}
