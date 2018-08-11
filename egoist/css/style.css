@@ -1,9 +1,28 @@
 body{
     color: #181818;
     height: 100%;
+    background-image: url(../img/symphony.png);
 }
 .navbar{
     background-color: #ffffff;
+    border-bottom: 1px solid #D5B552;
+}
+
+li.nav-item{
+    border-bottom: solid 1px;
+    border-color: #ffffff;
+}
+li.nav-item:hover{
+    border-bottom: solid 1px;
+    border-color: #F1D883;
+}
+ a{
+    text-decoration: none;
+    color: #181818;
+}
+ a:hover{
+    color: #181818;
+    text-decoration: none;
 }
 #mainSection{
     background-image: url(../img/main-girl.png);
@@ -14,22 +33,136 @@ body{
 .rounded-circle{
     width: 207px;
     height: 207px;
-    text-align: center;
-    vertical-align: middle;
-    display: table;
 }
-
-
+.fa-viber:hover{
+    color: #8F5DB7;
+}
+.fa-whatsapp:hover{
+    color: #25D366;
+}
+#map1{
+    border: 1px solid #ffffff;
+    background-color: white;
+}
+#map2{
+    border: 1px solid #ffffff;
+    background-color: white;
+}
 
 .greySection{
-    background-color: #EBEBEB;
+    background-color: rgba(235, 235, 235, 0.65);
 }
-.greySection p{
-    font-size: 1.375rem;
+p{
+    font-size: 0.9rem;
     font-family: Roboto light;
 }
 
-.greySection h2{
-    font-size: 3rem;
+h2{
+    font-size: 2.4rem;
     font-family: Cansellarist;
+    color: #696969;
+    padding: 35px 0;
+}
+.divider{
+    padding: 20px 0;
+    max-width: 650px;
+}
+.mr-left {
+    margin-left: 150px;
+}
+.mr-right {
+    margin-right: 140px;
+}
+
+.fa-phone-square:hover {
+    color: #32cd32;
+}
+.card{
+    margin-bottom: 30px;
+}
+.card-text{
+    font-size: 0.9rem;
+}
+.card-body{
+    padding: 0rem 1.25rem;
+}
+.card-footer span{
+    font-size: 0.85rem;
+}
+
+.fa-dollar-sign {
+    margin-left: 25px;
+}
+.goldy{
+    color: #D5B552;
+}
+
+
+.card-header{
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(213, 181, 82, 1);
+}
+
+.card-footer{
+    padding: 0.75rem 1.25rem 0rem;
+    background-color: #ffffff;
+    border-top: 1px solid #D5B552;
+}
+
+.showMoreButton {
+    color: #696969;
+    margin: 20px 0px;
+    font-family: Open Sans Condesed;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+}
+.showMoreButton:hover{
+    border-bottom: 1px solid #D5B552;
+}
+
+.collapseGirls {
+    margin: 20px -15px;
+}
+
+.col-md-8 {
+    padding-bottom: 45px;
+}
+.btn:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(213,181,82,.25);
+}
+
+.addres {
+    border-bottom: 1px solid #D5B552;
+    ьф
+}
+
+.room {
+    margin: 15px 0px;
+}
+.footerClass{
+    padding: 12px;
+}
+footer span{
+    margin: 0 0 0.6rem;
+    font-size: 0.8rem;
+}
+.blestki-l{
+    border-left: 0;
+    padding-left: 0;
+    margin-left: 0;
+    background-image: url(../img/blestki-l.png);
+    background-repeat: repeat-y;
+}
+.blestki-r{
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+    background-image: url(../img/blestki-r.png);
+    background-repeat: repeat-y;
 }
