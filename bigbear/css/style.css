@@ -1363,6 +1363,61 @@ body, footer {
       -moz-osx-font-smoothing: grayscale;
     }
 
+    .icon-booking .path1:before {
+  content: "\e900";
+  color: rgb(255, 140, 0);
+}
+.icon-booking .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 140, 0);
+}
+.icon-booking .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(255, 140, 0);
+}
+.icon-booking .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 140, 0);
+}
+.icon-booking .path5:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(112, 112, 112);
+}
+.icon-booking .path6:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(112, 112, 112);
+}
+.icon-booking .path7:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(112, 112, 112);
+}
+.icon-booking .path8:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(112, 112, 112);
+}
+.icon-booking .path9:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(112, 112, 112);
+}
+.icon-booking .path10:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(112, 112, 112);
+}
+.icon-booking .path11:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(112, 112, 112);
+}
+
     .bb-breakfast:before {
       content: "\e900";
       color: #ff8c00;
