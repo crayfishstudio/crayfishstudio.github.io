@@ -14,6 +14,10 @@ li.nav-item{
     border-bottom: solid 1px;
     border-color: #ffffff;
 }
+li.nav-item.gborder{
+    border-bottom: solid 1px;
+    border-color: #d5b525;
+}
 li.nav-item:hover{
     border-bottom: solid 1px;
     border-color: #F1D883;
@@ -180,21 +184,27 @@ footer span{
 #map1{
     left:0;
     top:0;
-    height:90%;
+    height:80%;
     width:95%;
     position:absolute;
 }
 #map2{
     right:0;
     top:0;
-    height:90%;
+    height:80%;
     width:95%;
     position:absolute;
 }
-.muted {
+.tel {
     font-size: 2.4375rem;
 }
 
 .fai-cont {
     font-size: 2.875rem;
+}
+.card .img-fluid{
+    height: 100%;
+}
+.nav-link{
+    color: rgba(24,24,24,1)!important;
 }
