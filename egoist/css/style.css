@@ -220,3 +220,82 @@ footer span{
 .underlined {
     border-bottom: 1px solid #F1D883;
 }
+
+.fullsize-bg {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/main-girl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mt-25 {
+    margin-top: 25vh;
+}
+
+.backline {
+    position: absolute;
+    top: 20%;
+    height: 60%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+
+.round-sign {
+    z-index: 1000;
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 1px solid #f1d883;
+}
+
+
+
+#description-sign {
+    font-family: 'Roboto Light', sans-serif;
+    color: #696969;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.text-shadowed {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#adress-sign {
+    font-family: 'Roboto Regular', sans-serif;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#phones-sign {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto Light', sans-serif;
+    color: #fff;
+    margin-top: 15px;   
+}
+
+.btn-custom {
+    font-family: 'Roboto Light', sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff !important;
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px;
+    border: 1px solid #f1d883;
+    transition: border 0.4s, background-color 0.4s;
+}
+
+.btn-custom:hover {
+    border: 3px solid #f1d883;
+    background-color: rgba(0, 0, 0, 0.5);
+}
