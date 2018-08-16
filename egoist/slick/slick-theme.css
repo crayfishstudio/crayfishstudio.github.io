@@ -202,3 +202,10 @@
     opacity: .75;
     color: black;
 }
+
+.fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20vh;
+}
