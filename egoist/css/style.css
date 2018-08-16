@@ -43,7 +43,6 @@ a {
     background-image: url(../img/main-girl.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 .fa-viber:hover{
     color: #8F5DB7;
@@ -64,12 +63,12 @@ a {
     background-color: rgba(235, 235, 235, 0.65);
 }
 div p{
-    font-size: 1.375rem;
-    font-family: Roboto light;
+    font-size: 0.9rem;
+    font-family: "Roboto light";
 }
 
 h2{
-    font-size: 3.0625rem;
+    font-size: 2rem;
     font-family: Cansellarist;
     color: #696969;
     padding: 35px 0;
@@ -94,13 +93,13 @@ h2{
     box-shadow: 0px 3px 10px;
 }
 .card-text{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .card-body{
     padding: 0rem 1.25rem;
 }
 .card-footer span{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .fa-dollar-sign {
@@ -116,11 +115,11 @@ h2{
     margin-bottom: 0;
     background-color: #ffffff;
     border-bottom: 1px solid rgba(213, 181, 82, 1);
-    font-size: 1.75rem;
+    font-size: 1.15rem;
 }
 
 .card-footer{
-    padding: 0.75rem 1.25rem 0rem;
+    padding: 0;
     background-color: #ffffff;
     border-top: 1px solid #D5B552;
 }
@@ -130,7 +129,7 @@ h2{
     margin: 20px 0px;
     font-family: Open Sans Condesed;
     font-weight: 300;
-    font-size: 1.8125rem;
+    font-size: 1.2rem;
     border: none;
     border-bottom: 1px solid transparent;
     background-color: transparent;
@@ -153,7 +152,7 @@ h2{
 
 .addres {
     border-bottom: 1px solid #D5B552;
-    font-size: 1.75rem;
+    font-size: 1.15rem;
     margin-bottom: 10px;
 }
 
@@ -165,7 +164,7 @@ h2{
 }
 footer span{
     margin: 0 0 0.6rem;
-    font-size: 1.25rem;
+    font-size: 0.825rem;
 }
 
 @media screen and (min-width:768px){
@@ -205,11 +204,11 @@ footer span{
     position:absolute;
 }
 .tel {
-    font-size: 2.4375rem;
+    font-size: 1.6rem;
 }
 
 .fai-cont {
-    font-size: 2.875rem;
+    font-size: 1.9rem;
 }
 .card .img-fluid{
     height: 100%;
