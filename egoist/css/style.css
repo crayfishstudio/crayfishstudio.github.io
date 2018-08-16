@@ -90,7 +90,7 @@ h2{
 .card{
     border: 0;
     margin-bottom: 30px;
-    box-shadow: 0px 3px 10px;
+    box-shadow: 6px 4px 11px 0px rgba(0,0,0,0.18);
 }
 .card-text{
     font-size: 1rem;
@@ -205,6 +205,7 @@ footer span{
 }
 .tel {
     font-size: 1.6rem;
+    color: #696969;
 }
 
 .fai-cont {
