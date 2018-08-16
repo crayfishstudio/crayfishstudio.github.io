@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
+@media screen and (max-width: 768px) {
+    .fixed {
+        margin-top: 15vh;
+    }
+    
+    #description-sign {
+        font-size: 1.2rem;
+        color: #fff !important;
+    }
+    
+    #adress-sign {
+        font-size: 1rem;
+        margin-top: 10px !important;
+    }
+    
+    .mobile-invisible {
+        display: none;
+    }
+    
+    #phones-sign {
+        font-size: 1.4rem;
+    }
+    
+    .btn-custom {
+        padding: 7px !important;
+        font-size: 1.1rem !important;
+    }
+}
+
 body{
     color: #181818;
     background-image: url(../img/symphony.png);
@@ -50,6 +79,11 @@ a {
 .fa-whatsapp:hover{
     color: #25D366;
 }
+
+.fa-telegram-plane:hover {
+    color: #0088cc;
+}
+
 #map1{
     border: 1px solid #ffffff;
     background-color: white;
@@ -181,6 +215,10 @@ footer span{
         margin-right: 0;
         background-image: url(../img/blestki-r.png);
         background-repeat: repeat-y;
+    }
+    
+    .desktop-invisible {
+        display: none;
     }
 }
 .map{
