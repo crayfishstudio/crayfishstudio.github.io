@@ -1,28 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 body{
     color: #181818;
     background-image: url(../img/symphony.png);
 }
 .navbar{
     background-color: #ffffff;
-    border-bottom: 1px solid #D5B552;
-    font-family: Open Sans Condesed;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
-    font-size: 1.8125rem;
+    font-size: 1.3rem;
+    box-shadow: 6px 4px 11px 0px rgba(0,0,0,0.18);
 }
 
-li.nav-item{
-    border-bottom: solid 1px;
-    border-color: #ffffff;
+.nav-link {
+    border-bottom: 1px solid #FFF;
+    text-transform: uppercase !important;
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
 }
+
 li.nav-item.gborder{
     border-bottom: solid 1px;
     border-color: #d5b525;
 }
-li.nav-item:hover{
+
+.nav-link:hover {
     border-bottom: solid 1px;
     border-color: #F1D883;
 }
- a{
+
+a {
     text-decoration: none;
     color: #181818;
 }
@@ -207,4 +216,7 @@ footer span{
 }
 .nav-link{
     color: rgba(24,24,24,1)!important;
+}
+.underlined {
+    border-bottom: 1px solid #F1D883;
 }
