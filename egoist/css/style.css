@@ -109,7 +109,7 @@ h2{
 }
 .sdivider{
     padding: 20px 0;
-    width: 650px;
+    width: 550px;
 }
 .ml-left {
     margin-left: 150px;
@@ -154,6 +154,7 @@ h2{
 
 .card-footer{
     padding: 0;
+    padding-bottom: 10px;
     background-color: #ffffff;
     border-top: 1px solid #D5B552;
 }
@@ -172,9 +173,6 @@ h2{
     border-bottom: 1px solid #D5B552;
 }
 
-.collapseGirls {
-    margin: 20px -15px;
-}
 
 .col-md-8 {
     padding-bottom: 45px;
@@ -203,6 +201,8 @@ footer span{
 
 @media screen and (min-width:768px){
     .blestki-l{
+        width:14%;
+        opacity: 0.6;
         border-left: 0;
         padding-left: 0;
         margin-left: 0;
@@ -210,6 +210,8 @@ footer span{
         background-repeat: repeat-y;
     }
     .blestki-r{
+        width:14%;
+        opacity: 0.6;
         border-right: 0;
         padding-right: 0;
         margin-right: 0;
@@ -223,7 +225,7 @@ footer span{
 }
 .map{
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:100%;
     position:relative;
     height:0;
 }
@@ -241,6 +243,18 @@ footer span{
     width:95%;
     position:absolute;
 }
+@media screen and (max-width:768px){
+    #map1{
+        top:0;
+        
+        width:100%;
+    }
+    #map2{
+        top:0;
+        
+        width:100%;
+    }
+}
 .tel {
     font-size: 1.6rem;
     color: #696969;
@@ -250,7 +264,7 @@ footer span{
     font-size: 1.9rem;
 }
 .card .img-fluid{
-    height: 100%;
+   height: 1px;
 }
 .nav-link{
     color: rgba(24,24,24,1)!important;
