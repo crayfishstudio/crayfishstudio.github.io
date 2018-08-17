@@ -162,7 +162,7 @@ h2{
 .showMoreButton {
     color: #696969;
     margin: 20px 0px;
-    font-family: Open Sans Condesed;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     border: none;
