@@ -84,14 +84,8 @@ a {
     color: #0088cc;
 }
 
-#map1{
-    border: 1px solid #ffffff;
-    background-color: white;
-}
-#map2{
-    border: 1px solid #ffffff;
-    background-color: white;
-}
+
+
 
 .greySection{
     background-color: rgba(235, 235, 235, 0.65);
@@ -185,7 +179,8 @@ h2{
 .addres {
     border-bottom: 1px solid #D5B552;
     font-size: 1.15rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .room {
@@ -229,31 +224,11 @@ footer span{
     position:relative;
     height:0;
 }
-#map1{
-    left:0;
-    top:0;
-    height:80%;
-    width:95%;
-    position:absolute;
-}
-#map2{
-    right:0;
-    top:0;
-    height:80%;
-    width:95%;
-    position:absolute;
-}
+
+
 @media screen and (max-width:768px){
-    #map1{
-        top:0;
-        
-        width:100%;
-    }
-    #map2{
-        top:0;
-        
-        width:100%;
-    }
+
+
 }
 .tel {
     font-size: 1.6rem;
@@ -350,4 +325,18 @@ footer span{
 .btn-custom:hover {
     border: 3px solid #f1d883;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes huiak {
+  from {
+    opacity: 1;
+  }
+
+    50% {
+        opacity: 1;
+    }
+    
+  to {
+    opacity: 0;
+  }
 }
