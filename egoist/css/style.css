@@ -340,3 +340,10 @@ footer span{
     opacity: 0;
   }
 }
+
+.gscale{
+    filter: grayscale(100%);
+}
+.gscale:hover{
+    filter: grayscale(0%);
+}
