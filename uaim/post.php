@@ -11,9 +11,9 @@ $time=date("H:i"); // часы:минуты:секунды
  
 // Принимаем данные с формы 
  
-$name=$_POST['user_name']; 
-$phone=$_POST['user_phone']; 
-$email=$_POST['user_email'];
+$name=strip_tags($_POST['user_name']); 
+$phone=strip_tags($_POST['user_phone']); 
+$email=strip_tags($_POST['user_email']);
 
 // Проверяем валидность e-mail 
  
