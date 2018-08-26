@@ -364,7 +364,7 @@ footer span{
     left: -80px;
     height: 100%;
     width: 10vw;
-    z-index: 99999;
+    z-index: 1;
 }
 
 #right-arrow {
@@ -374,7 +374,7 @@ footer span{
     right: -80px;
     height: 100%;
     width: 10vw;
-    z-index: 99999;
+    z-index: 1;
 }
 
 .arrows div div {
