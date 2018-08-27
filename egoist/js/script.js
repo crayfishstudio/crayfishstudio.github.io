@@ -9,9 +9,29 @@ $(document).ready(function(){
         autoplaySpeed: 30000
     });
     ($('.types').height($('.card-body').height()));
-    
+
+
+    if ($(window).width() > 768) {
+		$('.drop-phone').each(function() {
+			$(this).hover(function() {
+				$('.phone-numbers-dropdown').css('display', 'block');
+			}, function() {
+				$('.phone-numbers-dropdown').css('display', 'none');
+			});
+		});
+	}	
 });
 
 $(window).resize(function(){
-    ($('.types').height($('.card-body').height()))
+    ($('.types').height($('.card-body').height()));
+
+    if ($(window).width() > 768) {
+		$('.drop-phone').each(function() {
+			$(this).hover(function() {
+				$('.phone-numbers-dropdown').css('display', 'block');
+			}, function() {
+				$('.phone-numbers-dropdown').css('display', 'none');
+			});
+		});
+	}	
 });

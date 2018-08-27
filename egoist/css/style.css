@@ -60,6 +60,24 @@ li.nav-item.gborder{
     border-color: #F1D883;
 }
 
+.nav-link-unhover:hover {
+    border: none !important;
+}
+
+.language {
+    color: #696969;
+}
+
+.language:hover {
+    color: #181818;
+}
+
+.active {
+    color: #181818;
+    border-bottom: solid 1px;
+    border-color: #F1D883;
+}
+
 a {
     text-decoration: none;
     color: #181818;
@@ -401,4 +419,20 @@ footer span{
 #right-arrow div:nth-of-type(2) {
     right: 0;
     transform: translate(0px, 50px) rotate(-60deg);
+}
+
+.phone-numbers-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 6px 4px 11px 0px rgba(0,0,0,0.18);
+    display: none;
+}
+
+.phone-numbers-dropdown p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 6px 16px;
 }
