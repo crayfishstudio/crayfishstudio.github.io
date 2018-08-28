@@ -1875,6 +1875,13 @@ body, footer {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);   
 }
 
+.pumpkin-price-card {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); 
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 15px;
+}
+
 
 
 .order-card input {
