@@ -11,22 +11,23 @@ $time=date("H:i"); // часы:минуты:секунды
  
 // Принимаем данные с формы 
  
-$name=strip_tags($_POST['user_name']); 
-$phone=strip_tags($_POST['user_phone']); 
-$email=strip_tags($_POST['user_email']);
+$company=strip_tags($_POST['company']); 
+$phone=strip_tags($_POST['phoneNumber']); 
+$email=strip_tags($_POST['mail']);
 
 // Проверяем валидность e-mail 
  
 
 
-$msg=" 
-Ім'я: $name
+$msg="
+Заявка на партнерство:
+Компанія: $company
 Телефон: $phone 
 E-mail: $email
 "; 
 
  // Отправляем письмо админу  
-mail($adminemail, "$date $time Повідомлення від $name", $msg);s
+mail($adminemail, "$date $time Повідомлення від $company", $msg);s
  
 // Выводим сообщение пользователю 
  
