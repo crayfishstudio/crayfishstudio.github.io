@@ -2639,3 +2639,11 @@ p.apart-old-total-price .custom-line-throught::after {
 .text-thin {
     font-weight: 400;
 }
+.test-animation {
+    animation: testanim 1.5s infinite;
+}
+
+@keyframes testanim {
+    25% {color: #4D3431;}
+    50% {color: #2e2e2e;}
+}
