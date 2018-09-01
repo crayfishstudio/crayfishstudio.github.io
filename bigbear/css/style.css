@@ -2644,6 +2644,12 @@ p.apart-old-total-price .custom-line-throught::after {
 }
 
 @keyframes testanim {
-    25% {color: #4D3431;}
-    50% {color: #2e2e2e;}
+    25% {
+        color: #4D3431;
+    
+    }
+    75% {
+        color: #ff8c00;
+        
+    }
 }
