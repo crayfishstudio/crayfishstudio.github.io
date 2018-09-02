@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     if ($(window).width() > 768) {
 		$('.drop-phone').each(function() {
-			$(this).hover(function() {
+			$(this).parent().hover(function() {
 				$('.phone-numbers-dropdown').css('display', 'block');
 			}, function() {
 				$('.phone-numbers-dropdown').css('display', 'none');
@@ -27,7 +27,7 @@ $(window).resize(function(){
 
     if ($(window).width() > 768) {
 		$('.drop-phone').each(function() {
-			$(this).hover(function() {
+			$(this).parent().hover(function() {
 				$('.phone-numbers-dropdown').css('display', 'block');
 			}, function() {
 				$('.phone-numbers-dropdown').css('display', 'none');
