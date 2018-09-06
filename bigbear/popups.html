@@ -20,19 +20,22 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 my-2">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-2 my-2">
                 <a class="btn btn-yellow text-uppercase" data-toggle="modal" data-target="#exampleModal">ЗАБРОНЮВАТИ</a>
             </div>
-            <div class="col-md-3 my-2">
+            <div class="col-md-2 my-2">
                 <a class="btn btn-yellow text-uppercase" data-toggle="modal" data-target="#exampleModal2">Залишити відгук</a>
             </div>
-            <div class="col-md-3 my-2">
+            <div class="col-md-2 my-2">
                 <a class="btn btn-yellow text-uppercase" data-toggle="modal" data-target="#exampleModal3">Подяка</a>
             </div>
-            <div class="col-md-3 my-2">
+            <div class="col-md-2 my-2">
                 <a class="btn btn-yellow text-uppercase" data-toggle="modal" data-target="#exampleModal4">Заявку відправлено</a>
+            </div>
+            <div class="col-md-2 my-2">
+                <a class="btn btn-yellow text-uppercase" data-toggle="modal" data-target="#exampleModal5">Warning</a>
             </div>
         </div>
     </div>
@@ -200,6 +203,26 @@
                     </div>
                     <div class="row  justify-content-center my-5">
                         <div class="col-md-6 col-10">
+                            <button type="button" class="btn btn-yellow" data-dismiss="modal">Зрозуміло</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content no-rounds">
+                <div class="container-fluid">
+                    <div class="row text-center mt-4">
+                        <div class="col">
+                            <h2 class="section-header-huge pt-0">Помилка</h2>
+                            <h6 class="section-header-small text-lowercase">введіть коректні дані</h6>
+                        </div>
+                    </div>
+                    <div class="row  justify-content-center my-4">
+                        <div class="col-md-8 col-10">
                             <button type="button" class="btn btn-yellow" data-dismiss="modal">Зрозуміло</button>
                         </div>
                     </div>
