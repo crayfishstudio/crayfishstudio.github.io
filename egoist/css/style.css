@@ -209,14 +209,15 @@ footer span{
 }
 
 @media screen and (min-width:768px){
-    .blestki-l{
-        width:14%;
-        opacity: 0.6;
-        border-left: 0;
-        padding-left: 0;
-        margin-left: 0;
+    #blestki-l{
+        position: absolute;
+        z-index: 1000;
+        top: 100vh;
+        left: 0;
+        width: 15%;
         background-image: url(../img/blestki-l.png);
         background-repeat: repeat-y;
+        background-size: contain;
     }
     .blestki-r{
         width:14%;
@@ -227,6 +228,7 @@ footer span{
         background-image: url(../img/blestki-r.png);
         background-repeat: repeat-y;
         background-position: left;
+        z-index: 1000;
     }
     
     .desktop-invisible {
