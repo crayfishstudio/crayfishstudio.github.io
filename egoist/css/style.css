@@ -226,6 +226,7 @@ footer span{
         margin-right: 0;
         background-image: url(../img/blestki-r.png);
         background-repeat: repeat-y;
+        background-position: left;
     }
     
     .desktop-invisible {
