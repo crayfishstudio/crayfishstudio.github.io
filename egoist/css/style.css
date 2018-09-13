@@ -32,6 +32,7 @@
 body{
     color: #181818;
     background-image: url(../img/symphony.png);
+    100%;
 }
 .navbar{
     background-color: #ffffff;
@@ -211,24 +212,19 @@ footer span{
 @media screen and (min-width:768px){
     #blestki-l{
         position: absolute;
-        z-index: 1000;
-        top: 100vh;
         left: 0;
         width: 15%;
         background-image: url(../img/blestki-l.png);
         background-repeat: repeat-y;
         background-size: contain;
     }
-    .blestki-r{
-        width:14%;
-        opacity: 0.6;
-        border-right: 0;
-        padding-right: 0;
-        margin-right: 0;
+    #blestki-r{
+        position: absolute;
+        right: 0;
+        width: 15%;
         background-image: url(../img/blestki-r.png);
         background-repeat: repeat-y;
-        background-position: left;
-        z-index: 1000;
+        background-size: contain;
     }
     
     .desktop-invisible {
@@ -439,3 +435,4 @@ footer span{
     margin: 0;
     padding: 6px 16px;
 }
+
