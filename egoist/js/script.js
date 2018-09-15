@@ -36,5 +36,5 @@ $(window).resize(function(){
 	}	
 });
 
-$(document).ready($('#blestki-l').height($(document).height()-$(window).height()));
-$(document).ready($('#blestki-r').height($('body').height()-$(window).height()));
+//$(document).ready($('#blestki-l').height($(document).height()-$(window).height()));
+//$(document).ready($('#blestki-r').height($('body').height()-$(window).height()));
