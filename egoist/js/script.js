@@ -36,5 +36,14 @@ $(window).resize(function(){
 	}	
 });
 
-//$(document).ready($('#blestki-l').height($(document).height()-$(window).height()));
+//$(document).ready($('#blestki-l').height($('body').height()-$(window).height()));
 //$(document).ready($('#blestki-r').height($('body').height()-$(window).height()));
+//$('#blestki-l').height($('body').height()-$(window).height());
+//$('#blestki-r').height($('body').height()-$(window).height());
+$(document).ready(function(){
+    var vh = $('.fullsize-bg').height();
+    var lh = $('body').height();
+    var fh = lh - vh;
+    $('#blestki-r').height(fh);
+    $('#blestki-l').height(fh);
+});
