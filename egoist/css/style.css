@@ -213,14 +213,18 @@ footer span{
 
 @media screen and (min-width:768px){
     #blestki-l{
-        
+        position:absolute;
+        top:100vh;
+        left: 0;
         width: 15%;
         background-image: url(../img/blestki-l.png);
         background-repeat: repeat-y;
         background-size: contain;
     }
     #blestki-r{
-        
+        position: absolute;
+        top: 100vh;
+        right:0;
         width: 15%;
         background-image: url(../img/blestki-r.png);
         background-repeat: repeat-y;
@@ -347,7 +351,7 @@ footer span{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-@keyframes huiak {
+@keyframes blink {
   from {
     opacity: 1;
   }
