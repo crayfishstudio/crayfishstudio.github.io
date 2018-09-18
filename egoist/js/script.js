@@ -2,7 +2,6 @@ $(document).ready(function(){
     $('.slickCarousel').slick({
         accessibility: true,
         autoplay: true,
-        adaptiveHeight: true,
         arrows: true,
         nextArrow: $('#right-arrow'),
         prevArrow: $('#left-arrow'),
@@ -35,7 +34,17 @@ $(window).resize(function(){
 		});
 	}	
 });
+$(document).ready(function() {
+  var maxHeight = -1;
 
+  $('.card').each(function() {
+    maxHeight = maxHeight > $(this).height() ? maxHeight :     $(this).height();
+ });
+
+ $('.card').each(function() {
+   $(this).height(maxHeight);
+ });
+});
 //$(document).ready($('#blestki-l').height($('body').height()-$(window).height()));
 //$(document).ready($('#blestki-r').height($('body').height()-$(window).height()));
 //$('#blestki-l').height($('body').height()-$(window).height());
@@ -43,7 +52,9 @@ $(window).resize(function(){
 $(document).ready(function(){
     var vh = $('.fullsize-bg').height();
     var lh = $('body').height();
-    var fh = lh - vh;
+    var nh = $('.navbar').height();
+    var fh = lh - vh + nh;
     $('#blestki-r').height(fh);
     $('#blestki-l').height(fh);
 });
+
