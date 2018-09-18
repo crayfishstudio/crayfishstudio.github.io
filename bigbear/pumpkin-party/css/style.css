@@ -73,3 +73,23 @@
 .pt-25 {
     padding-top: 25vh;
 }
+
+.del-cross {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.del-cross:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0) url(http://paulradzkov.com/2012/crosswise/cross.svg) no-repeat;
+  background-size: 100% 100%;
+}
