@@ -5,7 +5,7 @@ $(document).ready(function(){
         arrows: true,
         nextArrow: $('#right-arrow'),
         prevArrow: $('#left-arrow'),
-        autoplaySpeed: 30000
+        autoplaySpeed: 30000,
     });
     ($('.types').height($('.card-body').height()));
 
