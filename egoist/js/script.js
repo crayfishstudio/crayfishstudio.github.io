@@ -50,11 +50,25 @@ $(document).ready(function() {
 //$('#blestki-l').height($('body').height()-$(window).height());
 //$('#blestki-r').height($('body').height()-$(window).height());
 $(document).ready(function(){
-    var vh = $('.fullsize-bg').height();
-    var lh = $('body').height();
-    var nh = $('.navbar').height();
-    var fh = lh - vh + nh;
-    $('#blestki-r').height(fh);
-    $('#blestki-l').height(fh);
+    if($(window).width() > 768){
+        var vh = $('.fullsize-bg').height();
+        var lh = $('body').height();
+        var nh = $('.navbar').height();
+        var fh = lh - vh + nh;
+        $('#blestki-r').height(fh);
+        $('#blestki-l').height(fh);
+    }
 });
+
+function bodyResize(){
+    if($(window).width() > 768){
+        var vh = $('.fullsize-bg').height();
+        var lh = $('body').height();
+        var nh = $('.navbar').height();
+        var fh = lh - vh + nh;
+        $('#blestki-r').height(fh);
+        $('#blestki-l').height(fh);
+    }
+};
+
 
