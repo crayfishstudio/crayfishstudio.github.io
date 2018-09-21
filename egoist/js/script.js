@@ -6,6 +6,7 @@ $(document).ready(function(){
         nextArrow: $('#right-arrow'),
         prevArrow: $('#left-arrow'),
         autoplaySpeed: 30000,
+        adaptiveHeight: true
     });
     ($('.types').height($('.card-body').height()));
 
@@ -50,11 +51,13 @@ $(document).ready(function() {
 //$('#blestki-l').height($('body').height()-$(window).height());
 //$('#blestki-r').height($('body').height()-$(window).height());
 $(document).ready(function(){
-    var vh = $('.fullsize-bg').height();
-    var lh = $('body').height();
-    var nh = $('.navbar').height();
-    var fh = lh - vh + nh;
-    $('#blestki-r').height(fh);
-    $('#blestki-l').height(fh);
+    if ($(window).width() > 768){
+        var vh = $('.fullsize-bg').height();
+        var lh = $('body').height();
+        var nh = $('.navbar').height();
+        var fh = lh - vh + nh;
+        $('#blestki-r').height(fh);
+        $('#blestki-l').height(fh);
+    }
 });
 
