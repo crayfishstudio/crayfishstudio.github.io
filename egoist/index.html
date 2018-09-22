@@ -376,5 +376,17 @@
         <script src="slick/slick.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
+        
+        <script>
+            $('.slickCarousel').slick({
+            accessibility: true,
+            autoplay: true,
+            arrows: true,
+            nextArrow: $('#right-arrow'),
+            prevArrow: $('#left-arrow'),
+            autoplaySpeed: 30000,
+            adaptiveHeight: true
+        });
+        </script>
     </body>
 </html>
