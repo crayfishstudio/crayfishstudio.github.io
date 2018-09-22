@@ -379,14 +379,23 @@
         
         <script>
             $('.slickCarousel').slick({
-            accessibility: true,
-            autoplay: true,
-            arrows: true,
-            nextArrow: $('#right-arrow'),
-            prevArrow: $('#left-arrow'),
-            autoplaySpeed: 30000,
-            adaptiveHeight: true
-        });
+                accessibility: true,
+                autoplay: true,
+                arrows: true,
+                nextArrow: $('#right-arrow'),
+                prevArrow: $('#left-arrow'),
+                autoplaySpeed: 30000,
+                adaptiveHeight: true
+            });
+            
+            if($(window).width() > 768){
+                var vh = $('.fullsize-bg').height();
+                var lh = $('body').height();
+                var nh = $('.navbar').height();
+                var fh = lh - vh;
+                $('#blestki-r').height(fh);
+                $('#blestki-l').height(fh);
+            }
         </script>
     </body>
 </html>

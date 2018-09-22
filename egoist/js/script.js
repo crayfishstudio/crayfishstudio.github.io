@@ -1,16 +1,4 @@
 $(document).ready(function(){
-    $('.slickCarousel').slick({
-        accessibility: true,
-        autoplay: true,
-        arrows: true,
-        nextArrow: $('#right-arrow'),
-        prevArrow: $('#left-arrow'),
-        autoplaySpeed: 30000
-    });
-    
-    
-
-
     if ($(window).width() > 768) {
 		$('.drop-phone').each(function() {
 			$(this).parent().hover(function() {
@@ -51,24 +39,13 @@ $(document).ready(function() {
 //$(document).ready($('#blestki-r').height($('body').height()-$(window).height()));
 //$('#blestki-l').height($('body').height()-$(window).height());
 //$('#blestki-r').height($('body').height()-$(window).height());
-$(document).ready(function(){
-    if ($(window).width() > 768){
-    if($(window).width() > 768){
-        var vh = $('.fullsize-bg').height();
-        var lh = $('body').height();
-        var nh = $('.navbar').height();
-        var fh = lh - vh + nh;
-        $('#blestki-r').height(fh);
-        $('#blestki-l').height(fh);
-    }
-};
 
 function bodyResize(){
     if($(window).width() > 768){
         var vh = $('.fullsize-bg').height();
         var lh = $('body').height();
         var nh = $('.navbar').height();
-        var fh = lh - vh + nh;
+        var fh = lh - vh;
         $('#blestki-r').height(fh);
         $('#blestki-l').height(fh);
     }
