@@ -50,3 +50,5 @@ function bodyResize(){
         $('#blestki-l').height(fh);
     }
 }
+
+setTimeout(bodyResize, 5000);
