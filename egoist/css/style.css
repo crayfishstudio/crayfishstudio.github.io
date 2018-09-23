@@ -284,7 +284,7 @@ footer span{
 .fullsize-bg {
     height: 100vh;
     width: 100%;
-    background-image: url(../img/main-girl.png);
+    background-image: url(../img/Dark-Illusion-by-VLdesigns-by-VL-designs-min.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -349,7 +349,7 @@ footer span{
     color: #fff !important;
     font-size: 1.25rem;
     width: 100%;
-    border-radius: 0;
+    border-radius: 15px;
     padding: 10px;
     border: 1px solid #f1d883;;
     transition: border 0.4s, background-color 0.4s;
@@ -386,6 +386,8 @@ footer span{
     background-position: center;
     min-height: 70vh;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 #left-arrow {
@@ -450,3 +452,7 @@ footer span{
     padding: 6px 16px;
 }
 
+
+.r-15 {
+    border-radius: 15px !important;
+}
