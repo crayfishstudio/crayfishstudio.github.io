@@ -49,13 +49,13 @@
 }
 
 #hamburger span:nth-child(2) {
-    width: 0.8px;
+    width: 0.85px;
     right: calc(50% - 1px);
     height: 21px;
 }
 
 #hamburger span:nth-child(3) {
-    width: 0.8px;
+    width: 0.85px;
     right: 0px;
     height: 21px;
     bottom: 0px;
