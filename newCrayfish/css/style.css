@@ -186,18 +186,18 @@ body {
 }
 
 .lines {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 50%;
     top: 0;
     left: 25%;
-    padding: 13vh 4vw;
+    padding: 13vh 3vw 0;
 }
 
 .line {
     height: 100%;
     width: 0.8px;
-    background-color: #888888;
+    background-color: #E1E1E1;
 }
 
 .mouse {
@@ -209,7 +209,7 @@ body {
 }
 
 .mouse-border {
-    border: 1px solid #888888;
+    border: 1px solid #E1E1E1;
     border-radius: 12px;
     height: 48px;
     width: 28px;
@@ -219,5 +219,51 @@ body {
     margin-top: 12px;
     height: 6px;
     width: 0.8px;
-    background-color: #888888;
+    background-color: #E1E1E1;
+}
+
+.portfolio h2 {
+    font-weight: 900;
+}
+
+.portfolio h2:nth-of-type(2) {
+    font-size: 100px;
+    font-weight: 900;
+    color: #000000;
+    opacity: 0.07;
+    margin-top: -64px;
+}
+
+.count-of-projects {
+    background-color: #2E2E2E;
+    color: #FFF;
+}
+
+.count-of-projects p {
+    text-align: right;
+}
+
+.count-of-projects p:nth-of-type(1) {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.project-container {
+
+}
+
+.project-container img {
+    height: 160px;
+}
+
+.btn-dark {
+    background-color: #2E2E2E !important;
+    color: #FFF;
+}
+
+.btn-dark:hover {
+    background-color: #FF4000 !important;
+    border-left: 2px solid #FF4000;
+    border-right: 2px solid #FF4000;
 }
