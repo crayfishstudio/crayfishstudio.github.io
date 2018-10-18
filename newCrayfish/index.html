@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/fontawesome-all.js"></script>
     <link rel="icon" href="img/favicon.ico">
 
     <title>Crayfish Studio</title>
@@ -15,9 +16,12 @@
 <body>
     <nav class="navbar bg-white px-7 py-nav sticky">
         <img src="svg/crayfishLogo.svg" height="21px">
-        <ul class="list-inline mb-0">
+        <ul class="list-inline d-flex align-items-center mb-0">
             <li class="list-inline-item">
-                <a class="btn-custom my-0 py-0">почати співпрацю</a>
+                <button type="button" class="btn text-uppercase mr-5"><b>почати співпрацю</b></button>
+            </li>
+            <li class="list-inline-item">
+                <p class="my-0 py-0 mr-3">МЕНЮ</p>
             </li>
             <li class="list-inline-item">
                 <div id="hamburger">
@@ -29,6 +33,23 @@
         </ul>
     </nav>
 
+    <div class="container-fluid fullscreen d-flex justify-content-center flex-column px-7">
+        <p class="red-text mt-5 ml-5 pl-3"><b>professional</b></p>
+        <h2 class="text-header text-uppercase">Transforming<br/>Your ideas<br/>Into result</h2>
+        <p class="red-text small-text ml-5 pl-3">with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+        <div class="col-2 mt-5 pt-3 pl-0 pr-3">
+            <button type="button" class="btn w-100 text-uppercase"><b>ще одна кнопка</b></button>
+        </div>
+        <div class="lines d-flex justify-content-between">
+            <div class="line"></div>
+            <div class="line">
+                <div class="mouse">
+                    <div class="mouse-border"><div class="mx-auto"></div></div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

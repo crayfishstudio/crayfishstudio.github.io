@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .px-7 {
     padding-left: 7vw;
@@ -86,4 +91,70 @@
 
 #hamburger:hover {
     transform: rotate(-90deg);
+}
+
+.fullscreen {
+    width: 100%;
+    height: 100vh;
+}
+
+.text-header {
+    font-size: 56px;
+}
+
+.red-text {
+    color: #FF4000;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #FFF;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 2px solid #FF4000;
+    border-right: 2px solid #FF4000;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.lines {
+    position: absolute;
+    height: 100%;
+    width: calc(100% / 2);
+    top: 0;
+    left: calc(100% / 4);
+    padding: 13vh 4vw;
+}
+
+.line {
+    height: 100%;
+    width: 0.8px;
+    background-color: #888888;
+}
+
+.mouse {
+    position: absolute;
+    bottom: 16vh;
+    left: calc(50% - 14px);
+    background-color: #FFF;
+    padding: 16px 0;
+}
+
+.mouse-border {
+    border: 1px solid #888888;
+    border-radius: 12px;
+    height: 48px;
+    width: 28px;
+}
+
+.mouse-border div {
+    margin-top: 12px;
+    height: 6px;
+    width: 0.8px;
+    background-color: #888888;
 }
