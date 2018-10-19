@@ -17,7 +17,7 @@ $(window).on('scroll', function() {
 });
 
 $(document).ready(function(){
-  $('.first-lane').delay(50000).slick({
+  $('.first-lane').slick({
       accessibility: false,
       autoplay: true,
       autoplaySpeed: 3000,
@@ -30,7 +30,6 @@ $(document).ready(function(){
       touchMove: false,
       vertical: true
   });
-    
     $('.second-lane').slick({
       accessibility: false,
       autoplay: true,
@@ -59,3 +58,20 @@ $(document).ready(function(){
       vertical: true
   });
 });
+
+/*$(document).ready(setTimeout(
+    function(){
+    $('.second-lane').slick({
+      accessibility: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      cssEase: "cubic-bezier(0.77,0.2,0.05,1.0)",
+      speed: 1000,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      swipe: false,
+      touchMove: false,
+      vertical: true
+  });
+}, 5000 ));*/
