@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif!important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -62,8 +63,8 @@ body {
 }
 
 .py-nav {
-    padding-top: calc(7vw/3);
-    padding-bottom: calc(7vw/3);
+    padding-top: 26px;
+    padding-bottom: 26px;
 }
 
 .sticky {
@@ -152,6 +153,7 @@ body {
 
 .text-header {
     font-size: 56px;
+    margin-bottom: 0px;
 }
 
 .red-text {
@@ -165,7 +167,7 @@ body {
 }
 
 .navbar-text {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .btn {
@@ -175,23 +177,24 @@ body {
     border-left: 2px solid #FF4000;
     border-right: 2px solid #FF4000;
     border-radius: 0;
-    font-size: 16px;
-    transition: all .7s;
+    font-size: 13px;
+    transition: all .4s;
 }
 
 .btn:hover {
     background-color: #FF4000;
     color: #FFF;
-    transition: all .7s;
+    transition: all .4s;
 }
 
 .lines {
     position: fixed;
-    height: 100%;
+    height: 100vh;
     width: 50%;
-    top: 0;
+    top: 0px;
     left: 25%;
-    padding: 13vh 3vw 0;
+    padding: 0vh 3vw 0;
+    z-index: -999;
 }
 
 .line {
@@ -223,14 +226,14 @@ body {
 }
 
 .portfolio h2 {
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .portfolio h2:nth-of-type(2) {
     font-size: 100px;
     font-weight: 900;
     color: #000000;
-    opacity: 0.07;
+    opacity: 0.03;
     margin-top: -64px;
 }
 
@@ -245,7 +248,7 @@ body {
 
 .count-of-projects p:nth-of-type(1) {
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 800;
     margin: 0;
 }
 
@@ -266,4 +269,33 @@ body {
     background-color: #FF4000 !important;
     border-left: 2px solid #FF4000;
     border-right: 2px solid #FF4000;
+}
+
+.text-extra-bold {
+    font-weight: 800;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+#menuToggle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    -moz-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    -o-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    /*border-bottom: 0.8px solid #E1E1E1;*/
+}
+
+.hided {
+    top: -80px !important;
+    opacity: 0 !important;
+}
+
+.text-roboto {
+    font-family: 'Roboto', sans-serif;
 }
