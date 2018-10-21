@@ -310,8 +310,8 @@ body {
     text-decoration: none;
 }
 
-.btn:enabled {
-    outline: 5px solid #fff !important;
+.btn:focus {
+    outline: 5px solid #fff;
 }
 .h-line {
     height: 2px;
@@ -329,7 +329,7 @@ input {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 27px;
+    font-size: 20px;
     padding-left: 10px;
 }
 
@@ -339,12 +339,19 @@ input:focus {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 27px;
+    font-size: 20px;
 }
 
 input:placeholder-shown {
-    font-size: 27px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
 
+
+.submit-button {
+    margin: 0px !important;
+    background: transparent;
+    color: #fff;
+    outline: 0px !important;
+}
