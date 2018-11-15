@@ -1,6 +1,6 @@
 
 .light-grey-bg {
-    background-color: #EBEBEB;
+    background-color: #EFEFEF;
 }
 
 .top-input {
@@ -25,10 +25,24 @@
     font-weight: 700;
     color: #fff;
     background-color: #00751B;
-    font-size: 115%;
+    font-size: 110%;
 }
 
 .btn-green-custom:hover {
     background-color: #009623;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#normaltext {
+    font-size: 110%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+#smallertext {
+    font-size: 100%;
+}
+
+#biggertext {
+    font-size: 120%;
 }
