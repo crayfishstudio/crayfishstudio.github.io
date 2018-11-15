@@ -355,3 +355,7 @@ input:placeholder-shown {
     color: #fff;
     outline: 0px !important;
 }
+
+#one:checked + .two {
+    color: #fff;
+}
