@@ -46,3 +46,41 @@
 #biggertext {
     font-size: 120%;
 }
+
+.w-90 {
+    width: 90%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.square {
+    width: 100%
+    height: 100%;
+    background-color: #EFEFEF;
+}
+
+.tab1 {
+    background-color: #EFEFEF;
+    border: 1px solid #fff !important;
+    border-radius: 0px !important;
+    line-height: 1.1;
+}
+
+.tab1.active {
+    background-color: #EFEFEF;
+    border: 0px !important;
+    border-top: 3px solid #FFCE01 !important;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.btn-to-object {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #00751B;
+    color: #00751B;
+}
