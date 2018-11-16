@@ -1,3 +1,31 @@
+@font-face{
+    font-family:Roboto-medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family:Roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family:Roboto-bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family:Arial-uni;
+    src: url(../fonts/ARIALUNI.TTF);
+}
+body{
+    font-family: Roboto-regular;
+}
+.rob-med{
+    font-family: Roboto-medium;
+}
+.rob-bold{
+    font-family: Roboto-bold;
+}
+.arialuni{
+    font-family: Arial-uni;
+}
 
 .light-grey-bg {
     background-color: #EFEFEF;
@@ -16,6 +44,7 @@
 
 .top-input::placeholder {
     color: #bbb;
+    font-family: Arial-uni;
 }
 
 .btn-green-custom {
@@ -46,6 +75,12 @@
 #biggertext {
     font-size: 120%;
 }
+a{
+    color:#2D2D2D; 
+}
+a:hover{
+    color:#2D2D2D;
+}
 
 .w-90 {
     width: 90%;
@@ -56,19 +91,22 @@
 }
 
 .square {
-    width: 100%
+    width: 70%;
     height: 100%;
+    align-self: flex-end;
     background-color: #EFEFEF;
 }
 
-.tab1 {
+.tab {
     background-color: #EFEFEF;
     border: 1px solid #fff !important;
+    border-top: 3px solid #fff !important;
     border-radius: 0px !important;
     line-height: 1.1;
+    color:#2D2D2D;
 }
 
-.tab1.active {
+.tab.active {
     background-color: #EFEFEF;
     border: 0px !important;
     border-top: 3px solid #FFCE01 !important;
@@ -80,7 +118,23 @@
 
 .btn-to-object {
     width: 100%;
+    height: 100%;
     background-color: #fff;
     border: 1px solid #00751B;
     color: #00751B;
+}
+.btn-to-object:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.breadcrumb {
+    background-color: #fff;
+}
+.breadcrumb li{
+    font-size:110%
+}
+
+.obj-img {
+    height: 100%;
 }
