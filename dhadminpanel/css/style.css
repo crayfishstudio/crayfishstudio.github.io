@@ -16,6 +16,7 @@
 }
 body{
     font-family: Roboto-regular;
+    color: #2d2d2d;
 }
 .rob-med{
     font-family: Roboto-medium;
@@ -139,3 +140,33 @@ a:hover{
 .obj-img {
     height: 100%;
 }
+
+.fa-circle {
+    color: #FFCE01;
+}
+
+.fa-edit {
+    color: #CB7503;
+}
+
+.fa-minus-circle {
+    color: #B20000;
+}
+
+.fa-question-circle {
+    color: #919191;
+}
+
+.fa-save {
+    color:#006EC2;
+}
+
+.fa-times {
+    color: #FE3535;
+}
+
+
+
+
+
+
