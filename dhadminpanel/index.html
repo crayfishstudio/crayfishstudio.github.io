@@ -9,12 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Hello, adminka!</title>
+    <title>Admin page</title>
 </head>
 
 <body class="px-2">
-    <div class="sticky-top">
+    <div class="sticky-top main-menu">
         <div class="container-fluid light-grey-bg rounded mt-2 px-2">
             <div class="row no-gutters text-center
                         ">
@@ -164,9 +165,9 @@
         </div>
     </div>
     <div class="container-fluid px-0 mt-3">
-        <div class="card">
-            <div class="card-header ligght-grey-bg">
-                <h5 class="card-title rob-med mb-0"><i class="fas fa-circle mr-2"></i>КЛАСИФІКАЦІЯ</h5>
+        <div class="card border-0">
+            <div class="card-header ligght-grey-bg border-0">
+                <h5 class="card-title rob-med mb-0"><i class="fas fa-sm fa-circle mr-2"></i>КЛАСИФІКАЦІЯ</h5>
             </div>
             <div class="card-body">
                 <table class="table table-borderless">
@@ -174,14 +175,14 @@
                         <tr class="row">
                             <th scope="row" class="col-3">Класифікація</th>
                             <td class="col-3">Мініатюрна скульптура</td>
-                            <td class="col-2"><i class="far fa-edit"></i><i class="ml-2 fas fa-minus-circle"></i></td>
-                            <td class="col-4"><i class="far fa-question-circle"></i></td>
+                            <td class="col-2"><i class="far fa-lg fa-edit"></i><i class="ml-2 fas fa-lg fa-minus-circle"></i></td>
+                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
                         </tr>
                         <tr class="row">
                             <th scope="row" class="col-3">Тип об'єкту</th>
                             <td class="col-3">Мініатюрна скульптура</td>
-                            <td class="col-2"><i class="far fa-edit"></i><i class="ml-2 fas fa-minus-circle"></i></td>
-                            <td class="col-4"><i class="far fa-question-circle"></i></td>
+                            <td class="col-2"><i class="far fa-lg fa-edit"></i><i class="ml-2 fas fa-lg fa-minus-circle"></i></td>
+                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
                         </tr>
                         <tr class="row">
                             <th scope="row" class="col-3">Тип компоненту</th>
@@ -198,8 +199,8 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="col-2"><i class="far fa-save"></i><i class="ml-3 fas fa-times"></i></td>
-                            <td class="col-4"><i class="far fa-question-circle"></i></td>
+                            <td class="col-2"><i class="far fa-lg fa-save"></i><i class="ml-3 fa-lg fas fa-times"></i></td>
+                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
                         </tr>
                     </tbody>
                 </table>
@@ -207,14 +208,14 @@
         </div>
     </div>
     <div class="container-fluid px-0 mt-3">
-        <div class="card">
-            <div class="card-header ligght-grey-bg">
-                <h5 class="card-title rob-med mb-0"><i class="fas fa-circle mr-2"></i>QR-КОДИ ОБ'ЄКТУ</h5>
+        <div class="card border-0">
+            <div class="card-header border-0 ligght-grey-bg">
+                <h5 class="card-title rob-med mb-0"><i class="fas fa-sm fa-circle mr-2"></i>QR-КОДИ ОБ'ЄКТУ</h5>
             </div>
-            <div class="card-body row">
-                <div class="col-4 text-center"><div>QR-код: доступ до об'єкту в колекції</div><img class="img-fluid mx-auto" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download mx-2"></i> <span>- скачати</span></a></div>
-                <div class="col-4 text-center"><div>Document QR-code with text -php lib</div><img class="img-fluid mx-auto" src="img/Image%202.png"><a href="#"><i class="fas fa-download mx-2"></i> <span>- скачати</span></a></div>
-                <div class="col-4 text-center"><div>Document qrcode visu -php lib</div><img class="img-fluid mx-auto" src="img/Image%202.png"><a href="#"><i class="fas fa-download mx-2"></i> <span>- скачати</span></a></div>
+            <div class="card-body border-0 row">
+                <div class="col-4 text-center"><div>QR-код: доступ до об'єкту в колекції</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
+                <div class="col-4 text-center"><div>Document QR-code with text -php lib</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
+                <div class="col-4 text-center"><div>Document qrcode visu -php lib</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
             </div>
         </div>
     </div>
@@ -224,6 +225,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/zoom.js"></script>
+    <script src="js/zoom1.js"></script>
     <script src="js/script.js"></script>
 </body>
 

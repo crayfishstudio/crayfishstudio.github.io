@@ -177,3 +177,16 @@ a:hover{
 .striped:nth-child(odd) {
     background-color: #2d2d2d;
 }
+
+.card {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.qr {
+    width: 40px;
+    height: 40px;
+}
+
+.main-menu {
+    background-color: #fff;
+}
