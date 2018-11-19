@@ -156,6 +156,7 @@ a:hover {
 
 .obj-img {
     height: 100%;
+    padding: 10px;
 }
 
 .fa-circle {
@@ -255,4 +256,9 @@ a:hover {
 
 .addemail {
     color: #08c;
+}
+
+.icons {
+    display: inline-block;
+    width: 22%;
 }
