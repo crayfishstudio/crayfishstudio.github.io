@@ -260,5 +260,5 @@ a:hover {
 
 .icons {
     display: inline-block;
-    width: 22%;
+    min-width: 22%;
 }
