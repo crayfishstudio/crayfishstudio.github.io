@@ -211,14 +211,16 @@ a:hover {
 
 #to-top {
     display: ;
-    background-color: #2d2d2d;
+    background-color: #FFCE01;
     color: #fff;
     position: fixed;
     bottom: 20px;
     right: 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
+    width: 37px;
     z-index: 900;
+    opacity: 0.5;
 }
 
 
