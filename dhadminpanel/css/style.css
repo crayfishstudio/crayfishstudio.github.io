@@ -1,37 +1,45 @@
-@font-face{
-    font-family:Roboto-medium;
+@font-face {
+    font-family: Roboto-medium;
     src: url(../fonts/Roboto-Medium.ttf);
 }
-@font-face{
-    font-family:Roboto-regular;
+
+@font-face {
+    font-family: Roboto-regular;
     src: url(../fonts/Roboto-Regular.ttf);
 }
-@font-face{
-    font-family:Roboto-bold;
+
+@font-face {
+    font-family: Roboto-bold;
     src: url(../fonts/Roboto-Bold.ttf);
 }
-@font-face{
-    font-family:Arial-uni;
+
+@font-face {
+    font-family: Arial-uni;
     src: url(../fonts/ARIALUNI.TTF);
 }
-body{
+
+body {
     font-family: Roboto-regular;
     color: #2d2d2d;
 }
-.rob-med{
+
+.rob-med {
     font-family: Roboto-medium;
 }
-.rob-bold{
+
+.rob-bold {
     font-family: Roboto-bold;
 }
-.arialuni{
+
+.arialuni {
     font-family: Arial-uni;
 }
 
 .light-grey-bg {
     background-color: #EFEFEF;
 }
-.btn.light-grey-bg{
+
+.btn.light-grey-bg {
     color: #2d2d2d;
 }
 
@@ -79,11 +87,13 @@ body{
 #biggertext {
     font-size: 120%;
 }
-a{
-    color:#2D2D2D; 
+
+a {
+    color: #2D2D2D;
 }
-a:hover{
-    color:#2D2D2D;
+
+a:hover {
+    color: #2D2D2D;
 }
 
 .w-90 {
@@ -107,7 +117,7 @@ a:hover{
     border-top: 3px solid #fff !important;
     border-radius: 0px !important;
     line-height: 1.1;
-    color:#2D2D2D;
+    color: #2D2D2D;
 }
 
 .tab.active {
@@ -128,7 +138,8 @@ a:hover{
     color: #00751B;
     font-size: 110%;
 }
-.btn-to-object:hover{
+
+.btn-to-object:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -136,8 +147,9 @@ a:hover{
 .breadcrumb {
     background-color: #fff;
 }
-.breadcrumb li{
-    font-size:110%
+
+.breadcrumb li {
+    font-size: 110%
 }
 
 .obj-img {
@@ -161,17 +173,21 @@ a:hover{
 }
 
 .fa-save {
-    color:#006EC2;
+    color: #006EC2;
 }
 
 .fa-times {
     color: #FE3535;
 }
 
-
-
-
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1200;
+    padding-top:5px;
+    padding-right: 10px;
+}
 
 
 .striped:nth-child(odd) {
@@ -179,14 +195,59 @@ a:hover{
 }
 
 .card {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .qr {
-    width: 40px;
-    height: 40px;
+    width: 100%;
 }
 
 .main-menu {
     background-color: #fff;
+}
+
+#to-top {
+    display: ;
+    background-color: #2d2d2d;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    border-radius: 5px;
+    z-index: 900;
+}
+
+
+
+.fa-check {
+    color: #00751b;
+}
+
+.minus {
+    width: 20px;
+    margin-top: -3px;
+}
+
+[data-title]:hover::before{
+    content: attr(data-title);
+    position: absolute;
+    left: 50px;
+    top: -50%;
+    display: inline-block;
+    width: 220px;
+    border: 1px solid #FFCE01;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial-unicode;
+}
+
+
+
+.addinput {
+    color: #00751b;
+}
+
+.addemail {
+    color: #08c;
 }

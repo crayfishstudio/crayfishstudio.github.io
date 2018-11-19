@@ -15,151 +15,149 @@
 </head>
 
 <body class="px-2">
-    <div class="sticky-top main-menu">
-        <div class="container-fluid light-grey-bg rounded mt-2 px-2">
-            <div class="row no-gutters text-center
+    <div class="container-fluid light-grey-bg rounded mt-2 px-2">
+        <div class="row no-gutters text-center
                         ">
-                <div class="col-1 my-auto"><a href="#"><i class="fas fa-angle-double-left"></i><span>XXXXX0</span><i class="fas fa-angle-left"></i></a></div>
-                <div class="col-1">
-                    <input type="text" class="top-input" placeholder="ID" name="id_number">
-                </div>
-                <div class="col-1 my-auto"><a href="#"><i class="fas fa-angle-right"></i><span>XXXXX2</span><i class="fas fa-angle-double-right"></i></a></div>
-                <div class="col-1 px-1">
-                    <input type="text" class="top-input" placeholder="КВ" name="kv_number">
-                </div>
-                <div class="col-1 px-1">
-                    <input type="text" class="top-input" placeholder="Інв. номер" name="inv_number">
-                </div>
-                <div class="col-4 px-1">
-                    <input type="text" class="top-input" placeholder="Назва об'єкту" name="object_name">
-                </div>
-                <div class="col-2 text-center px-1">
-                    <button href="#" class="btn btn-green-custom rounded">Новий об'єкт</button>
-                </div>
-                <div class="col-1 text-right my-auto font-weight-bold"><a href="#" id="smallertext" class="pr-2">A-</a><a href="#" id="normaltext" class="px-2">A</a><a href="#" id="biggertext" class="pl-2">A+</a></div>
+            <div class="col-1 my-auto"><a href="#"><i class="fas fa-angle-double-left"></i><span>XXXXX0</span><i class="fas fa-angle-left"></i></a></div>
+            <div class="col-1">
+                <input type="text" class="top-input" placeholder="ID" name="id_number">
             </div>
+            <div class="col-1 my-auto"><a href="#"><i class="fas fa-angle-right"></i><span>XXXXX2</span><i class="fas fa-angle-double-right"></i></a></div>
+            <div class="col-1 px-1">
+                <input type="text" class="top-input" placeholder="КВ" name="kv_number">
+            </div>
+            <div class="col-1 px-1">
+                <input type="text" class="top-input" placeholder="Інв. номер" name="inv_number">
+            </div>
+            <div class="col-4 px-1">
+                <input type="text" class="top-input" placeholder="Назва об'єкту" name="object_name">
+            </div>
+            <div class="col-2 text-center px-1">
+                <button href="#" class="btn btn-green-custom rounded">Новий об'єкт</button>
+            </div>
+            <div class="col-1 text-right my-auto font-weight-bold"><a href="#" id="smallertext" class="pr-2" onclick="sText()">A-</a><a href="#" id="normaltext" class="px-2" onclick="nText()">A</a><a href="#" id="biggertext" class="pl-2" onclick="bText()" >A+</a></div>
         </div>
-        <div class="container-fluid mt-2 px-0">
-            <div class="row no-gutters ">
-                <div class="col-10">
-                    <div class="row no-gutters my-auto">
-                        <div class="w-90">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
-                                    <li class="breadcrumb-item"><a href="#">Об'єкти</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Облік</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">ID:XXXXXX</li>
-                                    <li>. Назва об'єкту lorem ipsum dolor sit amet</li>
-                                    <li>. Автор Нейм</li>
-                                    <li>. Місто Нейм</li>
-                                    <li>. Рік</li>
-                                </ol>
-                            </nav>
-                        </div>
-                        <div class="w-10">
-                            <button class="btn btn-to-object rounded rob-bold">До об'єкту</button>
-                        </div>
+    </div>
+    <div class="container-fluid mt-2 px-0 ">
+        <div class="row no-gutters ">
+            <div class="col-10">
+                <div class="row no-gutters my-auto" id="sticky-panel">
+
+                    <div class="w-90">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="#">Об'єкти</a></li>
+                                <li class="breadcrumb-item"><a href="#">Облік</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">ID:XXXXXX</li>
+                                <li>. Назва об'єкту lorem ipsum dolor sit amet</li>
+                                <li>. Автор Нейм</li>
+                                <li>. Місто Нейм</li>
+                                <li>. Рік</li>
+                            </ol>
+                        </nav>
                     </div>
-                    <nav>
-                        <div class="nav nav-tabs text-center rob-bold" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active tab w-10 px-0" id="nav-opys-tab" data-toggle="tab" href="#nav-opys" role="tab" aria-controls="nav-opys" aria-selected="true">
-                                <div class="mt-2">ОПИС</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-content-tab" data-toggle="tab" href="#nav-content" role="tab" aria-controls="nav-content" aria-selected="false">
-                                <div class="mt-2">КОНТЕНТ</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-terminy-tab" data-toggle="tab" href="#nav-terminy" role="tab" aria-controls="nav-terminy" aria-selected="false">
-                                <div class="">ПОШУКОВІ ТЕРМІНИ</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-napovnenya-tab" data-toggle="tab" href="#nav-napovnenya" role="tab" aria-controls="nav-napovnenya" aria-selected="false">
-                                <div class="">ЦИФРОВЕ НАПОВНЕННЯ</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-zvyazky-tab" data-toggle="tab" href="#nav-zvyazky" role="tab" aria-controls="nav-zvyazky" aria-selected="false">
-                                <div class="mt-2">ЗВ'ЯЗКИ</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-fond-tab" data-toggle="tab" href="#nav-fond" role="tab" aria-controls="nav-fond" aria-selected="false">
-                                <div class="mt-2">ФОНД</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-colection-tab" data-toggle="tab" href="#nav-colection" role="tab" aria-controls="nav-colection" aria-selected="false">
-                                <div class="mt-2">КОЛЕКЦІЇ</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-ecsponuvanya-tab" data-toggle="tab" href="#nav-ecsponuvanya" role="tab" aria-controls="nav-ecsponuvanya" aria-selected="false">
-                                <div class="">ЕКСПО-<br>НУВАННЯ</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-prava-tab" data-toggle="tab" href="#nav-prava" role="tab" aria-controls="nav-prava" aria-selected="false">
-                                <div class="mt-2">ПРАВА</div>
-                            </a>
-                            <a class="nav-item nav-link tab w-10 px-0" id="nav-export-tab" data-toggle="tab" href="#nav-export" role="tab" aria-controls="nav-export" aria-selected="false">
-                                <div class="mt-2">ЕКСПОРТ</div>
-                            </a>
-                        </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active text-center mt-2" id="nav-opys" role="tabpanel" aria-labelledby="nav-opys-tab">
-                            <nav>
-                                <div class="nav nav-tabs rob-med" id="nav-tab-opys" role="tablist">
-                                    <a class="nav-item nav-link active w-20" id="nav-slujbovi-tab-1" data-toggle="tab" href="#nav-slujbovi-1" role="tab" aria-controls="nav-slujbovi-1" aria-selected="true">СЛУЖБОВІ ДАНІ</a>
-                                    <a class="nav-item nav-link w-20" id="nav-osnovni-tab-1" data-toggle="tab" href="#nav-osnovni-1" role="tab" aria-controls="nav-osnovni-1" aria-selected="false">ОСНОВНІ ДАНІ</a>
-                                    <a class="nav-item nav-link w-20" id="nav-shlyah-tab-1" data-toggle="tab" href="#nav-shlyah-1" role="tab" aria-controls="nav-shlyah-1" aria-selected="false">ШЛЯХ (ПОДІЇ)</a>
-                                    <a class="nav-item nav-link w-20" id="nav-haracterysyki-tab-1" data-toggle="tab" href="#nav-haracterysyki-1" role="tab" aria-controls="nav-haracterysyki-1" aria-selected="false">ХАРАКТЕРИСТИКИ</a>
-                                    <a class="nav-item nav-link w-20" id="nav-original-tab-1" data-toggle="tab" href="#nav-original-1" role="tab" aria-controls="nav-original-1" aria-selected="false">ОПИС ОРИГІНАЛУ</a>
-                                </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent-1">
-
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="nav-contentш" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-home-tab-2" data-toggle="tab" href="#nav-home-2" role="tab" aria-controls="nav-home-2" aria-selected="true">Home2</a>
-                                    <a class="nav-item nav-link" id="nav-profile-tab-2" data-toggle="tab" href="#nav-profile-2" role="tab" aria-controls="nav-profile-2" aria-selected="false">Profile2</a>
-                                    <a class="nav-item nav-link" id="nav-contact-tab-2" data-toggle="tab" href="#nav-contact-2" role="tab" aria-controls="nav-contact-2" aria-selected="false">Contact2</a>
-                                </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent-2">
-                                <div class="tab-pane fade show active" id="nav-home-2" role="tabpanel" aria-labelledby="nav-home-tab-2">
-                                    два адин
-                                </div>
-                                <div class="tab-pane fade" id="nav-profile-2" role="tabpanel" aria-labelledby="nav-profile-tab-2">
-                                    два два
-                                </div>
-                                <div class="tab-pane fade" id="nav-contact-2" role="tabpanel" aria-labelledby="nav-contact-tab-2">
-                                    два три
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-home-tab-3" data-toggle="tab" href="#nav-home-3" role="tab" aria-controls="nav-home-3" aria-selected="true">Home3</a>
-                                    <a class="nav-item nav-link" id="nav-profile-tab-3" data-toggle="tab" href="#nav-profile-3" role="tab" aria-controls="nav-profile-3" aria-selected="false">Profile3</a>
-                                    <a class="nav-item nav-link" id="nav-contact-tab-3" data-toggle="tab" href="#nav-contact-3" role="tab" aria-controls="nav-contact-3" aria-selected="false">Contact3</a>
-                                </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent-3">
-                                <div class="tab-pane fade show active" id="nav-home-3" role="tabpanel" aria-labelledby="nav-home-tab-3">
-                                    три адин
-                                </div>
-                                <div class="tab-pane fade" id="nav-profile-3" role="tabpanel" aria-labelledby="nav-profile-tab-3">
-                                    три два
-                                </div>
-                                <div class="tab-pane fade" id="nav-contact-3" role="tabpanel" aria-labelledby="nav-contact-tab-3">
-                                    три три
-                                </div>
-                            </div>
-                        </div>
+                    <div class="w-10">
+                        <button class="btn btn-to-object rounded rob-bold">До об'єкту</button>
                     </div>
-
 
                 </div>
-                <div class="col-2 justify-content-end d-flex">
-                    <div class="square">
-                        <img class="mx-auto d-block obj-img" src="img/Image%201.jpg">
+                <nav>
+                    <div class="nav nav-tabs text-center rob-bold" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active tab w-10 px-0" id="nav-opys-tab" data-toggle="tab" href="#nav-opys" role="tab" aria-controls="nav-opys" aria-selected="true">
+                            <div class="mt-2">ОПИС</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-content-tab" data-toggle="tab" href="#nav-content" role="tab" aria-controls="nav-content" aria-selected="false">
+                            <div class="mt-2">КОНТЕНТ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-terminy-tab" data-toggle="tab" href="#nav-terminy" role="tab" aria-controls="nav-terminy" aria-selected="false">
+                            <div class="">ПОШУКОВІ ТЕРМІНИ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-napovnenya-tab" data-toggle="tab" href="#nav-napovnenya" role="tab" aria-controls="nav-napovnenya" aria-selected="false">
+                            <div class="">ЦИФРОВЕ НАПОВНЕННЯ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-zvyazky-tab" data-toggle="tab" href="#nav-zvyazky" role="tab" aria-controls="nav-zvyazky" aria-selected="false">
+                            <div class="mt-2">ЗВ'ЯЗКИ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-fond-tab" data-toggle="tab" href="#nav-fond" role="tab" aria-controls="nav-fond" aria-selected="false">
+                            <div class="mt-2">ФОНД</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-colection-tab" data-toggle="tab" href="#nav-colection" role="tab" aria-controls="nav-colection" aria-selected="false">
+                            <div class="mt-2">КОЛЕКЦІЇ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-ecsponuvanya-tab" data-toggle="tab" href="#nav-ecsponuvanya" role="tab" aria-controls="nav-ecsponuvanya" aria-selected="false">
+                            <div class="">ЕКСПО-<br>НУВАННЯ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-prava-tab" data-toggle="tab" href="#nav-prava" role="tab" aria-controls="nav-prava" aria-selected="false">
+                            <div class="mt-2">ПРАВА</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-10 px-0" id="nav-export-tab" data-toggle="tab" href="#nav-export" role="tab" aria-controls="nav-export" aria-selected="false">
+                            <div class="mt-2">ЕКСПОРТ</div>
+                        </a>
                     </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active text-center mt-2" id="nav-opys" role="tabpanel" aria-labelledby="nav-opys-tab">
+                        <nav>
+                            <div class="nav nav-tabs rob-med" id="nav-tab-opys" role="tablist">
+                                <a class="nav-item nav-link active w-20" id="nav-slujbovi-tab-1" data-toggle="tab" href="#nav-slujbovi-1" role="tab" aria-controls="nav-slujbovi-1" aria-selected="true">СЛУЖБОВІ ДАНІ</a>
+                                <a class="nav-item nav-link w-20" id="nav-osnovni-tab-1" data-toggle="tab" href="#nav-osnovni-1" role="tab" aria-controls="nav-osnovni-1" aria-selected="false">ОСНОВНІ ДАНІ</a>
+                                <a class="nav-item nav-link w-20" id="nav-shlyah-tab-1" data-toggle="tab" href="#nav-shlyah-1" role="tab" aria-controls="nav-shlyah-1" aria-selected="false">ШЛЯХ (ПОДІЇ)</a>
+                                <a class="nav-item nav-link w-20" id="nav-haracterysyki-tab-1" data-toggle="tab" href="#nav-haracterysyki-1" role="tab" aria-controls="nav-haracterysyki-1" aria-selected="false">ХАРАКТЕРИСТИКИ</a>
+                                <a class="nav-item nav-link w-20" id="nav-original-tab-1" data-toggle="tab" href="#nav-original-1" role="tab" aria-controls="nav-original-1" aria-selected="false">ОПИС ОРИГІНАЛУ</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent-1">
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-contentш" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab-2" data-toggle="tab" href="#nav-home-2" role="tab" aria-controls="nav-home-2" aria-selected="true">Home2</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab-2" data-toggle="tab" href="#nav-profile-2" role="tab" aria-controls="nav-profile-2" aria-selected="false">Profile2</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab-2" data-toggle="tab" href="#nav-contact-2" role="tab" aria-controls="nav-contact-2" aria-selected="false">Contact2</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent-2">
+                            <div class="tab-pane fade show active" id="nav-home-2" role="tabpanel" aria-labelledby="nav-home-tab-2">
+                                два адин
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile-2" role="tabpanel" aria-labelledby="nav-profile-tab-2">
+                                два два
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact-2" role="tabpanel" aria-labelledby="nav-contact-tab-2">
+                                два три
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab-3" data-toggle="tab" href="#nav-home-3" role="tab" aria-controls="nav-home-3" aria-selected="true">Home3</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab-3" data-toggle="tab" href="#nav-profile-3" role="tab" aria-controls="nav-profile-3" aria-selected="false">Profile3</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab-3" data-toggle="tab" href="#nav-contact-3" role="tab" aria-controls="nav-contact-3" aria-selected="false">Contact3</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent-3">
+                            <div class="tab-pane fade show active" id="nav-home-3" role="tabpanel" aria-labelledby="nav-home-tab-3">
+                                три адин
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile-3" role="tabpanel" aria-labelledby="nav-profile-tab-3">
+                                три два
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact-3" role="tabpanel" aria-labelledby="nav-contact-tab-3">
+                                три три
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 justify-content-end d-flex">
+                <div class="square">
+                    <img class="mx-auto d-block obj-img" src="img/Image%201.jpg">
                 </div>
             </div>
         </div>
@@ -167,31 +165,29 @@
     <div class="container-fluid px-0 mt-3">
         <div class="card border-0">
             <div class="card-header ligght-grey-bg border-0">
-                <h5 class="card-title rob-med mb-0"><i class="fas fa-sm fa-circle mr-2"></i>КЛАСИФІКАЦІЯ</h5>
+                <h5 class="card-title rob-med mb-0"><i class="ml-2 fas fa-sm fa-circle mr-2"></i>КЛАСИФІКАЦІЯ</h5>
             </div>
             <div class="card-body">
                 <table class="table table-borderless">
                     <tbody>
                         <tr class="row">
-                            <th scope="row" class="col-3">Класифікація</th>
-                            <td class="col-3">Мініатюрна скульптура</td>
-                            <td class="col-2"><i class="far fa-lg fa-edit"></i><i class="ml-2 fas fa-lg fa-minus-circle"></i></td>
-                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
+                            <th scope="row" class="col-3">Класифікація <a href="#"><i class="fas fa-lg addinput fa-plus-circle"></i></a> <a href="#"><i class="fas fa-lg ml-2 fa-check"></i></a></th>
+                            <td class="col-5">Мініатюрна скульптура<a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a></td>
+                            <td class="col-4" data-title="Тут текст підказки тут текст підказки тут текст підказки тут текст підказкии"><i class="far fa-lg fa-question-circle"></i></td>
                         </tr>
                         <tr class="row">
-                            <th scope="row" class="col-3">Тип об'єкту</th>
-                            <td class="col-3">Мініатюрна скульптура</td>
-                            <td class="col-2"><i class="far fa-lg fa-edit"></i><i class="ml-2 fas fa-lg fa-minus-circle"></i></td>
-                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
+                            <th scope="row" class="col-3">Тип об'єкту <a href="#"><i class="fas fa-lg addemail fa-plus-circle"></i></a></th>
+                            <td class="col-5">Мініатюрна скульптура<a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a></td>
+                            <td class="col-4" data-title="Тут текст підказки тут текст підказки тут текст підказки тут текст підказкии"><i class="far fa-lg fa-question-circle"></i></td>
                         </tr>
                         <tr class="row">
                             <th scope="row" class="col-3">Тип компоненту</th>
-                            <td class="col-3">
+                            <td class="col-5">
                                 <div class="dropdown">
                                     <a class="btn btn-secondary light-grey-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Мініатюрна скульптура
                                     </a>
-
+                                    <a href="#"><i class="fas fa-lg ml-2 fa-check"></i></a><a href="#"><i class="far ml-2 fa-lg fa-save"></i></a><a href="#"><i class="ml-3 fa-lg fas fa-times"></i></a>
                                     <div class="dropdown-menu light-grey-bg striped" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" href="#">Опція 1</a>
                                         <a class="dropdown-item" href="#">Опція 2</a>
@@ -199,8 +195,47 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="col-2"><i class="far fa-lg fa-save"></i><i class="ml-3 fa-lg fas fa-times"></i></td>
-                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
+                            <td class="col-4" data-title="Тут текст підказки тут текст підказки тут текст підказки тут текст підказкии"><i class="far fa-lg fa-question-circle"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0 mt-3">
+        <div class="card border-0">
+            <div class="card-header ligght-grey-bg border-0">
+                <h5 class="card-title rob-med mb-0"><i class="ml-2 fas fa-sm fa-circle mr-2"></i>КЛАСИФІКАЦІЯ</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr class="row">
+                            <th scope="row" class="col-3">Класифікація <a href="#"><i class="fas fa-lg addinput fa-plus-circle"></i></a> <a href="#"><i class="fas fa-lg ml-2 fa-check"></i></a></th>
+                            <td class="col-5">Мініатюрна скульптура<a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a></td>
+                            <td class="col-4" data-title="Тут текст підказки тут текст підказки тут текст підказки тут текст підказкии"><i class="far fa-lg fa-question-circle"></i></td>
+                        </tr>
+                        <tr class="row">
+                            <th scope="row" class="col-3">Тип об'єкту <a href="#"><i class="fas fa-lg addemail fa-plus-circle"></i></a></th>
+                            <td class="col-5">Мініатюрна скульптура<a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a></td>
+                            <td class="col-4" data-title="Тут текст підказки тут текст підказки тут текст підказки тут текст підказкии"><i class="far fa-lg fa-question-circle"></i></td>
+                        </tr>
+                        <tr class="row">
+                            <th scope="row" class="col-3">Тип компоненту</th>
+                            <td class="col-5">
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary light-grey-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Мініатюрна скульптура
+                                    </a>
+                                    <a href="#"><i class="fas fa-lg ml-2 fa-check"></i></a><a href="#"><i class="far ml-2 fa-lg fa-save"></i></a><a href="#"><i class="ml-3 fa-lg fas fa-times"></i></a>
+                                    <div class="dropdown-menu light-grey-bg striped" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Опція 1</a>
+                                        <a class="dropdown-item" href="#">Опція 2</a>
+                                        <a class="dropdown-item" href="#">Опція 3</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="col-4" data-title="Тут текст підказки тут текст підказки тут текст підказки тут текст підказкии"><i class="far fa-lg fa-question-circle"></i></td>
                         </tr>
                     </tbody>
                 </table>
@@ -213,67 +248,19 @@
                 <h5 class="card-title rob-med mb-0"><i class="fas fa-sm fa-circle mr-2"></i>QR-КОДИ ОБ'ЄКТУ</h5>
             </div>
             <div class="card-body border-0 row">
-                <div class="col-4 text-center"><div>QR-код: доступ до об'єкту в колекції</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
-                <div class="col-4 text-center"><div>Document QR-code with text -php lib</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
-                <div class="col-4 text-center"><div>Document qrcode visu -php lib</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
+                <div class="col-4 text-center">
+                    <div>QR-код: доступ до об'єкту в колекції</div><img class="img-fluid mx-auto qr" src="img/Image%202.png"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a>
+                </div>
+                <div class="col-4 text-center">
+                    <div>Document QR-code with text -php lib</div><img class="img-fluid mx-auto qr" src="img/Image%202.png"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a>
+                </div>
+                <div class="col-4 text-center">
+                    <div>Document qrcode visu -php lib</div><img class="img-fluid mx-auto qr" src="img/Image%202.png"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid px-0 mt-3">
-        <div class="card border-0">
-            <div class="card-header ligght-grey-bg border-0">
-                <h5 class="card-title rob-med mb-0"><i class="fas fa-sm fa-circle mr-2"></i>КЛАСИФІКАЦІЯ</h5>
-            </div>
-            <div class="card-body">
-                <table class="table table-borderless">
-                    <tbody>
-                        <tr class="row">
-                            <th scope="row" class="col-3">Класифікація</th>
-                            <td class="col-3">Мініатюрна скульптура</td>
-                            <td class="col-2"><i class="far fa-lg fa-edit"></i><i class="ml-2 fas fa-lg fa-minus-circle"></i></td>
-                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-3">Тип об'єкту</th>
-                            <td class="col-3">Мініатюрна скульптура</td>
-                            <td class="col-2"><i class="far fa-lg fa-edit"></i><i class="ml-2 fas fa-lg fa-minus-circle"></i></td>
-                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
-                        </tr>
-                        <tr class="row">
-                            <th scope="row" class="col-3">Тип компоненту</th>
-                            <td class="col-3">
-                                <div class="dropdown">
-                                    <a class="btn btn-secondary light-grey-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Мініатюрна скульптура
-                                    </a>
-
-                                    <div class="dropdown-menu light-grey-bg striped" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Опція 1</a>
-                                        <a class="dropdown-item" href="#">Опція 2</a>
-                                        <a class="dropdown-item" href="#">Опція 3</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="col-2"><i class="far fa-lg fa-save"></i><i class="ml-3 fa-lg fas fa-times"></i></td>
-                            <td class="col-4"><i class="far fa-lg fa-question-circle"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid px-0 mt-3">
-        <div class="card border-0">
-            <div class="card-header border-0 ligght-grey-bg">
-                <h5 class="card-title rob-med mb-0"><i class="fas fa-sm fa-circle mr-2"></i>QR-КОДИ ОБ'ЄКТУ</h5>
-            </div>
-            <div class="card-body border-0 row">
-                <div class="col-4 text-center"><div>QR-код: доступ до об'єкту в колекції</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
-                <div class="col-4 text-center"><div>Document QR-code with text -php lib</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
-                <div class="col-4 text-center"><div>Document qrcode visu -php lib</div><img class="img-fluid mx-auto qr" src="img/Image%202.png" data-action="zoom"><a href="#"><i class="fas fa-download  mx-2"></i> <span>- скачати</span></a></div>
-            </div>
-        </div>
-    </div>
+    <button id="to-top" onclick="toTop()" title="Наверх"><i class="fas fa-angle-double-up fa-2x"></i></button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
