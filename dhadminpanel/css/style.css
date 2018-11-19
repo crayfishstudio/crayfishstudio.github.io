@@ -210,7 +210,7 @@ a:hover {
 }
 
 #to-top {
-    display: ;
+    display: none;
     background-color: #FFCE01;
     color: #fff;
     position: fixed;
