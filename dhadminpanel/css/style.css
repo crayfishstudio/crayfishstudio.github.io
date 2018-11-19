@@ -262,3 +262,7 @@ a:hover {
     display: inline-block;
     min-width: 22%;
 }
+
+.lang {
+    display: inline-block;
+}
