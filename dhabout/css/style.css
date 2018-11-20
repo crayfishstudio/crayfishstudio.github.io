@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+#nav-container {
+    border-bottom: 2px solid #2D2D2D !important;
+}
+
+.dropdown-custom {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #efefef;
+    min-width: 200px;
+    z-index: 1;
+    top: calc(100% + 2px);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown-custom:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-custom:hover .dropbtn {cursor: pointer;}
+
+.nav-link-custom {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border-top: 5px solid #EFEFEF;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #575757 !important;
+    transition: all ease 0.3s;
+}
+
+.nav-link-custom:hover {
+    border-top: 5px solid #FFCE01;
+}
