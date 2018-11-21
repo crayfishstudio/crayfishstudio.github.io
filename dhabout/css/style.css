@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+@media screen and (max-width: 992px) {
+    .nav-link-custom {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        width: 90vw !important;
+        text-align: center;
+    }
+    
+    .dropdown-content {
+        width: 100%;
+    }
+}
+
 #nav-container {
     border-bottom: 2px solid #2D2D2D !important;
 }
@@ -14,7 +27,7 @@
     position: absolute;
     right: 0;
     background-color: #efefef;
-    min-width: 200px;
+    min-width: 15vw;
     z-index: 1;
     top: calc(100% + 2px);
 }
@@ -28,7 +41,9 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #f7f7f7;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown-custom:hover .dropdown-content {display: block;}
@@ -48,5 +63,9 @@
 }
 
 .nav-link-custom:hover {
+    border-top: 5px solid #FFCE01;
+}
+
+.active-custom {
     border-top: 5px solid #FFCE01;
 }
