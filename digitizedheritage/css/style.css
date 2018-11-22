@@ -190,7 +190,7 @@ option {
 }
 
 .footer-info-small {
-    font-size: 95%;
+    font-size: 0.95rem;
     font-family: 'Roboto', sans-serif;
     color: #EFEFEF;
 }
