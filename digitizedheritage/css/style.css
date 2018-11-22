@@ -6,12 +6,12 @@
     .nav-link-custom {
         padding-top: 15px !important;
         padding-bottom: 15px !important;
-        width: 90vw !important;
+        width: 80vw !important;
         text-align: center;
     }
     
-    .dropdown-content {
-        width: 100%;
+    .dropdown-custom:hover .dropdown-content {
+        display: none !important;
     }
 }
 
@@ -29,7 +29,7 @@
     position: absolute;
     right: 0;
     background-color: #efefef;
-    min-width: 15vw;
+    width: 200px;
     z-index: 1;
     top: calc(100% + 2px);
 }
