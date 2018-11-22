@@ -203,3 +203,20 @@ option {
 .footer-email-small:hover {
     color: #fff;
 }
+
+.hided {
+    top: -80px !important;
+}
+
+#menuToggle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;    
+    -webkit-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    -moz-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    -o-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    /*border-bottom: 0.8px solid #E1E1E1;*/
+    z-index: 1000;
+}

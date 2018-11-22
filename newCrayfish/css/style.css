@@ -280,11 +280,11 @@ body {
     left: 0px;
     width: 100%;
     opacity: 1;
-    -webkit-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
-    -moz-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
-    -o-transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
-    transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
-    /*border-bottom: 0.8px solid #E1E1E1;*/
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    background-color: #fff;
 }
 
 .hided {
