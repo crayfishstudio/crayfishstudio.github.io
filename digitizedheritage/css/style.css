@@ -95,7 +95,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 115%;
+    font-size: 105%;
     color: #575757;
 }
 
@@ -106,7 +106,7 @@
 .footer-page {
     font-family: 'Roboto', sans-serif;
     color: #575757;
-    font-size: 110%;
+    font-size: 105%;
 }
 
 .footer-page:hover {
@@ -116,7 +116,7 @@
 .footer-info {
     font-family: 'Roboto', sans-serif;
     color: #919191;
-    font-size: 110%;
+    font-size: 105%;
 }
 
 .footer-info a {
@@ -133,7 +133,7 @@
 
 .footer-contact-header {
     font-family: 'Roboto', sans-serif;
-    font-size: 115%;
+    font-size: 110%;
     color: #575757;
 }
 
@@ -141,7 +141,7 @@ select, input, textarea {
     width: 100%;
     padding: 11px;
     padding-left: 15px;
-    font-size: 110%;
+    font-size: 105%;
     font-family: 'Roboto', sans-serif;
     color: #575757;
     border-radius: 5px;
@@ -151,7 +151,7 @@ select, input, textarea {
 
 option {
     margin: 10px !important;
-    font-size: 110%;
+    font-size: 105%;
     font-family: 'Roboto', sans-serif;
     color: #575757;
 }
@@ -166,7 +166,7 @@ option {
     background-color: #FFF;
     cursor: pointer;
     padding: 10px;
-    font-size: 110%;
+    font-size: 105%;
     transition: all ease 0.4s;
 }
 
@@ -181,7 +181,7 @@ option {
 }
 
 .footer-info-small-dark {
-    font-size: 100%;
+    font-size: 95%;
     line-height: 1.1;
     font-family: 'Roboto', sans-serif;
     color: #2D2D2D;
@@ -190,7 +190,7 @@ option {
 }
 
 .footer-info-small {
-    font-size: 0.95rem;
+    font-size: 90%;
     font-family: 'Roboto', sans-serif;
     color: #EFEFEF;
 }
