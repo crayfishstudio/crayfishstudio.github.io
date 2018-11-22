@@ -173,3 +173,33 @@ option {
 .btn-custom:hover {
     background-color: #FFCE01;
 }
+.cc-contianer {
+    background-color: #FFF;
+    padding: 12px;
+    border-radius: 5px;
+    box-sizing: content-box;
+}
+
+.footer-info-small-dark {
+    font-size: 100%;
+    line-height: 1.1;
+    font-family: 'Roboto', sans-serif;
+    color: #2D2D2D;
+    margin-top: -3px;
+    margin-left: 11px;
+}
+
+.footer-info-small {
+    font-size: 95%;
+    font-family: 'Roboto', sans-serif;
+    color: #EFEFEF;
+}
+
+.footer-email-small {
+    text-decoration: underline;
+    color: #EFEFEF;
+}
+
+.footer-email-small:hover {
+    color: #fff;
+}
