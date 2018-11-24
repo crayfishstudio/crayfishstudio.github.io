@@ -34,18 +34,18 @@ function toTop() {
 function bText(){
     console.log(document.body.style.fontSize);
 
-    document.body.style.fontSize="larger";
+    document.body.style.fontSize="1rem";
     console.log(document.body.style.fontSize);
 }
 function nText(){
     console.log(document.body.style.fontSize);
 
-    document.body.style.fontSize="medium";
+    document.body.style.fontSize="0.8rem";
     console.log(document.body.style.fontSize);
 }
 function sText(){
     console.log(document.body.style.fontSize);
 
-    document.body.style.fontSize="smaller";
+    document.body.style.fontSize="0.6rem";
     console.log(document.body.style.fontSize);
 }
