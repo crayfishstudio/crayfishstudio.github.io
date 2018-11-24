@@ -177,7 +177,7 @@ option {
     background-color: #FFF;
     padding: 12px;
     border-radius: 5px;
-    box-sizing: content-box;
+    display: inline-block;
 }
 
 .footer-info-small-dark {
