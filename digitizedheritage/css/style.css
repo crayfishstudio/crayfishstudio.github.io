@@ -87,9 +87,7 @@
     margin-right: 10px;
 }
 
-.h-50-vw {
-    height: 50vh;
-}
+
 
 .footer-header {
     font-family: 'Roboto', sans-serif;
@@ -177,7 +175,7 @@ option {
     background-color: #FFF;
     padding: 12px;
     border-radius: 5px;
-    box-sizing: content-box;
+    display: inline-block;
 }
 
 .footer-info-small-dark {
@@ -219,4 +217,16 @@ option {
     transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
     /*border-bottom: 0.8px solid #E1E1E1;*/
     z-index: 1000;
+}
+.dh-h1-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+    color: #2D2D2D;
+}
+
+.dh-description {
+    font-family: 'Roboto', sans-serif;
+    color: #575757;
+    margin-top: 30px;
 }

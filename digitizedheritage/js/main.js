@@ -1,4 +1,5 @@
-var lastScrollTop = 0;
+var lastScrollTop = 5;
+document.getElementById("menuToggle").classList.remove("hided");
 $(window).on('scroll', function() {
     st = $(this).scrollTop();
     if(st < lastScrollTop) {
@@ -9,3 +10,14 @@ $(window).on('scroll', function() {
     }
     lastScrollTop = st;
 });
+
+
+$('a').click(function(){
+    $('html, body').animate({
+     scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1500);
+});
+
+function hideNav() {
+    document.querySelector('.navbar-toggler').click();
+}
