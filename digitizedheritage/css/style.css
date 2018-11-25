@@ -4,8 +4,8 @@
 
 @media screen and (max-width: 992px) {
     .nav-link-custom {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
+        padding-top: 13px !important;
+        padding-bottom: 13px !important;
         width: 80vw !important;
         text-align: center;
     }
@@ -71,8 +71,8 @@
 .dropdown-custom:hover .dropbtn {cursor: pointer;}
 
 .nav-link-custom {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     padding-left: 0px !important;
     padding-right: 0px !important;
     border-top: 5px solid #EFEFEF;
@@ -256,7 +256,7 @@ option {
 
 .dh-card {
     width: 100%;
-    height: 25vw;
+    height: 24vw;
     border-radius: 6px;
     border-top: 6px solid #FFCE01;
     background-size: cover;
@@ -266,7 +266,7 @@ option {
 
 .card-gradient {
     background: linear-gradient(0deg, rgba(0,0,0,0.66) 0%, rgba(255,255,255,0) 100%);
-    height: 18vw;
+    height: 17vw;
     width: 100%;
     margin-top: calc(7vw - 6px);
     border-bottom-left-radius: 6px;
@@ -319,7 +319,7 @@ option {
 }
 
 .btn-custom-a:hover {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     background-color: #FFCE01;
 }
