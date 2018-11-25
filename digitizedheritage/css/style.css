@@ -324,3 +324,26 @@ option {
     background-color: #FFCE01;
 }
 
+
+.big-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #FFCE01;
+}
+
+.dh-number-description {
+    font-family: 'Roboto', sans-serif;
+    color: #2D2D2D;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.line-undernumber {
+    width: 34%;
+    margin-left: 33%;
+    height: 6px;
+    background-color: #FFCE01;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
