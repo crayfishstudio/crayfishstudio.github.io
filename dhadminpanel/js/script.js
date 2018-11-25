@@ -43,6 +43,6 @@ function nText(){
 }
 function sText(){
 
-    document.body.style.fontSize="0.6rem";
+    document.body.style.fontSize="0.7rem";
 }
 
