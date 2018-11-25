@@ -105,11 +105,12 @@ a:hover {
     width: 10%;
 }
 
-.square {
-    width: 70%;
-    height: 100%;
+#square {
     align-self: flex-end;
     background-color: #EFEFEF;
+    position: relative;
+    padding-top: 85%;
+    width: 85%;
 }
 
 .tab {
@@ -119,6 +120,7 @@ a:hover {
     border-radius: 0px !important;
     line-height: 1.1;
     color: #2D2D2D;
+    font-size: 120%;
 }
 
 .tab.active {
@@ -156,8 +158,13 @@ a:hover {
 }
 
 .obj-img {
+    padding: 5px;
+    position: absolute;
     height: 100%;
-    padding: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .fa-circle {
@@ -203,9 +210,6 @@ a:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.qr {
-    width: 100%;
-}
 
 .main-menu {
     background-color: #fff;
@@ -247,6 +251,7 @@ a:hover {
     border-radius: 5px;
     padding: 5px;
     font-family: Arial-unicode;
+    background-color: #fff;
 }
 
 
@@ -287,4 +292,12 @@ a:hover {
 
 .w-5 {
     width: 5%;
+}
+
+.nav-link {
+    font-size: 120%;
+}
+
+#sticky-panel {
+    font-size: 110%;
 }

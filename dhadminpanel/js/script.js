@@ -1,5 +1,7 @@
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction();scrollFunction()};
+
+window.onscroll = function() {myFunction();scrollFunction();};
+
 
 // Get the header
 var header = document.getElementById("sticky-panel");
@@ -32,20 +34,15 @@ function toTop() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 function bText(){
-    console.log(document.body.style.fontSize);
 
-    document.body.style.fontSize="1rem";
-    console.log(document.body.style.fontSize);
+    document.body.style.fontSize="0.9rem";
 }
 function nText(){
-    console.log(document.body.style.fontSize);
 
     document.body.style.fontSize="0.8rem";
-    console.log(document.body.style.fontSize);
 }
 function sText(){
-    console.log(document.body.style.fontSize);
 
     document.body.style.fontSize="0.6rem";
-    console.log(document.body.style.fontSize);
 }
+
