@@ -20,12 +20,15 @@
     
     .card-gradient {
         height: 35vw !important;
-        width: 100%;
         margin-top: calc(15vw - 6px) !important;
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
-        position: relative;
-        align-content: center;
+    }
+    
+    .card-white-text {
+        margin-bottom: 25px !important;
+    }
+    
+    h1.dh-header, h3.dh-header {
+        font-size: 140%;
     }
 }
 
@@ -167,12 +170,13 @@ option {
     font-family: 'Roboto', sans-serif;
     color: #575757;
 }
+
 .btn-custom {
-    width: 100%;
+    width: 100% !important;
     margin: 0px;
     border-radius: 5px;
     border: 3px solid #FFCE01;
-    color: 2D2D2D;
+    color: #2D2D2D;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     background-color: #FFF;
@@ -182,9 +186,14 @@ option {
     transition: all ease 0.4s;
 }
 
+
+
 .btn-custom:hover {
     background-color: #FFCE01;
 }
+
+
+
 .cc-contianer {
     background-color: #FFF;
     padding: 12px;
@@ -294,3 +303,24 @@ option {
     font-family: 'Roboto Condensed', sans-serif;
     color: #575757;
 }
+
+.btn-custom-a {
+    width: 100% !important;
+    margin: 0px;
+    border-radius: 5px;
+    border: 3px solid #FFCE01;
+    color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #FFF;
+    padding: 10px;
+    font-size: 105%;
+    transition: all ease 0.4s;
+}
+
+.btn-custom-a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #FFCE01;
+}
+
