@@ -4,14 +4,31 @@
 
 @media screen and (max-width: 992px) {
     .nav-link-custom {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
+        padding-top: 13px !important;
+        padding-bottom: 13px !important;
         width: 80vw !important;
         text-align: center;
     }
     
     .dropdown-custom:hover .dropdown-content {
         display: none !important;
+    }
+    
+    .dh-card {
+        height: 50vw !important;
+    }
+    
+    .card-gradient {
+        height: 35vw !important;
+        margin-top: calc(15vw - 6px) !important;
+    }
+    
+    .card-white-text {
+        margin-bottom: 25px !important;
+    }
+    
+    h1.dh-header, h3.dh-header {
+        font-size: 140%;
     }
 }
 
@@ -54,8 +71,8 @@
 .dropdown-custom:hover .dropbtn {cursor: pointer;}
 
 .nav-link-custom {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     padding-left: 0px !important;
     padding-right: 0px !important;
     border-top: 5px solid #EFEFEF;
@@ -153,12 +170,13 @@ option {
     font-family: 'Roboto', sans-serif;
     color: #575757;
 }
+
 .btn-custom {
-    width: 100%;
+    width: 100% !important;
     margin: 0px;
     border-radius: 5px;
     border: 3px solid #FFCE01;
-    color: 2D2D2D;
+    color: #2D2D2D;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     background-color: #FFF;
@@ -168,9 +186,14 @@ option {
     transition: all ease 0.4s;
 }
 
+
+
 .btn-custom:hover {
     background-color: #FFCE01;
 }
+
+
+
 .cc-contianer {
     background-color: #FFF;
     padding: 12px;
@@ -218,7 +241,7 @@ option {
     /*border-bottom: 0.8px solid #E1E1E1;*/
     z-index: 1000;
 }
-.dh-h1-header {
+.dh-header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-top: 50px;
@@ -229,4 +252,98 @@ option {
     font-family: 'Roboto', sans-serif;
     color: #575757;
     margin-top: 30px;
+}
+
+.dh-card {
+    width: 100%;
+    height: 24vw;
+    border-radius: 6px;
+    border-top: 6px solid #FFCE01;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s;
+}
+
+.card-gradient {
+    background: linear-gradient(0deg, rgba(0,0,0,0.66) 0%, rgba(255,255,255,0) 100%);
+    height: 17vw;
+    width: 100%;
+    margin-top: calc(7vw - 6px);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: relative;
+    align-content: center;
+}
+
+.card-text-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.card-white-text {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700 !important;
+    margin-bottom: 50px;
+}
+
+.card-btn:hover .dh-card {
+    border-top: 14px solid #FFCE01;
+}
+
+.light-grey-border {
+    border-radius: 6px;
+    border: 2px solid #EFEFEF;
+}
+
+.fortress-name {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #575757;
+}
+
+.btn-custom-a {
+    width: 100% !important;
+    margin: 0px;
+    border-radius: 5px;
+    border: 3px solid #FFCE01;
+    color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #FFF;
+    padding: 10px;
+    font-size: 105%;
+    transition: all ease 0.4s;
+}
+
+.btn-custom-a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #FFCE01;
+}
+
+
+.big-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #FFCE01;
+}
+
+.dh-number-description {
+    font-family: 'Roboto', sans-serif;
+    color: #2D2D2D;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.line-undernumber {
+    width: 34%;
+    margin-left: 33%;
+    height: 6px;
+    background-color: #FFCE01;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
