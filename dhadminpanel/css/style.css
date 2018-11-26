@@ -305,3 +305,21 @@ a:hover {
 .dropdown>.btn {
     font-size: inherit;
 }
+
+.btn-secondary:hover {
+    background-color: #efefef;
+}
+.btn-secondary:focus{
+    background-color: #efefef;
+}
+.btn-secondary:active{
+    background-color: #efefef !important;
+}
+.btn-secondary{
+    background-color: #efefef !important;
+    color: #2d2d2d !important;
+}
+
+.dropdown-item:focus{
+    background-color: #efefef;
+}
