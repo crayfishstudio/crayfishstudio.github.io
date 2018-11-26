@@ -333,6 +333,7 @@ option {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #FFCE01;
+    font-size: 4.2rem;
 }
 
 .dh-number-description {
@@ -381,6 +382,7 @@ option {
     color: #2D2D2D;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 1.725rem;
 }
 
 .a-img {
