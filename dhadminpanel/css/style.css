@@ -244,12 +244,12 @@ a:hover {
     content: attr(data-title);
     position: absolute;
     left: 50px;
-    top: -25%;
+    top: -50%;
     display: inline-block;
     width: 12vw;
     border: 1px solid #FFCE01;
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 5px;
     font-family: Arial-unicode;
     background-color: #fff;
 }
@@ -300,8 +300,4 @@ a:hover {
 
 #sticky-panel {
     font-size: 110%;
-}
-
-.dropdown>.btn {
-    font-size: inherit;
 }
