@@ -46,3 +46,7 @@ function sText(){
     document.body.style.fontSize="0.7rem";
 }
 
+function saveShow(){
+    document.getElementById("classification").innerHTML = document.getElementById("classification-area").value;
+    document.getElementById("classification-area").style.display="none";
+}
