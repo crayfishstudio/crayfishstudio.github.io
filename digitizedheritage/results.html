@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fa/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Оцифрована Спадщина - Результати Проекту</title>
+</head>
+
+<body>
+    <div id="menuToggle">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 px-xl-5">
+            <div class="container-fluid mx-lg-5 px-0" id="nav-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/DHLogo_rastr.png" height="35px" class="my-2">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" onclick="hideNav()">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom mr-xl-4 mr-lg-3" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3" href="about.html">Про проект</a>
+                                <div class="dropdown-content">
+                                    <a href="about-kyiv-fortress.html">Про Київську Фортецю</a>
+                                    <a href="tasks.html">Завдання Проекту</a>
+                                    <a href="#">Літопис реалізації Проекту</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3 active-custom" href="results.html">Результати</a>
+                                <div class="dropdown-content">
+                                    <a target="_blank" href="http://heritageua.dcvisu.com/tmpl/index.php">Цифрові колекції</a>
+                                    <a target="_blank" href="https://my.matterport.com/show/?m=nBY4tFp9GuG">3D тур</a>
+                                    <a target="_blank" href="https://sketchfab.com/models/f0c0bb9283fc44aead6a9925bb655edf?fbclid=IwAR1lhvkNTN_vVFkIaQG9aLvJZgVlAM1iVQ2FeZX1C0x7KHpxHIrgtkQzLw8">3D моделі</a>
+                                    <a href="#">Про платформу і рішення</a>
+                                    <a href="#">Звітні матеріали</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3">Професійний контент</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Нормативна база</a>
+                                    <a href="#">Методики</a>
+                                    <a href="#">Інструкції</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3">Події</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Новини</a>
+                                    <a href="#">Заходи</a>
+                                    <a href="#">Мультимедіа архів</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3" href="partners.html">Партнери</a>
+                                <div class="dropdown-content">
+                                    <a href="partners.html">Партнери проекту</a>
+                                    <a href="#">Споріднені проекти</a>
+                                    <a href="#">Споріднені заходи</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom ml-xl-4 ml-lg-3" href="#contactsAnchor">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="px-xl-5">
+        <div class="px-lg-5 px-3">
+            <div class="container-fluid pt-xl-5 mt-4 mb-5 px-0" >
+                <div class="row mx-0">
+                    <div class="col text-center">
+                        <h2 class="dh-header">
+                            Результати проекту
+                        </h2>
+                    </div>
+                </div>
+                
+                <!--<div class="row no-gutters mt-4 mb-3">
+                    <div class="col-md-3 pr-md-2 mb-lg-0 mb-3">
+                        <a href="about-kyiv-fortress.html" class="card-btn">
+                            <div class="dh-card" style="background-image: url(img/13731836_1156967891029627_8852855768646352948_o.jpg)">
+                                <div class="card-gradient">
+                                    <div class="card-text-container">
+                                        <h5 class="card-white-text">Про "Фортецю"</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 px-md-1 mb-lg-0 mb-3">
+                        <a href="tasks.html" class="card-btn">
+                            <div class="dh-card" style="background-image: url(img/kelly-sikkema-411622-unsplash.jpg)">
+                                <div class="card-gradient">
+                                    <div class="card-text-container">
+                                        <h5 class="card-white-text">Завдання Проекту</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 px-md-1 mb-lg-0 mb-3">
+                        <a href="#" class="card-btn">
+                            <div class="dh-card" style="background-image: url(img/DSC_0005.jpg)">
+                                <div class="card-gradient">
+                                    <div class="card-text-container">
+                                        <h5 class="card-white-text">Літопис Проекту</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 pl-md-2">
+                        <a href="tasks.html" class="card-btn">
+                            <div class="dh-card" style="background-image: url(img/kelly-sikkema-411622-unsplash.jpg)">
+                                <div class="card-gradient">
+                                    <div class="card-text-container">
+                                        <h5 class="card-white-text">Завдання Проекту</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>-->
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            ОЦИФРОВАНО
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row text-center mt-5">
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">13</h2>
+                        <p class="dh-result-description">3D моделей</p>
+                        <h5 class="dh-result-text">Музейних предметів: речей</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">1444</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">Музейних предметів: документів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">21952</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">Облікової документації: карток</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">3012</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">облікової документації: актів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                </div>
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            ОЦИФРОВАНО
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row mt-5 text-center">
+                    <div class="col-md-3 px-4">
+                        <a href="https://my.matterport.com/show/?m=nBY4tFp9GuG" target="_blank">
+                            <img src="img/739837_1018440404882377_8962806311312940987_o.jpg" class="img-fluid a-img">
+                        </a>
+                        <h5 class="dh-result-text mt-4 mb-3">3D тур</h5>
+                        <p class="dh-result-description">українською та англійською мовами</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="#">
+                            <img src="img/739837_1018440404882377_8962806311312940987_o.jpg" class="img-fluid a-img">
+                        </a>
+                        <h5 class="dh-result-text mt-4 mb-3">12 3D моделей</h5>
+                        <p class="dh-result-description">музейних предметів</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="#">
+                            <img src="img/739837_1018440404882377_8962806311312940987_o.jpg" class="img-fluid a-img">
+                        </a>
+                        <h5 class="dh-result-text mt-4 mb-3">3D модель</h5>
+                        <p class="dh-result-description">для відео 360°</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="#">
+                            <img src="img/739837_1018440404882377_8962806311312940987_o.jpg" class="img-fluid a-img">
+                        </a>
+                        <h5 class="dh-result-text mt-4 mb-3">Відео 360°</h5>
+                        <p class="dh-result-description">іміджеве відео проекту</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                </div>
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            ОЦИФРОВАНО
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row text-center mt-5">
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">13</h2>
+                        <p class="dh-result-description">3D моделей</p>
+                        <h5 class="dh-result-text">МУЗЕЙНИХ ПРЕДМЕТІВ: РЕЧЕЙ</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">1444</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">МУЗЕЙНИХ ПРЕДМЕТІВ: документів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">21952</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">Облікової документації: карток</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">3012</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">облікової документації: актів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                </div>
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            ОЦИФРОВАНО
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row text-center mt-5">
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">13</h2>
+                        <p class="dh-result-description">3D моделей</p>
+                        <h5 class="dh-result-text">МУЗЕЙНИХ ПРЕДМЕТІВ: РЕЧЕЙ</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">1444</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">МУЗЕЙНИХ ПРЕДМЕТІВ: документів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">21952</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">Облікової документації: карток</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">3012</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">облікової документації: актів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                </div>
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            ОЦИФРОВАНО
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row text-center mt-5">
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">13</h2>
+                        <p class="dh-result-description">3D моделей</p>
+                        <h5 class="dh-result-text">МУЗЕЙНИХ ПРЕДМЕТІВ: РЕЧЕЙ</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">1444</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">МУЗЕЙНИХ ПРЕДМЕТІВ: документів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">21952</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">Облікової документації: карток</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">3012</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">облікової документації: актів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                </div>
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            ОЦИФРОВАНО
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row text-center mt-5">
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">13</h2>
+                        <p class="dh-result-description">3D моделей</p>
+                        <h5 class="dh-result-text">МУЗЕЙНИХ ПРЕДМЕТІВ: РЕЧЕЙ</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">1444</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">МУЗЕЙНИХ ПРЕДМЕТІВ: документів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">21952</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">Облікової документації: карток</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h2 class="display-4 big-number">3012</h2>
+                        <p class="dh-result-description">зображень</p>
+                        <h5 class="dh-result-text">облікової документації: актів</h5>
+                        <div class="line-undernumber"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container-fluid bg-fa px-xl-5 py-5">
+            <div class="row no-gutters px-lg-5 px-3">
+                <div class="col-md-6">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <h5 class="footer-header"><div class="v-footer-line"></div><a href="about.html">Про проект</a></h5>
+                            <a class="footer-page" href="about-kyiv-fortress.html">про Київську Фортецю</a><br>
+                            <a class="footer-page" href="tasks.html">завдання Проекту</a><br>
+                            <a class="footer-page" href="#">літопис реалізації Проекту</a>
+                            
+                            <h5 class="footer-header mt-4"><div class="v-footer-line"></div><a href="results.html">Результати проекту</a></h5>
+                            <a class="footer-page" target="_blank" href="http://heritageua.dcvisu.com/tmpl/index.php">цифрові колекції,</a>
+                            <a class="footer-page" target="_blank" href="https://my.matterport.com/show/?m=nBY4tFp9GuG"> 3D тур</a> і
+                            <a class="footer-page" target="_blank" href="https://sketchfab.com/models/f0c0bb9283fc44aead6a9925bb655edf?fbclid=IwAR1lhvkNTN_vVFkIaQG9aLvJZgVlAM1iVQ2FeZX1C0x7KHpxHIrgtkQzLw8"> моделі</a>
+                            <br>
+                            <a class="footer-page" href="#">про платформу і рішення</a><br>
+                            <a class="footer-page" href="#">звітні матеріали</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="footer-header mt-md-0 mt-4"><div class="v-footer-line"></div><a href="#">Професійний контент</a></h5>
+                            <a class="footer-page" href="#">нормативна база</a><br>
+                            <a class="footer-page" href="#">методики </a>та
+                            <a class="footer-page" href="#"> інструкції</a>
+                            <br>
+                            
+                            <h5 class="footer-header mt-4"><div class="v-footer-line"></div><a href="#">Події</a></h5>
+                            <a class="footer-page" href="#">новини</a> та
+                            <a class="footer-page" href="#"> заходи</a>
+                            <br>
+                            <a class="footer-page" href="#">мультимедіа архів</a>
+                            
+                            <h5 class="footer-header mt-4"><div class="v-footer-line"></div><a href="partners.html">Партнери</a></h5>     
+                            <a class="footer-page" href="#">споріднені проекти</a> і
+                            <a class="footer-page" href="#"> заходи</a>
+                        </div>
+                        <div class="col-12 mt-5 mb-md-0 mb-4">
+                            <div class="media">
+                                <img class="img-fluid mr-3" src="img/ucf_rastr_small.png" width="70">
+                                <p class="footer-info">
+                                    За підтримки<br>
+                                    <a href="https://ucf.in.ua/" target="_blank">Українського Культурного Фонду</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="footer-header" id="contactsAnchor"><div class="v-footer-line"></div>Контакти</h5>
+                    <p class="footer-info">Національний<br>історико-архітектурний<br>музей "Київська Фортеця"</p>
+                    
+                    <h5 class="footer-contact-header mt-4"><i class="fas fa-map-marker-alt color-yellow mr-2"></i>Адреса:</h5>
+                    <a href="https://goo.gl/maps/xW1EGMYBLXm" class="footer-info" target="_blank">01133, Україна, м. Київ,<br>вул. Госпітальна, 24А</a>
+                    
+                    <h5 class="footer-contact-header mt-4"><i class="fas fa-at color-yellow mr-2"></i>Електронна скринька:</h5>
+                    <a href="mailto:fortresskiev@ukr.net" class="footer-info">fortresskiev@ukr.net</a>
+                    
+                    <h5 class="footer-contact-header mt-4"><i class="fas fa-phone color-yellow mr-2"></i>Номер телефону:</h5>
+                    <a href="tel:+380442882341" class="footer-info">+38 (044) 288-2341</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 class="footer-header mb-3 mt-md-0 mt-5">Є запитання чи пропозиції?</h5>
+                    <form>
+                        <select name="addressee" class="mb-2" required>
+                            <option value="projectadmin" selected>До керівництва проекту</option>
+                            <option value="">З програмно-технологічних розробок</option>
+                            <option value="">З методичних питань</option>
+                            <option value="">До дирекції НІАМ Київська Фортеця</option>
+                            <option value="">До адміністратора сайту</option>
+                            <option value="">До розробників сайту</option>
+                        </select>
+                        <input class="mb-2" type="text" placeholder="Ваше ім'я" name="name" required>
+                        <input class="mb-2" type="text" placeholder="Ваш номер телефону або e-mail" name="contactmethod" required>
+                        <textarea class="mb-2" placeholder="Ваше повідомлення" name="message" rows="3"></textarea>
+                        <button class="btn-custom" type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-2d px-xl-5 py-5">
+            <div class="row no-gutters px-xl-5 px-3 justify-content-center">
+                <div class="col-md-3">
+                    <h5 class="footer-header text-white mb-3">Ліцензії</h5>
+                    <div class="cc-contianer mb-2">
+                        <img class="img-fluid" src="img/cc-by-nc-nd.png" width="90px">
+                        <small class="footer-info-small-dark">про проект</small>
+                    </div>
+                    <div class="cc-contianer">
+                        <img class="img-fluid" src="img/cc-by-nc.png" width="90px">
+                        <small class="footer-info-small-dark">професійний контент</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="footer-header text-white mb-3 mt-md-0 mt-5">Контент</h5>
+                    <div class="media mb-2">
+                        <small class="footer-info-small">Проект УКФ:ОТП 1568<br>НІАМ «Київська фортеця»</small>
+                        <a href="https://www.facebook.com/KyivFortress/" target="_blank"><img class="img-fluid ml-3" src="img/fb-rastr-rounded.png" width="40px"></a>
+                    </div>
+                    <small class="footer-info-small">© Національний історико-архітектурний<br>музей "Київська фортеця", 2018</small><br>
+                    <small class="footer-info-small">
+                        <i class="far fa-envelope color-yellow mr-2"></i>
+                        Андрей Вялец - <a href="mailto:fortresskiev@ukr.net" class="footer-email-small">fortresskiev@ukr.net</a>
+                    </small>
+                </div>
+                <div class="col-md-3 pl-md-4">
+                    <h5 class="footer-header text-white mb-3 mt-md-0 mt-5">Ідея, розробка</h5>
+                    <img class="img-fluid mb-2" src="img/DHLogo_white.svg" width="200px">
+                    <a href="https://www.facebook.com/DigitizedHeritage/" target="_blank"><img class="img-fluid ml-3" src="img/fb-rastr-rounded.png" width="40px"></a><br>  
+                    <small class="footer-info-small">© СЦ БАЛІ:<br>Програмно-технологічні рішення, 2018</small><br>
+                    <small class="footer-info-small">
+                        <i class="far fa-envelope color-yellow mr-2"></i>
+                        Ольга Баркова - <a href="mailto:ict@scbali.com" class="footer-email-small">ict@scbali.com</a>
+                    </small>
+                </div>
+                <div class="col-md-3 text-md-right">
+                    <h5 class="footer-header text-white mb-3 mt-md-0 mt-5">Дизайн, розробка</h5>
+                    <img class="img-fluid mb-3 mt-2" src="img/crayfishLogo.svg" width="170px"><br>  
+                    <small class="footer-info-small">© <a href="http://crayfish.studio/ua" target="_blank" class="footer-email-small">Crayfish Studio</a>, 2018</small><br>
+                    <small class="footer-info-small">
+                        <i class="far fa-envelope color-yellow mr-2"></i>
+                        Любомир Дах<br>
+                        <a href="mailto:lybomyrdakh@gmail.com" class="footer-email-small">lybomyrdakh@gmail.com</a>
+                    </small>
+                </div>
+                <div class="col-12 mt-md-4 mt-5">
+                    <small class="footer-info-small">
+                        <i class="fas fa-exclamation-circle fa-lg color-yellow mr-2"></i>
+                        При використанні матеріалів сайту посилання на джерело є обов'язковим
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
