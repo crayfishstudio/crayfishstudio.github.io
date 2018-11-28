@@ -412,3 +412,7 @@ option {
 }
 
 
+
+.no-bold {
+    font-weight: 300;
+}
