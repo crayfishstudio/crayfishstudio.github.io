@@ -335,7 +335,7 @@ option {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #FFCE01;
-    font-size: 4.2rem;
+    font-size: 3rem;
 }
 
 .dh-number-description {
@@ -382,9 +382,9 @@ option {
 .dh-result-text {
     font-family: 'Montserrat', sans-serif;
     color: #2D2D2D;
-    text-transform: uppercase;
+
     font-weight: 700;
-    font-size: 1.725rem;
+    font-size: 1.2rem;
 }
 
 .a-img {
