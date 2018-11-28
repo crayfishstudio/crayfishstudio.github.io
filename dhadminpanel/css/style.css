@@ -350,8 +350,8 @@ textarea:focus{
     font-size: 115%;
 }
 .breadcrumb{
-    font-family: Arial-unicode;
+    font-family: Arial-unicode !important;
 }
 col-7{
-    font-family: Arial-unicode;
+    font-family: Arial-unicode !important;
 }
