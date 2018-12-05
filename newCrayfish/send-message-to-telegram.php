@@ -4,7 +4,7 @@ if (!empty($_POST['name']) && !empty($_POST['phone'])){
   if (isset($_POST['name'])) {
     if (!empty($_POST['name'])){
   $name = strip_tags($_POST['name']);
-  $nameFieldset = "Имя пославшего: ";
+  $nameFieldset = "Имя пославшего вас нахуй: ";
   }
 }
  
