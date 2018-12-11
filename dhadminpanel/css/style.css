@@ -355,3 +355,25 @@ textarea:focus{
 col-7{
     font-family: Arial-unicode !important;
 }
+.lang-sel {
+    border: 1px solid #2d2d2d;
+    border-radius: 5px;
+    padding: .375rem .5rem;
+    background: #efefef;
+    margin-left: 0.5rem;
+}
+select option{
+    width: 100%;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    
+}
+option:hover{
+    background: #f8f9fa;
+}
+select:invalid { color: gray; }
+
+.date {
+    display: inline-block;
+    width: auto;
+}
