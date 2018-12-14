@@ -417,3 +417,10 @@ option {
 .no-bold {
     font-weight: 300;
 }
+
+.large-button-text {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    white-space: normal;
+}
