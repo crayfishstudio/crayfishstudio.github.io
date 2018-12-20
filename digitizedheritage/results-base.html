@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fa/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Професійний контент - Результати</title>
+</head>
+
+<body>
+    <div id="menuToggle">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 px-xl-5">
+            <div class="container-fluid mx-lg-5 px-0" id="nav-container">
+                <a class="navbar-brand">
+                    <img src="img/DHLogo_rastr.png" height="35px" class="my-2">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" onclick="hideNav()">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom mr-xl-4 mr-lg-3" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3" href="about.html">Про проект</a>
+                                <div class="dropdown-content">
+                                    <a href="about-kyiv-fortress.html">Про Київську Фортецю</a>
+                                    <a href="tasks.html">Завдання Проекту</a>
+                                    <a href="workinprogress.html">Літопис реалізації Проекту</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3" href="results-base.html">Результати</a>
+                                <div class="dropdown-content">
+                                    <a target="_blank" href="http://heritageua.dcvisu.com/tmpl/index.php">Цифрові колекції</a>
+                                    <a target="_blank" href="https://my.matterport.com/show/?m=nBY4tFp9GuG">3D тур</a>
+                                    <a target="_blank" href="https://www.dropbox.com/sh/cbwe9phphqr5s58/AABY-2ZsyZG3UJ2g2kQYRddqa?dl=0&fbclid=IwAR3GJeOT3DQk2-BJf99rqGWjAnoUjJEWf5Jl7dSKcPYveNSX-C91L6kbnB4">3D моделі</a>
+                                    <a target="_blank" href="https://www.youtube.com/watch?v=HJqB8AGKKCg&feature=youtu.be&fbclid=IwAR30wOrVjeOmnqWnQ88Tlt2QQixVulPSIzLVsAO8VS63e7AalN3G2JObVHg">Відео 360°</a>
+                                    <a href="results.html">Результати в числах</a>
+                                    <a href="http://demo.dcvisu.com/uploads/objects/320/pdf/-%D0%9E%D0%A2%D0%9F-1568_OBLIK_System.pdf" target="_blank">Система керування та обліку</a>
+                                    <a target="_blank" href="http://demo.dcvisu.com/uploads/objects/316/pdf/DC-Visu-2017docx.pdf">Про платформу і рішення</a>
+                                    <a target="_blank" href="http://demo.dcvisu.com/uploads/objects/321/pdf/OTP1568_REPORT.pdf">Звітні матеріали</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3 active-custom" href="prof-content.html">Професійний контент</a>
+                                <div class="dropdown-content">
+                                    <a href="http://demo.dcvisu.com/uploads/objects/312/pdf/OTP1568_Normativy.pdf" target="_blank">Нормативна база</a>
+                                    <a href="http://demo.dcvisu.com/uploads/objects/311/pdf/OTP1568_ISO_DSTU.pdf" target="_blank">Стандарти</a>
+                                    <a href="http://demo.dcvisu.com/uploads/objects/314/pdf/DH_digitising_guideline.pdf" target="_blank">Методики</a>
+                                    <a href="https://creativecommons.org/licenses/?lang=uk" target="_blank">Інструкції</a>
+                                    <a href="https://digilab.promuseum.org/" target="_blank">Ресурси та інструменти</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3" href="workinprogress.html">Події</a>
+                                <div class="dropdown-content">
+                                    <a href="https://www.facebook.com/olga.barkova.52/posts/2211497622196659?notif_id=1543715362706936&notif_t=video_processed" target="_blank">Новини</a>
+                                    <a href="http://demo.dcvisu.com/uploads/objects/309/pdf/Seminar-DH-Kyiv_Fortes-2018-%D0%86%D0%86_%D0%A3%D0%9A%D0%A4.pdf?fbclid=IwAR0JlzFE4suc7goc58J-bd5gdsUH1N7ZyPWAuO4Nf9VHy79IhLIAtybdSJU" target="_blank">Заходи</a>
+                                    <a href="https://www.facebook.com/olga.barkova.52/videos/pcb.2211497622196659/2213933895286365/?type=3&theater" target="_blank">Мультимедіа архів</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-custom">
+                                <a class="dropbtn nav-link nav-link-custom mx-xl-4 mx-lg-3" href="partners.html">Партнери</a>
+                                <div class="dropdown-content">
+                                    <a href="partners.html">Партнери проекту</a>
+                                    <a href="http://demo.dcvisu.com/uploads/objects/315/pdf/Projects_UKF-2018.pdf" target="_blank">Споріднені проекти</a>
+                                    <a href="http://demo.dcvisu.com/collections/11" target="_blank">Споріднені заходи</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom ml-xl-4 ml-lg-3" href="#contactsAnchor">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="px-xl-5">
+        <div class="px-lg-5 px-3">
+            <div class="container-fluid pt-xl-5 mt-4 mb-5 px-0" >
+                <div class="row mx-0">
+                    <div class="col text-center">
+                        <h2 class="dh-header">
+                            Результати проекту
+                        </h2>
+                    </div>
+                </div>
+                <div class="row px-3">
+                    <div class="col text-center">
+                        <p class="dh-description">
+                            У розділі представлено програмно-технологічні рішення з ведення електронного обліку та керування оцифрованими колекціями в музеї
+                            Підключення до баз даних і архівів оцифрованих матеріалів буде здійснено  протягом грудня
+                        </p>
+                    </div>
+                </div>
+                <div class="row no-gutters mt-4 mb-3">
+                    <div class="col-md-6 mt-3 pr-md-2">
+                        <a class="btn btn-custom p-4" href="http://heritageua.dcvisu.com/tmpl/index.php" target="_blank">
+                            <h4 class="large-button-text">
+                                Цифрові колекції Київської Фортеці
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="col-md-6 mt-3 pl-md-2">
+                        <a class="btn btn-custom p-4" href="http://demo.dcvisu.com/uploads/objects/320/pdf/-%D0%9E%D0%A2%D0%9F-1568_OBLIK_System.pdf" target="_blank">
+                            <h4 class="large-button-text">
+                                Система керування та обліку
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="col-md-3 mt-3 pr-md-2">
+                        <a class="btn btn-custom p-4" href="https://my.matterport.com/show/?m=nBY4tFp9GuG" target="_blank">
+                            <h4 class="large-button-text">
+                                3D тур
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="col-md-3 mt-3 px-md-2">
+                        <a class="btn btn-custom p-4" href="https://www.dropbox.com/sh/cbwe9phphqr5s58/AABY-2ZsyZG3UJ2g2kQYRddqa?dl=0&fbclid=IwAR3GJeOT3DQk2-BJf99rqGWjAnoUjJEWf5Jl7dSKcPYveNSX-C91L6kbnB4" target="_blank">
+                            <h4 class="large-button-text">
+                                3D моделі
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="col-md-3 mt-3 px-md-2">
+                        <a class="btn btn-custom p-4" href="https://www.youtube.com/watch?v=HJqB8AGKKCg&feature=youtu.be&fbclid=IwAR30wOrVjeOmnqWnQ88Tlt2QQixVulPSIzLVsAO8VS63e7AalN3G2JObVHg" target="_blank">
+                            <h4 class="large-button-text">
+                                Відео 360°
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="col-md-3 mt-3 pl-md-2">
+                        <a class="btn btn-custom p-4" href="http://demo.dcvisu.com/uploads/objects/321/pdf/OTP1568_REPORT.pdf" target="_blank">
+                            <h4 class="large-button-text">
+                                Звітні матеріали
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="col-md-6 pr-md-2 mt-3">
+                        <a class="btn btn-custom p-4" href="results.html">
+                            <h4 class="large-button-text">
+                                Результати в числах
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="col-md-6 pl-md-2 mt-3">
+                        <a class="btn btn-custom p-4" href="http://demo.dcvisu.com/uploads/objects/316/pdf/DC-Visu-2017docx.pdf" target="_blank">
+                            <h4 class="large-button-text">
+                                Про платформу і рішення
+                            </h4>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            Про цифрові колекції
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            Система керування та обліку
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            Про платформу і рішення
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            Технології 3D
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row px-3 justify-content-center">
+                    <div class="col-md-10 result-section-header">
+                        <h5 class="result-header-text">
+                            <i class="fas fa-circle color-yellow fa-xs mr-md-4 mr-2"></i>
+                            Посилання на результати
+                            <i class="fas fa-circle color-yellow fa-xs ml-md-4 ml-2"></i>
+                        </h5>
+                    </div>
+                </div>
+                
+                <div class="row mt-5 text-center">
+                    <div class="col-md-3 px-4">
+                        <a href="https://my.matterport.com/show/?m=nBY4tFp9GuG" target="_blank">
+                            <img src="img/3d_tur_2.jpg" class="img-fluid a-img">
+                        </a>
+                        <h5 class="dh-result-text mt-4 mb-3">3D тур</h5>
+                        <p class="dh-result-description">українською та англійською мовами</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="https://www.dropbox.com/sh/cbwe9phphqr5s58/AABY-2ZsyZG3UJ2g2kQYRddqa?dl=0&fbclid=IwAR3GJeOT3DQk2-BJf99rqGWjAnoUjJEWf5Jl7dSKcPYveNSX-C91L6kbnB4" target="_blank">
+                            <img src="img/screen3.jpg" class="img-fluid a-img">
+                        </a>
+                        <h5 class="dh-result-text mt-4 mb-3">3D моделі</h5>
+                        <p class="dh-result-description">12 музейних предметів</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="#">
+                            <img src="img/3D_model_Pushka.jpg" class="img-fluid a-img">
+                        </a>
+                        <h5 class="dh-result-text mt-4 mb-3">3D модель</h5>
+                        <p class="dh-result-description">для відео 360°</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="https://www.youtube.com/watch?v=HJqB8AGKKCg&feature=youtu.be&fbclid=IwAR30wOrVjeOmnqWnQ88Tlt2QQixVulPSIzLVsAO8VS63e7AalN3G2JObVHg" target="_blank">
+                            <img src="img/3d_model_video.jpg" class="img-fluid a-img">
+                        </a>
+                        <h5 class="dh-result-text mt-4 mb-3">Відео 360°</h5>
+                        <p class="dh-result-description">іміджеве відео проекту</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5 text-center">
+                    <div class="col-md-3 px-4">
+                        <a href="http://demo.dcvisu.com/uploads/objects/320/pdf/-%D0%9E%D0%A2%D0%9F-1568_OBLIK_System.pdf" target="_blank">
+                            <img src="img/screen1.jpg" class="img-fluid a-img">
+                        </a>
+                        <p class="dh-result-description mt-3">Рішення для обліку<br>музейних предметів<br>в електронному вигляді<br>(локальне)</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="http://heritageua.dcvisu.com/tmpl/index.php" target="_blank">
+                            <img src="img/Collections_Fortess.jpg" class="img-fluid a-img">
+                        </a>
+                        <p class="dh-result-description mt-3">Цифрові колекції</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="http://demo.dcvisu.com/uploads/objects/322/pdf/OTP1568_Dig-Archive.pdf" target="_blank">
+                            <img src="img/screen2.jpg" class="img-fluid a-img">
+                        </a>
+                        <p class="dh-result-description mt-3">Цифровий архів<br>облікової документації<br>(локальний)</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <a href="index.html" target="_blank">
+                            <img src="img/screen4.jpg" class="img-fluid a-img">
+                        </a>
+                        <p class="dh-result-description mt-3">Інформаційно-методичний контент.<br>Веб-сайт для фахівців</p>
+                        <div class="line-undernumber"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container-fluid bg-fa px-xl-5 py-5">
+            <div class="row no-gutters px-lg-5 px-3">
+                <div class="col-md-6">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <h5 class="footer-header"><div class="v-footer-line"></div><a href="about.html">Про проект</a></h5>
+                            <a class="footer-page" href="about-kyiv-fortress.html">про Київську Фортецю</a><br>
+                            <a class="footer-page" href="tasks.html">завдання Проекту</a><br>
+                            <a class="footer-page" href="workinprogress.html">літопис реалізації Проекту</a>
+                            
+                            <h5 class="footer-header mt-4"><div class="v-footer-line"></div><a href="results-base.html">Результати проекту</a></h5>
+                            <a class="footer-page" target="_blank" href="http://heritageua.dcvisu.com/tmpl/index.php">колекції,</a>
+                            <a class="footer-page" target="_blank" href="https://my.matterport.com/show/?m=nBY4tFp9GuG"> 3D тур</a> і
+                            <a class="footer-page" target="_blank" href="https://www.dropbox.com/sh/cbwe9phphqr5s58/AABY-2ZsyZG3UJ2g2kQYRddqa?dl=0&fbclid=IwAR3GJeOT3DQk2-BJf99rqGWjAnoUjJEWf5Jl7dSKcPYveNSX-C91L6kbnB4"> моделі</a>,
+                            <a class="footer-page" target="_blank" href="https://www.youtube.com/watch?v=HJqB8AGKKCg&feature=youtu.be&fbclid=IwAR30wOrVjeOmnqWnQ88Tlt2QQixVulPSIzLVsAO8VS63e7AalN3G2JObVHg"> відео 360°</a>
+                            <br>
+                            <a class="footer-page" href="http://demo.dcvisu.com/uploads/objects/320/pdf/-%D0%9E%D0%A2%D0%9F-1568_OBLIK_System.pdf" target="_blank">ситема керування та обліку</a><br>
+                            <a class="footer-page" target="_blank" href="http://demo.dcvisu.com/uploads/objects/316/pdf/DC-Visu-2017docx.pdf">про платформу і рішення</a><br>
+                            <a class="footer-page" href="results.html">цифри</a>,
+                            <a class="footer-page" target="_blank" href="http://demo.dcvisu.com/uploads/objects/321/pdf/OTP1568_REPORT.pdf"> звітні матеріали</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="footer-header mt-md-0 mt-4"><div class="v-footer-line"></div><a href="prof-content.html">Професійний контент</a></h5>
+                            <a class="footer-page" href="http://demo.dcvisu.com/uploads/objects/312/pdf/OTP1568_Normativy.pdf" target="_blank">нормативна база</a>,
+                            <a class="footer-page" href="https://digilab.promuseum.org/" target="_blank"> ресурси</a>
+                            <br>
+                            <a class="footer-page" href="http://demo.dcvisu.com/uploads/objects/314/pdf/DH_digitising_guideline.pdf" target="_blank">методики </a>та
+                            <a class="footer-page" href="https://creativecommons.org/licenses/?lang=uk" target="_blank"> інструкції</a>
+                            <br>
+                            
+                            <h5 class="footer-header mt-4"><div class="v-footer-line"></div><a href="workinprogress.html">Події</a></h5>
+                            <a class="footer-page" href="https://www.facebook.com/olga.barkova.52/posts/2211497622196659?notif_id=1543715362706936&notif_t=video_processed" target="_blank">новини</a> та
+                            <a class="footer-page" href="http://demo.dcvisu.com/uploads/objects/309/pdf/Seminar-DH-Kyiv_Fortes-2018-%D0%86%D0%86_%D0%A3%D0%9A%D0%A4.pdf?fbclid=IwAR0JlzFE4suc7goc58J-bd5gdsUH1N7ZyPWAuO4Nf9VHy79IhLIAtybdSJU" target="_blank"> заходи</a>
+                            <br>
+                            <a class="footer-page" href="https://www.facebook.com/olga.barkova.52/videos/pcb.2211497622196659/2213933895286365/?type=3&theater" target="_blank">мультимедіа архів</a>
+                            
+                            <h5 class="footer-header mt-4"><div class="v-footer-line"></div><a href="partners.html">Партнери</a></h5>     
+                            <a class="footer-page" href="http://demo.dcvisu.com/uploads/objects/315/pdf/Projects_UKF-2018.pdf" target="_blank">споріднені проекти</a> та
+                            <a class="footer-page" href="http://demo.dcvisu.com/collections/11" target="_blank"> заходи</a>
+                        </div>
+                        <div class="col-12 mt-5 mb-md-0 mb-4">
+                            <div class="media">
+                                <img class="img-fluid mr-3" src="img/ucf_rastr_small.png" width="70">
+                                <p class="footer-info">
+                                    За підтримки<br>
+                                    <a href="https://ucf.in.ua/" target="_blank">Українського Культурного Фонду</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="footer-header" id="contactsAnchor"><div class="v-footer-line"></div>Контакти</h5>
+                    <p class="footer-info">Національний<br>історико-архітектурний<br>музей "Київська Фортеця"</p>
+                    
+                    <h5 class="footer-contact-header mt-4"><i class="fas fa-map-marker-alt color-yellow mr-2"></i>Адреса:</h5>
+                    <a href="https://goo.gl/maps/xW1EGMYBLXm" class="footer-info" target="_blank">01133, Україна, м. Київ,<br>вул. Госпітальна, 24А</a>
+                    
+                    <h5 class="footer-contact-header mt-4"><i class="fas fa-at color-yellow mr-2"></i>Електронна скринька:</h5>
+                    <a href="mailto:fortresskiev@ukr.net" class="footer-info">fortresskiev@ukr.net</a>
+                    
+                    <h5 class="footer-contact-header mt-4"><i class="fas fa-phone color-yellow mr-2"></i>Номер телефону:</h5>
+                    <a href="tel:+380442882341" class="footer-info">+38 (044) 288-2341</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 class="footer-header mb-3 mt-md-0 mt-5">Є запитання чи пропозиції?</h5>
+                    <form>
+                        <select name="addressee" class="mb-2" required>
+                            <option value="projectadmin" selected>До керівництва проекту</option>
+                            <option value="">З програмно-технологічних розробок</option>
+                            <option value="">З методичних питань</option>
+                            <option value="">До дирекції НІАМ Київська Фортеця</option>
+                            <option value="">До адміністратора сайту</option>
+                            <option value="">До розробників сайту</option>
+                        </select>
+                        <input class="mb-2" type="text" placeholder="Ваше ім'я" name="name" required>
+                        <input class="mb-2" type="text" placeholder="Ваш номер телефону або e-mail" name="contactmethod" required>
+                        <textarea class="mb-2" placeholder="Ваше повідомлення" name="message" rows="3"></textarea>
+                        <button class="btn-custom" type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-2d px-xl-5 py-5">
+            <div class="row no-gutters px-xl-5 px-3 justify-content-center">
+                <div class="col-md-3">
+                    <h5 class="footer-header text-white mb-3">Ліцензії</h5>
+                    <a href="https://creativecommons.org/licenses/?lang=uk" target="_blank">
+                        <div class="cc-contianer mb-2">
+                            <img class="img-fluid" src="img/cc-by-nc-nd.png" width="90px">
+                            <small class="footer-info-small-dark">про проект</small>
+                        </div>
+                        <div class="cc-contianer">
+                            <img class="img-fluid" src="img/cc-by-nc.png" width="90px">
+                            <small class="footer-info-small-dark">професійний контент</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="footer-header text-white mb-3 mt-md-0 mt-5">Контент</h5>
+                    <div class="media mb-2">
+                        <small class="footer-info-small">Проект УКФ:ОТП 1568<br>НІАМ «Київська фортеця»</small>
+                        <a href="https://www.facebook.com/KyivFortress/" target="_blank"><img class="img-fluid ml-3" src="img/fb-rastr-rounded.png" width="40px"></a>
+                    </div>
+                    <small class="footer-info-small">© Національний історико-архітектурний<br>музей "Київська фортеця", 2018</small><br>
+                    <small class="footer-info-small">
+                        <i class="far fa-envelope color-yellow mr-2"></i>
+                        Андрій В'ялець - <a href="mailto:fortresskiev@ukr.net" class="footer-email-small">fortresskiev@ukr.net</a>
+                    </small>
+                </div>
+                <div class="col-md-3 pl-md-4">
+                    <h5 class="footer-header text-white mb-3 mt-md-0 mt-5">Ідея, розробка</h5>
+                    <img class="img-fluid mb-2" src="img/DHLogo_white.svg" width="200px">
+                    <a href="https://www.facebook.com/DigitizedHeritage/" target="_blank"><img class="img-fluid ml-3" src="img/fb-rastr-rounded.png" width="40px"></a><br>  
+                    <small class="footer-info-small">© СЦ БАЛІ:<br>Програмно-технологічні рішення, 2018</small><br>
+                    <small class="footer-info-small">
+                        <i class="far fa-envelope color-yellow mr-2"></i>
+                        Ольга Баркова - <a href="mailto:ict@scbali.com" class="footer-email-small">ict@scbali.com</a>
+                    </small>
+                </div>
+                <div class="col-md-3 text-md-right">
+                    <h5 class="footer-header text-white mb-3 mt-md-0 mt-5">Дизайн, розробка</h5>
+                    <img class="img-fluid mb-3 mt-2" src="img/crayfishLogo.svg" width="170px"><br>  
+                    <small class="footer-info-small">© <a href="http://crayfish.studio/ua" target="_blank" class="footer-email-small">Crayfish Studio</a>, 2018</small><br>
+                    <small class="footer-info-small">
+                        <i class="far fa-envelope color-yellow mr-2"></i>
+                        Любомир Дах<br>
+                        <a href="mailto:lybomyrdakh@gmail.com" class="footer-email-small">lybomyrdakh@gmail.com</a>
+                    </small>
+                </div>
+                <div class="col-12 mt-md-4 mt-5">
+                    <small class="footer-info-small">
+                        <i class="fas fa-exclamation-circle fa-lg color-yellow mr-2"></i>
+                        При використанні матеріалів сайту посилання на джерело є обов'язковим
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
