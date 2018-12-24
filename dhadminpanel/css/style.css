@@ -21,7 +21,7 @@
 body {
     font-family: Roboto-regular;
     color: #2d2d2d;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .rob-med {
@@ -228,8 +228,15 @@ a:hover {
     z-index: 900;
     opacity: 0.5;
 }
-
-
+.card-body{
+    padding: 0.85rem;
+}
+.table th, .table td{
+    padding: 0.4rem 0.75rem;
+}
+.table{
+    margin: 0px;
+}
 
 .fa-check {
     color: #00751b;
@@ -360,7 +367,6 @@ col-7{
     border-radius: 5px;
     padding: .375rem .5rem;
     background: #efefef;
-    margin-left: 0.5rem;
 }
 select option{
     width: 100%;
@@ -376,4 +382,19 @@ select:invalid { color: gray; }
 .date {
     display: inline-block;
     width: auto;
+}
+h5{
+    font-size: 1.1rem;
+}
+card-header{
+    padding: .65rem 1rem;
+}
+.date[type="number"]{
+    padding: 0.2rem 0.4rem;
+}
+input[type="textarea"]{
+    border-radius: 5px;
+}
+textarea{
+    border-radius: 5px;
 }
