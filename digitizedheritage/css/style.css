@@ -35,7 +35,9 @@
         font-size: 100%;
     }
     
-
+    .mobile-invisible {
+        display: none;
+    }
 }
 
 #nav-container {
@@ -355,9 +357,9 @@ option {
 }
 
 .line-undernumber {
-    width: 34%;
-    margin-left: 33%;
-    height: 6px;
+    width: 30%;
+    margin-left: 35%;
+    height: 5px;
     background-color: #FFCE01;
     border-radius: 3px;
     margin-top: 20px;
@@ -423,4 +425,9 @@ option {
     text-transform: uppercase;
     font-weight: 700;
     white-space: normal;
+}
+
+.event-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
