@@ -39,17 +39,17 @@ function toTop() {
 
 function bText() {
 
-    document.body.style.fontSize = "0.9rem";
+    document.body.style.fontSize = "0.975rem";
 }
 
 function nText() {
 
-    document.body.style.fontSize = "0.8rem";
+    document.body.style.fontSize = "0.875rem";
 }
 
 function sText() {
 
-    document.body.style.fontSize = "0.7rem";
+    document.body.style.fontSize = "0.775rem";
 }
 
 function saveShow() {
