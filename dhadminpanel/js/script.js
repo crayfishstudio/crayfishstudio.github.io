@@ -44,12 +44,12 @@ function bText() {
 
 function nText() {
 
-    document.body.style.fontSize = "0.75rem";
+    document.body.style.fontSize = "0.8rem";
 }
 
 function sText() {
 
-    document.body.style.fontSize = "0.65rem";
+    document.body.style.fontSize = "0.7rem";
 }
 
 function saveShow() {
