@@ -398,3 +398,6 @@ input[type="textarea"]{
 textarea{
     border-radius: 5px;
 }
+.form-control{
+    font-family: Arial-uni;
+}
