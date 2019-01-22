@@ -99,3 +99,6 @@ function addCoAuth(){
 //    console.log($("co-auth").html());
 //    $(this).parent().parent().parent().after($coAuthTr);
 //})
+function boxToTop(thisElement){
+    thisElement.scrollIntoView({behavior:"smooth", block:"start"});
+}
