@@ -401,3 +401,9 @@ textarea{
 .form-control{
     font-family: Arial-uni;
 }
+[name="date-year"]{
+    
+}
+#biblio-posyl-area {
+    margin-left:2px;
+}

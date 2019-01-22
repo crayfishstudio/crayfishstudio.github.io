@@ -1557,7 +1557,7 @@
         <div class="tab-pane fade show" id="nav-bibliografiya" role="tabpanel" aria-labelledby="nav-bibliografiya-tab">
             <div class="container-fluid px-0 mt-3">
                 <div class="card border-0">
-                    <div class="card-header ligght-grey-bg border-0">
+                    <div class="card-header ligght-grey-bg border-0" onclick="boxToTop(this);" >
                         <h5 class="card-title rob-med mb-0"><i class="ml-2 fas fa-sm fa-circle mr-2"></i>Бібліографія</h5>
                     </div>
                     <div class="card-body">
@@ -1567,7 +1567,7 @@
                                     <th scope="row" class="col-2">
                                         <div class="icons no-gutters"><span class="th-name">Тип документа</span></div>
                                     </th>
-                                    <td class="col-8">
+                                    <td class="col-7">
                                         <div class="form-group">
                                             <select class="form-control" id="doctype">
                                                 <option disabled selected hidden>Виберіть тип</option>
@@ -1578,7 +1578,17 @@
                                         </div>
                                     </td>
                                     <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                        <div class="form-group">
+                                            <select class="form-control" id="doctype">
+                                                <option disabled selected hidden>Мова</option>
+                                                <option>УКР</option>
+                                                <option>РОС</option>
+                                                <option>АНГЛ</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
                                 </tr>
@@ -1586,10 +1596,22 @@
                                     <th scope="row" class="col-2">
                                         <div class="icons no-gutters"><span class="th-name">Заголовок</span></div>
                                     </th>
-                                    <td class="col-8"><textarea cols="50" id="zagolovok-area"></textarea><span id="zagolovok"></span>
+                                    <td class="col-9"><textarea cols="50" id="zagolovok-area"></textarea><span id="zagolovok"></span>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
+                                        <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
+                                    </td>
+                                </tr>
+                                <tr class="row">
+                                    <th scope="row" class="col-2">
+                                        <div class="icons no-gutters"><span class="th-name">Назва</span></div>
+                                    </th>
+                                    <td class="col-9">
+                                        <textarea cols="50" id="zagolovok-area"></textarea>
+                                    </td>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
                                 </tr>
@@ -1597,13 +1619,17 @@
                                     <th scope="row" class="col-2">
                                         <div class="icons no-gutters"><span class="th-name">Автор (особа чи організація)</span></div>
                                     </th>
-                                    <td class="col-3">
+                                    <td class="col-4">
                                         <div class="form-group">
                                             <select class="form-control" id="auth-type">
                                                 <option value="" disabled selected hidden>Виберіть тип</option>
                                                 <option value="osoba">Особа</option>
                                                 <option value="org">Організація</option>
                                             </select>
+                                        </div>
+                                    </td>
+                                    <td class="col-5">
+                                        <div class="form-group">
                                             <select class="form-control" id="auth">
                                                 <option value="" disabled selected hidden>Виберіть Автора</option>
                                                 <option value="osoba">Lorem</option>
@@ -1611,26 +1637,16 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підкадзки"><i class="far fa-lg fa-question-circle"></i></span>
-                                    </td>
-                                    <th scope="row" class="col-1">
-                                        <div class="icons no-gutters"><span class="th-name">Назва</span></div>
-                                    </th>
-                                    <td class="col-2">
-                                        <input type="textarea">
-                                    </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
-                                        <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
                                 </tr>
                                 <tr class="row co-auth">
                                     <th scope="row" class="col-2">
-                                        <div class="icons no-gutters"><a href="#" onclick="addCoAuth();"><i class="fas mr-2 fa-lg addinput fa-plus-circle"></i></a> <span class="th-name">Співавтори (особи)</span></div>
+                                        <div class="icons no-gutters"> <span class="th-name">Співавтори (особи)</span><a href="#" onclick="addCoAuth();"><i class="fas ml-2 fa-lg addinput fa-plus-circle"></i></a></div>
                                     </th>
-                                    <td class="col-2">
+                                    <td class="col-3">
                                         <div class="form-group">
                                             <select class="form-control">
                                                 <option disabled selected hidden>Виберіть співавтора</option>
@@ -1639,14 +1655,14 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
-                                    <th scope="row" class="col-2">
-                                        <div class="icons no-gutters"><a href="#"><i class="fas mr-2 fa-lg addinput fa-plus-circle"></i></a><span class="th-name">Співавтори (організації)</span></div>
+                                    <th scope="row" class="col-1">
+                                        <div class="icons no-gutters"><span class="th-name">Співавтори (організації)</span><a href="#"><i class="fas ml-2 fa-lg addinput fa-plus-circle"></i></a></div>
                                     </th>
-                                    <td class="col-2">
+                                    <td class="col-4">
                                         <div class="form-group">
                                             <select class="form-control">
                                                 <option disabled selected hidden>Виберіть співавтора</option>
@@ -1655,8 +1671,8 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
                                 </tr>
@@ -1664,7 +1680,7 @@
                                     <th scope="row" class="col-2">
                                         <div class="icons no-gutters"><span class="th-name">Дата (рік)</span></div>
                                     </th>
-                                    <td class="col-2">
+                                    <td class="col-1">
                                         <div class="form-group">
                                             <select class="form-control" name="date-year">
                                                 <option value="2019">2019</option>
@@ -1785,62 +1801,78 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
-                                    <th scope="row" class="col-2">
+                                    <th scope="row" class="col-1">
                                         <div class="icons no-gutters"><span class="th-name">Дата (період)</span></div>
                                     </th>
-                                    <td class="col-2">
-                                        <input type="textarea">
+                                    <td class="col-6">
+                                        <textarea></textarea>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
                                 </tr>
                                 <tr class="row">
-                                    <th scope="row" class="col-2">
+                                    <th scope="row" class="col-1">
                                         <div class="icons no-gutters"><span class="th-name">Місто видання</span></div>
                                     </th>
-                                    <td class="col-8"><textarea cols="50" id="vidaniia-area"></textarea><span id="misto-vidaniia"></span>
+                                    <td class="col-4"><textarea cols="50" id="vidaniia-area"></textarea><span id="misto-vidaniia"></span>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
-                                </tr>
-                                <tr class="row">
-                                    <th scope="row" class="col-2">
-                                        <div class="icons no-gutters"><a href="#"><i class="fas mr-2 fa-lg addinput fa-plus-circle"></i></a><span class="th-name">Бібліографічне посилання</span></div>
+                                    <th scope="row" class="col-1">
+                                        <div class="icons no-gutters"><span class="th-name">Видавництво</span></div>
                                     </th>
-                                    <td class="col-8"><textarea cols="50" id="biblio-posyl-area"></textarea><span id="bibli-posyl"></span>
+                                    <td class="col-4"><textarea cols="50" id="vidaniia-area"></textarea><span id="misto-vidaniia"></span>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
                                 </tr>
                                 <tr class="row">
-                                    <th scope="row" class="col-2">
+                                    <th scope="row" class="col-1">
+                                        <div class="icons no-gutters"><span class="th-name">Бібліографічне посилання</span><a href="#"><i class="fas ml-2 fa-lg addinput fa-plus-circle"></i></a></div>
+                                    </th>
+                                    <td class="col-4"><textarea cols="50" id="biblio-posyl-area"></textarea><span id="bibli-posyl"></span>
+                                    </td>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
+                                            <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
+                                    </td>
+                                    <th scope="row" class="col-1">
+                                        <div class="icons no-gutters"><span class="th-name">URL</span><a href="#"><i class="fas ml-2 fa-lg addinput fa-plus-circle"></i></a></div>
+                                    </th>
+                                    <td class="col-4"><textarea cols="50" id="bibli-url-area"></textarea><span id="bibli-url"></span>
+                                    </td>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
+                                            <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
+                                    </td>
+                                </tr>
+                                <tr class="row">
+                                    <th scope="row" class="col-1">
                                         <div class="icons no-gutters"><span class="th-name">Опис</span></div>
                                     </th>
-                                    <td class="col-8"><textarea cols="50" id="biblio-opys-area"></textarea><span id="biblio-opys-posyl"></span>
+                                    <td class="col-4"><textarea cols="50" id="biblio-opys-area"></textarea><span id="biblio-opys-posyl"></span>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
-                                </tr>
-                                <tr class="row">
-                                    <th scope="row" class="col-2">
+                                    <th scope="row" class="col-1">
                                         <div class="icons no-gutters"><span class="th-name">Коментар (примітка)</span></div>
                                     </th>
-                                    <td class="col-8"><textarea cols="50" id="biblio-coment-area"></textarea><span id="bibli-coment"></span>
+                                    <td class="col-4"><textarea cols="50" id="biblio-coment-area"></textarea><span id="bibli-coment"></span>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
                                 </tr>
@@ -1851,7 +1883,7 @@
             </div>
             <div class="container-fluid px-0 mt-3">
                 <div class="card border-0">
-                    <div class="card-header ligght-grey-bg border-0">
+                    <div class="card-header ligght-grey-bg border-0" onclick="boxToTop(this);">
                         <h5 class="card-title rob-med mb-0"><i class="ml-2 fas fa-sm fa-circle mr-2"></i>Архівні матеріали</h5>
                     </div>
                     <div class="card-body">
@@ -1863,7 +1895,7 @@
                                     </th>
                                     <td class="col-8">
                                         <div class="form-group">
-                                            <select class="form-control" >
+                                            <select class="form-control">
                                                 <option disabled selected hidden>Виберіть тип</option>
                                                 <option>Ієрархічний документ</option>
                                                 <option>Бібліографічний документ</option>
@@ -1891,9 +1923,9 @@
                                     <th scope="row" class="col-2">
                                         <div class="icons no-gutters"><span class="th-name">Дата документу</span></div>
                                     </th>
-                                    <td class="col-8">
+                                    <td class="col-9">
                                         <div class="form-group">
-                                            <select class="form-control"name="date-year">
+                                            <select class="form-control" name="date-year">
                                                 <option value="2019">2019</option>
                                                 <option value="2018">2018</option>
                                                 <option value="2017">2017</option>
@@ -2012,8 +2044,8 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td class="col-2">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><a href="#"><i class="ml-2 far fa-lg fa-edit"></i></a><a href="#"><img class="ml-2 minus" src="img/minus-button.png"></a>
+                                    <td class="col-1">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </td>
                                 </tr>
