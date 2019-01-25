@@ -355,6 +355,7 @@ textarea:focus{
 
 .th-name {
     font-size: 115%;
+    font-weight: bold;
 }
 .breadcrumb{
     font-family: Arial-unicode !important;
