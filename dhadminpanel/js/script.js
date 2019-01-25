@@ -99,6 +99,15 @@ function addCoAuth(){
 //    console.log($("co-auth").html());
 //    $(this).parent().parent().parent().after($coAuthTr);
 //})
-function boxToTop(thisElement){
-    thisElement.scrollIntoView({behavior:"smooth", block:"start"});
-}
+$('.scroll').on('click',function(e) {
+  e.preventDefault();
+  var offset = 0;
+  var target = $(this.getAttribute('href'));
+    console.log(target);
+  if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+  $('html, body').stop().animate({
+    'scrollTop': $(target).offset().top - offset
+  }, 500, 'swing', function() {
+    // window.location.hash = target;
+  });
+});
