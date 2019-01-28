@@ -103,7 +103,7 @@
                         <nav>
                             <div class="nav nav-tabs rob-med" id="nav-tab-opys" role="tablist">
                                 <a class="nav-item nav-link w-20" data-toggle="tab" href="#nav-pervunniy-oblik" role="tab" aria-selected="false">ПЕРВИННИЙ ОБЛІК</a>
-                                <a class="nav-item nav-link w-20" data-toggle="tab" href="#nav-proc" role="tab" aria-selected="false"><span>ПРОЦЕДУРИ СПИСАННЯ</span></a>
+                                <a class="nav-item nav-link w-20" data-toggle="tab" href="#nav-proc" role="tab" aria-selected="false"><span>ПРОЦЕДУРИ. СПИСАННЯ</span></a>
                                 <a class="nav-item nav-link w-20" data-toggle="tab" href="#nav-id" role="tab" aria-selected="false">ІДЕНТИФІКАЦІЙНІ НОМЕРИ</a>
                                 <a class="nav-item nav-link w-20" data-toggle="tab" href="#nav-oblik-docs" role="tab" aria-selected="false">ПОВ'ЯЗАНІ ОБЛІКОВІ ДОКУМЕНТИ</a>
                                 <a class="nav-item nav-link w-20" data-toggle="tab" href="#nav-pasport" role="tab" aria-selected="false"><span>ПАСПОРТИ</span></a>
@@ -1689,7 +1689,7 @@
                                     <div class="col-2">
                                         <div class="icons no-gutters"><span class="th-name">Тип документа</span></div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-3">
                                         <div class="form-group">
                                             <input list="doctype" class="form-control">
                                             <datalist  id="doctype">
@@ -1703,7 +1703,7 @@
                                         <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </div>
-                                    <div class="col-2 text-right">
+                                    <div class="col-1 text-right mb-3">
                                         <div class="icons no-gutters"><span class="th-name">Пов'язаний документ</span></div>
                                     </div>
                                     <div class="col-2">
@@ -1736,22 +1736,25 @@
                                     <div  class="col-2">
                                         <div class="icons no-gutters"><span class="th-name">Бібліографічне посилання</span></div>
                                     </div>
-                                    <div class="col-4"><textarea cols="50" id="biblio-posyl-area"></textarea><span id="bibli-posyl"></span>
-                                    </div>
-                                    <div class="col-1">
-                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
-                                            <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
-                                    </div>
-                                    <div  class="col-1 text-right">
-                                        <div class="icons no-gutters"><span class="th-name">URL</span></div>
-                                    </div>
-                                    <div class="col-3"><textarea cols="50" id="bibli-url-area"></textarea><span id="bibli-url"></span>
+                                    <div class="col-9"><textarea cols="50" id="biblio-posyl-area"></textarea><span id="bibli-posyl"></span>
                                     </div>
                                     <div class="col-1 pl-0">
                                         <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                             <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </div>
+                                    
                                 </div>
+                                <div class="row">
+                                    <div  class="col-2">
+                                        <div class="icons no-gutters"><span class="th-name">URL</span></div>
+                                    </div>
+                                    <div class="col-9"><textarea cols="50" id="bibli-url-area"></textarea><span id="bibli-url"></span>
+                                    </div>
+                                    <div class="col-1 pl-0">
+                                        <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
+                                            <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
+                                        </div>
+                                    </div>
                                 <div class="row">
                                     <div class="col-2">
                                         <div class="icons no-gutters"><span class="th-name">Заголовок</span></div>
@@ -1805,7 +1808,7 @@
                                     <div class="col-2">
                                         <div class="icons no-gutters"> <span class="th-name">Співавтори (особи)</span><a href="#" onclick="addCoAuth();"><i class="fas ml-2 fa-lg addinput fa-plus-circle"></i></a></div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-9">
                                         <div class="form-group">
                                             <input list="co-auth-p" class="form-control">
                                             <datalist  id="co-auth-p">
@@ -1819,10 +1822,13 @@
                                         <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
                                     </div>
-                                    <div class="col-2 px-0 text-right">
-                                        <div class="icons no-gutters"><span class="th-name">Співавтори (організації)</span><a href="#"><i class="fas ml-2 fa-lg addinput fa-plus-circle"></i></a></div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-2 pr-0">
+                                        <div class="icons no-gutters"><span class="th-name">Співавтори<br>(організації)</span><a href="#"><i class="fas ml-2 fa-lg addinput fa-plus-circle"></i></a></div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-9">
                                         <div class="form-group">
                                             <input list="co-auth-o" class="form-control">
                                             <datalist  id="co-auth-o">
@@ -1831,7 +1837,7 @@
                                             </datalist>
                                         </div>
                                     </div>
-                                    <div class="col-1 pl-0">
+                                    <div class="col-1 px-0">
                                         <input type="checkbox" id="customControlAutosizing" checked>
                                         <a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a>
                                         <span class="ml-2" data-title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span>
