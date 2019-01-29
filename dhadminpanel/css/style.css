@@ -247,22 +247,20 @@ a:hover {
     margin-top: -3px;
 }
 
-[data-title]:hover::before{
-    content: attr(data-title);
-    position: absolute;
-    left: 50px;
-    top: -25%;
-    display: inline-block;
-    width: 12vw;
+.tooltip-inner{
+    max-width: 12vw;
     border: 1px solid #FFCE01;
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 5px;
     font-family: Arial-unicode;
     background-color: #fff;
-    z-index: 1000;
+    color: #2d2d2d;
+    opacity: 1;
 }
 
-
+.tooltip.show{
+    opacity: 1;
+}
 
 .addinput {
     color: #00751b;

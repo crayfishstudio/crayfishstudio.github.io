@@ -52,12 +52,6 @@ function sText() {
     document.body.style.fontSize = "0.775rem";
 }
 
-function saveShow() {
-    document.getElementById("classification").innerHTML = document.getElementById("classification-area").value;
-    document.getElementById("classification-area").value = "";
-    document.getElementById("classification-area").style.display = "none";
-}
-
 var autoExpand = function (field) {
 
     // Reset field height
@@ -111,3 +105,8 @@ $('.scroll').on('click',function(e) {
     // window.location.hash = target;
   });
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+console.log(document.getElementsByClassName('tooltip-inner')[0].css);
