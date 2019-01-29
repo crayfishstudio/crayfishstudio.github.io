@@ -106,7 +106,10 @@ $('.scroll').on('click',function(e) {
   });
 });
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(document).ready(function () {
+    $('.table').tooltip({trigger:"click", selector:'[data-toggle="tooltip"]'});
 });
-console.log(document.getElementsByClassName('tooltip-inner')[0].css);
+
+$('.table').on('change', function(){
+    $('.table').tooltip({trigger:"click", selector:'[data-toggle="tooltip"]'});
+})
