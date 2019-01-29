@@ -89,9 +89,9 @@ document.addEventListener('input', function (event) {
 //           $(this).parent().removeClass("helper");
 //       }, 3000);
 //});
-function addCoAuth(){
-    var $coAuthTr = $(".co-auth").html();
-    $(".co-auth").last().after("<tr class='row co-auth'>" + $coAuthTr + "</tr>");
+function addPubTownWorkPresentation(){
+    var $pubTownDiv = $(".pubtown").html();
+    $(".pubtown").last().after("<div class='row co-auth'>" + $pubTownDiv + "</div>");
 };
 //$(".addCoAuth").click(function(){
 //    var $coAuthTr = $(this).parent().parent().parent().html();
