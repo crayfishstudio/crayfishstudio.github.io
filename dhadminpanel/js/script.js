@@ -5,6 +5,9 @@ window.onscroll = function () {
     scrollFunction();
 };
 
+var bibil = $('.bibilAdd').clone();
+
+var pubTownDiv = $(".pubtown").clone();
 
 // Get the header
 var header = document.getElementById("sticky-panel");
@@ -84,8 +87,7 @@ document.addEventListener('input', function (event) {
 //       }, 3000);
 //});
 function addPubTownWorkPresentation(){
-    var $pubTownDiv = $(".pubtown").html();
-    $(".pubtown").last().after("<div class='row co-auth'>" + $pubTownDiv + "</div>");
+    $(".pubtown").last().after(pubTownDiv);
 };
 //$(".addCoAuth").click(function(){
 //    var $coAuthTr = $(this).parent().parent().parent().html();
@@ -97,7 +99,6 @@ $('.scroll').on('click',function(e) {
   e.preventDefault();
   var offset = 0;
   var target = $(this.getAttribute('href'));
-    console.log(target);
   if ($(this).data('offset') != undefined) offset = $(this).data('offset');
   $('html, body').stop().animate({
     'scrollTop': $(target).offset().top - offset
@@ -107,9 +108,13 @@ $('.scroll').on('click',function(e) {
 });
 
 $(document).ready(function () {
-    $('.table').tooltip({trigger:"click", selector:'[data-toggle="tooltip"]'});
+    $('body').tooltip({trigger:"click", selector:'[data-toggle="tooltip"]'});
 });
 
-$('.table').on('change', function(){
+$('body').on('change', function(){
     $('.table').tooltip({trigger:"click", selector:'[data-toggle="tooltip"]'});
-})
+});
+function bibilAdd(){
+    $('.bibilAdd').last().after("<div class='thin-line'></div>");
+    $('.thin-line').last().after(bibil);
+};
