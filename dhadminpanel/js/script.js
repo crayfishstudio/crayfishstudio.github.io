@@ -108,11 +108,11 @@ $('.scroll').on('click',function(e) {
 });
 
 $(document).ready(function () {
-    $('body').tooltip({trigger:"click", selector:'[data-toggle="tooltip"]'});
+    $('body').tooltip({trigger:"click hover", selector:'[data-toggle="tooltip"]'});
 });
 
 $('body').on('change', function(){
-    $('.table').tooltip({trigger:"click", selector:'[data-toggle="tooltip"]'});
+    $('.table').tooltip({trigger:"click hover", selector:'[data-toggle="tooltip"]'});
 });
 function bibilAdd(){
     $('.bibilAdd').last().after("<div class='thin-line'></div>");
