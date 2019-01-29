@@ -248,7 +248,7 @@ a:hover {
 }
 
 .tooltip-inner{
-    max-width: 12vw;
+    max-width: 30vw;
     border: 1px solid #FFCE01;
     border-radius: 5px;
     padding: 5px;
