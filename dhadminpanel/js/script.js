@@ -5,6 +5,8 @@ window.onscroll = function () {
     scrollFunction();
 };
 
+var newCoAuthrRow = '<div class="row"><div class="col-1"><input class="form-control" data-toggle="tooltip" data-placement="right" data-offset="20" title="Вкажіть порядковий номер для відображення"></div><div class="col-4 pl-5"><div class="form-group"><input list="co-auth-p" class="form-control"><datalist  id="co-auth-p"><option>Lorem</option><option>Ipsum</option></datalist></div></div><div class="col-1 px-0"><input type="checkbox" id="customControlAutosizing" checked><a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><span class="ml-2" data-toggle="tooltip" data-html="true" data-offset="20" data-placement="right" title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span></div><div class="col-1 pl-0"><div class="icons no-gutters"><span class="th-name">Співавтори<br>(організації)</span><a href="#" class="addCoAuth"><i class="fas ml-2 fa-lg addinput fa-plus-circle"></i></a></div></div><div class="col-4"><div class="form-group"><input list="co-auth-o" class="form-control"><datalist  id="co-auth-o"><option>Lorem</option><option>Ipsum</option></datalist></div></div><div class="col-1 px-0"><input type="checkbox" id="customControlAutosizing" checked><a href="#" onclick="saveShow()"><i class="ml-2 far fa-lg fa-save"></i></a><a href="#"><i class="fas fa-times ml-2 fa-lg"></i></a><span class="ml-2" data-toggle="tooltip" data-html="true" data-offset="20, 5" data-placement="bottom" title="Тут текст підказки"><i class="far fa-lg fa-question-circle"></i></span></div></div>';
+
 var bibil = $('.bibilAdd').clone();
 
 var pubTownDiv = $(".pubtown").clone();
@@ -89,12 +91,9 @@ document.addEventListener('input', function (event) {
 function addPubTownWorkPresentation(){
     $(".pubtown").last().after(pubTownDiv);
 };
-//$(".addCoAuth").click(function(){
-//    var $coAuthTr = $(this).parent().parent().parent().html();
-//    console.log($coAuthTr);
-//    console.log($("co-auth").html());
-//    $(this).parent().parent().parent().after($coAuthTr);
-//})
+$(".addCoAuth").click(function(){ 
+   $(".addCoAuth").parent().parent().parent().after(newCoAuthrRow);
+})
 $('.scroll').on('click',function(e) {
   e.preventDefault();
   var offset = 0;
