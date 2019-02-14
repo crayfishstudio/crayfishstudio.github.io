@@ -122,3 +122,6 @@ function bibilAdd(){
     $('.bibilAdd').last().after("<div class='thin-line'></div>");
     $('.thin-line').last().after(bibil);
 };
+  $(function() {
+    $('.teditor').froalaEditor()
+  });
