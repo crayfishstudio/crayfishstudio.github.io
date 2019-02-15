@@ -225,7 +225,7 @@ a:hover {
     border: none;
     border-radius: 50%;
     width: 37px;
-    z-index: 900;
+    z-index: 1300;
     opacity: 0.5;
 }
 .card-body{
