@@ -450,3 +450,7 @@ textarea{
     font-family: "Roboto", sans-serif !important;
     letter-spacing: -1px;
 }
+
+.word-break {
+    word-break: break-all;
+}
