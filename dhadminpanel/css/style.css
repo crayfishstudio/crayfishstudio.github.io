@@ -445,3 +445,8 @@ textarea{
 .table-action-container {
     width: 80px;
 }
+
+.roboto {
+    font-family: "Roboto", sans-serif !important;
+    letter-spacing: -1px;
+}
