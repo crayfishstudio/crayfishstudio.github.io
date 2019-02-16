@@ -98,22 +98,22 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">
+                    <th scope="col" title="Прямий/зворотній порядок">
                         <nobr>№ п/п</nobr>
                     </th>
                     <th scope="col" title="Обрати усі записи вказаного діапазону"><input type="checkbox"></th>
-                    <th scope="col"><a href="#" class="no-wrap"><nobr>ID</nobr></a></th>
+                    <th scope="col" title="Прямий/зворотній порядок"><a href="#" class="no-wrap"><nobr>ID</nobr></a></th>
                     <th scope="col">Зображення</th>
-                    <th scope="col">
+                    <th scope="col" title="Пряме/зворотне сортування">
                         <a href="#">Назва</a>
                         <i class="fas fa-xs fa-arrow-up"></i>
                         <i class="fas fa-xs fa-arrow-down"></i>
                     </th>
-                    <th scope="col"><a href="#" class="no-wrap"><nobr>Автор</nobr></a></th>
-                    <th scope="col"><a href="#" class="no-wrap"><nobr>Тип об'єкта</nobr></a></th>
-                    <th scope="col"><a href="#" class="no-wrap"><nobr>Місто</nobr></a></th>
-                    <th scope="col"><a href="#" class="no-wrap"><nobr>Рік</nobr></a></th>
-                    <th scope="col"><a href="#" class="no-wrap"><nobr>Статус</nobr></a></th>
+                    <th scope="col" title="Пряме/зворотне сортування"><a href="#" class="no-wrap"><nobr>Автор</nobr></a></th>
+                    <th scope="col" title="Пряме/зворотне сортування"><a href="#" class="no-wrap"><nobr>Тип об'єкта</nobr></a></th>
+                    <th scope="col" title="Пряме/зворотне сортування"><a href="#" class="no-wrap"><nobr>Місто</nobr></a></th>
+                    <th scope="col" title="Пряме/зворотне сортування"><a href="#" class="no-wrap"><nobr>Рік</nobr></a></th>
+                    <th scope="col" title="Публікувати/Не публікувати"><a href="#" class="no-wrap"><nobr>Статус</nobr></a></th>
                     <th scope="col">Дії</th>
                 </tr>
             </thead>
@@ -381,7 +381,8 @@
             <div class="col-1 py-2">
                 <button class="btn btn-green-custom">Імпорт</button>
             </div>
-            <div class="col-3 py-2 pl-5">
+            <div class="col-1"></div>
+            <div class="col-2 py-2">
                 <select style="width: 100%" class="py-2">
                     <option selected disabled>Дія для групи записів</option>
                     <option>Публікувати</option>
