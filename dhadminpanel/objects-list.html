@@ -15,8 +15,11 @@
 </head>
 
 <body class="px-2">
-    <div class="container-fluid light-grey-bg rounded mt-2">
-        <div class="row">
+    <div class="container-fluid light-grey-bg rounded mt-2 px-0">
+        <div class="row no-gutters">
+            <div class="col-2 text-center pr-1">
+                <button href="#" class="btn btn-green-custom rounded p-2">Новий об'єкт</button>
+            </div>
             <div class="col-1 px-1">
                 <input type="text" class="top-input" placeholder="КВ" name="kv_number">
             </div>
@@ -26,11 +29,8 @@
             <div class="col-6 px-1">
                 <input type="text" class="top-input" placeholder="Назва об'єкту" name="object_name">
             </div>
-            <div class="col-2 text-center px-1">
-                <button href="#" class="btn btn-green-custom rounded p-2">Новий об'єкт</button>
-            </div>
             <div class="col-1 px-1 pt-1">
-                <a href="#" class="bg-white green-border" title="Оновлення запису">
+                <a href="#" class="bg-white green-border" title="Оновити">
                     <i class="fa fa-lgs fa-redo-alt mt-2"></i>
                 </a>
                 <a href="#" class="bg-white green-border ml-1" title="Синхронізація">
@@ -47,20 +47,24 @@
     
     <div class="container-fluid px-0">
         <div class="row no-gutters">
-            <div class="col-4">
+            <div class="col-2">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb m-0 px-0 py-3  roboto">
                         <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
                         <li class="breadcrumb-item"><a href="#">Об'єкти</a></li>
-                        <li class="breadcrumb-item"><a href="#">Список</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">від запису 1 до запису 20</li>
+                        <li class="breadcrumb-item">Список</li>
+                        <!--<li class="breadcrumb-item active" aria-current="page">від запису 1 до запису 20</li>-->
                     </ol>
                 </nav>
             </div>
-            <div class="col-4 text-center py-3">
+            <div class="col-6 text-center py-3">
+                Записи від 
+                <input type="number" class="small-input wider ml-1">
+                до
+                <input type="number" class="small-input wider">
                 Сторінка
                 <input type="number" class="small-input ml-1">
-                /243, показано
+                /243. Показано
                 <input type="number" class="small-input mx-1">
                 записів із 4567
             </div>
@@ -94,20 +98,22 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">№ п/п</th>
-                    <th scope="col"><input type="checkbox"></th>
-                    <th scope="col">ID</th>
+                    <th scope="col">
+                        <nobr>№ п/п</nobr>
+                    </th>
+                    <th scope="col" title="Обрати усі записи вказаного діапазону"><input type="checkbox"></th>
+                    <th scope="col"><a href="#" class="no-wrap"><nobr>ID</nobr></a></th>
                     <th scope="col">Зображення</th>
                     <th scope="col">
                         <a href="#">Назва</a>
                         <i class="fas fa-xs fa-arrow-up"></i>
                         <i class="fas fa-xs fa-arrow-down"></i>
                     </th>
-                    <th scope="col">Автор</th>
-                    <th scope="col">Тип об'єкта</th>
-                    <th scope="col">Місто</th>
-                    <th scope="col">Рік</th>
-                    <th scope="col">Статус</th>
+                    <th scope="col"><a href="#" class="no-wrap"><nobr>Автор</nobr></a></th>
+                    <th scope="col"><a href="#" class="no-wrap"><nobr>Тип об'єкта</nobr></a></th>
+                    <th scope="col"><a href="#" class="no-wrap"><nobr>Місто</nobr></a></th>
+                    <th scope="col"><a href="#" class="no-wrap"><nobr>Рік</nobr></a></th>
+                    <th scope="col"><a href="#" class="no-wrap"><nobr>Статус</nobr></a></th>
                     <th scope="col">Дії</th>
                 </tr>
             </thead>
@@ -129,9 +135,9 @@
                     <td class="text-center"><i class="fa fa-check"></i></td>
                     <td>
                         <div class="table-action-container">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-edit mx-2"></i>
-                            <i class="fa fa-trash"></i>
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
                         </div>
                         
                     </td>
@@ -153,9 +159,9 @@
                     <td class="text-center"><i class="fa fa-check"></i></td>
                     <td>
                         <div class="table-action-container">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-edit mx-2"></i>
-                            <i class="fa fa-trash"></i>
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
                         </div>
                         
                     </td>
@@ -177,9 +183,9 @@
                     <td class="text-center"><i class="fa fa-check"></i></td>
                     <td>
                         <div class="table-action-container">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-edit mx-2"></i>
-                            <i class="fa fa-trash"></i>
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
                         </div>
                         
                     </td>
@@ -201,9 +207,9 @@
                     <td class="text-center"><i class="fa fa-check"></i></td>
                     <td>
                         <div class="table-action-container">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-edit mx-2"></i>
-                            <i class="fa fa-trash"></i>
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
                         </div>
                         
                     </td>
@@ -225,9 +231,9 @@
                     <td class="text-center"><i class="fa fa-check"></i></td>
                     <td>
                         <div class="table-action-container">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-edit mx-2"></i>
-                            <i class="fa fa-trash"></i>
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
                         </div>
                         
                     </td>
@@ -249,9 +255,9 @@
                     <td class="text-center"><i class="fa fa-check"></i></td>
                     <td>
                         <div class="table-action-container">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-edit mx-2"></i>
-                            <i class="fa fa-trash"></i>
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
                         </div>
                         
                     </td>
@@ -273,14 +279,85 @@
                     <td class="text-center"><i class="fa fa-check"></i></td>
                     <td>
                         <div class="table-action-container">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-edit mx-2"></i>
-                            <i class="fa fa-trash"></i>
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
                         </div>
                         
                     </td>
                 </tr>
-                
+                <tr>
+                    <th scope="row">1</th>
+                    <td><input type="checkbox"></td>
+                    <td>2568</td>
+                    <td><img src="img/Image%201.jpg"></td>
+                    <td>
+                        <a href="#">
+                            Значок нагрудний. "ТМ "Тур-колекшн" № 59. Національний історико-архітектурний музей "Київська фортеця"". Київ
+                        </a>
+                    </td>
+                    <td>Авторське ім'я</td>
+                    <td>Фалеристика</td>
+                    <td>Львів</td>
+                    <td>1234</td>
+                    <td class="text-center"><i class="fa fa-check"></i></td>
+                    <td>
+                        <div class="table-action-container">
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><input type="checkbox"></td>
+                    <td>2568</td>
+                    <td><img src="img/Image%201.jpg"></td>
+                    <td>
+                        <a href="#">
+                            Значок нагрудний. "ТМ "Тур-колекшн" № 59. Національний історико-архітектурний музей "Київська фортеця"". Київ
+                        </a>
+                    </td>
+                    <td>Авторське ім'я</td>
+                    <td>Фалеристика</td>
+                    <td>Львів</td>
+                    <td>1234</td>
+                    <td class="text-center"><i class="fa fa-check"></i></td>
+                    <td>
+                        <div class="table-action-container">
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><input type="checkbox"></td>
+                    <td>2568</td>
+                    <td><img src="img/Image%201.jpg"></td>
+                    <td>
+                        <a href="#">
+                            Значок нагрудний. "ТМ "Тур-колекшн" № 59. Національний історико-архітектурний музей "Київська фортеця"". Київ
+                        </a>
+                    </td>
+                    <td>Авторське ім'я</td>
+                    <td>Фалеристика</td>
+                    <td>Львів</td>
+                    <td>1234</td>
+                    <td class="text-center"><i class="fa fa-check"></i></td>
+                    <td>
+                        <div class="table-action-container">
+                            <a href="#"><i class="fa fa-search" title="Переглянути електронну картку об'єкта"></i></a>
+                            <a href="#"><i class="fa fa-edit mx-2" title="Редагувати запис"></i></a>
+                            <a href="#"><i class="fa fa-trash" title="Видалити запис"></i></a>
+                        </div>
+                        
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -289,10 +366,13 @@
         <div class="row no-gutters">
             <div class="col-2 py-2">
                 <select style="width: 100%" class="py-2">
-                    <option>Дія для групи</option>
-                    <option>Дія для групи</option>
-                    <option>Дія для групи</option>
-                    <option>Дія для групи</option>
+                    <option disabled selected>Схема/формат</option>
+                    <option disabled>Code UA:</option>
+                    <option> - повний набір даних</option>
+                    <option> - дані первинної реєстрації</option>
+                    <option> - дані інвентарної книги</option>
+                    <option> - дані спеціальної інвентарної книги</option>
+                    <option>LIDO</option>
                 </select>
             </div>
             <div class="col-1 py-2 px-1">
@@ -303,10 +383,11 @@
             </div>
             <div class="col-3 py-2 pl-5">
                 <select style="width: 100%" class="py-2">
-                    <option>Дія для групи</option>
-                    <option>Дія для групи</option>
-                    <option>Дія для групи</option>
-                    <option>Дія для групи</option>
+                    <option selected disabled>Дія для групи записів</option>
+                    <option>Публікувати</option>
+                    <option>Скасувати публікування</option>
+                    <option>Видалити</option>
+                    <option>Корегувати</option>
                 </select>
             </div>
             <div class="col-1 py-2 pl-1 pr-5">
