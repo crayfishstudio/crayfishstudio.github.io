@@ -429,10 +429,14 @@ textarea{
 }
 
 .small-input {
-    width: 45px;
+    width: 41px;
     text-align: right;
     border-radius: 3px;
     border: 1px solid #EFEFEF;
+}
+
+.wider {
+    width: 65px;
 }
 
 
@@ -453,4 +457,12 @@ textarea{
 
 .word-break {
     word-break: break-all;
+}
+
+.no-wrap {
+    word-break: keep-all;
+}
+
+table {
+    font-size: inherit;
 }
