@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/css/froala_style.min.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/zoom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Admin page</title>
+</head>
+
+<body class="px-2">
+    <div class="container-fluid light-grey-bg rounded mt-2 px-2">
+        <div class="row no-gutters text-center">
+            <div class="col-1 my-auto"><a href="#"><i class="fas fa-angle-double-left"></i><span>XXXXX0</span><i class="fas fa-angle-left"></i></a></div>
+            <div class="col-1">
+                <input type="text" class="top-input" placeholder="ID" name="id_number">
+            </div>
+            <div class="col-1 my-auto"><a href="#"><i class="fas fa-angle-right"></i><span>XXXXX2</span><i class="fas fa-angle-double-right"></i></a></div>
+            <div class="col-2 px-1">
+                <input type="text" class="top-input" placeholder="Код колекції" name="collection_code">
+            </div>
+            <div class="col-4 px-1">
+                <input type="text" class="top-input" placeholder="Назва колекції" name="colection_name">
+            </div>
+            <div class="col-2 text-center px-1">
+                <button href="#" class="btn btn-green-custom rounded">Нова колекція</button>
+            </div>
+            <div class="col-1 text-right my-auto font-weight-bold"><a href="#" id="smallertext" class="pr-2" onclick="sText()">A-</a><a href="#" id="normaltext" class="px-2" onclick="nText()">A</a><a href="#" id="biggertext" class="pl-2" onclick="bText()">A+</a></div>
+        </div>
+    </div>
+    <div class="container-fluid mt-2 px-0 ">
+        <div class="row no-gutters ">
+            <div class="col-10">
+                <div class="row no-gutters my-auto" id="sticky-panel">
+
+                    <div class="w-90">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="#">Колекції</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">ID:XXXXXX</li>
+                                <li>. Назва колекції</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="w-10">
+                        <button class="btn btn-to-object rob-bold" data-toggle="tooltip" data-html="true" data-offset="20, 5" data-placement="left" title="Перейти до перегляду">До колекції</button>
+                    </div>
+
+                </div>
+                <nav>
+                    <div class="nav nav-tabs text-center rob-bold" id="nav-tab" role="tablist">
+                        <a class="nav-item  nav-link tab w-18 px-0" id="nav-fond-tab" href="fonds.html">
+                            <div class="">ФОНДИ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-18 px-0" id="nav-opys-tab" href="collections.html">
+                            <div class="">КОЛЕКЦІЇ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-18 px-0" id="nav-content-tab" href="c-archive.html">
+                            <div class="">ЦИФРОВИЙ АРХІВ</div>
+                        </a>
+                        <a class="nav-item nav-link tab w-18 px-0" id="nav-terminy-tab" href="stali-dani.html">
+                            <div class="">СТАЛІ ДАНІ</div>
+                        </a>
+                        <a class="nav-item active nav-link  tab w-18 px-0" id="nav-colection-tab" href="docs.html">
+                            <div class="">ДОКУМЕНТАЦІЇ</div>
+                        </a>
+                        <a class="nav-item nav-link tab p-0 w-5" href="#" data-toggle="tooltip" data-html="true" data-offset="-20, 5" data-placement="bottom" title="" data-original-title="Оновити">
+                            <div class="p-0 btn-renew"><i class="fa fa-lg fa-redo-alt my-3"></i></div>
+                        </a>
+                        <a class="nav-item nav-link tab p-0 w-5" href="#" data-toggle="tooltip" data-html="true" data-offset="35, 5" data-placement="bottom" title="" data-original-title="Синхронізувати">
+                            <div class="p-0 btn-renew"><i class="fa fa-lg fa-exchange-alt my-3"></i></div>
+                        </a>
+                    </div>
+                </nav>
+                <div class="tab-content align-middle" id="nav-tabContent">
+                    <div class="tab-pane fade show text-center mt-2 active" id="nav-colection" role="tabpanel" aria-labelledby="nav-colection-tab">
+                        <nav>
+                            <div class="nav nav-tabs rob-med" id="nav-tab-fond" role="tablist">
+                                <a class="nav-item nav-link w-20 active " data-toggle="tab" href="#nav-normatyvy" role="tab" aria-selected="false">НОРМАТИВИ</a>
+                                <a class="nav-item nav-link w-20 " data-toggle="tab" href="#nav-metodyky" role="tab" aria-selected="false">МЕТОДИКИ</a>
+                                <a class="nav-item nav-link w-20 " data-toggle="tab" href="#nav-instrukcii" role="tab" aria-selected="false">ІНСТРУКЦІЇ</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 btn-back d-flex">
+                <button href="#" class="btn m-auto rounded btn-icon ">Вибрати іконку</button>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="nav-normatyvy" role="tabpanel" aria-labelledby="nav-fonds-tab">
+            <div class="container-fluid px-0 mt-3">
+                <div class="card border-0">
+                    <div class="card-header ligght-grey-bg border-0 scroll" href="#fonds" id="fonds" data-offset="50">
+                        <h5 class="card-title rob-med mb-0"><i class="ml-2 fas fa-sm fa-circle mr-2"></i>Нормативи</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table table-borderless">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade show" id="nav-metodyky" role="tabpanel" aria-labelledby="nav-colections-tab">
+            <div class="container-fluid px-0 mt-3">
+                <div class="card border-0">
+                    <div class="card-header ligght-grey-bg border-0 scroll" href="#biblio-arch" id="biblio-arch" data-offset="50">
+                        <h5 class="card-title rob-med mb-0"><i class="ml-2 fas fa-sm fa-circle mr-2"></i>Методики</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table table-borderless">
+                            <div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade show" id="nav-instrukcii" role="tabpanel" aria-labelledby="nav-s-data-tab">
+            <div class="container-fluid px-0 mt-3">
+                <div class="card border-0">
+                    <div class="card-header ligght-grey-bg border-0">
+                        <h5 class="card-title rob-med mb-0"><i class="ml-2 fas fa-sm fa-circle mr-2"></i>Інструкції</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table table-borderless">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="to-top" onclick="toTop()" title="Наверх"><i class="fas fa-angle-double-up fa-2x"></i></button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/js/froala_editor.min.js'></script>
+    <script src="js/zoom.js"></script>
+    <script src="js/zoom1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
