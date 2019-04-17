@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,900&subset=cyrillic');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.4s;
+}
+
+#nav-left {
+    width: 22vw;
+    text-align: left;
+    padding-left: 8vw;
+    border-right: 1px solid #DADADA;
+}
+
+#nav-center {
+    width: 56vw;
+    text-align: center;
+}
+
+#nav-center a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    font-size: 90%;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+}
+
+#nav-center a:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#nav-right {
+    width: 22vw;
+    text-align: right;
+    padding-right: 8vw;
+    border-left: 1px solid #DADADA;
+}
+
+#nav-right a {
+    color: #000;
+    margin-left: 13px;
+    font-size: 90%;
+}
+
+.fa-telegram-plane, .fa-instagram, .fa-facebook {
+    color: #000;
+}
+
+a:hover .fa-telegram-plane {
+    color: #fff; /*add telegram color*/
+}
+
+a:hover .fa-facebook {
+    color: #fff; /*add telegram color*/
+}
+
+a:hover .fa-instagram {
+    color: #fff; /*add telegram color*/
+}
+
+a:hover .fa-phone-square {
+    color: #DADADA; /*add telegram color*/
+}
+
+#navbar-custom {
+    display: flex;
+    border-bottom: 1px solid #DADADA;
+    background-color: #fff;
+    /*position: fixed;*/
+    z-index: 1000;
+}
+
+#navbar-custom div {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.mx-8 {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+#h1-main {
+    font-weight: 900;
+    font-size: 4.5rem;
+    margin-bottom: 0px;
+    margin-top: 13vh;
+}
+
+.h2-huge {
+    font-weight: 900;
+    font-size: 2.78rem;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+.h3-semibold {
+    font-weight: 600;
+}
+
+.h5-semibold {
+    font-weight: 600;
+    font-size: 1.08rem;
+}
+
+.btn-custom {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 105%;
+    color: #000;
+    border: 1px solid #DADADA;
+    padding: 17px 45px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    background-color: #fff;
+}
+
+.btn-custom:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+.huuuge-header {
+    display: block;
+    font-weight: 900;
+    color: #DADADA;
+    font-size: 7.3rem;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.bordered {
+    border: 1px solid #DADADA;
+}
+
+.border-left-adaptive {
+    border-bottom: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+}
+
+.border-right-adaptive {
+    border-bottom: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+}
+
+.border-all {
+    border: 1px solid #DADADA;
+}
+
+.small-header {
+    font-weight: 700;
+    font-size: 1.08rem;
+    text-transform: uppercase;
+}
+
+.small-text {
+    font-size: 0.67rem;
+    color: #696969;
+    font-weight: 500;
+}
+
+.border-down {
+    border-bottom: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+}
+
+.full-width {
+    width: 100%;
+    
+}
+
+.btn-fullwidth-left {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 100%;
+}
+
+.btn-fullwidth {
+    border-top: 1px solid #fff;
+    width: 100%;
+}
+
+.btn-fullwidth-right {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    width: 100%;
+}
+
+#adress {
+    letter-spacing: 0px;
+    text-transform: none;
+}
+.btn-fullwidth-top {
+    width: 100%;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+input, textarea  {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 10px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #000;
+    font-weight: 600;
+}
+.pb-7 {
+    padding-bottom: 65px !important;
+}
