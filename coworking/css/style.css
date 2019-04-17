@@ -52,19 +52,19 @@
 }
 
 a:hover .fa-telegram-plane {
-    color: #fff; /*add telegram color*/
+    color: #0088cc;
 }
 
 a:hover .fa-facebook {
-    color: #fff; /*add telegram color*/
+    color: #3c5859;
 }
 
 a:hover .fa-instagram {
-    color: #fff; /*add telegram color*/
+    color: #dd2a7b;
 }
 
 a:hover .fa-phone-square {
-    color: #DADADA; /*add telegram color*/
+    color: #696969;
 }
 
 #navbar-custom {
@@ -227,4 +227,86 @@ input::placeholder, textarea::placeholder {
 }
 .pb-7 {
     padding-bottom: 65px !important;
+}
+
+@media screen and (max-width: 992px) {
+    #navbar-custom {
+        flex-direction: column;
+    }
+    
+    #nav-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dadada;
+    }
+    
+    #navbar-custom div {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    #nav-center {
+        width: 100%;
+    }
+    
+    #nav-center a {
+        padding: 10px 10px;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    
+    #nav-right {
+        width: 100%;
+        text-align: center;
+        margin-top: -25px;
+    }
+    
+    .huuuge-header {
+        font-size: 3rem;
+        margin-top: 70px;
+    }
+    
+    #h1-main {
+        font-size: 3rem;
+        margin-top: 40px;
+    }
+    
+    .h2-huge {
+        font-weight: 900;
+        font-size: 2.78rem;
+    }
+    
+    #main-text .h2-huge {
+        font-size: 1.85rem;
+    }
+    
+    .border-left-adaptive {
+        border-right: 1px solid #DADADA;
+    }
+    
+    .border-all {
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    .border-right-adaptive {
+        border-left: 1px solid #DADADA;
+    }
+    
+    .h3-semibold {
+        font-size: 1.6rem;
+    }
+    
+    .btn-fullwidth-left {
+        border-right: 1px solid #DADADA;
+    }
+    
+    .btn-fullwidth {
+        border-bottom: none;
+        border-top: 1px solid #DADADA;
+    }
+    
+    .btn-fullwidth-right {
+        border-left: 1px solid #DADADA;
+    }
 }
