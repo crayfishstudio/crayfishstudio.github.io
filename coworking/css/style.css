@@ -237,6 +237,31 @@ input::placeholder, textarea::placeholder {
     cursor: pointer;
 }
 
+.color-69 {
+    color: #696969;
+}
+
+.black-footer {
+    background-color: #000;
+    color: #DADADA;
+    font-weight: 500;
+    font-size: 0.78rem;
+}
+
+.black-footer a {
+    color: #fff;
+}
+
+.px-8 {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.align-space-between {
+    align-content: space-between !important;
+}
+
+
 @media screen and (max-width: 992px) {
     #navbar-custom {
         flex-direction: column;
@@ -246,6 +271,9 @@ input::placeholder, textarea::placeholder {
         width: 100%;
         border-right: none;
         flex-direction: row;
+        background-color: #fff;
+        border-bottom: 1px solid #DADADA;
+        z-index: 1000;
     }
     
     #navbar-custom div {
@@ -255,7 +283,9 @@ input::placeholder, textarea::placeholder {
     
     #nav-center {
         width: 100%;
-        display: none;
+        /*display: none;*/
+        margin-top: -150px;
+        z-index: 500;
     }
     
     #nav-center a {
@@ -267,8 +297,8 @@ input::placeholder, textarea::placeholder {
     #nav-right {
         width: 100%;
         text-align: center;
-        margin-top: -25px;
-        display: none;
+        margin-top: -25px !important;
+        /*display: none;*/
     }
     
     .huuuge-header {
@@ -325,6 +355,11 @@ input::placeholder, textarea::placeholder {
     }
     
     .nav-opened {
-        display: block !important;
+        /*display: block !important;*/
+        margin-top: 0px !important;
+    }
+    
+    .btn-fullwidth-top {
+        border-bottom: 1px solid #DADADA;
     }
 }
