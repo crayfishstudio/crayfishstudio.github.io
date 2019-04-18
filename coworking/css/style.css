@@ -9,6 +9,7 @@
     width: 22vw;
     text-align: left;
     padding-left: 8vw;
+    padding-right: 8vw;
     border-right: 1px solid #DADADA;
 }
 
@@ -56,7 +57,7 @@ a:hover .fa-telegram-plane {
 }
 
 a:hover .fa-facebook {
-    color: #3c5859;
+    color: #3C5A99;
 }
 
 a:hover .fa-instagram {
@@ -231,6 +232,11 @@ input::placeholder, textarea::placeholder {
     padding-bottom: 65px !important;
 }
 
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
     #navbar-custom {
         flex-direction: column;
@@ -239,6 +245,7 @@ input::placeholder, textarea::placeholder {
     #nav-left {
         width: 100%;
         border-right: none;
+        flex-direction: row;
     }
     
     #navbar-custom div {
@@ -311,5 +318,13 @@ input::placeholder, textarea::placeholder {
     
     .btn-fullwidth-right {
         border-left: 1px solid #DADADA;
+    }
+    
+    #hamburger {
+        display: block;
+    }
+    
+    .nav-opened {
+        display: block !important;
     }
 }

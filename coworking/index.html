@@ -18,8 +18,9 @@
 
 <body>
     <nav id="navbar-custom">
-        <div id="nav-left">
+        <div id="nav-left" class="justify-content-between d-flex">
             <a href=""><img src="svg/logo.svg" id="logo" width="115px"></a>
+            <a class="ml-auto" id="hamburger" onclick="navToggle()"><i class="fas fa-bars"></i></a>
         </div>
         <div id="nav-center">
             <a href="#">Умови</a>
@@ -179,7 +180,7 @@
             </div>
             <div class="row no-gutters justify-content-center mt-5">
                 <div class="col-lg-10">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1286.5836659213717!2d24.03670754474527!3d49.83931333020601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDUwJzIxLjUiTiAyNMKwMDInMTUuMiJF!5e0!3m2!1suk!2sua!4v1555539454190!5m2!1suk!2sua" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1286.5836659213717!2d24.03670754474527!3d49.83931333020601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDUwJzIxLjUiTiAyNMKwMDInMTUuMiJF!5e0!3m2!1suk!2sua!4v1555539454190!5m2!1suk!2sua" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
             <!--<div class="row no-gutters">
@@ -196,6 +197,13 @@
     
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        function navToggle() {
+            document.getElementById("nav-center").classList.toggle("nav-opened");
+            document.getElementById("nav-right").classList.toggle("nav-opened");
+        }
+    </script>
 </body>
 
 </html>
