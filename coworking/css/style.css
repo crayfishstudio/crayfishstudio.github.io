@@ -71,8 +71,10 @@ a:hover .fa-phone-square {
     display: flex;
     border-bottom: 1px solid #DADADA;
     background-color: #fff;
-    /*position: fixed;*/
+    position: fixed;
     z-index: 1000;
+    width: 100%;
+    top: 0;
 }
 
 #navbar-custom div {
@@ -88,7 +90,7 @@ a:hover .fa-phone-square {
     font-weight: 900;
     font-size: 4.5rem;
     margin-bottom: 0px;
-    margin-top: 13vh;
+    margin-top: 20vh;
 }
 
 .h2-huge {
@@ -237,7 +239,6 @@ input::placeholder, textarea::placeholder {
     #nav-left {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid #dadada;
     }
     
     #navbar-custom div {
@@ -247,6 +248,7 @@ input::placeholder, textarea::placeholder {
     
     #nav-center {
         width: 100%;
+        display: none;
     }
     
     #nav-center a {
@@ -259,6 +261,7 @@ input::placeholder, textarea::placeholder {
         width: 100%;
         text-align: center;
         margin-top: -25px;
+        display: none;
     }
     
     .huuuge-header {
