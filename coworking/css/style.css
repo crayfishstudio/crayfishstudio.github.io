@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,900&subset=cyrillic');
 
-* {
+html {
+    scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.4s;
 }
@@ -138,7 +139,7 @@ h1, h2 {
     color: #DADADA;
     font-size: 7.3rem;
     text-transform: uppercase;
-    margin-top: 100px;
+    
     margin-bottom: 40px;
 }
 
@@ -218,6 +219,7 @@ input, textarea  {
     border: none;
     border-bottom: 1px solid #DADADA;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 input:focus, textarea:focus{
@@ -261,6 +263,14 @@ input::placeholder, textarea::placeholder {
     align-content: space-between !important;
 }
 
+.section {
+    padding-top: 100px;
+}
+
+.border-no-bottom {
+    border: 1px solid #DADADA;
+    border-bottom: none;
+}
 
 @media screen and (max-width: 992px) {
     #navbar-custom {
@@ -303,7 +313,6 @@ input::placeholder, textarea::placeholder {
     
     .huuuge-header {
         font-size: 3rem;
-        margin-top: 70px;
     }
     
     #h1-main {
@@ -357,9 +366,5 @@ input::placeholder, textarea::placeholder {
     .nav-opened {
         /*display: block !important;*/
         margin-top: 0px !important;
-    }
-    
-    .btn-fullwidth-top {
-        border-bottom: 1px solid #DADADA;
     }
 }

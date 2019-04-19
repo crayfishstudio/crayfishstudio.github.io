@@ -2,17 +2,31 @@
 <html lang="en">
 
 <head>
+    <script>
+        window.replainSettings = {
+            id: 'f7bb45be-3eda-4439-ac24-0575dce290d8'
+        };
+        (function(u) {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = u;
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })('https://widget.replain.cc/dist/client.js');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!--<link rel="stylesheet" href="css/all.min.css">-->
     <link rel="stylesheet" href="css/zoom.css">
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
+
     <title>Coworking</title>
 </head>
 
@@ -23,9 +37,9 @@
             <a class="ml-auto" id="hamburger" onclick="navToggle()"><i class="fas fa-bars"></i></a>
         </div>
         <div id="nav-center">
-            <a href="#">Умови</a>
-            <a href="#">Тарифи</a>
-            <a href="#">Контакти</a>
+            <a href="#conditions">Умови</a>
+            <a href="#tarife">Тарифи</a>
+            <a href="#contacts">Контакти</a>
         </div>
         <div id="nav-right">
             <a href="#"><i class="fab fa-telegram-plane fa-lg"></i></a>
@@ -34,7 +48,7 @@
             <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
         </div>
     </nav>
-    
+
     <section class="mx-8" id="main">
         <div class="container-fluid px-0 mt-5">
             <div class="row no-gutters justify-content-center pt-5">
@@ -48,12 +62,12 @@
                     <h5 class="h5-semibold">- за 2 хвилини ходьби від площі Ринок</h5>
                     <a href="#" class="btn-custom mt-5">Прогортати далі</a>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
-    <section class="mx-8" id="">
+
+    <section class="mx-8 section" id="conditions">
         <div class="container-fluid text-center px-0">
             <span class="huuuge-header">Умови</span>
             <div class="row no-gutters">
@@ -69,24 +83,21 @@
                     <i class="fas fa-chair fa-5x mt-4 mb-2"></i>
                     <h5 class="small-header mt-4">Крісла та столи</h5>
                     <p class="small-text">
-                        Неймовірні винаходи людства<br>
-                        для твого робочого місця
+                        Неймовірні винаходи людства<br> для твого робочого місця
                     </p>
                 </div>
                 <div class="col-md-4 p-5 border-all">
                     <i class="fas fa-bolt fa-5x mt-4 mb-2"></i>
                     <h5 class="small-header mt-4">ЕЛЕКТРИКА</h5>
                     <p class="small-text">
-                        Мільярди малесеньких електронів<br>
-                        які живлять твої гаджети
+                        Мільярди малесеньких електронів<br> які живлять твої гаджети
                     </p>
                 </div>
                 <div class="col-md-4 p-5 border-right-adaptive">
                     <i class="fas fa-wifi fa-5x mt-4 mb-2"></i>
                     <h5 class="small-header mt-4">ШВИДКИЙ ІНТЕРНЕТ</h5>
                     <p class="small-text">
-                        Користуйся найкращою технологією<br>
-                        щоб переглядати фото котиків
+                        Користуйся найкращою технологією<br> щоб переглядати фото котиків
                     </p>
                 </div>
             </div>
@@ -97,8 +108,8 @@
             </div>
         </div>
     </section>
-    
-    <section class="mx-8" id="">
+
+    <section class="mx-8 section" id="tarife">
         <div class="container-fluid text-center px-0">
             <span class="huuuge-header">Тарифи</span>
             <div class="row no-gutters">
@@ -108,9 +119,7 @@
                         <h2 class="h2-huge mt-4">День</h2>
                         <h5 class="small-header mt-1">Коли доба до дедлайну</h5>
                         <p class="small-text mt-5 mb-4">
-                            Нефіксоване місце на 1 робочий день.<br>
-                            Перший раз - безкоштовно.<br>
-                            Ідеальний варіант для туристів та студентів
+                            Нефіксоване місце на 1 робочий день.<br> Перший раз - безкоштовно.<br> Ідеальний варіант для туристів та студентів
                         </p>
                     </div>
                     <a href="#" class="btn-custom btn-fullwidth-left">замовити</a>
@@ -121,9 +130,7 @@
                         <h2 class="h2-huge mt-4">ТИЖДЕНЬ</h2>
                         <h5 class="small-header mt-1">ПОРЦІЯ ПРОДУКТИВНОСТІ</h5>
                         <p class="small-text mt-5 mb-4">
-                            Фіксоване місце на 5 робочих днів поспіль.<br>
-                            Тут треба придумати рядок.<br>
-                            І тут теж придумати ще невеликий рядок тексту
+                            Фіксоване місце на 5 робочих днів поспіль.<br> Тут треба придумати рядок.<br> І тут теж придумати ще невеликий рядок тексту
                         </p>
                     </div>
                     <a href="#" class="btn-custom btn-fullwidth">замовити</a>
@@ -134,9 +141,7 @@
                         <h2 class="h2-huge mt-4">МІСЯЦЬ</h2>
                         <h5 class="small-header mt-1">ДОСИТЬ ЩОБ ВНЕСТИ ПРАВКИ</h5>
                         <p class="small-text mt-5 mb-4">
-                            Фіксоване місце на 20 робочих днів поспіль.<br>
-                            Постійні клієнти завжди цінуються.<br>
-                            Найкращий варіант за співвідношенням час/вартість
+                            Фіксоване місце на 20 робочих днів поспіль.<br> Постійні клієнти завжди цінуються.<br> Найкращий варіант за співвідношенням час/вартість
                         </p>
                     </div>
                     <a href="#" class="btn-custom btn-fullwidth-right">замовити</a>
@@ -149,33 +154,47 @@
             </div>
         </div>
     </section>
-    
-    <section class="mx-8" id="contacts">
+
+    <section class="mx-8 section" id="contacts">
         <div class="container-fluid text-center px-0">
             <span class="huuuge-header">Контакти</span>
-            <div class="row row-conformity no-gutters justify-content-center align-items-stretch">
-                <div class="col-md-5">
-                    <div class="p-lg-5 px-4 py-5 border-left-adaptive pb-7">
-                        <h5 class="h5-semibold my-4">м. Львів, вулиця Римлянина, 1</h5>
-                        <h3 class="h3-semibold">+38 (096) 414 38 51</h3>
-                        <h3 class="h3-semibold">+38 (096) 414 38 51</h3>
-                        <h5 class="h5-semibold mt-4 mb-5">mail@support.web</h5>
-                        <a href="#"><i class="fab fa-telegram-plane fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-facebook fa-2x mx-3"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                    </div>
-                    <a href="#" class="btn-custom btn-fullwidth-left">знайти нас</a>
-                </div>
-                <div class="col-md-5">
-                    <form class="border-all">
-                        <div class="px-lg-5 py-5 px-4">
-                            <input type="text" class="mb-4" placeholder="Ім'я">
-                            <input type="text" class="mb-4" placeholder="Телефон">
-                            <input type="text" class="mb-4" placeholder="E-mail">
-                            <textarea rows="3" placeholder="Повідомлення"></textarea>
+            <div class="row no-gutters justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row no-gutters justify-content-center border-no-bottom">
+                        <div class="col-lg-10 p-lg-5 px-4 py-5">
+                            <h5 class="h5-semibold mb-4 mt-3">м. Львів, вулиця Римлянина, 1</h5>
+                            <h3 class="h3-semibold">+38 (096) 414 38 51</h3>
+                            <h3 class="h3-semibold">+38 (096) 414 38 51</h3>
+                            <h5 class="h5-semibold mt-4 mb-5">mail@support.web</h5>
+                            <a href="#"><i class="fab fa-telegram-plane fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-facebook fa-2x mx-3"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
                         </div>
-                        <button href="#" class="btn-custom btn-fullwidth-top" type="submit">Написати нам</button>
-                    </form>
+                    </div>
+                    <div class="row no-gutters justify-content-center bordered">
+                        <form style="width: 100%">
+                            <div class="col p-lg-5 px-4 py-5">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="mb-4" placeholder="Ім'я">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="mb-4" placeholder="Телефон">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="mb-4" placeholder="E-mail">
+                                    </div>
+                                    <div class="col">
+                                        <textarea rows="2" placeholder="Повідомлення" id="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters">
+                                    <div class="col"></div>
+                                </div>
+                            </div>
+                            <button href="#" class="btn-custom btn-fullwidth-top" type="submit" onclick="setInputText()" value="srglkksfdlgs">Написати нам</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="row no-gutters justify-content-center mt-5">
@@ -185,21 +204,26 @@
             </div>
         </div>
     </section>
-        
+
     <footer class="black-footer container-fluid px-8 py-4 mt-5">
         <div class="row">
             <div class="col-md-6 text-md-left text-center">Kimnata © 2019</div>
             <div class="col-md-6 text-md-right text-center">by <a href="#">Crayfish</a> and <a href="#">Movadex</a></div>
         </div>
     </footer>
-    
+
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+
     <script>
         function navToggle() {
             document.getElementById("nav-center").classList.toggle("nav-opened");
             document.getElementById("nav-right").classList.toggle("nav-opened");
+        }
+        
+        function setInputText() {
+            var message = document.getElementById("message").getAttribute('value');
+            document.getElementById("message").innerHTML = message;
         }
     </script>
 </body>
