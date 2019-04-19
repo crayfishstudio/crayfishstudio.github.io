@@ -172,27 +172,27 @@
                         </div>
                     </div>
                     <div class="row no-gutters justify-content-center bordered">
-                        <form style="width: 100%">
+                        <form style="width: 100%" action="https://formcarry.com/s/ZV9tHrmQXOj" method="POST" accept-charset="UTF-8">
                             <div class="col p-lg-5 px-4 py-5">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <input type="text" class="mb-4" placeholder="Ім'я">
+                                        <input type="text" class="mb-4" placeholder="Ім'я" name="username" required>
                                     </div>
                                     <div class="col-md-4">
-                                        <input type="text" class="mb-4" placeholder="Телефон">
+                                        <input type="text" class="mb-4" placeholder="Телефон" name="userphone" id="userphone" required>
                                     </div>
                                     <div class="col-md-4">
-                                        <input type="text" class="mb-4" placeholder="E-mail">
+                                        <input type="email" class="mb-4" placeholder="E-mail" name="email" required>
                                     </div>
                                     <div class="col">
-                                        <textarea rows="2" placeholder="Повідомлення" id="message"></textarea>
+                                        <textarea rows="2" placeholder="Повідомлення" id="message" name="message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="row no-gutters">
                                     <div class="col"></div>
                                 </div>
                             </div>
-                            <button href="#" class="btn-custom btn-fullwidth-top" type="submit" onclick="setInputText()" value="srglkksfdlgs">Написати нам</button>
+                            <button href="#" class="btn-custom btn-fullwidth-top" type="submit">Написати нам</button>
                         </form>
                     </div>
                 </div>
@@ -214,6 +214,7 @@
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
 
     <script>
         function navToggle() {
@@ -225,6 +226,8 @@
             var message = document.getElementById("message").getAttribute('value');
             document.getElementById("message").innerHTML = message;
         }
+        
+         $('#userphone').mask('(000) 000-0000');
     </script>
 </body>
 
