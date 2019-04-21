@@ -3,6 +3,8 @@
 * {
         /*transition: all 0.4s;*/
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-scroll-behaviour: smooth;
 }
 
 #nav-left {
