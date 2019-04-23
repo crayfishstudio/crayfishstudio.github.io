@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,900&subset=cyrillic');
 
-* {
-        transition: all 0.4s;
-    font-family: 'Montserrat', sans-serif;
 
+* {
+    font-family: 'Montserrat', sans-serif;
 }
-a{}
 
 #nav-left {
     width: 22vw;
@@ -18,6 +16,7 @@ a{}
 #nav-center {
     width: 56vw;
     text-align: center;
+    transition: all .4s;
 }
 
 #nav-center a {
@@ -29,12 +28,14 @@ a{}
     font-size: 90%;
     letter-spacing: 1px;
     padding: 10px 15px;
+    transition: all .4s;
 }
 
 #nav-center a:hover {
     text-decoration: none;
     background-color: #000;
     color: #fff;
+    
 }
 
 #nav-right {
@@ -125,6 +126,7 @@ h1, h2 {
     vertical-align: middle;
     letter-spacing: 1px;
     background-color: #fff;
+    transition: all .4s;
 }
 
 .btn-custom:hover {
@@ -278,6 +280,15 @@ input::placeholder, textarea::placeholder {
     height: 350px;
 }
 
+.phone {
+    color: #000 !important;
+}
+
+.phone:hover {
+    color: #696969 !important;
+}
+
+
 @media screen and (max-width: 992px) {
     #navbar-custom {
         flex-direction: column;
@@ -373,11 +384,4 @@ input::placeholder, textarea::placeholder {
         /*display: block !important;*/
         margin-top: 0px !important;
     }
-}
-.phone {
-    color: #000 !important;
-}
-
-.phone:hover {
-    color: #696969 !important;
 }
