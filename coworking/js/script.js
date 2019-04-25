@@ -29,14 +29,10 @@ function setInputText(timeSelect) {
 }
 
 
-async(function () {
-    $('#userphone').mask('+38 (000) 000-0000');
-}, null);
-
-
 var map;
 
 function initMap() {
+    $('#userphone').mask('+38 (000) 000-0000');
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
             lat: 49.839481,
