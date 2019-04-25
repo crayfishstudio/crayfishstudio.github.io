@@ -28,7 +28,7 @@ function setInputText(timeSelect) {
     document.getElementById("message").value = "Мене цікавить оренда робочого місця в Кімнаті на один " + timeSelect;
 }
 
-$('#userphone').mask('(000) 000-0000');
+$('#userphone').mask('+38 (000) 000-0000');
 
 var map;
 
