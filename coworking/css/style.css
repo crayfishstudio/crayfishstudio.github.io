@@ -325,7 +325,12 @@ input::placeholder, textarea::placeholder {
         width: 100%;
         text-align: center;
         margin-top: -25px !important;
-        /*display: none;*/
+        padding-right: 0px !important;
+    }
+    
+    #nav-right a {
+        margin-right: 13px;
+        margin-left: 13px;
     }
     
     .huuuge-header {
@@ -333,13 +338,13 @@ input::placeholder, textarea::placeholder {
     }
     
     #h1-main {
-        font-size: 3rem;
+        font-size: 2.95rem;
         margin-top: 40px;
     }
     
     .h2-huge {
         font-weight: 900;
-        font-size: 2.78rem;
+        font-size: 2.7rem;
     }
     
     #main-text .h2-huge {
