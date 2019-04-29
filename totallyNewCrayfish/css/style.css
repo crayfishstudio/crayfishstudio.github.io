@@ -1,6 +1,7 @@
 body {
     margin: none;
     background-color: #f4f4f4;
+    transition: all 0.4s;
 }
 
 #logo {
@@ -16,10 +17,45 @@ body {
 
 #hamburger {
     position: fixed;
-    top: 
+    top: 3.14vw;
+    right: 7.5vw;
+    cursor: pointer;
+    width: auto;
+    height: auto;
 }
 
-#hamburger span {
+#hamburger div {
     height: 2px;
-    background-color: 
+    background-color: #1f1f1f;
+    transition: all .5s;
+}
+
+#hamburger div:nth-child(1) {
+    width: 34px;
+}
+
+#hamburger div:nth-child(2) {
+    margin-top: 10px;
+    width: 21px;
+    margin-left: 13px;
+}
+
+#hamburger:hover div:nth-child(2) {
+    width: 34px;
+    margin-left: 0px;
+}
+
+#hamburger.chrested div:nth-child(1) {
+    height: 3px;
+    transform-origin: 100% 0;
+    transform: rotate(-45deg);
+}
+
+#hamburger.chrested div:nth-child(2) {
+    height: 3px;
+    transform-origin: 100% 100%;
+    width: 34px;
+    margin-left: 0px;
+    transform: rotate(45deg);
+    margin-top: 19.7px;
 }
