@@ -1,7 +1,6 @@
 body {
     margin: none;
     background-color: #f4f4f4;
-    transition: all 0.4s;
 }
 
 #logo {
@@ -9,6 +8,7 @@ body {
     width: 120px;
     left: 7.5vw;
     top: 2.86vw;
+    z-index: 1000;
 }
 
 .logo-svg-element {
@@ -22,6 +22,7 @@ body {
     cursor: pointer;
     width: auto;
     height: auto;
+    z-index: 1000;
 }
 
 #hamburger div {
@@ -49,6 +50,7 @@ body {
     height: 3px;
     transform-origin: 100% 0;
     transform: rotate(-45deg);
+    background-color: #fff;
 }
 
 #hamburger.chrested div:nth-child(2) {
@@ -58,4 +60,19 @@ body {
     margin-left: 0px;
     transform: rotate(45deg);
     margin-top: 19.7px;
+    background-color: #fff;
+}
+
+#hamburger.chrested + #hamburger-menu {
+    top: 0px;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: calc(-100vh + 34px);
+    left: 34px;
+    width: calc(100% - 68px);
+    height: calc(100vh - 34px);
+    background-color: #F84822;
+    transition: all 1s;
 }
