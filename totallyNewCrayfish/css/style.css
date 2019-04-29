@@ -1,0 +1,25 @@
+body {
+    margin: none;
+    background-color: #f4f4f4;
+}
+
+#logo {
+    position: fixed;
+    width: 120px;
+    left: 7.5vw;
+    top: 2.86vw;
+}
+
+.logo-svg-element {
+    fill: #1f1f1f;
+}
+
+#hamburger {
+    position: fixed;
+    top: 
+}
+
+#hamburger span {
+    height: 2px;
+    background-color: 
+}
