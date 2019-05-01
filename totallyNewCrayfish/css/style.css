@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
 body {
     margin: none;
     background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #logo {
@@ -13,6 +16,11 @@ body {
 
 .logo-svg-element {
     fill: #1f1f1f;
+    transition: fill .5s;
+}
+
+.logo-svg-element-white {
+    fill: #fff !important;
 }
 
 #hamburger {
@@ -69,10 +77,49 @@ body {
 
 #hamburger-menu {
     position: fixed;
-    top: calc(-100vh + 34px);
-    left: 34px;
-    width: calc(100% - 68px);
-    height: calc(100vh - 34px);
+    top: calc(-100vh + 1.77vw);
+    left: 1.77vw;
+    width: calc(100% - 3.54vw);
+    height: calc(100vh - 1.77vw);
     background-color: #F84822;
     transition: all 1s;
+    justify-content: center;
+}
+.menu-upper-row {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 3vw;
+    padding-right: 22.6%;
+    padding-left: 22.6%;
+}
+
+#languages {
+    width: 50%;
+    font-weight: 600;
+}
+
+#languages a {
+    color: #FDB9AB;
+    margin-right: 21px;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+#languages a:hover, #nav-icons a:hover {
+    color: #fff;
+}
+
+#nav-icons {
+    text-align: right;
+}
+
+#nav-icons a {
+    color: #FDB9AB;
+    font-size: 21px;
+    margin-left: 21px;
+    transition: color .25s;
+}
+
+.language-active {
+    color: #fff !important;
 }
