@@ -89,8 +89,8 @@ body {
     justify-content: space-between;
     display: flex;
     padding-top: 3vw;
-    padding-right: 21%;
-    padding-left: 21%;
+    padding-right: 20%;
+    padding-left: 20%;
 }
 
 #languages {
@@ -161,8 +161,8 @@ body {
     justify-content: space-between;
     display: flex;
     margin-top: 15vh;
-    padding-right: 21%;
-    padding-left: 21%;
+    padding-right: 20%;
+    padding-left: 20%;
 }
 
 .menu-small-text {
