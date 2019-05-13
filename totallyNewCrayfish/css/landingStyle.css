@@ -53,8 +53,10 @@ body {
     height: 31vw;
     flex-shrink: 0;
     background-size: cover;
-    background-color: #ff0000;
     scroll-snap-align: start;
+    filter: brightness(0.2);
+    background-position: center;
+    padding: 40px;
 }
 
 .px-7 {
@@ -114,8 +116,9 @@ body {
 }
 
 .v-34 {
-    height: 1px;
-    width: 34px;
+    height: 1px !important;
+    width: 34px !important;
+    padding: 0px !important;
     background-color: #171615;
     display: inline-block;
     margin-bottom: 3px;
@@ -128,26 +131,80 @@ body {
     font-size: 13px;
 }
 
-.btn-custom-outline {
-    font-family: 'Montserrat', sans-serif;
+.btn-custom {
     border: 1px solid #171615;
-    padding: 21px 34px;
-    border-radius: 0px;
-    text-transform: uppercase;
-    font-weight: 600;
-    background-color: transparent;
-    transition: all .3s;
-    margin-right: 21px;
-    outline-color: transparent;
-}
-
-.btn-custom-outline:hover {
     background-color: #171615;
     color: #fff;
 }
 
-.btn:target {
-    outline-color: transparent !important;
+.btn-custom-outline {
+
+    border: 1px solid #171615;
+    background-color: transparent;
 }
 
+.btn-custom-outline:hover, .btn-custom:hover {
+    background-color: #F84822;
+    color: #fff;
+    border-color: #F84822;
+}
 
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    padding: 21px 34px;
+    font-weight: 600;
+    transition: all .3s;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.section-header {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+
+.grey {
+    color: #CACACA;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.custom-card {
+    background-color: #fff;
+    padding: 60px;
+    transition: all .3s;
+    margin-bottom: 30px;
+}
+
+.custom-card:hover {
+    box-shadow:  0 0 40px rgba(0,0,0,0.05);
+}
+
+.v-55-fat {
+    height: 2px;
+    width: 55px;
+    background-color: #CACACA;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 13px;
+}
+
+.gilroy-21-bold {
+    color: #CACACA;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #535354;
+}
