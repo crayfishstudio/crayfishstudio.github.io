@@ -286,3 +286,15 @@ input::placeholder, textarea::placeholder {
     margin-bottom: 5px;
     margin-right: 13px;
 }
+
+.v-55-orange {
+    height: 2px;
+    width: 55px;
+    background-color: #F84822;
+}
+
+.cards-options {
+    font-size: 16px;
+    color: #8B8B8B;
+    font-family: 'Gilroy', sans-serif;
+}
