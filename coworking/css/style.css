@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,900&subset=cyrillic');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-left {
+    width: 22vw;
+    text-align: left;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    border-right: 1px solid #DADADA;
+}
+
+#nav-center {
+    width: 56vw;
+    text-align: center;
+    transition: all .4s;
+}
+
+#nav-center a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    font-size: 90%;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    transition: all .4s;
+}
+
+#nav-center a:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    
+}
+
+#nav-right {
+    width: 22vw;
+    text-align: right;
+    padding-right: 8vw;
+    border-left: 1px solid #DADADA;
+}
+
+#nav-right a {
+    color: #000;
+    margin-left: 13px;
+    font-size: 90%;
+}
+
+.fa-telegram-plane, .fa-instagram, .fa-facebook {
+    color: #000;
+}
+
+a:hover .fa-telegram-plane {
+    color: #0088cc;
+}
+
+a:hover .fa-facebook {
+    color: #3C5A99;
+}
+
+a:hover .fa-instagram {
+    color: #dd2a7b;
+}
+
+a:hover .fa-phone-square {
+    color: #696969;
+}
+
+#navbar-custom {
+    display: flex;
+    border-bottom: 1px solid #DADADA;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+
+#navbar-custom div {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.mx-8 {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+#h1-main {
+    font-weight: 900;
+    font-size: 4.5rem;
+    margin-bottom: 0px;
+    margin-top: 20vh;
+}
+
+.h2-huge {
+    font-weight: 900;
+    font-size: 2.78rem;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+.h3-semibold {
+    font-weight: 600;
+}
+
+.h5-semibold {
+    font-weight: 600;
+    font-size: 1.08rem;
+}
+
+.btn-custom {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 105%;
+    color: #000;
+    border: 1px solid #DADADA;
+    padding: 17px 45px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    background-color: #fff;
+    transition: all .4s;
+}
+
+.btn-custom:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+.huuuge-header {
+    display: block;
+    font-weight: 900;
+    color: #00000015;
+    font-size: 7.3rem;
+    text-transform: uppercase;
+    
+    margin-bottom: 40px;
+}
+
+.bordered {
+    border: 1px solid #DADADA;
+}
+
+.border-left-adaptive {
+    border-bottom: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+}
+
+.border-right-adaptive {
+    border-bottom: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+}
+
+.border-all {
+    border: 1px solid #DADADA;
+}
+
+.small-header {
+    font-weight: 700;
+    font-size: 1.08rem;
+    text-transform: uppercase;
+}
+
+.small-text {
+    font-size: 0.7rem;
+    color: #696969;
+    font-weight: 500;
+}
+
+.border-down {
+    border-bottom: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+}
+
+.full-width {
+    width: 100%;
+    
+}
+
+.btn-fullwidth-left {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 100%;
+}
+
+.btn-fullwidth {
+    border-top: 1px solid #fff;
+    width: 100%;
+}
+
+.btn-fullwidth-right {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    width: 100%;
+}
+
+#adress {
+    letter-spacing: 0px;
+    text-transform: none;
+}
+.btn-fullwidth-top {
+    width: 100%;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+input, textarea  {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #000;
+    font-weight: 600;
+}
+.pb-7 {
+    padding-bottom: 65px !important;
+}
+
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.color-69 {
+    color: #696969;
+}
+
+.black-footer {
+    background-color: #000;
+    color: #DADADA;
+    font-weight: 500;
+    font-size: 0.78rem;
+}
+
+.black-footer a {
+    color: #fff;
+}
+
+.px-8 {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.align-space-between {
+    align-content: space-between !important;
+}
+
+.section {
+    padding-top: 100px;
+}
+
+.border-no-bottom {
+    border: 1px solid #DADADA;
+    border-bottom: none;
+}
+
+#map {
+    width: 100%;
+    height: 350px;
+}
+
+.phone {
+    color: #000 !important;
+}
+
+.phone:hover {
+    color: #696969 !important;
+}
+
+
+@media screen and (max-width: 992px) {
+    #navbar-custom {
+        flex-direction: column;
+    }
+    
+    #nav-left {
+        width: 100%;
+        border-right: none;
+        flex-direction: row;
+        background-color: #fff;
+        border-bottom: 1px solid #DADADA;
+        z-index: 1000;
+    }
+    
+    #navbar-custom div {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    #nav-center {
+        width: 100%;
+        /*display: none;*/
+        margin-top: -150px;
+        z-index: 500;
+    }
+    
+    #nav-center a {
+        padding: 10px 10px;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    
+    #nav-right {
+        width: 100%;
+        text-align: center;
+        margin-top: -25px !important;
+        padding-right: 0px !important;
+    }
+    
+    #nav-right a {
+        margin-right: 13px;
+        margin-left: 13px;
+    }
+    
+    .huuuge-header {
+        font-size: 3rem;
+    }
+    
+    #h1-main {
+        font-size: 2.95rem;
+        margin-top: 40px;
+    }
+    
+    .h2-huge {
+        font-weight: 900;
+        font-size: 2.7rem;
+    }
+    
+    #main-text .h2-huge {
+        font-size: 1.85rem;
+    }
+    
+    .border-left-adaptive {
+        border-right: 1px solid #DADADA;
+    }
+    
+    .border-all {
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    .border-right-adaptive {
+        border-left: 1px solid #DADADA;
+    }
+    
+    .h3-semibold {
+        font-size: 1.6rem;
+    }
+    
+    .btn-fullwidth-left {
+        border-right: 1px solid #DADADA;
+    }
+    
+    .btn-fullwidth {
+        border-bottom: none;
+        border-top: 1px solid #DADADA;
+    }
+    
+    .btn-fullwidth-right {
+        border-left: 1px solid #DADADA;
+    }
+    
+    #hamburger {
+        display: block;
+    }
+    
+    .nav-opened {
+        /*display: block !important;*/
+        margin-top: 0px !important;
+    }
+}

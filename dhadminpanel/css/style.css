@@ -62,7 +62,7 @@ body {
 
 .btn-green-custom {
     width: 100%;
-    height: 100%;
+    
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
@@ -106,11 +106,11 @@ a:hover {
 }
 
 #square {
-    align-self: flex-end;
+/*    align-self: flex-end;*/
     background-color: #EFEFEF;
-    position: relative;
-    padding-top: 85%;
-    width: 85%;
+/*    position: relative;*/
+    padding-top: 10%;
+    width: 100%;
 }
 
 .tab {
@@ -160,7 +160,7 @@ a:hover {
 .obj-img {
     padding: 5px;
     position: absolute;
-    height: 100%;
+/*    height: 100%;*/
     top: 0;
     bottom: 0;
     left: 0;
@@ -202,10 +202,6 @@ a:hover {
 }
 
 
-.striped:nth-child(odd) {
-    background-color: #2d2d2d;
-}
-
 .card {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
@@ -225,7 +221,7 @@ a:hover {
     border: none;
     border-radius: 50%;
     width: 37px;
-    z-index: 900;
+    z-index: 1300;
     opacity: 0.5;
 }
 .card-body{
@@ -243,26 +239,25 @@ a:hover {
 }
 
 .minus {
-    width: 20px;
+    width: 17px;
     margin-top: -3px;
 }
 
-[data-title]:hover::before{
-    content: attr(data-title);
-    position: absolute;
-    left: 50px;
-    top: -25%;
-    display: inline-block;
-    width: 12vw;
+.tooltip-inner{
+    max-width: 30vw;
     border: 1px solid #FFCE01;
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 5px;
     font-family: Arial-unicode;
     background-color: #fff;
-    z-index: 1000;
+    color: #2d2d2d;
+    opacity: 1;
+    font-family: Arial-uni;
 }
 
-
+.tooltip.show{
+    opacity: 1;
+}
 
 .addinput {
     color: #00751b;
@@ -355,6 +350,7 @@ textarea:focus{
 
 .th-name {
     font-size: 115%;
+    font-weight: bold;
 }
 .breadcrumb{
     font-family: Arial-unicode !important;
@@ -406,4 +402,96 @@ textarea{
 }
 #biblio-posyl-area {
     margin-left:2px;
+}
+
+.thin-line{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.05);
+    
+}
+.order {
+    color: #009623;
+}
+
+
+.w-12 {
+    width: 12%;
+}
+
+.green-border {
+    border: 2px solid #00751B;
+    padding: 9px;
+}
+
+.small-input {
+    width: 41px;
+    text-align: right;
+    border-radius: 3px;
+    border: 1px solid #EFEFEF;
+}
+
+.wider {
+    width: 65px;
+}
+
+.wide {
+    width: 50px;
+}
+
+
+
+.pag-link {
+    color: #2D2D2D;
+    background-color: #EFEFEF;
+}
+
+.table-action-container {
+    width: 80px;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif !important;
+    letter-spacing: -1px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.coll-nav {
+    padding: .5rem;
+}
+
+.icon-button {
+    margin-top: 10%;
+    width: 50%;
+}
+
+.btn-back {
+    background-color: #EFEFEF;
+}
+.word-break {
+    word-break: break-all;
+}
+
+.no-wrap {
+    word-break: keep-all;
+}
+
+table {
+    font-size: inherit;
+}
+
+.w-18 {
+    width: 18%;
+}
+
+.btn-icon {
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #00751B;
+    font-size: 110%;
 }
