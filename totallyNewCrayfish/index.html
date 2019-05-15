@@ -86,8 +86,8 @@
             <div class="col-md-8 mt-5">
                 <small class="gilroy-bold-13"><div class="v-34"></div>З увагою до деталей</small>
                 <h1 id="h1-main" class="mt-5 mb-5">Швидка розробка якісних сайтів<br>всього за 3 дні та $299.</h1>
-                <a href="#" class="btn btn-custom mr-3">Заповнити бриф</a>
-                <a href="#contacts" class="btn btn-custom-outline mt-lg-0 mt-3">Замовити дзвінок</a>
+                <a href="#" class="btn btn-custom mr-3" id="frief-main-button">Заповнити бриф</a>
+                <a href="#contacts" class="btn btn-custom-outline mt-lg-0 mt-3" id="call-main-button">Замовити дзвінок</a>
             </div>
         </div>
     </div>
@@ -335,11 +335,11 @@
                     <h2 class="section-header mb-4">
                         Маєте чудову ідею?<br>Розкажіть нам про неї
                     </h2>
-                    <form>
-                        <input class="mb-3" type="text" placeholder="Ім'я" required>
-                        <input class="mb-3" type="text" placeholder="Телефон або e-mail" required>
-                        <textarea class="mb-4" rows="3" placeholder="Що у вас на думці?"></textarea>
-                        <button class="btn btn-custom-outline-white w-100">Відправити</button>
+                    <form method="post" action="bot.php">
+                        <input class="mb-3" type="text" placeholder="Ім'я" name="userName" required>
+                        <input class="mb-3" type="text" placeholder="Телефон або e-mail" name="userContact" required>
+                        <textarea class="mb-4" rows="3" placeholder="Що у вас на думці?" name="userMessage"></textarea>
+                        <button class="btn btn-custom-outline-white w-100" type="submit">Відправити</button>
                     </form>
                 </div>
                 <div class="col-md-1"></div>
