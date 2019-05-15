@@ -4,6 +4,7 @@ body {
     margin: none;
     background-color: #f4f4f4;
     font-family: 'Montserrat', sans-serif;
+    cursor: default;
 }
 
 #logo {

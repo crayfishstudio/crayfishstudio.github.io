@@ -56,7 +56,7 @@
 @media screen and (max-width: 720px) {
     #portfolio-cards div.image-container {
         width: 100% !important;
-        height: 80vh !important;
+        height: 90vh !important;
     }
     
     #h1-main {
@@ -69,6 +69,8 @@
     #hamburger {
         display: none;
     }
+    
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -93,13 +95,17 @@
     }
     
     .custom-card {
-        padding: 40px !important;
+        padding: 35px !important;
     }
 }
 
 
 body {
     background-color: #FAFAFA;
+}
+
+h1, h2, h3, h4, p, small{
+    cursor: default;
 }
 
 #portfolio-cards {
