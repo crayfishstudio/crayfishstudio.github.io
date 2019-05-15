@@ -470,3 +470,32 @@ textarea::placeholder {
     transform: rotate(45deg);
     margin-top: 18.5px;
 }
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #171615;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#brief-form input {
+    color: #171615;
+    padding: 13px 0px;
+    transition: all .3s;
+}
+
+#brief-form input:focus {
+    border-bottom: 1px solid #171615;
+}
+
+.brief-description {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.brief-description a {
+    color: #fff;
+}

@@ -1,0 +1,208 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115777796-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115777796-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5BH4Z5V');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/landingStyle.css">
+
+    <title>Crayfish Studio - найвигідніша розробка сайтів</title>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BH4Z5V"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="bg-black py-5">
+        <div class="container-fluid px-7 text-white">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <a href="index.html"><img src="svg/logo_white.svg" id="main-logo"></a>
+                </div>
+                <div class="col-md-6 text-lg-right contacts">
+                    <a href="mailto:contact@crayfish.studio">contact@crayfish.studio</a><br>
+                    <a href="tel:+380964143851">+38 (096) 41 43 851</a><br>
+                    <a href="tel:+380633650422">+38 (063) 36 50 422</a><br>
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-8">
+                    <small class="gilroy-bold-13"><div class="v-34-white"></div>З увагою до деталей</small>
+                    <h1 id="h1-main" class="mt-5">Заповніть будь ласка бриф</h1>
+                    <h2 class="section-header mt-3">Це допоможе нам краще зрозуміти який саме сайт вам потрібен та підібрати відповідний пакет послуг</h2>
+                    <p class="brief-description mt-5 mb-5">Бриф на розробку сайту допоможе нам зрозуміти ваші цілі та завдання. Чим повнішу інформацію ми отримаємо, тим ефективнішою буде робота<br><br> Якщо у вас уже є бриф або технічне завдання, ви можете відправити їх на нашу пошту <a href="mailto:contact@crayfish.studio">contact@crayfish.studio</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-7 mt-13">
+        <form method="post" action="botbrief.php" id="brief-form">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="section-header">Загальна інформація</h2>
+                    <label class="mt-4">1. Назва вашої компанії, сфера діяльності*</label>
+                    <input name="companyName" type="text" required>
+                    <label class="mt-4">2. Товар або послуга вашої компанії</label>
+                    <input name="companyGoods" type="text">
+                    <label class="mt-4">3. Опис товару або послуги, його особливості та переваги</label>
+                    <input name="goodsDescription">
+                    <label class="mt-4">4. Чому клієнти обирають вас?</label>
+                    <input name="companyAdvantages">
+                    <label class="mt-4">5. Хто ваша цільова аудиторія?</label>
+                    <input name="companyAuditory">
+                    <label class="mt-4">6. Мета запуску сайту</label>
+                    <input name="siteObjective">
+                    <label class="mt-4">7. Посилання на соцмережі вашого бізнесу</label>
+                    <input name="companySocial">
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center mt-5">
+                <div class="col-md-10">
+                    <h2 class="section-header">Контент</h2>
+                    <label class="mt-4">8. Який контент ви б хотіли бачити на сайті?</label>
+                    <input name="siteContent">
+                    <label class="mt-4">9. Чи є у вас сайт, лого, фірмовий стиль, брендбук тощо?</label>
+                    <input name="siteDesign">
+                    <label class="mt-4">10. Якими цифрами ви можете похвалитися? (Кількість клієнтів, замовлень, час обслуговування тощо)</label>
+                    <input name="companyNumbers">
+                    <label class="mt-4">11. Акції, знижки, або спеціальні пропозиції для клієнтів</label>
+                    <input name="companyFeatures">
+                    <label class="mt-4">12. Чи є у вас особливі досягнення, винагороди, сертифікати тощо?</label>
+                    <input name="companyAchievements">
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center mt-5">
+                <div class="col-md-10">
+                    <h2 class="section-header">Дизайн</h2>
+                    <label class="mt-4">13. Яке враження має залишити ваш сайт у клієнтів? (строгий, яскравий, мінімалістичний, веселий тощо)</label>
+                    <input name="preferredDesign">
+                    <label class="mt-4">14. Які кольори ви хотіли б використати на сайті?</label>
+                    <input name="preferredColors">
+                    <label class="mt-4">15. Кілька посилань на сайти, які вам подобаються</label>
+                    <input name="goodSites">
+                    <label class="mt-4">16. Кілька посилань на сайти, які вам НЕ подобаються</label>
+                    <input name="badSites">
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center mt-5">
+                <div class="col-md-10">
+                    <h2 class="section-header">Контакти</h2>
+                    <label class="mt-4">17. Ваше ім'я</label>
+                    <input name="userName">
+                    <label class="mt-4">18. Телефон або e-mail</label>
+                    <input name="userContact">
+                    <label class="mt-4">19. Який спосіб зв'язку найзручніший для вас? (телефон, месенджери, соцмережі, електронна пошта тощо)</label>
+                    <input name="userComment">
+                    <button class="btn btn-custom-outline mt-5" type="submit">Відправити бриф та розпочати співпрацю</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-black text-white mt-5">
+        <div class="container-fluid px-7">
+            <div class="row no-gutters">
+                <div class="col-md-3 mt-13">
+                    <img src="svg/logofinalsymbol.svg" width="50px" class="mb-lg-5 mb-3"><br>
+                    <small class="gilroy-bold-13 grey">З увагою до деталей.</small>
+                </div>
+                <div class="col-md-4 mt-13" id="contacts">
+                    <h2 class="section-header mb-4">
+                        Маєте чудову ідею?<br>Розкажіть нам про неї
+                    </h2>
+                    <form method="post" action="bot.php" id="footer-form">
+                        <input class="mb-3" type="text" placeholder="Ім'я" name="userName" required>
+                        <input class="mb-3" type="text" placeholder="Телефон або e-mail" name="userContact" required>
+                        <textarea class="mb-4" rows="3" placeholder="Що у вас на думці?" name="userMessage"></textarea>
+                        <button class="btn btn-custom-outline-white w-100" type="submit" id="form-send-button">Відправити</button>
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 mt-13 contacts">
+                    <h3 class="footer-contacts-h3 mb-3">Контакти</h3>
+                    <a href="mailto:contact@crayfish.studio">contact@crayfish.studio</a><br>
+                    <a href="tel:+380964143851">+38 (096) 41 43 851</a><br>
+                    <a href="tel:+380633650422">+38 (063) 36 50 422</a><br>
+                    <h3 class="footer-contacts-h3 mb-3 mt-5">Наш офіс</h3>
+                    <a href="https://goo.gl/maps/shBBGzWJu7T5najh8" target="_blank">
+                        Україна, м. Львів<br>
+                        вул. Римлянина, 1<br>
+                        79008
+                    </a><br>
+                    <a href="index.html#portfolio">
+                        <h3 class="footer-contacts-h3 mt-5">
+                            <div class="v-8-fat"></div>Портфоліо</h3>
+                    </a>
+                    <a href="index.html#process">
+                        <h3 class="footer-contacts-h3">
+                            <div class="v-8-fat"></div>Процес</h3>
+                    </a>
+                    <a href="index.html#packets">
+                        <h3 class="footer-contacts-h3">
+                            <div class="v-8-fat"></div>Пакети</h3>
+                    </a>
+                    <a href="brief.html" id="brief-third-button">
+                        <h3 class="footer-contacts-h3">
+                            <div class="v-8-fat"></div>Бриф</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutters py-5">
+                <div class="col-md-6 text-md-left text-center">
+                    <small class="gilroy-bold-13 grey">© 2019 CRAYFISH STUDIO<br>Всі права захищено</small>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <a href="https://www.instagram.com/crayfish.studio/" target="_blank"><small class="gilroy-bold-13" style="color: #fff">INSTAGRAM</small></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
