@@ -49,14 +49,46 @@
         width: 80% !important;
         height: 60vw !important;
     }
+    
+    
 }
 
 @media screen and (max-width: 720px) {
     #portfolio div.image-container {
-        width: 85% !important;
-        height: 80vh !important;
+        width: 100% !important;
+        height: 70vh !important;
     }
 }
+
+
+@media screen and (min-width: 992px) {
+    #hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .btn-custom, .btn-custom-outline, .btn-custom-outline-white {
+        width: 100%;
+    }
+    
+    .content-container .btn-custom-outline-white {
+        width: calc(100% - 90px);
+    }
+    
+    .mt-15 {
+        margin-top: 15vw !important;
+    }
+    
+    .nav-links li {
+        margin-left: 0px !important;
+    }
+    
+    .section-header {
+        margin-top: 21px;
+    }
+}
+
 
 body {
     background-color: #FAFAFA;
@@ -111,8 +143,7 @@ body {
 }
 
 .px-7 {
-    padding-right: 7vw;
-    padding-left: 7vw;
+    padding: 0 7vw !important;
 }
 
 .bg-fa {
@@ -395,4 +426,39 @@ textarea::placeholder {
     position: absolute;
     left: 45px;
     bottom: 45px;
+}
+#hamburger {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#hamburger div {
+    height: 2.2px;
+    background-color: #000;
+    transition: all .3s;
+}
+
+#hamburger div:nth-child(1) {
+    width: 34px;
+}
+
+#hamburger div:nth-child(2) {
+    width: 21px;
+    margin-left: 13px;
+    margin-top: 13px;
+}
+
+#hamburger.chrested div:nth-child(1) {
+    height: 4px;
+    transform-origin: 100% 0;
+    transform: rotate(-45deg);
+}
+
+#hamburger.chrested div:nth-child(2) {
+    height: 4px;
+    transform-origin: 100% 100%;
+    width: 34px;
+    margin-left: 0px;
+    transform: rotate(45deg);
+    margin-top: 18.5px;
 }
