@@ -31,21 +31,21 @@
 }
 
 @media screen and (max-width: 1400px) {
-    #portfolio div.image-container {
+    #portfolio-cards div.image-container {
         width: 40% !important;
         height: 40vw !important;
     }
 }
 
 @media screen and (max-width: 1150px) {
-    #portfolio div.image-container {
+    #portfolio-cards div.image-container {
         width: 60% !important;
         height: 50vw !important;
     }
 }
 
 @media screen and (max-width: 860px) {
-    #portfolio div.image-container {
+    #portfolio-cards div.image-container {
         width: 80% !important;
         height: 60vw !important;
     }
@@ -54,7 +54,7 @@
 }
 
 @media screen and (max-width: 720px) {
-    #portfolio div.image-container {
+    #portfolio-cards div.image-container {
         width: 100% !important;
         height: 80vh !important;
     }
@@ -102,7 +102,7 @@ body {
     background-color: #FAFAFA;
 }
 
-#portfolio {
+#portfolio-cards {
     width: 100%;
     display: flex;
     overflow-x: auto;
@@ -120,7 +120,7 @@ body {
     background: #F84822;
 }
 
-#portfolio div.image-container {
+#portfolio-cards div.image-container {
     width: 25%;
     height: 34vw;
     flex-shrink: 0;
