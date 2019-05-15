@@ -56,7 +56,11 @@
 @media screen and (max-width: 720px) {
     #portfolio div.image-container {
         width: 100% !important;
-        height: 70vh !important;
+        height: 80vh !important;
+    }
+    
+    #h1-main {
+        font-size: 38px !important;
     }
 }
 
@@ -86,6 +90,10 @@
     
     .section-header {
         margin-top: 21px;
+    }
+    
+    .custom-card {
+        padding: 40px !important;
     }
 }
 
