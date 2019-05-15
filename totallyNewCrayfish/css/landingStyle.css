@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
 
-@font-face{
+@font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Regular.eot');
     src: url('../fonts/Gilroy-Regular.eot?iefix') format('eot'),
@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-SemiBold.eot');
     src: url('../fonts/Gilroy-SemiBold.eot?iefix') format('eot'),
@@ -20,7 +20,7 @@
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Bold.eot');
     src: url('../fonts/Gilroy-Bold.eot?iefix') format('eot'),
@@ -30,7 +30,33 @@
     font-style: normal;
 }
 
+@media screen and (max-width: 1400px) {
+    #portfolio div.image-container {
+        width: 40% !important;
+        height: 40vw !important;
+    }
+}
 
+@media screen and (max-width: 1150px) {
+    #portfolio div.image-container {
+        width: 60% !important;
+        height: 50vw !important;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #portfolio div.image-container {
+        width: 80% !important;
+        height: 60vw !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #portfolio div.image-container {
+        width: 85% !important;
+        height: 80vh !important;
+    }
+}
 
 body {
     background-color: #FAFAFA;
@@ -44,19 +70,44 @@ body {
     scroll-snap-type: x mandatory;
 }
 
-#portfolio::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+    height: 8px;
+    width: 10px;
+    background: 
 }
 
-#portfolio div {
+::-webkit-scrollbar-thumb {
+    background: #F84822;
+}
+
+#portfolio div.image-container {
     width: 25%;
-    height: 31vw;
+    height: 34vw;
     flex-shrink: 0;
     background-size: cover;
     scroll-snap-align: start;
-    filter: brightness(0.2);
     background-position: center;
-    padding: 40px;
+}
+
+.content-container {
+    height: 100%;
+    width: 100%;
+    background-color: #000000AA;
+    padding: 45px;
+    transition: all .4s;
+    position: relative;
+}
+
+.content-container:hover {
+    background-color: #000000BB;
+}
+
+.content-container:hover .portfolio-header {
+    margin-top: 55px
+}
+
+.content-container:hover .portfolio-description {
+    opacity: 1;
 }
 
 .px-7 {
@@ -104,7 +155,8 @@ body {
     border: 1px solid #535354;
 }
 
-#h1-main {
+#h1-main,
+.card-price {
     font-size: 55px;
     font-family: 'Gilroy', sans-serif;
     font-weight: 700;
@@ -147,7 +199,9 @@ body {
     color: #fff;
 }
 
-.btn-custom-outline:hover, .btn-custom:hover, .btn-custom-outline-white:hover {
+.btn-custom-outline:hover,
+.btn-custom:hover,
+.btn-custom-outline-white:hover {
     background-color: #F84822;
     color: #fff;
     border-color: #F84822;
@@ -187,7 +241,7 @@ body {
 }
 
 .custom-card:hover {
-    box-shadow:  0 0 40px rgba(0,0,0,0.05);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
 }
 
 .v-55-fat {
@@ -240,7 +294,8 @@ body {
     margin-bottom: 3px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -254,7 +309,8 @@ input, textarea {
     outline: none;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     font-size: 21px;
     color: #fff;
     font-weight: 700;
@@ -297,4 +353,46 @@ input::placeholder, textarea::placeholder {
     font-size: 16px;
     color: #8B8B8B;
     font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+}
+
+.portfolio-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.v-34-white {
+    width: 34px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 8px;
+}
+
+.portfolio-header {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 34px;
+    margin-bottom: 21px;
+    transition: all .6s;
+}
+
+.portfolio-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    line-height: 25px;
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+.absolute {
+    position: absolute;
+    left: 45px;
+    bottom: 45px;
 }
