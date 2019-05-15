@@ -3,14 +3,38 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115777796-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115777796-1');
+    </script>
+
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5BH4Z5V');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5BH4Z5V');
+    </script>
     <!-- End Google Tag Manager -->
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +43,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/landingStyle.css">
 
-    <title>Hello, world!</title>
+    <title>Crayfish Studio - найвигідніша розробка сайтів</title>
 </head>
 
 <body>
@@ -27,7 +51,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BH4Z5V"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
     <nav class="navbar navbar-expand-lg navbar-light bg-fa py-4 px-0 fixed-top">
         <div class="container-fluid px-7">
             <a class="navbar-brand" href="#">
@@ -41,16 +65,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto nav-links text-center">
                     <li class="nav-item mt-lg-0 mt-4">
-                        <a class="nav-link" href="#">Портфоліо</a>
+                        <a class="nav-link" href="#portfolio" onclick="classToggle()" data-toggle="collapse" data-target="#navbarSupportedContent">Портфоліо</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Процес</a>
+                        <a class="nav-link" href="#process" onclick="classToggle()" data-toggle="collapse" data-target="#navbarSupportedContent">Процес</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Пакети</a>
+                        <a class="nav-link" href="#packets" onclick="classToggle()" data-toggle="collapse" data-target="#navbarSupportedContent">Пакети</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Контакти</a>
+                        <a class="nav-link" href="#contacts" onclick="classToggle()" data-toggle="collapse" data-target="#navbarSupportedContent">Контакти</a>
                     </li>
                 </ul>
             </div>
@@ -58,17 +82,17 @@
     </nav>
 
     <div class="container-fluid px-7">
-        <div class="row no-gutters mt-15">
+        <div class="row no-gutters mt-13">
             <div class="col-md-8 mt-5">
                 <small class="gilroy-bold-13"><div class="v-34"></div>З увагою до деталей</small>
                 <h1 id="h1-main" class="mt-5 mb-5">Швидка розробка якісних сайтів<br>всього за 3 дні та $299.</h1>
                 <a href="#" class="btn btn-custom mr-3">Заповнити бриф</a>
-                <a href="#" class="btn btn-custom-outline mt-lg-0 mt-3">Замовити дзвінок</a>
+                <a href="#contacts" class="btn btn-custom-outline mt-lg-0 mt-3">Замовити дзвінок</a>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid px-7 mt-15">
+    <div class="container-fluid px-7 mt-13" id="portfolio">
         <div class="row no-gutters">
             <div class="col-md-2">
                 <small class="gilroy-bold-13 grey">
@@ -95,51 +119,51 @@
                 <p class="portfolio-description">
                     Мистецько-дизайнерський проект, метою якого є створення унікальних елементів декору інтер'єру. Наш фокус - багатошарові картини з фанери. Почуття прекрасного, вогонь в очах - ось що рухає нами. Основний акцент картин - геометричний арт, гра світла і тіні
                 </p>
-                <a href="#" class="btn btn-custom-outline-white absolute">переглянути</a>
+                <a href="https://crayfishstudio.github.io/rutetskiy/" target="_blank" class="btn btn-custom-outline-white absolute">переглянути</a>
             </div>
         </div>
-        <div id="rutetskiy" class="image-container" style="background-image: url(img/3.jpg)">
+        <div class="image-container" style="background-image: url(img/IMG_0706.jpg)">
             <div class="content-container justify-content-between">
                 <small class="portfolio-title">
                     <div class="v-34-white"></div>
-                    Галерея-магазин картин
+                    Інформаційний сайт коворкінгу
                 </small>
-                <h3 class="portfolio-header">Rutetskiy Designs</h3>
+                <h3 class="portfolio-header">Коворкінг "Кімната"</h3>
                 <p class="portfolio-description">
-                    Мистецько-дизайнерський проект, метою якого є створення унікальних елементів декору інтер'єру. Наш фокус - багатошарові картини з фанери. Почуття прекрасного, вогонь в очах - ось що рухає нами. Основний акцент картин - геометричний арт, гра світла і тіні
+                    Кімната - це коворкінг в самому центрі Львова. В Кімнаті завжди можна провести час продуктивно, зробити усі справи, або просто відпочити
                 </p>
-                <a href="#" class="btn btn-custom-outline-white absolute">переглянути</a>
+                <a href="https://kimnata.lviv.ua/" target="_blank" class="btn btn-custom-outline-white absolute">переглянути</a>
             </div>
         </div>
-        <div id="rutetskiy" class="image-container" style="background-image: url(img/3.jpg)">
+        <div class="image-container" style="background-image: url(img/annie-spratt-746981-unsplash.jpg)">
             <div class="content-container justify-content-between">
                 <small class="portfolio-title">
                     <div class="v-34-white"></div>
-                    Галерея-магазин картин
+                    Студентська онлайн-друкарня
                 </small>
-                <h3 class="portfolio-header">Rutetskiy Designs</h3>
+                <h3 class="portfolio-header">OnPrint</h3>
                 <p class="portfolio-description">
-                    Мистецько-дизайнерський проект, метою якого є створення унікальних елементів декору інтер'єру. Наш фокус - багатошарові картини з фанери. Почуття прекрасного, вогонь в очах - ось що рухає нами. Основний акцент картин - геометричний арт, гра світла і тіні
+                    Мета - заощадити час та кошти студентів які не мають власних принтерів і змушені стояти в довгих чергах до звичайних друкарень. Перед тим як скористатися послугами, можна самотужки обчислити свою економію використовуючи онлайн-калькулятор
                 </p>
-                <a href="#" class="btn btn-custom-outline-white absolute">переглянути</a>
+                <a href="https://eldakh.github.io/" target="_blank" class="btn btn-custom-outline-white absolute">переглянути</a>
             </div>
         </div>
-        <div id="rutetskiy" class="image-container" style="background-image: url(img/3.jpg)">
+        <div class="image-container" style="background-image: url(img/white-rainy-forest-1096997-unsplash.jpg)">
             <div class="content-container justify-content-between">
                 <small class="portfolio-title">
                     <div class="v-34-white"></div>
-                    Галерея-магазин картин
+                    Конструктор адресних табличок
                 </small>
-                <h3 class="portfolio-header">Rutetskiy Designs</h3>
+                <h3 class="portfolio-header">ДизайнСВ</h3>
                 <p class="portfolio-description">
-                    Мистецько-дизайнерський проект, метою якого є створення унікальних елементів декору інтер'єру. Наш фокус - багатошарові картини з фанери. Почуття прекрасного, вогонь в очах - ось що рухає нами. Основний акцент картин - геометричний арт, гра світла і тіні
+                    Використовуючи онлайн-конструктор, пыдберыть та замовте адресну табличку із терміном служби до 15 років, та отримайте її менше ніж за 7 днів
                 </p>
-                <a href="#" class="btn btn-custom-outline-white absolute">переглянути</a>
+                <a href="http://adres.d-sv.com.ua/" target="_blank" class="btn btn-custom-outline-white absolute">переглянути</a>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid px-7 mt-15">
+    <div class="container-fluid px-7 mt-13" id="process">
         <div class="row no-gutters">
             <div class="col-md-2">
                 <small class="gilroy-bold-13 grey">
@@ -194,7 +218,7 @@
     </div>
 
     <div class="bg-black text-white">
-        <div class="container-fluid px-7 mt-15">
+        <div class="container-fluid px-7 mt-13">
             <div class="row no-gutters justify-content-center py-lg-5 py-4">
                 <div class="col-md-7 align-self-center">
                     <h2 class="section-header mb-lg-0 mb-4">
@@ -207,8 +231,8 @@
             </div>
         </div>
     </div>
-    
-    <div class="container-fluid px-7 mt-15">
+
+    <div class="container-fluid px-7 mt-13" id="packets">
         <div class="row no-gutters">
             <div class="col-md-2">
                 <small class="gilroy-bold-13 grey">
@@ -218,39 +242,46 @@
             </div>
             <div class="col-md-8">
                 <h2 class="section-header">
-                    Вам не потрібно жертвувати якістю заради вартості.
-                    Обирайте пакет розробки який найбільше вам підходить
+                    Вам не потрібно жертвувати якістю заради вартості. Обирайте пакет розробки який найбільше вам підходить
                 </h2>
                 <h3 class="card-text mt-5">
                     Наше кредо - безкомпромісна увага до деталей, тому ми не йдемо на жодні поступки коли йдеться про якість. Ось що включено в кожен пакет розробки:
                 </h3>
                 <div class="v-line-full mt-5"></div>
-                
+
                 <div class="row no-gutters mt-5">
                     <div class="col-md-6">
-                        <h4 class="option-header"><div class="v-21-orange"></div>Оптимізація медіа-контенту</h4>
+                        <h4 class="option-header">
+                            <div class="v-21-orange"></div>Оптимізація медіа-контенту</h4>
                         <small class="gilroy-bold-13 grey">Швидкість завантаження сайту впливає на його ефективність</small>
-                        <h4 class="option-header mt-4"><div class="v-21-orange"></div>Підключення Google Analytics</h4>
+                        <h4 class="option-header mt-4">
+                            <div class="v-21-orange"></div>Підключення Google Analytics</h4>
                         <small class="gilroy-bold-13 grey">Потужний інструмент із детальною статистикою відвідувань</small>
-                        <h4 class="option-header mt-4"><div class="v-21-orange"></div>Зручні канали зв'язку</h4>
+                        <h4 class="option-header mt-4">
+                            <div class="v-21-orange"></div>Зручні канали зв'язку</h4>
                         <small class="gilroy-bold-13 grey">Заявки на електронну адресу або в улюблений месенджер</small>
-                        <h4 class="option-header mt-4"><div class="v-21-orange"></div>Будь-який віджет на ваш вибір</h4>
+                        <h4 class="option-header mt-4">
+                            <div class="v-21-orange"></div>Будь-який віджет на ваш вибір</h4>
                         <small class="gilroy-bold-13 grey">Re:plain, Jivosite, кнопка Callback, онлайн-чат чи інше</small>
                     </div>
                     <div class="col-md-6 mt-lg-0 mt-4">
-                        <h4 class="option-header"><div class="v-21-orange"></div>Кросбраузерна адаптивна верстка</h4>
+                        <h4 class="option-header">
+                            <div class="v-21-orange"></div>Кросбраузерна адаптивна верстка</h4>
                         <small class="gilroy-bold-13 grey">Ваш сайт виглядатиме ідеально на будь-якому пристрої</small>
-                        <h4 class="option-header mt-4"><div class="v-21-orange"></div>Продуманий UX-дизайн</h4>
+                        <h4 class="option-header mt-4">
+                            <div class="v-21-orange"></div>Продуманий UX-дизайн</h4>
                         <small class="gilroy-bold-13 grey">В користувачів не виникатиме складнощів у взаємодії із сайтом</small>
-                        <h4 class="option-header mt-4"><div class="v-21-orange"></div>Базова SEO-оптимізація</h4>
+                        <h4 class="option-header mt-4">
+                            <div class="v-21-orange"></div>Базова SEO-оптимізація</h4>
                         <small class="gilroy-bold-13 grey">Важлива запорука високих позицій в пошукових видачах</small>
-                        <h4 class="option-header mt-4"><div class="v-21-orange"></div>Налаштування Facebook Pixel</h4>
+                        <h4 class="option-header mt-4">
+                            <div class="v-21-orange"></div>Налаштування Facebook Pixel</h4>
                         <small class="gilroy-bold-13 grey">Можливість запускати рекламу для аудиторії вашого сайту</small>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row no-gutters mt-15">
+        <div class="row no-gutters mt-13">
             <div class="col-md-4 pr-md-5">
                 <div class="custom-card text-center">
                     <h2 class="section-header">Базовий</h2>
@@ -292,15 +323,15 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="bg-black text-white mt-5">
         <div class="container-fluid px-7">
             <div class="row no-gutters">
-                <div class="col-md-3 mt-15">
+                <div class="col-md-3 mt-13">
                     <img src="svg/logofinalsymbol.svg" width="50px" class="mb-lg-5 mb-3"><br>
                     <small class="gilroy-bold-13 grey">З увагою до деталей.</small>
                 </div>
-                <div class="col-md-4 mt-15">
+                <div class="col-md-4 mt-13" id="contacts">
                     <h2 class="section-header mb-4">
                         Маєте чудову ідею?<br>Розкажіть нам про неї
                     </h2>
@@ -312,21 +343,33 @@
                     </form>
                 </div>
                 <div class="col-md-1"></div>
-                <div class="col-md-3 mt-15 contacts">
+                <div class="col-md-3 mt-13 contacts">
                     <h3 class="footer-contacts-h3 mb-3">Контакти</h3>
-                    <a href="#">contact@crayfish.studio</a><br>
-                    <a href="#">+38 (096) 41 43 851</a><br>
-                    <a href="#">+38 (063) 36 50 422</a><br>
+                    <a href="mailto:contact@crayfish.studio">contact@crayfish.studio</a><br>
+                    <a href="tel:+380964143851">+38 (096) 41 43 851</a><br>
+                    <a href="tel:+380633650422">+38 (063) 36 50 422</a><br>
                     <h3 class="footer-contacts-h3 mb-3 mt-5">Наш офіс</h3>
-                    <a href="#">
+                    <a href="https://goo.gl/maps/shBBGzWJu7T5najh8" target="_blank">
                         Україна, м. Львів<br>
                         вул. Римлянина, 1<br>
                         79008
                     </a><br>
-                    <a href="#"><h3 class="footer-contacts-h3 mt-5"><div class="v-8-fat"></div>Портфоліо</h3></a>
-                    <a href="#"><h3 class="footer-contacts-h3"><div class="v-8-fat"></div>Процес</h3></a>
-                    <a href="#"><h3 class="footer-contacts-h3"><div class="v-8-fat"></div>Пакети</h3></a>
-                    <a href="#"><h3 class="footer-contacts-h3"><div class="v-8-fat"></div>Бриф</h3></a>
+                    <a href="#portfolio">
+                        <h3 class="footer-contacts-h3 mt-5">
+                            <div class="v-8-fat"></div>Портфоліо</h3>
+                    </a>
+                    <a href="#process">
+                        <h3 class="footer-contacts-h3">
+                            <div class="v-8-fat"></div>Процес</h3>
+                    </a>
+                    <a href="#packets">
+                        <h3 class="footer-contacts-h3">
+                            <div class="v-8-fat"></div>Пакети</h3>
+                    </a>
+                    <a href="#">
+                        <h3 class="footer-contacts-h3">
+                            <div class="v-8-fat"></div>Бриф</h3>
+                    </a>
                 </div>
             </div>
             <div class="row no-gutters py-5">
@@ -334,14 +377,14 @@
                     <small class="gilroy-bold-13 grey">© 2019 CRAYFISH STUDIO<br>Всі права захищено</small>
                 </div>
                 <div class="col-md-6 text-md-right text-center">
-                    <a href="#"><small class="gilroy-bold-13" style="color: #fff">INSTAGRAM</small></a>
+                    <a href="https://www.instagram.com/crayfish.studio/" target="_blank"><small class="gilroy-bold-13" style="color: #fff">INSTAGRAM</small></a>
                 </div>
             </div>
         </div>
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>

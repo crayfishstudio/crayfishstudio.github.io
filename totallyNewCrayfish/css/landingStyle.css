@@ -80,7 +80,7 @@
         width: calc(100% - 90px);
     }
     
-    .mt-15 {
+    .mt-13 {
         margin-top: 15vw !important;
     }
     
@@ -202,7 +202,7 @@ body {
 }
 
 
-.mt-15 {
+.mt-13 {
     margin-top: 15vh;
 }
 
