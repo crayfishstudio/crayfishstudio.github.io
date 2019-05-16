@@ -56,7 +56,7 @@
 @media screen and (max-width: 720px) {
     #portfolio-cards div.image-container {
         width: 100% !important;
-        height: 90vh !important;
+        height: 85vh !important;
     }
     
     #h1-main {
@@ -70,7 +70,9 @@
         display: none;
     }
     
-    
+    .portfolio-description {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -96,6 +98,14 @@
     
     .custom-card {
         padding: 35px !important;
+    }
+
+    .portfolio-description {
+        opacity: 1 !important;
+    }
+    
+    .content-container:hover .portfolio-header {
+        margin-top: 34px !important;
     }
 }
 
@@ -138,14 +148,14 @@ h1, h2, h3, h4, p, small{
 .content-container {
     height: 100%;
     width: 100%;
-    background-color: #000000AA;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 45px;
     transition: all .4s;
     position: relative;
 }
 
 .content-container:hover {
-    background-color: #000000BB;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .content-container:hover .portfolio-header {
@@ -432,7 +442,6 @@ textarea::placeholder {
     font-size: 13px;
     color: #fff;
     line-height: 25px;
-    opacity: 0;
     transition: all 1.2s;
 }
 
