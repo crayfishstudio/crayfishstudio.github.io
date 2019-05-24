@@ -371,6 +371,12 @@ textarea::placeholder {
     color: #fff;
     font-weight: 700;
     font-family: 'Gilroy', sans-serif;
+    transition: all .2s;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #666;
 }
 
 .w-100 {
@@ -515,3 +521,18 @@ label {
 .brief-description a {
     color: #fff;
 }
+
+#modal-container {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#consult-form input {
+    color: #171615;
+}
+
+#consult-form input::placeholder {
+    color: #171615;
+}
+

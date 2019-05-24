@@ -3,6 +3,21 @@
 <html lang="en">
 
 <head>
+    <script>
+        window.replainSettings = {
+            id: 'e2d33242-d6ee-4df0-b086-b58b3f3aac62'
+        };
+        (function(u) {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = u;
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })('https://widget.replain.cc/dist/client.js');
+    </script>
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115777796-1"></script>
     <script>
@@ -44,7 +59,7 @@
     <link rel="stylesheet" href="css/landingStyle.css">
 
     <link rel="icon" type="image/ico" href="img/favicon.ico">
-    
+
     <title>Crayfish Studio - найвигідніша розробка сайтів</title>
 </head>
 
@@ -87,13 +102,13 @@
         <div class="row no-gutters mt-13">
             <div class="col-md-9 mt-5">
                 <small class="gilroy-bold-13"><div class="v-34"></div>З увагою до деталей</small>
-                <h1 id="h1-main" class="mt-5 mb-5">Швидка розробка якісних сайтів<br>всього за 3 дні та $299.</h1>
-                <a href="brief.html" class="btn btn-custom mr-3" id="frief-main-button">Заповнити бриф</a>
-                <a href="#contacts" class="btn btn-custom-outline mt-lg-0 mt-3" id="call-main-button">Замовити дзвінок</a>
+                <h1 id="h1-main" class="mt-5 mb-5">Швидка розробка якісних сайтів<br>всього від 3 днів та $299</h1>
+                <a href="brief.html" class="btn btn-custom mr-3" id="frief-main-button">Дізнатись точну вартість</a>
+                <a href="#" class="btn btn-custom-outline mt-lg-0 mt-3" id="call-main-button" data-toggle="modal" data-target="#exampleModal">безкоштовна консультація</a>
             </div>
         </div>
     </div>
-    
+
     <div class="container-fluid px-7 mt-13" id="portfolio">
         <div class="row no-gutters">
             <div class="col-md-2">
@@ -158,7 +173,7 @@
                 </small>
                 <h3 class="portfolio-header">ДизайнСВ</h3>
                 <p class="portfolio-description">
-                    Використовуючи онлайн-конструктор, пыдберыть та замовте адресну табличку із терміном служби до 15 років, та отримайте її менше ніж за 7 днів
+                    Використовуючи онлайн-конструктор, підберіть та замовте адресну табличку із терміном служби до 15 років, та отримайте її менше ніж за 7 днів. Розробка механіки роботи конструктора на готовому дизайні замовника
                 </p>
                 <a href="http://adres.d-sv.com.ua/" target="_blank" class="btn btn-custom-outline-white absolute">переглянути</a>
             </div>
@@ -246,7 +261,7 @@
                 <h2 class="section-header mb-3">
                     Вам не потрібно жертвувати якістю заради вартості. Обирайте пакет розробки який найбільше вам підходить
                 </h2>
-                
+
             </div>
         </div>
         <div class="row no-gutters mt-5">
@@ -257,7 +272,7 @@
                     <div class="v-55-orange mx-auto my-4"></div>
                     <p class="cards-options">Одна мова</p>
                     <p class="cards-options">3 місяці підтримки</p>
-                    <p class="cards-options">Карще ніж на конструкторі</p>
+                    <p class="cards-options">Краще ніж на конструкторі</p>
                     <p class="cards-options pb-2">Знижка 30% на логотип</p>
                     <span class="card-price mt-5">$299</span>
                 </div>
@@ -390,6 +405,26 @@
         </div>
     </footer>
 
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div id="modal-container" class="p-5">
+                    <h2 class="section-header">
+                        Залиште ваші контакти
+                    </h2>
+                    <p class="cards-options">
+                        Ми зв'яжемось із вами якнайшвидше
+                    </p>
+                    <form id="consult-form" method="post" action="consult.php">
+                        <input name="consultName" type="text" placeholder="Ім'я" required>
+                        <input name="consultContact" type="text" placeholder="Телефон або e-mail" required>
+                        <button class="btn btn-custom-outline w-100 mt-4" type="submit" id="consult-send-button">Відправити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
