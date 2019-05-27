@@ -69,7 +69,7 @@
             <div class="row no-gutters justify-content-center">
                 <div class="col-md-8">
                     <small class="gilroy-bold-13"><div class="v-34-white"></div>З увагою до деталей</small>
-                    <h1 id="h1-main" class="mt-5">Дайте відповіді на 19 простих запитань</h1>
+                    <h1 id="h1-main" class="mt-5">Дайте відповіді на 5 простих запитань</h1>
                     <h2 class="section-header mt-3">Це допоможе нам краще зрозуміти який саме сайт вам потрібен та підібрати відповідний пакет послуг</h2>
                     <p class="brief-description mt-5 mb-5">Бриф на розробку сайту допоможе нам зрозуміти ваші цілі та завдання. Чим повнішу інформацію ми отримаємо, тим ефективнішою буде робота, тому заповніть якнайбільше полів<br><br> Якщо у вас уже є бриф або технічне завдання, ви можете відправити їх на нашу пошту <a href="mailto:contact@crayfish.studio">contact@crayfish.studio</a></p>
                 </div>
@@ -78,64 +78,95 @@
     </div>
 
     <div class="container-fluid px-7 mt-13">
-        <form method="post" action="botbrief.php" id="brief-form">
+        <form method="post" action="survey.php" id="survey-form">
             <div class="row no-gutters justify-content-center">
                 <div class="col-md-10">
-                    <h2 class="section-header">Загальна інформація</h2>
-                    <label class="mt-4">1. Назва вашої компанії, сфера діяльності*</label>
-                    <input name="companyName">
-                    <label class="mt-4">2. Товар або послуга вашої компанії</label>
-                    <input name="companyGoods">
-                    <label class="mt-4">3. Опис товару або послуги, його особливості та переваги</label>
-                    <input name="goodsDescription">
-                    <label class="mt-4">4. Чому клієнти обирають вас?</label>
-                    <input name="companyAdvantages">
-                    <label class="mt-4">5. Хто ваша цільова аудиторія?</label>
-                    <input name="companyAuditory">
-                    <label class="mt-4">6. Мета запуску сайту</label>
-                    <input name="siteObjective">
-                    <label class="mt-4">7. Посилання на соцмережі вашого бізнесу</label>
-                    <input name="companySocial">
+                    <h2 class="section-header mb-5 mt-13">1. Сайт якого типу вам потрібен?</h2>
+                    <label class="radio-container">Інформаційний
+                        <input type="radio" name="site-type" value="info">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-container">Для продажу товарів
+                        <input type="radio" name="site-type" value="goodiesSale">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-container">Для продажу послуг
+                        <input type="radio" name="site-type" value="servicesSell">
+                        <span class="radio-mark"></span>
+                    </label>       
                 </div>
             </div>
-            <div class="row no-gutters justify-content-center mt-5">
+            <div class="row no-gutters justify-content-center mt-13">
                 <div class="col-md-10">
-                    <h2 class="section-header">Контент</h2>
-                    <label class="mt-4">8. Який контент ви б хотіли бачити на сайті?</label>
-                    <input name="siteContent">
-                    <label class="mt-4">9. Чи є у вас сайт, лого, фірмовий стиль, брендбук тощо?</label>
-                    <input name="siteDesign">
-                    <label class="mt-4">10. Якими цифрами ви можете похвалитися? (Кількість клієнтів, замовлень, час обслуговування тощо)</label>
-                    <input name="companyNumbers">
-                    <label class="mt-4">11. Акції, знижки, або спеціальні пропозиції для клієнтів</label>
-                    <input name="companyFeatures">
-                    <label class="mt-4">12. Чи є у вас особливі досягнення, винагороди, сертифікати тощо?</label>
-                    <input name="companyAchievements">
+                    <h2 class="section-header mb-5">2. Чи є у вас брендинг (назва, логотип, фірмовий стиль тощо)?</h2>
+                    <label class="radio-container">Так
+                        <input type="radio" name="branding" value="yes">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-container">Ні
+                        <input type="radio" name="branding" value="no">
+                        <span class="radio-mark"></span>
+                    </label>     
                 </div>
             </div>
-            <div class="row no-gutters justify-content-center mt-5">
+            <div class="row no-gutters justify-content-center mt-13">
                 <div class="col-md-10">
-                    <h2 class="section-header">Дизайн</h2>
-                    <label class="mt-4">13. Яке враження має залишити ваш сайт у клієнтів? (строгий, яскравий, мінімалістичний, веселий тощо)</label>
-                    <input name="preferredDesign">
-                    <label class="mt-4">14. Які кольори ви хотіли б використати на сайті?</label>
-                    <input name="preferredColors">
-                    <label class="mt-4">15. Кілька посилань на сайти, які вам подобаються</label>
-                    <input name="goodSites">
-                    <label class="mt-4">16. Кілька посилань на сайти, які вам НЕ подобаються</label>
-                    <input name="badSites">
+                    <h2 class="section-header mb-5">3. Для якої галузі вам потрібен сайт (будівництво, медицина, торгівля, фінансові послуги тощо)? </h2>
+                    <input name="branch">  
                 </div>
             </div>
-            <div class="row no-gutters justify-content-center mt-5">
+            <div class="row no-gutters justify-content-center mt-13">
                 <div class="col-md-10">
-                    <h2 class="section-header">Контакти</h2>
-                    <label class="mt-4">17. Ваше ім'я</label>
+                    <h2 class="section-header mb-5">4. Скільки ви готові витратити на робзробку сайту?</h2>
+                    <label class="radio-container">До $300
+                        <input type="radio" name="prices" value="less300">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-container">$300 - $500
+                        <input type="radio" name="prices" value="300-500">
+                        <span class="radio-mark"></span>
+                    </label>  
+                    <label class="radio-container">$500 - $700
+                        <input type="radio" name="prices" value="500-700">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-container">$700 і більше
+                        <input type="radio" name="prices" value="700more">
+                        <span class="radio-mark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center mt-13">
+                <div class="col-md-10">
+                    <h2 class="section-header mb-5">5. За який термін має бути розроблений сайт?</h2>
+                    <label class="radio-container">До 3 днів
+                        <input type="radio" name="days" value="less3">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-container">3-7 днів
+                        <input type="radio" name="days" value="3-7">
+                        <span class="radio-mark"></span>
+                    </label>  
+                    <label class="radio-container">7-14 днів
+                        <input type="radio" name="days" value="7-14">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-container">Не терміново
+                        <input type="radio" name="days" value="infinite">
+                        <span class="radio-mark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center mt-13">
+                <div class="col-md-10">
+                    <h2 class="section-header">Залиште ваші контакти для отримання результатів</h2>
+                    <label class="mt-4">Ваше ім'я</label>
                     <input name="userName" required>
-                    <label class="mt-4">18. Телефон або e-mail</label>
+                    <label class="mt-4">Телефон або e-mail</label>
                     <input name="userContact" required>
-                    <label class="mt-4">19. Який спосіб зв'язку найзручніший для вас? (телефон, месенджери, соцмережі, електронна пошта тощо)</label>
-                    <input name="userComment">
-                    <button class="btn btn-custom-outline mt-5" type="submit">Відправити бриф та розпочати співпрацю</button>
+                    <label class="mt-4">Який спосіб зв'язку найзручніший для вас? (телефон, месенджери, соцмережі, електронна пошта тощо)</label>
+                    <input name="userComment" class="mb-5">
+                    <button class="btn btn-custom-outline my-5" type="submit">Відправити бриф та отримати пропозицію</button>
                 </div>
             </div>
         </form>

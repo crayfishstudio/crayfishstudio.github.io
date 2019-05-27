@@ -502,13 +502,13 @@ label {
     font-weight: 600;
 }
 
-#brief-form input {
+#brief-form input, #survey-form input {
     color: #171615;
     padding: 13px 0px;
     transition: all .3s;
 }
 
-#brief-form input:focus {
+#brief-form input:focus, #survey-form input:focus {
     border-bottom: 1px solid #171615;
 }
 
@@ -536,3 +536,66 @@ label {
     color: #171615;
 }
 
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 55px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    font-size: 21px;
+    text-transform: none;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  opacity: 0;
+  cursor: pointer;
+    transition: all .2s;
+}
+
+/* Create a custom radio button */
+.radio-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: all .2s;
+    margin-top: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .radio-mark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .radio-mark {
+  background-color: #F84822;
+}
+
+.radio-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .radio-mark:after {
+  display: block;
+}
+
+.radio-container .radio-mark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: white;
+}
