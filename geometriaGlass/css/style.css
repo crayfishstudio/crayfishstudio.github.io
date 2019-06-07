@@ -311,7 +311,7 @@
 
 
 .pt-8 {
-    padding-top: 126px;
+    padding-top: 40px;
 }
 
 .footer-link-small-site {
@@ -340,7 +340,6 @@ textarea {
     letter-spacing: 0.09em;
     border: none;
     border-bottom: 1px solid #fff;
-    padding: 20px 0px;
     outline: none !important;
 }
 
@@ -372,7 +371,7 @@ textarea::placeholder {
 
 
 .pb-15 {
-    padding-bottom: 101px;
+    padding-bottom: 80px;
 }
 
 .left-arrow, .right-arrow {
