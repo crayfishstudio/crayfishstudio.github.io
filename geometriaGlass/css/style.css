@@ -99,6 +99,10 @@
     .pt-60 {
         padding-top: 45vh !important;
     }
+    
+    .nav-btns a:hover {
+    margin-top: 0px !important;
+}
 
 }
 

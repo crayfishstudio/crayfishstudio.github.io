@@ -33,18 +33,18 @@
         </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto nav-btns">
-                <li class="nav-item">
-                    <a class="nav-link mx-md-3" href="#">послуги</a>
+            <ul class="navbar-nav ml-auto nav-btns text-center">
+                <li class="nav-item ">
+                    <a class="nav-link mx-md-3 py-md-0 py-2" href="#">послуги</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-md-3" href="#">досягнення</a>
+                    <a class="nav-link mx-md-3 py-md-0 py-2" href="#">досягнення</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-md-3" href="#">роботи</a>
+                    <a class="nav-link mx-md-3 py-md-0 py-2" href="#">роботи</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ml-md-3 pr-0" href="#">контакти</a>
+                    <a class="nav-link ml-md-3 pr-0 py-md-0 py-2 mb-3 mb-md-0" href="#">контакти</a>
                 </li>
             </ul>
 
@@ -213,7 +213,7 @@
                     <h2 class="bigger-text pb-15 text-white">зв'язатися з нами</h2>
                     <form>
                         <input class="mb-3 pb-4" type="text" placeholder="Ім'я" name="name" required>
-                        <input class="mb-3 py-4" type="text" placeholder="Телефон" name="contact" required>
+                        <input class="mb-3 py-4" type="text" id="recipient-phone" placeholder="Телефон" name="contact" required>
                         <textarea class="mb-3 py-4" rows="5" placeholder="Що вас цікавить?" name="message"></textarea>
                         <button class="btn button-submit " type="submit">Відправити</button>
                     </form>
@@ -262,7 +262,7 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            swipeToSlide,
+            swipeToSlide: true,
             arrows: true,
             appendArrows: $('.arrows-container'),
             prevArrow: ('.left-arrow-container'),
