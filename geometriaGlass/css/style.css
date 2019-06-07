@@ -53,15 +53,8 @@
     }
 
     .arrows-container {
-        position: absolute;
-        bottom: 40vh !important;
-        left: 0;
-        width: 100% !important;
-        display: flex;
-        background-color: #fff;
-        border: 1px solid var(--ze-lenyi-transparent);
+        display: none !important;
     }
-
 
     .bigger-text-right {
         font-family: 'Gilroy', sans-serif;
