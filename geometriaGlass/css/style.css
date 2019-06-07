@@ -1,18 +1,111 @@
 @media screen and (max-width: 768px) {
-    
+
     .px-8-ft {
-    padding: 0px !important;
-}
+        padding: 0px !important;
+    }
+
     .pb-15 {
-    padding-bottom: 20px !important;
-}
-    .footer-link:hover, .footer-link-social:hover, .footer-link-site:hover {
-    color: #fff;
-    transform: translateX(0px) !important;
-    text-decoration: none;
+        padding-bottom: 40px !important;
+    }
+
+    .footer-link:hover,
+    .footer-link-social:hover,
+    .footer-link-site:hover {
+        color: #fff;
+        transform: translateX(0px) !important;
+        text-decoration: none;
+    }
+
+    .pr-20 {
+        padding-right: 0px !important;
+    }
+
+    .pl-20 {
+        padding-left: 0px !important;
+    }
+
+    .pr-6 {
+        padding-right: 0px !important;
+    }
+
+    .pl-6 {
+        padding-left: 0px !important;
+    }
+
+    .pr-13 {
+        padding-right: 0px !important;
+    }
+
+    .pl-13 {
+        padding-left: 0px !important;
+    }
+
+    .main-text {
+        width: 100%;
+        padding-left: 0px !important;
+        padding-top: 65vh !important;
+        position: absolute;
+    }
+
+    .slider-container {
+        height: 60vh !important;
+        width: 100% !important;
+    }
+
+    .arrows-container {
+        display: none !important;
+    }
+
+    .bigger-text-right {
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 600;
+        font-size: 28px !important;
+        text-transform: uppercase;
+        line-height: 46px !important;
+        letter-spacing: 0.07em !;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .custom-button-call {
+        background: #AFD252;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        padding: 21px 46px;
+        border-radius: 0px;
+        margin-top: 0px !important;
+        width: 91.66%;
+        margin-left: 4.17%;
+    }
+
+    .regular-button {
+        display: none !important;
+    }
+
+    .arrow-button {
+        margin-top: 5px !important;
+        display: flex;
+        position: relative;
+        padding: 10px 0px;
+    }
+    
+    .pt-60 {
+        padding-top: 45vh !important;
+    }
+    
+    .nav-btns a:hover {
+    margin-top: 0px !important;
 }
 
 }
+
 @media screen and (min-width: 768px) {
     #hamburger {
         display: none;
@@ -369,9 +462,6 @@ textarea::placeholder {
     letter-spacing: 0.09em;
 }
 
-
-
-
 .button-submit {
     background: #AFD252;
     width: 100%;
@@ -391,7 +481,8 @@ textarea::placeholder {
     padding-bottom: 80px;
 }
 
-.left-arrow, .right-arrow {
+.left-arrow,
+.right-arrow {
     position: relative;
     padding: 25px;
     cursor: pointer;
@@ -409,9 +500,10 @@ textarea::placeholder {
     padding-left: 43%;
 }
 
-.left-arrow:hover div:nth-child(1), .left-arrow:hover div:nth-child(3) {
+.left-arrow:hover div:nth-child(1),
+.left-arrow:hover div:nth-child(3) {
     width: 7px;
-} 
+}
 
 .left-arrow:hover div:nth-child(2) {
     width: 50px;
@@ -421,7 +513,8 @@ textarea::placeholder {
     padding-left: 43%;
 }
 
-.left-arrow div, .right-arrow div{
+.left-arrow div,
+.right-arrow div {
     height: 0.8px;
     background-color: #000;
     position: absolute;
@@ -436,7 +529,7 @@ textarea::placeholder {
     width: 10px;
     transform: rotate(45deg);
     transform-origin: 0% 100%;
-    
+
 }
 
 .left-arrow div:nth-child(2) {
@@ -449,9 +542,10 @@ textarea::placeholder {
     transform-origin: 0% 0%;
 }
 
-.right-arrow:hover div:nth-child(1), .right-arrow:hover div:nth-child(3) {
+.right-arrow:hover div:nth-child(1),
+.right-arrow:hover div:nth-child(3) {
     width: 7px;
-} 
+}
 
 .right-arrow:hover div:nth-child(2) {
     width: 50px;
@@ -461,7 +555,7 @@ textarea::placeholder {
     width: 10px;
     transform: rotate(45deg);
     transform-origin: 0% 100%;
-    
+
 }
 
 .right-arrow div:nth-child(2) {
@@ -494,6 +588,7 @@ textarea::placeholder {
     margin-left: 10px;
     margin-top: 8px;
 }
+
 #hamburger div:nth-child(3) {
     width: 30px;
     margin-left: 10px;
@@ -514,6 +609,7 @@ textarea::placeholder {
     transform: rotate(45deg);
     margin-top: 18.5px;
 }
+
 #vertical-lines {
     height: 100vh;
     width: 100%;
@@ -543,6 +639,7 @@ textarea::placeholder {
 footer {
     z-index: 1029;
 }
+
 .arrow-button {
     margin-top: 48px;
     display: flex;
@@ -574,25 +671,25 @@ footer {
 
 .arrow div:nth-child(2) {
     width: 7px;
-    transform-origin: 0% 100%; 
+    transform-origin: 0% 100%;
     transform: rotate(45deg);
 }
 
 .arrow div:nth-child(3) {
     width: 7px;
-    transform-origin: 0% 0%; 
+    transform-origin: 0% 0%;
     transform: rotate(-45deg);
 }
 
-.arrow-button:hover .arrow div:nth-child(1){
+.arrow-button:hover .arrow div:nth-child(1) {
     width: 0px;
 }
 
-.arrow-button:hover .arrow div:nth-child(2){
+.arrow-button:hover .arrow div:nth-child(2) {
     width: 12px;
 }
 
-.arrow-button:hover .arrow div:nth-child(3){
+.arrow-button:hover .arrow div:nth-child(3) {
     width: 12px;
 }
 
