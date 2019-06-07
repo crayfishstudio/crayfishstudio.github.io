@@ -113,7 +113,7 @@
 .left-arrow-container,
 .right-arrow-container {
     width: 50%;
-
+    float: right;
 }
 
 .nav-btns a {
@@ -379,7 +379,18 @@ textarea::placeholder {
     position: relative;
     padding: 25px;
     cursor: pointer;
-    transition: all .3s !important
+    transition: all .3s !important;
+    width: 100%;
+}
+
+.right-arrow {
+    padding-left: 45%;
+    float: right;
+    transform: rotate(180deg) translateY(-1px);
+}
+
+.right-arrow:hover {
+    padding-left: 43%;
 }
 
 .left-arrow:hover div:nth-child(1), .left-arrow:hover div:nth-child(3) {
@@ -417,6 +428,31 @@ textarea::placeholder {
 }
 
 .left-arrow div:nth-child(3) {
+    width: 10px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+}
+
+.right-arrow:hover div:nth-child(1), .right-arrow:hover div:nth-child(3) {
+    width: 7px;
+} 
+
+.right-arrow:hover div:nth-child(2) {
+    width: 50px;
+}
+
+.right-arrow div:nth-child(1) {
+    width: 10px;
+    transform: rotate(45deg);
+    transform-origin: 0% 100%;
+    
+}
+
+.right-arrow div:nth-child(2) {
+    width: 34px;
+}
+
+.right-arrow div:nth-child(3) {
     width: 10px;
     transform: rotate(-45deg);
     transform-origin: 0% 0%;
