@@ -406,7 +406,7 @@ textarea::placeholder {
 }
 
 .left-arrow div, .right-arrow div{
-    height: 1px;
+    height: 0.8px;
     background-color: #000;
     position: absolute;
     transition: all .3s !important
