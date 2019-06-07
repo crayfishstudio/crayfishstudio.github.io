@@ -1,18 +1,31 @@
 @media screen and (max-width: 768px) {
-    
+
     .px-8-ft {
-    padding: 0px !important;
-}
+        padding: 0px !important;
+    }
+
     .pb-15 {
-    padding-bottom: 20px !important;
-}
-    .footer-link:hover, .footer-link-social:hover, .footer-link-site:hover {
-    color: #fff;
-    transform: translateX(0px) !important;
-    text-decoration: none;
+        padding-bottom: 40px !important;
+    }
+
+    .footer-link:hover,
+    .footer-link-social:hover,
+    .footer-link-site:hover {
+        color: #fff;
+        transform: translateX(0px) !important;
+        text-decoration: none;
+    }
+
+    .pr-20,
+    .pl-20,
+    .pr-6,
+    .pl-6,
+    .pr-13,
+    .pl-13 {
+        padding: 0px !important;
+    }
 }
 
-}
 @media screen and (min-width: 768px) {
     #hamburger {
         display: none;
@@ -241,31 +254,31 @@
 }
 
 .pr-20 {
-    padding-right: 20px !important;
+    padding-right: 20px;
 }
 
 .pl-20 {
-    padding-left: 20px !important;
+    padding-left: 20px;
 }
 
 .pr-6 {
-    padding-right: 6.67px !important;
+    padding-right: 6.67px;
 }
 
 .pl-6 {
-    padding-left: 6.67px !important;
+    padding-left: 6.67px;
 }
 
 .pr-13 {
-    padding-right: 13.33px !important;
+    padding-right: 13.33px;
 }
 
 .pl-13 {
-    padding-left: 13.33px !important;
+    padding-left: 13.33px;
 }
 
 .mb-26 {
-    margin-bottom: 26.66px !important;
+    margin-bottom: 26.66px;
 }
 
 .footer-link {
@@ -369,9 +382,6 @@ textarea::placeholder {
     letter-spacing: 0.09em;
 }
 
-
-
-
 .button-submit {
     background: #AFD252;
     width: 100%;
@@ -391,7 +401,8 @@ textarea::placeholder {
     padding-bottom: 80px;
 }
 
-.left-arrow, .right-arrow {
+.left-arrow,
+.right-arrow {
     position: relative;
     padding: 25px;
     cursor: pointer;
@@ -409,9 +420,10 @@ textarea::placeholder {
     padding-left: 43%;
 }
 
-.left-arrow:hover div:nth-child(1), .left-arrow:hover div:nth-child(3) {
+.left-arrow:hover div:nth-child(1),
+.left-arrow:hover div:nth-child(3) {
     width: 7px;
-} 
+}
 
 .left-arrow:hover div:nth-child(2) {
     width: 50px;
@@ -421,7 +433,8 @@ textarea::placeholder {
     padding-left: 43%;
 }
 
-.left-arrow div, .right-arrow div{
+.left-arrow div,
+.right-arrow div {
     height: 0.8px;
     background-color: #000;
     position: absolute;
@@ -436,7 +449,7 @@ textarea::placeholder {
     width: 10px;
     transform: rotate(45deg);
     transform-origin: 0% 100%;
-    
+
 }
 
 .left-arrow div:nth-child(2) {
@@ -449,9 +462,10 @@ textarea::placeholder {
     transform-origin: 0% 0%;
 }
 
-.right-arrow:hover div:nth-child(1), .right-arrow:hover div:nth-child(3) {
+.right-arrow:hover div:nth-child(1),
+.right-arrow:hover div:nth-child(3) {
     width: 7px;
-} 
+}
 
 .right-arrow:hover div:nth-child(2) {
     width: 50px;
@@ -461,7 +475,7 @@ textarea::placeholder {
     width: 10px;
     transform: rotate(45deg);
     transform-origin: 0% 100%;
-    
+
 }
 
 .right-arrow div:nth-child(2) {
@@ -494,6 +508,7 @@ textarea::placeholder {
     margin-left: 10px;
     margin-top: 8px;
 }
+
 #hamburger div:nth-child(3) {
     width: 30px;
     margin-left: 10px;
@@ -514,6 +529,7 @@ textarea::placeholder {
     transform: rotate(45deg);
     margin-top: 18.5px;
 }
+
 #vertical-lines {
     height: 100vh;
     width: 100%;
@@ -543,6 +559,7 @@ textarea::placeholder {
 footer {
     z-index: 1029;
 }
+
 .arrow-button {
     margin-top: 48px;
     display: flex;
@@ -574,25 +591,25 @@ footer {
 
 .arrow div:nth-child(2) {
     width: 7px;
-    transform-origin: 0% 100%; 
+    transform-origin: 0% 100%;
     transform: rotate(45deg);
 }
 
 .arrow div:nth-child(3) {
     width: 7px;
-    transform-origin: 0% 0%; 
+    transform-origin: 0% 0%;
     transform: rotate(-45deg);
 }
 
-.arrow-button:hover .arrow div:nth-child(1){
+.arrow-button:hover .arrow div:nth-child(1) {
     width: 0px;
 }
 
-.arrow-button:hover .arrow div:nth-child(2){
+.arrow-button:hover .arrow div:nth-child(2) {
     width: 12px;
 }
 
-.arrow-button:hover .arrow div:nth-child(3){
+.arrow-button:hover .arrow div:nth-child(3) {
     width: 12px;
 }
 
