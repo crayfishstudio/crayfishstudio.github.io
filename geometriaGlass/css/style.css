@@ -54,6 +54,7 @@
 .small-text {
     font-family: 'Gilroy', sans-serif;
     font-size: 14px;
+    font-weight: 700;
     line-height: 17px;
     letter-spacing: 0.095em;
     text-transform: uppercase;
@@ -63,6 +64,7 @@
 .bigger-text {
     font-family: 'Gilroy', sans-serif;
     font-size: 34px;
+    font-weight: 600;
     line-height: 41px;
     text-transform: uppercase;
     letter-spacing: 0.07em;
@@ -70,11 +72,12 @@
 }
 
 .regular-text {
-    font-family: Gilroy;
+    font-family: 'Gilroy', sans-serif;
     font-size: 14px;
+    font-weight: 400;
     text-align: center;
     letter-spacing: 0.07em;
-
+    line-height: 24px;
     color: #000000;
 }
 
@@ -84,13 +87,14 @@
 
 .slider-container {
     height: 100vh;
+    width: 41.7%;
 }
 
 .arrows-container {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 42%;
     display: flex;
     background-color: #fff;
     border: 1px solid var(--ze-lenyi-transparent);
@@ -139,4 +143,183 @@
 
 .nav-btns a:hover {
     margin-top: -4px;
+}
+
+.bigger-text-right {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+    text-transform: uppercase;
+    line-height: 66px;
+    letter-spacing: 0.07em;
+    color: #000000;
+}
+
+
+.custom-button-call {
+    width: 256px;
+    height: 57px;
+    background: #AFD252;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    padding-top: 21px;
+    border-radius: 0px;
+    margin-top: 48px;
+}
+
+.main-text {
+    width: 100%;
+    padding-left: 50%;
+    padding-top: 35vh;
+    position: absolute;
+}
+
+.px-8 {
+    padding: 0px 8.33vw;
+}
+
+.regular-button {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.13em;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 48px;
+    display: block;
+}
+
+.regular-button:hover {
+    text-decoration: none !important;
+    color: #000;
+}
+
+.pt-15 {
+    padding-top: 94px;
+}
+
+.green-number {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.07em;
+    color: #AFD252;
+    font-weight: 600;
+}
+
+.name-service {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.07em;
+    color: #000000;
+}
+
+.number-green {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 55px;
+    line-height: 25px;
+    letter-spacing: 0.07em;
+    color: #AFD252;
+    font-weight: 600;
+}
+
+.bordered {
+    border-bottom: 1px solid var(--ze-lenyi-transparent);
+}
+
+.pr-20 {
+    padding-right: 20px !important;
+}
+
+.pl-20 {
+    padding-left: 20px !important;
+}
+
+.pr-6 {
+    padding-right: 6.67px !important;
+}
+
+.pl-6 {
+    padding-left: 6.67px !important;
+}
+
+.pr-13 {
+    padding-right: 13.33px !important;
+}
+
+.pl-13 {
+    padding-left: 13.33px !important;
+}
+
+.mb-26 {
+    margin-bottom: 26.66px !important;
+}
+
+
+
+
+
+.footer-link {
+    display: block;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    transition: all .3s;
+}
+
+.footer-link:hover {
+    color: #fff;
+    transform: translateX(10px);
+    text-decoration: none;
+}
+
+.footer-link-social:hover {
+    color: #fff;
+    transform: translateX(10px);
+    text-decoration: none;
+}
+
+.footer-link-social {
+    display: inline-block;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    transition: all .3s;
+}
+
+.footer-link-site {
+    display: block;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.07em;
+    color: var(--ze-lenyi);
+    transition: all .3s;
+}
+
+.footer-link-site:hover {
+    color: var(--ze-lenyi);
+    transform: translateX(10px);
+    text-decoration: none;
+}
+
+.footer-link-small {
+    display: inline;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
 }
