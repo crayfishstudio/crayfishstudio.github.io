@@ -157,8 +157,6 @@
 
 
 .custom-button-call {
-    width: 256px;
-    height: 57px;
     background: #AFD252;
     font-family: 'Gilroy', sans-serif;
     font-weight: 500;
@@ -167,7 +165,7 @@
     line-height: 16px;
     letter-spacing: 0.13em;
     text-transform: uppercase;
-    padding-top: 21px;
+    padding: 21px 46px;
     border-radius: 0px;
     margin-top: 48px;
 }
@@ -219,6 +217,7 @@
     line-height: 25px;
     letter-spacing: 0.07em;
     color: #000000;
+    
 }
 
 .number-green {
@@ -316,10 +315,60 @@
 }
 
 .footer-link-small {
-    display: inline;
     font-family: 'Gilroy', sans-serif;
     font-size: 13px;
     line-height: 22px;
     letter-spacing: 0.07em;
     color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+
+.pt-8 {
+    padding-top: 126px;
+}
+
+.footer-link-small-site {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.footer-link-small-site:hover {
+    color: #fff;
+    transform: translateX(10px);
+    text-decoration: none;
+}
+input, textarea {
+    width: 100%;
+    background-color: #2E2E2E;
+    color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 20px 0px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+}
+
+input:active {
+    border: none !important;
+}
+
+
+.button-submit {
+    background: #AFD252;
+    width: 100%;
 }
