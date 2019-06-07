@@ -194,10 +194,9 @@
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.13em;
-    line-height: 16px;
     color: #000000;
-    margin-top: 48px;
     display: block;
+    margin-bottom: 0px;
 }
 
 .regular-button:hover {
@@ -543,4 +542,62 @@ textarea::placeholder {
 
 footer {
     z-index: 1029;
+}
+.arrow-button {
+    margin-top: 48px;
+    display: flex;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.arrow-button:hover {
+    text-decoration: none;
+}
+
+.arrow {
+    position: relative;
+    transform: rotate(180deg) translateY(10px);
+    margin-left: 68px;
+    transition: all .4s;
+}
+
+.arrow div {
+    height: 0.8px;
+    background-color: #000;
+    position: absolute;
+    transition: all .4s;
+}
+
+.arrow div:nth-child(1) {
+    width: 34px;
+}
+
+.arrow div:nth-child(2) {
+    width: 7px;
+    transform-origin: 0% 100%; 
+    transform: rotate(45deg);
+}
+
+.arrow div:nth-child(3) {
+    width: 7px;
+    transform-origin: 0% 0%; 
+    transform: rotate(-45deg);
+}
+
+.arrow-button:hover .arrow div:nth-child(1){
+    width: 0px;
+}
+
+.arrow-button:hover .arrow div:nth-child(2){
+    width: 12px;
+}
+
+.arrow-button:hover .arrow div:nth-child(3){
+    width: 12px;
+}
+
+.arrow-button:hover .arrow {
+    transform: rotate(270deg) translateY(12px);
+    margin-bottom: -10px;
+    margin-left: 56px;
 }
