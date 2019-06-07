@@ -16,14 +16,97 @@
         text-decoration: none;
     }
 
-    .pr-20,
-    .pl-20,
-    .pr-6,
-    .pl-6,
-    .pr-13,
-    .pl-13 {
-        padding: 0px !important;
+    .pr-20 {
+        padding-right: 0px !important;
     }
+
+    .pl-20 {
+        padding-left: 0px !important;
+    }
+
+    .pr-6 {
+        padding-right: 0px !important;
+    }
+
+    .pl-6 {
+        padding-left: 0px !important;
+    }
+
+    .pr-13 {
+        padding-right: 0px !important;
+    }
+
+    .pl-13 {
+        padding-left: 0px !important;
+    }
+
+    .main-text {
+        width: 100%;
+        padding-left: 0px !important;
+        padding-top: 65vh !important;
+        position: absolute;
+    }
+
+    .slider-container {
+        height: 60vh !important;
+        width: 100% !important;
+    }
+
+    .arrows-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100% !important;
+        display: flex;
+        background-color: #fff;
+        border: 1px solid var(--ze-lenyi-transparent);
+    }
+
+
+    .bigger-text-right {
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 600;
+        font-size: 30px !important;
+        text-transform: uppercase;
+        line-height: 46px !important;
+        letter-spacing: 0.07em !;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .custom-button-call {
+        background: #AFD252;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        padding: 21px 46px;
+        border-radius: 0px;
+        margin-top: 0px !important;
+        width: 91.66%;
+        margin-left: 4.17%;
+    }
+
+    .regular-button {
+        display: none !important;
+    }
+
+    .arrow-button {
+        margin-top: 5px !important;
+        display: flex;
+        position: relative;
+        padding: 10px 0px;
+    }
+    
+    .pt-60 {
+        padding-top: 45vh !important;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -254,31 +337,31 @@
 }
 
 .pr-20 {
-    padding-right: 20px;
+    padding-right: 20px !important;
 }
 
 .pl-20 {
-    padding-left: 20px;
+    padding-left: 20px !important;
 }
 
 .pr-6 {
-    padding-right: 6.67px;
+    padding-right: 6.67px !important;
 }
 
 .pl-6 {
-    padding-left: 6.67px;
+    padding-left: 6.67px !important;
 }
 
 .pr-13 {
-    padding-right: 13.33px;
+    padding-right: 13.33px !important;
 }
 
 .pl-13 {
-    padding-left: 13.33px;
+    padding-left: 13.33px !important;
 }
 
 .mb-26 {
-    margin-bottom: 26.66px;
+    margin-bottom: 26.66px !important;
 }
 
 .footer-link {
