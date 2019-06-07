@@ -6,13 +6,7 @@
     .pb-15 {
     padding-bottom: 20px !important;
 }
-    .footer-link:hover {
-    color: #fff;
-    transform: translateX(0px) !important;
-    text-decoration: none;
-}
-    
-    .footer-link:hover {
+    .footer-link:hover, .footer-link-social:hover, .footer-link-site:hover {
     color: #fff;
     transform: translateX(0px) !important;
     text-decoration: none;
