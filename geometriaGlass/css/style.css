@@ -456,3 +456,32 @@ textarea::placeholder {
     transform: rotate(-45deg);
     transform-origin: 0% 0%;
 }
+#vertical-lines {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1000;
+}
+
+#vertical-lines div {
+    height: 100%;
+    width: 1px;
+    background-color: var(--ze-lenyi-transparent);
+    position: absolute;
+}
+
+#vertical-lines div:nth-child(1) {
+    left: 25%;
+}
+
+#vertical-lines div:nth-child(2) {
+    left: 50%;
+}
+
+#vertical-lines div:nth-child(3) {
+    left: 75%;
+}
+
+footer {
+    z-index: 1029;
+}
