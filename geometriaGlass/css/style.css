@@ -363,7 +363,7 @@ input::placeholder, textarea::placeholder {
     letter-spacing: 0.09em;
 }
 
-input:active {
+input:focus {
     border: none !important;
 }
 
