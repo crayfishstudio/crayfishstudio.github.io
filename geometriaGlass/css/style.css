@@ -48,9 +48,11 @@
 
     .main-text {
         width: 100% !important;
-        padding-top: 65vh !important;
+        height: 40vh !important;
         position: absolute;
         right: 0;
+        bottom: 0;
+        padding-top: 5vh !important;
     }
 
     .slider-container {
@@ -90,6 +92,12 @@
         width: 91.66%;
         margin-left: 4.17%;
         outline: none;
+        box-shadow: none;
+    }
+    
+    .custom-button-call:focus {
+        outline: none;
+        box-shadow: rgba(0,0,0,0); !important;
     }
 
     .regular-button {
@@ -275,7 +283,9 @@
     text-transform: uppercase;
     padding: 21px 46px;
     border-radius: 0px;
-    margin-top: 48px;
+    margin-top: 48px;    
+    outline: none;
+    box-shadow: none;
 }
 
 .main-text {
@@ -753,3 +763,4 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: var(--ze-lenyi);
 }
+
