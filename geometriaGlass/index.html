@@ -16,7 +16,13 @@
     <title>Geometria Glass</title>
 </head>
 
-<body>
+<body onload="loadAnim()" id="body">
+    <div id="preloader">
+        <div id="preloader-1"></div>
+        <div id="preloader-2"></div>
+        <div id="preloader-3"></div>
+        <div id="preloader-4"></div>
+    </div>
     <div id="vertical-lines">
         <div></div>
         <div></div>
@@ -250,6 +256,23 @@
     <script src="js/slick.min.js"></script>
 
 
+    <script>
+        function loadAnim() {
+
+            document.getElementById("preloader-1").style.height = 0;
+            document.getElementById("preloader-2").style.height = 0;
+            document.getElementById("preloader-3").style.height = 0;
+            document.getElementById("preloader-4").style.height = 0;
+
+            setTimeout('zindexToNull()', 3200);  
+        }
+        
+        function zindexToNull() {
+            document.getElementById("preloader").style.zIndex = 0;
+            document.body.style.scrollbar.width = 100 + "px";
+        }
+    </script>
+    
     <script>
         var phoneMask = IMask(
             document.getElementById('recipient-phone'), {
