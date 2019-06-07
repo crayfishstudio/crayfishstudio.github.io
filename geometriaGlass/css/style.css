@@ -94,11 +94,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 42%;
+    width: 41.7%;
     display: flex;
     background-color: #fff;
     border: 1px solid var(--ze-lenyi-transparent);
-    padding: 15px 0px;
 }
 
 .slider {
@@ -114,20 +113,7 @@
 .left-arrow-container,
 .right-arrow-container {
     width: 50%;
-}
 
-.left-arrow-container div,
-.right-arrow-container div {
-    height: 1px;
-    background-color: #000;
-}
-
-.left-arrow-container div:nth-child(1) {
-    width: 10px;
-}
-
-.left-arrow-container div:nth-child(2) {
-    width: 10px;
 }
 
 .nav-btns a {
@@ -217,7 +203,7 @@
     line-height: 25px;
     letter-spacing: 0.07em;
     color: #000000;
-    
+
 }
 
 .number-green {
@@ -342,7 +328,9 @@
     transform: translateX(10px);
     text-decoration: none;
 }
-input, textarea {
+
+input,
+textarea {
     width: 100%;
     background-color: #2E2E2E;
     color: #fff;
@@ -353,9 +341,11 @@ input, textarea {
     border: none;
     border-bottom: 1px solid #fff;
     padding: 20px 0px;
+    outline: none !important;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: #fff;
     font-family: 'Gilroy', sans-serif;
     font-size: 13px;
@@ -363,12 +353,71 @@ input::placeholder, textarea::placeholder {
     letter-spacing: 0.09em;
 }
 
-input:focus {
-    border: none !important;
-}
+
 
 
 .button-submit {
     background: #AFD252;
     width: 100%;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    color: #FFFFFF;
+    padding: 21px 0px;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+
+
+.pb-15 {
+    padding-bottom: 101px;
+}
+
+.left-arrow, .right-arrow {
+    position: relative;
+    padding: 25px;
+    cursor: pointer;
+    transition: all .3s !important
+}
+
+.left-arrow:hover div:nth-child(1), .left-arrow:hover div:nth-child(3) {
+    width: 7px;
+} 
+
+.left-arrow:hover div:nth-child(2) {
+    width: 50px;
+}
+
+.left-arrow:hover {
+    padding-left: 43%;
+}
+
+.left-arrow div, .right-arrow div{
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    transition: all .3s !important
+}
+
+.left-arrow {
+    padding-left: 45%;
+}
+
+.left-arrow div:nth-child(1) {
+    width: 10px;
+    transform: rotate(45deg);
+    transform-origin: 0% 100%;
+    
+}
+
+.left-arrow div:nth-child(2) {
+    width: 34px;
+}
+
+.left-arrow div:nth-child(3) {
+    width: 10px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
 }
