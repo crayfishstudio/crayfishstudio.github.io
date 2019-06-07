@@ -1,3 +1,31 @@
+@media screen and (max-width: 768px) {
+    
+    .px-8-ft {
+    padding: 0px !important;
+}
+    .pb-15 {
+    padding-bottom: 20px !important;
+}
+    .footer-link:hover {
+    color: #fff;
+    transform: translateX(0px) !important;
+    text-decoration: none;
+}
+    
+    .footer-link:hover {
+    color: #fff;
+    transform: translateX(0px) !important;
+    text-decoration: none;
+}
+
+}
+@media screen and (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Regular.eot');
@@ -246,10 +274,6 @@
     margin-bottom: 26.66px !important;
 }
 
-
-
-
-
 .footer-link {
     display: block;
     font-family: 'Gilroy', sans-serif;
@@ -462,7 +486,7 @@ textarea::placeholder {
 }
 
 #hamburger div {
-    height: 2.2px;
+    height: 2px;
     background-color: var(--ze-lenyi);
     transition: all .3s;
 }
