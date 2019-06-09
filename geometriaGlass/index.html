@@ -2,10 +2,27 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141699570-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-141699570-1');
+    </script>
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -13,6 +30,8 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/zoom.css">
+    
     <title>Geometria Glass</title>
 </head>
 
@@ -106,7 +125,7 @@
         </div>
         <div class="row no-gutters justify-content-between pt-15">
             <div class="col-md-3">
-                <img class="img-fluid" src="img/img.PNG">
+                <img class="img-fluid" src="img/img.PNG" data-action="zoom">
                 <div class="row no-gutters mt-5">
                     <div class="col-3">
                         <p class="green-number">01 -</p>
@@ -118,7 +137,7 @@
                 </div>
             </div>
             <div class="col-md-3 ">
-                <img class="img-fluid" src="img/img.PNG">
+                <img class="img-fluid" src="img/img.PNG" data-action="zoom">
                 <div class="row no-gutters mt-5">
                     <div class="col-3">
                         <p class="green-number">01 -</p>
@@ -130,7 +149,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <img class="img-fluid" src="img/img.PNG">
+                <img class="img-fluid" src="img/img.PNG" data-action="zoom">
                 <div class="row no-gutters mt-5">
                     <div class="col-3">
                         <p class="green-number">01 -</p>
@@ -193,20 +212,20 @@
         </div>
         <div class="row no-gutters pt-15">
             <div class="col-md-3 pr-20 ">
-                <img class="img-fluid mb-26" src="img/Capture002.PNG">
-                <img class="img-fluid mb-26" src="img/Capture002.PNG">
+                <img class="img-fluid mb-26" src="img/Capture002.PNG" data-action="zoom">
+                <img class="img-fluid mb-26" src="img/Capture002.PNG" data-action="zoom">
             </div>
             <div class="col-md-3 pl-6 pr-13">
-                <img class="img-fluid mb-26" src="img/Capture002.PNG">
-                <img class="img-fluid mb-26" src="img/Capture002.PNG">
+                <img class="img-fluid mb-26" src="img/Capture002.PNG" data-action="zoom">
+                <img class="img-fluid mb-26" src="img/Capture002.PNG" data-action="zoom">
             </div>
             <div class="col-md-3 pl-13 pr-6">
-                <img class="img-fluid mb-26" src="img/Capture002.PNG">
-                <img class="img-fluid mb-26" src="img/Capture002.PNG">
+                <img class="img-fluid mb-26" src="img/Capture002.PNG" data-action="zoom">
+                <img class="img-fluid mb-26" src="img/Capture002.PNG" data-action="zoom">
             </div>
             <div class="col-md-3 pl-20">
-                <img class="img-fluid mb-26" src="img/Capture002.PNG">
-                <img class="img-fluid mb-26" src="img/Capture002.PNG">
+                <img class="img-fluid mb-26" src="img/Capture002.PNG" data-action="zoom">
+                <img class="img-fluid mb-26" src="img/Capture002.PNG" data-action="zoom">
             </div>
 
         </div>
@@ -233,7 +252,7 @@
                     <a class="footer-link-social mt-5" href="https://www.instagram.com/geometriaconstruction/" target="_blank">INSTAGRAM</a>
                     <a class="footer-link-site text-center text-md-left mt-3" href="#">geometria.glass</a>
                 </div>
-                
+
             </div>
             <div class="row pt-8">
                 <div class="col-md-6 mb-4 text-md-left text-center">
@@ -252,8 +271,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imask"></script>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/zoom.js"></script>
 
 
     <script>
@@ -264,14 +284,14 @@
             document.getElementById("preloader-3").style.height = 0;
             document.getElementById("preloader-4").style.height = 0;
 
-            setTimeout('zindexToNull()', 3200);  
+            setTimeout('zindexToNull()', 3200);
         }
-        
+
         function zindexToNull() {
             document.getElementById("preloader").style.zIndex = 0;
         }
     </script>
-    
+
     <script>
         var phoneMask = IMask(
             document.getElementById('recipient-phone'), {
@@ -283,9 +303,9 @@
             infinite: true,
             slidesToShow: 1,
             autoplay: true,
-            pauseOnHover: true,
+            pauseOnHover: false,
             autoplaySpeed: 5000,
-            speed: 1500,
+            speed: 1200,
             touchMove: true,
             swipeToSlide: true,
             draggable: true,
