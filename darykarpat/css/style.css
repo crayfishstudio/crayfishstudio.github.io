@@ -760,3 +760,7 @@ input::-webkit-calendar-picker-indicator {
 .text-submit {
     display: inline;
 }
+
+.ze-kartinka {
+   height: 50%;
+}
