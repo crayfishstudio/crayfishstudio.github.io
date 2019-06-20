@@ -785,31 +785,11 @@ input::-webkit-calendar-picker-indicator {
 .slider-container {
     height: 100vh;
 }
-.slider-controls {
-   position: absolute;
-    display: flex;
-    transform: none !important;
-    bottom: -50px;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-}
 
-.left-arrow-container,
-.right-arrow-container {
-    width: 50%;
-    float: right;
-    transform: none !important;
-    }
 
-.left-arrow {
-    padding: 25px;
-    cursor: pointer;
-    transition: all .3s !important;
-    width: 100%;
-    
-    transform: none !important;
-}
+
+
+
 
 .right-arrow {
      position: relative;
