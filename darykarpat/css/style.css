@@ -2,7 +2,7 @@
     .price-total-top {
         display: none;
     }
-    
+
 
 }
 
@@ -31,9 +31,18 @@
     .price-total-bot {
         display: none;
     }
+
     .radio-review label {
         padding: 10px !important;
         width: 46px !important;
+    }
+
+    .top-padding-2000 {
+        padding-top: 80px !important;
+    }
+    .size-image {
+        height: 35vh !important;
+        align-items: center !important;
     }
 }
 
@@ -96,8 +105,6 @@
     .top-margin-150 {
         margin-top: 90px !important;
     }
-
-
 
     .margin-mobile {
         margin-top: 16px;
@@ -237,9 +244,9 @@ body {
 .bold-text-slider {
     font-family: 'Jura', sans-serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 45px;
     color: #000;
-    margin: 20px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 .img-padding {
@@ -358,7 +365,7 @@ body {
 
 .btn:focus,
 .form-control:focus {
-    box-shadow: none;    
+    box-shadow: none;
     border: 1px solid #777;
 }
 
@@ -486,6 +493,10 @@ input {
     position: absolute;
     display: flex;
     transform: none !important;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
 }
 
 
@@ -550,8 +561,8 @@ input {
     height: calc(100vh - 150px);
 }
 
-.top-margin-150 {
-    margin-top: 150px;
+.top-padding-2000 {
+    padding-top: 200px;
 }
 
 .top-margin-60 {
@@ -716,6 +727,7 @@ input::-webkit-calendar-picker-indicator {
     color: #c20;
     border: none;
 }
+
 .button-submit:hover #romb-submit-intime {
     transform-origin: 50% 50%;
     transform: rotate(-45deg);
@@ -762,5 +774,47 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .ze-kartinka {
-   height: 50%;
+    height: 50%;
+}
+
+.size-image {
+    height: 55vh;
+    margin-right: 40px;
+}
+
+.slider-container {
+    height: 100vh;
+}
+.slider-controls {
+   position: absolute;
+    display: flex;
+    transform: none !important;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.left-arrow-container,
+.right-arrow-container {
+    width: 50%;
+    float: right;
+    transform: none !important;
+    }
+
+.left-arrow {
+    padding: 25px;
+    cursor: pointer;
+    transition: all .3s !important;
+    width: 100%;
+    
+    transform: none !important;
+}
+
+.right-arrow {
+     position: relative;
+    padding: 25px;
+    cursor: pointer;
+    transition: all .3s !important;
+    width: 100%;
 }
