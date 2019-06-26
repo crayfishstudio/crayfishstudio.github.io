@@ -489,14 +489,20 @@ input {
     color: #C20000;
 }
 
-#slider-controls {
-    position: absolute;
+#slider-controls-left {
+    position: relative;
     display: flex;
-    transform: none !important;
-    bottom: -50px;
-    left: 0;
+    bottom: -10px;
+    left: 88%;
     width: 100%;
-    background-color: #fff;
+}
+
+#slider-controls-right {
+    position: relative;
+    display: flex;
+    bottom: -10px;
+    left: 6%;
+    width: 100%;
 }
 
 
@@ -787,10 +793,6 @@ input::-webkit-calendar-picker-indicator {
 }
 
 
-
-
-
-
 .right-arrow {
      position: relative;
     padding: 25px;
@@ -798,3 +800,5 @@ input::-webkit-calendar-picker-indicator {
     transition: all .3s !important;
     width: 100%;
 }
+
+

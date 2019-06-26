@@ -138,31 +138,19 @@
                 </div>
             </div>
         </div>
-        
-        <div id="slider-controls">
-            <span class="control-arrow-left"></span>
-        <span class="control-arrow-right"></span>
-        </div>
-        
-        
-        <div class="slider-controls">
-            <div class="left-arrow-container">
-                <div class="left-arrow">
-                    
+        <div class="row no-gutters">
+            <div class="col-6">
+                <div id="slider-controls-left">
+                    <span class="control-arrow-left"></span>
                 </div>
             </div>
-            <div class="right-arrow-container">
-                <div class="right-arrow">
-                    
+            <div class="col-6">
+                <div id="slider-controls-right">
+                    <span class="control-arrow-right"></span>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
     <div id="#" class="bg-lgrey">
@@ -422,7 +410,8 @@
             touchMove: true,
             swipeToSlide: true,
             draggable: true,
-            arrows: true,
+            prevArrow: $('.control-arrow-left'),
+            nextArrow: $('.control-arrow-right'),
         });
     </script>
 
