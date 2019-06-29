@@ -52,7 +52,7 @@
         display: flex;
         bottom: -13px !important;
         left: 47% !important;
-        width: 100% !important;
+        width: 20% !important;
     }
 
     #slider-controls-right {
@@ -60,7 +60,7 @@
         display: flex;
         bottom: -13px !important;
         left: 30% !important;
-        width: 100% !important;
+        width: 20% !important;
     }
 }
 
