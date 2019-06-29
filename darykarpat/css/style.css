@@ -50,15 +50,15 @@
     #slider-controls-left {
         position: relative;
         display: flex;
-        bottom: -12px;
-        left: 50% !important;
+        bottom: -12px !important;
+        left: 47% !important;
         width: 100%;
     }
 
     #slider-controls-right {
         position: relative;
         display: flex;
-        bottom: -12px;
+        bottom: -12px !important;
         left: 30% !important;
         width: 100%;
     }
