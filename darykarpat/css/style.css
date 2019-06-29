@@ -43,6 +43,7 @@
     .size-image {
         height: 35vh !important;
         align-items: center !important;
+        margin: 0 auto;
     }
 }
 
@@ -207,6 +208,12 @@ body {
     padding: 0px 0px;
     margin-bottom: 10px;
     font-size: 15px;
+    border: none;
+}
+
+.custom-button-slider:focus {
+    border: none;
+    outline: none;
 }
 
 .number-bold {
@@ -363,7 +370,6 @@ body {
     transform: rotate(-45deg);
 }
 
-.btn:focus,
 .form-control:focus {
     box-shadow: none;
     border: 1px solid #777;
@@ -785,11 +791,12 @@ input::-webkit-calendar-picker-indicator {
 
 .size-image {
     height: 55vh;
-    margin-right: 40px;
+    max-height: 55vh;
 }
 
 .slider-container {
     height: 100vh;
+    max-height: 100vh;
 }
 
 
@@ -802,3 +809,11 @@ input::-webkit-calendar-picker-indicator {
 }
 
 
+
+.slider {
+    max-height: 55vh;
+}
+
+.margin-left-3000 {
+    margin-left: 
+}
