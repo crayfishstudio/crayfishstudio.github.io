@@ -50,7 +50,7 @@
     #slider-controls-left {
         position: relative;
         display: flex;
-        bottom: -12px !important;
+        bottom: -13px !important;
         left: 47% !important;
         width: 100%;
     }
@@ -58,7 +58,7 @@
     #slider-controls-right {
         position: relative;
         display: flex;
-        bottom: -12px !important;
+        bottom: -13px !important;
         left: 30% !important;
         width: 100%;
     }
