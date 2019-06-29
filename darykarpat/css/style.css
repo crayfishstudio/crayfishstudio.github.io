@@ -40,10 +40,27 @@
     .top-padding-2000 {
         padding-top: 80px !important;
     }
+
     .size-image {
         height: 35vh !important;
         align-items: center !important;
         margin: 0 auto;
+    }
+
+    #slider-controls-left {
+        position: relative;
+        display: flex;
+        bottom: -10px;
+        left: 59% !important;
+        width: 100%;
+    }
+
+    #slider-controls-right {
+        position: relative;
+        display: flex;
+        bottom: -10px;
+        left: 23% !important;
+        width: 100%;
     }
 }
 
@@ -801,7 +818,7 @@ input::-webkit-calendar-picker-indicator {
 
 
 .right-arrow {
-     position: relative;
+    position: relative;
     padding: 25px;
     cursor: pointer;
     transition: all .3s !important;
@@ -815,5 +832,5 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .margin-left-3000 {
-    margin-left: 
+    margin-left:
 }
