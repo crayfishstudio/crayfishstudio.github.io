@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 
     <title>MaxPower</title>
 </head>
@@ -77,11 +79,25 @@
         </div>
     </nav>
 
-    <section id="main-slider" class="px-5p mt-5">
+    <section id="main-slider" class="px-5p mt-5 main-slider-class">
+        <div style="background-image: url(img/paul-volkmer-crRwoRukgkA-unsplash.jpg)"></div>
+        <div style="background-image: url(img/paul-volkmer-crRwoRukgkA-unsplash.jpg)"></div>
+        <div style="background-image: url(img/paul-volkmer-crRwoRukgkA-unsplash.jpg)"></div>
+        <div style="background-image: url(img/paul-volkmer-crRwoRukgkA-unsplash.jpg)"></div>
+    </section>
+
+    <section id="main-categories">
 
     </section>
 
-    <section id="popular-items" class="container-fluid px-0">
+    <section id="popular-items" class="container-fluid px-0 my-5 pt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="section-header">
+                    Популярні товари
+                </h2>
+            </div>
+        </div>
         <div class="row no-gutters items">
             <div class="col-md-3">
                 <div class="item-card">
@@ -101,17 +117,18 @@
             </div>
             <div class="col-md-3">
                 <div class="item-card">
-                    <!--<div class="item-bage"><span>Акція</span></div>-->
+                    <div class="item-bage"><span>знижка</span></div>
                     <div class="item-image" style="background-image: url(img/image.PNG)"></div>
                     <div class="item-name"><a href="#">Roces argon</a></div>
                     <div class="item-subcategory"><a href="#">Жіночі ролики</a></div>
                     <div class="item-availability">у наявності</div>
                     <div class="item-price">₴2750</div>
+                    <div class="item-old-price">₴3240</div>
                     <div class="item-parameters">
                         <div style="background-color: var(--red-solid)"></div>
                         <div style="background-color: var(--almost-black)"></div>
                         <div style="background-color: var(--dark-gray)"></div>
-                        <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                        <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43, 44, 45">43</span>
                     </div>
                 </div>
             </div>
@@ -149,15 +166,77 @@
             </div>
         </div>
     </section>
+    
+    <footer class="px-5p">
+        <div class="container-fluid px-0 py-5 footer-container">
+            <div class="row no-gutters justify-content-center mt-4">
+                <div class="col-md-5">
+                    <h4 class="footer-title">Зв'яжіться з нами</h4>
+                    <div id="footer-phones" class="ml-auto">
+                        <a href="tel:">+38 (096) 414 3851</a>
+                        <a href="tel:">+38 (096) 414 3851</a>
+                    </div>
+                    <form id="footer-form" class="mt-4">
+                        <div class="row no-gutters">
+                            <div class="col-7 px-0">
+                                <input id="footer-form-phone" type="text" placeholder="Введіть номер телефону">
+                            </div>
+                            <div class="col-5 px-0">
+                                <button id="footer-form-submit" type="submit">Замовити дзвінок</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="footer-contacts" class="mt-5 footer-links">
+                        м. Львів, вул. Назвавулиці 14, поштовий індекс 79000<br>
+                        <a href="mailto:companymail@mail.com" class="mt-1">companymail@mail.com</a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 text-right footer-links">
+                    <h4 class="footer-title">корисні Посилання</h4>
+                    <a href="#" class="mt-4">Доставка та оплата</a>
+                    <a href="#">FAQ (часті питання)</a>
+                    <a href="#" id="mb-custom">Умови повернення товару</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="col-md-2 text-right footer-links">
+                    <h4 class="footer-title">КАТЕГОРІЇ ТОВАРІВ</h4>
+                    <a href="#" class="mt-4">Взуття</a>
+                    <a href="#">Одяг</a>
+                    <a href="#">Аксесуари</a>
+                    <a href="#">Обладнання</a>
+                    <a href="#">Види спорту</a>
+                    <a href="#">Бренди</a>
+                    <a href="#">Акційні товари</a>
+                </div>
+            </div>
+            <div class="row"></div>
+        </div>
+    </footer>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
 
     <script>
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
         })
+
+        $(document).ready(function() {
+            $('.main-slider-class').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false,
+                dots: true
+            });
+            
+            $('#footer-form-phone').mask('+00 (000) 000 0000');
+        });
     </script>
 </body>
 
