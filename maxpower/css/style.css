@@ -241,6 +241,15 @@ input[type="text"]:focus {
     transform: scale(1.03);
 }
 
+.item-card:hover .item-old-price {
+    transform: translateY(-4px);
+    color: var(--red-solid);
+}
+
+.item-card:hover .item-bage {
+    top: 2px;
+}
+
 .item-image {
     width: 100%;
     height: calc((100vw - 110px)/8);
@@ -264,10 +273,12 @@ input[type="text"]:focus {
 
 .item-bage {
     position: absolute;
-    top: 0px;
+    top: 7px;
     left: 0px;
     text-align: center;
     width: 100%;
+    z-index: 100;
+    transition: all .3s;
 }
 
 .item-bage span {
@@ -284,10 +295,16 @@ input[type="text"]:focus {
     width: 60%;
 }
 
+.item-subcategory a:hover {
+    color: var(--dark-gray);
+}
+
+
 .item-subcategory a {
     color: var(--medium-gray);
     font-weight: 700;
     font-size: 0.875rem;
+    transition: color .2s;
 }
 
 .item-availability {
@@ -332,4 +349,77 @@ input[type="text"]:focus {
     font-weight: 600;
     margin-left: 10px;
     padding-left: 5px;
+}
+
+.item-old-price {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: var(--medium-gray);
+    transition: all .3s;
+    margin-left: 5px;
+}
+
+#main-slider div {
+    width: 100%;
+    height: calc((100vw - 80px)/3.5);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-container {
+    background-color: var(--almost-black);
+    color: #fff;
+}
+
+.footer-title {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#footer-phones a {
+    font-weight: 700;
+    color: #fff;
+    margin-left: 30px;
+}
+
+#footer-phones {
+    display: inline-block;
+    float: right;
+}
+
+#footer-form-submit {
+    padding: 14px;
+    border: none;
+    width: 100%;
+    background-image: var(--red-gradient);
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+#footer-form-submit:hover {
+    padding-right: 8px;
+}
+
+.section-header {
+    font-size: 1.875rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--almost-black);
+    margin-bottom: 45px;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+#mb-custom {
+    margin-bottom: 38px;
 }

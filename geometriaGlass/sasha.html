@@ -1,0 +1,66 @@
+<style>
+    #custom-container {
+        text-align: center;
+        width: 100%;
+        margin: 70px 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #custom-container a {
+        font-size: 18px;
+        font-family: 'Arial',sans-serif;
+        line-height: 1.55;
+        font-weight: 600;
+        border-width: 0px;
+        border-radius: 30px;
+        background-color: #0084ff;
+        color: #fff;
+        
+        text-decoration: none;
+        padding: 17px 40px;
+        box-shadow: -2px 2px 10px 1px rgba(12,79,150,0.2);
+        vertical-align: middle;
+        margin: 0px 5px;
+    }
+    
+    #custom-container h2 {
+        font-size: 36px;
+        font-family: 'Gilroy',Arial,sans-serif;
+        line-height: 1.2;
+        font-weight: 700;
+        display: block;
+        margin: 0px 40px;
+    }
+    
+    @media screen and (max-width: 1024px) {
+        #custom-container {
+            display: block;
+        }
+        
+        #custom-container h2 {
+            margin: 20px 0px;
+            font-size: 30px;
+        }
+        
+        #custom-container a {
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+        }
+    }
+</style>
+
+<div id="custom-container">
+    <h2>ГИБКИЕ ТАРИФНЫЕ ПЛАНЫ</h2><br>
+    <a href="#">Скачать прайс</a>
+    <a href="#" onclick="callChat()">Обсудить проект</a>
+</div> 
+
+<script src="//widget.manychat.com/232795183840602.js" async="async"></script>
+<script>
+    function callChat() {
+        MC.getWidget(2858383).openDialog();
+    }
+</script>
