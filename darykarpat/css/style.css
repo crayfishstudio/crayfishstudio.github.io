@@ -3,7 +3,6 @@
         display: none;
     }
 
-
 }
 
 @media screen and (min-width: 992px) {
@@ -25,9 +24,25 @@
     .custom-button-dropdown {
         display: none;
     }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    .col-md-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .ze-kartinka {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 5%;
+    }
+    .ze-kartinka-second{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
     .price-total-bot {
         display: none;
     }
@@ -63,7 +78,95 @@
         width: 30% !important;
     }
 }
+@media (max-width: 897px) {
+    .col-md-2 {
+        display: flex;
+        flex-direction: column;
+    }
+.col-md-2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 80%;
+}
+.col-md-4 {
+    margin: auto;
+    max-width: 70%;
+    padding-top: 10%;
+}
+.ze-kartinka {
+    display: flex;
+    justify-content: center;
+}
+.ze-kartinka-second {
+    display: flex;
+    justify-content: center;
+}
 
+.text-review {
+    padding-top: 15%;
+}
+.col-md-6.px-5 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.radio { 
+    display:flex;
+    justify-content: space-evenly;
+}
+.bold-grey-text {
+    text-align: center;
+    padding-top: 5%;
+}
+.bold-total-price {
+    text-align: center;
+}
+.btn.button.custom-button-stash.active {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 2%;
+}
+}
+@media (max-width:992px) {
+    .text-review {
+        padding-top: 5%;
+        text-align: center;
+    }
+    .text-grey-review {
+        display: flex;
+        justify-content: center;
+    }
+    .radio {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2%;
+    }
+    .bold-grey-text {
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+    }
+    .bold-total-price {
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+    }
+    .btn.button.custom-button-stash.active {
+        display: flex;
+        justify-content: center;
+    }
+    .col.d-sm-flex{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .ancor-text {
+        padding-top: 1%;
+    }
+
+}
 @media screen and (max-width: 1200px) {
 
     #zamok-desktop {
@@ -81,7 +184,7 @@
         padding: 0px !important;
         align-self: center !important;
     }
-
+    
     .v-line-slider {
         display: none;
     }
@@ -800,22 +903,40 @@ input::-webkit-calendar-picker-indicator {
 
 .text-submit {
     display: inline;
+
+}
+.ze-kartinka-second {
+    padding-top: 10%;
+}
+.col-md-2 {
+    padding-right: 5% !important;
+     display:flex;
+     flex-direction: column;
+     
+}
+.col-md-4 { 
+     
+     padding-left: 2% !important;
+     height: 10%;
+     display: flex;
+     justify-content: center;
+     height: 100%;
 }
 
-.ze-kartinka {
-    height: 50%;
-}
 
 .size-image {
     height: 55vh;
     max-height: 55vh;
 }
 
+
 .slider-container {
     height: 100vh;
     max-height: 100vh;
 }
-
+.review-area {
+    padding: .375rem .75rem;
+}
 
 .right-arrow {
     position: relative;
