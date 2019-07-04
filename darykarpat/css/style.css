@@ -521,16 +521,15 @@ input {
     position: relative;
     display: flex;
     bottom: 35vh;
-    width: 8%;
-    left: 20px;
+    width: 10%;
+    right: -15px;
 }
 #slider-controls-right {
     position: relative;
     display: flex;
     bottom: 35vh;
     float: right;
-    width: 8%;
-    right: 10px;
+    width: 10%;
 }
 #slider-controls div {
     height: 8px;
