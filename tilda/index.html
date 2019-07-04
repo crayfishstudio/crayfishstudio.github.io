@@ -2,6 +2,7 @@
     body {
         margin: 0px !important;
     }
+
     .yakMeneToZaebalo {
         position: relative;
         float: left;
@@ -32,11 +33,11 @@
 
     .sinylya {
         position: absolute;
-        bottom: -40px;
+        bottom: -20px;
         transition: .5s all;
         z-index: 228;
     }
-    
+
     .sinylya img {
         width: 200px;
         height: 185px;
@@ -47,13 +48,13 @@
     .rodina-mat {
         justify-content: flex-start;
         transition: .9s all;
-        margin: 20px;
+        padding: 50px;
+        box-sizing: padding-box;
     }
 
     .rodina-mat:hover img {
         opacity: 0;
         transform: rotate(-180deg);
-
     }
 
     .rodina-mat:hover .sinylya {
@@ -63,11 +64,11 @@
     .rodina-mat:hover a {
         opacity: 1;
     }
-    
+
     .rodina-mat:hover p {
         opacity: 0;
     }
-    
+
     .dochyrka {
         position: relative;
         top: 135px;
@@ -78,7 +79,7 @@
         opacity: 1;
         transition: 0.5s all;
     }
-    
+
     .dochyrka-jr {
         position: relative;
         top: 165px;
@@ -113,5 +114,75 @@
             <img src="https://static.tildacdn.com/tild6639-6333-4534-a433-333531666165/__-04.svg">
         </div>
     </div>
-
 </div>
+<!--
+<style>
+    .block-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .point {
+        width: 20%;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        transition: all 1s;
+        transform-origin: 50% 100%;
+    }
+    
+    .point a {
+        display: block;
+        background-color: #0084ff;
+        padding: 20px 30px;
+        color: #fff;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 700;
+    }
+    
+    .px-20p {
+        padding: 0px 50px;
+        
+    }
+    
+    .point img {
+        width: 100%;
+        
+    }
+    
+    .img-container {
+        position: absolute;
+        transition: all .3s;
+        transform-origin: 50% 100%;
+    }
+    
+    .point:hover{
+        
+        transform: rotate(-180deg);
+    }
+</style>
+
+<div class="block-container">
+    <div class="point">
+        <div class="img-container">
+            <img src="https://static.tildacdn.com/tild6639-6333-4534-a433-333531666165/__-04.svg">
+        </div>
+    </div>
+    <div class="point">
+        <div class="px-20p"><a href="#">Заполнить бриф</a></div>
+        <div>
+            <img src="https://static.tildacdn.com/tild6639-6333-4534-a433-333531666165/__-04.svg">
+            <p class="text">lorem ipsum dlor sit amet</p>
+        </div>
+    </div>
+    <div class="point">
+        <div class="px-20p"><a href="#">Заполнить бриф</a></div>
+        <div>
+            <img src="https://static.tildacdn.com/tild6639-6333-4534-a433-333531666165/__-04.svg">
+            <p class="text">lorem ipsum dlor sit amet</p>
+        </div>
+    </div>
+</div>-->
