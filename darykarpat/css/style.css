@@ -529,8 +529,7 @@ input {
     display: flex;
     bottom: 35vh;
     float: right;
-    width: 15%;
-    
+    width: 15%;    
 }
 #slider-controls div {
     height: 8px;
