@@ -86,7 +86,7 @@
                     <div class="col-md-6">
                         <img class="img-fluid float-md-right size-image" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
                     </div>
-                    <div class="col-md-6 pl-4 pt-md-5">
+                    <div class="col-md-6 pl-4 pt-md-5 ">
                         <p class="text-grey-slider pt-4">Дари карпат</p>
                         <div class="v-line-slider mb-2"></div>
                         <p class="bold-text-slider">Вишиванки</p>
@@ -111,8 +111,8 @@
             </div>
             <div>
                 <div class="row no-gutters">
-                    <div class="col-md-6">
-                        <img class="img-fluid float-md-right size-image" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
+                    <div class="col-md-6 ">
+                        <img class="img-fluid float-md-right  size-image" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
                     </div>
                     <div class="col-md-6 pl-4 pt-md-5">
                         <p class="text-grey-slider pt-4">Дари карпат</p>
@@ -138,31 +138,19 @@
                 </div>
             </div>
         </div>
-        
-        <div id="slider-controls">
-            <span class="control-arrow-left"></span>
-        <span class="control-arrow-right"></span>
-        </div>
-        
-        
-        <div class="slider-controls">
-            <div class="left-arrow-container">
-                <div class="left-arrow">
-                    
+        <div class="row no-gutters">
+            <div class="col-6">
+                <div id="slider-controls-left">
+                    <span class="control-arrow-left"></span>
                 </div>
             </div>
-            <div class="right-arrow-container">
-                <div class="right-arrow">
-                    
+            <div class="col-6">
+                <div id="slider-controls-right">
+                    <span class="control-arrow-right"></span>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
     <div id="#" class="bg-lgrey">
@@ -422,7 +410,8 @@
             touchMove: true,
             swipeToSlide: true,
             draggable: true,
-            arrows: true,
+            prevArrow: $('.control-arrow-left'),
+            nextArrow: $('.control-arrow-right'),
         });
     </script>
 
