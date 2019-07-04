@@ -1,4 +1,14 @@
 <style>
+    @media screen and (max-width: 992px) {
+        .batya {
+            display: block !important;
+            width: 100%;
+            justify-content: center !important;
+            position: absolute;
+            margin-top: 10px !important;
+        }
+    }
+
     body {
         margin: 0px !important;
     }
@@ -42,7 +52,7 @@
         width: 200px;
         height: 185px;
         transform-origin: bottom center;
-        transition: .5s all;
+        transition: 1s all;
     }
 
     .rodina-mat {
@@ -54,6 +64,10 @@
 
     .rodina-mat:hover img {
         opacity: 0;
+        -o-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg);
     }
 
@@ -94,21 +108,21 @@
 </style>
 <div class="batya">
     <div class="rodina-mat">
-        <a href="#" class="yakMeneToZaebalo" target="_blank">Заполнить бриф</a>
+        <a href="#" class="yakMeneToZaebalo">Заполнить бриф</a>
         <div class="sinylya">
             <p class="dochyrka">Заказать<br>персональную<br>консультацию</p>
             <img src="https://static.tildacdn.com/tild3961-6435-4437-a537-646663663434/__-01.svg">
         </div>
     </div>
     <div class="rodina-mat">
-        <a href="#" class="yakMeneToZaebalo" target="_blank">Заполнить бриф</a>
+        <a href="#" class="yakMeneToZaebalo">Заполнить бриф</a>
         <div class="sinylya">
             <p class="dochyrka">Заказать<br>групповую<br>консультацию</p>
             <img src="https://static.tildacdn.com/tild3466-3962-4532-b334-366636383332/__-02.svg">
         </div>
     </div>
     <div class="rodina-mat">
-        <a href="#" class="yakMeneToZaebalo" target="_blank">Заполнить бриф</a>
+        <a href="#" class="yakMeneToZaebalo">Заполнить бриф</a>
         <div class="sinylya">
             <p class="dochyrka-jr">Заказать<br>повышение<br>квалификации<br>вашей PPC-<br>команды</p>
             <img src="https://static.tildacdn.com/tild6639-6333-4534-a433-333531666165/__-04.svg">
