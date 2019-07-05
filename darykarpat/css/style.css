@@ -58,7 +58,7 @@
     }
 
     .top-padding-2000 {
-        padding-top: 80px !important;
+        padding-top: 25% !important;
     }
 
     .size-image {
@@ -85,6 +85,11 @@
 
     .shirt {
         padding-top: 10% !important;
+    }
+
+    .slider-container {
+        height: 85vh !important;
+        max-height: 100%;
     }
 
 }
