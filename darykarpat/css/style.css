@@ -65,9 +65,8 @@
     }
   
    }
-}
+
 @media (max-width: 897px) {
-   
     .ze-kartinka {
         display: flex;
         justify-content: center;
@@ -161,6 +160,20 @@
         left: 20% !important;
         width: 30% !important;
    }
+   .row.no-gutters.px-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    flex-direction: row-reverse;
+    width: 100%;
+    bottom: 40vh;
+   }
+}
+@media (max-width: 1079px) {
+    .arrows-position {
+        display:none !important;
+    }
 }
 @media screen and (max-width: 1200px) {
     #zamok-desktop {
@@ -760,7 +773,10 @@ input::-webkit-calendar-picker-indicator {
 .ze-kartinka-second {
     padding-top: 10%;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> c96e126818a699031d22de548b3e93f45a33b1d1
 .size-image {
     height: 55vh;
     max-height: 55vh;
@@ -779,6 +795,17 @@ input::-webkit-calendar-picker-indicator {
 .margin-left-3000 {
     margin-left: 
 }
+<<<<<<< HEAD
+.arrows-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    flex-direction: row-reverse;
+    width: 100%;
+    bottom: 40vh;
+}
+=======
 .px-header {
     padding-right: calc(6vw + 10px);
     padding-left: calc(6vw + 10px);
@@ -793,3 +820,4 @@ input::-webkit-calendar-picker-indicator {
 }
 
 
+>>>>>>> c96e126818a699031d22de548b3e93f45a33b1d1
