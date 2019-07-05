@@ -549,16 +549,16 @@ input {
 #slider-controls-left {
     position: relative;
     display: flex;
-    bottom: -10px;
-    left: 88%;
-    width: 10%;
+    bottom: 35vh;
+    width: 20%;
+    left: 45px;
 }
 #slider-controls-right {
     position: relative;
     display: flex;
-    bottom: -10px;
-    left: 6%;
-    width: 10%;
+    bottom: 35vh;
+    float: right;
+    width: 15%;    
 }
 #slider-controls div {
     height: 8px;
@@ -583,8 +583,8 @@ input {
     background-color: #C20000;
 }
 .control-arrow-left, .control-arrow-right {
-    height: 12px;
-    width: 12px;
+    height: 24px;
+    width: 24px;
     background-color: transparent;
     transform-origin: 50% 50%;
     margin: 14px;
@@ -595,9 +595,9 @@ input {
     transition: .3s all;
 }
 .control-arrow-left:hover, .control-arrow-right:hover {
-    height: 24px;
-    width: 24px;
-    margin: 8px;
+    height: 35px;
+    width: 35px;
+    margin: 12px;
     border-bottom: 4px solid #C20000;
     border-right: 4px solid #C20000;
 }
