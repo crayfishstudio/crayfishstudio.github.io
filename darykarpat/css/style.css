@@ -31,6 +31,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .margin-mobile {
+        margin-top: 16px;
+    }
+
     .ze-kartinka {
         display: flex;
         justify-content: center;
@@ -257,10 +261,6 @@
         font-size: 18px !important;
     }
 
-    .img-padding {
-        padding: 10px;
-    }
-
     .custom-card:hover .card-item-name {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
@@ -274,9 +274,7 @@
         margin-top: 90px !important;
     }
 
-    .margin-mobile {
-        margin-top: 16px;
-    }
+
 }
 
 body {
@@ -929,7 +927,8 @@ input::-webkit-calendar-picker-indicator {
 .ze-kartinka-second {
     padding-top: 10%;
 }
- .size-image {
+
+.size-image {
     height: 55vh;
     max-height: 55vh;
 }
@@ -950,7 +949,8 @@ input::-webkit-calendar-picker-indicator {
 .margin-left-3000 {
     margin-left:
 }
- .arrows-position {
+
+.arrows-position {
     display: flex;
     justify-content: space-between;
     align-items: center;
