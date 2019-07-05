@@ -60,6 +60,10 @@
         left: 20% !important;
         width: 30% !important;
    }
+    .shirt {
+        padding-top: 10% !important;
+    }
+  
    }
 
 @media (max-width: 897px) {
@@ -244,11 +248,7 @@ body {
     width: 92px;
     background-color: #888;
 }
-.px-header {
-    padding-right: calc(6vw + 10px);
-    padding-left: calc(6vw + 10px);
-    z-index: 14888;
-}
+
 .custom-card-image {
     background-color: #fff;
     border-radius: 5px;
@@ -773,6 +773,10 @@ input::-webkit-calendar-picker-indicator {
 .ze-kartinka-second {
     padding-top: 10%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c96e126818a699031d22de548b3e93f45a33b1d1
 .size-image {
     height: 55vh;
     max-height: 55vh;
@@ -784,19 +788,14 @@ input::-webkit-calendar-picker-indicator {
 .review-area {
     padding: .375rem .75rem;
 }
-.right-arrow {
-    position: relative;
-    padding: 25px;
-    cursor: pointer;
-    transition: all .3s !important;
-    width: 100%;
-}
+
 .slider {
     max-height: 55vh;
 }
 .margin-left-3000 {
     margin-left: 
 }
+<<<<<<< HEAD
 .arrows-position {
     display: flex;
     justify-content: space-between;
@@ -806,3 +805,19 @@ input::-webkit-calendar-picker-indicator {
     width: 100%;
     bottom: 40vh;
 }
+=======
+.px-header {
+    padding-right: calc(6vw + 10px);
+    padding-left: calc(6vw + 10px);
+    z-index: 14888;
+}
+.bold-text-review {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+>>>>>>> c96e126818a699031d22de548b3e93f45a33b1d1
