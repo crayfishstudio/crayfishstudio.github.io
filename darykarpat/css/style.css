@@ -20,10 +20,6 @@
    }
 }
 @media screen and (max-width: 767px) {
-    .col-md-2 {
-        display: flex;
-        flex-direction: column;
-   }
     .ze-kartinka {
         display: flex;
         justify-content: center;
@@ -64,27 +60,9 @@
         left: 20% !important;
         width: 30% !important;
    }
-   .col-lg-4.col-md-6.pl-3 {
-       padding-top: 10%;
-       }
    }
-}
+
 @media (max-width: 897px) {
-    .col-md-2 {
-        display: flex;
-        flex-direction: column;
-   }
-    .col-md-2 {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        max-width: 80%;
-   }
-    .col-md-4 {
-        margin: auto;
-        max-width: 70%;
-        padding-top: 10%;
-   }
     .ze-kartinka {
         display: flex;
         justify-content: center;
@@ -95,11 +73,6 @@
    }
     .text-review {
         padding-top: 15%;
-   }
-    .col-md-6.px-5 {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
    }
     .radio {
         display:flex;
@@ -183,6 +156,20 @@
         left: 20% !important;
         width: 30% !important;
    }
+   .row.no-gutters.px-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    flex-direction: row-reverse;
+    width: 100%;
+    bottom: 40vh;
+   }
+}
+@media (max-width: 1079px) {
+    .arrows-position {
+        display:none !important;
+    }
 }
 @media screen and (max-width: 1200px) {
     #zamok-desktop {
@@ -786,18 +773,6 @@ input::-webkit-calendar-picker-indicator {
 .ze-kartinka-second {
     padding-top: 10%;
 }
-.col-md-2 {
-    padding-right: 5% !important;
-    display:flex;
-    flex-direction: column;
-}
-.col-md-4 {
-    padding-left: 2% !important;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
 .size-image {
     height: 55vh;
     max-height: 55vh;
@@ -822,6 +797,12 @@ input::-webkit-calendar-picker-indicator {
 .margin-left-3000 {
     margin-left: 
 }
-.row.no-gutters {
-    
+.arrows-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    flex-direction: row-reverse;
+    width: 100%;
+    bottom: 40vh;
 }
