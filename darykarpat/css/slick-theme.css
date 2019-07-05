@@ -204,6 +204,7 @@
 {
     font-size: 30px;
     opacity: 1;
+    left: -3px;
     color: #c20;
     transition: all .3s;
 }
