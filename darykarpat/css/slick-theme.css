@@ -1,3 +1,37 @@
+@media (max-width: 568px) {
+    .slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 15px;
+    line-height: 15px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '◆';
+    text-align: center;
+
+    opacity: 0.5;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before
+{
+    font-size: 24px;
+    opacity: 1;
+    left: -3px;
+    color: #c20;
+    transition: all .3s;
+}
+}
+
 @charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list

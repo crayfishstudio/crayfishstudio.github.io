@@ -1,3 +1,9 @@
+@media (max-width: 568px) {
+    .footer-anchor-number {
+        font-size: 20px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .price-total-top {
         display: none;
