@@ -909,6 +909,12 @@ input::-webkit-calendar-picker-indicator {
     border: none !important;
 }
 
+.btn:focus {
+    text-decoration: none;
+    border: none !important;
+    outline: none !important;
+}
+
 #romb-submit-intime {
     background-color: #777777;
     height: 12px;
