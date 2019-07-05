@@ -1,12 +1,40 @@
 <style>
     @media screen and (max-width: 992px) {
         .batya {
-            display: block !important;
+            display: block!important;
             width: 100%;
             justify-content: center !important;
-            position: absolute;
             margin-top: 10px !important;
+            text-align: center !important;
         }
+
+        .rodina-mat {
+            width: 100% !important;
+            transition: .9s all;
+            padding: 50px 0px;
+            box-sizing: padding-box;
+        }
+        
+         .yakMeneToZaebalo {
+             text-align: center;
+        position: relative;
+        float: left;
+        display: block;
+        width: 140px;
+        color: #ffffff;
+        background-color: #0084ff;
+        border: solid 1px #0084ff;
+        border-radius: 30px;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        padding: 20px 30px;
+        z-index: 1488;
+        opacity: 0;
+        transition: 0.8s all;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
     }
 
     body {
@@ -37,38 +65,41 @@
         display: inline-flex;
         width: 100%;
         justify-content: center;
-        position: absolute;
         margin-top: 100px;
     }
 
     .sinylya {
-        position: absolute;
-        bottom: -20px;
+        position: relative;
+        margin: 50px;
+        bottom: 130px;
+        left: -55px;
         transition: .5s all;
         z-index: 228;
     }
 
     .sinylya img {
-        width: 200px;
-        height: 185px;
-        transform-origin: bottom center;
-        transition: 1s all;
+        max-width: 200px;
+        min-height: 185px;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .sinylya img:after {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
     }
 
     .rodina-mat {
-        justify-content: flex-start;
         transition: .9s all;
-        padding: 50px;
+        padding: 50px 0px;
         box-sizing: padding-box;
     }
 
-    .rodina-mat:hover img {
+    .rodina-mat:hover .sinylya {
+        transform: rotate(-80deg) translateX(-160px);
         opacity: 0;
-        -o-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
-        -moz-transform: rotate(-180deg);
-        -webkit-transform: rotate(-180deg);
-        transform: rotate(-180deg);
+        transition: all 0.5s ease-in-out;
     }
 
     .rodina-mat:hover .sinylya {
@@ -84,26 +115,15 @@
     }
 
     .dochyrka {
-        position: relative;
-        top: 135px;
+        font-family: 'Gilroy', sans-serif;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
         text-align: center;
         color: #fff;
         font-size: 18px;
         transition: 1s all;
         opacity: 1;
-        transition: 0.5s all;
-    }
-
-    .dochyrka-jr {
-        position: relative;
-        top: 165px;
-        left: 6px;
-        text-align: center;
-        color: #fff;
-        font-size: 18px;
-        transition: 1s all;
-        opacity: 1;
-        transition: 0.5s all;
     }
 </style>
 <div class="batya">
@@ -124,11 +144,13 @@
     <div class="rodina-mat">
         <a href="#" class="yakMeneToZaebalo">Заполнить бриф</a>
         <div class="sinylya">
-            <p class="dochyrka-jr">Заказать<br>повышение<br>квалификации<br>вашей PPC-<br>команды</p>
+            <p class="dochyrka">Заказать<br>повышение<br>квалификации<br>вашей PPC-<br>команды</p>
             <img src="https://static.tildacdn.com/tild6639-6333-4534-a433-333531666165/__-04.svg">
         </div>
     </div>
 </div>
+
+
 <!--
 <style>
     .block-container {
