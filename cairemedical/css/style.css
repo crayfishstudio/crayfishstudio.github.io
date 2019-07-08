@@ -1,0 +1,15 @@
+
+
+.custom-button-call {
+    width: 100%;
+    background-color: #ed9108;
+    color: #fff !important;
+    border-radius: 1em;
+    text-transform: uppercase;
+}
+
+.custom-nav {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+}
