@@ -140,14 +140,14 @@ footer .footer-nav .sosial-item img {
     background-size: cover;
 }
 
-.text-main {
+#text-main-slider {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     color: #fff;
 }
 
-.text-main-regular {
+.text-slider {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: #fff;
@@ -163,15 +163,11 @@ footer .footer-nav .sosial-item img {
     font-size: 0.9375rem;
     border-radius: 2rem;
 }
-.image-card-right {
-    padding: 84px 92px;
-    background-color: #ebebeb;
-}
-
-.image-card-left {
+.image-card {
     padding: 84px 92px;
     background-color: #f8f8f8;
 }
+<<<<<<< HEAD
 .square-flex-bot {
     background-image: url(../img/all-products-portable-op.png);
     background-size: cover;
@@ -184,3 +180,5 @@ footer .footer-nav .sosial-item img {
 .margin-top {
     margin-top:
 } 
+=======
+>>>>>>> parent of 85441af... lybovanna
