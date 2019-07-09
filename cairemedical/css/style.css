@@ -1,17 +1,32 @@
+body {
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    background-color: #f5f3f1;
+    color: #595959;
+    font-size: 1.125rem;
+    line-height: 1.83;
+    position: relative;
+}
 
 .custom-button-call {
     width: 100%;
+}
+.custom-button-head {
     background-color: #ed9108;
     color: #fff !important;
     border-radius: 1em;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    border-radius: 2rem;
 }
 
-.custom-nav {
+.nav-item {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9375rem;
 }
+
 
 
 footer {
@@ -112,3 +127,60 @@ footer .footer-nav .sosial-item img {
 
 
 
+#slide-main-1 {
+    background-image: url(../img/Group%202.png);
+    padding: 50px 0px;
+    width: 100%;
+    background-size: cover;
+}
+
+#slide-main-2 {
+    background-image: url(../img/main%20slider%201.png);
+    padding: 50px 0px;
+    background-size: cover;
+}
+
+.text-main {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.text-main-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.custom-button-content {
+    width: 100%;
+    background-color: #ed9108;
+    color: #fff !important;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    border-radius: 2rem;
+}
+.image-card-right {
+    padding: 84px 92px;
+    background-color: #ebebeb;
+}
+
+.image-card-left {
+    padding: 84px 92px;
+    background-color: #f8f8f8;
+}
+.square-flex-bot {
+    background-image: url(../img/all-products-portable-op.png);
+    background-size: cover;
+}
+
+.square-flex-top {
+   background-color: green;
+}
+
+.margin-top {
+    margin-top:
+} 

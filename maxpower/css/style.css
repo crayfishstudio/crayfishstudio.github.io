@@ -423,3 +423,14 @@ input[type="text"]:focus {
 #mb-custom {
     margin-bottom: 38px;
 }
+
+
+#copyrights {
+    font-size: 0.875rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+#copyrights a {
+    color: #fff;
+}

@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container bg-white">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
                 <img src="img/Primary_Logo_CMYK.svg" style="width: 132px; height: 46px;" alt="">
@@ -69,10 +69,10 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="1-488-228-1488">1-488-228-1488</a>
+                        <a class="nav-link" href="tel:+1-488-228-1488">1-488-228-1488</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn custom-button-call" href="#">request a call<i class="fas fa-phone-alt"></i></a>
+                        <a class="nav-link btn custom-button-call px-3" href="#">request a call<i class="fas fa-phone-alt pl-2"></i></a>
                     </li>
                 </ul>
             </div>
@@ -164,6 +164,91 @@
     </div>
   </footer>
 
+    <div class="container-fluid px-0">
+        <div class="slider-main">
+            <div id="slide-main-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h1 class="text-main">wherever you may go.<br>whatever you may face.</h1>
+                            <p class="text-main-regular">With our full range of oxygen concentrators, you can get back to whatever or whoever is counting on you. Our technology is trusted by those who demand the best so you can trust CAIRE</p>
+                            <a class="btn custom-button-head px-3" href="#">request a call<i class="fas fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slide-main-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h1 class="text-main">wherever you may go.<br>whatever you may face.</h1>
+                            <p class="text-main-regular">With our full range of oxygen concentrators, you can get back to whatever or whoever is counting on you. Our technology is trusted by those who demand the best so you can trust CAIRE</p>
+                            <a class="btn custom-button-head px-3" href="#">request a call<i class="fas fa-caret-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container margin-top">
+        <div class="row no-gutters bg-white pt-md-4">
+            <div class="col-md-8">
+                <h2 id="products-name">Our Products</h2>
+                <p class="regular-text">CAIRE oxygen concentrators give you the mobility and freedom to live your life and be there for those who depend on you. Explore the family of CAIRE concentrators below. </p>
+            </div>
+            <div class="col-md-4">
+                <a class="btn custom-button-content px-3" href="#">request a call<i class="fas fa-caret-right"></i></a>
+                <a class="btn" href="#"><i class="fas fa-caret-right"></i>download product information kit</a>
+            </div>
+        </div>
+        <div class="row no-gutters justify-content-center">
+            <div class="col-md-6 s-shaded-light text-center">
+                <div class="image-card-left">
+                    <a href="#" alt="">
+                        <img class="img-fluid" src="img/all-products-wearable.png">
+                        <h2 id="products-name">Our Products</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 s-shaded-medium text-center">
+                <div class="image-card-right">
+                    <a href="#" alt="">
+                        <img class="img-fluid" src="img/all-products-portable-op.png">
+                        <h2 id="products-name">Our Products</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <div class="square-flex-top">
+                    <div class="row no-gutters">
+                        <div class="col-11 col-xl-7 p-5">
+                            <h1 class="text-main">living with copd</h1>
+                            <p class="text-main-regular">COPD is a part of your life. But it doesn’t mean you can’t live your life to the best of your ability. It’s important to understand what COPD is and how our technology can help you get back to the things that matter most.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="square-flex-bot">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="">
+
+    </footer>
+
 
 
 
@@ -185,20 +270,17 @@
             });
     </script>
     <script>
-        $('.slider').slick({
+        $('.slider-main').slick({
             infinite: true,
             slidesToShow: 1,
-            autoplay: true,
+            autoplay: false,
             pauseOnHover: false,
             autoplaySpeed: 5000,
             speed: 1200,
             touchMove: true,
             swipeToSlide: true,
             draggable: true,
-            arrows: true,
-            appendArrows: ('.arrows-container'),
-            prevArrow: ('.left-arrow-container'),
-            nextArrow: ('.right-arrow-container')
+            arrows: false,
         });
     </script>
 
