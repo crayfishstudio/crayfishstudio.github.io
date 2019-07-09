@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    background-color: #f5f3f1;
+    color: #595959;
+    font-size: 1.125rem;
+    line-height: 1.83;
+    position: relative;
+}
+
+.custom-button-head {
+    background-color: #ed9108;
+    color: #fff !important;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    border-radius: 2rem;
+}
+
+.custom-button-call {
+    background-color: #ed9108;
+    color: #fff !important;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    border-radius: 2rem;
+}
+
+.custom-button-container {
+    background-color: #145CA6;
+    color: #fff !important;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    border-radius: 2rem;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+}
+
+#slide-main-1 {
+    background-image: url(../img/Group%202.png);
+    padding: 50px 0px;
+    width: 100%;
+    background-size: cover;
+}
+
+#slide-main-2 {
+    background-image: url(../img/main%20slider%201.png);
+    padding: 50px 0px;
+    background-size: cover;
+}
+
+.text-main {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.text-main-container {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.text-main-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.custom-button-content {
+    width: 100%;
+    background-color: #ed9108;
+    color: #fff !important;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    border-radius: 2rem;
+}
+.image-card-right {
+    padding: 84px 92px;
+    background-color: #ebebeb;
+}
+
+.image-card-left {
+    padding: 84px 92px;
+    background-color: #f8f8f8;
+}
+
+.margin-top {
+}
+
+.square-flex {
+    
+}
+
+.bg-green {
+    background-color: #AFC124;
+}
+
+.bg-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/photo_2019-07-07_16-17-16.jpg);
+}
+
+.main-text-container {    
+    background-color: #fff;
+    padding: 80px 70px;
+    transform: translateX(80px);
+}
+
+.second-text-container {    
+    background-color: #fff;
+    padding: 80px 70px;
+    transform: translateX(-80px);
+}
