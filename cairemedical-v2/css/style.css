@@ -167,7 +167,6 @@ footer {
 
     color: #fff !important;
     font-size: 12px;
-
 }
 
 .links {
@@ -221,7 +220,8 @@ footer {
     text-decoration: none;
 }
 
-.dropdown-item:hover, .dropdown-item:focus{
+.dropdown-item:hover,
+.dropdown-item:focus {
     color: #145ca6 !important;
     background-color: #fff !important;
 }
@@ -233,8 +233,9 @@ footer {
 }
 
 .products-name:hover {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
+
 .regular-text {
     color: #595959;
     font-size: 0.9rem;
@@ -258,4 +259,88 @@ footer {
 
 .container-list:hover {
     color: #145ca6;
+}
+
+@media (max-width: 992px) {
+    .left {
+        margin-left: 5vh;
+    }
+}
+
+.contact {
+    background-color: #145ca6;
+}
+
+.contact-us {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 80px 60px;
+    margin-left: 50px;
+}
+
+.phone {
+    background-color: #fff;
+}
+
+.col-lg-4 p h2 h3 {
+    margin-left: 5vh;
+
+}
+
+.firstItem {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.secondItem {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.contact-text {
+    padding-top: 2vh;
+    padding-left: 2vh;
+}
+
+.map {
+    padding: 0;
+}
+
+.maps {
+    padding: 0;
+
+}
+
+.message {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.secondBlock {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.check {
+    font-size: 13px;
+}
+
+.form-control {
+    font-size: 13px;
+}
+
+.products {
+    font-size: 15px;
+}
+
+@media (max-width: 992px) {
+    .contact-us {
+        text-align: center;
+        margin: auto;
+    }
+
+    .firstBlock {
+        padding: 0;
+
+    }
 }
