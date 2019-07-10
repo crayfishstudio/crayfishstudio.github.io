@@ -87,6 +87,7 @@ body {
     font-size: 0.9375rem;
     border-radius: 2rem;
 }
+
 .image-card-right {
     padding: 84px 92px;
     background-color: #ebebeb;
@@ -97,12 +98,9 @@ body {
     background-color: #f8f8f8;
 }
 
-.margin-top {
-}
+.margin-top {}
 
-.square-flex {
-    
-}
+.square-flex {}
 
 .bg-green {
     background-color: #AFC124;
@@ -115,17 +113,18 @@ body {
     background-image: url(../img/photo_2019-07-07_16-17-16.jpg);
 }
 
-.main-text-container {    
+.main-text-container {
     background-color: #fff;
     padding: 80px 70px;
     transform: translateX(80px);
 }
 
-.second-text-container {    
+.second-text-container {
     background-color: #fff;
     padding: 80px 70px;
     transform: translateX(-80px);
 }
+
 footer {
     background-color: #145ca6;
     padding: 40px 0px;
@@ -135,7 +134,7 @@ footer {
 
     color: #fff !important;
     font-size: 12px;
-    
+
 }
 
 
@@ -157,11 +156,11 @@ footer {
     display: flex;
     justify-content: center;
     color: #fff;
-    
+
 }
 
 .social div {
-    display:inline-block;
+    display: inline-block;
     text-align: center;
     vertical-align: bottom;
     color: #145ca6;
@@ -169,7 +168,7 @@ footer {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    
+
 }
 
 .footerText {
@@ -179,8 +178,96 @@ footer {
 .left {
     margin-left: 2vh;
 }
+
 @media (max-width: 992px) {
     .left {
         margin-left: 5vh;
+    }
 }
 
+.contact {
+    background-color: #145ca6;
+}
+
+
+.contact-us {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 80px 60px;
+    margin-left: 50px;
+}
+
+.phone {
+    background-color: #fff;
+}
+
+.col-lg-4 p h2 h3 {
+    margin-left: 5vh;
+
+}
+
+.firstItem {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.secondItem {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+
+
+}
+
+.contact-text {
+    padding-top: 2vh;
+    padding-left: 2vh;
+}
+
+.map {
+    padding: 0;
+}
+
+.maps {
+    padding: 0;
+
+}
+
+
+
+.message {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+
+.secondBlock {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.check {
+    font-size: 13px;
+}
+
+
+
+.form-control {
+    font-size: 13px;
+}
+
+.products {
+    font-size: 15px;
+}
+
+@media (max-width: 992px) {
+    .contact-us {
+        text-align: center;
+        margin: auto;
+    }
+
+    .firstBlock {
+        padding: 0;
+
+    }
+}
