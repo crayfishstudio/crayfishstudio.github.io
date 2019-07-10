@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/zoom.css">
@@ -37,24 +37,24 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-white px-0 py-3">
+    <div class="container-fluid bg-white px-0 py-4">
         <div class="container bg-white px-0">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
-                    <img src="img/Primary_Logo_CMYK.svg" style="width: 132px; height: 46px;" alt="">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand p-0" href="#">
+                    <img src="img/logo.png" style="width: 132px; height: 46px;" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item custom-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">products</a>
                         </li>
-                        <li class="nav-item custom-nav">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">who we are</a>
                         </li>
-                        <li class="nav-item dropdown custom-nav">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 resources
                             </a>
@@ -64,18 +64,12 @@
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
-                        <li class="nav-item custom-nav">
-                            <a class="nav-link" href="#">cont.</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contacts</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="tel:+1-488-228-1488">1-488-228-1488</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn custom-button-call px-3" href="#">request a call<i class="fas fa-phone-alt pl-2"></i></a>
-                        </li>
-                    </ul>
+                    <a class="nav-number mr-2 ml-5" href="tel:+1-488-228-1488">1-488-228-1488</a>
+                    <a class="btn custom-button-call pl-3" href="#">request a call<i class="fas fa-phone-alt pl-3"></i></a>
                 </div>
             </nav>
         </div>
@@ -85,24 +79,23 @@
         <div class="slider-main">
             <div id="slide-main-1">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-9">
+                    <div class="row no-gutters px-4">
+                        <div class="col-md-8">
                             <h1 class="text-main">wherever you may go.<br>whatever you may face.</h1>
-                            <p class="text-main-regular">With our full range of oxygen concentrators, you can get back to whatever or whoever is counting on you. Our technology is trusted by those who demand the best so you can trust CAIRE</p>
-                            <a class="btn custom-button-head px-3" href="#">request a call<i class="fas fa-caret-right"></i></a>
+                            <p class="text-main-regular">With our full range of oxygen concentrators, you can get back to whatever or whoever<br>is counting on you. Our technology is trusted by those who demand the best so you can trust CAIRE<sup>®</sup> products to be there for you.</p>
+                            <a class="btn custom-button-slider px-3 mt-2" href="#">view oxygen products<i class="fas fa-caret-right pl-4"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="slide-main-2">
                 <div class="container">
-                    <div class="row">
+                    <div class="row no-gutters px-4">
                         <div class="col-md-9">
                             <h1 class="text-main">wherever you may go.<br>whatever you may face.</h1>
-                            <p class="text-main-regular">With our full range of oxygen concentrators, you can get back to whatever or whoever is counting on you. Our technology is trusted by those who demand the best so you can trust CAIRE</p>
-                            <a class="btn custom-button-head px-3" href="#">learn more<i class="fas fa-caret-right ml"></i></a>
+                            <p class="text-main-regular">With our full range of oxygen concentrators, you can get back to whatever or whoever is counting on you. Our technology is trusted by those who demand the best so you can trust CAIRE<sup>®</sup> products to be there for you.</p>
+                            <a class="btn custom-button-slider px-3 mt-2" href="#">learn more<i class="fas fa-caret-right pl-4"></i></a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -112,13 +105,16 @@
 
     <div class="container margin-top px-0">
         <div class="row no-gutters bg-white pt-md-4">
-            <div class="col-md-8">
-                <h2 id="products-name">Our Products</h2>
+            <div class="col-md-8 pt-3 pl-5">
+                <h2 class="products-name mb-4">Our Products</h2>
                 <p class="regular-text">CAIRE oxygen concentrators give you the mobility and freedom to live your life and be there for those who depend on you. Explore the family of CAIRE concentrators below.</p>
             </div>
-            <div class="col-md-4">
-                <a class="btn custom-button-content px-3" href="#">request a call<i class="fas fa-caret-right"></i></a>
-                <a class="btn" href="#"><i class="fas fa-caret-right"></i>download product information kit</a>
+            <div class="col-md-4 pl-5">
+                <a class="btn custom-button-content pl-4" href="#">browse all products<i class="fas fa-play pl-15 item-size"></i></a>
+                <div class="d-flex">
+                    <a class="btn custom-button-circle mt-3" href="#"><i class="fas fa-play item-size pl-1 mt-3"></i></a>
+                    <p class="regular-text pl-3 mt-3">DOWNLOAD PRODUCT<br> INFORMATION KIT</p>
+                </div>
             </div>
         </div>
         <div class="row no-gutters justify-content-center">
@@ -126,7 +122,7 @@
                 <div class="image-card-left">
                     <a href="#" alt="">
                         <img class="img-fluid" src="img/all-products-wearable.png">
-                        <h2 id="products-name">Our Products</h2>
+                        <h2 class="products-name mt-3">Wearable Technology</h2>
                     </a>
                 </div>
             </div>
@@ -134,7 +130,7 @@
                 <div class="image-card-right">
                     <a href="#" alt="">
                         <img class="img-fluid" src="img/all-products-wearable.png">
-                        <h2 id="products-name">Our Products</h2>
+                        <h2 class="products-name mt-3">Portable & At Home Technology</h2>
                     </a>
                 </div>
             </div>
@@ -145,9 +141,9 @@
         <div class="row no-gutters">
             <div class="col-7 py-5" style="z-index: 1488;">
                 <div class="main-text-container my-5">
-                    <h1 class="text-main-container">living with copd</h1>
-                    <p class="regular-text">COPD is a part of your life. But it doesn’t mean you can’t live your life to the best of your ability. It’s important to understand what COPD is and how our technology can help you get back to the things that matter most.</p>
-                    <a class="btn custom-button-container px-3" href="#">about copd<i class="fas fa-caret-right pl-3"></i></a>
+                    <h1 class="text-main-container mb-3">living with copd</h1>
+                    <p class="regular-text pb-3">COPD is a part of your life. But it doesn’t mean you can’t live your life to the best of your ability. It’s important to understand what COPD is and how our technology can help you get back to the things that matter most.</p>
+                    <a class="btn custom-button-container px-3" href="#">about copd<i class="fas fa-play item-size pl-4"></i></a>
                 </div>
             </div>
             <div class="col-5">
@@ -158,19 +154,34 @@
 
     <div class="container mt-3 bg-green px-0">
         <div class="row no-gutters">
-            <div class="col-xl-5">
-                <div class="bg-image"></div>
+            <div class="col-5">
+                <div id="container-background" class="bg-image"></div>
             </div>
-            <div class="col-xl-7 col-12 py-5" style="z-index: 1488;">
+            <div class="col-7 py-5" style="z-index: 1488;">
                 <div class="second-text-container my-5">
-                    <h1 class="text-main-container">Innovation with Every Breath</h1>
-                    <p class="regular-text">The military relies on CAIRE’s portable and stationary oxygen concentrators for field hospitals, medical evacuation, and battlefield situations. Our units are made to withstand the harshest of environments, so you can rest assured you can trust CAIRE in your living room.</p>
-                    <a class="btn custom-button-container px-3" href="#">about copd<i class="fas fa-caret-right pl-3"></i></a>
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <ul class="mt-5">
+                                <li id="innovation" class="container-list"> innovation
+                                </li>
+                                <li id="military" class="container-list"> military
+                                </li>
+                                <li id="altitude" class="container-list"> altitude
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-8">
+                            <h1 class="text-main-container">Innovation with Every Breath</h1>
+                            <p id="output" class="regular-text">With our portable concentrators, at home concentrators, and liquid oxygen systems, CAIRE products help countless oxygen users breathe easier, while supporting some of the most demanding customers.</p>
+                            <a class="btn custom-button-container px-3" href="#">about copd<i class="fas fa-play item-size pl-4"></i></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
         </div>
     </div>
+    
     <footer class="container-fluid">
         <div class="container">
             <div class="row align-items-center no-gutters">
@@ -180,24 +191,30 @@
                     </a>
                 </div>
                 <div class="col-lg-7 footer-links">
-                   <p>Copyright 2019 CAIRE Inc. Used with permission, all rights reserved</p>
-                    <a class="footerText"href="#">Privacy Policy</a>
+                    <p>Copyright 2019 CAIRE Inc. Used with permission, all rights reserved</p>
+                    <a class="footerText" href="#">Privacy Policy</a>
                     <a class="footerText" href="#">Terms of use</a>
                 </div>
                 <div class="col-lg-3 col social">
-                    <a href="#"><div><i class="fab fa-facebook-f"></i></div></a>
-                    <a href="#"><div class="left"><i class="fab fa-twitter"></i></div></a>
-                    <a href="#"><div class="left"><i class="fab fa-linkedin-in"></i></div></a>
-                    <a href="#"><div class="left"><i class="fab fa-youtube"></i></div></a>
-                    <a href="#"><div class="left"><i class="fab fa-wordpress"></i></div></a>
+                    <a href="#">
+                        <div><i class="fab fa-facebook-f"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="left"><i class="fab fa-twitter"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="left"><i class="fab fa-linkedin-in"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="left"><i class="fab fa-youtube"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="left"><i class="fab fa-wordpress"></i></div>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-
-    
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -221,7 +238,7 @@
             slidesToShow: 1,
             autoplay: false,
             pauseOnHover: false,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 1000,
             speed: 1200,
             touchMove: true,
             swipeToSlide: true,
@@ -229,8 +246,22 @@
             arrows: false,
         });
     </script>
-    
+    <script>
+        document.getElementById("innovation").onclick = function() {
+            document.getElementById("output").innerHTML = "With our portable concentrators, at home concentrators, and liquid oxygen systems, CAIRE products help countless oxygen users breathe easier, while supporting some of the most demanding customers.";
+            document.getElementById("container-background").style.backgroundImage = "url(../img/Group%202.png)";
+        }
 
+        document.getElementById("military").onclick = function() {
+            document.getElementById("output").innerHTML = "The military relies on CAIRE’s portable and stationary oxygen concentrators for field hospitals, medical evacuation, and battlefield situations. Our units are made to withstand the harshest of environments, so you can rest assured you can trust CAIRE in your living room.";
+            document.getElementById("container-background").style.backgroundImage = "url(../img/photo_2019-07-07_16-17-16.jpg)";
+        }
+
+        document.getElementById("altitude").onclick = function() {
+            document.getElementById("output").innerHTML = "From the bottom of your neighbor’s driveway to helping climbers at Mount Everest, our technology is relied on to deliver oxygen to those who need it most.";
+            document.getElementById("container-background").style.backgroundImage = "url(../img/main%20slider%201.png)";
+        }
+    </script>
 </body>
 
 </html>

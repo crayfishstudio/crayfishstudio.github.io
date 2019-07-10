@@ -1,3 +1,18 @@
+@media (max-width: 992px) {
+    .left {
+        margin-left: 5vh;
+    }
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    color: #0275d8;
+    text-decoration: none;
+    outline: 0;
+    background-color: #f8f8f8;
+}
+
 body {
     font-family: 'Arvo', serif;
     font-weight: 400;
@@ -8,7 +23,7 @@ body {
     position: relative;
 }
 
-.custom-button-head {
+.custom-button-slider {
     background-color: #ed9108;
     color: #fff !important;
     border-radius: 1em;
@@ -16,16 +31,19 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9375rem;
     border-radius: 2rem;
+    font-weight: 500;
+    margin-bottom: 16vh;
 }
 
 .custom-button-call {
     background-color: #ed9108;
     color: #fff !important;
-    border-radius: 1em;
+    border-radius: 1rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9375rem;
+    font-size: 0.825rem;
     border-radius: 2rem;
+    font-weight: 700;
 }
 
 .custom-button-container {
@@ -35,6 +53,7 @@ body {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9375rem;
+    font-weight: 500;
     border-radius: 2rem;
 }
 
@@ -44,10 +63,15 @@ body {
     font-size: 0.9375rem;
 }
 
+.nav-link:hover {
+    color: #145ca6 !important;
+}
+
+
+
 #slide-main-1 {
     background-image: url(../img/Group%202.png);
     padding: 50px 0px;
-    width: 100%;
     background-size: cover;
 }
 
@@ -60,15 +84,16 @@ body {
 .text-main {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: #fff;
+    margin-top: 15vh;
 }
 
 .text-main-container {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-    color: #000;
+    color: #595959;
 }
 
 .text-main-regular {
@@ -78,14 +103,25 @@ body {
 }
 
 .custom-button-content {
-    width: 100%;
-    background-color: #ed9108;
+    background-color: #145CA6;
     color: #fff !important;
-    border-radius: 1em;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9375rem;
+    font-weight: 500;
+    font-size: 0.85rem;
     border-radius: 2rem;
+}
+
+.custom-button-circle {
+    background-color: #145CA6;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border-radius: 2rem;
+    width: 60px;
+    height: 60px;
 }
 
 .image-card-right {
@@ -97,10 +133,6 @@ body {
     padding: 84px 92px;
     background-color: #f8f8f8;
 }
-
-.margin-top {}
-
-.square-flex {}
 
 .bg-green {
     background-color: #AFC124;
@@ -115,14 +147,15 @@ body {
 
 .main-text-container {
     background-color: #fff;
-    padding: 80px 70px;
+    padding: 50px 70px;
     transform: translateX(80px);
 }
 
 .second-text-container {
     background-color: #fff;
-    padding: 80px 70px;
+    padding: 70px 55px 70px 0px;
     transform: translateX(-80px);
+    height: 440px;
 }
 
 footer {
@@ -134,10 +167,7 @@ footer {
 
     color: #fff !important;
     font-size: 12px;
-
 }
-
-
 
 .links {
     color: #fff !important;
@@ -179,6 +209,58 @@ footer {
     margin-left: 2vh;
 }
 
+.nav-number {
+    color: #145ca6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.825rem;
+    font-weight: 500;
+}
+
+.nav-number:hover {
+    text-decoration: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #145ca6 !important;
+    background-color: #fff !important;
+}
+
+.products-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #595959;
+    font-size: 1.45rem;
+}
+
+.products-name:hover {
+    text-decoration: none !important;
+}
+
+.regular-text {
+    color: #595959;
+    font-size: 0.9rem;
+}
+
+.item-size {
+    font-size: 0.7rem;
+}
+
+.pl-15 {
+    padding-left: 5rem;
+}
+
+.container-list {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: #9b9b9b;
+    font-family: 'Montserat', sans-serif;
+    font-size: 1.125rem;
+}
+
+.container-list:hover {
+    color: #145ca6;
+}
+
 @media (max-width: 992px) {
     .left {
         margin-left: 5vh;
@@ -188,7 +270,6 @@ footer {
 .contact {
     background-color: #145ca6;
 }
-
 
 .contact-us {
     color: #fff;
@@ -215,8 +296,6 @@ footer {
 .secondItem {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
-
-
 }
 
 .contact-text {
@@ -233,14 +312,10 @@ footer {
 
 }
 
-
-
 .message {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-
-
 
 .secondBlock {
     font-family: 'Montserrat', sans-serif;
@@ -249,8 +324,6 @@ footer {
 .check {
     font-size: 13px;
 }
-
-
 
 .form-control {
     font-size: 13px;
@@ -270,6 +343,7 @@ footer {
         padding: 0;
 
     }
+
 }
 
 .faq h1 {
@@ -363,4 +437,5 @@ footer {
         justify-content: space-between;
     }
 }
+
 
