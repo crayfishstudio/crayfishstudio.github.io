@@ -1,15 +1,184 @@
-
+body {
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    background-color: #f5f3f1;
+    color: #595959;
+    font-size: 1.125rem;
+    line-height: 1.83;
+    position: relative;
+}
 
 .custom-button-call {
+    width: 100%;
+}
+.custom-button-head {
+    background-color: #ed9108;
+    color: #fff !important;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    border-radius: 2rem;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+}
+
+
+
+footer {
+  min-height: 140px;
+  background-image: linear-gradient(276deg, #273f97, #4474bf);
+}
+footer .footer-nav {
+  padding: 54px 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-height: 998px) {
+  footer .footer-nav {
+    flex-wrap: wrap;
+  }
+}
+footer .footer-nav .footer-logo img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 991.5px) {
+  footer .footer-nav .footer-logo img {
+    display: none;
+  }
+}
+footer .footer-nav .nav-menu {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+footer .footer-nav .nav-menu .menu-items-list {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  footer .footer-nav .nav-menu .menu-items-list {
+    flex-wrap: wrap;
+  }
+  footer .footer-nav .nav-menu .menu-items-list .menu-item {
+    margin: 10px !important;
+  }
+}
+footer .footer-nav .nav-menu .menu-items-list .menu-item {
+  margin: 0 15px;
+  height: 100%;
+}
+footer .footer-nav .nav-menu .menu-items-list a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+  white-space: nowrap;
+}
+footer .footer-nav .social-media-list {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  footer .footer-nav .social-media-list {
+    margin-top: 20px;
+  }
+  footer .footer-nav .social-media-list :first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 991.5px) {
+  footer .footer-nav .social-media-list {
+    margin-top: 50px;
+  }
+  footer .footer-nav .social-media-list :first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 991.5px) {
+  footer .footer-nav .social-media {
+    width: 100%;
+  }
+  footer .footer-nav .social-media .social-media-list {
+    justify-content: center;
+  }
+}
+footer .footer-nav .sosial-item {
+  margin: 0 12px;
+}
+footer .footer-nav .sosial-item img {
+  height: 18px;
+  color: #fff;
+}
+
+
+
+
+#slide-main-1 {
+    background-image: url(../img/Group%202.png);
+    padding: 50px 0px;
+    width: 100%;
+    background-size: cover;
+}
+
+#slide-main-2 {
+    background-image: url(../img/main%20slider%201.png);
+    padding: 50px 0px;
+    background-size: cover;
+}
+
+#text-main-slider {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.text-slider {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.custom-button-content {
     width: 100%;
     background-color: #ed9108;
     color: #fff !important;
     border-radius: 1em;
     text-transform: uppercase;
-}
-
-.custom-nav {
-    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9375rem;
+    border-radius: 2rem;
 }
+.image-card {
+    padding: 84px 92px;
+    background-color: #f8f8f8;
+}
+<<<<<<< HEAD
+.square-flex-bot {
+    background-image: url(../img/all-products-portable-op.png);
+    background-size: cover;
+}
+
+.square-flex-top {
+   background-color: green;
+}
+
+.margin-top {
+    margin-top:
+} 
+=======
+>>>>>>> parent of 85441af... lybovanna
