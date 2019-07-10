@@ -46,6 +46,8 @@
     --almost-black: #1F1F1F;
     --red-gradient: linear-gradient(45deg, #C22026 0%, #D43E27 100%);
     --red-solid: #D03827;
+    --shadow-light: 0px 0px 26px rgba(181, 181, 181, 0.1);
+    --shadow-medium: 0px 0px 30px rgba(181, 181, 181, 0.2);
 }
 
 body {
@@ -215,7 +217,7 @@ input[type="text"]:focus {
     position: absolute;
     width: 100%;
     top: 100%;
-    box-shadow: 0px 0px 30px rgba(181, 181, 181, 0.2);
+    box-shadow: var(--shadow-medium);
     padding: 35px;
     display: none;
 }
@@ -228,13 +230,13 @@ input[type="text"]:focus {
     padding: 5px;
 }
 .item-card {
-    box-shadow: 0px 0px 26px rgba(181, 181, 181, 0.1);
+    box-shadow: var(--shadow-light);
     padding: 35px 40px;
     transition: all .2s;
 }
 
 .item-card:hover {
-    box-shadow: 0px 0px 30px rgba(181, 181, 181, 0.2);  
+    box-shadow: var(--shadow-medium);  
 }
 
 .item-card:hover .item-image {
@@ -434,3 +436,92 @@ input[type="text"]:focus {
 #copyrights a {
     color: #fff;
 }
+
+.categoty-card {
+    box-shadow: var(--shadow-light);
+    background-color: #fff;
+}
+
+.categoty-card-header {
+    background-color: var(--almost-black);
+    padding: 13px 0px;
+}
+
+.category-card-name a {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: all .3s;
+}
+
+.category-card-name:hover a {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.category-card-name div {
+    height: 14px;
+    width: 14px;
+    background-image: var(--red-gradient);
+    display: inline-block;
+    margin-left: 25px;
+    border-radius: 7px;
+}
+
+.category-card-header a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.category-card-header {
+    text-align: right;
+}
+
+.categoty-card-body {
+    padding: 30px 0px;
+}
+
+.categoty-card-body a {
+    font-size: 1.125rem;
+    transition: all .3s;
+    color: var(--dark-gray);
+    display: block;
+    margin-top: 10px;
+}
+
+.categoty-card-body a:hover {
+    color: var(--almost-black);
+}
+
+.category-image {
+    margin-top: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.category-card-link a {
+    font-size: 1rem;
+    color: var(--medium-gray);
+    margin-top: 40px;
+}
+
+.category-card-link a:hover {
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+.category-card-link img {
+    margin-left: 25px;
+    transition: all .3s;
+}
+
+.category-card-link:hover img {
+    margin-left: 30px;
+}
+
