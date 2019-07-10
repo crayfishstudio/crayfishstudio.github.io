@@ -1,40 +1,24 @@
 <style>
     @media screen and (max-width: 992px) {
         .batya {
-            display: block!important;
-            width: 100%;
-            justify-content: center !important;
-            margin-top: 10px !important;
-            text-align: center !important;
+            display: block !important;
+            justify-content: center;
         }
 
-        .rodina-mat {
-            width: 100% !important;
-            transition: .9s all;
-            padding: 50px 0px;
-            box-sizing: padding-box;
+        .sinylya {
+            position: relative;
+            bottom: 30px;
+            text-align: center;
+            transition: .5s all;
+            z-index: 228;
         }
-        
-         .yakMeneToZaebalo {
-             text-align: center;
-        position: relative;
-        float: left;
-        display: block;
-        width: 140px;
-        color: #ffffff;
-        background-color: #0084ff;
-        border: solid 1px #0084ff;
-        border-radius: 30px;
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
-        padding: 20px 30px;
-        z-index: 1488;
-        opacity: 0;
-        transition: 0.8s all;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-    }
+
+        .dochyrka {
+            position: absolute;
+            margin-left: 115px;
+            color: #000;
+        }
+
     }
 
     body {
@@ -43,12 +27,10 @@
 
     .yakMeneToZaebalo {
         position: relative;
-        float: left;
+        bottom: -100px;
         display: block;
-        width: 140px;
-        color: #ffffff;
+        color: #fff;
         background-color: #0084ff;
-        border: solid 1px #0084ff;
         border-radius: 30px;
         -moz-border-radius: 30px;
         -webkit-border-radius: 30px;
@@ -65,14 +47,12 @@
         display: inline-flex;
         width: 100%;
         justify-content: center;
-        margin-top: 100px;
     }
 
     .sinylya {
         position: relative;
-        margin: 50px;
-        bottom: 130px;
-        left: -55px;
+        bottom: 30px;
+        left: 0px;
         transition: .5s all;
         z-index: 228;
     }
@@ -84,22 +64,34 @@
         transition: all 0.5s ease-in-out;
     }
 
-    .sinylya img:after {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
-
     .rodina-mat {
+        padding: 25px;
         transition: .9s all;
-        padding: 50px 0px;
         box-sizing: padding-box;
     }
 
     .rodina-mat:hover .sinylya {
-        transform: rotate(-80deg) translateX(-160px);
+        animation: mymove 1.5s ease-in-out;
+        transform: rotate(0deg) translateX(0px);
         opacity: 0;
         transition: all 0.5s ease-in-out;
+    }
+
+    @keyframes mymove {
+        0% {
+            transform: rotate(0deg) translateX(0px);
+            opacity: 1;
+        }
+
+        50% {
+            transform: rotate(-80deg) translateX(-160px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: rotate(-80deg) translateX(-160px);
+            opacity: 0;
+        }
     }
 
     .rodina-mat:hover .sinylya {
@@ -125,24 +117,35 @@
         transition: 1s all;
         opacity: 1;
     }
+
+    .main-text {
+        color: #000;
+        font-size: 36px;
+        font-family: 'Gilroy', Arial, sans-serif;
+        line-height: 1.55;
+        font-weight: 700;
+        text-align: center;
+    }
 </style>
+
+<h2 class="main-text">Персональная консультация</h2>
 <div class="batya">
     <div class="rodina-mat">
-        <a href="#" class="yakMeneToZaebalo">Заполнить бриф</a>
+        <a href="#" class="yakMeneToZaebalo" target="_blank">Заполнить бриф</a>
         <div class="sinylya">
             <p class="dochyrka">Заказать<br>персональную<br>консультацию</p>
             <img src="https://static.tildacdn.com/tild3961-6435-4437-a537-646663663434/__-01.svg">
         </div>
     </div>
     <div class="rodina-mat">
-        <a href="#" class="yakMeneToZaebalo">Заполнить бриф</a>
+        <a href="#" class="yakMeneToZaebalo" target="_blank">Заполнить бриф</a>
         <div class="sinylya">
             <p class="dochyrka">Заказать<br>групповую<br>консультацию</p>
             <img src="https://static.tildacdn.com/tild3466-3962-4532-b334-366636383332/__-02.svg">
         </div>
     </div>
     <div class="rodina-mat">
-        <a href="#" class="yakMeneToZaebalo">Заполнить бриф</a>
+        <a href="#" class="yakMeneToZaebalo" target="_blank">Заполнить бриф</a>
         <div class="sinylya">
             <p class="dochyrka">Заказать<br>повышение<br>квалификации<br>вашей PPC-<br>команды</p>
             <img src="https://static.tildacdn.com/tild6639-6333-4534-a433-333531666165/__-04.svg">
