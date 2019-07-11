@@ -47,16 +47,17 @@
         border-radius: 30px;
         -moz-border-radius: 30px;
         -webkit-border-radius: 30px;
-        padding: 0;
-        height: 0;
-        width: 0;
+        padding: 20px 30px;
         z-index: 10;
-        opacity: 1;
+        opacity: 0;
         text-decoration: none;
         text-align: center;
         font-weight: 700;
-        transition: .1s all;
+        transition: 1s all;
         display: block;
+    }
+    .content-block a {
+        display: hidden;
     }
 
     .container {
@@ -93,13 +94,9 @@
         opacity: 0;
         z-index: 1;
     }
-    
-
-    .content-block:hover .custom-button {
+    .content-block:hover a {
+        display: block;
         opacity: 1;
-        padding: 20px 30px;
-        height: 18px;
-        width: 180px;
     }
 
     .content-block:hover p {
