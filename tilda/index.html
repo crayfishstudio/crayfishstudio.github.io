@@ -158,9 +158,9 @@
     <script>
         $('.content-block').hover(function() {
             //ne click  
-            $(this).css("pointer-events", "none");
+            $('.custom-button').css("pointer-events", "none");
             setInterval(function() {
-                $(this).css("pointer-events", "auto");
+                $('.custom-button').css("pointer-events", "auto");
             }, 1000);
         });
     </script>
