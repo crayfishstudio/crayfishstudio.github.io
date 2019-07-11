@@ -42,7 +42,6 @@
     .custom-button {
         position: relative;
         bottom: -100px;
-        display: block;
         color: #fff;
         background-color: #0084ff;
         border-radius: 30px;
@@ -51,11 +50,11 @@
         padding: 20px 30px;
         z-index: 10;
         opacity: 0;
-        transition: 0.8s all;
         text-decoration: none;
         text-align: center;
-        font-weight: bold;
+        font-weight: 700;
         transition: 1s all;
+        display: block;
     }
 
     .container {
@@ -92,8 +91,9 @@
         opacity: 0;
         z-index: 1;
     }
+    
 
-    .content-block:hover a {
+    .content-block:hover .custom-button {
         opacity: 1;
     }
 
@@ -108,7 +108,7 @@
         left: 50px;
         text-align: center;
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         transition: 1s all;
         opacity: 1;
     }
