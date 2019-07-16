@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Futura New';
+    src: url('../fonts/Futura New-Regular.eot');
+    src: url('../fonts/Futura New-Regular.eot?iefix') format('eot'),
+        url('../fonts/Futura New-Regular.woff') format('woff'),
+        url('../fonts/Futura New-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('../fonts/Futura New-SemiBold.eot');
+    src: url('../fonts/Futura New-SemiBold.eot?iefix') format('eot'),
+        url('../fonts/Futura New-SemiBold.woff') format('woff'),
+        url('../fonts/Futura New-SemiBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('../fonts/Futura New-Bold.eot');
+    src: url('../fonts/Futura New-Bold.eot?iefix') format('eot'),
+        url('../fonts/Futura New-Bold.woff') format('woff'),
+        url('../fonts/Futura New-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura New', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.px-container {
+    padding: 0px 41px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.115em;
+    transition: .5s all;
+}
+
+li:hover .nav-link {
+    color: #000;
+    transform: translateY(-5px);
+}
+
+li:hover .hover-square {
+    opacity: 1;
+}
+
+.hover-square {
+    height: 9px;
+    width: 9px;
+    background-color: #F53248;
+    margin: auto;
+    opacity: 0;
+    transition: .5s all;
+}
+
+#wrap-item {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#wrap-item div {
+    height: 3px;
+    background-color: #000;
+    transition: all .3s;
+}
+
+#wrap-item div:nth-child(1) {
+    width: 42px;
+    border-radius: 100px 100px 0 0;
+}
+
+#wrap-item div:nth-child(2) {
+    width: 22px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+#wrap-item div:nth-child(3) {
+    width: 30px;
+    margin-left: 12px;
+    margin-top: 8px;    
+    border-radius: 0 0 100px 100px;
+}
+.container-square {
+    position: absolute;
+    bottom: 0;
+    background-color: #F53248;    
+    width: 63px;
+    height: 63px;
+}
