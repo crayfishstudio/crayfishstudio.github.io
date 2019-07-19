@@ -24,7 +24,7 @@
 <body>
     <div class="container-fluid px-0">
         <div class="row no-gutters">
-            <nav class="navbar navbar-expand-lg bg-wihte px-container pt-3">
+            <nav class="navbar navbar-expand-lg bg-white px-container py-3 fixed-top">
                 <a class="navbar-brand" href="#"><img src="img/logo.svg"> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -69,7 +69,7 @@
                         </a>
                     </ul>
                 </div>
-                <div id="wrap-item">
+                <div id="wrap-item" class="closed-hamburger">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -78,7 +78,20 @@
         </div>
     </div>
 
-    <div class="container-fluid px-container pt-5">
+
+    <div class="navbar-menu">
+        <div class="row no-gutters">
+            <div class="col-2">
+                <h3 class="title-text-regular">modernhome</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid px-container pt-5 mt-5">
         <div class="row no-gutters">
             <div class="col-2 pr-4px">
                 <a href="#">
@@ -452,6 +465,27 @@
                 mask: '+{38}(000)000-00-00'
             });
     </script>
+
+    <script>
+        function classToggle() {
+            document.getElementById('wrap-item').classList.toggle('closed-hamburger');
+
+            for (i = 0; i < svgList.length; i++) {
+                svgList[i].classList.toggle('logo-svg-element-white');
+            }
+        }
+
+        document.querySelector('#hamburger').addEventListener('click', classToggle);
+
+        $(document).on('click', 'a[href^="#"]', function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top - 120
+            }, 900);
+        });
+    </script>
+
 </body>
 
 </html>

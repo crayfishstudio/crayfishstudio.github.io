@@ -34,6 +34,7 @@ body {
 
 .navbar {
     width: 100%;
+    z-index: 1488;
 }
 
 .px-container {
@@ -71,6 +72,11 @@ li:hover .hover-square {
 #wrap-item {
     cursor: pointer;
     transition: all .5s;
+    z-index: 10000;
+}
+
+#wrap-item .closed-hamburger {
+    
 }
 
 #wrap-item div {
@@ -136,6 +142,11 @@ li:hover .hover-square {
 }
 
 #wrap-item div:nth-child(1) {
+    width: 42px;
+    border-radius: 100px 100px 0 0;
+}
+
+#wrap-item .closed-hamburger div:nth-child(1) {
     width: 42px;
     border-radius: 100px 100px 0 0;
 }
@@ -682,4 +693,29 @@ input:focus ~ .bar:after {
     font-size: 12px;
     line-height: 15px;
     color: #0b0b0b;
+}
+
+.navbar-menu {
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 580px;
+    padding: 27px 40px 50px 40px;
+    z-index: 1500;
+}
+
+#hamburger.chrested div:nth-child(1) {
+    height: 4px;
+    transform-origin: 100% 0;
+    transform: rotate(-45deg);
+}
+
+#hamburger.chrested div:nth-child(2) {
+    height: 4px;
+    transform-origin: 100% 100%;
+    width: 34px;
+    margin-left: 0px;
+    transform: rotate(45deg);
+    margin-top: 18.5px;
 }
