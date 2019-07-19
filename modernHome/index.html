@@ -200,9 +200,9 @@
             <div class="col-md-3 text-center">
                 <a href="#">
                     <div class="card-cottage-future pt-5">
-                        <img class="brightness" class="img-fluid pt-4" src="img/house-drawing-easy-download-by-tablet-desktop-original-size-back-to-easy-house-plans-to-draw-hau.png">
+                        <img class="brightness" class="img-fluid pt-5" src="img/house-drawing-easy-download-by-tablet-desktop-original-size-back-to-easy-house-plans-to-draw-hau.png">
                         <h3 class="title-text-regular pt-4">Майбутні проекти</h3>
-                        <img class="arrow-card" src="img/Arrow.svg">
+                        <img class="arrow-card mt-4" src="img/Arrow.svg">
                     </div>
                 </a>
             </div>
@@ -354,9 +354,9 @@
 
     <div class="container-fluid px-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.079726018159!2d-116.02756668484335!3d37.665279226224925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDM5JzU1LjAiTiAxMTbCsDAxJzMxLjQiVw!5e1!3m2!1sru!2sua!4v1563458111327!5m2!1sru!2sua" width="100%" height="574" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="container bg-white pb-5">
-            <div class="row no-gutters justify-content-center">
-                <div class="col-4">
+        <div class="container bg-white-footer pt-5 pb-5 mt-15">
+            <div class="row no-gutters justify-content-center pt-4">
+                <div class="col-md-4 mr-5">
                     <p class="text-transparent">Ваші контакти</p>
                     <form>
                         <div class="group">
@@ -372,9 +372,48 @@
                         <button type="submit" class="custom-button-footer">Зателефонувати мені</button>
                     </form>
                 </div>
-                <div class="col-4">asd</div>
-
+                <div class="col-6 ml-5">
+                    <h2 class="title-text-footer mb-5">Залиште ваші контакти і<br>ми вам зателефонуємо.</h2>
+                    <p class="text-regular-container">Або зателефонуйте нам за номерами</p>
+                    <a class="footer-number mr-md-4" href="tel:+380731488228">+38 (073)1488228</a>
+                    <a class="footer-number" href="tel:+380731488228">+38 (073)1488228</a>
+                </div>
             </div>
+            <div id="underline-footer"></div>
+        </div>
+        <div class="row no-gutters justify-content-between padding-footer">
+            <div class="col-4">
+                <h3 class="title-text-regular">modernhome</h3>
+            </div>
+            <div class="col-2">
+                <p class="footer-text">Меню</p>
+                <p class="text-regular-footer">Головна</p>
+                <p class="text-regular-footer">Про нас</p>
+                <p class="text-regular-footer">Котеджі</p>
+                <p class="text-regular-footer">Чому ми</p>
+                <p class="text-regular-footer">Контакти</p>
+            </div>
+            <div class="col-2">
+                <p class="footer-text">Контакти</p>
+                <p class="text-regular-phone mb-3">Телефон</p>
+                <a class="footer-number-phone mb-1" href="tel:+380731488228">+38 (073)1488228</a>
+                <a class="footer-number-phone mb-3" href="tel:+380731488228">+38 (073)1488228</a>
+                <p class="text-regular-phone mb-2">Email</p>
+                <a class="footer-number-phone" href="mailto:modernhome@gmail.com">modernhome@gmail.com</a>
+            </div>
+            <div class="col-2">
+                <p class="footer-text">Адреса</p>
+                <p class="text-regular-footer">м. Городок</p>
+                <p class="text-regular-footer">вул. Нижні Пасіки</p>
+                <p class="text-regular-footer">буд. 63а</p>
+            </div>
+
+        </div>
+        <div class="row no-gutters justify-content padding-footer">
+            <div class="col text-right">
+                <p class="text-studio">developed by <a class="text-studio" href="https://crayfish.studio/">Crayfish Studio</a></p>
+            </div>
+
         </div>
     </div>
 
@@ -394,9 +433,9 @@
             infinite: true,
             slidesToShow: 5,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             pauseOnHover: false,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 3000,
             speed: 1200,
             touchMove: true,
             swipeToSlide: true,
@@ -406,6 +445,7 @@
             nextArrow: $('.right-arrow'),
         });
     </script>
+
     <script>
         var phoneMask = IMask(
             document.getElementById('recipient-phone'), {
