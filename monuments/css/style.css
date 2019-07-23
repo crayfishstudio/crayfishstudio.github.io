@@ -131,9 +131,7 @@
         display: none;
     }
 }
-* {
-    border: 2px solid #000;
-}
+
 body {
     background-color: #FCFCFC;
     font-family: 'TTNorms', sans-serif;
