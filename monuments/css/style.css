@@ -126,8 +126,14 @@
     .image-card-mobile {
         display: none;
     }
+    
+    #mobile-monuments {
+        display: none;
+    }
 }
-
+* {
+    border: 2px solid #000;
+}
 body {
     background-color: #FCFCFC;
     font-family: 'TTNorms', sans-serif;
@@ -293,6 +299,12 @@ li:hover .nav-link {
 }
 
 .custom-card {
+    background-color: #FCFCFC;
+    box-shadow: 0px 0px 30px rgba(225, 225, 225, 0.5);
+    padding: 25px 0px;
+}
+
+.custom-card-monuments {
     background-color: #FCFCFC;
     box-shadow: 0px 0px 30px rgba(225, 225, 225, 0.5);
     padding: 25px 0px;
@@ -473,6 +485,10 @@ li:hover .nav-link {
     background-color: #14B358;
 }
 
+.wholesale-buttton:hover{
+        color: #FCFCFC;
+}
+
 .image-card {
     width: 100%;
     box-shadow: 0px 0px 30px rgba(225, 225, 225, 0.5);
@@ -612,4 +628,32 @@ li:hover .nav-link {
     width: 100%;
     background-size: cover;
     background-position: center;
+}
+.custom-button-monuments {
+    background-color: #FCFCFC;
+    outline: none;
+}
+
+.card {
+    box-shadow: 0px 0px 30px rgba(225, 225, 225, 0.5);
+}
+
+
+
+.button-custom-monument {
+    width: 100%;
+    font-size: 16px;
+    line-height: 165.9%;
+    text-transform: uppercase;
+    color: #262626;
+    font-weight: 500;
+}
+
+.fa-chevron-down {
+    float: right;
+    color: #14B358;
+}
+
+#collapseOne {
+    background-color: #FCFCFC;
 }
