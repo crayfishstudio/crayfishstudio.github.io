@@ -42,7 +42,7 @@
     }
 
     .pl-main {
-        padding-left: 20px !important;
+        padding-left: 0px !important;
         padding-top: 22px;
     }
 
@@ -99,8 +99,8 @@
     .image-card {
         display: none;
     }
-
-    image-card-mobile {
+    
+    #desktop-monuments {
         display: none;
     }
 }
@@ -118,6 +118,10 @@
         display: none;
     }
     
+    .image-card-mobile {
+        display: none;
+    }
+
     .image-card-mobile {
         display: none;
     }
@@ -215,7 +219,7 @@ li:hover .nav-link {
     line-height: 17px;
     text-transform: uppercase;
     color: #FCFCFC;
-    padding: 12px 88px;
+    padding: 12px 0px;
     background-color: #14B358;
     border: 2px solid #14B358;
     transition: .3s all;
@@ -235,7 +239,7 @@ li:hover .nav-link {
     text-transform: uppercase;
     color: #262626;
     border: 2px solid #262626;
-    padding: 12px 47px;
+    padding: 12px 0px;
 }
 
 .outline-button:hover {
