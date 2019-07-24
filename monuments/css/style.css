@@ -57,7 +57,7 @@
 
     .custom-button,
     .outline-button {
-        width: 100% !important;        
+        width: 100% !important;
         padding: 12px 0px !important;
     }
 
@@ -100,7 +100,7 @@
     .image-card {
         display: none;
     }
-    
+
     #desktop-monuments {
         display: none;
     }
@@ -114,11 +114,11 @@
     .main-title-bg {
         display: none;
     }
-    
+
     #slider-mobile {
         display: none;
     }
-    
+
     .image-card-mobile {
         display: none;
     }
@@ -126,7 +126,7 @@
     .image-card-mobile {
         display: none;
     }
-    
+
     #mobile-monuments {
         display: none;
     }
@@ -465,8 +465,6 @@ li:hover .nav-link {
     margin: 20px 0px;
 }
 
-
-
 #wholesale {
     background-image: url(../img/ruchindra-gunasekara-GK8x_XCcDZg-unsplash.png);
     height: 240px;
@@ -484,8 +482,8 @@ li:hover .nav-link {
     background-color: #14B358;
 }
 
-.wholesale-buttton:hover{
-        color: #FCFCFC;
+.wholesale-buttton:hover {
+    color: #FCFCFC;
 }
 
 .image-card {
@@ -509,8 +507,6 @@ li:hover .nav-link {
     display: block;
     transition: .5s all;
 }
-
-
 
 .footer-phone-links a {
     font-size: 18px;
@@ -555,8 +551,6 @@ li:hover .nav-link {
     margin-top: 60px;
 }
 
-
-
 .mt-25 {
     margin-top: 94px;
 }
@@ -564,10 +558,6 @@ li:hover .nav-link {
 .mt-10 {
     margin-top: 61px;
 }
-
-
-
-
 
 .fa-map-marker-alt,
 .fa-phone {
@@ -628,6 +618,7 @@ li:hover .nav-link {
     background-size: cover;
     background-position: center;
 }
+
 .custom-button-monuments {
     background-color: #FCFCFC;
     outline: none;
@@ -636,8 +627,6 @@ li:hover .nav-link {
 .card {
     box-shadow: 0px 0px 30px rgba(225, 225, 225, 0.5);
 }
-
-
 
 .button-custom-monument {
     width: 100%;
@@ -662,6 +651,6 @@ li:hover .nav-link {
     width: 100%;
 }
 
-
-
-
+[data-toggle="collapse"] {
+    cursor: pointer;
+}
