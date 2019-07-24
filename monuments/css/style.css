@@ -641,6 +641,7 @@ li:hover .nav-link {
 .fa-chevron-down {
     float: right;
     color: #14B358;
+    transform: translateY(6px);
 }
 
 #collapseOne {

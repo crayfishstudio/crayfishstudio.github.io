@@ -28,28 +28,28 @@
     <div class="container-fluid shadow-sm">
         <div class="row no-gutters">
             <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top px-container">
-                <a class="navbar-brand" href="#">COMPANYNAME</a>
-                <div id="hamburger" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#about">COMPANYNAME</a>
+                <div id="hamburger" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <div></div>
                     <div></div>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto nav-links-custom">
+                    <ul class="navbar-nav ml-auto nav-links-custom pt-md-0 pt-2">
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#assortment">асортимент послуг
+                            <a class="nav-link px-0" href="#assortment" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">асортимент послуг
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#stages">етапи роботи</a>
+                            <a class="nav-link px-0" href="#stages" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">етапи роботи</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#types-of-stone">види каменю</a>
+                            <a class="nav-link px-0" href="#types-of-stone" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">види каменю</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#wholesales">оптовим покупцям</a>
+                            <a class="nav-link px-0" href="#wholesales" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">оптовим покупцям</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#contacts">контакти</a>
+                            <a class="nav-link px-0" href="#contacts" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">контакти</a>
                         </li>
                     </ul>
                 </div>
@@ -549,93 +549,93 @@
                 </div>
             </div>
         </div>
-        
-            <div id="slider-mobile" class="container-fluid px-0">
-        <div class="row no-gutters">
-            <div class="col-md-12 text-center">
-                <div class="custom-card-slider">
-                    <div class="custom-card-title">граніт</div>
-                    <div class="row no-gutters pb-4">
-                        <div class="col-1">
-                            <div class="left-arrow-granite">
-                                <i class="fas fa-chevron-left fa-2x"></i>
+
+        <div id="slider-mobile" class="container-fluid px-0">
+            <div class="row no-gutters">
+                <div class="col-md-12 text-center">
+                    <div class="custom-card-slider">
+                        <div class="custom-card-title">граніт</div>
+                        <div class="row no-gutters pb-4">
+                            <div class="col-1">
+                                <div class="left-arrow-granite">
+                                    <i class="fas fa-chevron-left fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-10 slider-granite">
+                                <div class="image-center"><img class="img-fluid" src="./img/image%202.3.png"></div>
+                                <div class="image-center"><img class="img-fluid" src="./img/image%204.2.png"></div>
+                                <div class="image-center"><img class="img-fluid" src="./img/image%205.2.png"></div>
+                            </div>
+                            <div class="col-1">
+                                <div class="right-arrow-granite">
+                                    <i class="fas fa-chevron-right fa-2x"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-10 slider-granite">
-                            <div class="image-center"><img class="img-fluid" src="./img/image%202.3.png"></div>
-                            <div class="image-center"><img class="img-fluid" src="./img/image%204.2.png"></div>
-                            <div class="image-center"><img class="img-fluid" src="./img/image%205.2.png"></div>
-                        </div>
-                        <div class="col-1">
-                            <div class="right-arrow-granite">
-                                <i class="fas fa-chevron-right fa-2x"></i>
-                            </div>
+                        <div class="slider-text">
+                            <p>Назва каменю</p>
                         </div>
                     </div>
-                    <div class="slider-text">
-                        <p>Назва каменю</p>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-12 text-center">
+                    <div class="custom-card-slider">
+                        <div class="custom-card-title">мармур</div>
+                        <div class="row no-gutters pb-4">
+                            <div class="col-1">
+                                <div id="left-arrow-marble">
+                                    <i class="fas fa-chevron-left fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-10 slider-marble">
+                                <div class="image-center"><img class="img-fluid" src="./img/image%202.3.png"></div>
+                                <div class="image-center"><img class="img-fluid" src="./img/image%204.2.png"></div>
+                                <div class="image-center"><img class="img-fluid" src="./img/image%205.2.png"></div>
+                            </div>
+                            <div class="col-1">
+                                <div id="right-arrow-marble">
+                                    <i class="fas fa-chevron-right fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-text">
+                            <p>Назва каменю</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-12 text-center">
+                    <div class="custom-card-slider">
+                        <div class="custom-card-title">імпортні види каменю</div>
+                        <div class="row no-gutters pb-4">
+                            <div class="col-1">
+                                <div id="left-arrow-import">
+                                    <i class="fas fa-chevron-left fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-10 slider-import">
+                                <div class="image-center"><img class="img-fluid" src="./img/image%202.3.png"></div>
+                                <div class="image-center"><img class="img-fluid" src="./img/image%204.2.png"></div>
+                                <div class="image-center"><img class="img-fluid" src="./img/image%205.2.png"></div>
+                            </div>
+                            <div class="col-1">
+                                <div id="right-arrow-import">
+                                    <i class="fas fa-chevron-right fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-text">
+                            <p>Назва каменю</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row no-gutters">
-            <div class="col-md-12 text-center">
-                <div class="custom-card-slider">
-                    <div class="custom-card-title">мармур</div>
-                    <div class="row no-gutters pb-4">
-                        <div class="col-1">
-                            <div id="left-arrow-marble">
-                                <i class="fas fa-chevron-left fa-2x"></i>
-                            </div>
-                        </div>
-                        <div class="col-10 slider-marble">
-                            <div class="image-center"><img class="img-fluid" src="./img/image%202.3.png"></div>
-                            <div class="image-center"><img class="img-fluid" src="./img/image%204.2.png"></div>
-                            <div class="image-center"><img class="img-fluid" src="./img/image%205.2.png"></div>
-                        </div>
-                        <div class="col-1">
-                            <div id="right-arrow-marble">
-                                <i class="fas fa-chevron-right fa-2x"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-text">
-                        <p>Назва каменю</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row no-gutters">
-            <div class="col-md-12 text-center">
-                <div class="custom-card-slider">
-                    <div class="custom-card-title">імпортні види каменю</div>
-                    <div class="row no-gutters pb-4">
-                        <div class="col-1">
-                            <div id="left-arrow-import">
-                                <i class="fas fa-chevron-left fa-2x"></i>
-                            </div>
-                        </div>
-                        <div class="col-10 slider-import">
-                            <div class="image-center"><img class="img-fluid" src="./img/image%202.3.png"></div>
-                            <div class="image-center"><img class="img-fluid" src="./img/image%204.2.png"></div>
-                            <div class="image-center"><img class="img-fluid" src="./img/image%205.2.png"></div>
-                        </div>
-                        <div class="col-1">
-                            <div id="right-arrow-import">
-                                <i class="fas fa-chevron-right fa-2x"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-text">
-                        <p>Назва каменю</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        
 
         <div id="wholesales" class="row px-line">
             <div class="underline"></div>
@@ -801,6 +801,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
