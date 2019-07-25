@@ -25,31 +25,31 @@
 </head>
 
 <body>
-    <div class="container-fluid shadow-sm">
+    <div id="page-top" class="container-fluid shadow-sm">
         <div class="row no-gutters">
             <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top px-container">
-                <a class="navbar-brand" href="#about">COMPANYNAME</a>
-                <div id="hamburger" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#page-top">COMPANYNAME</a>
+                <div id="hamburger" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavs" aria-expanded="false" aria-label="Toggle navigation">
                     <div></div>
                     <div></div>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNavs">
                     <ul class="navbar-nav ml-auto nav-links-custom pt-md-0 pt-2">
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#assortment" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">асортимент послуг
+                            <a class="nav-link scroll-nav px-0" href="#assortment">асортимент послуг
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#stages" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">етапи роботи</a>
+                            <a class="nav-link scroll-nav px-0" href="#stages">етапи роботи</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#types-of-stone" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">види каменю</a>
+                            <a class="nav-link scroll-nav px-0" href="#types-of-stone">види каменю</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#wholesales" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">оптовим покупцям</a>
+                            <a class="nav-link scroll-nav px-0" href="#wholesales">оптовим покупцям</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#contacts" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNav">контакти</a>
+                            <a class="nav-link scroll-nav px-0" href="#contacts">контакти</a>
                         </li>
                     </ul>
                 </div>
@@ -83,6 +83,7 @@
     </div>
 
     <div id="assortment">
+        <!--        Moblie                                  -->
         <div id="mobile-monuments" class="mt-5">
             <div class="accordion" id="accordionExample">
                 <div class="custom-card-monuments">
@@ -238,26 +239,21 @@
                 </div>
             </div>
         </div>
+
+        <!--   end     Moblie                                  -->
+
         <div class="container-fluid px-container mt-5">
             <div id="desktop-monuments">
                 <ul class="nav nav-custom nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item custom-card">
                         <a class="nav-link-tab active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-monument fa-lg pr-4"></i>пам'ятники з граніту</a></li>
-                    <li class="nav-item custom-card">
+                    <li class="nav-item custom-card mx-card">
                         <a class="nav-link-tab" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-monument fa-lg pr-4"></i>елітні пам'ятники</a>
                     </li>
                     <li class="nav-item custom-card">
                         <a class="nav-link-tab" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fas fa-monument fa-lg pr-4"></i>вироби з каменю</a>
                     </li>
                 </ul>
-
-                <!--
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">111111111</div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">222222222</div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">33333333333</div>
-                </div>
--->
 
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -405,13 +401,13 @@
 
                 </div>
             </div>
-            <div id="stages" class="row px-line">
+            <div class="row px-line">
                 <div class="underline"></div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid mt-md-0 mt-5 px-container">
+    <div id="stages" class="container-fluid mt-md-0 mt-5 px-container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <h2 class="secondary-title">етапи роботи</h2>
@@ -450,12 +446,12 @@
                 </div>
             </div>
         </div>
-        <div id="types-of-stone" class="row px-line">
+        <div class="row px-line">
             <div class="underline"></div>
         </div>
     </div>
 
-    <div class="container-fluid mt-md-0 mt-5 px-container">
+    <div id="types-of-stone" class="container-fluid mt-md-0 mt-5 px-container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <h2 class="secondary-title">вибір каменю</h2>
@@ -637,12 +633,12 @@
         </div>
 
 
-        <div id="wholesales" class="row px-line">
+        <div class="row px-line">
             <div class="underline"></div>
         </div>
     </div>
 
-    <div class="container-fluid mt-md-0 mt-5 px-container">
+    <div id="wholesales" class="container-fluid mt-md-0 mt-5 px-container">
         <div class="row no-gutters justify-content-center">
             <div class="col-12 text-center">
                 <h2 class="secondary-title">оптовим покупцям</h2>
@@ -695,16 +691,6 @@
                         <a href="tel:+380671488228">+38 (012) 34 56 789</a>
                     </div>
                 </div>
-                <!--
-                <div class="row no-gutters pl-3">
-                    <div class="footer-links">
-                        <a href="#">асортимент послуг</a>
-                        <a href="#" class="text-center">етапи роботи</a>
-                        <a href="#">види каменю</a>
-                        <a href="#">оптовим покупцям</a>
-                    </div>
-                </div>
--->
             </div>
         </div>
         <div class="px-map">
@@ -720,7 +706,7 @@
         </div>
     </footer>
 
-    <!-- Optional JavaScript -->
+    <!-- Optional JavaScript 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -791,7 +777,7 @@
     </script>
 
     <script>
-        $(document).on('click', 'a[href^="#"]', function(event) {
+        $(document).on('click', '.scroll-nav', function(event) {
             event.preventDefault();
 
             $('html, body').animate({
@@ -799,7 +785,6 @@
             }, 900);
         });
     </script>
-
 </body>
 
 </html>
