@@ -36,20 +36,20 @@
                 <div class="collapse navbar-collapse" id="navbarNavs">
                     <ul class="navbar-nav ml-auto nav-links-custom pt-md-0 pt-2">
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#assortment">асортимент послуг
+                            <a class="nav-link scroll-nav px-0" href="#assortment" data-target="#navbarNavs">асортимент послуг
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#stages">етапи роботи</a>
+                            <a class="nav-link scroll-nav px-0" href="#stages"data-toggle="collapse" data-target="#navbarNavs">етапи роботи</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#types-of-stone">види каменю</a>
+                            <a class="nav-link scroll-nav px-0" href="#types-of-stone" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNavs">види каменю</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#wholesales">оптовим покупцям</a>
+                            <a class="nav-link scroll-nav px-0" href="#wholesales" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNavs">оптовим покупцям</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#contacts">контакти</a>
+                            <a class="nav-link scroll-nav px-0" href="#contacts" >контакти</a>
                         </li>
                     </ul>
                 </div>
@@ -758,6 +758,7 @@
             nextArrow: $('#right-arrow-marble')
         });
     </script>
+    
     <script>
         $('.slider-import').slick({
             infinite: true,
