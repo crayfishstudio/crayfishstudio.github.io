@@ -36,20 +36,20 @@
                 <div class="collapse navbar-collapse" id="navbarNavs">
                     <ul class="navbar-nav ml-auto nav-links-custom pt-md-0 pt-2">
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#assortment" data-target="#navbarNavs">асортимент послуг
+                            <a class="nav-link scroll-nav px-0" href="#assortment" data-toggle="collapse" data-target="#navbarNavs">асортимент послуг
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#stages"data-toggle="collapse" data-target="#navbarNavs">етапи роботи</a>
+                            <a class="nav-link scroll-nav px-0" href="#stages" data-toggle="collapse" data-target="#navbarNavs">етапи роботи</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#types-of-stone" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNavs">види каменю</a>
+                            <a class="nav-link scroll-nav px-0" href="#types-of-stone" data-toggle="collapse" data-target="#navbarNavs">види каменю</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#wholesales" onclick="classToggle()" data-toggle="collapse" data-target="#navbarNavs">оптовим покупцям</a>
+                            <a class="nav-link scroll-nav px-0" href="#wholesales" data-toggle="collapse" data-target="#navbarNavs">оптовим покупцям</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll-nav px-0" href="#contacts" >контакти</a>
+                            <a class="nav-link scroll-nav px-0" href="#contacts" data-toggle="collapse" data-target="#navbarNavs">контакти</a>
                         </li>
                     </ul>
                 </div>
@@ -758,7 +758,7 @@
             nextArrow: $('#right-arrow-marble')
         });
     </script>
-    
+
     <script>
         $('.slider-import').slick({
             infinite: true,
@@ -786,6 +786,42 @@
             }, 900);
         });
     </script>
+
+    <!--
+    <script>
+    $('a[data-toggle="collapse"]').click(function(e){
+      if ($(window).width() >= 768) { 
+        // Should prevent the collapsible and default anchor linking 
+        // behavior for screen sizes equal or larger than 768px.
+        e.preventDefault();
+        e.stopPropagation();
+      }    
+    });
+
+    var $win;
+
+    // Function toggles bootstrap collapse based on window width.
+    function toggleCollapse($win) {
+      // Small screens
+      if ($win.width() < 768) {  
+        $('.navbar-collapse').collapse('hide');
+      }
+      if ($win.width() >= 768) {  
+          $('.navbar-collapse').collapse('show');
+      }
+    }
+
+    // Set collapsible appearance on window load;
+    toggleCollapse($(window));
+
+    // Toggle collapsibles on resize. Optional if you want 
+    // to be able to show/hide on window resize.
+    $(window).on('resize', function() {
+      var $win = $(this);
+      toggleCollapse($win);
+    });
+    </script>
+-->
 </body>
 
 </html>
