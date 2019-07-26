@@ -23,8 +23,8 @@
     .px-container {
         padding: 0 20px !important;
     }
-    
-        .px-container-whole {
+
+    .px-container-whole {
         padding: 0px !important;
     }
 
@@ -101,8 +101,6 @@
         padding: 30px 50px !important;
     }
 
-
-
     #desktop-monuments {
         display: none;
     }
@@ -124,7 +122,7 @@
     #mobile-monuments {
         display: none;
     }
-    
+
 
 }
 
@@ -480,7 +478,7 @@ li:hover .nav-link {
     line-height: 17px;
     text-transform: uppercase;
     color: #FCFCFC;
-    padding: 14px 92px;
+    padding: 14px 22px;
     background-color: #14B358;
 }
 
