@@ -488,6 +488,7 @@ li:hover .nav-link {
 }
 
 .wholesale-buttton:hover {
+    opacity: 0.8;
     color: #FCFCFC;
 }
 
@@ -579,6 +580,16 @@ li:hover .nav-link {
     padding: 14px 28px;
     border: none;
     outline: none;
+}
+
+.footer-form-modal button:hover {
+    opacity: 0.8;
+    color: #FCFCFC;
+}
+
+.footer-form button:hover {
+    opacity: 0.8;
+    color: #FCFCFC;
 }
 
 .footer-form {
@@ -695,7 +706,8 @@ li:hover .nav-link {
     margin-right: 2%;
 }
 
-.nav-pills .nav-link-tab.active, .nav-pills .show>.nav-link-tab {
+.nav-pills .nav-link-tab.active,
+.nav-pills .show > .nav-link-tab {
     padding: 25px 0;
     border-top: 3px solid #FCFCFC;
     border-bottom: 3px solid #14B358;
