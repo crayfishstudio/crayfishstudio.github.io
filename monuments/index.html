@@ -265,6 +265,7 @@
         <!--     Desktop          -->
         <div class="container-fluid px-container mt-5">
             <div id="desktop-monuments">
+
                 <ul class="nav nav-custom nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item custom-card">
                         <a class="nav-link-tab active scroll-nav-tabs" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-monument fa-lg pr-4"></i>пам'ятники з граніту</a></li>
@@ -657,7 +658,7 @@
         </div>
     </div>
 
-    <div id="wholesales" class="container-fluid mt-md-0 mt-5 px-container-whole">
+    <div id="wholesales" class="container-fluid mt-md-0 mt-5 px-container px-container-whole">
         <div class="row no-gutters justify-content-center">
             <div class="col-12 text-center">
                 <h2 class="secondary-title">оптовим покупцям</h2>
@@ -669,11 +670,9 @@
                 <div class="col-12 px-md-4 px-0 pt-md-4">
                     <div id="wholesale"></div>
                 </div>
-            </div>
-        </div>
-        <div class="row no-gutters justify-content-center px-container">
+                        <div class="row no-gutters justify-content-center px-container">
             <div class="col-md-3">
-                <a href="#" class="wholesale-buttton mt-4" data-toggle="modal" data-target="#wholesaleConsultation">Обговорити співпрацю</a></div>
+                <a href="#" class="wholesale-buttton mb-5" data-toggle="modal" data-target="#wholesaleConsultation">Обговорити співпрацю</a></div>
             <!-- Modal -->
             <div class="modal fade" id="wholesaleConsultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -695,6 +694,9 @@
                 </div>
             </div>
         </div>
+            </div>
+        </div>
+
     </div>
 
 
@@ -815,31 +817,6 @@
             prevArrow: $('#left-arrow-import'),
             nextArrow: $('#right-arrow-import')
         });
-    </script>
-
-    <script>
-        $('a[data-toggle="tab"]').on('hide.bs.tab', function(e) {
-            e.target // newly activated tab
-            e.relatedTarget // previous active tab
-        })
-    </script>
-    <script>
-        $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
-            e.target // newly activated tab
-            e.relatedTarget // previous active tab
-        })
-    </script>
-    <script>
-        $('a[data-toggle="tab"]').on('hidden.bs.tab', function(e) {
-            e.target // newly activated tab
-            e.relatedTarget // previous active tab
-        })
-    </script>
-    <script>
-        $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-            e.target // newly activated tab
-            e.relatedTarget // previous active tab
-        })
     </script>
 
     <script>

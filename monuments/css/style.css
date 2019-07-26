@@ -694,3 +694,10 @@ li:hover .nav-link {
     margin-left: 2%;
     margin-right: 2%;
 }
+
+.nav-pills .nav-link-tab.active, .nav-pills .show>.nav-link-tab {
+    padding: 25px 0;
+    border-top: 3px solid #FCFCFC;
+    border-bottom: 3px solid #14B358;
+    background-color: #fcfcfc;
+}
