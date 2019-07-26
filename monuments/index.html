@@ -76,7 +76,28 @@
                         <p class="subtitle mb-5">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
                     </div>
                     <a href="#contacts" class="custom-button scroll-nav">зв'язатися з нами</a>
-                    <a href="#" class="outline-button">безкоштовна консультація</a>
+                    <a href="#" class="outline-button" data-toggle="modal" data-target="#freeConsultation">безкоштовна консультація</a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="freeConsultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Отримайте безкоштовну консультацію</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="footer-form-modal">
+                                        <input type="text" placeholder="Ім'я">
+                                        <input id="recipient-phone" type="text" placeholder="Номер телефону">
+                                        <button type="submit">зв'язатись з нами</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -461,8 +482,6 @@
             </div>
         </div>
 
-
-
         <div class="custom-card-choice">
             <div class="custom-card-title">граніт
                 <div class="card-line"></div>
@@ -638,7 +657,7 @@
         </div>
     </div>
 
-    <div id="wholesales" class="container-fluid mt-md-0 mt-5 px-container">
+    <div id="wholesales" class="container-fluid mt-md-0 mt-5 px-container-whole">
         <div class="row no-gutters justify-content-center">
             <div class="col-12 text-center">
                 <h2 class="secondary-title">оптовим покупцям</h2>
@@ -647,17 +666,34 @@
                 <p class="secondary-regular">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p>
             </div>
             <div class="image-card">
-                <div class="col-12 px-4 pt-4">
+                <div class="col-12 px-md-4 px-0 pt-md-4">
                     <div id="wholesale"></div>
                 </div>
-                <div class="col-12 text-center mb-5"><a href="#" class="wholesale-buttton">Обговорити співпрацю</a></div>
-            </div>                
+                <div class="col-12 text-center mb-5"><a href="#" class="wholesale-buttton" data-toggle="modal" data-target="#wholesaleConsultation">Обговорити співпрацю</a></div>
+            </div>
+                                <!-- Modal -->
+                    <div class="modal fade" id="wholesaleConsultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Слиш форму заповнив бля.</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="footer-form-modal">
+                                        <input type="text" placeholder="Ім'я">
+                                        <input id="recipient-phone" type="text" placeholder="Номер телефону">
+                                        <button type="submit">зв'язатись з нами</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </div>
-    <div class="row no-gutters image-card-mobile-view">
-    <div class="image-card-mobile"></div>
-    <div class="col-12 text-center mt-5 mb-5"><a href="#" class="wholesale-buttton">Обговорити співпрацю</a></div>
-</div>
+
 
     <footer id="contacts">
         <div class="container-fluid px-container mb-5">
