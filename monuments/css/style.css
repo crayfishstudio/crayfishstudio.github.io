@@ -474,6 +474,7 @@ li:hover .nav-link {
 }
 
 .wholesale-buttton {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -552,12 +553,13 @@ li:hover .nav-link {
 .footer-form button {
     width: 100%;
     margin-top: 15px;
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     color: #FCFCFC;
     background-color: #14B358;
-    padding: 14px 88px;
+    padding: 14px 28px;
     border: none;
     outline: none;
 }
@@ -565,12 +567,13 @@ li:hover .nav-link {
 .footer-form-modal button {
     width: 100%;
     margin-top: 15px;
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     color: #FCFCFC;
     background-color: #14B358;
-    padding: 14px 88px;
+    padding: 14px 28px;
     border: none;
     outline: none;
 }
