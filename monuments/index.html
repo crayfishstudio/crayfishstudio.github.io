@@ -126,7 +126,8 @@
         <div id="mobile-monuments" class="mt-5">
             <div class="accordion" id="accordionExample">
                 <div class="card">
-                    <div id="headingOne"><div class="button-custom-monument" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div id="headingOne">
+                        <div class="button-custom-monument" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fas fa-monument fa-lg px-4"></i>пам'ятники з граніту<i class="fas fa-chevron-down fa-lg pr-4"></i></div>
                     </div>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -173,7 +174,8 @@
                     </div>
                 </div>
                 <div class="card my-4">
-                    <div id="headingTwo"><div class="button-custom-monument" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                    <div id="headingTwo">
+                        <div class="button-custom-monument" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fas fa-monument fa-lg px-4"></i>елітні пам'ятники<i class="fas fa-chevron-down fa-lg pr-4"></i></div>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -240,7 +242,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div id="headingThree"><div class="button-custom-monument" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                    <div id="headingThree">
+                        <div class="button-custom-monument" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fas fa-monument fa-lg px-4"></i>вироби з каменю<i class="fas fa-chevron-down fa-lg pr-4"></i></div>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -606,31 +609,6 @@
             </div>
         </div>
 
-        <div class="custom-card-choice">
-            <div class="custom-card-title">імпортні види каменю
-                <div class="card-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-2 card-hover">
-                    <img class="img-fluid" src="./img/image.png">
-                    <p>Назва каменю</p>
-                </div>
-                <div class="col-2 card-hover">
-                    <img class="img-fluid" src="./img/image.png">
-                    <p>Назва каменю</p>
-                </div>
-                <div class="col-2 card-hover">
-                    <img class="img-fluid" src="./img/image.png">
-                    <p>Назва каменю</p>
-                </div>
-                <div class="col-2 card-hover">
-                    <img class="img-fluid" src="./img/image.png">
-                    <p>Назва каменю</p>
-                </div>
-            </div>
-        </div>
-
         <div id="slider-mobile" class="container-fluid px-0">
             <div class="row no-gutters">
                 <div class="col-md-12 text-center">
@@ -692,40 +670,6 @@
                             </div>
                             <div class="col-1">
                                 <div id="right-arrow-marble">
-                                    <i class="fas fa-chevron-right fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row no-gutters">
-                <div class="col-md-12 text-center">
-                    <div class="custom-card-slider">
-                        <div class="custom-card-title">імпортні види каменю</div>
-                        <div class="row no-gutters pb-4">
-                            <div class="col-1">
-                                <div id="left-arrow-import">
-                                    <i class="fas fa-chevron-left fa-2x"></i>
-                                </div>
-                            </div>
-                            <div class="col-10 slider-import slider-text">
-                                <div class="px-5">
-                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
-                                    <p>Назва каменю</p>
-                                </div>
-                                <div class="px-5">
-                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
-                                    <p>Назва каменю</p>
-                                </div>
-                                <div class="px-5">
-                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
-                                    <p>Назва каменю</p>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div id="right-arrow-import">
                                     <i class="fas fa-chevron-right fa-2x"></i>
                                 </div>
                             </div>
@@ -847,18 +791,21 @@
             document.getElementById('recipient-phone-1'), {
                 mask: '+{38}(000)000-00-00'
             });
+
     </script>
     <script>
         var phoneMask = IMask(
             document.getElementById('recipient-phone-2'), {
                 mask: '+{38}(000)000-00-00'
             });
+
     </script>
     <script>
         var phoneMask = IMask(
             document.getElementById('recipient-phone-3'), {
                 mask: '+{38}(000)000-00-00'
             });
+
     </script>
 
     <script>
@@ -877,6 +824,7 @@
             prevArrow: $('.left-arrow-granite'),
             nextArrow: $('.right-arrow-granite')
         });
+
     </script>
     <script>
         $('.slider-marble').slick({
@@ -894,24 +842,7 @@
             prevArrow: $('#left-arrow-marble'),
             nextArrow: $('#right-arrow-marble')
         });
-    </script>
 
-    <script>
-        $('.slider-import').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            pauseOnHover: false,
-            autoplaySpeed: 3000,
-            speed: 1200,
-            touchMove: true,
-            swipeToSlide: true,
-            draggable: true,
-            arrows: true,
-            prevArrow: $('#left-arrow-import'),
-            nextArrow: $('#right-arrow-import')
-        });
     </script>
 
     <script>
@@ -922,23 +853,8 @@
                 scrollTop: $($.attr(this, 'href')).offset().top - 120
             }, 900);
         });
-    </script>
-<!--
-    <script>
-        $('.collapse').on('show.bs.collapse', function(e) {
-            var $card = $(this).closest('.card');
-            var $open = $($(this).data('parent')).find('.collapse.show');
 
-            var additionalOffset = 0;
-            if ($card.prevAll().filter($open.closest('.card')).length !== 0) {
-                additionalOffset = $open.height();
-            }
-            $('html,body').animate({
-                scrollTop: $card.offset().top - 150
-            }, 500);
-        });
     </script>
--->
 </body>
 
 </html>
