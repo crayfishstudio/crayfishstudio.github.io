@@ -48,7 +48,7 @@
             </div>
             <div class="col-xl-1 col-md-1 order-xl-4 pr-xl-0 pr-md-4">
                 <a href="#" id="cart-container">
-                    <span id="total-price">₴1560</span>
+                    <span id="total-price" class="mobile-invisible">₴1560</span>
                     <div class="cart">
                         <img src="img/cart.svg" id="cart-img">
                         <div id="total-items">12</div>
@@ -62,20 +62,178 @@
                 </div>
             </div>
             
-            <div class="col-xl-7 d-flex">
+            <div class="col-xl-7 d-flex" id="nav-items-bar" onmouseleave="closeNavSubs()">
                 <div id="categories">
-                    <a href="#" class="active">Взуття<div></div></a>
-                    <a href="#">Одяг<div></div></a>
-                    <a href="#">Обладнання<div></div></a>
-                    <a href="#">Аксесуари<div></div></a>
-                    <a href="#">Види спорту<div></div></a>
-                    <a href="#">Бренди<div></div></a>
+                    <a href="#" /*class="active"*/ onmouseenter="showSubs('shoes')">Взуття<div></div></a>
+                    <a href="#" onmouseenter="showSubs('clothes')">Одяг<div></div></a>
+                    <a href="#" onmouseenter="showSubs('equipment')">Обладнання<div></div></a>
+                    <a href="#" onmouseenter="showSubs('accessories')">Аксесуари<div></div></a>
+                    <a href="#" onmouseenter="showSubs('sport')">Види спорту<div></div></a>
+                    <a href="#" onmouseenter="showSubs('brands')">Бренди<div></div></a>
+                    <a href="#" class="desktop-invisible">Акції<div></div></a>
                 </div>
-                <div id="discount-button" class="text-center">
+                <div id="discount-button" class="text-center mobile-invisible">
                     <a href="#">Акції</a>
                 </div>
+                <div id="nav-subcategories">
+                    <div id="shoes-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Модне взуття</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 mt-4 mt-md-0">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-5">
+                            <a href="#">Акції</a>
+                            <a href="#">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-right">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="clothes-subcategories"  class="row">
+                        <div class="col-md-4">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">Модне взуття</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-5">
+                            <a href="#">Акції</a>
+                            <a href="#">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-right">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="equipment-subcategories"  class="row">
+                        <div class="col-md-4">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">Модне взуття</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-5">
+                            <a href="#">Акції</a>
+                            <a href="#">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-right">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="accessories-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">Модне взуття</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-5">
+                            <a href="#">Акції</a>
+                            <a href="#">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-right">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="sport-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">Модне взуття</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-5">
+                            <a href="#">Акції</a>
+                            <a href="#">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-right">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="brands-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">Модне взуття</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-5">
+                            <a href="#">Акції</a>
+                            <a href="#">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-right">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </nav>
 
@@ -486,6 +644,22 @@
             
             $('#footer-form-phone').mask('+00 (000) 000 0000');
         });
+        
+        function showSubs(thisID) {
+            document.getElementById('shoes-subcategories').style.display = 'none';
+            document.getElementById('clothes-subcategories').style.display = 'none';
+            document.getElementById('equipment-subcategories').style.display = 'none';
+            document.getElementById('accessories-subcategories').style.display = 'none';
+            document.getElementById('sport-subcategories').style.display = 'none';
+            document.getElementById('brands-subcategories').style.display = 'none';
+            
+            document.getElementById('nav-subcategories').style.display = 'block';
+            document.getElementById(thisID + '-subcategories').style.display = 'flex';
+        }
+        
+        function closeNavSubs() {
+            document.getElementById('nav-subcategories').style.display = 'none';
+        }
     </script>
 </body>
 
