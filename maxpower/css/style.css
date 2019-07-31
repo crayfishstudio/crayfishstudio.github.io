@@ -50,6 +50,10 @@
     --shadow-medium: 0px 0px 30px rgba(181, 181, 181, 0.2);
 }
 
+/* {
+    border: 1px solid var(--red-solid);
+}*/
+
 body {
     padding: 0px 35px;
     font-family: 'Gilroy', sans-serif !important;
@@ -57,6 +61,10 @@ body {
 
 .tooltip {
     font-family: 'Gilroy', sans-serif !important;
+}
+
+.desktop-invisible {
+    display: none !important;
 }
 
 #phones a {
@@ -126,11 +134,10 @@ input[type="text"]:focus {
 }
 
 .px-5p {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0px 5px !important;
 }
 
-#categories, #discount-button {
+#categories {
     display: flex;
     background-color: var(--almost-black);
     padding: 14px;
@@ -145,6 +152,7 @@ input[type="text"]:focus {
     color: #fff;
     font-weight: 500;
     transition: all .3s;
+    margin: 0px 11px;
 }
 
 #categories a div {
@@ -171,6 +179,7 @@ input[type="text"]:focus {
     background-image: var(--red-gradient);
     display: block;
     width: 12%;
+    padding: 14px;
 }
 
 #cart-container {
@@ -213,12 +222,14 @@ input[type="text"]:focus {
     right: 0px;
 }
 
-.categories-dropdown {
+.categories-dropdowns {
     position: absolute;
     width: 100%;
     top: 100%;
     box-shadow: var(--shadow-medium);
     padding: 35px;
+    background-color: #fff;
+    z-index: 666;
     display: none;
 }
 
@@ -226,12 +237,12 @@ input[type="text"]:focus {
     display: block;
 }
 
-.no-gutters.items > div {
+.no-gutters.items > div, .no-gutters.news > div, .no-gutters.filters > div {
     padding: 5px;
 }
 .item-card {
     box-shadow: var(--shadow-light);
-    padding: 35px 40px;
+    padding: 35px 40px 25px 40px;
     transition: all .2s;
 }
 
@@ -323,6 +334,7 @@ input[type="text"]:focus {
     font-size: 1.25rem;
     line-height: 1rem;
     margin-top: 10px;
+    margin-bottom: 0px;
     display: inline-block;
 }
 
@@ -361,6 +373,7 @@ input[type="text"]:focus {
     color: var(--medium-gray);
     transition: all .3s;
     margin-left: 5px;
+    margin-bottom: 0px;
 }
 
 #main-slider div {
@@ -385,7 +398,7 @@ input[type="text"]:focus {
 #footer-phones a {
     font-weight: 700;
     color: #fff;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 #footer-phones {
@@ -437,9 +450,14 @@ input[type="text"]:focus {
     color: #fff;
 }
 
-.categoty-card {
+.category-card {
     box-shadow: var(--shadow-light);
     background-color: #fff;
+    transition: box-shadow .2s;
+}
+
+.category-card:hover {
+    box-shadow: var(--shadow-medium);
 }
 
 .categoty-card-header {
@@ -525,3 +543,322 @@ input[type="text"]:focus {
     margin-left: 30px;
 }
 
+
+#season-banner .col {
+    height: calc(100vw/5);
+    background-size: cover;
+    background-position: center;
+    display: table-cell;
+}
+
+#season-banner h2 {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: calc(100vw/10 - 20px);
+    text-shadow: 0px 0px 15px #00000069;
+}
+
+.news-image {
+    width: 100%;
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.news-card {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    transition: box-shadow .2s;
+}
+
+.news-card:hover {
+    box-shadow: var(--shadow-medium);    
+}
+
+.news-content {
+    padding: 35px 40px;
+}
+
+.news-title a {
+    font-weight: 700;
+    color: var(--almost-black);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.news-description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--dark-gray);
+}
+
+.news-date {
+    font-size: 0.875rem;
+    color: var(--medium-gray);
+    font-weight: 500;
+    display: inline-block;
+}
+
+.news-button {
+    display: inline-block;
+    float: right;
+    color: var(--medium-gray);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color .2s;
+}
+
+.news-button img {
+    margin-left: 15px;  
+    transition: margin .2s;
+}
+
+.news-button:hover {
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+.news-button:hover img {
+    margin-right: -5px;
+    margin-left: 20px;
+}
+
+#partners-links {
+    margin-top: 34px;   
+}
+
+#partners-links a{
+    color: #fff;
+    margin-right: 30px;
+}
+
+#partners-links a:last-child {
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        padding: 0px 15px;
+    }
+    
+    #phones a:not(:last-child), #social-links a:not(:last-child), #technical-links a:not(:last-child) {
+        margin-right: 25px;
+    }
+    
+    #logo-container {
+        width: 11rem;
+    }
+    
+    #total-price {
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    #footer-phones {
+        display: flex;
+        width: 100%;
+    }
+    
+    .mobile-invisible {
+        display: none !important;
+    }
+    
+    #categories {
+        text-align: left;
+        overflow-x: scroll;
+        width: 100%;
+        padding-left: 1rem;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+    
+    #categories::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .desktop-invisible {
+        display: block !important;
+    }
+    
+    .cart {
+        top: -50px;
+    }
+    
+    .nav-subcategory-links {
+        display: flex;
+    }
+    
+    #nav-subcategories {
+        padding: 25px 25px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        padding: 0px;
+    }
+    
+    .px-5p {
+        padding: 0px !important;
+    }
+    
+    .no-gutters.items > div, .no-gutters.news > div, .category-card {
+        padding: 10px !importanr;
+    }
+    
+    #footer-form-phone {
+        text-align: center;
+    }
+}
+
+.undernav-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--medium-gray);
+}
+
+.items-qty {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: var(--medium-gray);
+    margin-left: 25px;
+    text-transform: none;
+}
+
+
+
+.filters > div span {
+    background-color: var(--light-gray);
+    font-size: 0.875rem;
+    width: 100%;
+    display: flex;
+    padding: 13px 20px;
+    color: var(--dark-gray);
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.filters > div span img {
+    transform: rotate(180deg);
+}
+
+.news-page-main-image {
+    width: 100%;
+    height: calc(100vw/6);
+    background-size: cover;
+    background-position: center;
+}
+
+.news-page-date {
+    font-size: 1.125rem;
+    color: var(--medium-gray);
+    font-weight: 500;
+}
+
+.news-page-links {
+    text-align: right;
+    font-size: 1.125rem;
+}
+
+.news-page-links a img {
+    transition: all .2s;
+}
+
+.news-page-links a:hover img {
+    transform: translateX(5px);
+}
+
+.news-page-links a {
+    color: var(--medium-gray); 
+    font-weight: 500;
+    transition: all .2s;
+}
+
+.news-page-links a:hover {
+    color: var(--dark-gray); 
+}
+
+.news-page-description {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+
+.news-page-news-text {
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: var(--dark-gray);
+    font-weight: 300;
+}
+
+.total-sum {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+#nav-subcategories {
+    background-color: #fff;
+    padding: 30px 35px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    box-shadow: var(--shadow-medium);
+    z-index: 1000;
+    display: none;
+}
+
+#nav-subcategories a {
+    display: block;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    margin: 5px 0px;
+    transition: all .2s;
+    font-weight: 400;
+}
+
+#nav-subcategories a:hover {
+    color: var(--almost-black);
+}
+
+#nav-subcategories > div {
+    display: none;
+}
+
+.nav-subcategory-links a {
+    text-transform: uppercase;
+    color: var(--almost-black) !important;
+    font-weight: 500 !important;
+}
+
+.nav-category-link a {
+    font-size: 0.875rem !important;
+    color: var(--medium-gray) !important;
+    font-weight: 500 !important;
+    margin-right: 10px !important;
+}
+
+.nav-category-link img {
+    margin-left: 25px;   
+    transition: all .2s;
+}
+
+.nav-category-link a:hover img {
+    transform: translateX(5px);
+}
+
+.nav-category-link a:hover {
+    color: var(--almost-black) !important;
+    text-decoration: none;
+}

@@ -18,27 +18,927 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/zoom.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
-    <title></title>
+    <title>Stone masters</title>
 </head>
 
 <body>
+    <div id="page-top" class="container-fluid shadow-sm">
+        <div class="row no-gutters">
+            <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top px-container">
+                <a class="navbar-brand scroll-nav" href="#page-top">Stone masters</a>
+                <div id="hamburger" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavs" aria-expanded="false" aria-label="Toggle navigation">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavs">
+                    <ul id="mobile-nav" class="navbar-nav ml-auto nav-links-custom pt-md-0 pt-2">
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#assortment" data-toggle="collapse" data-target="#navbarNavs">асортимент послуг
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#stages" data-toggle="collapse" data-target="#navbarNavs">етапи роботи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#types-of-stone" data-toggle="collapse" data-target="#navbarNavs">види каменю</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#wholesales" data-toggle="collapse" data-target="#navbarNavs">оптовим покупцям</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#contacts" data-toggle="collapse" data-target="#navbarNavs">контакти</a>
+                        </li>
+                    </ul>
+                    <ul id="desktop-nav" class="navbar-nav ml-auto nav-links-custom pt-md-0 pt-2">
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#assortment">асортимент послуг
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#stages">етапи роботи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#types-of-stone">види каменю</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#wholesales">оптовим покупцям</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-nav px-0" href="#contacts">контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
 
-    <!-- Optional JavaScript -->
+    <div class="container-fluid px-container mt-35">
+        <div class="row justify-content-between">
+            <div class="col-md-3 order-md-2 text-center">
+                <div class="bg-1">
+                    <div class="bg-image-mobile">
+                        <h2 class="main-title-bg">виготовлення пам'ятників</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 order-md-2">
+                <div class="bg-2"></div>
+            </div>
+            <div class="col-md-6 pt-md-4 order-md-1">
+                <div class="row no-gutters pl-main pt-md-4">
+                    <div class="col-md-7">
+                        <h1 class="main-title mb-3">виготовлення пам'ятників</h1>
+                        <p class="subtitle mb-5">Ми - це двадцятилітній досвід роботи в сфері ритуальних послуг, гуртові ціни на пам'ятники та різного роду вироби, якісне та швидке виконання поставленого завдання.</p>
+                    </div>
+                    <a href="#contacts" class="custom-button scroll-nav">зв'язатися з нами</a>
+                    <a href="#" class="outline-button" data-toggle="modal" data-target="#freeConsultation">безкоштовна консультація</a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="freeConsultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Отримайте безкоштовну консультацію</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="footer-form-modal">
+                                        <input type="text" placeholder="Ім'я">
+                                        <input id="recipient-phone-2" type="text" placeholder="Номер телефону">
+                                        <button type="submit">відправити</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="assortment">
+        <!--    Moblie      -->
+        <div id="mobile-monuments" class="mt-5">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div id="headingOne"><div class="button-custom-monument" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-monument fa-lg px-4"></i>пам'ятники з граніту<i class="fas fa-chevron-down fa-lg pr-4"></i></div>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4">одинарні</h3>
+                                <p class="secondary-regular-text">розміри до 4000х3888х1488</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/first-tab/left/1-6.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/first-tab/left/2-2.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/first-tab/left/8-4.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/first-tab/left/4-6.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2 pt-3" src="./img/first-tab/left/5-4.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2 pt-3" src="./img/first-tab/left/6.png" data-action="zoom">
+                            </div>
+                        </div>
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4">подвійні</h3>
+                                <p class="secondary-regular-text">розміри до 4000х3888х1488</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/first-tab/right/1.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/first-tab/right/2.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/first-tab/right/3.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/first-tab/right/4.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2 pt-3" src="./img/first-tab/right/5.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2 pt-3" src="./img/first-tab/right/6.png" data-action="zoom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-4">
+                    <div id="headingTwo"><div class="button-custom-monument" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-monument fa-lg px-4"></i>елітні пам'ятники<i class="fas fa-chevron-down fa-lg pr-4"></i></div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4">одинарні</h3>
+                                <p class="secondary-regular-text">розміри до 4000х3888х1488</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/second-tab/left/3-1.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/second-tab/left/2.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/second-tab/left/2-5.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/second-tab/left/2-4.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2 pt-3" src="./img/second-tab/left/2-3.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2 pt-3" src="./img/second-tab/left/2-1.png" data-action="zoom">
+                            </div>
+                        </div>
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4">подвійні</h3>
+                                <p class="secondary-regular-text">розміри до 4000х3888х1488</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/second-tab/center/1-4.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/second-tab/center/1-3.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/second-tab/center/1-2.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/second-tab/center/1-1.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2 pt-3" src="./img/second-tab/center/1-5.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2 pt-3" src="./img/second-tab/center/3-3.png" data-action="zoom">
+                            </div>
+                        </div>
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4">гробниці</h3>
+                                <p class="secondary-regular-text">розміри до 4000х3888х1488</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/second-tab/right/4-1.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/second-tab/right/4-2.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/second-tab/right/4-3.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/second-tab/right/4-4.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2 pt-3" src="./img/second-tab/right/4-5.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2 pt-3" src="./img/second-tab/right/4.png" data-action="zoom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="headingThree"><div class="button-custom-monument" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-monument fa-lg px-4"></i>вироби з каменю<i class="fas fa-chevron-down fa-lg pr-4"></i></div>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4 pb-3">аксесуари</h3>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/third-tab/1/5-1.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/third-tab/1/5-2.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/third-tab/1/5.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/third-tab/1/5-3.png" data-action="zoom">
+                            </div>
+                        </div>
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4 pb-3">сходи</h3>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/third-tab/2/6-1.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/third-tab/2/6-2.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/third-tab/2/6-3.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/third-tab/2/6-4.png" data-action="zoom">
+                            </div>
+                        </div>
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4 pb-3">стільниці</h3>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/third-tab/3/7-1.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/third-tab/3/7-2.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/third-tab/3/7-3.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/third-tab/3/7.png" data-action="zoom">
+                            </div>
+                        </div>
+                        <div class="row no-gutters px-container">
+                            <div class="col-12 text-center">
+                                <h3 class="secondary-text pt-4 pb-3">каміни</h3>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pr-2" src="./img/third-tab/4/8-1.png" data-action="zoom">
+                                <img class="img-fluid pr-2 pt-3" src="./img/third-tab/4/8-2.png" data-action="zoom">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid pl-2" src="./img/third-tab/4/8-3.png" data-action="zoom">
+                                <img class="img-fluid pl-2 pt-3" src="./img/third-tab/4/8.png" data-action="zoom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--   end     Moblie                                  -->
+        <!--     Desktop          -->
+        <div class="container-fluid px-container mt-5">
+            <div id="desktop-monuments">
+
+                <ul class="nav nav-custom nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item custom-card">
+                        <a class="nav-link-tab active scroll-nav-tabs" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-monument fa-lg pr-4"></i>пам'ятники з граніту</a></li>
+                    <li class="nav-item custom-card mx-card">
+                        <a class="nav-link-tab scroll-nav-tabs" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-monument fa-lg pr-4"></i>елітні пам'ятники</a>
+                    </li>
+                    <li class="nav-item custom-card">
+                        <a class="nav-link-tab scroll-nav-tabs" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fas fa-monument fa-lg pr-4"></i>вироби з каменю</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row pt-5">
+                            <div class="col-6 pr-4 text-center">
+                                <h3 class="secondary-text">одинарні</h3>
+                                <p class="secondary-regular-text">розміри до 1488х1488</p>
+                                <div class="row">
+                                    <div class="col-4"><img class="img-fluid" src="./img/first-tab/left/9.png" data-action="zoom"></div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="./img/first-tab/left/1-6.png" data-action="zoom"></div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="./img/first-tab/left/2-2.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/left/3-5.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/left/4-6.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/left/5-4.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/left/6.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/left/7-4.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/left/8-4.png" data-action="zoom"></div>
+                                </div>
+                            </div>
+                            <div class="col-6 pl-4 text-center">
+                                <h3 class="secondary-text">подвійні</h3>
+                                <p class="secondary-regular-text">розміри до 4000х3888</p>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/1.png" data-action="zoom"></div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/2.png" data-action="zoom"></div>
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/3.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/4.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/5.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/6.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/7.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/8.png" data-action="zoom"></div>
+                                    <div class="col-4 pt-4">
+                                        <img class="img-fluid" src="./img/first-tab/right/9.png" data-action="zoom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row pt-5">
+                            <div class="col-4 pr-4 text-center">
+                                <h3 class="secondary-text">одинарні</h3>
+                                <p class="secondary-regular-text">розміри до 1488х1488</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="img-fluid" src="./img/second-tab/left/2-1.png" data-action="zoom"></div>
+                                    <div class="col-6">
+                                        <img class="img-fluid" src="./img/second-tab/left/2-3.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/left/2-4.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/left/2-5.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/left/3-1.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/left/2.png"></div>
+                                </div>
+                            </div>
+                            <div class="col-4 pl-4 text-center">
+                                <h3 class="secondary-text">подвійні</h3>
+                                <p class="secondary-regular-text">розміри до 4000х3888</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="img-fluid" src="./img/second-tab/center/1-2.png" data-action="zoom"></div>
+                                    <div class="col-6">
+                                        <img class="img-fluid" src="./img/second-tab/center/1-4.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/center/1-5.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/center/1-3.png"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/center/3-3.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/center/1-1.png" data-action="zoom"></div>
+                                </div>
+                            </div>
+                            <div class="col-4 pl-4 text-center">
+                                <h3 class="secondary-text">гробниці</h3>
+                                <p class="secondary-regular-text">розміри до 4000х3888</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="img-fluid" src="./img/second-tab/right/4-1.png" data-action="zoom"></div>
+                                    <div class="col-6">
+                                        <img class="img-fluid" src="./img/second-tab/right/4-2.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/right/4-3.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/right/4-4.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/right/4-5.png" data-action="zoom"></div>
+                                    <div class="col-6 pt-4">
+                                        <img class="img-fluid" src="./img/second-tab/right/4.png" data-action="zoom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="row pt-5">
+                            <div class="col-3 text-center">
+                                <h3 class="secondary-text pb-4">аксесуари</h3>
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <img class="img-fluid" src="./img/third-tab/1/5-1.png" data-action="zoom"></div>
+                                    <div class="col-6 pl-2">
+                                        <img class="img-fluid" src="./img/third-tab/1/5-2.png" data-action="zoom"></div>
+                                    <div class="col-6 pr-2 pt-3">
+                                        <img class="img-fluid" src="./img/third-tab/1/5-3.png" data-action="zoom"></div>
+                                    <div class="col-6 pl-2 pt-3">
+                                        <img class="img-fluid" src="./img/third-tab/1/5.png" data-action="zoom"></div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <h3 class="secondary-text pb-4">сходи</h3>
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <img class="img-fluid" src="./img/third-tab/2/6-1.png" data-action="zoom"></div>
+                                    <div class="col-6 pl-2">
+                                        <img class="img-fluid" src="./img//third-tab/2/6-2.png" data-action="zoom"></div>
+                                    <div class="col-6 pr-2 pt-3">
+                                        <img class="img-fluid" src="./img/third-tab/2/6-3.png" data-action="zoom"></div>
+                                    <div class="col-6 pl-2 pt-3">
+                                        <img class="img-fluid" src="./img/third-tab/2/6-4.png" data-action="zoom"></div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <h3 class="secondary-text pb-4">стільниці</h3>
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <img class="img-fluid" src="./img/third-tab/3/7-1.png" data-action="zoom"></div>
+                                    <div class="col-6 pl-2">
+                                        <img class="img-fluid" src="./img/third-tab/3/7-2.png" data-action="zoom"></div>
+                                    <div class="col-6 pr-2 pt-3">
+                                        <img class="img-fluid" src="./img/third-tab/3/7-3.png" data-action="zoom"></div>
+                                    <div class="col-6 pl-2 pt-3">
+                                        <img class="img-fluid" src="./img/third-tab/3/7.png" data-action="zoom"></div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <h3 class="secondary-text pb-4">каміни</h3>
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <img class="img-fluid" src="./img/third-tab/4/8-1.png" data-action="zoom"></div>
+                                    <div class="col-6 pl-2">
+                                        <img class="img-fluid" src="./img//third-tab/4/8-2.png" data-action="zoom"></div>
+                                    <div class="col-6 pr-2 pt-3">
+                                        <img class="img-fluid" src="./img/third-tab/4/8-3.png" data-action="zoom"></div>
+                                    <div class="col-6 pl-2 pt-3">
+                                        <img class="img-fluid" src="./img/third-tab/4/8.png" data-action="zoom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-line">
+                <div class="underline"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stages" class="container-fluid mt-md-0 mt-5 px-container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="secondary-title">етапи роботи</h2>
+            </div>
+            <div class="col-12">
+                <p class="secondary-regular">Втілимо в реальність будь-які ваші побажання та ідеї</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="custom-card-process px-5">
+                    <i class="fas fa-clipboard-list fa-4x p"></i>
+                    <h4 class="card-title">1. Замовлення</h4>
+                    <p class="card-text">Наші менджери проведуть вам консультацію та нададуть повну інформацію по вашому замовленню</p>
+                </div>
+            </div>
+            <div class="col-md-3 my-md-0 my-4 text-center">
+                <div class="custom-card-process px-5">
+                    <i class="fas fa-cog fa-4x"></i>
+                    <h4 class="card-title">2. Виробництво</h4>
+                    <p class="card-text">Професійне виготовлення на власному підприємстві за гуртовими цінами від виробника</p>
+                </div>
+            </div>
+            <div class="col-md-3 my-md-0 my-4 text-center">
+                <div class="custom-card-process px-5">
+                    <i class="fas fa-pencil-alt fa-4x"></i>
+                    <h4 class="card-title">3. Гравіювання</h4>
+                    <p class="card-text">Команда художників зробить для вас якісний портрет та надпис на гранітній або мармурній плиті</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="custom-card-process px-5">
+                    <i class="fas fa-archway fa-4x"></i>
+                    <h4 class="card-title">4. Встановлення</h4>
+                    <p class="card-text">Монтаж пам'ятників здійснюється на будь-якому цвинтарі львівської області за крорткий термін виконання</p>
+                </div>
+            </div>
+        </div>
+        <div class="row px-line">
+            <div class="underline"></div>
+        </div>
+    </div>
+
+    <div id="types-of-stone" class="container-fluid mt-md-0 mt-5 px-container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="secondary-title">вибір каменю</h2>
+            </div>
+            <div class="col-12">
+                <p class="secondary-regular">Наша команда працює зі всіма видами українського граніту та імпортними видами граніту і мармуру</p>
+            </div>
+        </div>
+
+        <div class="custom-card-choice">
+            <div class="custom-card-title">граніт
+                <div class="card-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-card-choice my-20">
+            <div class="custom-card-title">мармур
+                <div class="card-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-card-choice">
+            <div class="custom-card-title">імпортні види каменю
+                <div class="card-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+                <div class="col-2 card-hover">
+                    <img class="img-fluid" src="./img/image.png">
+                    <p>Назва каменю</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="slider-mobile" class="container-fluid px-0">
+            <div class="row no-gutters">
+                <div class="col-md-12 text-center">
+                    <div class="custom-card-slider">
+                        <div class="custom-card-title">граніт</div>
+                        <div class="row no-gutters pb-4">
+                            <div class="col-1">
+                                <div class="left-arrow-granite">
+                                    <i class="fas fa-chevron-left fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-10 slider-granite slider-text">
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div class="right-arrow-granite">
+                                    <i class="fas fa-chevron-right fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters my-5">
+                <div class="col-md-12 text-center">
+                    <div class="custom-card-slider">
+                        <div class="custom-card-title">мармур</div>
+                        <div class="row no-gutters pb-4">
+                            <div class="col-1">
+                                <div id="left-arrow-marble">
+                                    <i class="fas fa-chevron-left fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-10 slider-marble slider-text">
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div id="right-arrow-marble">
+                                    <i class="fas fa-chevron-right fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-12 text-center">
+                    <div class="custom-card-slider">
+                        <div class="custom-card-title">імпортні види каменю</div>
+                        <div class="row no-gutters pb-4">
+                            <div class="col-1">
+                                <div id="left-arrow-import">
+                                    <i class="fas fa-chevron-left fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-10 slider-import slider-text">
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                                <div class="px-5">
+                                    <div class="bg-slider" style="background-image: url(./img/image%203.3.png)"></div>
+                                    <p>Назва каменю</p>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div id="right-arrow-import">
+                                    <i class="fas fa-chevron-right fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row px-line">
+            <div class="underline"></div>
+        </div>
+    </div>
+
+    <div id="wholesales" class="container-fluid mt-md-0 mt-5 px-container px-container-whole">
+        <div class="row no-gutters justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="secondary-title">оптовим покупцям</h2>
+            </div>
+            <div class="col-12">
+                <p class="secondary-regular">Наша компанія займається оптовим постачанням пам'ятників та безпосередньо каменю будь-якого виду та розміру по всій території України</p>
+            </div>
+            <div class="image-card">
+                <div class="col-12 px-md-4 px-0 pt-md-4">
+                    <div id="wholesale"></div>
+                </div>
+                <div class="row no-gutters justify-content-center px-container">
+                    <div class="col-md-3">
+                        <a href="#" class="wholesale-buttton mb-5" data-toggle="modal" data-target="#wholesaleConsultation">Обговорити співпрацю</a></div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="wholesaleConsultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Заповніть форму для співпраці</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="footer-form-modal">
+                                        <input type="text" placeholder="Ім'я">
+                                        <input id="recipient-phone-3" type="text" placeholder="Номер телефону">
+                                        <button type="submit">відправити</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer id="contacts">
+        <div class="container-fluid px-container mb-5">
+            <div class="row mt-10 px-md-5">
+                <div class="col-md-1 order-md-3"></div>
+                <div class="col-md-4 order-md-3 text-md-left text-center">
+                    <h2 class="secondary-title">зв'яжіться з нами</h2>
+                    <form class="footer-form">
+                        <input type="text" placeholder="Ім'я">
+                        <input id="recipient-phone-1" type="text" placeholder="Номер телефону">
+                        <button type="submit">відправити</button>
+                    </form>
+                </div>
+                <div class="col-md-5 order-md-1 text-md-left text-center">
+                    <h2 class="secondary-title pt-md-0 pt-5">контакти</h2>
+                    <div class="footer-title"><i class="fas fa-map-marker-alt pr-4"></i>Адреси</div>
+                    <div class="footer-map-links">
+                        <a href="https://goo.gl/maps/Uifs8GtC5u7eWZt17" target="_blank">м.Львів вул.Холодна 112(Рясне 1)</a>
+                        <a class="my-md-0 my-3" href="https://goo.gl/maps/PEBWjxytSwrEZwJLA" target="_blank">м.Львів вул.Миколайчука 7(Голосіївське кладовище)</a>
+                        <a href="#">м.Стрий (в'їзд в Центральне кладовище)</a>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="footer-links pt-4">
+                            Stone masters - представник №1 в Україні
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 order-md-2 text-md-left text-center">
+                    <div class="footer-title mt-25"><i class="fas fa-phone pr-4"></i>Телефони</div>
+                    <div class="footer-phone-links">
+                        <a href="tel:+380671488228">+38 (012) 34 56 789</a>
+                        <a href="tel:+380671488228">+38 (012) 34 56 789</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41115.7082901226!2d23.91875204025889!3d49.903838959151386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adee98e7221af%3A0xf81ed0e70a6502c4!2z0JHRgNGO0YXQvtCy0LjRh9GWLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5NDkx!5e0!3m2!1suk!2sua!4v1563876336745!5m2!1suk!2sua" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen>
+            </iframe></div>
+        <div class="row no-gutters my-4 justify-content-between px-container">
+            <div class="col-md-3 text-md-left text-center pb-md-0 pb-2">
+                <div class="footer-studio-links"><a href="#">COMPANYNAME</a> 2019 © Всі права захищено</div>
+            </div>
+            <div class="col-md-2 text-md-right text-center pt-md-0 pt-3">
+                <div class="footer-crayfish-links">Розроблено в <a href="https://crayfish.studio" target="_blank">Crayfish Studio</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imask"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/transition.js"></script>
     <script src="js/zoom.js"></script>
+    <script src="https://kit.fontawesome.com/69b66b6d53.js"></script>
 
     <script>
         var phoneMask = IMask(
-            document.getElementById('recipient-phone'), {
+            document.getElementById('recipient-phone-1'), {
                 mask: '+{38}(000)000-00-00'
             });
     </script>
+    <script>
+        var phoneMask = IMask(
+            document.getElementById('recipient-phone-2'), {
+                mask: '+{38}(000)000-00-00'
+            });
+    </script>
+    <script>
+        var phoneMask = IMask(
+            document.getElementById('recipient-phone-3'), {
+                mask: '+{38}(000)000-00-00'
+            });
+    </script>
+
+    <script>
+        $('.slider-granite').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            pauseOnHover: false,
+            autoplaySpeed: 3000,
+            speed: 1200,
+            touchMove: true,
+            swipeToSlide: true,
+            draggable: true,
+            arrows: true,
+            prevArrow: $('.left-arrow-granite'),
+            nextArrow: $('.right-arrow-granite')
+        });
+    </script>
+    <script>
+        $('.slider-marble').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            pauseOnHover: false,
+            autoplaySpeed: 3000,
+            speed: 1200,
+            touchMove: true,
+            swipeToSlide: true,
+            draggable: true,
+            arrows: true,
+            prevArrow: $('#left-arrow-marble'),
+            nextArrow: $('#right-arrow-marble')
+        });
+    </script>
+
+    <script>
+        $('.slider-import').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            pauseOnHover: false,
+            autoplaySpeed: 3000,
+            speed: 1200,
+            touchMove: true,
+            swipeToSlide: true,
+            draggable: true,
+            arrows: true,
+            prevArrow: $('#left-arrow-import'),
+            nextArrow: $('#right-arrow-import')
+        });
+    </script>
+
+    <script>
+        $(document).on('click', '.scroll-nav', function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top - 120
+            }, 900);
+        });
+    </script>
+<!--
+    <script>
+        $('.collapse').on('show.bs.collapse', function(e) {
+            var $card = $(this).closest('.card');
+            var $open = $($(this).data('parent')).find('.collapse.show');
+
+            var additionalOffset = 0;
+            if ($card.prevAll().filter($open.closest('.card')).length !== 0) {
+                additionalOffset = $open.height();
+            }
+            $('html,body').animate({
+                scrollTop: $card.offset().top - 150
+            }, 500);
+        });
+    </script>
+-->
 </body>
 
 </html>
