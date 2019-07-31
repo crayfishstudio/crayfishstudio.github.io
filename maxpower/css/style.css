@@ -689,7 +689,15 @@ input[type="text"]:focus {
     }
     
     .cart {
-        top: 0px;
+        top: -50px;
+    }
+    
+    .nav-subcategory-links {
+        display: flex;
+    }
+    
+    #nav-subcategories {
+        padding: 25px 25px !important;
     }
 }
 
