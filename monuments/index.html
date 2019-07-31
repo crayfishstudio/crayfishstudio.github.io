@@ -109,7 +109,7 @@
                                 <div class="modal-body">
                                     <form class="footer-form-modal">
                                         <input type="text" placeholder="Ім'я">
-                                        <input id="recipient-phone" type="text" placeholder="Номер телефону">
+                                        <input id="recipient-phone-2" type="text" placeholder="Номер телефону">
                                         <button type="submit">відправити</button>
                                     </form>
                                 </div>
@@ -769,7 +769,7 @@
                                 <div class="modal-body">
                                     <form class="footer-form-modal">
                                         <input type="text" placeholder="Ім'я">
-                                        <input id="recipient-phone" type="text" placeholder="Номер телефону">
+                                        <input id="recipient-phone-3" type="text" placeholder="Номер телефону">
                                         <button type="submit">відправити</button>
                                     </form>
                                 </div>
@@ -791,7 +791,7 @@
                     <h2 class="secondary-title">зв'яжіться з нами</h2>
                     <form class="footer-form">
                         <input type="text" placeholder="Ім'я">
-                        <input id="recipient-phone" type="text" placeholder="Номер телефону">
+                        <input id="recipient-phone-1" type="text" placeholder="Номер телефону">
                         <button type="submit">відправити</button>
                     </form>
                 </div>
@@ -844,7 +844,19 @@
 
     <script>
         var phoneMask = IMask(
-            document.getElementById('recipient-phone'), {
+            document.getElementById('recipient-phone-1'), {
+                mask: '+{38}(000)000-00-00'
+            });
+    </script>
+    <script>
+        var phoneMask = IMask(
+            document.getElementById('recipient-phone-2'), {
+                mask: '+{38}(000)000-00-00'
+            });
+    </script>
+    <script>
+        var phoneMask = IMask(
+            document.getElementById('recipient-phone-3'), {
                 mask: '+{38}(000)000-00-00'
             });
     </script>
