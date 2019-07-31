@@ -1,35 +1,35 @@
 @font-face {
-    font-family: 'Futura New';
-    src: url('../fonts/Futura New-Regular.eot');
-    src: url('../fonts/Futura New-Regular.eot?iefix') format('eot'),
-        url('../fonts/Futura New-Regular.woff') format('woff'),
-        url('../fonts/Futura New-Regular.ttf') format('truetype');
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewDemi-Reg.eot');
+    src: url('../fonts/FuturaNewDemi-Reg.eot?iefix') format('eot'),
+        url('../fonts/FuturaNewDemi-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewDemi-Reg.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Futura New';
-    src: url('../fonts/Futura New-SemiBold.eot');
-    src: url('../fonts/Futura New-SemiBold.eot?iefix') format('eot'),
-        url('../fonts/Futura New-SemiBold.woff') format('woff'),
-        url('../fonts/Futura New-SemiBold.ttf') format('truetype');
-    font-weight: 700;
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewMedium-Reg.eot');
+    src: url('../fonts/FuturaNewMedium-Reg.eot?iefix') format('eot'),
+        url('../fonts/FuturaNewMedium-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewMedium-Reg.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Futura New';
-    src: url('../fonts/Futura New-Bold.eot');
-    src: url('../fonts/Futura New-Bold.eot?iefix') format('eot'),
-        url('../fonts/Futura New-Bold.woff') format('woff'),
-        url('../fonts/Futura New-Bold.ttf') format('truetype');
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewBold-Reg.eot');
+    src: url('../fonts/FuturaNewBold-Reg.eot?iefix') format('eot'),
+        url('../fonts/FuturaNewBold-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewBold-Reg.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 body {
-    font-family: 'Futura New', sans-serif;
+    font-family: 'FuturaNew', sans-serif;
 }
 
 .navbar {
@@ -44,7 +44,7 @@ body {
 .nav-link {
     text-transform: uppercase;
     color: #0b0b0b;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.115em;
@@ -90,7 +90,7 @@ li:hover .hover-square {
     display: inline-block;
     margin-left: 20px;
     margin-bottom: 4px;
-    transition: .5s all;
+    transition: .3s all;
 }
 
 .custom-button-card div {
@@ -100,7 +100,7 @@ li:hover .hover-square {
     display: inline-block;
     margin-left: 20px;
     margin-bottom: 4px;
-    transition: .5s all;
+    transition: .3s all;
 }
 
 
@@ -111,7 +111,7 @@ li:hover .hover-square {
     display: inline-block;
     margin-left: 20px;
     margin-bottom: 4px;
-    transition: .5s all;
+    transition: .3s all;
 }
 
 .custom-button-content div {
@@ -121,7 +121,7 @@ li:hover .hover-square {
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 4px;
-    transition: .5s all;
+    transition: .3s all;
 }
 
 .custom-button:hover div {
@@ -236,7 +236,7 @@ li:hover .hover-square {
     width: 100% !important;
     padding: 8px 76px;
     border: 2px solid #F53248;
-    transition: .4s all;
+    transition: .3s all;
 }
 
 .custom-button-learn:hover {
@@ -264,7 +264,7 @@ li:hover .hover-square {
     font-size: 16px;
     line-height: 21px;
     color: #0b0b0b !important;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 
@@ -291,6 +291,8 @@ li:hover .hover-square {
     color: #828282 !important;
     text-transform: uppercase;
     float: right;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 .social-media:hover {
@@ -304,13 +306,13 @@ li:hover .hover-square {
     line-height: 30px;
     text-transform: uppercase;
     color: #0b0b0b;
-    font-weight: 700;
+    font-weight: 900;
     opacity: 0;
     transition: 0.6s .1s all;
 }
 
 .modernhome {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 40px;
     line-height: 50px;
     text-align: center;
@@ -346,7 +348,7 @@ li:hover .hover-square {
 }
 
 .title-text {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 50px;
     line-height: 63px;
     color: #0b0b0b;
@@ -363,7 +365,7 @@ li:hover .hover-square {
 
 .zoom-image {
     overflow: hidden;
-    height: 73vh;
+    height: 100%;
 }
 
 .text-regular-container {
@@ -421,29 +423,30 @@ li:hover .hover-square {
 }
 
 .title-text-middle {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 40px;
     line-height: 51px;
     color: #0b0b0b;
 }
 
 .title-text-footer {
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 900;
+    font-size: 39px;
     line-height: 51px;
     color: #0b0b0b;
     margin-top: -10px;
+    margin-bottom: 25px;
 }
 
 .title-text-regular {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 30px;
     line-height: 24px;
     color: #0b0b0b;
 }
 
 .card-cottage {
-    background-image: url(../img/image%2017.4.jpg);
+    background-image: url("../img/image%2017.4.jpg");
     background-size: cover;
     height: 450px;
 }
@@ -508,7 +511,7 @@ li:hover .hover-square {
 }
 
 .background-cottage {
-    background-image: url(../img/Group8.jpg);
+    background-image: url("../img/Group8.jpg");
     background-repeat: no-repeat;
     background-position: 0% 100%;
 }
@@ -526,7 +529,7 @@ a:hover {
 }
 
 #background-full {
-    background-image: url(../img/jesse-roberts-561igiTyvSk-unsplash.png);
+    background-image: url("../img/jesse-roberts-561igiTyvSk-unsplash.png");
     background-size: cover;
     padding: 40px;
 }
@@ -545,7 +548,7 @@ a:hover {
     font-size: 18px;
     line-height: 23px;
     color: #0b0b0b;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .fa-calendar-alt {
@@ -563,7 +566,6 @@ a:hover {
 }
 
 .right-arrow:hover {
-    padding-left: 10px;
 }
 
 .left-arrow {
@@ -572,7 +574,6 @@ a:hover {
 }
 
 .left-arrow:hover {
-    padding-right: 10px;
 }
 
 .footer-contacts {
@@ -589,6 +590,7 @@ a:hover {
 input {
     font-size: 16px;
     padding: 10px;
+    padding-left: 0;
     display: block;
     width: 100%;
     border: none;
@@ -605,7 +607,6 @@ label {
     font-size: 18px;
     position: absolute;
     pointer-events: none;
-    left: 10px;
     top: 15px;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
@@ -625,7 +626,7 @@ input:valid ~ label {
 .bar {
     position: relative;
     display: block;
-    width: 320px;
+    width: auto;
 }
 
 .bar:before,
@@ -642,11 +643,11 @@ input:valid ~ label {
 }
 
 .bar:before {
-    left: 58%;
+    left: 42%;
 }
 
 .bar:after {
-    right: 42%;
+    right: 43%;
 }
 
 /* active state */
@@ -661,7 +662,7 @@ input:focus ~ .bar:after {
     color: #F53248;
     transition: .5s all;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .footer-number-phone {
@@ -669,7 +670,7 @@ input:focus ~ .bar:after {
     line-height: 24px;
     color: #F53248;
     display: block;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .footer-number-phone:hover {
@@ -708,11 +709,11 @@ input:focus ~ .bar:after {
     font-size: 20px;
     line-height: 25px;
     color: #0b0b0b;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .text-studio {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 12px;
     line-height: 15px;
     color: #0b0b0b;
@@ -779,7 +780,7 @@ input:focus ~ .bar:after {
     font-size: 24px;
     line-height: 30px;
     color: #0b0b0b;
-    font-weight: 700;
+    font-weight: 900;
     display: block;
 }
 
@@ -860,4 +861,37 @@ input:focus ~ .bar:after {
 
 .pr-navbar {
     padding-right: 24%;
+}
+
+
+
+.footer {
+    margin-top: 35px;
+    position: relative;
+  }
+  
+  .footer__group {
+    position: absolute;
+    width: 98%;
+    margin-top: -220px;
+  }
+  
+  .footer__group_padding {
+    padding-bottom: 75px !important;
+    border-bottom: 3px solid #F53248;
+  }
+
+
+@media (max-width: 768px) {
+    .title-text {
+        font-size: 40px;
+    }
+
+    .title-text-middle {
+        font-size: 35px;
+    }
+
+    .title-text-footer {
+        font-size: 35px;
+    }
 }
