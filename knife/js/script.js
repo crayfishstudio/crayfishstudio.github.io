@@ -93,6 +93,6 @@ for(var i =0; i < radioButton.length; i++) {
     radioButton[i].onclick = function() {
         setTimeout(function() {
             fullpage_api.moveSectionDown(); 
-        }, 200);
+        }, 400);
     };
 }
