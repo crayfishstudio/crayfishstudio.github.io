@@ -1,0 +1,244 @@
+.blade-style > .fp-tableCell .section__title {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.blade-style.active > .fp-tableCell .section__title {
+  opacity: 1;
+}
+
+.blade-style > .fp-tableCell .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out;
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.blade-style > .fp-tableCell .section-item + .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.blade-style > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.blade-style.active > .fp-tableCell .section-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.blade-style.active > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.blade-style.active > .fp-tableCell .section-item {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.blade-style.active > .fp-tableCell .section-item + .section-item {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.blade-style.active > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.blade-finish > .fp-tableCell .section__title {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.blade-finish.active > .fp-tableCell .section__title {
+  opacity: 1;
+}
+
+.blade-finish > .fp-tableCell h2 {
+  -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out;
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.blade-finish > .fp-tableCell h2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.blade-finish > .fp-tableCell .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out;
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.blade-finish > .fp-tableCell .section-item + .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.blade-finish > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.blade-finish.active > .fp-tableCell .section-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.blade-finish.active > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.blade-finish.active > .fp-tableCell .section-item {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.blade-finish.active > .fp-tableCell .section-item + .section-item {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.blade-finish.active > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.handle > .fp-tableCell .section__title {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.handle.active > .fp-tableCell .section__title {
+  opacity: 1;
+}
+
+.handle > .fp-tableCell .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out;
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.handle > .fp-tableCell .section-item + .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.handle > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.handle.active > .fp-tableCell .section-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.handle.active > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.handle.active > .fp-tableCell .section-item {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.handle.active > .fp-tableCell .section-item + .section-item {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.handle.active > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.size > .fp-tableCell .section__title {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.size.active > .fp-tableCell .section__title {
+  opacity: 1;
+}
+
+.size > .fp-tableCell .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out;
+  transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.8s ease-in-out, -webkit-transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.size > .fp-tableCell .section-item + .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.size > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.size.active > .fp-tableCell .section-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.size.active > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.size.active > .fp-tableCell .section-item {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.size.active > .fp-tableCell .section-item + .section-item {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.size.active > .fp-tableCell .section-item + .section-item + .section-item {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+/*# sourceMappingURL=animation.css.map */

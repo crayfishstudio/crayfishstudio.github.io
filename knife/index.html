@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inertix</title>
+
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+<body onload="start();" onhashchange="start();" onresize="start();">
+    <div class="social">
+        <a class="social__link" href="#">Instagram</a>
+        <a class="social__link" href="#">Facebook</a>
+        <a class="social__link" href="#">Reddit</a>
+    </div>
+
+    <div id="fullpage">
+
+        <section class="section home">
+            <div class="home__header">
+                <h1 class="home__logo">INERTIX</h1>
+                <h3 class="home__sublogo">HALO KNIFE</h3>
+            </div>
+
+            <h2 class="home__phrase">LET&#8217;S CREATE PROTOTYPE 2020 TOGETHER</h2>
+        </section>
+
+        <section class="section blade-style">
+            <h2 class="section__title">CHOOSE BLADE STYLE</h2>
+
+            <div class="section__products">
+                
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="blade-style-1" name="blade-style">
+                    
+                    <label class="section-item__label" for="blade-style-1">
+                        <img class="section-item__photo" src="./img/blade-style-1.png" draggable="false" alt="">
+                        <span class="section-item__name">WharnCliffe</span> 
+                    </label>
+                </div>
+
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="blade-style-2" name="blade-style">
+                
+                    <label class="section-item__label" for="blade-style-2">
+                        <img class="section-item__photo" src="./img/blade-style-2.png" draggable="false" alt="">
+                        <span class="section-item__name">Crusader</span> 
+                    </label>
+                </div>
+
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="blade-style-3" name="blade-style">
+                
+                    <label class="section-item__label" for="blade-style-3">
+                        <img class="section-item__photo" src="./img/blade-style-3.png" draggable="false" alt="">
+                        <span class="section-item__name">Tanto</span> 
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="section blade-finish">
+            <h2 class="section__title">CHOOSE BLADE FINISH</h2>
+
+            <div class="section__products">
+                
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="blade-finish-1" name="blade-finish">
+                    
+                    <label class="section-item__label" for="blade-finish-1">
+                        <img class="section-item__photo" src="./img/blade-finish-1.png" draggable="false" alt="">
+                        <span class="section-item__name">Gloss</span> 
+                    </label>
+                </div>
+
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="blade-finish-2" name="blade-finish">
+                
+                    <label class="section-item__label" for="blade-finish-2">
+                        <img class="section-item__photo" src="./img/blade-finish-2.png" draggable="false" alt="">
+                        <span class="section-item__name">Matt</span> 
+                    </label>
+                </div>
+
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="blade-finish-3" name="blade-finish">
+                
+                    <label class="section-item__label" for="blade-finish-3">
+                        <img class="section-item__photo" src="./img/blade-finish-3.png" draggable="false" alt="">
+                        <span class="section-item__name">Black Matt</span> 
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="section handle">
+            <h2 class="section__title">CHOOSE HANDLE METAL</h2>
+
+            <div class="section__products">
+                
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="handle-1" name="handle">
+                    
+                    <label class="section-item__label" for="handle-1">
+                        <img class="section-item__photo" src="./img/handle-1.png" draggable="false" alt="">
+                        <span class="section-item__name">Copper</span> 
+                    </label>
+                </div>
+
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="handle-2" name="handle">
+                
+                    <label class="section-item__label" for="handle-2">
+                        <img class="section-item__photo" src="./img/handle-2.png" draggable="false" alt="">
+                        <span class="section-item__name">Titanium</span> 
+                    </label>
+                </div>
+
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="handle-3" name="handle">
+                
+                    <label class="section-item__label" for="handle-3">
+                        <img class="section-item__photo" src="./img/handle-3.png" draggable="false" alt="">
+                        <span class="section-item__name">Bronze</span> 
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="section size">
+            <h2 class="section__title">CHOOSE KNIFE SIZE</h2>
+
+            <div class="section__products">
+                
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="size-1" name="size">
+                    
+                    <label class="section-item__label" for="size-1">
+                        <img class="section-item__photo" src="./img/size-1.png" draggable="false" alt="">
+                        <span class="section-item__name">100mm</span> 
+                    </label>
+                </div>
+
+                <div class="section-item">
+                    <input class="section-item__radio" type="radio" id="size-2" name="size">
+                
+                    <label class="section-item__label" for="size-2">
+                        <img class="section-item__photo" src="./img/size-2.png" draggable="false" alt="">
+                        <span class="section-item__name">150mm</span> 
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="section generate">
+            <h2 class="section__title">GENERATE YOUR PERSONAL KNIFE MODEL</h2>
+
+            <div class="section__block">
+                <a class="section__button" href="#">GENERATE</a>
+            </div>
+        </section>
+
+        <section class="section mail">
+            <h2 class="section__title">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
+
+            <div class="mail__block">
+                <form action="./send.php" method="POST" class="mail__form">
+                    <input class="mail__input" type="text" name="name" id="name" placeholder="name or pseudo" required>
+
+                    <input class="mail__input" type="email" name="email" id="email" placeholder="e-mail@" required>
+
+                    <button class="mail__submit" type="submit">I AM IN</button>
+                </form>
+            </div>
+
+            <h3 class="mail__footer">roborazorstudio</h3>
+        </section>
+
+        <section class="section final">
+            <div class="final__block">
+                <h2 class="section__title final__title">NAME, THIS IS YOUR PERSONAL INERTIX CONFIGURATION
+                <a class="final__download" href="#">download PDF for free</span></a></h2>
+            </div>
+
+            <div class="final-counter">
+                <div class="final-counter__wrapper">
+                    <div class="final-counter__item">
+                            <h2 class="final-counter__title">
+                                <span class="counts">150</span>mm
+                            </h2>
+                            <h4 class="final-counter__prop">total length in closed position</h4>
+                        </div>
+        
+                        <div class="final-counter__item">
+                            <h2 class="final-counter__title">
+                                <span class="counts">120</span>mm
+                            </h2>
+                            <h4 class="final-counter__prop">blade length</h4>
+                        </div>
+                </div>
+
+                <div class="final-counter__wrapper">
+                    <div class="final-counter__item final-counter__item_margin">
+                        <h2 class="final-counter__title">
+                            <span class="counts">4</span>mm</h2>
+                        <h4 class="final-counter__prop">butt thickness</h4>
+                    </div>
+    
+                    <div class="final-counter__item">
+                        <h2 class="final-counter__title">
+                            <span class="counts">2376</span>
+                        </h2>
+                        <h4 class="final-counter__prop">weight</h4>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <script>
+        if(window.location.hash == "#final") {        
+            $('.counts').counterUp({
+                delay: 5,
+                time: 4000
+            });
+        }
+    </script>
+
+    <script src="./js/fullpage.min.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling:true,
+            scrollHorizontally: true,
+            anchors: ['home', 'blade-style', 'blade-finish', 'handle', 'size', 'generate', 'mail', 'final'],
+            scrollingSpeed: 1100
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script>
+        // Wrap every letter in a span
+    var textWrapper = document.querySelector('.home__phrase');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: false})
+    .add({
+        targets: '.home__phrase .letter',
+        translateY: [100,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: function(el, i) {
+        return 300 + 30 * i;
+        }
+    });
+    </script>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
