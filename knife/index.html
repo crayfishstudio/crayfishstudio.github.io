@@ -165,9 +165,11 @@
         </section>
 
         <section class="section mail">
-            <h2 class="section__title">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
+            <h2 class="section__title m-hide">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
 
             <div class="mail__block">
+                <h2 class="section__title m-show">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
+
                 <form action="./send.php" method="POST" class="mail__form">
                     <input class="mail__input" type="text" name="name" id="name" placeholder="name or pseudo" required>
 
@@ -177,7 +179,7 @@
                 </form>
             </div>
 
-            <h3 class="mail__footer">roborazorstudio</h3>
+            <h3 class="mail__footer">by<br>roborazor<br>studio</h3>
         </section>
 
         <section class="section final">
@@ -220,6 +222,10 @@
             </div>
 
         </section>
+
+        <section class="devby section fp-auto-height">
+            <h2 class="devby__title section__title">developed by <a class="devby__link" href="https://crayfish.studio" target="_blank">CrayFish</a></h2>
+        </section>
     </div>
 
     
@@ -242,7 +248,7 @@
         new fullpage('#fullpage', {
             autoScrolling:true,
             scrollHorizontally: true,
-            anchors: ['home', 'blade-style', 'blade-finish', 'handle', 'size', 'generate', 'mail', 'final'],
+            anchors: ['home', 'blade-style', 'blade-finish', 'handle', 'size', 'generate', 'mail', 'final', 'devby'],
             scrollingSpeed: 1100
         });
     </script>
