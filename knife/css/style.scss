@@ -433,10 +433,10 @@
         margin-bottom: 0;
 
         &__link {
-            margin-left: 10px;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 27px;
             letter-spacing: 0.225em;
+            margin: 0 11px;
         }
     }
 
@@ -513,6 +513,10 @@
             line-height: 24px;
             text-align: center;
             letter-spacing: 0.235em;
+
+            max-width: 350px;
+            margin: 0 auto;
+            margin-top: 68px;
         }
     }
 
@@ -617,10 +621,6 @@
         &__link {
             font-size: 15px;
         }
-
-        &__link:first-child {
-            margin-left: 0;
-        }
     }
 
     .home {
@@ -632,6 +632,10 @@
         
         &__sublogo {
             font-size: 10px;
+        }
+
+        &__phrase {
+            max-width: 285px;
         }
     }
 

@@ -472,10 +472,10 @@
     margin-bottom: 0;
   }
   .social__link {
-    margin-left: 10px;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 27px;
     letter-spacing: 0.225em;
+    margin: 0 11px;
   }
   .section__title {
     font-size: 24px;
@@ -539,6 +539,9 @@
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.235em;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 68px;
   }
   .generate {
     background-size: contain;
@@ -628,9 +631,6 @@
   .social__link {
     font-size: 15px;
   }
-  .social__link:first-child {
-    margin-left: 0;
-  }
   .home__logo {
     font-size: 18px;
     margin-left: 15px;
@@ -638,6 +638,9 @@
   }
   .home__sublogo {
     font-size: 10px;
+  }
+  .home__phrase {
+    max-width: 285px;
   }
   .mail__block {
     top: 12%;
