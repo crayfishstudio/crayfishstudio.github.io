@@ -15,7 +15,7 @@
 
 <body>
     <nav class="container-fluid px-0">
-        <div class="row justify-content-between no-gutters" id="top-nav-links">
+        <div class="row justify-content-between no-gutters mobile-invisible" id="top-nav-links">
             <div id="phones">
                 <a href="tel:+380964143851">+38 (096) 414 3851</a>
                 <a href="tel:+380964143851">+38 (096) 414 3851</a>
@@ -38,15 +38,22 @@
                 <!--<a href="#">Особистий кабінет</a>-->
             </div>
         </div>
-        <div class="row align-items-center px-5p no-gutters">
-            <div class="col-xl-2 col-3">
+        <div class="row align-items-center justify-content-end px-5p no-gutters">
+            <div class="col-2 d-md-none" onclick="burgerToggle()">
+                <div id="burger-toggler">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-8 py-3 py-md-0 d-flex justify-content-center justify-content-md-start">
                 <div id="logo-container">
                     <a href="#">
                         <img src="img/logo.svg">
                     </a>
                 </div>
             </div>
-            <div class="col-xl-1 col-md-1 order-xl-4 pr-xl-0 pr-md-4">
+            <div class="col-xl-1 col-md-1 col-2 order-xl-4 pr-xl-0 pr-md-4">
                 <a href="#" id="cart-container">
                     <span id="total-price" class="mobile-invisible">₴1560</span>
                     <div class="cart">
@@ -61,7 +68,6 @@
                     <input type="text" placeholder="Я шукаю...">
                 </div>
             </div>
-            
             <div class="col-xl-7 d-flex" id="nav-items-bar" onmouseleave="closeNavSubs()">
                 <div id="categories">
                     <a href="#" /*class="active"*/ onmouseenter="showSubs('shoes')">Взуття<div></div></a>
@@ -102,7 +108,7 @@
                             <a href="#">Популярне</a>
                         </div>
                     </div>
-                    <div id="clothes-subcategories"  class="row">
+                    <div id="clothes-subcategories" class="row">
                         <div class="col-md-4">
                             <a href="#">Модний одяг</a>
                             <a href="#">Повсякденне взуття</a>
@@ -128,7 +134,7 @@
                             <a href="#">Популярне</a>
                         </div>
                     </div>
-                    <div id="equipment-subcategories"  class="row">
+                    <div id="equipment-subcategories" class="row">
                         <div class="col-md-4">
                             <a href="#">Модне обладнання</a>
                             <a href="#">Повсякденне взуття</a>
@@ -237,7 +243,7 @@
         </div>
     </nav>
 
-    <section id="main-slider" class="px-5p mt-5 main-slider-class">
+    <section id="main-slider" class="px-5p mt-md-5 main-slider-class">
         <div style="background-image: url(img/paul-volkmer-crRwoRukgkA-unsplash.jpg)"></div>
         <div style="background-image: url(img/paul-volkmer-crRwoRukgkA-unsplash.jpg)"></div>
         <div style="background-image: url(img/paul-volkmer-crRwoRukgkA-unsplash.jpg)"></div>
@@ -246,7 +252,7 @@
 
     <section id="main-categories" class="container-fluid my-5 pt-5 px-5p">
         <div class="row no-gutters">
-            <div class="col text-center">
+            <div class="col text-center px-5">
                 <h2 class="section-header">
                     Категорії товарів
                 </h2>
@@ -279,7 +285,7 @@
                         <a href="#">Вуличне та туристичне взуття</a>
                     </div>
                     <div class="col-md-4 category-image" style="background-image: url(img/category.PNG)">
-                    
+
                     </div>
                     <div class="col-md-10 category-card-link">
                         <a href="#">
@@ -290,7 +296,7 @@
                 </div>
             </div>
         </div>
-        <div class="row no-gutters my-5">
+        <div class="row no-gutters my-md-5 my-3">
             <div class="col category-card">
                 <div class="row categoty-card-header justify-content-center no-gutters">
                     <div class="col-md-4 category-card-name">
@@ -317,7 +323,7 @@
                         <a href="#">Вуличне та туристичне взуття</a>
                     </div>
                     <div class="col-md-4 category-image" style="background-image: url(img/category.PNG)">
-                    
+
                     </div>
                     <div class="col-md-10 category-card-link">
                         <a href="#">
@@ -328,7 +334,7 @@
                 </div>
             </div>
         </div>
-        <div class="row no-gutters my-5">
+        <div class="row no-gutters my-md-5 my-3">
             <div class="col category-card">
                 <div class="row categoty-card-header justify-content-center no-gutters">
                     <div class="col-md-4 category-card-name">
@@ -355,7 +361,7 @@
                         <a href="#">Вуличне та туристичне взуття</a>
                     </div>
                     <div class="col-md-4 category-image" style="background-image: url(img/category.PNG)">
-                    
+
                     </div>
                     <div class="col-md-10 category-card-link">
                         <a href="#">
@@ -366,7 +372,7 @@
                 </div>
             </div>
         </div>
-        <div class="row no-gutters my-5">
+        <div class="row no-gutters my-md-5 my-3">
             <div class="col category-card">
                 <div class="row categoty-card-header justify-content-center no-gutters">
                     <div class="col-md-4 category-card-name">
@@ -393,7 +399,7 @@
                         <a href="#">Вуличне та туристичне взуття</a>
                     </div>
                     <div class="col-md-4 category-image" style="background-image: url(img/category.PNG)">
-                    
+
                     </div>
                     <div class="col-md-10 category-card-link">
                         <a href="#">
@@ -415,7 +421,7 @@
             </div>
         </div>
     </section>
-   
+
     <section id="popular-items" class="container-fluid px-0 my-5 pt-4">
         <div class="row no-gutters">
             <div class="col text-center">
@@ -495,7 +501,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="popular-items" class="container-fluid px-0 my-5 pt-4">
         <div class="row no-gutters">
             <div class="col text-center">
@@ -555,7 +561,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer class="px-5p">
         <div class="container-fluid px-0 py-5 footer-container">
             <div class="row no-gutters justify-content-center mt-4 px-xl-0 px-5">
@@ -604,17 +610,17 @@
                     <a href="#">Facebook</a>
                     <a href="#">Instagram</a>
                 </div>
-                
+
             </div>
             <div class="row justify-content-center no-gutters mt-5 pt-4" id="copyrights">
                 <div class="col-lg-5 text-lg-left text-center">
-                    <p> 
+                    <p>
                         <a href="#">MAXPOWER</a>
                         2019 © Всі права захищено
                     </p>
                 </div>
                 <div class="col-lg-5 text-lg-right text-center">
-                    <p> 
+                    <p>
                         Сайт розроблено командою
                         <a href="#">Crayfish Studio</a>
                     </p>
@@ -641,10 +647,15 @@
                 arrows: false,
                 dots: true
             });
-            
+
             $('#footer-form-phone').mask('+00 (000) 000 0000');
         });
-        
+
+
+        function burgerToggle() {
+            document.getElementById('burger-toggler').classList.toggle('closed');
+        }
+
         function showSubs(thisID) {
             document.getElementById('shoes-subcategories').style.display = 'none';
             document.getElementById('clothes-subcategories').style.display = 'none';
@@ -652,11 +663,11 @@
             document.getElementById('accessories-subcategories').style.display = 'none';
             document.getElementById('sport-subcategories').style.display = 'none';
             document.getElementById('brands-subcategories').style.display = 'none';
-            
+
             document.getElementById('nav-subcategories').style.display = 'block';
             document.getElementById(thisID + '-subcategories').style.display = 'flex';
         }
-        
+
         function closeNavSubs() {
             document.getElementById('nav-subcategories').style.display = 'none';
         }

@@ -240,6 +240,7 @@ input[type="text"]:focus {
 .no-gutters.items > div, .no-gutters.news > div, .no-gutters.filters > div {
     padding: 5px;
 }
+
 .item-card {
     box-shadow: var(--shadow-light);
     padding: 35px 40px 25px 40px;
@@ -645,7 +646,7 @@ input[type="text"]:focus {
 
 @media screen and (max-width: 1300px) {
     body {
-        padding: 0px 15px;
+        padding: 0px 10px;
     }
     
     #phones a:not(:last-child), #social-links a:not(:last-child), #technical-links a:not(:last-child) {
@@ -689,7 +690,7 @@ input[type="text"]:focus {
     }
     
     .cart {
-        top: -50px;
+        top: -10px;
     }
     
     .nav-subcategory-links {
@@ -698,6 +699,10 @@ input[type="text"]:focus {
     
     #nav-subcategories {
         padding: 25px 25px !important;
+    }
+    
+    #main-slider div {
+        height: 50vh;
     }
 }
 
@@ -716,6 +721,27 @@ input[type="text"]:focus {
     
     #footer-form-phone {
         text-align: center;
+    }
+    
+    #main-categories {
+        padding: 0px 10px !important;
+    }
+    
+    .no-gutters.items > div, .no-gutters.news > div, .no-gutters.filters > div {
+        padding: 5px 10px;
+    }
+    
+    #cart-container {
+        margin-right: 25px;
+    }
+    
+    #logo-container {
+        width: 10rem;
+    }
+    
+    .burger-toggler {
+        padding-left: 25px;
+        cursor: pointer;
     }
 }
 
@@ -861,4 +887,41 @@ input[type="text"]:focus {
 .nav-category-link a:hover {
     color: var(--almost-black) !important;
     text-decoration: none;
+}
+
+#burger-toggler {
+    padding-left: 26px;
+}
+
+#burger-toggler div {
+    width: 23px;
+    height: 2.1px;
+    background-color: var(--almost-black);
+    transition: all .3s;
+}
+
+#burger-toggler div:nth-child(1) {
+    transform-origin: 0% 100%;
+}
+
+#burger-toggler div:nth-child(2) {
+    margin: 5px 0px;
+}
+
+#burger-toggler div:nth-child(3) {
+    transform-origin: 0% 0%;
+}
+
+#burger-toggler.closed div:nth-child(1){
+    transform: rotate(45deg);
+}
+
+#burger-toggler.closed div:nth-child(2){
+    opacity: 0;
+    margin: 6.5px 0px;
+    margin-left: -15px;
+}
+
+#burger-toggler.closed div:nth-child(3){
+    transform: rotate(-45deg);
 }
