@@ -143,6 +143,7 @@ input[type="text"]:focus {
     padding: 14px;
     justify-content: space-around;
     width: 88%;
+    white-space: nowrap;
 }
 
 #categories a, #discount-button a{
@@ -662,7 +663,7 @@ input[type="text"]:focus {
     }
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767.5px) { 
     #footer-phones {
         display: flex;
         width: 100%;
@@ -678,7 +679,6 @@ input[type="text"]:focus {
         width: 100%;
         padding-left: 1rem;
         justify-content: space-between;
-        white-space: nowrap;
     }
     
     #categories::-webkit-scrollbar {
@@ -742,6 +742,10 @@ input[type="text"]:focus {
     .burger-toggler {
         padding-left: 25px;
         cursor: pointer;
+    }
+        
+    #burger-toggler {
+        padding-left: 26px;
     }
 }
 
@@ -889,10 +893,6 @@ input[type="text"]:focus {
     text-decoration: none;
 }
 
-#burger-toggler {
-    padding-left: 26px;
-}
-
 #burger-toggler div {
     width: 23px;
     height: 2.1px;
@@ -918,7 +918,7 @@ input[type="text"]:focus {
 
 #burger-toggler.closed div:nth-child(2){
     opacity: 0;
-    margin: 6.5px 0px;
+    margin: 6.2px 0px;
     margin-left: -15px;
 }
 
