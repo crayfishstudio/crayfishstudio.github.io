@@ -59,6 +59,10 @@ body {
     font-family: 'Gilroy', sans-serif !important;
 }
 
+body.burger-open {
+    overflow: hidden;
+}
+
 .tooltip {
     font-family: 'Gilroy', sans-serif !important;
 }
@@ -660,6 +664,30 @@ input[type="text"]:focus {
     
     #total-price {
         margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 1199.5px) {
+    #top-nav-links {
+        position: fixed;
+        width: 100%;
+        left: -100%;
+        background-color: #fff;
+        transition: all .5s;
+        z-index: 1488;
+        top: 57px;
+        padding: 15px 25px;
+        display: block;
+        text-align: center;
+    }  
+    
+    #top-nav-links div {
+        margin: 15px 0px;
+    }
+    
+    #top-nav-links.opened {
+        left: 0px;
+        box-shadow: var(--shadow-light);
     }
 }
 
