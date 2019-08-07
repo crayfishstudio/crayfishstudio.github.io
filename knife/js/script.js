@@ -1,7 +1,7 @@
 let socialBlock = document.querySelector(".social");
 let socialLink = document.querySelectorAll(".social__link");
 
-let anchorsArr = ['#home', '#blade-style', '#blade-finish', '#handle', '#size', '#generate', '#mail', '#final', '#devby'];
+let anchorsArr = ['#home', '#blade-style', '#blade-finish', '#handle', '#size', '#generate', '#final', '#mail',  '#devby'];
 
 let dynamic = () => {
     if(window.location.hash == anchorsArr[0]) {
@@ -46,14 +46,14 @@ let dynamic = () => {
         });
         socialBlock.style.zIndex = 1;
 
-    } else if(window.location.hash == anchorsArr[6]) {
+    } else if(window.location.hash == anchorsArr[7]) {
         socialLink.forEach(el => {
             el.style.transition = "opacity 0s linear 0s";
             el.style.opacity = 0;
         });
         socialBlock.style.zIndex = 1;
 
-    } else if(window.location.hash == anchorsArr[7]) {
+    } else if(window.location.hash == anchorsArr[6]) {
         socialLink.forEach(el => {
             el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 0.5;

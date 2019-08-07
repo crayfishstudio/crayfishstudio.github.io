@@ -35,7 +35,7 @@
             <div class="section__products">
                 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="blade-style-1" name="blade-style">
+                    <input class="section-item__radio" type="radio" id="blade-style-1" value="1" name="blade-style">
                     
                     <label class="section-item__label" for="blade-style-1">
                         <img class="section-item__photo" src="./img/blade-style-1.png" draggable="false" alt="">
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="blade-style-2" name="blade-style">
+                    <input class="section-item__radio" type="radio" id="blade-style-2" value="2" name="blade-style">
                 
                     <label class="section-item__label" for="blade-style-2">
                         <img class="section-item__photo" src="./img/blade-style-2.png" draggable="false" alt="">
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="blade-style-3" name="blade-style">
+                    <input class="section-item__radio" type="radio" id="blade-style-3" value="3" name="blade-style">
                 
                     <label class="section-item__label" for="blade-style-3">
                         <img class="section-item__photo" src="./img/blade-style-3.png" draggable="false" alt="">
@@ -69,7 +69,7 @@
             <div class="section__products">
                 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="blade-finish-1" name="blade-finish">
+                    <input class="section-item__radio" type="radio" id="blade-finish-1" value="1" name="blade-finish">
                     
                     <label class="section-item__label" for="blade-finish-1">
                         <img class="section-item__photo" src="./img/blade-finish-1.png" draggable="false" alt="">
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="blade-finish-2" name="blade-finish">
+                    <input class="section-item__radio" type="radio" id="blade-finish-2" value="2" name="blade-finish">
                 
                     <label class="section-item__label" for="blade-finish-2">
                         <img class="section-item__photo" src="./img/blade-finish-2.png" draggable="false" alt="">
@@ -87,7 +87,7 @@
                 </div>
 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="blade-finish-3" name="blade-finish">
+                    <input class="section-item__radio" type="radio" id="blade-finish-3" value="3" name="blade-finish">
                 
                     <label class="section-item__label" for="blade-finish-3">
                         <img class="section-item__photo" src="./img/blade-finish-3.png" draggable="false" alt="">
@@ -103,7 +103,7 @@
             <div class="section__products">
                 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="handle-1" name="handle">
+                    <input class="section-item__radio" type="radio" id="handle-1" value="1" name="handle">
                     
                     <label class="section-item__label" for="handle-1">
                         <img class="section-item__photo" src="./img/handle-1.png" draggable="false" alt="">
@@ -112,7 +112,7 @@
                 </div>
 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="handle-2" name="handle">
+                    <input class="section-item__radio" type="radio" id="handle-2" value="2" name="handle">
                 
                     <label class="section-item__label" for="handle-2">
                         <img class="section-item__photo" src="./img/handle-2.png" draggable="false" alt="">
@@ -121,7 +121,7 @@
                 </div>
 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="handle-3" name="handle">
+                    <input class="section-item__radio" type="radio" id="handle-3" value="3" name="handle">
                 
                     <label class="section-item__label" for="handle-3">
                         <img class="section-item__photo" src="./img/handle-3.png" draggable="false" alt="">
@@ -137,7 +137,7 @@
             <div class="section__products">
                 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="size-1" name="size">
+                    <input class="section-item__radio" type="radio" id="size-1" value="1" name="size">
                     
                     <label class="section-item__label" for="size-1">
                         <img class="section-item__photo" src="./img/size-1.png" draggable="false" alt="">
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="section-item">
-                    <input class="section-item__radio" type="radio" id="size-2" name="size">
+                    <input class="section-item__radio" type="radio" id="size-2" value="2" name="size">
                 
                     <label class="section-item__label" for="size-2">
                         <img class="section-item__photo" src="./img/size-2.png" draggable="false" alt="">
@@ -160,26 +160,8 @@
             <h2 class="section__title">GENERATE YOUR PERSONAL KNIFE MODEL</h2>
 
             <div class="section__block">
-                <a class="section__button" href="#">GENERATE</a>
+                <a id="generate__button" class="section__button" href="#">GENERATE <span id="generate__number"></span></a>
             </div>
-        </section>
-
-        <section class="section mail">
-            <h2 class="section__title m-hide">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
-
-            <div class="mail__block">
-                <h2 class="section__title m-show">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
-
-                <form action="./send.php" method="POST" class="mail__form">
-                    <input class="mail__input" type="text" name="name" id="name" placeholder="name or pseudo" required>
-
-                    <input class="mail__input" type="email" name="email" id="email" placeholder="e-mail@" required>
-
-                    <button class="mail__submit" type="submit">I AM IN</button>
-                </form>
-            </div>
-
-            <h3 class="mail__footer">by<br>roborazor<br>studio</h3>
         </section>
 
         <section class="section final">
@@ -223,6 +205,26 @@
 
         </section>
 
+        <section class="section mail">
+            <h2 class="section__title m-hide">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
+
+            <div class="mail__block">
+                <h2 class="section__title m-show">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
+
+                <form action="./send.php" method="POST" class="mail__form">
+                    <input class="mail__input" type="text" name="name" id="name" placeholder="name or pseudo" required>
+
+                    <input class="mail__input" type="email" name="email" id="email" placeholder="e-mail@" required>
+
+                    <button class="mail__submit" type="submit">I AM IN</button>
+                </form>
+            </div>
+
+            <h3 class="mail__footer">by<br>roborazor<br>studio</h3>
+        </section>
+
+
+
         <section class="devby section fp-auto-height">
             <h2 class="devby__title section__title">developed by <a class="devby__link" href="https://crayfish.studio" target="_blank">CrayFish</a></h2>
         </section>
@@ -231,7 +233,6 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
     <script>
         if(window.location.hash == "#final") {        
@@ -248,7 +249,7 @@
         new fullpage('#fullpage', {
             autoScrolling:true,
             scrollHorizontally: true,
-            anchors: ['home', 'blade-style', 'blade-finish', 'handle', 'size', 'generate', 'mail', 'final', 'devby'],
+            anchors: ['home', 'blade-style', 'blade-finish', 'handle', 'size', 'generate', 'final', 'mail', 'devby'],
             scrollingSpeed: 1100
         });
     </script>
@@ -275,5 +276,6 @@
     </script>
 
     <script src="./js/script.js"></script>
+    <script src="./js/gener.js"></script>
 </body>
 </html>
