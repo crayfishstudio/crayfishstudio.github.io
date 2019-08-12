@@ -661,6 +661,10 @@ input[type="text"]:focus {
     #total-price {
         margin-right: 35px;
     }
+    
+    .news-content {
+        padding: 30px 35px;
+    }
 }
 
 @media screen and (max-width: 1199.5px) {
@@ -690,6 +694,10 @@ input[type="text"]:focus {
 @media screen and (max-width: 991.5px) { 
     .item-image {
         height: calc((100vw - 110px)/5);
+    }
+    
+    .news-content {
+        padding: 20px 25px;
     }
 }
 
@@ -771,6 +779,10 @@ input[type="text"]:focus {
     
     .item-card {
         padding: 35px 25px 25px 25px;
+    }
+    
+    .news-image {
+        height: 30vh;
     }
 }
 
