@@ -394,19 +394,15 @@ input[type="text"]:focus {
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    display: inline-block;
 }
 
 #footer-phones a {
     font-weight: 700;
     color: #fff;
-    margin-left: 25px;
+    white-space: nowrap;
 }
 
-#footer-phones {
-    display: inline-block;
-    float: right;
-}
+
 
 #footer-form-submit {
     padding: 14px;
@@ -697,15 +693,12 @@ input[type="text"]:focus {
     }
     
     .news-content {
-        padding: 20px 25px;
+        padding: 20px 20px;
     }
 }
 
 @media screen and (max-width: 767.5px) { 
-    #footer-phones {
-        display: flex;
-        width: 100%;
-    }
+
     
     .mobile-invisible {
         display: none !important;
