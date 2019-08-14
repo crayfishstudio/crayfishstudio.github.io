@@ -704,8 +704,6 @@ input[type="text"]:focus {
 }
 
 @media screen and (max-width: 767.5px) { 
-
-    
     .mobile-invisible {
         display: none !important;
     }
@@ -783,6 +781,18 @@ input[type="text"]:focus {
     .news-image {
         height: 30vh;
     }
+    
+    .undernav-line {
+        display: none;
+    }
+    
+    .news-page-links {
+        display: none;
+    }
+    
+    .news-page-main-image {
+        height: 35vh !important;
+    }
 }
 
 @media screen and (max-width: 578px) {
@@ -853,7 +863,8 @@ input[type="text"]:focus {
 }
 
 .undernav-line {
-    width: 100%;
+    width: calc(100% - 10px);
+    margin-left: 5px;
     height: 1px;
     background-color: var(--medium-gray);
 }
