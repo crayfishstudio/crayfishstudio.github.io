@@ -770,3 +770,41 @@ li:hover .nav-link {
     background-size: cover;
     height: 40vw;
 }
+.btn-link:hover {
+    text-decoration: none;
+    color: #262626 !important;
+}
+
+.btn-link.focus, .btn-link:focus {
+    text-decoration: none !important;
+    box-shadow: none;
+}
+
+
+.btn {
+    display: inline-block; 
+    font-weight: 400;
+    color: #212529;
+    text-align: left; 
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 0px solid transparent;
+    padding: 0rem 0rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 165.9%;
+    text-transform: uppercase;
+    color: #262626;
+}
+
+.card-header {
+    background-color: #fcfcfc;
+    border: none;
+    padding: 0rem 0rem; 
+}
