@@ -40,7 +40,7 @@
 
 :root {
     --white: #FFF;
-    --light-gray: #FAFAFA;
+    --light-gray: #F9F9F9;
     --medium-gray: #CACACA;
     --dark-gray: #696969;
     --almost-black: #1F1F1F;
@@ -130,6 +130,11 @@ input[type="text"]:focus {
     padding: 4px 0px 4px 9px;
     z-index: 1000;
     background-color: var(--light-gray);
+    transition: all .2s;
+}
+
+#search-icon:hover {
+    transform: scale(1.2);
 }
 
 #search {
@@ -629,12 +634,13 @@ input[type="text"]:focus {
 }
 
 #partners-links {
-    margin-top: 34px;   
+    margin-top: 34px;  
 }
 
 #partners-links a{
     color: #fff;
     margin-right: 30px;
+    white-space: nowrap;
 }
 
 #partners-links a:last-child {
@@ -659,7 +665,7 @@ input[type="text"]:focus {
     }
     
     .news-content {
-        padding: 30px 35px;
+        padding: 25px 30px;
     }
 }
 
