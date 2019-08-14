@@ -35,3 +35,11 @@ function showSubs(thisID) {
 function closeNavSubs() {
     document.getElementById('nav-subcategories').style.display = 'none';
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function () {
+    $('#footer-form-phone').mask('+00 (000) 000 0000');
+});
