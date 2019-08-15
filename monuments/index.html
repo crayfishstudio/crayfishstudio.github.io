@@ -1018,11 +1018,9 @@
     <script>
         $(document).on('click', '.button-custom-monument', function(event) {
             event.preventDefault();
-                $('html, body').animate({
-                            scrollTop: $('.card-header').offset().top-120
-                        }, 1);
-            
-            
+            $('html, body').animate({
+                scrollTop: $('.card-header').offset().top - 120
+            }, 900);
         });
     </script>
 </body>
