@@ -1047,3 +1047,40 @@ input[type="text"]:focus {
 .item-content {
     width: 100%;
 }
+
+.filters > div span {
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.filters > div:hover span {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+}
+.faq-item {
+    background-color: var(--light-gray);
+    margin-top: 15px;
+}
+
+.faq-header {
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    cursor: pointer;
+    padding: 15px calc(7vw);
+    font-weight: 600;
+}
+
+.faq-content {
+    padding: 10px 7vw 35px 7vw;
+}
+
+.item-gender[data-gender="male"] {
+    margin-right: -2px;
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+.item-gender[data-gender="female"] {
+    margin-top: -3px;
+    margin-left: 10px;
+}
