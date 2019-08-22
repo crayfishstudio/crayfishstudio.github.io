@@ -129,7 +129,7 @@
             <div class="accordion" id="accordionExample">
                 <div class="card">
                     <div id="headingOne" class="card-header">
-                        <button class="button-custom-monument btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="button-custom-monument btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" aria-disabled="true">
                             <i class="fas fa-monument fa-lg px-4"></i>пам'ятники з граніту<i class="fas fa-chevron-down fa-lg pr-4"></i></button>
                     </div>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -197,7 +197,7 @@
                 </div>
                 <div class="card my-4">
                     <div id="headingTwo" class="card-header">
-                        <button class="button-custom-monument btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="button-custom-monument btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" aria-disabled="true">
                             <i class="fas fa-monument fa-lg px-4"></i>елітні пам'ятники<i class="fas fa-chevron-down fa-lg pr-4"></i></button>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -283,7 +283,7 @@
                 </div>
                 <div class="card">
                     <div id="headingThree" class="card-header">
-                        <button class="button-custom-monument btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="button-custom-monument btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" aria-disabled="true">
                             <i class="fas fa-monument fa-lg px-4"></i>вироби з каменю<i class="fas fa-chevron-down fa-lg pr-4"></i></button>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -1013,6 +1013,14 @@
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top - 120
             }, 900);
+        });
+    </script>
+    <script>
+        $(document).on('click', '.button-custom-monument', function(event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('.card-header').offset().top - 120
+            }, 1);
         });
     </script>
 </body>
