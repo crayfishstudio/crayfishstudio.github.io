@@ -253,7 +253,7 @@ input[type="text"]:focus {
 
 .item-card {
     box-shadow: var(--shadow-light);
-    padding: 35px 40px 25px 40px;
+    padding: 45px 40px 25px 40px;
     transition: all .2s;
 }
 
@@ -266,12 +266,7 @@ input[type="text"]:focus {
 }
 
 .item-card:hover .item-old-price {
-    transform: translateY(-4px);
     color: var(--red-solid);
-}
-
-.item-card:hover .item-bage {
-    top: -33px;
 }
 
 .item-image {
@@ -296,7 +291,7 @@ input[type="text"]:focus {
 
 .item-bage {
     position: absolute;
-    top: -32px;
+    top: 8px;
     left: 0px;
     text-align: center;
     width: 100%;
@@ -762,20 +757,12 @@ input[type="text"]:focus {
         margin-top: 40px;
     }
     
-    .item-bage {
-        top: -32px;
-    }
-    
     .item-bage span {
         font-size: 1rem;
     }
     
-    .item-bage:hover {
-        top: -34px;
-    }
-    
     .item-card {
-        padding: 35px 25px 25px 25px;
+        padding: 45px 25px 25px 25px;
     }
     
     .news-image {
@@ -859,11 +846,14 @@ input[type="text"]:focus {
     }
     
     .item-card {
-        padding: 15px 20px;
+        padding: 25px 20px;
     }
-    
+
+    .items-qty {margin-left: 0 !important;}
+
     .item-bage {
-        top: -25px;
+        width: 50% !important;
+        left: calc(50% - 8px) !important;
     }
 }
 
@@ -1084,3 +1074,120 @@ input[type="text"]:focus {
     margin-top: -3px;
     margin-left: 10px;
 }
+
+/** PAGINATION **/
+    .pagination a {
+        color: #858585;
+        margin: 0px 2px;
+        padding: 0px 4px;
+        position: relative;
+        text-align: center;
+    }
+
+    .pagination a:hover {
+        text-decoration: none;
+        color: #D03827;
+    }
+
+    .pagination a.active {
+        color: #0a0a0a;
+        border-bottom: 2px solid #0a0a0a;
+    }
+    .pagination a.active:hover { border-bottom: 2px solid #D03827 !important; }
+
+    .pagination a:first-child, .pagination a:last-child {
+        width: 30px;
+    }
+    .pagination a:last-child { transform: rotate(180deg); }
+
+    .pagination a div {
+        position: absolute;
+        background-color: #0a0a0a;
+        width: 10px;
+        height: 2px;
+        top: calc(50% - 1px);
+        left: 8px;
+        transition: .3s;
+    }
+
+    .pagination a:hover div {
+        background-color: #D03827 !important;
+    }
+
+    .pagination a div:nth-of-type(1), .pagination a div:nth-of-type(3) { 
+        transform: translate(0px, 3px) rotate(45deg); 
+    }
+    .pagination a div:nth-of-type(2), .pagination a div:nth-of-type(4) { 
+        transform: translate(0px, -3px) rotate(-45deg);
+    }
+    .pagination a:hover div:nth-of-type(3) { transform: translate(-7px, 3px) rotate(45deg); }
+    .pagination a:hover div:nth-of-type(4) { transform: translate(-7px, -3px) rotate(-45deg); }
+/** PAGINATION ENDED **/
+
+/** BLOCK **/
+    .w-lg-75 {width: 75% !important;}
+
+    .block {
+        position: relative;
+        background-color: var(--light-gray);
+        padding: 16px 128px;
+        margin-top: 16px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .block h3 {
+        font-size: 20px;
+        padding-right: 24px;
+        margin: 0;
+        font-weight: 700;
+        color: #696969;
+    }
+
+    .active-block {
+        background-color: #FFF;
+        box-shadow: var(--shadow-medium);
+        transition: .5s;
+    }
+
+    .plus {
+        position: absolute;
+        top: 18px;
+        right: 128px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .plus div {
+        position: absolute;
+        top: 11px;
+        left: 5px;
+        height: 2.4px;
+        width: 14px;
+        background-color: #696969;
+        transition: .5s;
+    }
+
+    .plus div:nth-of-type(2) {
+        transform: rotate(90deg);
+    }
+
+    .block h3:hover .plus div {
+        background-color: #D03827 !important;
+        transition: .3s;
+    }
+
+    .info {
+        padding-top: 16px;
+        display: none;
+    }
+
+    .active-block .plus {
+        transform: rotate(45deg);        
+        transition: .5s;
+    }
+
+    .active-block .plus div { background-color: #D03827 !important; }
+/** BLOCK ENDED **/
