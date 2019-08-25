@@ -161,6 +161,14 @@ $(document).ready(function () {
 
             n = 1;
         });
+
+        $(this).parent().parent().find('.col-lg-3').each(function() {
+            if (n == 1) {
+                $(this).slideToggle(300);
+            }
+
+            n = 1;
+        });
     });
 
     $('.remove-item').click(function() {
