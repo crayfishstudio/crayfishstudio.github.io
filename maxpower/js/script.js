@@ -53,12 +53,14 @@ $(document).ready(function () {
     $('#footer-form-phone').mask('+00 (000) 000 0000');
 
     $('.block').click(function() {
-        $(this).find('.info').slideToggle(500);
+        if (!$(this).hasClass('block-white')) {
+            $(this).find('.info').slideToggle(500);
 
-        if ($(this).hasClass('active-block')) {
-            $(this).removeClass('active-block');
-        } else {
-            $(this).addClass('active-block');
+            if ($(this).hasClass('active-block')) {
+                $(this).removeClass('active-block');
+            } else {
+                $(this).addClass('active-block');
+            }
         }
       });
 
