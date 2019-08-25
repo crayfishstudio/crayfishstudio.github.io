@@ -783,6 +783,10 @@ input[type="text"]:focus {
     .news-page-links {
         justify-content: center;
     }
+
+    .no-gutters.filters > div {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 578px) {

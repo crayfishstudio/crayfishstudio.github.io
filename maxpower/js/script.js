@@ -73,8 +73,10 @@ $(document).ready(function () {
             } else {
                 $('.input-popup').not($(this)).each(function() {
                     if ($(this).hasClass('input-popup-open')) {
-                        $(this).removeClass('input-popup-open');
-                        $(this).parent().find('.input-popup-content').fadeToggle(300);
+                        if (!$(this).is("#filter")) {
+                            $(this).removeClass('input-popup-open');
+                            $(this).parent().find('.input-popup-content').fadeToggle(300);
+                        }
                     }
                 });
 
@@ -90,8 +92,10 @@ $(document).ready(function () {
         } else {
             $('.input-popup').not($(this)).each(function() {
                 if ($(this).hasClass('input-popup-open')) {
-                    $(this).removeClass('input-popup-open');
-                    $(this).parent().find('.input-popup-content').fadeToggle(300);
+                    if (!$(this).is("#filter")) {
+                        $(this).removeClass('input-popup-open');
+                        $(this).parent().find('.input-popup-content').fadeToggle(300);
+                    }
                 }
             });
 
@@ -147,4 +151,15 @@ $(document).ready(function () {
         $(this).parent().find('.input-popup').removeClass('input-popup-open');
     });
 
+
+    $('#filter').click(function() {
+        var n = 0;
+        $(this).parent().parent().find('.col-xl-2').each(function() {
+            if (n == 1) {
+                $(this).slideToggle(300);
+            }
+
+            n = 1;
+        });
+    });
 });
