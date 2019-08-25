@@ -178,4 +178,8 @@ $(document).ready(function () {
     $('#cart-img').click(function() {
         $('.cart-popup').fadeToggle(300);
     });
+
+    $('.item-remove').click(function() {
+        $(this).parent().remove();
+    });
 });
