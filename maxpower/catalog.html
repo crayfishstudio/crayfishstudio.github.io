@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/multirange.css"></link>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -251,46 +252,271 @@
                     <span class="items-qty">15 товарів знайдено</span>
                 </h2>
             </div>
-            <div class="col-md-6">
-                
+            <div class="ml-lg-auto mt-md-4 col-xl-2 col-lg-4 col-md-6 col-12 position-relative">
+               <div class="input-popup input-popup-radio">
+                  <p>Від дешевих до дорогих</p>
+                  <input id="from_min" type="radio" name="sort" value="from_min" checked />
+                  <input id="from_max" type="radio" name="sort" value="from_max"/>
+                  <div class="input-popup-arrow">
+                     <div></div>
+                     <div></div>
+                  </div>
+               </div>
+               <div class="input-popup-content radio-popup p-2">
+                  <p to="#from_min">Від дешевих до дорогих</p>
+                  <p to="#from_max">Від дорогих до дешевих</p>
+               </div>
             </div>
         </div>
         <div class="row filters no-gutters">
-            <div class="col-md-2">
-                <span>
-                   Тип
-                    <img src="img/filterarrow.svg">
-                </span>
+            <div class="col-xl-2 col-md-4">
+				<div class="input-popup">
+					<p>Тип</p>
+					<div class="input-popup-arrow">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="input-popup-content py-2">
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Аксесуари для волосся</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Гребені та щітки</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Догляд за волоссям</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Електроприбори</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Кондиціонери</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Косметичні набори</span>
+					</label>
+				</div>
             </div>
-            <div class="col-md-2">
-                <span>
-                   Розмір
-                    <img src="img/filterarrow.svg">
-                </span>
+            <div class="col-xl-2 col-md-4">
+				<div class="input-popup">
+					<p>Розмір</p>
+					<div class="input-popup-arrow">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="input-popup-content py-2">
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Аксесуари для волосся</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Гребені та щітки</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Догляд за волоссям</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Електроприбори</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Кондиціонери</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Косметичні набори</span>
+					</label>
+				</div>
             </div>
-            <div class="col-md-2">
-                <span>
-                   Бренд
-                    <img src="img/filterarrow.svg">
-                </span>
+            <div class="col-xl-2 col-md-4">
+				<div class="input-popup">
+					<p>Бренд</p>
+					<div class="input-popup-arrow">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="input-popup-content py-2">
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Аксесуари для волосся</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Гребені та щітки</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Догляд за волоссям</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Електроприбори</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Кондиціонери</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Косметичні набори</span>
+					</label>
+				</div>
             </div>
-            <div class="col-md-2">
-                <span>
-                   Колір
-                    <img src="img/filterarrow.svg">
-                </span>
+            <div class="col-xl-2 col-md-4">
+				<div class="input-popup">
+					<p>Колір</p>
+					<div class="input-popup-arrow">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="input-popup-content py-2">
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #1f1f1f;"></span>
+						<span>Чорний</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="border: 1px solid #696969;"></span>
+						<span>Білий</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #f71f1f;"></span>
+						<span>Червоний</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #2a18fa;"></span>
+						<span>Синій</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #04c500;"></span>
+						<span>Зелений</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #f3db07;"></span>
+						<span>Жовтий</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #fc92de;"></span>
+						<span>Рожевий</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #9b51e0;"></span>
+						<span>Фіолетовий</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #52f2fc;"></span>
+						<span>Голубий</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #c1beb4;"></span>
+						<span>Сірий</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #f2d57d;"></span>
+						<span>Бежевий</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span class="color-example" style="background-color: #f2994a;"></span>
+						<span>Оранжевий</span>
+					</label>
+				</div>
             </div>
-            <div class="col-md-2">
-                <span>
-                   Стать
-                    <img src="img/filterarrow.svg">
-                </span>
+            <div class="col-xl-2 col-md-4">
+				<div class="input-popup">
+					<p>Стать</p>
+					<div class="input-popup-arrow">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="input-popup-content py-2">
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Чоловік</span>
+					</label>
+					<label class="label label-2 d-flex align-items-center">
+						<input type="checkbox"/>
+						<span class="checkbox checkbox-2"></span>
+						<span>Жінка</span>
+					</label>
+				</div>
             </div>
-            <div class="col-md-2">
-                <span>
-                   Ціна
-                    <img src="img/filterarrow.svg">
-                </span>
+            <div class="col-xl-2 col-md-4">
+				<div class="input-popup">
+					<p>Ціна</p>
+					<div class="input-popup-arrow">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="input-popup-content py-4">
+					<div class="d-flex justify-content-start align-items-center px-3">
+						<div class="input-number input-number-popup">
+							<input id="min-range-number" type="number" readonly disabled />
+						</div>
+						<span class="px-1">-</span>
+						<div class="input-number input-number-popup">
+							<input id="max-range-number" type="number" readonly disabled/>
+						</div>
+						<button id="number_btn" class="button button-number w-100 ml-3">ok</button>
+					</div>
+					<input id="rangeid" class="mt-3" type="range" min="340" max="5000" value="340,5000" multirange>
+				</div>
             </div>
         </div>
     </section>
@@ -783,6 +1009,45 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/multirange.js"></script>
+      <script>
+         var range = document.getElementById("rangeid");
+         multirange(range);
+
+         $('input[type=range]').on("change mousemove", function() {
+            $("#min-range-number").val(range.valueLow);
+            $("#max-range-number").val(range.valueHigh);
+
+            if ($(this).parent().parent().find('.input-popup').hasClass('input-popup-active')) {
+               var text_for_p = "";
+               text_for_p = ", ₴‎" + range.valueLow + " - " + range.valueHigh;
+               $(this).parent().parent().find('.input-popup').find('p').find('span').text(text_for_p);
+            }
+         });
+
+         $("#number_btn").click(function() {
+            var text_for_p = "";
+
+            if ($(this).hasClass('button-active')) {
+               $(this).removeClass('button-active');
+               $("#min-range-number").prop("disabled", true);
+               $("#max-range-number").prop("disabled", true);
+               $(this).parent().parent().parent().find('.input-popup').removeClass('input-popup-active');
+
+            } else {
+               $(this).addClass('button-active');
+               $("#min-range-number").prop("disabled", false);
+               $("#max-range-number").prop("disabled", false);
+               $(this).parent().parent().parent().find('.input-popup').addClass('input-popup-active');
+
+               text_for_p = ", ₴‎" + range.valueLow + " - " + range.valueHigh;
+            }
+
+            $(this).parent().parent().parent().find('.input-popup').find('p').find('span').text(text_for_p);
+            $(this).parent().parent().parent().find('.input-popup').removeClass('input-popup-open');
+            $(this).parent().parent().parent().find('.input-popup-content').fadeToggle(300);
+         });
+      </script>
     <script src="js/script.js"></script>
 </body>
 

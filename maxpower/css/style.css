@@ -295,7 +295,6 @@ input[type="text"]:focus {
     left: 0px;
     text-align: center;
     width: 100%;
-    z-index: 100;
     transition: all .3s;
 }
 
@@ -306,10 +305,6 @@ input[type="text"]:focus {
     text-transform: uppercase;
     font-size: 1.125rem;
     font-weight: 700;
-}
-
-.item-subcategory {
-
 }
 
 .item-subcategory a:hover {
@@ -696,6 +691,9 @@ input[type="text"]:focus {
     .news-content {
         padding: 20px 20px;
     }
+
+    .block {padding: 16px 24px !important;}
+    .plus {right: 16px !important;}
 }
 
 @media screen and (max-width: 767.5px) { 
@@ -855,6 +853,19 @@ input[type="text"]:focus {
         width: 50% !important;
         left: calc(50% - 8px) !important;
     }
+
+    .block {padding: 16px !important;}
+
+    .input-popup-content {
+        left: 11px !important;
+        min-width: calc(100% - 21px) !important;
+    }
+
+    .input-popup-radio {        
+        width: calc(100% - 20px) !important;
+        margin-left: 10px !important;
+        margin-bottom: 8px;
+    }
 }
 
 .undernav-line {
@@ -871,23 +882,6 @@ input[type="text"]:focus {
     color: var(--medium-gray);
     margin-left: 25px;
     text-transform: none;
-}
-
-
-
-.filters > div span {
-    background-color: var(--light-gray);
-    font-size: 0.875rem;
-    width: 100%;
-    display: flex;
-    padding: 13px 20px;
-    color: var(--dark-gray);
-    font-weight: 600;
-    justify-content: space-between;
-}
-
-.filters > div span img {
-    transform: rotate(180deg);
 }
 
 .news-page-main-image {
@@ -1038,15 +1032,6 @@ input[type="text"]:focus {
     width: 100%;
 }
 
-.filters > div span {
-    transition: all .3s;
-    cursor: pointer;
-}
-
-.filters > div:hover span {
-    background-color: #fff;
-    box-shadow: var(--shadow-light);
-}
 .faq-item {
     background-color: var(--light-gray);
     margin-top: 15px;
@@ -1191,3 +1176,270 @@ input[type="text"]:focus {
 
     .active-block .plus div { background-color: #D03827 !important; }
 /** BLOCK ENDED **/
+
+/** INPUT POPUP **/
+    .input-popup {
+        position: relative;
+        background-color: var(--light-gray);
+        font-size: 14px;
+        padding: 4px 8px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #858585;
+        width: 100%;
+        transition: .3s;
+    }
+
+    .input-popup:hover {
+        background-color: white;
+        box-shadow: var(--shadow-medium);
+        transform: .3s;
+    }
+
+    .input-popup-open, .input-popup-active {
+        color: #0a0a0a;
+        background-color: white;
+        box-shadow: var(--shadow-medium);
+    }
+
+    .input-popup p {
+        margin: 8px;
+        padding-right: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .input-popup-arrow {
+        position: absolute;
+        width: 56px;
+        height: 44px;
+        top: 0;
+        right: 0;
+        transition: .3s;
+    }
+
+    .input-popup-arrow div {
+        position: absolute;
+        top: 21px;
+        background-color: #D03827;
+        width: 10px;
+        height: 1.5px;
+        transition: .3s;
+    }
+
+    .input-popup-arrow div:nth-of-type(1) {
+        left: 21px;
+        transform: rotate(45deg);
+    }
+    .input-popup-open .input-popup-arrow div:nth-of-type(1) {
+        transform: rotate(-45deg);  
+    }
+    .input-popup-active .input-popup-arrow div:nth-of-type(1) {
+        left: 24px; 
+    }
+
+    .input-popup-arrow div:nth-of-type(2) {
+        right: 18px;
+        transform: rotate(-45deg);
+    }
+    .input-popup-open .input-popup-arrow div:nth-of-type(2) {
+        transform: rotate(45deg);   
+    }
+    .input-popup-active .input-popup-arrow div:nth-of-type(2) {
+        right: 22px;    
+    }
+
+    .input-popup-content {
+        position: absolute;
+        display: none;
+        left: 5px;
+        top: 60px;
+        min-width: calc(100% - 10px);
+        width: auto;
+        background-color: white;
+        box-shadow: var(--shadow-medium);
+        transform: .3s;
+        z-index: 4;
+    }
+
+    .input-popup-content p {
+        margin: 8px;
+        padding-right: 12px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .input-popup-content p:hover {
+        color: #d81f83;
+    }
+
+    .color-example {
+        position: absolute;
+        border-radius: 100%;
+        top: 4.5px;
+        right: 48px;
+        width: 13px;
+        height: 13px;
+    }
+
+    /**INPUT POPUP RADIO**/
+    .input-popup-radio {
+        background-color: #FFF;
+        width: calc(100% - 8px);
+        margin-left: 8px;
+    }
+
+    .input-popup input[type="radio"] {
+        display: none;
+    }
+
+    .radio-popup {
+        left: 8px;
+    }
+    /**INPUI POPUP RADIO ENDED**/
+
+    /**INPUT NUMBER **/
+        .input-number {
+            position: relative;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 8px;
+            background-color: var(--light-gray);
+        }
+
+        .input-number div {
+            position: absolute;
+            background-color: var(--light-gray);
+            color: #FFF;
+            height: 20px;
+            width: 20px;
+            right: -20px;
+            cursor: pointer;
+        }
+        .input-number div:nth-of-type(1) {top: -1px;}
+        .input-number div:nth-of-type(2) {bottom: -1px;}
+
+        .input-number span {
+            position: absolute;
+            background-color: #FFF;
+            width: 10px;
+            height: 2.4px;
+            top: 9px;
+            left: 5px;
+        }
+        .input-number span:nth-of-type(2) {transform: rotate(90deg);}
+
+        .input-number input[type=number] {
+            padding: 0;
+            border: none;
+            font-size: 18px;
+            width: 24px;
+            text-align: center;
+            background-color: var(--light-gray) !important;
+        }
+
+        .input-number input[type=number]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+
+        .input-number-popup {
+            padding: 4px 0px;
+            min-width: 44px;
+        }
+
+        .input-number-popup input[type="number"] {
+            font-size: 14px;
+            color: #0a0a0a;
+            width: 100%
+        }
+        .input-number-popup input[type="number"]:disabled {
+            color: #858585;
+            background-color: white;
+        }
+
+        .button {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 3px 16px;
+            color: #FFF;
+            border: none;
+            background-color: #D03827;
+            transition: .3s;
+        }
+
+        input[type=range] {outline: none !important;}
+    /**INPUT NUMBER ENDED **/
+
+    /** CHECK BOX **/
+        input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .label {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            font-size: 12px;
+            padding: 0px 48px 0px 16px;
+            margin: 0;
+            white-space:nowrap;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .checkbox {
+            position: absolute;
+            top: 4px;
+            left: 0px;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #0a0a0a;
+        }
+
+        .checkbox-2 {
+            left: calc(100% - 31px) !important;
+            top: 5px !important;
+        }
+
+        .label input[type="checkbox"]:checked ~ .checkbox {
+            background-color: #0a0a0a;
+        }
+
+        .label-2 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 8px 0px;
+        }
+
+        .checkbox:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        .label input[type="checkbox"]:checked ~ .checkbox:after {
+          display: block;
+        }
+
+        .label .checkbox:after {
+          left: 3px;
+          top: 0px;
+          width: 4px;
+          height: 8px;
+          border: solid white;
+          border-width: 0 1.4px 1.4px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+    /** CHECK BOX ENDED **/
+/** INPUT POPUP ENDED **/
