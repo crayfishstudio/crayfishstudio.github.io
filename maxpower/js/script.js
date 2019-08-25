@@ -162,4 +162,12 @@ $(document).ready(function () {
             n = 1;
         });
     });
+
+    $('.remove-item').click(function() {
+        $(this).parent().parent().remove();
+    });
+
+    $('#cart-img').click(function() {
+        $('.cart-popup').fadeToggle(300);
+    });
 });

@@ -20,15 +20,15 @@
                 <a href="tel:+380964143851">+38 (096) 414 3851</a>
                 <a href="tel:+380964143851">+38 (096) 414 3851</a>
             </div>
+            <div id="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
             <div id="technical-links">
                 <a href="#">Доставка та оплата</a>
                 <a href="#">Блог</a>
                 <a href="#">FAQ</a>
                 <a href="#">Умови повернення товару</a>
-            </div>
-            <div id="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
             </div>
             <div id="language-toggler">
                 <a href="#">UA</a>/<a href="#">EN</a>
@@ -38,46 +38,300 @@
                 <!--<a href="#">Особистий кабінет</a>-->
             </div>
         </div>
-        <div class="row align-items-center px-5p no-gutters">
-            <div class="col-xl-2 col-3">
+        <div class="row align-items-center justify-content-end px-5p no-gutters">
+            <div class="col-md-1 col-2 d-xl-none" onclick="burgerToggle()">
+                <div id="burger-toggler">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-8 py-3 py-md-0 d-flex justify-content-center justify-content-xl-start">
                 <div id="logo-container">
                     <a href="#">
                         <img src="img/logo.svg">
                     </a>
                 </div>
             </div>
-            <div class="col-xl-1 col-md-1 order-xl-4 pr-xl-0 pr-md-4">
+            <div class="col-xl-1 col-md-2 col-2 order-xl-4 pr-xl-0 pr-md-4">
                 <a href="#" id="cart-container">
-                    <span id="total-price">₴1560</span>
+                    <span id="total-price" class="mobile-invisible">₴1560</span>
                     <div class="cart">
                         <img src="img/cart.svg" id="cart-img">
-                        <div id="total-items">12</div>
+                        <div id="total-items">8</div>
                     </div>
                 </a>
             </div>
-            <div class="col-xl-2 col-md-8">
+            <div class="popup cart-popup p-sm-3 py-3">
+                <div class="row no-gutters item-card align-items-center p-3 mb-2">
+                    <div class="col-2">
+                        <div class="remove-item">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-4 item-image" style="background-image: url(img/image.PNG)"></div>
+                    <div class="col-6 pl-3">
+                        <div class="row no-gutters">
+                            <h4 class="item-name col-12 mt-0"><a href="#">Roces argon</a></h4>
+                            <span class="item-subcategory col-sm-6"><a href="#">Жіночі ролики</a></span>
+                            <span class="item-availability col-sm-6 text-sm-right">
+                                <img class="item-gender" src="img/female.svg" data-gender="female">
+                            </span>
+                            <h4 class="item-price col-sm-6">
+                                ₴2750
+                                <!--<span class="item-old-price">₴3750</span>-->
+                            </h4>
+                            <div class="item-parameters col-sm-6 text-sm-right">
+                                <div style="background-color: var(--red-solid)"></div>
+                                <div style="background-color: var(--almost-black)"></div>
+                                <div style="background-color: var(--dark-gray)"></div>
+                                <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters item-card align-items-center p-3 mb-2">
+                    <div class="col-2">
+                        <div class="remove-item">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-4 item-image" style="background-image: url(img/image.PNG)"></div>
+                    <div class="col-6 pl-3">
+                        <div class="row no-gutters">
+                            <h4 class="item-name col-12 mt-0"><a href="#">Roces argon</a></h4>
+                            <span class="item-subcategory col-sm-6"><a href="#">Жіночі ролики</a></span>
+                            <span class="item-availability col-sm-6 text-sm-right">
+                                <img class="item-gender" src="img/female.svg" data-gender="female">
+                            </span>
+                            <h4 class="item-price col-sm-6">
+                                ₴2750
+                                <!--<span class="item-old-price">₴3750</span>-->
+                            </h4>
+                            <div class="item-parameters col-sm-6 text-sm-right">
+                                <div style="background-color: var(--red-solid)"></div>
+                                <div style="background-color: var(--almost-black)"></div>
+                                <div style="background-color: var(--dark-gray)"></div>
+                                <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters item-card align-items-center p-3 mb-2">
+                    <div class="col-2">
+                        <div class="remove-item">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-4 item-image" style="background-image: url(img/image.PNG)"></div>
+                    <div class="col-6 pl-3">
+                        <div class="row no-gutters">
+                            <h4 class="item-name col-12 mt-0"><a href="#">Roces argon</a></h4>
+                            <span class="item-subcategory col-sm-6"><a href="#">Жіночі ролики</a></span>
+                            <span class="item-availability col-sm-6 text-sm-right">
+                                <img class="item-gender" src="img/female.svg" data-gender="female">
+                            </span>
+                            <h4 class="item-price col-sm-6">
+                                ₴2750
+                                <!--<span class="item-old-price">₴3750</span>-->
+                            </h4>
+                            <div class="item-parameters col-sm-6 text-sm-right">
+                                <div style="background-color: var(--red-solid)"></div>
+                                <div style="background-color: var(--almost-black)"></div>
+                                <div style="background-color: var(--dark-gray)"></div>
+                                <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p><b>Всього: $342</b></p>
+                <div class="row mx-0 px-5">
+                    <a href="#" class="pm-button col-12 mb-2">Оформити замовлення</a>
+                    <a href="#" class="pm-button-bordered col-12 mb-2">Корзина</a>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-7 col-md-6">
                 <div id="search">
                     <img id="search-icon" src="img/search-icon.svg">
                     <input type="text" placeholder="Я шукаю...">
                 </div>
             </div>
-
-            <div class="col-xl-7 d-flex">
+            <div class="col-xl-7 d-flex" id="nav-items-bar" onmouseleave="closeNavSubs()">
                 <div id="categories">
-                    <a href="#" class="active">Взуття<div></div></a>
-                    <a href="#">Одяг<div></div></a>
-                    <a href="#">Обладнання<div></div></a>
-                    <a href="#">Аксесуари<div></div></a>
-                    <a href="#">Види спорту<div></div></a>
-                    <a href="#">Бренди<div></div></a>
+                    <a href="#" /*class="active"*/ onmouseenter="showSubs('shoes')">Взуття<div></div></a>
+                    <a href="#" onmouseenter="showSubs('clothes')">Одяг<div></div></a>
+                    <a href="#" onmouseenter="showSubs('equipment')">Обладнання<div></div></a>
+                    <a href="#" onmouseenter="showSubs('accessories')">Аксесуари<div></div></a>
+                    <a href="#" onmouseenter="showSubs('sport')">Види спорту<div></div></a>
+                    <a href="#" onmouseenter="showSubs('brands')">Бренди<div></div></a>
+                    <a href="#" class="desktop-invisible pr-4 pr-md-0">Акції</a>
                 </div>
-                <div id="discount-button" class="text-center">
+                <div id="discount-button" class="text-center mobile-invisible">
                     <a href="#">Акції</a>
                 </div>
+                <div id="nav-subcategories">
+                    <div id="shoes-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Модне взуття</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-md-right order-md-4 mt-3 mt-md-0">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-md-5 mt-3 mt-md-0">
+                            <a href="#">Акції</a>
+                            <a href="#" class="mx-5 mx-md-0">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                    </div>
+                    <div id="clothes-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Модний одяг</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-md-right order-md-4 mt-3 mt-md-0">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-md-5 mt-3 mt-md-0">
+                            <a href="#">Акції</a>
+                            <a href="#" class="mx-5 mx-md-0">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                    </div>
+                    <div id="equipment-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Модне обладнання</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-md-right order-md-4 mt-3 mt-md-0">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-md-5 mt-3 mt-md-0">
+                            <a href="#">Акції</a>
+                            <a href="#" class="mx-5 mx-md-0">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                    </div>
+                    <div id="accessories-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Модні аксесуари</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-md-right order-md-4 mt-3 mt-md-0">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-md-5 mt-3 mt-md-0">
+                            <a href="#">Акції</a>
+                            <a href="#" class="mx-5 mx-md-0">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                    </div>
+                    <div id="sport-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Модні види спорту</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-md-right order-md-4 mt-3 mt-md-0">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-md-5 mt-3 mt-md-0">
+                            <a href="#">Акції</a>
+                            <a href="#" class="mx-5 mx-md-0">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                    </div>
+                    <div id="brands-subcategories" class="row">
+                        <div class="col-md-4">
+                            <a href="#">Модні бренди</a>
+                            <a href="#">Повсякденне взуття</a>
+                            <a href="#">Вуличне та туристичне взуття</a>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <a href="#">Взуття для бігу</a>
+                            <a href="#">Взуття для занять в залі</a>
+                            <a href="#">Взуття для бадмінтону та сквошу</a>
+                            <a href="#">Взуття для волейболу</a>
+                            <a href="#">Взуття для баскетболу</a>
+                            <a href="#">Взуття для фітнесу</a>
+                        </div>
+                        <div class="col-12 nav-category-link text-md-right order-md-4 mt-3 mt-md-0">
+                            <a href="#">
+                                Перейти до взуття
+                                <img src="img/arrow.svg">
+                            </a>
+                        </div>
+                        <div class="col-md-4 nav-subcategory-links pl-md-5 mt-3 mt-md-0">
+                            <a href="#">Акції</a>
+                            <a href="#" class="mx-5 mx-md-0">Новинки</a>
+                            <a href="#">Популярне</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-        <div class="undernav-line mt-4"></div>
     </nav>
 
     <section id="catalog-header" class="container-fluid px-0">
