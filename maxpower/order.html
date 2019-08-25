@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://kit.fontawesome.com/7b3bc95d54.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/multirange.css"></link>
     <link rel="stylesheet" href="css/slick.css">
@@ -395,8 +397,8 @@
                 </div>
             </div>
             <div class="row col-lg-6 col-12 mx-0 my-4 px-lg-0">
-                <a href="#" class="col-lg-8 col-12 px-0 m-auto">
-                    <button class="w-100 pm-button-bordered mb-5">перейти до оплати</button>
+                <a class="col-lg-8 col-12 px-0 m-auto">
+                    <button id="open" class="w-100 pm-button-bordered mb-5">Перейти до оплати</button>
                 </a>
             </div>
         </div>
@@ -468,6 +470,53 @@
             </div>
         </div>
     </footer>
+
+    <div id="login-popup" class="popup-2">
+         <div class="popup-container">
+            <div class="row px-0">
+               <h3 class="col-12 px-0">Увійдіть в особистий кабінет</h3>
+               <input class="col-12 mt-5" type="text" placeholder="Адреса" />
+               <input class="col-12 mt-4" type="text" placeholder="Пароль" />
+               <div class="row col-12 mx-0 px-0">
+                  <div class="py-3 col-12 px-0 d-flex justify-content-between">
+                     <label class="label d-flex align-items-center">
+                        <input type="checkbox"/>
+                        <span class="checkbox"></span>
+                        Запам'ятати мене
+                     </label>
+                     <div>
+                        <a href="#"><i class="fab fa-google"></i> google</a>
+                        <a href="#"><i class="fab fa-facebook-square"></i> facebook</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-12 mt-4 pl-0 pr-md-1 pr-0">
+                  <button class="pm-button w-100">Увійти</button>
+               </div>
+               <div class="col-md-6 col-12 mt-md-4 mt-3 pr-0 pl-md-1 pl-0">
+                  <button class="pm-button-bordered w-100">Реєстрація</button>
+               </div>
+            </div>
+            <div class="popup-close">
+               <div></div><div></div>
+            </div>
+         </div>
+      </div>
+
+      <div id="thanks-popup" class="popup-2">
+         <div class="popup-container">
+            <div class="row px-0 d-flex flex-column justify-content-center align-items-center">
+               <h3 class="px-0">Дякуємо!</h3>
+               <p class="text-center mt-4">Ваше замовлення обробляється менеджерами компанії.<br class="d-md-block d-none"/> Очікуйте підтвердження.</p>
+               <div class="col-md-6 col-12 mt-4 pl-0 pr-1">
+                  <button id="close" class="pm-button w-100">ОК</button>
+               </div>               
+            </div>
+            <div class="popup-close">
+               <div></div><div></div>
+            </div>
+         </div>
+      </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>

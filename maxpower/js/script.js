@@ -20,6 +20,22 @@ $(document).ready(function () {
     });
 
     $('#footer-form-phone').mask('+00 (000) 000 0000');
+
+    $('#login-register').click(function() {
+        $('#login-popup').fadeIn(300);
+      });
+
+    $('.popup-close').click(function() {
+        $(this).parent().parent().fadeOut(300);
+      });
+
+    $("#open").click(function() {
+    $("#thanks-popup").fadeIn(300);
+  });
+
+  $("#close").click(function() {
+    $("#thanks-popup").fadeOut(300);
+  });
 });
 
 
