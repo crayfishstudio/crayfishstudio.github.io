@@ -875,6 +875,20 @@ input[type="text"]:focus {
         top: 54px !important;
         right: 0px !important;
     }
+
+    .item-detail-image {
+        height: 240px !important;
+    }
+
+    .next {
+        top: 340px !important;
+        display: none !important;
+    }
+
+    .prev {
+        top: 340px !important;
+        display: none !important;
+    }
 }
 
 .undernav-line {
@@ -1537,11 +1551,25 @@ input[type="text"]:focus {
         background-color: #D03827;
         padding: 12px 16px;
         text-align: center;
+        outline: none;
+        border: none;
+        transition: .3s;
     }
 
     .pm-button:hover {
         color: white;
         text-decoration: none;
+        transition: .3s;
+    }
+
+    .pm-white-button {
+        background-color: white;
+        color: var(--almost-black);
+    }
+
+    .pm-white-button:hover {
+        background-color: #D03827;
+        color: white;   
     }
 
     .pm-button-bordered {
@@ -1560,3 +1588,213 @@ input[type="text"]:focus {
         transition: .3s;
     }
 /** BUTTONS ENDED **/
+
+/** ITEM DETAIL **/
+    .item-detail {
+        box-shadow: var(--shadow-medium);
+    }
+
+    /** LEFT PART **/
+        .item-detail-image {
+            height: 360px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all .2s;
+            margin-bottom: 80px;
+        }
+
+        .item-detail-slider {
+            width: 100%;
+        }
+
+        .item-detail .slick-dots li {
+            width: 98px;
+            height: 66px;
+            padding: 8px;
+            border: 1px solid #FFF;
+            transition: .3s;
+        }
+
+        .item-detail .slick-dots li:hover {
+            transition: .3s;
+            border: 1px solid #dadada;
+        }
+
+        .item-detail .slick-dots li button {
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            overflow:hidden;
+            width: 80px;
+            height: 48px;        
+        }
+
+        .prev {
+            position: absolute;
+            top: 460px;
+            left: 32px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .prev div {
+            position: absolute;
+            top: 19px;
+            left: 12px;
+            width: 16px;
+            height: 2px;
+            background-color: var(--dark-gray);
+            transition: .3s;
+        }
+        .prev:hover div {
+            background-color: var(--red-solid);
+            transition: .3s;
+        }
+
+        .prev div:nth-of-type(1) { transform: translate(0, -5px) rotate(-45deg); }
+        .prev div:nth-of-type(2) { transform: translate(0, 5px) rotate(45deg); }
+
+        .next {
+            position: absolute;
+            top: 460px;
+            right: 32px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .next div {
+            position: absolute;
+            top: 19px;
+            right: 12px;
+            width: 16px;
+            height: 2px;
+            background-color: var(--dark-gray);
+            transition: .3s;
+        }
+        .next:hover div {
+            background-color: var(--red-solid);
+            transition: .3s;
+        }
+
+        .next div:nth-of-type(1) { transform: translate(0, -5px) rotate(45deg); }
+        .next div:nth-of-type(2) { transform: translate(0, 5px) rotate(-45deg); }
+    /** LEFT PART ENDED **/
+
+    /** RIGHT PART **/
+        .dark-part {
+            background-color: var(--almost-black);
+        }
+
+        .dark-part h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .dark-part p {
+            color: var(--medium-gray);
+        }
+
+        .color-white {color: white !important;}
+
+        .right-img {
+            width: 64px;
+            height: 64px;
+            background-color: white;
+            background-position: center;
+            background-size: 48px;
+            background-repeat: no-repeat;
+            border: 2px solid var(--medium-gray);
+            cursor: pointer;
+            margin-right: 8px;
+        }
+
+        .right-btn {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .right-btn:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .right-btn:hover span {
+            border-bottom: 1px solid var(--red-solid);
+            transition: .3s;
+        }
+
+        .right-btn span {
+            border-bottom: 1px solid white;
+            transition: .3s;
+        }
+
+        .right-price {
+            color: white;
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .right-link {
+            color: var(--medium-gray);
+            padding-bottom: 24px;
+            transition: .3s;
+        }
+
+        .right-link:hover {
+            color: var(--red-solid);
+            text-decoration: none;
+            transition: .3s;
+        }
+        
+        .dark-part .input-popup {
+            background-color: var(--almost-black);
+            padding: 4px 0px;
+            border-bottom: 1px solid white;
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+
+        .dark-part .input-popup:hover {
+            box-shadow: none;
+        }
+
+        .dark-part .input-popup p {
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+
+        .dark-part .input-popup .input-popup-arrow div {
+            background-color: white;
+            top: 24px;
+        }
+
+        .dark-part .input-popup .input-popup-arrow div:nth-of-type(2) {
+            right: 0;
+        }
+        .dark-part .input-popup .input-popup-arrow div:nth-of-type(1) {
+            left: calc(100% - 16px);
+        }
+
+        .dark-part .input-popup-open {
+            box-shadow: none;
+        }
+
+        .dark-part .input-popup-content {
+            min-width: calc(100% - 38px);
+            top: 40px;
+            left: 23px;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .dark-part .input-popup-content p:hover {
+            color: var(--red-solid);
+        }
+    /** RIGHT PART ENDED **/
+
+/** ITEM DETAIL ENDED **/

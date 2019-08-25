@@ -10,6 +10,15 @@ $(document).ready(function () {
         dots: true
     });
 
+    $('.item-detail-slider').slick({
+        autoplay: false,
+        autoplaySpeed: 5000,
+        arrows: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        dots: true
+    });
+
     $('#footer-form-phone').mask('+00 (000) 000 0000');
 });
 
@@ -182,4 +191,21 @@ $(document).ready(function () {
     $('.item-remove').click(function() {
         $(this).parent().remove();
     });
+
+
+
+
+
+    var k = ($('.item-detail-image').length - 1) / 2;
+    var bool = false;
+    var count = 0;
+
+    $('.item-detail-slider').find('.item-detail-image').each(function() {
+        if (bool && count < k) {
+            $('.item-detail').find('.slick-dots').find('button').eq(count).css("background-image", $(this).css('background-image'));
+            count++;
+        }
+
+        bool = true;
+    }); 
 });
