@@ -787,6 +787,14 @@ input[type="text"]:focus {
     .no-gutters.filters > div {
         display: none;
     }
+
+    .block-item {
+        right: 160px !important;
+    }
+
+    .block-price {
+        right: 60px !important;
+    }
 }
 
 @media screen and (max-width: 578px) {
@@ -858,7 +866,26 @@ input[type="text"]:focus {
         left: calc(50% - 8px) !important;
     }
 
+    .block-item {
+        display: none;
+    }
+
+    .block-price {
+        right: 32px !important;
+    }
+
+    .mt-13 {margin-top: 19px !important;}
+
+    .info-item p.price {
+        top: calc(100% - 46px) !important;
+    }
+
+    .info-item-additional p {
+        margin-right: 12px !important;
+    }
+
     .block {padding: 16px !important;}
+
 
     .input-popup-content {
         left: 11px !important;
@@ -1177,6 +1204,26 @@ input[type="text"]:focus {
         color: #696969;
     }
 
+    .block-item {
+        position: absolute;
+        top: 14px;
+        right: 320px;
+        font-size: 20px;
+        padding-right: 24px;
+        margin: 0;
+        font-weight: 700;   
+    }
+
+    .block-price {
+        position: absolute;
+        top: 14px;
+        right: 200px;
+        font-size: 20px;
+        padding-right: 24px;
+        margin: 0;
+        font-weight: 700;   
+    }
+
     .active-block {
         background-color: #FFF;
         box-shadow: var(--shadow-medium);
@@ -1216,6 +1263,33 @@ input[type="text"]:focus {
         padding-top: 16px;
         display: none;
     }
+
+    .info-item {
+        border-top: 1px solid #c4c4c4;
+        padding: 16px 0px;
+    }
+    .info-item:first-child {border: none !important;}
+
+    .info-item p.price {
+        position: absolute; 
+        top: 14px;
+        right: 16px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .info-item h3 {text-transform: uppercase;}
+
+    .info-item-additional p {
+        display: inline;
+        margin-right: 64px;
+        font-size: 14px;
+        color: #858585;
+        font-weight: 600;
+    }
+
+    .info-item-additional p:nth-of-type(2) {margin-right: 0;}
 
     .active-block .plus {
         transform: rotate(45deg);        
@@ -1798,3 +1872,17 @@ input[type="text"]:focus {
     /** RIGHT PART ENDED **/
 
 /** ITEM DETAIL ENDED **/
+
+.box-shadow {
+    box-shadow: var(--shadow-medium);
+}
+
+.red-circle {
+    bottom: 6px;
+    left: 0;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--red-solid);
+    border-radius: 12px;
+}
