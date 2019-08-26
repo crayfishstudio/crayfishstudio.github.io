@@ -36,6 +36,20 @@ $(document).ready(function () {
   $("#close").click(function() {
     $("#thanks-popup").fadeOut(300);
   });
+
+
+  $('.add').click(function() {
+    var number = parseInt($(this).parent().find('input').val());
+    if (number < 9) {
+        $(this).parent().find('input').val(number + 1);
+    }
+  });
+  $('.minus').click(function() {
+    var number = parseInt($(this).parent().find('input').val());
+    if (number > 1) {
+        $(this).parent().find('input').val(number - 1);
+    }
+  });
 });
 
 
@@ -43,6 +57,14 @@ function burgerToggle() {
     document.getElementById('burger-toggler').classList.toggle('closed');
     document.getElementById('top-nav-links').classList.toggle('opened');
     document.getElementById('body').classList.toggle('burger-open');
+}
+
+function showCart() {
+    document.getElementById('idcart').style.display = 'block';
+}
+
+function closeCart() {
+    document.getElementById('idcart').style.display = 'none';
 }
 
 function showSubs(thisID) {
@@ -200,10 +222,6 @@ $(document).ready(function () {
 
     $('.remove-item').click(function() {
         $(this).parent().parent().remove();
-    });
-
-    $('#cart-img').click(function() {
-        $('.cart-popup').fadeToggle(300);
     });
 
     $('.item-remove').click(function() {

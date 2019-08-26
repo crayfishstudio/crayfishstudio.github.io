@@ -656,7 +656,7 @@ input[type="text"]:focus, textarea:focus {
     
     .news-content {
         padding: 25px 30px;
-    }
+    }    
 }
 
 @media screen and (max-width: 1199.5px) {
@@ -687,6 +687,10 @@ input[type="text"]:focus, textarea:focus {
     }
 
     .popup-close { right: 100px !important; }
+
+    .cart-popup {        
+        left: calc(-25vw + 12px) !important;
+    }
 }
 
 @media screen and (max-width: 991.5px) { 
@@ -704,6 +708,10 @@ input[type="text"]:focus, textarea:focus {
     .popup-container {
         width: calc(100% - 48px) !important;
         left: 24px !important;
+    }
+
+    .cart-popup {        
+        left: calc(-33vw + 12px) !important;
     }
 }
 
@@ -822,6 +830,21 @@ input[type="text"]:focus, textarea:focus {
     .popup-close { 
         top: 36px !important;
         right: 36px !important; 
+    }
+
+    .cart-popup {        
+        right: 0 !important;
+        left: auto !important;
+        top: 52px !important;
+        width: calc(100vw - 47px) !important;
+    }
+
+    #cart-img {
+        top: 10px;
+    }
+
+    #total-items {
+        top: 2px;
     }
 }
 
@@ -943,6 +966,23 @@ input[type="text"]:focus, textarea:focus {
     .prev {
         top: 340px !important;
         display: none !important;
+    }
+
+    .cart-popup {        
+        right: 0 !important;
+        top: 52px !important;
+        width: 100vw !important;
+    }
+
+    .remove-item {
+        height: 36px !important;
+        width: 36px !important;
+        margin-left: auto;
+    }
+
+    .remove-item div {
+        top: 16px !important;
+        left: 8px !important;
     }
 }
 
@@ -1142,8 +1182,8 @@ input[type="text"]:focus, textarea:focus {
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 4px;
-    right: 4px;
+    top: 12px;
+    right: 12px;
     cursor: pointer;
 }
 
@@ -1608,8 +1648,9 @@ input[type="text"]:focus, textarea:focus {
     }
 
     .cart-popup {
-        top: 116px;
-        right: 40px;
+        top: 52px;
+        right: 0px;
+        width: 600px;
         background-color: white;
         box-shadow: var(--shadow-medium);
     }
@@ -1623,8 +1664,14 @@ input[type="text"]:focus, textarea:focus {
         height: 100px;
     }
 
+    .cart-popup .item-subcategory a {
+        font-weight: 600;
+    }
+
     .cart-popup > p {
         font-size: 20px;
+        color: var(--dark-gray);
+        font-weight: 700;
         width: 100%;
         text-align: center;
         margin-top: 16px;
@@ -1641,7 +1688,7 @@ input[type="text"]:focus, textarea:focus {
         width: 20px;
         height: 3px;
         top: 48px;
-        left: 16px;
+        left: 36px;
         background-color: #D03827;
     }
 
@@ -1740,11 +1787,13 @@ input[type="text"]:focus, textarea:focus {
         outline: none;
         border: 2px solid var(--red-solid);
         transition: .3s;
+        font-weight: 600;
     }
 
     .pm-button:hover {
         color: white;
         text-decoration: none;
+        padding-left: 8px;
         transition: .3s;
     }
 
@@ -1765,12 +1814,13 @@ input[type="text"]:focus, textarea:focus {
         padding: 12px 16px;
         text-align: center;
         transition: .3s;
+        font-weight: 600;
     }
 
     .pm-button-bordered:hover {
-        color: white;
         text-decoration: none;
-        background-color: #1F1F1F;
+        color: #1F1F1F;
+        padding-left: 8px;
         transition: .3s;
     }
 /** BUTTONS ENDED **/
@@ -1997,4 +2047,53 @@ input[type="text"]:focus, textarea:focus {
     height: 12px;
     background-color: var(--red-solid);
     border-radius: 12px;
+}
+
+#p-cart {
+    height: 52px;
+    padding-top: 14px;
+}
+
+.pm-input-number {
+    position: relative;
+    text-align: center;
+    color: var(--almost-black);
+    font-family: 'Gilroy';
+    margin-top: 4px;
+}
+
+.pm-input-number div {
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.pm-input-number div:nth-of-type(1) {
+    left: -26px;
+}
+.pm-input-number div:nth-of-type(2) {
+    right: -16px;
+}
+
+.pm-input-number span {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 8px;
+    height: 1.6px;
+    background-color: var(--red-solid);
+}
+
+.pm-input-number span:nth-of-type(2) {
+    transform: rotate(90deg);
+}
+
+.pm-input-number input {
+    width: 36px;
+    padding-left: 10px;
+    border: none;
+    font-size: 16px;
 }

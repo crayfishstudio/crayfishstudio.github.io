@@ -53,7 +53,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-xl-1 col-md-2 col-2 order-xl-4 pr-xl-0 pr-md-4">
+            <div class="col-xl-1 col-md-2 col-2 order-xl-4 pr-xl-0 pr-md-4" id="p-cart" onmouseleave="closeCart()" onmouseenter="showCart()">
                 <a href="#" id="cart-container">
                     <span id="total-price" class="mobile-invisible">₴1560</span>
                     <div class="cart">
@@ -61,96 +61,90 @@
                         <div id="total-items">8</div>
                     </div>
                 </a>
-            </div>
-            <div class="popup cart-popup p-sm-3 py-3">
-                <div class="row no-gutters item-card align-items-center p-3 mb-2">
-                    <div class="col-2">
-                        <div class="remove-item">
-                            <div></div>
-                            <div></div>
+                <div id="idcart" class="popup cart-popup p-sm-3 py-3">
+                    <div class="row no-gutters item-card align-items-center pl-3 pb-4 pt-sm-4 pt-2 pr-sm-5 mb-2">
+                        <div class="col-sm-2 col-12">
+                            <div class="remove-item">
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4 item-image" style="background-image: url(img/image.PNG)"></div>
-                    <div class="col-6 pl-3">
-                        <div class="row no-gutters">
-                            <h4 class="item-name col-12 mt-0"><a href="#">Roces argon</a></h4>
-                            <span class="item-subcategory col-sm-6"><a href="#">Жіночі ролики</a></span>
-                            <span class="item-availability col-sm-6 text-sm-right">
-                                <img class="item-gender" src="img/female.svg" data-gender="female">
-                            </span>
-                            <h4 class="item-price col-sm-6">
-                                ₴2750
-                                <!--<span class="item-old-price">₴3750</span>-->
-                            </h4>
-                            <div class="item-parameters col-sm-6 text-sm-right">
-                                <div style="background-color: var(--red-solid)"></div>
-                                <div style="background-color: var(--almost-black)"></div>
-                                <div style="background-color: var(--dark-gray)"></div>
-                                <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                        <div class="col-5 item-image" style="background-image: url(img/image.PNG)"></div>
+                        <div class="col-sm-4 col-7 ml-auto pl-3 pr-sm-0 pr-3">
+                            <div class="row no-gutters">
+                                <h4 class="item-name col-12 mt-0"><a href="#">Nike shoes</a></h4>
+                                <span class="item-subcategory col-10"><a href="#">Жіночі ролики</a></span>
+                                <span class="item-availability col-2 text-right">
+                                    <img class="item-gender" src="img/female.svg" data-gender="female">
+                                </span>
+                                <h4 class="item-price col-6">
+                                    ₴2750
+                                    <!--<span class="item-old-price">₴3750</span>-->
+                                </h4>
+                                <div class="item-parameters col-6 text-right">
+                                    <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                                    <div class="mr-0 ml-2" style="background-color: var(--red-solid)"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row no-gutters item-card align-items-center p-3 mb-2">
-                    <div class="col-2">
-                        <div class="remove-item">
-                            <div></div>
-                            <div></div>
+                    <div class="row no-gutters item-card align-items-center pl-3 pb-4 pt-sm-4 pt-2 pr-sm-5 mb-2">
+                        <div class="col-sm-2 col-12">
+                            <div class="remove-item">
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4 item-image" style="background-image: url(img/image.PNG)"></div>
-                    <div class="col-6 pl-3">
-                        <div class="row no-gutters">
-                            <h4 class="item-name col-12 mt-0"><a href="#">Roces argon</a></h4>
-                            <span class="item-subcategory col-sm-6"><a href="#">Жіночі ролики</a></span>
-                            <span class="item-availability col-sm-6 text-sm-right">
-                                <img class="item-gender" src="img/female.svg" data-gender="female">
-                            </span>
-                            <h4 class="item-price col-sm-6">
-                                ₴2750
-                                <!--<span class="item-old-price">₴3750</span>-->
-                            </h4>
-                            <div class="item-parameters col-sm-6 text-sm-right">
-                                <div style="background-color: var(--red-solid)"></div>
-                                <div style="background-color: var(--almost-black)"></div>
-                                <div style="background-color: var(--dark-gray)"></div>
-                                <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                        <div class="col-5 item-image" style="background-image: url(img/image.PNG)"></div>
+                        <div class="col-sm-4 col-7 ml-auto pl-3 pr-sm-0 pr-3">
+                            <div class="row no-gutters">
+                                <h4 class="item-name col-12 mt-0"><a href="#">Nike shoes</a></h4>
+                                <span class="item-subcategory col-10"><a href="#">Жіночі ролики</a></span>
+                                <span class="item-availability col-2 text-right">
+                                    <img class="item-gender" src="img/female.svg" data-gender="female">
+                                </span>
+                                <h4 class="item-price col-6">
+                                    ₴2750
+                                    <!--<span class="item-old-price">₴3750</span>-->
+                                </h4>
+                                <div class="item-parameters col-6 text-right">
+                                    <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                                    <div class="mr-0 ml-2" style="background-color: var(--red-solid)"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row no-gutters item-card align-items-center p-3 mb-2">
-                    <div class="col-2">
-                        <div class="remove-item">
-                            <div></div>
-                            <div></div>
+                    <div class="row no-gutters item-card align-items-center pl-3 pb-4 pt-sm-4 pt-2 pr-sm-5 mb-2">
+                        <div class="col-sm-2 col-12">
+                            <div class="remove-item">
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4 item-image" style="background-image: url(img/image.PNG)"></div>
-                    <div class="col-6 pl-3">
-                        <div class="row no-gutters">
-                            <h4 class="item-name col-12 mt-0"><a href="#">Roces argon</a></h4>
-                            <span class="item-subcategory col-sm-6"><a href="#">Жіночі ролики</a></span>
-                            <span class="item-availability col-sm-6 text-sm-right">
-                                <img class="item-gender" src="img/female.svg" data-gender="female">
-                            </span>
-                            <h4 class="item-price col-sm-6">
-                                ₴2750
-                                <!--<span class="item-old-price">₴3750</span>-->
-                            </h4>
-                            <div class="item-parameters col-sm-6 text-sm-right">
-                                <div style="background-color: var(--red-solid)"></div>
-                                <div style="background-color: var(--almost-black)"></div>
-                                <div style="background-color: var(--dark-gray)"></div>
-                                <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                        <div class="col-5 item-image" style="background-image: url(img/image.PNG)"></div>
+                        <div class="col-sm-4 col-7 ml-auto pl-3 pr-sm-0 pr-3">
+                            <div class="row no-gutters">
+                                <h4 class="item-name col-12 mt-0"><a href="#">Nike shoes</a></h4>
+                                <span class="item-subcategory col-10"><a href="#">Жіночі ролики</a></span>
+                                <span class="item-availability col-2 text-right">
+                                    <img class="item-gender" src="img/female.svg" data-gender="female">
+                                </span>
+                                <h4 class="item-price col-6">
+                                    ₴2750
+                                    <!--<span class="item-old-price">₴3750</span>-->
+                                </h4>
+                                <div class="item-parameters col-6 text-right">
+                                    <span class="item-size" data-toggle="tooltip" data-placement="left" title="39, 40, 41, 42, 43">43</span>
+                                    <div class="mr-0 ml-2" style="background-color: var(--red-solid)"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <p><b>Всього: $342</b></p>
-                <div class="row mx-0 px-5">
-                    <a href="#" class="pm-button col-12 mb-2">Оформити замовлення</a>
-                    <a href="#" class="pm-button-bordered col-12 mb-2">Корзина</a>
+                    <p>Всього: $342</p>
+                    <div class="row mx-0">
+                        <a href="#" class="pm-button col-sm-8 col-10 mb-2 mx-auto">Оформити замовлення</a>
+                        <a href="#" class="pm-button-bordered col-sm-8 col-10 mb-2 mx-auto">Корзина</a>
+                    </div>
                 </div>
             </div>
             <div class="col-xl-2 col-lg-7 col-md-6">
@@ -398,7 +392,7 @@
          </div>
      </div>
 
-    <footer class="px-5p mt-5">
+    <footer class="px-5p">
         <div class="container-fluid px-0 py-5 footer-container">
             <div class="row no-gutters justify-content-center mt-4 px-xl-0 px-sm-5 px-4">
                 <div class="col-xl-5 col-lg-7 pr-xl-0 pr-lg-2 mb-lg-0 mb-5 pb-lg-0 pb-4">
@@ -409,7 +403,7 @@
                             <a href="tel:">+38 (096) 414 3851</a>
                         </div>
                     </div>
-
+                    
                     <form id="footer-form" class="mt-4">
                         <div class="row no-gutters">
                             <div class="col-sm-7 px-0">
