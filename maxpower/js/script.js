@@ -255,7 +255,9 @@ $(document).ready(function () {
     });
 
 
-
+    $("#size-popup-open").click(function() {
+        $("#size-popup").fadeIn(300);
+    });
 
 
     var k = ($('.item-detail-image').length - 1) / 2;

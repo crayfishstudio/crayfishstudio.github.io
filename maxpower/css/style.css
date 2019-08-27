@@ -874,6 +874,11 @@ input[type="text"]:focus, textarea:focus {
         top: 12px !important;
         right: 60px !important;
     }
+
+    .popup-container-2 {
+        height: 100vh !important;
+        padding-top: 64px !important;
+    }
 }
 
 @media screen and (max-width: 578px) {
@@ -1782,6 +1787,10 @@ input[type="text"]:focus, textarea:focus {
         background-color: white;
     }
 
+    .popup-container-2 {
+        padding: 64px 128px;
+    }
+
     .popup-container h3 {
         font-weight: bold;
         margin: 0;
@@ -1814,6 +1823,23 @@ input[type="text"]:focus, textarea:focus {
         color: #696969;
     }
 
+    .popup-container-2 {
+        width: 80%;
+        height: calc(100vh - 120px);
+        overflow: auto;
+        left: 10%;
+        top: 60px;
+    }
+
+    .popup-container-2 p {
+        position: relative;
+        color: var(--almost-black);
+        font-size: 16px;
+        padding-left: 24px;
+        display: block;
+        margin-bottom: 6px;
+    }
+
     .popup-close {
         position: absolute;
         top: 56px;
@@ -1821,6 +1847,10 @@ input[type="text"]:focus, textarea:focus {
         width: 20px;
         height: 20px;
         cursor: pointer;
+    }
+
+    .popup-container-2 .popup-close {
+        right: 112px;
     }
 
     .popup-close div {
@@ -1838,6 +1868,17 @@ input[type="text"]:focus, textarea:focus {
     .popup-close:hover div {
         background-color: #d81f83; 
         transition: .3s;
+    }
+
+    #size-popup th, #size-popup td {
+        width: 25%;
+        text-align: center;
+        background-color: var(--light-gray);
+        color: var(--almost-black);
+        font-family: 'Gilroy', sans-serif !important;
+        font-size: 16px;
+        padding: 4px 16px;
+        font-weight: 600;
     }
 /** POPUP ENDED **/
 
@@ -2054,14 +2095,15 @@ input[type="text"]:focus, textarea:focus {
         }
 
         .right-link {
-            color: var(--dark-gray);
+            color: var(--dark-gray) !important;
             padding-bottom: 24px;
             transition: .3s;
             font-weight: 600;
+            cursor: pointer;
         }
 
         .right-link:hover {
-            color: var(--red-solid);
+            color: var(--red-solid)!important;
             text-decoration: none;
             transition: .3s;
         }
@@ -2154,6 +2196,12 @@ input[type="text"]:focus, textarea:focus {
     height: 12px;
     background-color: var(--red-solid);
     border-radius: 12px;
+}
+
+.red-circle-2 {
+    width: 8px;
+    height: 8px;
+    bottom: 9px;
 }
 
 #p-cart {
