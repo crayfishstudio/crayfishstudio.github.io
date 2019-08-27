@@ -50,6 +50,19 @@ $(document).ready(function () {
         $(this).parent().find('input').val(number - 1);
     }
   });
+
+
+
+  $('.right-img').click(function() {
+    $(this).addClass('right-img-checked');
+    $('.right-img').not($(this)).each(function() {
+        $(this).removeClass('right-img-checked');
+    });
+
+    var radio = "";
+    radio += $(this).attr("to");
+    $(radio).prop('checked', true);     
+  });
 });
 
 
@@ -159,12 +172,25 @@ $(document).ready(function () {
     });
 
 
+
     $('.input-popup-content').find('p').click(function() {
         var radio = "";
-        $('.input-popup-radio').find('p').text($(this).text());
+
+        $(this).parent().find('p').each(function() {
+            $(this).removeClass("radio-size-checked");
+        });
+
+        if ($(this).parent().hasClass('size-radio')) {
+            $('.input-popup-radio').find('p').find('span').text(": " + $(this).text());
+        } else {
+            $('.input-popup-radio').find('p').text($(this).text());
+        }
+
+        $(this).addClass("radio-size-checked");
+
 
         radio += $(this).attr("to");
-        $(radio).prop('checked', true);     
+        $(radio).prop('checked', true);
     });
 
     $('.checkmark').click(function() {

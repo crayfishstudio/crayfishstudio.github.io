@@ -345,38 +345,41 @@
                 <div></div>
             </div>
         </div>
-        <div class="col-xl-6 col-12 dark-part p-sm-5 py-4 px-3">
-            <h1>Nike Fliknit<br/> Trainer</h1>
-            <p class="color-white">Повсякденне взуття</p>
-            <p class="pr-md-5 mr-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="d-flex">
-                <div class="right-img" style="background-image: url(img/image.PNG)"/></div>
-                <div class="right-img" style="background-image: url(img/image.PNG)"/></div>
-                <div class="right-img" style="background-image: url(img/image.PNG)"/></div>
+        <div class="col-xl-6 col-12 dark-part">
+            <h1 class="mb-3">Nike Fliknit<br/> Trainer</h1>
+            <p class="color-white mb-3"><b>Повсякденне взуття</b></p>
+            <p class="pr-md-5 mr-md-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="d-flex justify-content-lg-start justify-content-center mt-4">
+                <div to="#k1" class="right-img right-img-checked" style="background-image: url(img/image.PNG)"/></div>                
+                <div to="#k2" class="right-img" style="background-image: url(img/image.PNG)"/></div>
+                <div to="#k3" class="right-img" style="background-image: url(img/image.PNG)"/></div>
+                <input id="k1" type="radio" name="color" value="1" checked class="d-none" />
+                <input id="k2" type="radio" name="color" value="2" class="d-none" />
+                <input id="k3" type="radio" name="color" value="3" class="d-none" />
             </div>
             <div class="row px-0 mx-0">
-                <div class="row col-12 px-0 mx-0 mt-3 d-flex justify-content-left align-items-center">
-                    <p><span class="right-price">$1560</span><br/>у наявності</p>
-                    <div class="col-sm-4 col-8 ml-sm-5 ml-3 px-0">
+                <div class="row col-12 px-0 mx-0 mt-3 d-flex flex-sm-row flex-column justify-content-left align-items-center">
+                    <div class="ml-sm-5 ml-sm-3 px-0 order-sm-2 position-relative">
                        <div class="input-popup input-popup-radio">
-                          <p>Розмір: 39</p>
-                          <input id="s39" type="radio" name="sort" value="39" checked />
-                          <input id="s40" type="radio" name="sort" value="40"/>
-                          <input id="s41" type="radio" name="sort" value="41"/>
-                          <input id="s42" type="radio" name="sort" value="42"/>
+                          <p>Оберіть розмір<span></span></p>
+                          <input id="s39" type="radio" name="size" value="39"/>
+                          <input id="s40" type="radio" name="size" value="40"/>
+                          <input id="s41" type="radio" name="size" value="41"/>
+                          <input id="s42" type="radio" name="size" value="42"/>
                           <div class="input-popup-arrow">
                              <div></div>
                              <div></div>
                           </div>
                        </div>
-                       <div class="input-popup-content radio-popup">
-                          <p to="#s39">Розмір: 39</p>
-                          <p to="#s40">Розмір: 40</p>
-                          <p to="#s41">Розмір: 41</p>
-                          <p to="#s42">Розмір: 42</p>
+                       <div class="input-popup-content radio-popup size-radio">
+                          <p to="#s39">S<span></span></p>
+                          <p to="#s40">M<span></span></p>
+                          <p to="#s41">X<span></span></p>
+                          <p to="#s42">XL<span></span></p>
                        </div>
                     </div>
-                    <a href="#" class="right-link pl-sm-5">Як обрати розмір?</a>
+                    <a href="#" class="right-link pl-sm-5 order-sm-3">Як обрати розмір?</a>
+                    <p><span class="right-price order-sm-1">$1560</span><br/>у наявності</p>
                 </div>
                 <button class="col-md-5 col-12 pm-button pm-white-button mt-3">Додати в корзину</button>
                 <a href="#" class="col-md-5 col-12 right-btn mt-3 d-flex align-items-center justify-content-center"><span>Миттєва покупка</span></a>
@@ -385,7 +388,7 @@
     </div>
 
     <section id="catalog-list" class="container-fluid px-0 my-5">
-        <h3 class="text-center my-3">Схожі товари</h3>
+        <h3 class="section-header text-center my-3">Схожі товари</h3>
         <div class="row no-gutters items">
             <div class="col-xl-3 col-lg-4 col-sm-6">
                 <div class="row no-gutters item-card align-items-center">

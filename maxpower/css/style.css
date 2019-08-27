@@ -691,6 +691,11 @@ input[type="text"]:focus, textarea:focus {
     .cart-popup {        
         left: calc(-25vw + 12px) !important;
     }
+
+    .item-detail-image {        
+        margin-top: 0 !important;
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (max-width: 991.5px) { 
@@ -716,6 +721,11 @@ input[type="text"]:focus, textarea:focus {
 
     .info-item p.price-2 {
         right: 198px !important;
+    }
+
+    .dark-part {
+        padding: 24px 16px !important;
+        text-align: center;
     }
 }
 
@@ -975,16 +985,16 @@ input[type="text"]:focus, textarea:focus {
 
     .item-detail-image {
         height: 240px !important;
+        margin-bottom: 40px !important;
     }
 
-    .next {
-        top: 340px !important;
-        display: none !important;
-    }
+    .item-detail .slick-dots li, .item-detail .slick-dots li button  {
+        width: 60px !important;
+        height: 36px !important;  
+    }    
 
-    .prev {
-        top: 340px !important;
-        display: none !important;
+    .prev, .next {
+        bottom: 40px !important;
     }
 
     .cart-popup {        
@@ -1006,6 +1016,10 @@ input[type="text"]:focus, textarea:focus {
 
     .info-item .price {
         display: none;
+    }
+
+    .dark-part .input-popup-content {
+        left: 0px !important;
     }
 }
 
@@ -1842,18 +1856,21 @@ input[type="text"]:focus, textarea:focus {
     .pm-button:hover {
         color: white;
         text-decoration: none;
-        padding-left: 8px;
+        padding-right: 8px;
         transition: .3s;
     }
 
     .pm-white-button {
+        border: 2px solid white;
         background-color: white;
         color: var(--almost-black);
+        font-weight: 600;
     }
 
     .pm-white-button:hover {
-        background-color: #D03827;
-        color: white;   
+        border: 2px solid white !important;
+        padding-right: 8px !important; 
+        color: var(--almost-black);
     }
 
     .pm-button-bordered {
@@ -1886,11 +1903,17 @@ input[type="text"]:focus, textarea:focus {
             background-size: contain;
             background-repeat: no-repeat;
             transition: all .2s;
-            margin-bottom: 80px;
+            margin-top: calc((100vh - 600px)/2);
         }
 
         .item-detail-slider {
             width: 100%;
+            height: 100%;
+        }
+
+        .item-detail .slick-dots {
+            position: absolute;
+            bottom: 0;
         }
 
         .item-detail .slick-dots li {
@@ -1918,7 +1941,7 @@ input[type="text"]:focus, textarea:focus {
 
         .prev {
             position: absolute;
-            top: 460px;
+            bottom: 60px;
             left: 32px;
             width: 40px;
             height: 40px;
@@ -1944,7 +1967,7 @@ input[type="text"]:focus, textarea:focus {
 
         .next {
             position: absolute;
-            top: 460px;
+            bottom: 60px;
             right: 32px;
             width: 40px;
             height: 40px;
@@ -1972,6 +1995,7 @@ input[type="text"]:focus, textarea:focus {
     /** RIGHT PART **/
         .dark-part {
             background-color: var(--almost-black);
+            padding: 64px;
         }
 
         .dark-part h1 {
@@ -1996,6 +2020,10 @@ input[type="text"]:focus, textarea:focus {
             border: 2px solid var(--medium-gray);
             cursor: pointer;
             margin-right: 8px;
+        }
+
+        .right-img-checked {
+            border: 2px solid var(--red-solid);
         }
 
         .right-btn {
@@ -2026,9 +2054,10 @@ input[type="text"]:focus, textarea:focus {
         }
 
         .right-link {
-            color: var(--medium-gray);
+            color: var(--dark-gray);
             padding-bottom: 24px;
             transition: .3s;
+            font-weight: 600;
         }
 
         .right-link:hover {
@@ -2043,6 +2072,8 @@ input[type="text"]:focus, textarea:focus {
             border-bottom: 1px solid white;
             margin-bottom: 32px;
             font-size: 16px;
+            width: 160px !important;
+            margin-left: 0 !important;
         }
 
         .dark-part .input-popup:hover {
@@ -2052,6 +2083,8 @@ input[type="text"]:focus, textarea:focus {
         .dark-part .input-popup p {
             margin-left: 0;
             margin-bottom: 0;
+            color: white;
+            text-align: left;
         }
 
         .dark-part .input-popup .input-popup-arrow div {
@@ -2071,17 +2104,42 @@ input[type="text"]:focus, textarea:focus {
         }
 
         .dark-part .input-popup-content {
-            min-width: calc(100% - 38px);
+            width: 160px !important;
+            min-width: auto !important;
+            max-width: 160px !important;
+            padding: 8px 0px;
             top: 40px;
-            left: 23px;
+            left: 0px;
             box-shadow: var(--shadow-medium);
+        }
+
+        .dark-part .input-popup-content p {
+            position: relative;
+            color: var(--almost-black);
+            text-align: left;
+            padding-left: 16px;
+        }
+
+        .dark-part .input-popup-content p span {
+            position: absolute;
+            top: 4px;
+            right: 12px;
+            width: 10px;
+            height: 10px;
+            box-shadow: 0 0 0pt 1pt var(--almost-black);
+            border: 1.6px solid white;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .dark-part .input-popup-content p.radio-size-checked span {
+            background-color: var(--almost-black) !important;
         }
 
         .dark-part .input-popup-content p:hover {
             color: var(--red-solid);
         }
     /** RIGHT PART ENDED **/
-
 /** ITEM DETAIL ENDED **/
 
 .box-shadow {
