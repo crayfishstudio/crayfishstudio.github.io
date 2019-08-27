@@ -332,58 +332,70 @@
     </nav>
 
     <div class="container-fluid mt-4 px-lg-5 px-lg-4">
-        <h2 class="text-center text-uppercase mt-5">Оформити замовлення</h2>
+        <h2 class="section-header text-center mt-5 mb-3">Оформити замовлення</h2>
         <div class="row px-0 mx-0">
             <div class="row col-lg-6 col-12 d-flex flex-row justify-content-center mx-0 px-0 py-4">
                 <div class="col-md-8 col-12 mx-xl-2 mx-0 px-md-0 pt-2">
-                    <h5>1. Контактні дані</h5>
+                    <h5><b>1. Контактні дані</b></h5>
                     <input class="w-100 mt-2" type="text" placeholder="Ім'я та прізвище" />
                     <input class="w-100 mt-2" type="text" placeholder="Номер телефону" />
                     <input class="w-100 mt-2" type="text" placeholder="Електронна адреса" />
                 </div>
                 <div class="col-md-8 col-12 mx-xl-2 mx-0 mt-5 px-md-0">
-                    <h5>2. Доставка та оплата</h5>
+                    <h5><b>2. Доставка та оплата</b></h5>
                     <input class="w-100 mt-2" type="text" placeholder="Метод доставки" />
                     <input class="w-100 mt-2" type="text" placeholder="Адреса" />
                     <textarea class="w-100 mt-2" type="text" placeholder="Коментар до замовлення"></textarea>
                 </div>
             </div>
             <div class="col-lg-6 col-12 py-4">
-                <p class="f-20"><b>Товарів: <span class="oswald-font">3</span><span class="ml-5">Ціна: <span class="oswald-font">₴‎1560</span></span></b></p>
-                <div class="block block-white w-xl-75 px-4">
+                <p class="f-20"><b>Товарів: <span>3</span><span class="ml-5">Ціна: <span>₴‎1560</span></span></b></p>
+                <div class="block block-white w-xl-75 px-5 py-4">
                     <div class="info d-block pt-0">
                         <div class="info-item py-0">
-                            <h3>Nike flyknit trainer</h3>
+                            <h3 class="c-black">Nike flyknit trainer</h3>
                             <p class="price">₴‎1560</p>
                             <p><small>Повсякденне взуття</small></p>
-                            <div class="info-item-additional mt-4">
+                            <div class="info-item-additional mt-3">
                                 <p>Розмір: 42</p>
+                                <div class="item-parameters" style="float: none;">
+                                    <p class="mr-0">Колір: </p>
+                                    <div class="mr-sm-4 mr-2 ml-lg-2 ml-0" style="background-color: var(--red-solid)"></div>
+                                </div>
                                 <p>К-сть: 1</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="block block-white w-xl-75 px-4">
+                <div class="block block-white w-xl-75 px-5 py-4">
                     <div class="info d-block pt-0">
                         <div class="info-item py-0">
-                            <h3>Nike flyknit trainer</h3>
+                            <h3 class="c-black">Nike flyknit trainer</h3>
                             <p class="price">₴‎1560</p>
                             <p><small>Повсякденне взуття</small></p>
-                            <div class="info-item-additional mt-4">
+                            <div class="info-item-additional mt-3">
                                 <p>Розмір: 42</p>
+                                <div class="item-parameters" style="float: none;">
+                                    <p class="mr-0">Колір: </p>
+                                    <div class="mr-sm-4 mr-2 ml-lg-2 ml-0" style="background-color: var(--red-solid)"></div>
+                                </div>
                                 <p>К-сть: 1</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="block block-white w-xl-75 px-4">
+                <div class="block block-white w-xl-75 px-5 py-4">
                     <div class="info d-block pt-0">
                         <div class="info-item py-0">
-                            <h3>Nike flyknit trainer</h3>
+                            <h3 class="c-black">Nike flyknit trainer</h3>
                             <p class="price">₴‎1560</p>
                             <p><small>Повсякденне взуття</small></p>
-                            <div class="info-item-additional mt-4">
+                            <div class="info-item-additional mt-3">
                                 <p>Розмір: 42</p>
+                                <div class="item-parameters" style="float: none;">
+                                    <p class="mr-0">Колір: </p>
+                                    <div class="mr-sm-4 mr-2 ml-lg-2 ml-0" style="background-color: var(--red-solid)"></div>
+                                </div>
                                 <p>К-сть: 1</p>
                             </div>
                         </div>
@@ -391,7 +403,8 @@
                 </div>
             </div>
             <div class="row col-lg-6 col-12 mx-0 my-4 px-lg-0">
-                <a class="col-lg-8 col-12 px-0 m-auto">
+                <div class="col-2 d-lg-block d-none"></div>
+                <a class="col-lg-6 col-12 px-0">
                     <button id="open" class="w-100 pm-button-bordered mb-5">Перейти до оплати</button>
                 </a>
             </div>

@@ -713,6 +713,10 @@ input[type="text"]:focus, textarea:focus {
     .cart-popup {        
         left: calc(-33vw + 12px) !important;
     }
+
+    .info-item p.price-2 {
+        right: 198px !important;
+    }
 }
 
 @media screen and (max-width: 767.5px) { 
@@ -846,6 +850,20 @@ input[type="text"]:focus, textarea:focus {
     #total-items {
         top: 2px;
     }
+
+    .input-popup-content label {
+        white-space: normal !important;
+    }
+
+    .input-popup-content {
+        min-width: calc(100% - 10px) !important;
+        max-width: calc(100% - 10px) !important;
+    }
+
+    .info-item p.price-2 {
+        top: 12px !important;
+        right: 60px !important;
+    }
 }
 
 @media screen and (max-width: 578px) {
@@ -941,6 +959,7 @@ input[type="text"]:focus, textarea:focus {
     .input-popup-content {
         left: 11px !important;
         min-width: calc(100% - 21px) !important;
+        max-width: calc(100% - 21px) !important;
     }
 
     .input-popup-radio {        
@@ -983,6 +1002,10 @@ input[type="text"]:focus, textarea:focus {
     .remove-item div {
         top: 16px !important;
         left: 8px !important;
+    }
+
+    .info-item .price {
+        display: none;
     }
 }
 
@@ -1267,7 +1290,11 @@ input[type="text"]:focus, textarea:focus {
     .block-white {
         background-color: white;
         box-shadow: var(--shadow-medium);
-        cursor: none;
+        cursor: default;
+    }
+
+    .f-600 {
+        font-weight: 600 !important;
     }
 
     .block h3 {
@@ -1278,6 +1305,10 @@ input[type="text"]:focus, textarea:focus {
         color: #696969;
     }
 
+    .c-black {
+        color: var(--almost-black) !important;
+    }
+
     .block-item {
         position: absolute;
         top: 14px;
@@ -1285,7 +1316,8 @@ input[type="text"]:focus, textarea:focus {
         font-size: 20px;
         padding-right: 24px;
         margin: 0;
-        font-weight: 700;   
+        color: var(--dark-gray);
+        font-weight: 600;   
     }
 
     .block-price {
@@ -1295,6 +1327,7 @@ input[type="text"]:focus, textarea:focus {
         font-size: 20px;
         padding-right: 24px;
         margin: 0;
+        color: var(--dark-gray);
         font-weight: 700;   
     }
 
@@ -1316,11 +1349,11 @@ input[type="text"]:focus, textarea:focus {
 
     .plus div {
         position: absolute;
-        top: 11px;
+        top: 9px;
         left: 5px;
         height: 2.4px;
-        width: 14px;
-        background-color: #696969;
+        width: 12px;
+        background-color: #D03827;
         transition: .5s;
     }
 
@@ -1336,6 +1369,7 @@ input[type="text"]:focus, textarea:focus {
     .info {
         padding-top: 16px;
         display: none;
+        color: var(--dark-gray);
     }
 
     .info-item {
@@ -1346,10 +1380,19 @@ input[type="text"]:focus, textarea:focus {
 
     .info-item p.price {
         position: absolute; 
-        top: 14px;
-        right: 16px;
+        top: 19px;
+        right: 48px;
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
+        font-weight: 700;
+    }
+
+    .info-item p.price-2 {
+        right: 94px;
+    }
+
+    .info-item small {
+        color: var(--medium-gray) !important;
         font-weight: 700;
     }
 
@@ -1357,7 +1400,7 @@ input[type="text"]:focus, textarea:focus {
 
     .info-item-additional p {
         display: inline;
-        margin-right: 64px;
+        margin-right: 24px;
         font-size: 14px;
         color: #858585;
         font-weight: 600;
@@ -1371,6 +1414,10 @@ input[type="text"]:focus, textarea:focus {
     }
 
     .active-block .plus div { background-color: #D03827 !important; }
+
+    .f-20  {
+        font-size: 20px !important;
+    }
 /** BLOCK ENDED **/
 
 /** INPUT POPUP **/
@@ -1432,7 +1479,8 @@ input[type="text"]:focus, textarea:focus {
         transform: rotate(-45deg);  
     }
     .input-popup-active .input-popup-arrow div:nth-of-type(1) {
-        left: 24px; 
+        left: 21px;
+        width: 16px;
     }
 
     .input-popup-arrow div:nth-of-type(2) {
@@ -1443,7 +1491,8 @@ input[type="text"]:focus, textarea:focus {
         transform: rotate(45deg);   
     }
     .input-popup-active .input-popup-arrow div:nth-of-type(2) {
-        right: 22px;    
+        right: 19px;    
+        width: 16px;
     }
 
     .input-popup-content {
@@ -1820,7 +1869,7 @@ input[type="text"]:focus, textarea:focus {
     .pm-button-bordered:hover {
         text-decoration: none;
         color: #1F1F1F;
-        padding-left: 8px;
+        padding-right: 8px;
         transition: .3s;
     }
 /** BUTTONS ENDED **/
