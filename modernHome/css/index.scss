@@ -64,6 +64,8 @@
             padding-top: 10px;
             padding-left: 20px;
             margin-bottom: 0;
+            text-transform: uppercase;
+            color: #212529;
         }
 
         &__img {
@@ -107,7 +109,18 @@
     }
     
     .sect-2 {
+        .background-cottage {
+            background-image: none;
+        }
 
+        & .text-content-container {
+            margin-top: 15px;
+        }
+
+        & .text-regular-container {
+            margin-bottom: 25px;
+            margin-top: 15px;
+        }
     }
 
     .sect-3 {
@@ -157,6 +170,18 @@
         & > #background-full {
             background-image: none;
             padding: 0;
+
+            & > .background-transparent {
+                padding: 0px !important;
+
+                & > .text-center {
+                    padding-top: 15px !important;
+                }
+            }
+
+            & .underline {
+                margin-left: 0;
+            }
         }
 
         & .text-center {
@@ -180,6 +205,49 @@
             margin-bottom: 50px !important;
             margin-left: 0 !important;
             margin-top: 36px !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1258px) {
+    .sect-1 {
+        &__wrapper {
+            & > .m-hide {
+                width: 90%;
+            }
+        }
+
+        &__button-call {
+            & > div {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .sidenav {
+        &-footer {
+            &-m_flex {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .sect-1 {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__img {
+            width: 80%;
+        }
+
+        &__button-learn {
+            padding: 8px 30px;
         }
     }
 }
