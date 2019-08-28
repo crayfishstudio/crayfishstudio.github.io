@@ -343,7 +343,23 @@
                 </div>
                 <div class="col-md-8 col-12 mx-xl-2 mx-0 mt-5 px-md-0">
                     <h5><b>2. Доставка та оплата</b></h5>
-                    <input class="w-100 mt-2" type="text" placeholder="Метод доставки" />
+                    <div class="input-popup input-popup-radio input-popup-radio-2 w-100">
+                        <p>Meтод доставки<span></span></p>
+                          <input id="np" type="radio" name="how" value="nova poshta"/>
+                          <input id="knp" type="radio" name="how" value="kyrer np"/>
+                          <input id="up" type="radio" name="how" value="ukr poshta"/>
+                          <input id="km" type="radio" name="how" value="kyrer maxpower"/>
+                          <div class="input-popup-arrow">
+                             <div></div>
+                             <div></div>
+                          </div>
+                    </div>
+                    <div class="input-popup-content radio-popup-how">
+                      <p to="#np">Нова пошта</p>
+                      <p to="#knp">Кур'єр нової пошти</p>
+                      <p to="#up">Укр пошта</p>
+                      <p to="#km">Кур'єр Maxpower</p>
+                   </div>
                     <input class="w-100 mt-2" type="text" placeholder="Адреса" />
                     <textarea class="w-100 mt-2" type="text" placeholder="Коментар до замовлення"></textarea>
                 </div>
