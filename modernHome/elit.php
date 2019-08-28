@@ -257,6 +257,7 @@ require_once("config.php");
 
         </section>
 
+<!--
         <section class="document container-fluid" id="document">
             <h2 class="g-title">Документація</h2>
 
@@ -264,36 +265,36 @@ require_once("config.php");
 
                 <div class="document-list__wrapper">
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Сертифікат про готовність будинку</a>
+                        <a class="document-list__link" href="#">Будівельний паспорт</a>
                     </div>
 
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Будівельний паспорт</a>
+                        <a class="document-list__link" href="#">Сертифікат про готовність будинку</a>
                     </div>
                 </div>
 
                 <div class="document-list__wrapper">
-                    <div class="document-list__item">
-                        <a class="document-list__link" href="#">Містобудівні умови та обмеження</a>
-                    </div>
-
                     <div class="document-list__item">
                         <a class="document-list__link" href="#">Технічні умови на комунікації</a>
                     </div>
+                    <div class="document-list__item">
+                        <a class="document-list__link" href="#">Містобудівні умови та обмеження</a>
+                    </div>
                 </div>
 
                 <div class="document-list__wrapper">
-                    <div class="document-list__item">
-                        <a class="document-list__link" href="#">Право власності на земельну ділянку</a>
-                    </div>
 
                     <div class="document-list__item">
                         <a class="document-list__link" href="#">Дозвіл на виконання робіт</a>
+                    </div>
+                    <div class="document-list__item">
+                        <a class="document-list__link" href="#">Право власності на земельну ділянку</a>
                     </div>
                 </div>
 
             </div>
         </section>
+-->
 
         <section class="building container-fluid" id="building">
             <h2 class="g-title">Хід будівництва</h2>
@@ -330,7 +331,7 @@ require_once("config.php");
 
                     <div class="m-footer-inputs col-md-4 mr-5">
                         <p class="m-footer-inputs__title text-transparent">Ваші контакти</p>
-                        <form  action="post.php" method="post">
+                        <form action="post.php" method="post">
                             <div class="group">
                                 <input type="text" required name="username">
                                 <span class="bar"></span>

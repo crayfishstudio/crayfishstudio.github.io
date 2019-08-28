@@ -265,31 +265,29 @@ require_once("config.php");
 
                 <div class="document-list__wrapper">
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Сертифікат про готовність будинку</a>
+                        <a class="document-list__link" href="./pdf/vishykaniy/bydivelniy-pasport-andrysiva-13.pdf" download>Будівельний паспорт</a>
                     </div>
-
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Будівельний паспорт</a>
+                        <a class="document-list__link" href="#">Сертифікат про готовність будинку</a>
                     </div>
                 </div>
 
                 <div class="document-list__wrapper">
+                    <div class="document-list__item">
+                        <a class="document-list__link" href="./pdf/vishykaniy/technical-umovi-andrysiva-13.pdf" download>Технічні умови на комунікації</a>
+                    </div>
                     <div class="document-list__item">
                         <a class="document-list__link" href="#">Містобудівні умови та обмеження</a>
                     </div>
-
-                    <div class="document-list__item">
-                        <a class="document-list__link" href="#">Технічні умови на комунікації</a>
-                    </div>
                 </div>
 
                 <div class="document-list__wrapper">
-                    <div class="document-list__item">
-                        <a class="document-list__link" href="#">Право власності на земельну ділянку</a>
-                    </div>
 
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Дозвіл на виконання робіт</a>
+                        <a class="document-list__link" href="./pdf/vishykaniy/dozvil-na-vikonannya-robit-andrysiva-13.pdf" download>Дозвіл на виконання робіт</a>
+                    </div>
+                    <div class="document-list__item">
+                        <a class="document-list__link" href="#">Право власності на земельну ділянку</a>
                     </div>
                 </div>
 

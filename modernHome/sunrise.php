@@ -260,34 +260,31 @@ require_once("config.php");
             <h2 class="g-title">Документація</h2>
 
             <div class="document-list">
-
                 <div class="document-list__wrapper">
+                    <div class="document-list__item">
+                        <a class="document-list__link" href="./pdf/sunrise/bydivelniy-pasport-andrysiva-10.pdf" download>Будівельний паспорт</a>
+                    </div>
                     <div class="document-list__item">
                         <a class="document-list__link" href="#">Сертифікат про готовність будинку</a>
                     </div>
-
-                    <div class="document-list__item">
-                        <a class="document-list__link" href="#">Будівельний паспорт</a>
-                    </div>
                 </div>
 
                 <div class="document-list__wrapper">
+                    <div class="document-list__item">
+                        <a class="document-list__link" href="./pdf/sunrise/technical-umovi-andrysiva-10.pdf" download>Технічні умови на комунікації</a>
+                    </div>
                     <div class="document-list__item">
                         <a class="document-list__link" href="#">Містобудівні умови та обмеження</a>
                     </div>
-
-                    <div class="document-list__item">
-                        <a class="document-list__link" href="#">Технічні умови на комунікації</a>
-                    </div>
                 </div>
 
                 <div class="document-list__wrapper">
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Право власності на земельну ділянку</a>
+                        <a class="document-list__link" href="./pdf/sunrise/dozvil-na-vikonannya-robit-andrysiva-10.pdf" download>Дозвіл на виконання робіт</a>
                     </div>
 
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Дозвіл на виконання робіт</a>
+                        <a class="document-list__link" href="#">Право власності на земельну ділянку</a>
                     </div>
                 </div>
 
@@ -329,7 +326,7 @@ require_once("config.php");
 
                     <div class="m-footer-inputs col-md-4 mr-5">
                         <p class="m-footer-inputs__title text-transparent">Ваші контакти</p>
-                        <form  action="post.php" method="post">
+                        <form action="post.php" method="post">
                             <div class="group">
                                 <input type="text" required name="username">
                                 <span class="bar"></span>
