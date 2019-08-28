@@ -73,7 +73,9 @@ function burgerToggle() {
 }
 
 function showCart() {
-    document.getElementById('idcart').style.display = 'block';
+    if ($(window).width() > 1199) {
+        document.getElementById('idcart').style.display = 'block';
+    }   
 }
 
 function closeCart() {
@@ -256,6 +258,7 @@ $(document).ready(function () {
 
 
     $("#size-popup-open").click(function() {
+        $("#size-popup").css("height", $("body").height());
         $("#size-popup").fadeIn(300);
     });
 
@@ -272,4 +275,8 @@ $(document).ready(function () {
 
         bool = true;
     }); 
+
+    $(".input-radio-popup-2").click(function() {
+        $(this).addClass("input-popup-open");
+    });
 });
