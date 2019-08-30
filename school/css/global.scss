@@ -1,0 +1,491 @@
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot.eot');
+	src: local('Supermolot'),
+		url('../fonts/Supermolot.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot.woff') format('woff'),
+		url('../fonts/Supermolot.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-BoldItalic.eot');
+	src: local('Supermolot Bold Italic'), local('Supermolot-BoldItalic'),
+		url('../fonts/Supermolot-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-BoldItalic.woff') format('woff'),
+		url('../fonts/Supermolot-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-LightItalic.eot');
+	src: local('Supermolot Light Italic'), local('Supermolot-LightItalic'),
+		url('../fonts/Supermolot-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-LightItalic.woff') format('woff'),
+		url('../fonts/Supermolot-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-Black.eot');
+	src: local('Supermolot Black'), local('Supermolot-Black'),
+		url('../fonts/Supermolot-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-Black.woff') format('woff'),
+		url('../fonts/Supermolot-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-Italic.eot');
+	src: local('Supermolot Italic'), local('Supermolot-Italic'),
+		url('../fonts/Supermolot-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-Italic.woff') format('woff'),
+		url('../fonts/Supermolot-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-Light.eot');
+	src: local('Supermolot Light'), local('Supermolot-Light'),
+		url('../fonts/Supermolot-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-Light.woff') format('woff'),
+		url('../fonts/Supermolot-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-Bold.eot');
+	src: local('Supermolot Bold'), local('Supermolot-Bold'),
+		url('../fonts/Supermolot-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-Bold.woff') format('woff'),
+		url('../fonts/Supermolot-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-BlackItalic.eot');
+	src: local('Supermolot Black Italic'), local('Supermolot-BlackItalic'),
+		url('../fonts/Supermolot-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-BlackItalic.woff') format('woff'),
+		url('../fonts/Supermolot-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-Thin.eot');
+	src: local('Supermolot Thin'), local('Supermolot-Thin'),
+		url('../fonts/Supermolot-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-Thin.woff') format('woff'),
+		url('../fonts/Supermolot-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Supermolot';
+	src: url('../fonts/Supermolot-ThinItalic.eot');
+	src: local('Supermolot Thin Italic'), local('Supermolot-ThinItalic'),
+		url('../fonts/Supermolot-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Supermolot-ThinItalic.woff') format('woff'),
+		url('../fonts/Supermolot-ThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+body {
+    font-family: 'Supermolot', sans-serif;
+    color: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+
+
+.g-checkbox {
+    &__label {
+        display: block;
+        margin-bottom: 12px;
+        position: relative;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+
+        .g-checkbox__input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        
+        .g-checkbox__input:checked ~ .g-checkbox__span {
+            &:after {
+            	display: block;
+            }
+        }
+    }
+
+    &__label &__span {
+        border: 1px solid darken(#fafafa, 10%);
+        position: absolute;
+		top: 8px;
+		right: 0;
+        height: 15px;
+		width: 15px;
+        border-radius: 4px;
+        box-sizing: content-box;
+        
+        &:after {
+			content: "";
+			position: absolute;
+			display: none;
+            box-sizing: content-box;
+        }
+    }
+}
+
+.g-checkbox__label {
+  .g-checkbox__span:after {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    left: 4px;
+    top: 0px;
+    width: 4px;
+    height: 9px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+
+  }
+}
+
+.g-radio {
+
+    &__label {
+        display: block;
+        margin-bottom: 12px;
+        position: relative;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+
+        .g-radio__input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        
+        .g-radio__input:checked ~ .g-radio__span {
+            &:after {
+                display: block;
+            }
+        }
+    }
+
+    &__label &__span {
+        border: 1px solid darken(#fafafa, 10%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 15px;
+        width: 15px;
+        border-radius: 4px;
+        box-sizing: content-box;
+        
+        &:after {
+			content: "";
+			position: absolute;
+            display: none;
+            box-sizing: content-box;
+        }
+    }
+}
+
+.g-radio__label {
+  .g-radio__span:after {
+    border: solid #ffffff;
+    background-color: #ffffff;
+    left: 2px;
+    top: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+  }
+}
+
+.g-select {
+	color: #ffffff;
+	font-weight: 600;
+	background: rgba(0, 0, 0, 0.1);
+	border: 3px solid rgba(13, 255, 255, 0.9586);
+	box-sizing: border-box;
+	border-radius: 48.5px;
+	padding: 15px;
+	padding-left: 38px;
+	margin: 7px 0px;
+	width: 100%;
+	
+	&::placeholder {
+		font-weight: 600;
+	}
+
+	&__option {
+		background: #050B2D;
+	}
+}
+
+.g-input {
+	color: #ffffff;
+	font-weight: 600;
+	background: rgba(0, 0, 0, 0.1);
+	border: 3px solid rgba(13, 255, 255, 0.9586);
+	box-sizing: border-box;
+	border-radius: 48.5px;
+	padding: 15px;
+	padding-left: 38px;
+	margin: 7px 0px;
+	
+	&::placeholder {
+		font-weight: 600;
+		color: #ffffff;
+	}
+}
+
+.g-submit {
+	color: #050B2D;
+	background: #FFFFFF;
+	border: 3px solid #ffffff;
+	border-radius: 48.5px;
+	padding: 15px;
+	margin-top: 12px;
+}
+
+.g-arrow {
+	&__link {
+		position: absolute;
+		bottom: 0;
+		transition: 400ms;
+
+		&:hover {
+			transform: translateY(-10px);
+		}
+	}
+}
+
+$corner-width: 3px;
+$corner-size: 10px;
+$color-border: #6BFC76;
+$color-background: #4AB552;
+
+@mixin borderTitleParam() {
+    display: flex;
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+}
+
+@mixin borderParam() {
+    display: flex;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+$borderTitleOptions: 2px solid rgba(13, 255, 255, 0.9586);
+	
+	
+.g-borders {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	position: absolute;
+
+    &__content {
+        position: relative;
+
+        &:before {
+            /* BOTTOM-LEFT */
+            @include borderTitleParam();
+            bottom: -4px;
+            left: -4px;
+            border-left: $borderTitleOptions;
+            border-bottom: $borderTitleOptions;
+        }
+
+        &:after {
+            /* TOP-RIGHT */
+            @include borderTitleParam();
+            top: -4px;
+            right: -4px;
+            border-top: $borderTitleOptions;
+            border-right: $borderTitleOptions;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        line-height: 30px;
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        &:before {
+            /* TOP-LEFT */
+            @include borderTitleParam();
+            top: -4px;
+            left: -4px;
+            border-left: $borderTitleOptions;
+            border-top: $borderTitleOptions;
+        }
+
+        &:after {
+            /* BOTTOM-RIGHT */
+            @include borderTitleParam();
+            bottom: -4px;
+            right: -4px;
+            border-right: $borderTitleOptions;
+            border-bottom: $borderTitleOptions;
+        }
+    }
+}
+
+@mixin tab-color-opacity($tab-color-opacity) {
+    background-color: rgba(74, 181, 82, $tab-color-opacity);
+}
+
+$borderOptions: 2px solid #6BFC76;
+
+.g-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    &-btn {
+        display: flex;
+        transform: translate(-10px);
+        &__item {
+            @include tab-color-opacity(1);
+            height: 18px;
+            width: 23px;
+            transform: skewX(35deg);
+
+            &:nth-of-type(1) {
+                transform: skewX(0) translateX(10px);
+            }
+
+            &:nth-of-type(2) {
+                width: 33px;
+            }
+
+            &:nth-of-type(3) {
+                @include tab-color-opacity(0.6);
+                width: 32px;
+            }
+
+            &:nth-of-type(4) {
+                @include tab-color-opacity(0.4);
+            }
+        }
+    }
+    &-content {
+        position: relative;
+        border: 2px solid #4AB552;
+        background: rgba(74, 181, 82, 0.25);
+        &:before {
+            /* BOTTOM-LEFT */
+            @include borderParam();
+            bottom: -4px;
+            left: -4px;
+            border-left: $borderOptions;
+            border-bottom: $borderOptions;
+        }
+        &:after {
+            /* TOP-RIGHT */
+            @include borderParam();
+            top: -4px;
+            right: -4px;
+            border-top: $borderOptions;
+            border-right: $borderOptions;
+        }
+        &__title {
+            margin: 0;
+            padding-top: 13px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+        &__subtitle {
+            margin: 0;
+            padding-top: 0px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        &_border {
+            position: relative;
+            height: 100%;
+            padding-left: 20px;
+            padding-right: 40px;
+            padding-bottom: 10px;
+            
+            &:before {
+                /* TOP-LEFT */
+                @include borderParam();
+                top: -4px;
+                left: -4px;
+                border-left: $borderOptions;
+                border-top: $borderOptions;
+                display: none;
+            }
+            
+            &:after {
+                /* BOTTOM-RIGHT */
+                @include borderParam();
+                bottom: -4px;
+                right: -4px;
+                border-right: $borderOptions;
+                border-bottom: $borderOptions;
+            }
+        }
+    }
+}
