@@ -278,11 +278,28 @@ input:-webkit-autofill:active {
 
 .g-submit {
   color: #050B2D;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 3px solid #ffffff;
   border-radius: 48.5px;
   padding: 15px;
   margin-top: 12px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.g-submit:hover {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.contact-mail__submit {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.contact-mail__submit:hover {
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 .g-arrow__link {
