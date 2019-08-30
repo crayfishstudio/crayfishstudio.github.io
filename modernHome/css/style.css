@@ -28,6 +28,26 @@
     font-style: normal;
 }
 
+@media (max-width: 768px) {
+    .title-text {
+        font-size: 40px;
+    }
+
+    .title-text-middle {
+        font-size: 35px;
+    }
+
+    .title-text-footer {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1201) {
+    .map-text:hover {
+        margin-left: 5px;
+    }
+}
+
 body {
     font-family: 'FuturaNew', sans-serif;
 }
@@ -286,9 +306,9 @@ li:hover .hover-square {
 }
 
 .social-media {
-    font-size: 18px;
+    font-size: 0px;
     line-height: 22px;
-    color: #828282 !important;
+    color: #fff !important;
     text-transform: uppercase;
     float: right;
     font-weight: 400;
@@ -893,16 +913,11 @@ input:focus ~ .bar:after {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    .title-text {
-        font-size: 40px;
-    }
+.socaial-icons img:hover {
+    transform: translateY(-5px);
+}
 
-    .title-text-middle {
-        font-size: 35px;
-    }
-
-    .title-text-footer {
-        font-size: 35px;
-    }
+.socaial-icons img {
+    width: 35px;
+    transition: 0.5s all;
 }

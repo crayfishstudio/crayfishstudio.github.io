@@ -389,6 +389,10 @@ require_once("config.php");
                     <a href="https://goo.gl/maps/f42kiNuhhazk1ZFPA" target="_blank" class="map-text">м. Городок<br class="m-footer--display">
                         майдан Гайдамаків,<br class="m-footer--display"> буд. 12
                     </a>
+                    <div class="socaial-icons pt-lg-5 pt-4">
+                        <a class="pr-3" href="https://www.facebook.com/%D0%91%D0%9A-%D0%A1%D1%83%D1%87%D0%B0%D1%81%D0%BD%D0%B8%D0%B9-%D0%94%D0%86%D0%9C-637894940011401/" target="_blank"><img src="./img/F_icon.svg"></a>
+                        <a href="https://www.instagram.com/suchasnii_dim19/" target="_blank"><img src="./img/instagram.svg"></a>
+                    </div>
                 </div>
 
             </div>
