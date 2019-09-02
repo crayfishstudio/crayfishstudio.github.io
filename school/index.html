@@ -17,10 +17,12 @@
 
     <link rel="stylesheet" href="./css/home.css">
 
+    <link rel="stylesheet" href="./css/media.css">
+
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <div class="nav__wrapper">
                 <div class="nav-logo">
                     <a class="nav-logo__link" href="#">
@@ -28,52 +30,118 @@
                     </a>
                 </div>
 
-
-            </div>
-
-            <div class="nav-wrapper">
-                <ul class="nav-list">
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">очима школи</a>
-                    </li>
-
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">навіщо навчати</a>
-                    </li>
-
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">про нас</a>
-                    </li>
-
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">команда</a>
-                    </li>
-
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">розробки</a>
-                    </li>
-
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">контакти</a>
-                    </li>
-
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">блог</a>
-                    </li>
-                </ul>
+                <div class="nav-burger" id="nav-open">
+                    <img src="./img/nav-burger.svg" alt="" srcset="">
+                </div>
             </div>
 
             <div class="nav__wrapper">
-                <a class="nav__link" href="#">вартість навчання</a>
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Очима школи</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Навіщо навчати</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Про нас</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Команда</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Розробки</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Контакти</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Блог</a>
+                    </li>
+                </ul>
+
+                <div class="nav-close">
+                    <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="" srcset="">
+                </div>
+            </div>
+
+            <div class="nav__wrapper">
+                <a class="nav__link nav-open__modal">вартість навчання</a>
 
                 <a class="nav__link" href="#">ЗАМОВИТИ ДЗВІНОК</a>
             </div>
 
-            <div class="nav-burger">
-                <img src="./img/nav-burger.svg" alt="" srcset="">
+            <div class="nav__wrapper">
+                <a class="nav__social" href="#">facebook</a>
+                <a class="nav__social" href="#">instagram</a>
+                <a class="nav__social" href="#">youtube</a>
             </div>
         </nav>
     </header>
+ 
+    <nav class="nav sidenav">
+        <div class="nav__wrapper">
+            <div class="nav-logo">
+                <a class="nav-logo__link" href="#">
+                    <img class="nav-logo__img" src="./img/nav-logo.svg" alt=""> ШКОЛА
+                </a>
+            </div>
+        </div>
+
+        <div class="nav__wrapper">
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">Очима школи</a>
+                </li>
+
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">Навіщо навчати</a>
+                </li>
+
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">Про нас</a>
+                </li>
+
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">Команда</a>
+                </li>
+
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">Розробки</a>
+                </li>
+
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">Контакти</a>
+                </li>
+
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">Блог</a>
+                </li>
+            </ul>
+
+            <div class="nav-close" id="nav-close">
+                <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="nav__wrapper">
+            <a class="nav__link nav-open__modal" href="#">вартість навчання</a>
+
+            <a class="nav__link" href="#">ЗАМОВИТИ ДЗВІНОК</a>
+        </div>
+
+        <div class="nav__wrapper">
+            <a class="nav__social" href="#">facebook</a>
+            <a class="nav__social" href="#">instagram</a>
+            <a class="nav__social" href="#">youtube</a>
+        </div>
+    </nav>
 
     <main class="main">
         <section class="home">
@@ -458,7 +526,11 @@
             <div class="team__wrapper">
 
                 <div class="team__prev col-md-1">
-                    <img class="team__img" src="./img/team/team-prev-icon.svg" alt="" srcset="">
+                    <picture>
+                        <source media="(max-width: 900px)"" srcset="./img/team/team-m-prev-icon.svg">
+                        <img class="team__img" src="./img/team/team-prev-icon.svg" alt="" srcset="">
+                    </picture>
+
                 </div>
                 
                 <div class="team-slider col-md-10">
@@ -549,7 +621,10 @@
                 </div>
 
                 <div class="team__next col-md-1">
-                    <img class="team__img" src="./img/team/team-next-icon.svg" alt="" srcset="">
+                    <picture>
+                        <source media="(max-width: 900px)"" srcset="./img/team/team-m-next-icon.svg">
+                        <img class="team__img" src="./img/team/team-next-icon.svg" alt="" srcset="">
+                    </picture>
                 </div>
             
 
@@ -647,7 +722,7 @@
 
                                 <h2 class="g-tab-content__title">Оцінювання в школі</h2>
                                 <h3 class="g-tab-content__subtitle">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print.....</h3>
-                                <h3 class="g-tab-content__text">Детальніше <img src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
+                                <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
                             </div>
                             </a>
                         </div>
@@ -670,7 +745,7 @@
 
                                 <h2 class="g-tab-content__title">Оцінювання в школі</h2>
                                 <h3 class="g-tab-content__subtitle">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print.....</h3>
-                                <h3 class="g-tab-content__text">Детальніше <img src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
+                                <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
                             </div>
                             </a>
                         </div>
@@ -693,7 +768,7 @@
 
                                 <h2 class="g-tab-content__title">Оцінювання в школі</h2>
                                 <h3 class="g-tab-content__subtitle">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print.....</h3>
-                                <h3 class="g-tab-content__text">Детальніше <img src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
+                                <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
                             </div>
                             </a>
                         </div>
@@ -727,7 +802,7 @@
                     <h2 class="contact-mail__title">ЗАЛИШТЕ ЗАЯВКУ І МИ З ВАМИ ЗВ’ЯЖЕМОСЬ</h2>
 
                     <form class="contact-mail__form" action="#" method="POST">
-                        <div class="">
+                        <div class="contact-mail__block">
                             <select class="contact-mail__select" name="carlist" form="" required>
                                 <option value="" selected hidden>Вас цікавить</option>
                                 <option class="contact-mail__option" value="Домовитися про зустріч">Домовитися про зустріч</option>
@@ -868,166 +943,168 @@
             </div>
 
         </section>
-
-        <section class="calc" style="display: none;">
-            <div class="calc-header">
-                <h2 class="calc__title">Розрахуйте вартість навчання</h2>
-                <div class="calc__close"></div>
-            </div>
-
-            <div class="calc-main">
-                <div class="calc-main_width">
-                    <h4 class="calc-main__title">Основне</h4>
-                    <select class="g-select calc-main__select" name="carlist" form="" required>
-                        <option value="" selected hidden>Оберіть клас</option>
-                        <option class="g-select__option" value="1 Клас">1 Клас</option>
-                        <option class="g-select__option" value="2 Клас">2 Клас</option>
-                        <option class="g-select__option" value="3 Клас">3 Клас</option>
-                        <option class="g-select__option" value="4 Клас">4 Клас</option>
-                        <option class="g-select__option" value="5 Клас">5 Клас</option>
-                        <option class="g-select__option" value="6 Клас">6 Клас</option>
-                        <option class="g-select__option" value="7 Клас">7 Клас</option>
-                        <option class="g-select__option" value="8 Клас">8 Клас</option>
-                        <option class="g-select__option" value="9 Клас">9 Клас</option>
-                        <option class="g-select__option" value="10 Клас">10 Клас</option>
-                        <option class="g-select__option" value="11 Клас">11 Клас</option>
-                    </select>
-
-                    <h5 class="calc-main__deposit">ЩОМІСЯЧНИЙ ПЛАТІЖ <span  class="calc-main__deposit_blue">&#8372;9000</span></h5>
-
-                    <h5 class="calc-main__deposit">ВСТУПНИЙ РАЗОВИЙ ВНЕСОК <span  class="calc-main__deposit_blue">&#8372;8000</span></h5>
-
-                    <h5 class="calc-main__deposit">РАЗОВИЙ ЩОРІЧНИЙ ВНЕСОК <span  class="calc-main__deposit_blue">&#8372;5000</span></h5>
-                    
-                    <div class="calc-main__wrapper">
-
-                        <h5 class="calc-main__subtitle">Харчування:</h5>
-
-                        <label class="g-radio__label calc-main__food">
-                            ОБІД <span class="calc-main__food_blue">(&#8372;80/день)</span>
-                            <input type="radio" class="g-radio__input" name="calc-food">
-                            <span class="g-radio__span"></span>
-                        </label>
-
-                        <label class="g-radio__label calc-main__food">
-                            ПОВНИЙ РАЦІОН <span class="calc-main__food_blue">(&#8372;195/день)</span>
-                            <input type="radio" class="g-radio__input" name="calc-food">
-                            <span class="g-radio__span"></span>
-                        </label>
-
-                        <label class="g-radio__label calc-main__food">
-                            БЕЗ ХАРЧУВАННЯ
-                            <input type="radio" class="g-radio__input" name="calc-food">
-                            <span class="g-radio__span"></span>
-                        </label>
-
-                        <label class="g-checkbox__label calc-main__bus">
-                            ШКІЛЬНИЙ АВТОБУС <span class="calc-main__bus_blue">(&#8372;1800/міс)</span>
-                            <input type="checkbox" class="g-checkbox__input" id="schoolbus" name="schoolbus">
-                            <span class="g-checkbox__span"></span>
-                        </label>
-
-                        <h6 class="calc-main-pay__header">ОПЛАТА ЗА:</h6>
-
-                        <div class="calc-main-pay">
-                            <label class="g-radio__label calc-main-pay__title">
-                                <span class="calc-main-pay__span">МІСЯЦЬ</span>
-                                <input type="radio" class="g-radio__input" name="paytime">
-                                <span class="g-radio__span"></span>
-                            </label>
-
-                            <label class="g-radio__label calc-main-pay__title">
-                                <span class="calc-main-pay__span">РІК</span>
-                                <input type="radio" class="g-radio__input" name="paytime">
-                                <span class="g-radio__span"></span>
-                            </label>
-
-                            <label class="g-radio__label calc-main-pay__title">
-                                <span class="calc-main-pay__span">КВАРТАЛ</span>
-                                <input type="radio" class="g-radio__input" name="paytime">
-                                <span class="g-radio__span"></span>
-                            </label>
-
-                            <label class="g-radio__label calc-main-pay__title">
-                                <span class="calc-main-pay__span">ПІВРОКУ</span>
-                                <input type="radio" class="g-radio__input" name="paytime">
-                                <span class="g-radio__span"></span>
-                            </label>
-                        </div>
-
-                    </div>
-                </div>
-                
-
-                <div class="calc-main__item">
-                    <h4 class="calc-main__title">ДОДАТКОВІ СЕКЦІЇ</h4>
-
-                    <select class="g-select calc-main__adt" name="carlist" form="" required>
-                        <option value="" selected hidden>Спорт: карате</option>
-                        <option class="g-select__option" value="1 Клас">1 Клас</option>
-                        <option class="g-select__option" value="2 Клас">2 Клас</option>
-                    </select>
-
-                    <select class="g-select calc-main__adt" name="carlist" form="" required>
-                        <option value="" selected hidden>Музика: синтезатор, вокал&#59;</option>
-                        <option class="g-select__option" value="1 Клас">1 Клас</option>
-                        <option class="g-select__option" value="2 Клас">2 Клас</option>
-                    </select>
-
-                    <select class="g-select calc-main__adt" name="carlist" form="" required>
-                        <option value="" selected hidden>Мистецтво</option>
-                        <option class="g-select__option" value="1 Клас">1 Клас</option>
-                        <option class="g-select__option" value="2 Клас">2 Клас</option>
-                    </select>
-
-                    <select class="g-select calc-main__adt" name="carlist" form="" required>
-                        <option value="" selected hidden>Техно + Стратегії</option>
-                        <option class="g-select__option" value="1 Клас">1 Клас</option>
-                        <option class="g-select__option" value="2 Клас">2 Клас</option>
-                    </select>
-
-                    <p class="calc-main__text">Адміністрація розглядає можливості відкриття додаткових секцій для груп бажаючих від 5 чоловік</p>
-
-                    <form class="calc-main-form" action="">
-                        <input class="calc-main-form__input g-input" type="text" name="" id="" placeholder="Запропонувати секцію" required>
-
-                        <button class="calc-main-form__btn" type="submit">
-                            <img class="calc-main-form__img" src="./img/send-arrow.svg" alt="" srcset="">
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="calc-footer">
-                <input class="calc-footer__show g-input" type="text" name="" id="" value="&#8372;12 000" readonly>
-
-                <input class="calc-footer__submit g-input g-submit" type="submit" value="ВІДПРАВИТИ ЗАЯВКУ">
-            </div>
-        </section>
     </main>
+
+    <section class="calc">
+        <div class="calc-header">
+            <h2 class="calc__title">Розрахуйте вартість навчання</h2>
+            <div class="nav-close nav-close__modal">
+                <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="calc-main">
+            <div class="calc-main_width">
+                <h4 class="calc-main__title">Основне</h4>
+                <select class="g-select calc-main__select" name="carlist" form="" required>
+                    <option value="" selected hidden>Оберіть клас</option>
+                    <option class="g-select__option" value="1 Клас">1 Клас</option>
+                    <option class="g-select__option" value="2 Клас">2 Клас</option>
+                    <option class="g-select__option" value="3 Клас">3 Клас</option>
+                    <option class="g-select__option" value="4 Клас">4 Клас</option>
+                    <option class="g-select__option" value="5 Клас">5 Клас</option>
+                    <option class="g-select__option" value="6 Клас">6 Клас</option>
+                    <option class="g-select__option" value="7 Клас">7 Клас</option>
+                    <option class="g-select__option" value="8 Клас">8 Клас</option>
+                    <option class="g-select__option" value="9 Клас">9 Клас</option>
+                    <option class="g-select__option" value="10 Клас">10 Клас</option>
+                    <option class="g-select__option" value="11 Клас">11 Клас</option>
+                </select>
+
+                <h5 class="calc-main__deposit">ЩОМІСЯЧНИЙ ПЛАТІЖ <span  class="calc-main__deposit_blue">&#8372;9000</span></h5>
+
+                <h5 class="calc-main__deposit">ВСТУПНИЙ РАЗОВИЙ ВНЕСОК <span  class="calc-main__deposit_blue">&#8372;8000</span></h5>
+
+                <h5 class="calc-main__deposit">РАЗОВИЙ ЩОРІЧНИЙ ВНЕСОК <span  class="calc-main__deposit_blue">&#8372;5000</span></h5>
+                
+                <div class="calc-main__wrapper">
+
+                    <h5 class="calc-main__subtitle">Харчування:</h5>
+
+                    <label class="g-radio__label calc-main__food">
+                        ОБІД <span class="calc-main__food_blue">(&#8372;80/день)</span>
+                        <input type="radio" class="g-radio__input" name="calc-food">
+                        <span class="g-radio__span"></span>
+                    </label>
+
+                    <label class="g-radio__label calc-main__food">
+                        ПОВНИЙ РАЦІОН <span class="calc-main__food_blue">(&#8372;195/день)</span>
+                        <input type="radio" class="g-radio__input" name="calc-food">
+                        <span class="g-radio__span"></span>
+                    </label>
+
+                    <label class="g-radio__label calc-main__food">
+                        БЕЗ ХАРЧУВАННЯ
+                        <input type="radio" class="g-radio__input" name="calc-food">
+                        <span class="g-radio__span"></span>
+                    </label>
+
+                    <label class="g-checkbox__label calc-main__bus">
+                        ШКІЛЬНИЙ АВТОБУС <span class="calc-main__bus_blue">(&#8372;1800/міс)</span>
+                        <input type="checkbox" class="g-checkbox__input" id="schoolbus" name="schoolbus">
+                        <span class="g-checkbox__span"></span>
+                    </label>
+
+                    <h6 class="calc-main-pay__header">ОПЛАТА ЗА:</h6>
+
+                    <div class="calc-main-pay">
+                        <label class="g-radio__label calc-main-pay__title">
+                            <span class="calc-main-pay__span">МІСЯЦЬ</span>
+                            <input type="radio" class="g-radio__input" name="paytime">
+                            <span class="g-radio__span"></span>
+                        </label>
+
+                        <label class="g-radio__label calc-main-pay__title">
+                            <span class="calc-main-pay__span">РІК</span>
+                            <input type="radio" class="g-radio__input" name="paytime">
+                            <span class="g-radio__span"></span>
+                        </label>
+
+                        <label class="g-radio__label calc-main-pay__title">
+                            <span class="calc-main-pay__span">КВАРТАЛ</span>
+                            <input type="radio" class="g-radio__input" name="paytime">
+                            <span class="g-radio__span"></span>
+                        </label>
+
+                        <label class="g-radio__label calc-main-pay__title">
+                            <span class="calc-main-pay__span">ПІВРОКУ</span>
+                            <input type="radio" class="g-radio__input" name="paytime">
+                            <span class="g-radio__span"></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <div class="calc-main__item">
+                <h4 class="calc-main__title">ДОДАТКОВІ СЕКЦІЇ</h4>
+
+                <select class="g-select calc-main__adt" name="carlist" form="" required>
+                    <option value="" selected hidden>Спорт: карате</option>
+                    <option class="g-select__option" value="1 Клас">1 Клас</option>
+                    <option class="g-select__option" value="2 Клас">2 Клас</option>
+                </select>
+
+                <select class="g-select calc-main__adt" name="carlist" form="" required>
+                    <option value="" selected hidden>Музика: синтезатор, вокал&#59;</option>
+                    <option class="g-select__option" value="1 Клас">1 Клас</option>
+                    <option class="g-select__option" value="2 Клас">2 Клас</option>
+                </select>
+
+                <select class="g-select calc-main__adt" name="carlist" form="" required>
+                    <option value="" selected hidden>Мистецтво</option>
+                    <option class="g-select__option" value="1 Клас">1 Клас</option>
+                    <option class="g-select__option" value="2 Клас">2 Клас</option>
+                </select>
+
+                <select class="g-select calc-main__adt" name="carlist" form="" required>
+                    <option value="" selected hidden>Техно + Стратегії</option>
+                    <option class="g-select__option" value="1 Клас">1 Клас</option>
+                    <option class="g-select__option" value="2 Клас">2 Клас</option>
+                </select>
+
+                <p class="calc-main__text">Адміністрація розглядає можливості відкриття додаткових секцій для груп бажаючих від 5 чоловік</p>
+
+                <form class="calc-main-form" action="">
+                    <input class="calc-main-form__input g-input" type="text" name="" id="" placeholder="Запропонувати секцію" required>
+
+                    <button class="calc-main-form__btn" type="submit">
+                        <img class="calc-main-form__img" src="./img/send-arrow.svg" alt="" srcset="">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="calc-footer">
+            <input class="calc-footer__show g-input" type="text" name="" id="" value="&#8372;12 000" readonly>
+
+            <input class="calc-footer__submit g-input g-submit" type="submit" value="ВІДПРАВИТИ ЗАЯВКУ">
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer_bg">
             <div class="footer-info col-md-10">
-                <div class="col-md-3">
+                <div class="footer-info__wrapper col-lg-3">
                     <a href="#" class="footer-info__item">Дитина очима школи &#8220;Галілео&#8221;</a>
                     <a href="#" class="footer-info__item">Навіщо навчати дітей ?</a>
                     <a href="#" class="footer-info__item">Про школу</a>
                 </div>
 
-                <div class="col-md-2">
+                <div class="footer-info__wrapper col-lg-2">
                     <a href="#" class="footer-info__item">Команда</a>
                     <a href="#" class="footer-info__item">Мета школи</a>
                     <a href="#" class="footer-info__item">Розробки</a>
                 </div>
 
-                <div class="col-md-2">
+                <div class="footer-info__wrapper col-lg-2">
                     <a href="#" class="footer-info__item">Вартість навчання</a>
                     <a href="#" class="footer-info__item">Замовити дзвінок</a>
                     <a href="#" class="footer-info__item">Блог</a>
                 </div>
 
-                <div class="col-md-3 footer-info_right">
+                <div class="footer-info__wrapper col-lg-3 footer-info_right">
                     <a class="footer-info__link" href="#">м. Ірпінь, вул. Варшавська, 116</a>
                     <a class="footer-info__link" href="#">+38 (067) 935 4248</a>
                     <a class="footer-info__link" href="#">os.platforma@gmail.com</a>
@@ -1069,7 +1146,19 @@
                 autoplaySpeed: 5000,              
                 prevArrow: $('.team__prev'),
                 nextArrow: $('.team__next'),
-                autoplay: false
+                autoplay: false,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: false,
+                        centerPadding: '24px',
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
             });
 
             $('.video__slider').slick({
@@ -1082,8 +1171,21 @@
                 autoplaySpeed: 5000,              
                 prevArrow: $('.video__prev'),
                 nextArrow: $('.video__next'),
-                autoplay: false
+                autoplay: false,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '24px',
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
             });
+
         });       
     </script>
 
@@ -1103,7 +1205,37 @@
         })(jQuery);
     </script>-->
 
+    <script>
+        $(document).ready(function() {
+            $('#nav-open').on('click', function() {
+                $('.sidenav').addClass('active');
+                $('.header').addClass('active');
+
+                $('#nav').removeClass('active');
+            });
+
+            $('#nav-close').on('click', function() {
+                $('.sidenav').removeClass('active');
+                $('.header').removeClass('active');
+
+                $('#nav').addClass('active');
+            });
+
+            $('.nav-open__modal').on('click', function() {
+                $('.calc').addClass('active');
+                $('.sidenav').removeClass('active');
+                $('.header').removeClass('active');
+            });
+
+            $('.nav-close__modal').on('click', function() {
+                $('.calc').removeClass('active');
+            });
+        });
+    </script>
+
     <script src="https://unpkg.com/imask"></script>
+
+    <script src="./js/script.js"></script>
 
     <script>
         var phoneMask = IMask(

@@ -72,3 +72,48 @@ body {
         }
     }
 }
+
+@media (max-width: 900px) {
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+        border: none;
+    }
+
+    .article {
+        &__subtitle {
+            font-size: 18px;
+            line-height: 22px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 35px;
+            margin-top: 55px;
+            margin-right: 0;
+            right: auto;
+            width: 95%;
+        }
+
+        &__content {
+            margin-top: 0;
+            margin-left: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__title {
+            margin-bottom: 93px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &_flex {
+            flex-direction: column;
+        }
+
+        &__link {
+            margin-bottom: 12px;
+        }
+    }
+}

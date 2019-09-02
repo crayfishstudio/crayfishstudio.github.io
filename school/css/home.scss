@@ -13,7 +13,11 @@
 	align-items: center;
 
     &__wrapper {
-        display: flex;
+		display: flex;
+		
+		&:nth-of-type(4) {
+			display: none;
+		}
     }
 
     &-logo {
@@ -46,8 +50,6 @@
 		margin-bottom: 0;
 
         &__item {
-			margin-top: 23px;
-			margin-bottom: 21px;
 			margin-right: 41px;
 			margin-left: 0;
 			transition: 400ms;
@@ -67,7 +69,7 @@
             text-decoration: none;
 			font-size: 18px;
 			position: relative;
-			text-decoration: none;
+			text-transform: lowercase;
 			
 			&:hover {
 				text-decoration: none;
@@ -89,13 +91,14 @@
     }
 
 	&__link {
-		color: #0AA9CC;
+		color: #0AA9CC !important;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 20px;
 		vertical-align: middle;
+		cursor: pointer;
 
 		&:first-of-type {
 			margin-right: 41px;
@@ -110,6 +113,19 @@
 	&-burger {
 		display: none;
 	}
+
+	&-close {
+		display: none;
+	}
+
+	&-close__modal {
+		display: flex;
+		cursor: pointer;
+	}
+}
+
+.sidenav {
+	display: none;
 }
 
 .main, .footer {
@@ -1234,6 +1250,7 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 	margin-top: 100px;
 	padding-bottom: 60px;
 	position: relative;
+	width: 100%;
 
 	&__wrapper {
 		display: flex;
@@ -1242,6 +1259,9 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 	}
 
 	&__item {
+		width: auto;
+		transform: translateX(25px);
+
 		&:nth-of-type(1) {
 			margin-right: 72px;
 		}
@@ -1253,10 +1273,6 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 
 	&-cyan {
 		transition: 300ms;
-
-		&:hover {
-			transform: scale(1.02);
-		}
 
 		& .g-tab {
 
@@ -1343,6 +1359,11 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 					font-weight: 600;
 					line-height: 20px;
 					margin-bottom: 31px;
+					display: inline-flex;
+				}
+
+				&__img {
+					margin-left: 10px;
 				}
 			}
 		}
@@ -1364,10 +1385,11 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 .contact {
     background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top: 30px;
 
 	&__wrapper {
 		display: flex;
@@ -1705,9 +1727,18 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 }
 
 .calc {
+	background-color: #070E2D;
+	z-index: 30;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	transition: 1s;
+	height: 100%;
 
-	&-header, &-main > div:nth-child(2), &-footer {
-		/*display: none;*/
+	&.active {
+		display: block;
+		right: 0;
 	}
 
 	&-header, &-main, &-footer {
@@ -1716,18 +1747,25 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 		border-bottom: 1px solid rgba(13, 255, 255, 0.9586);
 	}
 
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	&__title {
 		font-size: 40px;
 		line-height: 49px;
 		text-transform: uppercase;
 		margin-top: 0;
-		padding-top: 28px;
+		padding-top: 10px;
 		margin-bottom: 22px;
 	}
 
 	&-main {
 		display: flex;
 		padding-bottom: 18px;
+		padding-top: 20px;
 
 		&_width {
 			min-width: 440px;

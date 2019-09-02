@@ -6,7 +6,6 @@ body {
 }
 
 .wrapper {
-    height: 200vh;
     display: flex;
     justify-content: space-between;
     margin-left: 30px;
@@ -152,7 +151,7 @@ body {
         margin-bottom: 32px;
 
         &__intro {
-            width: 327px;
+            max-width: 327px;
             height: 153px;
             border: 2px solid #00FFFF;
             margin-top: 18px;
@@ -170,6 +169,9 @@ body {
             font-weight: 600;
             margin-top: 12px;
             margin-left: 16px;
+            word-break: break-word;
+            text-overflow: ellipsis;
+            max-width: 270px;
         }
 
         &__link {
@@ -206,6 +208,82 @@ body {
             &__intro {
                 width: auto;
             }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sub, .blog {
+        max-width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .sub {
+        margin-bottom: 43px;
+
+        &-list {
+            &__item:last-of-type {
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .blog {
+        &-item:nth-child(3n+1), &-item:nth-child(3n+2) {
+            margin-right: 0;
+        }
+
+        &-header {
+            min-height: 400px;
+            background-position: -50px 11px;
+
+            &__subtitle {
+                padding-left: 20px;
+            }
+
+            &__title {
+                padding-left: 19px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .blog {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .blog {
+        padding-right: 20px;
+
+        &-item {
+            &__intro {
+                max-width: 282px;
+            }
+        }
+    }
+
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1350px) and (min-width: 1000px) {
+    .blog {
+        &__wrapper {
+            justify-content: space-evenly;
         }
     }
 }
