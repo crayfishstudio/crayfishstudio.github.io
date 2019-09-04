@@ -126,6 +126,7 @@
 
 .sidenav {
 	display: none;
+	overflow-y: auto;
 }
 
 .main, .footer {
@@ -1131,10 +1132,21 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 		transition: 600ms;
 	}
 
-	& .slick-current + .slick-active {
-		/*background-color: #050B2D;*/
+	.slick-cloned {
+		transition: 600ms;
 	}
 
+	& .slick-current + .slick-active {
+		opacity: 1;
+		transform: scale(1);
+		transition: 600ms;
+	}
+
+	.slick-slide.slick-cloned.slick-active + .slick-cloned {
+		background-color: rgb(240, 0, 0);
+	}
+
+	/*
 	& .slick-current + .slick-cloned, & .slick-current + .slick-active {
 		opacity: 1;
 		transform: scale(1);
@@ -1150,7 +1162,7 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 		transform: scale(1);
 	}
 
-	/*& .slick-active:nth-of-type(2):not(.slick-current) {
+	& .slick-active:nth-of-type(2):not(.slick-current) {
 		background-color: #00FFFF;
 	}*/
 
@@ -1251,6 +1263,10 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 	padding-bottom: 60px;
 	position: relative;
 	width: 100%;
+
+	&__prev, &__next {
+		display: none !important;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -1519,6 +1535,10 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 		justify-content: center;
 		margin-top: 50px;
 
+		&__wrapper {
+			display: flex;
+		}
+
 		&_border {
 			border: 2px solid rgba(13, 255, 255, 0.9586);
 			box-sizing: border-box;
@@ -1735,6 +1755,7 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 	right: -100%;
 	transition: 1s;
 	height: 100%;
+	overflow-y: auto;
 
 	&.active {
 		display: block;
@@ -1769,12 +1790,19 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 
 		&_width {
 			min-width: 440px;
+			max-width: 440px;
+
+			.select {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
 		}
 
 		&__item {
 			display: flex;
 			flex-direction: column;
 			margin-left: 110px;
+			max-width: 430px;
 		}
 
 		&__title {
@@ -1902,6 +1930,9 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 			text-align: center;
 			padding: 12px;
 			margin-top: 24px;
+			display: inline-flex;
+			min-width: 332px;
+			justify-content: center;
 		}
 
 		&__submit {

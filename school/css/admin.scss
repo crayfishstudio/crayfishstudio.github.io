@@ -1,0 +1,39 @@
+.main {
+	background-image: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    .g-submit {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    &_flex {
+        display: flex;
+    }
+
+    &__link {
+        width: 20px;
+
+        &:nth-of-type(2) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        &:nth-of-type(3) {
+            transform: rotate(45deg);
+        }
+    }
+}
