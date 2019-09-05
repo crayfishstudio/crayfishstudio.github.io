@@ -4,7 +4,7 @@
 	width: 100%;
 	z-index: 20;
 	display: block;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(19, 26, 57, 0.66);
 }
 
 .nav {
@@ -126,6 +126,7 @@
 
 .sidenav {
 	display: none;
+	overflow-y: auto;
 }
 
 .main, .footer {
@@ -1252,6 +1253,10 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 	position: relative;
 	width: 100%;
 
+	&__prev, &__next {
+		display: none !important;
+	}
+
 	&__wrapper {
 		display: flex;
 		justify-content: center;
@@ -1393,6 +1398,16 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 
 	&__wrapper {
 		display: flex;
+		justify-content: center;
+	}
+
+	.select:first-child {
+		width: 100%;
+		margin-right: 5px;	
+
+		.select-item__text {
+			padding-right: 45px;
+		}
 	}
 
 	&-map {
@@ -1443,6 +1458,23 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 	&-mail {
 		& .g-checkbox__label {
 			margin-top: 18px;
+		}
+
+		&__block {
+			display: flex;
+			justify-content: space-between;
+
+			.select {
+				width: 100%;
+
+				&:first-of-type {
+					max-width: 60%;
+				}
+
+				&:last-of-type {
+					max-width: 40%;
+				}
+			}
 		}
 
 		& .g-checkbox__text {
@@ -1518,6 +1550,10 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 		display: flex;
 		justify-content: center;
 		margin-top: 50px;
+
+		&__wrapper {
+			display: flex;
+		}
 
 		&_border {
 			border: 2px solid rgba(13, 255, 255, 0.9586);
@@ -1618,6 +1654,9 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 			margin-top: 22px;
 			margin-bottom: 30px;
 			color: #FFFFFF;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
 
 			&:hover {
 				text-decoration: none;
@@ -1628,11 +1667,10 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 		&__block {
 			position: relative;
 			overflow: hidden;
-			height: 300px;
+			height: auto;
 		}
 
 		&__img {
-			position: absolute;
 			height: auto;
 			left: 0;
 			width: 103%;
@@ -1735,6 +1773,7 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 	right: -100%;
 	transition: 1s;
 	height: 100%;
+	overflow-y: auto;
 
 	&.active {
 		display: block;
@@ -1751,6 +1790,7 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		position: relative;
 	}
 
 	&__title {
@@ -1769,12 +1809,19 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 
 		&_width {
 			min-width: 440px;
+			max-width: 440px;
+
+			.select {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
 		}
 
 		&__item {
 			display: flex;
 			flex-direction: column;
 			margin-left: 110px;
+			max-width: 430px;
 		}
 
 		&__title {
@@ -1839,7 +1886,6 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 
 		&-pay {
 			display: flex;
-			justify-content: space-between;
 
 			&__header {
 				font-size: 16px;
@@ -1856,6 +1902,20 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 
 			&__span {
 				margin-right: 30px;
+			}
+
+			&_flex {
+				display: flex;
+
+				&:first-of-type {
+					margin-right: 10px;
+				}
+
+				.calc-main-pay__title {
+					&:last-child {
+						margin-left: 15px;
+					}
+				}
 			}
 
 		}
@@ -1902,6 +1962,9 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 			text-align: center;
 			padding: 12px;
 			margin-top: 24px;
+			display: inline-flex;
+			min-width: 332px;
+			justify-content: center;
 		}
 
 		&__submit {
@@ -1910,6 +1973,19 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 			padding: 12px;
 			transform: translateY(-5px);
 			margin-left: 213px;
+		}
+	}
+
+	.select {
+		&-item {
+			flex-direction: column;
+			align-items: flex-start;
+
+			&__text {
+				&_blue {
+					margin-left: 0;
+				}
+			}
 		}
 	}
 }

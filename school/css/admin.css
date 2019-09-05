@@ -1,0 +1,52 @@
+.main {
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.admin .g-submit {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.admin_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin__link {
+  width: 20px;
+}
+
+.admin__link:nth-of-type(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.admin__link:nth-of-type(3) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=admin.css.map */

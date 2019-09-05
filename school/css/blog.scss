@@ -120,6 +120,16 @@ body {
         border: 1px solid rgba(13, 255, 255, 0.9586);
         margin-bottom: 32px;
 
+        &__link {
+            color: #FFFFFF;
+            transition: 400ms;
+
+            &:hover {
+                color: rgb(205, 223, 255);
+                text-decoration: none;
+            }
+        }
+
         &__subtitle {
             font-size: 16px;
             font-weight: 600;
@@ -134,6 +144,9 @@ body {
             background-color: rgba(0, 0, 0, 0.56);
             padding: 22px 0 21px 60px;
             margin: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     }
 
@@ -169,9 +182,11 @@ body {
             font-weight: 600;
             margin-top: 12px;
             margin-left: 16px;
-            word-break: break-word;
-            text-overflow: ellipsis;
             max-width: 270px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right: 15px;
         }
 
         &__link {
@@ -200,19 +215,70 @@ body {
 }
 
 @media (min-width: 1600px) {
+    .wrapper {
+        justify-content: space-evenly;
+    }
+
     .blog {
         &-item {
             width: 32%;
-            max-width: none;
+            max-width: 100%;
 
             &__intro {
                 width: auto;
+                height: auto;
+                max-width: 100%;
             }
         }
     }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 1500px) {
+    .blog {
+        &-item {
+            &:nth-child(3n+1), &:nth-child(3n+2) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .blog {
+        padding-right: 20px;
+
+        &-item {
+            &__intro {
+                max-width: 282px;
+            }
+        }
+    }
+
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1360px) and (min-width: 1000px) {
+    .blog {
+        &__wrapper {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 910px) {
+    .blog {
+        &-item {
+            &:nth-child(2n), &:nth-child(n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 910px) {
     .wrapper {
         flex-direction: column;
         margin-left: 20px;
@@ -235,6 +301,12 @@ body {
     }
 
     .blog {
+        &__wrapper {
+            justify-content: space-evenly;
+        }
+
+        padding-right: 0 !important;
+
         &-item:nth-child(3n+1), &-item:nth-child(3n+2) {
             margin-right: 0;
         }
@@ -257,33 +329,55 @@ body {
 
 @media (max-width: 768px) {
     .blog {
-        &__wrapper {
-            justify-content: center;
+        &-header {
+            &__title {
+                padding-right: 19px;
+            }
         }
-    }
-}
 
-@media (max-width: 1500px) {
-    .blog {
-        padding-right: 20px;
+        &__wrapper {
+            justify-content: space-between;
+        }
 
         &-item {
+            width: 49%;
+
             &__intro {
-                max-width: 282px;
+                max-width: 100%;
             }
         }
     }
+}
 
-    .wrapper {
-        margin-left: 20px;
-        margin-right: 20px;
+@media (max-width: 708px) {
+    .blog {
+        &__wrapper {
+            justify-content: center;
+        }
+
+        &-item {
+            width: 100%;
+            max-width: 100%;
+
+            &__intro {
+                height: auto;
+            }
+        }
     }
 }
 
-@media (max-width: 1350px) and (min-width: 1000px) {
+@media (max-width: 450px) {
     .blog {
-        &__wrapper {
-            justify-content: space-evenly;
+        &-header {
+            &__title {
+                font-size: 25px;
+            }
+        }
+
+        &-item {
+            &__title {
+                font-size: 19px;
+            }
         }
     }
 }

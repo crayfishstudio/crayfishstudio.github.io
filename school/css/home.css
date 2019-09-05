@@ -4,7 +4,7 @@
   width: 100%;
   z-index: 20;
   display: block;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(19, 26, 57, 0.66);
 }
 
 .nav {
@@ -145,6 +145,7 @@
 
 .sidenav {
   display: none;
+  overflow-y: auto;
 }
 
 .main, .footer {
@@ -1377,12 +1378,6 @@
           transform: scale(1);
 }
 
-.team .slick-cloned + .slick-cloned + .slick-cloned + .slick-slide:not(.slick-active) {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
 .team-borders {
   bottom: 0;
   padding-bottom: 4px;
@@ -1506,6 +1501,10 @@
   padding-bottom: 60px;
   position: relative;
   width: 100%;
+}
+
+.devs__prev, .devs__next {
+  display: none !important;
 }
 
 .devs__wrapper {
@@ -1657,6 +1656,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .select:first-child {
+  width: 100%;
+  margin-right: 5px;
+}
+
+.contact .select:first-child .select-item__text {
+  padding-right: 45px;
 }
 
 .contact-map {
@@ -1712,6 +1723,27 @@
 
 .contact-mail .g-checkbox__label {
   margin-top: 18px;
+}
+
+.contact-mail__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-mail__block .select {
+  width: 100%;
+}
+
+.contact-mail__block .select:first-of-type {
+  max-width: 60%;
+}
+
+.contact-mail__block .select:last-of-type {
+  max-width: 40%;
 }
 
 .contact-mail .g-checkbox__text {
@@ -1820,6 +1852,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
+}
+
+.contact-info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact-info_border {
@@ -1943,6 +1981,9 @@
   margin-top: 22px;
   margin-bottom: 30px;
   color: #FFFFFF;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .video-preview__title:hover {
@@ -1953,11 +1994,10 @@
 .video-preview__block {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: auto;
 }
 
 .video-preview__img {
-  position: absolute;
   height: auto;
   left: 0;
   width: 103%;
@@ -2093,6 +2133,7 @@
   -webkit-transition: 1s;
   transition: 1s;
   height: 100%;
+  overflow-y: auto;
 }
 
 .calc.active {
@@ -2116,6 +2157,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .calc__title {
@@ -2137,6 +2179,12 @@
 
 .calc-main_width {
   min-width: 440px;
+  max-width: 440px;
+}
+
+.calc-main_width .select {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .calc-main__item {
@@ -2148,6 +2196,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 110px;
+  max-width: 430px;
 }
 
 .calc-main__title {
@@ -2223,9 +2272,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .calc-main-pay__header {
@@ -2243,6 +2289,20 @@
 
 .calc-main-pay__span {
   margin-right: 30px;
+}
+
+.calc-main-pay_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calc-main-pay_flex:first-of-type {
+  margin-right: 10px;
+}
+
+.calc-main-pay_flex .calc-main-pay__title:last-child {
+  margin-left: 15px;
 }
 
 .calc-main__adt {
@@ -2289,6 +2349,13 @@
   text-align: center;
   padding: 12px;
   margin-top: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 332px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .calc-footer__submit {
@@ -2298,6 +2365,20 @@
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   margin-left: 213px;
+}
+
+.calc .select-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.calc .select-item__text_blue {
+  margin-left: 0;
 }
 
 .about .g-borders__title, .team .g-borders__title, .goal .g-borders__title, .devs .g-borders__title, .video .g-borders__title {

@@ -12,12 +12,13 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-
     <link rel="stylesheet" href="./css/global.css">
 
     <link rel="stylesheet" href="./css/home.css">
 
     <link rel="stylesheet" href="./css/media.css">
+
+    <link rel="stylesheet" href="./css/select.css">
 
 </head>
 <body>
@@ -142,6 +143,366 @@
             <a class="nav__social" href="#">youtube</a>
         </div>
     </nav>
+
+    
+    <section class="calc">
+        <div class="calc-header">
+            <h2 class="calc__title">Розрахуйте вартість навчання</h2>
+            <div class="nav-close nav-close__modal">
+                <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="calc-main">
+            <div class="calc-main_width">
+                <h4 class="calc-main__title">Основне</h4>
+
+                <div class="select">
+                    <div class="select-header">
+                        <p class="select__text">Оберіть клас
+                        <span class="select__span"></span></p>
+                        <div class="select-arrow">
+                            <div class="select-arrow__item"></div>
+                            <div class="select-arrow__item"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="select-content select-content__year">
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-0" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">Дошкільна підготовка</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-1" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">1 клас</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-2" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">2 клас</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-3" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">3 клас</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-4" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">4 клас</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-5" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">5 клас</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-6" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">6 клас</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-7" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">7 клас</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-8" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">8 клас</span>
+                        </label>
+
+                        <label class="select-item__year">
+                            <input class="select-item__input select-item__input_radio" id="school-year-9" type="radio" name="school__year">
+                            <span class="select-item__radio"></span>
+                            <span class="select-item__text">9 клас</span>
+                        </label>
+                    </div>
+                </div>
+
+                <h5 class="calc-main__deposit">ЩОМІСЯЧНИЙ ПЛАТІЖ <span  class="calc-main__deposit_blue" id="school-year-output-1">&#8372;0</span></h5>
+
+                <h5 class="calc-main__deposit">ВСТУПНИЙ РАЗОВИЙ ВНЕСОК <span  class="calc-main__deposit_blue" id="school-year-output-2">&#8372;0</span></h5>
+
+                <h5 class="calc-main__deposit">РАЗОВИЙ ЩОРІЧНИЙ ВНЕСОК <span  class="calc-main__deposit_blue" id="school-year-output-3">&#8372;0</span></h5>
+                
+                <div class="calc-main__wrapper">
+
+                    <h5 class="calc-main__subtitle">Харчування:</h5>
+
+                    <label class="g-radio__label calc-main__food">
+                        ОБІД <span class="calc-main__food_blue">(&#8372;80/день)</span>
+                        <input type="radio" class="calc-food__radio g-radio__input" name="calc-food" value="1600">
+                        <span class="g-radio__span"></span>
+                    </label>
+
+                    <label class="g-radio__label calc-main__food">
+                        ПОВНИЙ РАЦІОН <span class="calc-main__food_blue">(&#8372;195/день)</span>
+                        <input type="radio" class="calc-food__radio g-radio__input" name="calc-food" value="3900">
+                        <span class="g-radio__span"></span>
+                    </label>
+
+                    <label class="g-radio__label calc-main__food">
+                        БЕЗ ХАРЧУВАННЯ
+                        <input type="radio" class="calc-food__radio g-radio__input" name="calc-food" value="0">
+                        <span class="g-radio__span"></span>
+                    </label>
+
+                    <label class="g-checkbox__label calc-main__bus">
+                        ШКІЛЬНИЙ АВТОБУС <span class="calc-main__bus_blue">(&#8372;1800/міс)</span>
+                        <input type="checkbox" class="g-checkbox__input" id="schoolbus" name="schoolbus" value="1800">
+                        <span class="g-checkbox__span"></span>
+                    </label>
+
+                    <h6 class="calc-main-pay__header">ОПЛАТА ЗА:</h6>
+
+                    <div class="calc-main-pay">
+                        <div class="calc-main-pay_flex">
+                            <label class="g-radio__label calc-main-pay__title">
+                                <span class="calc-main-pay__span">МІСЯЦЬ</span>
+                                <input id="calc-time-month" type="radio" class="g-radio__input" name="paytime">
+                                <span class="g-radio__span"></span>
+                            </label>
+
+                            <label class="g-radio__label calc-main-pay__title">
+                                <span class="calc-main-pay__span">РІК</span>
+                                <input id="calc-time-year" type="radio" class="g-radio__input" name="paytime">
+                                <span class="g-radio__span"></span>
+                            </label>
+                        </div>
+
+                        <div class="calc-main-pay_flex">
+                            <label class="g-radio__label calc-main-pay__title">
+                                <span class="calc-main-pay__span">КВАРТАЛ</span>
+                                <input id="calc-time-quarter" type="radio" class="g-radio__input" name="paytime">
+                                <span class="g-radio__span"></span>
+                            </label>
+
+                            <label class="g-radio__label calc-main-pay__title">
+                                <span class="calc-main-pay__span">ПІВРОКУ</span>
+                                <input id="calc-time-halfyear" type="radio" class="g-radio__input" name="paytime">
+                                <span class="g-radio__span"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="calc-main__item">
+                <h4 class="calc-main__title">ДОДАТКОВІ СЕКЦІЇ</h4>
+
+                <div class="select">
+                    <div class="select-header">
+                        <p class="select__text">Спорт
+                        <span class="select__span"></span></p>
+                        <div class="select-arrow">
+                            <div class="select-arrow__item"></div>
+                            <div class="select-arrow__item"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="select-content">
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="500">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Карате
+                            </span>
+                            <span class="select-item__text_blue">(&#8372;500/місяць)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="1200">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Фехтування
+                            </span>
+                            <span class="select-item__text_blue">(&#8372;1200/місяць)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="1600">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Великий теніс</span>
+                            <span class="select-item__text_blue">(&#8372;1600/місяць)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="select">
+                    <div class="select-header">
+                        <p class="select__text">Музика
+                        <span class="select__span"></span></p>
+                        <div class="select-arrow">
+                            <div class="select-arrow__item"></div>
+                            <div class="select-arrow__item"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="select-content">
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="150">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Вокал</span>
+                            <span class="select-item__text_blue">(&#8372;150/місяць)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="180">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Синтезатор</span>
+                            <span class="select-item__text_blue">(&#8372;180/місяць)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="250">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Укулеле</span>
+                            <span class="select-item__text_blue">(&#8372;250/місяць)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="250">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Барабани</span>
+                            <span class="select-item__text_blue">(&#8372;250/місяць)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="250">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Гітара</span>
+                            <span class="select-item__text_blue">(&#8372;250/місяць)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="select">
+                    <div class="select-header">
+                        <p class="select__text">Мистецтво
+                        <span class="select__span"></span></p>
+                        <div class="select-arrow">
+                            <div class="select-arrow__item"></div>
+                            <div class="select-arrow__item"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="select-content">
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="250">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Живопис олійними фарбами</span>
+                            <span class="select-item__text_blue">(&#8372;250/місяць + холст)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="500">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Театральна студія</span>
+                            <span class="select-item__text_blue">(&#8372;500/місяць - 60хв)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="700">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Театральна студія</span>
+                            <span class="select-item__text_blue">(&#8372;700/місяць - 90хв)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="600">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Англомовний театр</span>
+                            <span class="select-item__text_blue">(&#8372;600/місяць - 60хв)</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="1200">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Англомовний театр</span>
+                            <span class="select-item__text_blue">(&#8372;1200/місяць - 120хв)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="select">
+                    <div class="select-header">
+                        <p class="select__text">Техно + Стратегії
+                        <span class="select__span"></span></p>
+                        <div class="select-arrow">
+                            <div class="select-arrow__item"></div>
+                            <div class="select-arrow__item"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="select-content">
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="1200">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Кубіка-Рубіка або пірамідки (курс)</span>
+                            <span class="select-item__text_blue">(&#8372;1200/місяць)</span>
+                        </label>
+
+                        <label class="select-item select-item_cursor">
+                            <input class="select-item__input--checkbox" type="checkbox">
+                            <span class="select-item__checkbox select-item__checkbox--none"></span>
+                            <span class="select-item__text_fixed">СТЕМ</span>
+                            <span class="select-item__program">в програмі</span>
+                        </label>
+
+                        <label class="select-item select-item_cursor">
+                            <input class="select-item__input--checkbox" type="checkbox">
+                            <span class="select-item__checkbox select-item__checkbox--none"></span>
+                            <span class="select-item__text_fixed">Шахи</span>
+                            <span class="select-item__program">в програмі</span>
+                        </label>
+
+                        <label class="select-item">
+                            <input class="select-item__input" type="checkbox" value="800">
+                            <span class="select-item__checkbox"></span>
+                            <span class="select-item__text">Робототехніка</span>
+                            <span class="select-item__text_blue">(&#8372;800/місяць)</span>
+                        </label>
+
+                        <label class="select-item select-item_cursor">
+                            <input class="select-item__input--checkbox" type="checkbox">
+                            <span class="select-item__checkbox select-item__checkbox--none"></span>
+                            <span class="select-item__text_fixed">Веселі експерименти</span>
+                            <span class="select-item__program">в програмі</span>
+                        </label>
+                    </div>
+                </div>
+
+                <p class="calc-main__text">Адміністрація розглядає можливості відкриття додаткових секцій для груп бажаючих від 5 чоловік</p>
+
+                <form class="calc-main-form" action="">
+                    <input class="calc-main-form__input g-input" type="text" name="" id="" placeholder="Запропонувати секцію" required>
+
+                    <button class="calc-main-form__btn" type="submit">
+                        <img class="calc-main-form__img" src="./img/send-arrow.svg" alt="" srcset="">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="calc-footer">
+
+            <div class="calc-footer__show g-input">
+                <span class="calc__output">&#8372;0</span>
+            </div>
+
+            <input class="calc-footer__submit g-input g-submit" type="submit" value="ВІДПРАВИТИ ЗАЯВКУ">
+        </div>
+    </section>
 
     <main class="main">
         <section class="home">
@@ -525,15 +886,15 @@
 
             <div class="team__wrapper">
 
-                <div class="team__prev col-md-1">
+                <div class="team__prev col-lg-1">
                     <picture>
-                        <source media="(max-width: 900px)"" srcset="./img/team/team-m-prev-icon.svg">
+                        <source media="(max-width: 900px)" srcset="./img/team/team-m-prev-icon.svg">
                         <img class="team__img" src="./img/team/team-prev-icon.svg" alt="" srcset="">
                     </picture>
 
                 </div>
                 
-                <div class="team-slider col-md-10">
+                <div class="team-slider col-lg-10">
                     <div class="team-slider__item">
                         <div class="team-slider__item_center">
                             <div class="team-slider__picture">
@@ -620,9 +981,9 @@
                     </div>
                 </div>
 
-                <div class="team__next col-md-1">
+                <div class="team__next col-lg-1">
                     <picture>
-                        <source media="(max-width: 900px)"" srcset="./img/team/team-m-next-icon.svg">
+                        <source media="(max-width: 900px)" srcset="./img/team/team-m-next-icon.svg">
                         <img class="team__img" src="./img/team/team-next-icon.svg" alt="" srcset="">
                     </picture>
                 </div>
@@ -705,6 +1066,10 @@
                 </div>
             </div> 
 
+            <div class="devs__prev col-md-1">
+                <img class="devs__img" src="./img/team/team-m-prev-icon.svg" alt="" srcset="">
+            </div>
+
             <div class="devs__wrapper">
                 <div class="devs__item">
                     <div class="g-tab devs-cyan">
@@ -776,6 +1141,10 @@
                 </div>
             </div>
 
+            <div class="devs__next col-md-1">
+                <img class="devs__img" src="./img/team/team-m-next-icon.svg" alt="" srcset="">
+            </div>
+
             <a class="g-input g-submit" href="#">УСІ СТАТТІ</a>
 
             <a class="g-arrow__link" href="">
@@ -803,28 +1172,117 @@
 
                     <form class="contact-mail__form" action="#" method="POST">
                         <div class="contact-mail__block">
-                            <select class="contact-mail__select" name="carlist" form="" required>
-                                <option value="" selected hidden>Вас цікавить</option>
-                                <option class="contact-mail__option" value="Домовитися про зустріч">Домовитися про зустріч</option>
-                                <option class="contact-mail__option" value="Подати заявку на вступ в школу">Подати заявку на вступ в школу</option>
-                                <option class="contact-mail__option" value="Подати заявку на дошкільну підготовку">Подати заявку на дошкільну підготовку</option>
-                                <option class="contact-mail__option" value="Запис на пробний день">Запис на пробний день</option>
-                            </select>
+                            <div class="select">
+                                <div class="select-header">
+                                    <p class="select__text">Вас цікавить
+                                    <span class="select__span"></span></p>
+                                    <div class="select-arrow">
+                                        <div class="select-arrow__item"></div>
+                                        <div class="select-arrow__item"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="select-content select-content__year">
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__info">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">Домовитися про зустріч</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__info">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">Подати заявку на вступ в школу</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__info">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">Подати заявку на дошкільну підготовку</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__info">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">Запис на пробний день</span>
+                                    </label>
+                                </div>
+                            </div>
 
-                            <select class="contact-mail__select" name="carlist" form="" required>
-                                <option value="" selected hidden>Клас</option>
-                                <option class="contact-mail__option" value="1 Клас">1 Клас</option>
-                                <option class="contact-mail__option" value="2 Клас">2 Клас</option>
-                                <option class="contact-mail__option" value="3 Клас">3 Клас</option>
-                                <option class="contact-mail__option" value="4 Клас">4 Клас</option>
-                                <option class="contact-mail__option" value="5 Клас">5 Клас</option>
-                                <option class="contact-mail__option" value="6 Клас">6 Клас</option>
-                                <option class="contact-mail__option" value="7 Клас">7 Клас</option>
-                                <option class="contact-mail__option" value="8 Клас">8 Клас</option>
-                                <option class="contact-mail__option" value="9 Клас">9 Клас</option>
-                                <option class="contact-mail__option" value="10 Клас">10 Клас</option>
-                                <option class="contact-mail__option" value="11 Клас">11 Клас</option>
-                            </select>
+                            <div class="select">
+                                <div class="select-header">
+                                    <p class="select__text">Клас
+                                    <span class="select__span"></span></p>
+                                    <div class="select-arrow">
+                                        <div class="select-arrow__item"></div>
+                                        <div class="select-arrow__item"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="select-content select-content__year">
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">0 Клас</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">1 Клас</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">2 Клас</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">3 Клас</span>
+                                    </label>
+
+                                               
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">4 Клас</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">5 Клас</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">6 Клас</span>
+                                    </label>
+
+                                               
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">7 Клас</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">8 Клас</span>
+                                    </label>
+            
+                                    <label class="select-item__year">
+                                        <input class="select-item__input select-item__input_radio" type="radio" name="school__years">
+                                        <span class="select-item__radio"></span>
+                                        <span class="select-item__text">9 Клас</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
 
                         <input class="contact-mail__input" type="text" placeholder="ПІБ одного з батьків" required>
@@ -844,33 +1302,37 @@
             </div>
 
             <div class="contact-info">
-                <div class="contact-info__item">
-                    <div class="contact-info_border">
-                        <a class="contact-info__link" href="#">м. Ірпінь, вул Варшавська 116</a>
+                <div class="contact-info__wrapper">
+                    <div class="contact-info__item">
+                        <div class="contact-info_border">
+                            <a class="contact-info__link" href="#">м. Ірпінь, вул Варшавська 116</a>
+                        </div>
+                        <img class="contact-info__img" src="./img/contact/contact-info-location.svg" alt="" srcset="">
                     </div>
-                    <img class="contact-info__img" src="./img/contact/contact-info-location.svg" alt="" srcset="">
+
+                    <div class="contact-info__item">
+                        <div class="contact-info_border">
+                            <a class="contact-info__link" href="#">+380679354248</a>
+                        </div>
+                        <img class="contact-info__img" src="./img/contact/contact-info-phone.svg" alt="" srcset="">
+                    </div>
                 </div>
 
-                <div class="contact-info__item">
-                    <div class="contact-info_border">
-                        <a class="contact-info__link" href="#">+380679354248</a>
+                <div class="contact-info__wrapper">
+                    <div class="contact-info__item">
+                        <div class="contact-info_border">
+                            <a class="contact-info__link" href="#">os.platforma@gmail.com</a>
+                        </div>
+                        <img class="contact-info__img" src="./img/contact/contact-info-mail.svg" alt="" srcset="">
                     </div>
-                    <img class="contact-info__img" src="./img/contact/contact-info-phone.svg" alt="" srcset="">
-                </div>
-
-                <div class="contact-info__item">
-                    <div class="contact-info_border">
-                        <a class="contact-info__link" href="#">os.platforma@gmail.com</a>
+    
+                    <div class="contact-info__item">
+                        <div class="contact-info_border">
+                            <a class="contact-info__link" href="#">Facebook</a>
+                            <a class="contact-info__link contact-info__link_margin" href="#">Instagram</a>
+                        </div>
+                        <img class="contact-info__img" src="./img/contact/contact-info-social.svg" alt="" srcset="">
                     </div>
-                    <img class="contact-info__img" src="./img/contact/contact-info-mail.svg" alt="" srcset="">
-                </div>
-
-                <div class="contact-info__item">
-                    <div class="contact-info_border">
-                        <a class="contact-info__link" href="#">Facebook</a>
-                        <a class="contact-info__link contact-info__link_margin" href="#">Instagram</a>
-                    </div>
-                    <img class="contact-info__img" src="./img/contact/contact-info-social.svg" alt="" srcset="">
                 </div>
             </div>
         </section>
@@ -944,144 +1406,6 @@
 
         </section>
     </main>
-
-    <section class="calc">
-        <div class="calc-header">
-            <h2 class="calc__title">Розрахуйте вартість навчання</h2>
-            <div class="nav-close nav-close__modal">
-                <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="" srcset="">
-            </div>
-        </div>
-
-        <div class="calc-main">
-            <div class="calc-main_width">
-                <h4 class="calc-main__title">Основне</h4>
-                <select class="g-select calc-main__select" name="carlist" form="" required>
-                    <option value="" selected hidden>Оберіть клас</option>
-                    <option class="g-select__option" value="1 Клас">1 Клас</option>
-                    <option class="g-select__option" value="2 Клас">2 Клас</option>
-                    <option class="g-select__option" value="3 Клас">3 Клас</option>
-                    <option class="g-select__option" value="4 Клас">4 Клас</option>
-                    <option class="g-select__option" value="5 Клас">5 Клас</option>
-                    <option class="g-select__option" value="6 Клас">6 Клас</option>
-                    <option class="g-select__option" value="7 Клас">7 Клас</option>
-                    <option class="g-select__option" value="8 Клас">8 Клас</option>
-                    <option class="g-select__option" value="9 Клас">9 Клас</option>
-                    <option class="g-select__option" value="10 Клас">10 Клас</option>
-                    <option class="g-select__option" value="11 Клас">11 Клас</option>
-                </select>
-
-                <h5 class="calc-main__deposit">ЩОМІСЯЧНИЙ ПЛАТІЖ <span  class="calc-main__deposit_blue">&#8372;9000</span></h5>
-
-                <h5 class="calc-main__deposit">ВСТУПНИЙ РАЗОВИЙ ВНЕСОК <span  class="calc-main__deposit_blue">&#8372;8000</span></h5>
-
-                <h5 class="calc-main__deposit">РАЗОВИЙ ЩОРІЧНИЙ ВНЕСОК <span  class="calc-main__deposit_blue">&#8372;5000</span></h5>
-                
-                <div class="calc-main__wrapper">
-
-                    <h5 class="calc-main__subtitle">Харчування:</h5>
-
-                    <label class="g-radio__label calc-main__food">
-                        ОБІД <span class="calc-main__food_blue">(&#8372;80/день)</span>
-                        <input type="radio" class="g-radio__input" name="calc-food">
-                        <span class="g-radio__span"></span>
-                    </label>
-
-                    <label class="g-radio__label calc-main__food">
-                        ПОВНИЙ РАЦІОН <span class="calc-main__food_blue">(&#8372;195/день)</span>
-                        <input type="radio" class="g-radio__input" name="calc-food">
-                        <span class="g-radio__span"></span>
-                    </label>
-
-                    <label class="g-radio__label calc-main__food">
-                        БЕЗ ХАРЧУВАННЯ
-                        <input type="radio" class="g-radio__input" name="calc-food">
-                        <span class="g-radio__span"></span>
-                    </label>
-
-                    <label class="g-checkbox__label calc-main__bus">
-                        ШКІЛЬНИЙ АВТОБУС <span class="calc-main__bus_blue">(&#8372;1800/міс)</span>
-                        <input type="checkbox" class="g-checkbox__input" id="schoolbus" name="schoolbus">
-                        <span class="g-checkbox__span"></span>
-                    </label>
-
-                    <h6 class="calc-main-pay__header">ОПЛАТА ЗА:</h6>
-
-                    <div class="calc-main-pay">
-                        <label class="g-radio__label calc-main-pay__title">
-                            <span class="calc-main-pay__span">МІСЯЦЬ</span>
-                            <input type="radio" class="g-radio__input" name="paytime">
-                            <span class="g-radio__span"></span>
-                        </label>
-
-                        <label class="g-radio__label calc-main-pay__title">
-                            <span class="calc-main-pay__span">РІК</span>
-                            <input type="radio" class="g-radio__input" name="paytime">
-                            <span class="g-radio__span"></span>
-                        </label>
-
-                        <label class="g-radio__label calc-main-pay__title">
-                            <span class="calc-main-pay__span">КВАРТАЛ</span>
-                            <input type="radio" class="g-radio__input" name="paytime">
-                            <span class="g-radio__span"></span>
-                        </label>
-
-                        <label class="g-radio__label calc-main-pay__title">
-                            <span class="calc-main-pay__span">ПІВРОКУ</span>
-                            <input type="radio" class="g-radio__input" name="paytime">
-                            <span class="g-radio__span"></span>
-                        </label>
-                    </div>
-
-                </div>
-            </div>
-            
-
-            <div class="calc-main__item">
-                <h4 class="calc-main__title">ДОДАТКОВІ СЕКЦІЇ</h4>
-
-                <select class="g-select calc-main__adt" name="carlist" form="" required>
-                    <option value="" selected hidden>Спорт: карате</option>
-                    <option class="g-select__option" value="1 Клас">1 Клас</option>
-                    <option class="g-select__option" value="2 Клас">2 Клас</option>
-                </select>
-
-                <select class="g-select calc-main__adt" name="carlist" form="" required>
-                    <option value="" selected hidden>Музика: синтезатор, вокал&#59;</option>
-                    <option class="g-select__option" value="1 Клас">1 Клас</option>
-                    <option class="g-select__option" value="2 Клас">2 Клас</option>
-                </select>
-
-                <select class="g-select calc-main__adt" name="carlist" form="" required>
-                    <option value="" selected hidden>Мистецтво</option>
-                    <option class="g-select__option" value="1 Клас">1 Клас</option>
-                    <option class="g-select__option" value="2 Клас">2 Клас</option>
-                </select>
-
-                <select class="g-select calc-main__adt" name="carlist" form="" required>
-                    <option value="" selected hidden>Техно + Стратегії</option>
-                    <option class="g-select__option" value="1 Клас">1 Клас</option>
-                    <option class="g-select__option" value="2 Клас">2 Клас</option>
-                </select>
-
-                <p class="calc-main__text">Адміністрація розглядає можливості відкриття додаткових секцій для груп бажаючих від 5 чоловік</p>
-
-                <form class="calc-main-form" action="">
-                    <input class="calc-main-form__input g-input" type="text" name="" id="" placeholder="Запропонувати секцію" required>
-
-                    <button class="calc-main-form__btn" type="submit">
-                        <img class="calc-main-form__img" src="./img/send-arrow.svg" alt="" srcset="">
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <div class="calc-footer">
-            <input class="calc-footer__show g-input" type="text" name="" id="" value="&#8372;12 000" readonly>
-
-            <input class="calc-footer__submit g-input g-submit" type="submit" value="ВІДПРАВИТИ ЗАЯВКУ">
-        </div>
-    </section>
 
     <footer class="footer">
         <div class="footer_bg">
@@ -1166,9 +1490,7 @@
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: true,
-                dots: false,
-                autoplay: true,
-                autoplaySpeed: 5000,              
+                dots: false,             
                 prevArrow: $('.video__prev'),
                 nextArrow: $('.video__next'),
                 autoplay: false,
@@ -1186,24 +1508,51 @@
                 ]
             });
 
+            $('.devs__wrapper').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,             
+                prevArrow: $('.devs__prev'),
+                nextArrow: $('.devs__next'),
+                autoplay: false,
+                mobileFirst: true,
+                responsive: [
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            infinite: false,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: true,
+                            dots: false,             
+                            prevArrow: $('.devs__prev'),
+                            nextArrow: $('.devs__next'),
+                            autoplay: false,
+                            mobileFirst: true
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            infinite: false,
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            arrows: true,
+                            dots: false,             
+                            prevArrow: $('.devs__prev'),
+                            nextArrow: $('.devs__next'),
+                            autoplay: false,
+                            mobileFirst: true
+                        }
+                    }
+                ]
+            });
         });       
     </script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!--<script type="text/javascript">
-        (function($) {          
-            $(document).ready(function(){                    
-                $(window).scroll(function(){                          
-                    if ($(this).scrollTop() > 200) {
-                        $('.header').fadeIn(500);
-                    } else {
-                        $('.header').fadeOut(500);
-                    }
-                });
-            });
-        })(jQuery);
-    </script>-->
 
     <script>
         $(document).ready(function() {

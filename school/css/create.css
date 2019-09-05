@@ -1,0 +1,112 @@
+.main {
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.create__form {
+  max-width: 900px;
+  width: 100%;
+}
+
+.create__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.create__select, .create__name, .create__slug, .create__textarea {
+  width: 100%;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: .375rem .75rem;
+  border: 2px solid #0AA9CC;
+  border-radius: 8px;
+}
+
+.create__select::-webkit-input-placeholder, .create__name::-webkit-input-placeholder, .create__slug::-webkit-input-placeholder, .create__textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.create__select:-ms-input-placeholder, .create__name:-ms-input-placeholder, .create__slug:-ms-input-placeholder, .create__textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.create__select::-ms-input-placeholder, .create__name::-ms-input-placeholder, .create__slug::-ms-input-placeholder, .create__textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.create__select::placeholder, .create__name::placeholder, .create__slug::placeholder, .create__textarea::placeholder {
+  color: #FFFFFF;
+}
+
+.create__name {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.create__textarea {
+  height: 300px;
+  resize: none;
+}
+
+.create__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.create__btn .g-submit {
+  width: 100%;
+  max-width: 250px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+@media (max-width: 768px) {
+  .create {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .create__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .create__name {
+    margin: 0;
+  }
+  .create__select, .create__name, .create__slug {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .create {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*# sourceMappingURL=create.css.map */
