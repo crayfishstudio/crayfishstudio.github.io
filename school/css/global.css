@@ -204,8 +204,10 @@ input:-webkit-autofill:active {
   background-color: #ffffff;
   left: 2px;
   top: 2px;
-  width: 6px;
-  height: 6px;
+  width: 11px;
+  height: 11px;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
   border-radius: 3px;
 }
 
@@ -545,10 +547,5 @@ input:-webkit-autofill:active {
   right: -4px;
   border-right: 2px solid #6BFC76;
   border-bottom: 2px solid #6BFC76;
-}
-
-.g-radio__label .g-radio__span:after:not(*:root) {
-  width: 9px;
-  height: 9px;
 }
 /*# sourceMappingURL=global.css.map */

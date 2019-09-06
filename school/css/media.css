@@ -1271,5 +1271,8 @@
     padding-right: 50px;
     font-size: 16px;
   }
+  .calc-footer__show {
+    min-width: 260px;
+  }
 }
 /*# sourceMappingURL=media.css.map */
