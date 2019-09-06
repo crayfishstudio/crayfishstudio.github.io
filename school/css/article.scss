@@ -149,3 +149,11 @@ body {
         }
     }
 }  
+
+@media (max-width: 340px) {
+    .article {
+        &__subtitle {
+            right: 0;
+        }
+    }
+}

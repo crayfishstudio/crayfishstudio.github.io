@@ -26,7 +26,7 @@
         <nav class="nav" id="nav">
             <div class="nav__wrapper">
                 <div class="nav-logo">
-                    <a class="nav-logo__link" href="#">
+                    <a class="nav-logo__link" href="#home">
                         <img class="nav-logo__img" src="./img/nav-logo.svg" alt=""> ШКОЛА
                     </a>
                 </div>
@@ -39,31 +39,31 @@
             <div class="nav__wrapper">
                 <ul class="nav-list">
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Очима школи</a>
+                        <a class="nav-list__link" href="#home">Очима школи</a>
                     </li>
 
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Навіщо навчати</a>
+                        <a class="nav-list__link" href="#purpose">Навіщо навчати</a>
                     </li>
 
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Про нас</a>
+                        <a class="nav-list__link" href="#about">Про нас</a>
                     </li>
 
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Команда</a>
+                        <a class="nav-list__link" href="#team">Команда</a>
                     </li>
 
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Розробки</a>
+                        <a class="nav-list__link" href="#devs">Розробки</a>
                     </li>
 
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Контакти</a>
+                        <a class="nav-list__link" href="#contact">Контакти</a>
                     </li>
 
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Блог</a>
+                        <a class="nav-list__link" href="./blog.html">Блог</a>
                     </li>
                 </ul>
 
@@ -89,7 +89,7 @@
     <nav class="nav sidenav">
         <div class="nav__wrapper">
             <div class="nav-logo">
-                <a class="nav-logo__link" href="#">
+                <a class="nav-logo__link" href="#home">
                     <img class="nav-logo__img" src="./img/nav-logo.svg" alt=""> ШКОЛА
                 </a>
             </div>
@@ -98,31 +98,31 @@
         <div class="nav__wrapper">
             <ul class="nav-list">
                 <li class="nav-list__item">
-                    <a class="nav-list__link" href="#">Очима школи</a>
+                    <a class="nav-list__link" href="#home">Очима школи</a>
                 </li>
 
                 <li class="nav-list__item">
-                    <a class="nav-list__link" href="#">Навіщо навчати</a>
+                    <a class="nav-list__link" href="#purpose">Навіщо навчати</a>
                 </li>
 
                 <li class="nav-list__item">
-                    <a class="nav-list__link" href="#">Про нас</a>
+                    <a class="nav-list__link" href="#about">Про нас</a>
                 </li>
 
                 <li class="nav-list__item">
-                    <a class="nav-list__link" href="#">Команда</a>
+                    <a class="nav-list__link" href="#team">Команда</a>
                 </li>
 
                 <li class="nav-list__item">
-                    <a class="nav-list__link" href="#">Розробки</a>
+                    <a class="nav-list__link" href="#devs">Розробки</a>
                 </li>
 
                 <li class="nav-list__item">
-                    <a class="nav-list__link" href="#">Контакти</a>
+                    <a class="nav-list__link" href="#contact">Контакти</a>
                 </li>
 
                 <li class="nav-list__item">
-                    <a class="nav-list__link" href="#">Блог</a>
+                    <a class="nav-list__link" href="./blog.html">Блог</a>
                 </li>
             </ul>
 
@@ -144,7 +144,6 @@
         </div>
     </nav>
 
-    
     <section class="calc">
         <div class="calc-header">
             <h2 class="calc__title">Розрахуйте вартість навчання</h2>
@@ -275,22 +274,24 @@
                             </label>
 
                             <label class="g-radio__label calc-main-pay__title">
-                                <span class="calc-main-pay__span">РІК</span>
-                                <input id="calc-time-year" type="radio" class="g-radio__input" name="paytime">
+                                <span class="calc-main-pay__span">КВАРТАЛ</span>
+                                <input id="calc-time-quarter" type="radio" class="g-radio__input" name="paytime">
                                 <span class="g-radio__span"></span>
                             </label>
                         </div>
 
                         <div class="calc-main-pay_flex">
-                            <label class="g-radio__label calc-main-pay__title">
-                                <span class="calc-main-pay__span">КВАРТАЛ</span>
-                                <input id="calc-time-quarter" type="radio" class="g-radio__input" name="paytime">
-                                <span class="g-radio__span"></span>
-                            </label>
+
 
                             <label class="g-radio__label calc-main-pay__title">
                                 <span class="calc-main-pay__span">ПІВРОКУ</span>
                                 <input id="calc-time-halfyear" type="radio" class="g-radio__input" name="paytime">
+                                <span class="g-radio__span"></span>
+                            </label>
+
+                            <label class="g-radio__label calc-main-pay__title">
+                                <span class="calc-main-pay__span">РІК</span>
+                                <input id="calc-time-year" type="radio" class="g-radio__input" name="paytime">
                                 <span class="g-radio__span"></span>
                             </label>
                         </div>
@@ -500,12 +501,12 @@
                 <span class="calc__output">&#8372;0</span>
             </div>
 
-            <input class="calc-footer__submit g-input g-submit" type="submit" value="ВІДПРАВИТИ ЗАЯВКУ">
+            <input id="calc-to-contact" class="calc-footer__submit g-input g-submit" type="submit" value="ВІДПРАВИТИ ЗАЯВКУ">
         </div>
     </section>
 
     <main class="main">
-        <section class="home">
+        <section class="home" id="home">
             <div class="home__block home__block_minWidth">
                 <div class="home__block_flex">
                     <div class="tab"  data-tilt data-tilt-reverse="true" data-tilt-scale="1.05">
@@ -720,12 +721,12 @@
 
             <h2 class="home__subtitle">Ми навчаємо не наосліп</h2>
 
-            <a class="g-arrow__link" href="">
+            <a class="g-arrow__link" href="#purpose">
                 <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
             </a>
         </section>
 
-        <section class="purpose">
+        <section class="purpose" id="purpose">
             <div class="purpose__header">
                 <div class="purpose-borders">
                     <div class="purpose-borders__content">
@@ -824,7 +825,7 @@
 
                 <p class="purpose-info__text">Процес дорослішання кожен проживає та усвідомлює по-різному і це залежить від моделі стосунків між усіма членами родини, у якій зростає дитина. Починаючи шлях з позиції «Я - дитина», ми поступово переймаємо шаблони поведінки, установки й обмеження від навколишніх і тих, хто їх оточує. На основі цього формуються моделі «Я - батько (мати)» чи «Я - дорослий».</p>
 
-                <a class="g-arrow__link" href="">
+                <a class="g-arrow__link" href="#about">
                     <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
                 </a>
             </div>
@@ -832,7 +833,7 @@
 
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="g-borders">
                 <div class="g-borders__content">
                     <h2 class="g-borders__title">Про нас</h2>
@@ -872,12 +873,12 @@
 
 
 
-            <a class="g-arrow__link" href="">
+            <a class="g-arrow__link" href="#team">
                 <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
             </a>
         </section>
 
-        <section class="team">
+        <section class="team" id="team">
             <div class="g-borders">
                 <div class="g-borders__content">
                     <h2 class="g-borders__title">Наша команда</h2>
@@ -886,7 +887,7 @@
 
             <div class="team__wrapper">
 
-                <div class="team__prev col-lg-1">
+                <div class="team__prev col-md-1">
                     <picture>
                         <source media="(max-width: 900px)" srcset="./img/team/team-m-prev-icon.svg">
                         <img class="team__img" src="./img/team/team-prev-icon.svg" alt="" srcset="">
@@ -894,7 +895,7 @@
 
                 </div>
                 
-                <div class="team-slider col-lg-10">
+                <div class="team-slider col-md-10">
                     <div class="team-slider__item">
                         <div class="team-slider__item_center">
                             <div class="team-slider__picture">
@@ -981,7 +982,7 @@
                     </div>
                 </div>
 
-                <div class="team__next col-lg-1">
+                <div class="team__next col-md-1">
                     <picture>
                         <source media="(max-width: 900px)" srcset="./img/team/team-m-next-icon.svg">
                         <img class="team__img" src="./img/team/team-next-icon.svg" alt="" srcset="">
@@ -991,12 +992,12 @@
 
             </div>
 
-            <a class="g-arrow__link" href="">
+            <a class="g-arrow__link" href="#goal">
                 <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
             </a>
         </section>
 
-        <section class="goal">
+        <section class="goal" id="goal">
             <div class="g-borders">
                 <div class="g-borders__content">
                     <h2 class="g-borders__title">НАША МЕТА</h2>
@@ -1053,13 +1054,13 @@
             </div>
 
             
-            <a class="g-arrow__link" href="">
+            <a class="g-arrow__link" href="#devs">
                 <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
             </a>
 
         </section>
 
-        <section class="devs">
+        <section class="devs" id="devs">
             <div class="g-borders">
                 <div class="g-borders__content">
                     <h2 class="g-borders__title">НАШІ РОЗРОБКИ</h2>
@@ -1147,12 +1148,12 @@
 
             <a class="g-input g-submit" href="#">УСІ СТАТТІ</a>
 
-            <a class="g-arrow__link" href="">
+            <a class="g-arrow__link" href="#contact">
                 <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
             </a>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact__wrapper">
                 <div class="contact-map">
                     <div class="contact-map__block">
@@ -1337,7 +1338,7 @@
             </div>
         </section>
 
-        <section class="video">
+        <section class="video" id="video">
             <div class="g-borders">
                 <div class="g-borders__content">
                     <h2 class="g-borders__title">НАШІ ДУМКИ</h2>
@@ -1354,6 +1355,7 @@
                         <div class="video-preview">
                             <a class="video-preview__link" href="#">
                                 <div class="video-preview__block">
+                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="" srcset="">
                                     <img class="video-preview__img" src="./img/video/video-preview-1.png" alt="" srcset="">
                                 </div>
                                     
@@ -1366,6 +1368,7 @@
                         <div class="video-preview">
                             <a class="video-preview__link" href="#">
                                 <div class="video-preview__block">
+                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="" srcset="">
                                     <img class="video-preview__img" src="./img/video/video-preview-2.png" alt="" srcset="">
                                 </div>
             
@@ -1378,6 +1381,7 @@
                         <div class="video-preview">
                             <a class="video-preview__link" href="#">
                                 <div class="video-preview__block">
+                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="" srcset="">
                                     <img class="video-preview__img" src="./img/video/video-preview-1.png" alt="" srcset="">
                                 </div>
             
@@ -1390,6 +1394,7 @@
                         <div class="video-preview">
                             <a class="video-preview__link" href="#">
                                 <div class="video-preview__block">
+                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="" srcset="">
                                     <img class="video-preview__img" src="./img/video/video-preview-2.png" alt="" srcset="">
                                 </div>
             
@@ -1520,10 +1525,10 @@
                 mobileFirst: true,
                 responsive: [
                     {
-                        breakpoint: 900,
+                        breakpoint: 1000,
                         settings: {
                             infinite: false,
-                            slidesToShow: 1,
+                            slidesToShow: 2,
                             slidesToScroll: 1,
                             arrows: true,
                             dots: false,             
@@ -1563,7 +1568,7 @@
                 $('#nav').removeClass('active');
             });
 
-            $('#nav-close').on('click', function() {
+            $('#nav-close, .nav-list__link').on('click', function() {
                 $('.sidenav').removeClass('active');
                 $('.header').removeClass('active');
 
@@ -1579,6 +1584,10 @@
             $('.nav-close__modal').on('click', function() {
                 $('.calc').removeClass('active');
             });
+
+            $('#calc-to-contact').on('click', function() {
+                document.location.hash = "#contact";
+            });
         });
     </script>
 
@@ -1592,5 +1601,7 @@
                 mask: '+{38}(000)000-00-00'
         });
     </script>
+
+    <script src="./js/zenscroll-min.js"></script>
 </body>
 </html>

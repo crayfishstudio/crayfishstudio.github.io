@@ -204,5 +204,12 @@ $(document).ready(function(){
 
 		  	$(this).parent().find('.select-content').fadeToggle(300);
 		}
-    });
+	});
+});
+
+$('body').on('click', function(e) {
+	if($(e.target).closest('.select').length == 0) {
+		$('.select-content').fadeOut(300);
+		$('.select-header').removeClass('select-open');
+	}
 });

@@ -143,4 +143,10 @@ body {
     font-size: 30px;
   }
 }
+
+@media (max-width: 340px) {
+  .article__subtitle {
+    right: 0;
+  }
+}
 /*# sourceMappingURL=article.css.map */

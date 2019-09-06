@@ -1,3 +1,7 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
 .header {
   position: fixed;
   border-bottom: 2px solid #0AA9CC;
@@ -79,7 +83,7 @@
 
 .nav-list__item:hover .nav-list__link::after {
   opacity: 1;
-  bottom: -36px;
+  bottom: -34px;
 }
 
 .nav-list__link {
@@ -173,6 +177,7 @@
           justify-content: center;
   margin-bottom: 138px;
   padding-top: 100px;
+  position: relative;
   /* Define mixin with two arguments */
 }
 
@@ -1661,6 +1666,10 @@
           justify-content: center;
 }
 
+.contact .select {
+  height: 100%;
+}
+
 .contact .select:first-child {
   width: 100%;
   margin-right: 5px;
@@ -1740,10 +1749,16 @@
 
 .contact-mail__block .select:first-of-type {
   max-width: 60%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
 }
 
 .contact-mail__block .select:last-of-type {
-  max-width: 40%;
+  max-width: 39%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 39%;
+          flex: 0 0 39%;
 }
 
 .contact-mail .g-checkbox__text {
@@ -1994,7 +2009,16 @@
 .video-preview__block {
   position: relative;
   overflow: hidden;
-  height: auto;
+  height: 278px;
+}
+
+.video-preview__play {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  margin-top: -50px;
 }
 
 .video-preview__img {
@@ -2238,7 +2262,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 24px;
 }
 
 .calc-main__subtitle {
@@ -2285,6 +2308,7 @@
 .calc-main-pay__title {
   font-size: 16px;
   line-height: 19px;
+  margin-right: 17px;
 }
 
 .calc-main-pay__span {
@@ -2322,6 +2346,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .calc-main-form__input {
