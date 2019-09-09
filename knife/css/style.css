@@ -522,6 +522,9 @@
   .home {
     background-image: url("../img/m-bg.png");
     background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .home__logo {
     font-size: 22px;
