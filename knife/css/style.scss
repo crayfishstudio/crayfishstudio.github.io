@@ -208,6 +208,7 @@
     background-position: center 70%;
 
     background-image: url("../img/knife.gif");
+    background-size: contain;
 
     display: flex !important;
 
@@ -665,6 +666,18 @@
 
         &-counter__item_margin {
             margin-bottom: 28px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .home.fp-completely {
+        .home__header, .home__phrase {
+            opacity: 0;
+        }
+
+        .social {
+            opacity: 0;
         }
     }
 }
