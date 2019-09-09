@@ -208,6 +208,7 @@
   background-image: url("../img/home-bg.jpg");
   background-size: cover;
   background-position: center 70%;
+  background-image: url("../img/knife.gif");
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
