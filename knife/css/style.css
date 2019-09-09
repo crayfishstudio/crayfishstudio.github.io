@@ -666,10 +666,10 @@
 }
 
 @media (min-width: 1024px) {
-  .home.fp-completely .home__header, .home.fp-completely .home__phrase {
+  .home__header, .home__phrase {
     opacity: 0;
   }
-  .home.fp-completely .social {
+  .home .social {
     opacity: 0;
   }
 }

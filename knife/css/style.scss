@@ -671,8 +671,8 @@
 }
 
 @media (min-width: 1024px) {
-    .home.fp-completely {
-        .home__header, .home__phrase {
+    .home {
+        &__header, &__phrase {
             opacity: 0;
         }
 
