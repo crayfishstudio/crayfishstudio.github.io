@@ -379,6 +379,7 @@
   background-image: url("../img/knife-bg.jpg");
   background-size: cover;
   background-position: center;
+  background-image: url("../img/knife-example.gif");
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
