@@ -655,6 +655,10 @@
 }
 
 @media (min-width: 1140px) {
+  .nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .nav-list {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
