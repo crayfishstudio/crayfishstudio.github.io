@@ -149,6 +149,10 @@ html, body { scroll-behavior: smooth }
 	padding-top: 100px;
 	position: relative;
 
+	&_mobile {
+		display: none;
+	}
+
 	&__title {
 		font-size: 30px;
 		font-weight: 600;
@@ -575,9 +579,12 @@ html, body { scroll-behavior: smooth }
 		transform-style: preserve-3d;
 		transform: perspective(1000px);
 
+		&__boy {
+			position: absolute;
+		}
+
 		&__block {
 			position: absolute;
-			transform: translateZ(20px);
 
 			&_centered {
 				margin-left: 13px;
@@ -585,10 +592,7 @@ html, body { scroll-behavior: smooth }
 			}
 
 			&-first {
-				animation-name: rotateLeft;
-				animation-iteration-count: infinite;
-				animation-duration: 25s;
-				animation-timing-function: linear;
+
 			}
 
 			&-second {
@@ -604,7 +608,18 @@ html, body { scroll-behavior: smooth }
 		}
 
 		&__img {
+			&_mobile {
+				animation-name: rotateLeft;
+				animation-iteration-count: infinite;
+				animation-duration: 25s;
+				animation-timing-function: linear;
+			}
 
+			&_rotation {
+				height: 100%;
+				width: 512px;
+				transform: translateX(-13px) translateY(3px);
+			}
 		}
 	}
 }
@@ -1858,9 +1873,87 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 			justify-content: space-between;
 			margin-top: 0;
 			margin-bottom: 10px;
+			position: relative;
 
 			&_blue {
 				color: rgba(13, 255, 255, 0.9586);
+			}
+
+			&:first-of-type {
+				margin-top: 15px;
+			}
+		}
+
+		.g-borders {
+			background-color: #293051;
+			max-width: 200px;
+			left: 240px;
+			top: -75px;
+			display: none;
+			
+			&__content {
+				&::before {
+					bottom: -10px;
+					left: 0px;
+					border-color: red;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 10px 17px 0 0;
+					border-color: #293051 transparent transparent transparent;
+				}
+
+				&::after {
+					top: -2px;
+					right: -2px;
+				}
+			}
+
+			&__title {
+				color: #0DF5F6;
+				font-style: italic;
+				font-size: 12px;
+				line-height: 14px;
+				text-transform: inherit;
+				font-weight: 300;
+				padding-top: 14px;
+				padding-bottom: 14px;
+				padding-left: 16px;
+				padding-right: 26px;
+				text-align: left;
+
+				&::before {
+					top: -2px;
+					left: -2px;
+				}
+
+				&::after {
+					bottom: -2px;
+					right: -2px;
+				}
+			}
+		}
+
+		#tooltip-2-text {
+			transform: translateX(62px);
+		}
+
+		#tooltip-3-text {
+			transform: translateX(70px);
+		}
+
+		&__tooltip {
+			position: absolute;
+			left: 230px;
+			top: 5px;
+			cursor: pointer;
+
+			&_right {
+				left: 290px;
+			}
+
+			&_righter {
+				left: 297px;
 			}
 		}
 
@@ -1873,7 +1966,6 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 			font-size: 20px;
 			line-height: 25px;
 			text-transform: uppercase;
-			margin-top: 12px;
 			margin-bottom: 10px;
 		}
 

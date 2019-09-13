@@ -1,5 +1,4 @@
 @media (max-width: 900px) {
-
     .header {
         border-bottom: none;
         height: 70px;
@@ -50,6 +49,7 @@
 
         &__wrapper {
             flex-direction: column;
+            margin-bottom: 8px !important;
 
             &:nth-of-type(1) {
                 display: flex;
@@ -138,7 +138,7 @@
         position: relative;
         background-color: #070E2D;
         z-index: 40;
-        height: 100%;
+        height: 105%;
 
         & .nav__wrapper {
 
@@ -162,6 +162,7 @@
 
     .home {
         padding-top: 140px;
+        display: none;
 
         &__title {
             font-size: 20px;
@@ -207,23 +208,108 @@
         &-circle {
             margin: 0 auto;
             order: 0;
-            transform: translateZ(20px) scale(0.65);
+            transform: scale(0.65);
             transition: 400ms;
             position: absolute;
             transform: translate3d(0, 0, 0) scale(0.65) !important;
 
+            &__block {
+                &_centered {
+                    transition: 400ms;
+                }
+            }
+
+            &_36 {
+                transform: rotate(36deg);
+            }
+
+            &_72 {
+                transform: rotate(72deg);
+            }
+
+            &_108 {
+                transform: rotate(108deg);
+            }
+
+            &_144 {
+                transform: rotate(144deg);
+            }
+
+            &_180 {
+                transform: rotate(180deg);
+            }
+
+            &_240 {
+                transform: rotate(240deg);
+            }
+
+            &_300 {
+                transform: rotate(300deg);
+            }
+
+            &_360 {
+                transform: rotate(360deg);
+            }
+
+            &__img {
+                &_rotation {
+                    width: 516px;
+                    transform: translateX(-12px) translateY(2px);
+                }
+            }
 
             &:hover {
                 transform: scale(0.63) !important;
             }
 
             &.home__block {
-                transform: translateZ(20px) translateY(-140px) scale(0.60) !important;
+                transform:  translateY(-140px) scale(0.60) !important;
             }
         }
 
         .g-arrow__link {
             bottom: -75px;
+        }
+    }
+
+    .home_mobile {
+        display: flex;
+        position: relative;
+        padding-bottom: 280px;
+
+        .home-slider {
+            padding-left: 0;
+            padding-right: 0;
+            transform: translateY(260px);
+        }
+
+        .home-circle {
+            transform: translateY(-80px) scale(0.6) !important;
+        }
+
+        .tab {
+            &-btn {
+                justify-content: flex-end;
+            }
+
+            &_left {
+                .tab-btn {
+                    justify-content: flex-start;
+                }
+            }
+        }
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+
+        .slick-list {
+            /*margin: 0 -10px;*/
+        }
+
+        .slick-track {
+            display: flex;
+            align-items: flex-end;
         }
     }
 
@@ -604,6 +690,37 @@
                 font-weight: 600;
                 line-height: 22px;
                 color: #FFFFFF;
+            }
+
+            &__tooltip {
+                left: 192px;
+                top: 3px;
+
+                &_right {
+                    left: 242px;
+                }
+
+                &_righter {
+                    left: 248px;
+                }
+            }
+
+            .g-borders {
+                left: 206px;
+
+                &__content {
+                    &::before {
+                        bottom: -9px;
+                    }
+                }
+            }
+
+            #tooltip-2-text {
+                transform: translateX(50px);
+            }
+
+            #tooltip-3-text {
+                transform: translateX(55px);
             }
 
             &__bus {
@@ -1107,6 +1224,12 @@
 }
 
 @media (min-width: 900px) {
+    .home {
+        &-circle {
+			transform: translateZ(20px);
+        }
+    }
+
     .calc {
         display: flex;
         flex-direction: column;
@@ -1279,6 +1402,45 @@
             }
         }
     }
+
+    .calc {
+        &-main {
+            .g-borders {
+                left: 0;
+                top: -77px;
+
+                &__content {
+                    &::before {
+                        display: flex;
+                        content: "";
+                        width: 13px;
+                        height: 13px;
+                        position: absolute;
+                        bottom: -2px;
+                        left: -2px;
+                        border-left: 2px solid rgba(13, 255, 255, 0.9586);
+                        border-bottom: 2px solid rgba(13, 255, 255, 0.9586);
+                        border-right: none;
+                        border-top: none;
+                        background-color: transparent;                    
+                    }
+                }
+
+                &__title {
+                    &::after {
+                        bottom: -9px;
+                        right: 0px;
+                        border-color: red;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 17px 10px 0;
+                        border-color: transparent #293051 transparent transparent;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 400px) and (max-width: 430px) {
@@ -1303,6 +1465,19 @@
 }
 
 @media (max-width: 400px) {
+    .sidenav {
+        .nav {
+            &__wrapper {
+                margin-top: 20px !important;
+
+                &:nth-of-type(3) {
+                    margin-top: 12px !important;
+                }
+            }
+        }
+
+    }
+
     .contact {
         &-map {
             &__block {
@@ -1368,11 +1543,7 @@
 }
 
 @media (max-width: 370px) {
-    .home {
-        &-circle.home__block {
-            transform: translateZ(20px) translateY(-140px) scale(0.45) !important;
-        }
-    }
+
 
     .sidenav {
         .nav {
@@ -1472,6 +1643,22 @@
             &__show {
                 min-width: 260px;
             }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .home {
+        &__block {
+            transform: scale(0.8) !important;
+        }
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+    .home {
+        &-circle {
+            transform: scale(0.67) translateX(25px) !important;
         }
     }
 }
