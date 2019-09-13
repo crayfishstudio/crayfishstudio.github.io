@@ -17,13 +17,21 @@
     <link rel="stylesheet" href="./css/index.css">
 
     <link rel="stylesheet" href="./css/global.css">
+
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#home">
-                <img src="./img/nav/logo.svg" alt="" srcset="">
-            </a>
+            <div class="nav-header">
+                <a href="#home">
+                    <img src="./img/nav/logo.svg" alt="" srcset="">
+                </a>
+
+                <div class="nav-burger">
+                    <span class="nav-burger__icon"></span>
+                </div>
+            </div>
 
             <ul class="nav-list">
                 <li class="nav-list__item">
@@ -66,7 +74,7 @@
 
         <section class="why" id="why">
             <div class="g-header">
-                <div class="g-header__logo offset-lg-1">
+                <div class="g-header__logo offset-xl-1">
                     <img class="g-header__img" src="./img/why/title.png" alt="" srcset="">
                 </div>
     
@@ -75,42 +83,61 @@
                 </div>
             </div>
 
-            <div class="why-card">
-                <div class="why-card__item col-lg-3 offset-lg-1">
-                    <div class="why-card__picture">
-                        <img class="why-card__img" src="./img/why/item-1.png" alt="" srcset="" data-tilt>
+            <div class="why-card row">
+                <div class="why-card__item col-xl-3 offset-xl-1">
+                    <div class="why-card__picture" data-tilt data-tilt-reverse="true" data-tilt-scale="1.05">
+                        <img class="why-card__img" src="./img/why/item-1.png" alt="" srcset="">
                     </div>
 
-                    <h4 class="why-card__title">Комплексне лікування</h4>
+                    <div class="why-card__content">
 
-                    <p class="why-card__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the. </p>
+                        <h4 class="why-card__title">Комплексне лікування</h4>
+
+                        <p class="why-card__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the. </p>
+                    </div>
                 </div>
 
-                <div class="why-card__item col-lg-3 offset-lg-1">
-                    <div class="why-card__picture">
-                        <img class="why-card__img" src="./img/why/item-2.png" alt="" srcset="" data-tilt>
+                <div class="why-card__item col-xl-3 offset-xl-1">
+                    <div class="why-card__picture" data-tilt data-tilt-reverse="true" data-tilt-scale="1.05">
+                        <img class="why-card__img" src="./img/why/item-2.png" alt="" srcset="">
                     </div>
 
-                    <h4 class="why-card__title">Найсучасніше обладнання в галузі</h4>
-
-                    <p class="why-card__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the. </p>
+                    <div class="why-card__content">
+                        <h4 class="why-card__title">Найсучасніше обладнання в галузі</h4>
+    
+                        <p class="why-card__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the. </p>
+                    </div>
                 </div>
 
-                <div class="why-card__item col-lg-3 offset-lg-1">
-                    <div class="why-card__picture">
-                        <img class="why-card__img" src="./img/why/item-3.png" alt="" srcset="" data-tilt>
+                <div class="why-card__item col-xl-3 offset-xl-1">
+                    <div class="why-card__picture" data-tilt data-tilt-reverse="true" data-tilt-scale="1.05">
+                        <img class="why-card__img" src="./img/why/item-3.png" alt="" srcset="">
                     </div>
-
-                    <h4 class="why-card__title">Якість та швидкість наших послуг</h4>
-
-                    <p class="why-card__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the. </p>
+                    
+                    <div class="why-card__content">
+                        <h4 class="why-card__title">Якість та швидкість наших послуг</h4>
+    
+                        <p class="why-card__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the. </p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="team">
-            <div class="team__wrapper">
-                <div class="team-av col-lg-5">
+            <img class="team__header team__header_desk" src="./img/team/title.png" alt="">
+
+            <div class="team__wrapper row">
+                <div class="team-ctrl team-ctrl__desk">
+                    <div class="team-ctrl__prev">
+                        <img src="./img/team/prev-icon.svg" alt="" srcset="">
+                    </div>
+
+                    <div class="team-ctrl__next">
+                        <img src="./img/team/next-icon.svg" alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="team-av col-xl-5">
                     <div class="team-av__item">
                         <img class="team-av__photo" src="./img/team/dent-1.png" alt="" srcset="">
                     </div>
@@ -120,7 +147,7 @@
                     </div>
                 </div>
 
-                <div class="team__info col-lg-6">
+                <div class="team__info col-xl-6">
                     <div class="team-pr">
                         <div class="team-pr__item">
                             <h3 class="team-pr__title">Володимир Береговий</h3>
@@ -128,24 +155,28 @@
                             <p class="team-pr__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
 
                             <div class="team-pr__wrapper">
-                                <div class="team-pr__cerf">
-                                    <img class="team-pr__icon" src="./img/team/check-icon.svg" alt="" srcset="">
-                                    <p class="team-pr__comp">Університет медицини ім. Великого Стоматолога</p>
+                                <div class="team-pr_flex">
+                                    <div class="team-pr__cerf">
+                                        <img class="team-pr__icon" src="./img/team/check-icon.svg" alt="" srcset="">
+                                        <p class="team-pr__comp">Університет медицини ім. Великого Стоматолога</p>
+                                    </div>
+    
+                                    <div class="team-pr__cerf">
+                                        <img class="team-pr__icon" src="./img/team/check-icon.svg" alt="" srcset="">
+                                        <p class="team-pr__comp">Університет медицини ім. Великого Стоматолога</p>
+                                    </div>
                                 </div>
 
-                                <div class="team-pr__cerf">
-                                    <img class="team-pr__icon" src="./img/team/check-icon.svg" alt="" srcset="">
-                                    <p class="team-pr__comp">Університет медицини ім. Великого Стоматолога</p>
-                                </div>
-
-                                <div class="team-pr__cerf">
-                                    <img class="team-pr__icon" src="./img/team/check-icon.svg" alt="" srcset="">
-                                    <p class="team-pr__comp">Курс “Технології в стоматології”</p>
-                                </div>
-
-                                <div class="team-pr__cerf">
-                                    <img class="team-pr__icon" src="./img/team/check-icon.svg" alt="" srcset="">
-                                    <p class="team-pr__comp">Курс “Технології в стоматології”</p>
+                                <div class="team-pr_flex">
+                                    <div class="team-pr__cerf">
+                                        <img class="team-pr__icon" src="./img/team/check-icon.svg" alt="" srcset="">
+                                        <p class="team-pr__comp">Курс “Технології в стоматології”</p>
+                                    </div>
+    
+                                    <div class="team-pr__cerf">
+                                        <img class="team-pr__icon" src="./img/team/check-icon.svg" alt="" srcset="">
+                                        <p class="team-pr__comp">Курс “Технології в стоматології”</p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -181,12 +212,12 @@
                         </div>
                     </div>
 
-                    <img class="team__header" src="./img/team/title.png" alt="">
+                    <img class="team__header team__header_mobile" src="./img/team/title.png" alt="">
 
                     <div class="team__action">
                         <a class="team-link" href="#footer">Записатись на прийом <img class="team-link__icon" src="./img/team/go-bottom-icon.svg" alt="" srcset=""></a>
 
-                        <div class="team-ctrl">
+                        <div class="team-ctrl team-ctrl_mob">
                             <div class="team-ctrl__prev">
                                 <img src="./img/team/prev-icon.svg" alt="" srcset="">
                             </div>
@@ -204,7 +235,7 @@
 
         <section class="services">
             <div class="g-header">
-                <div class="g-header__logo offset-lg-1">
+                <div class="g-header__logo offset-xl-1">
                     <img class="g-header__img" src="./img/services/title.png" alt="" srcset="">
                 </div>
     
@@ -213,28 +244,36 @@
                 </div>
             </div>
 
+            <div class="services-prev">
+                <img class="services-prev__img" src="./img/services/prev-icon-m.svg" alt="" srcset="">
+            </div>
+
+            <div class="services-next">
+                <img class="services-next__img" src="./img/services/next-icon-m.svg" alt="" srcset="">
+            </div>
+
             <div class="services__wrapper">
-                <div class="services__item col-lg-2 offset-lg-1">
+                <div class="services__item col-lg-2 offset-lg-1 col-md-4">
                     <img class="services__img" src="./img/services/item-bg.png" alt="" srcset="">
                     <h5 class="services__title">Професійне відбілювання зубів <span class="services__price">від &#8372;2000</span></h5>
                 </div>
 
-                <div class="services__item col-lg-2">
+                <div class="services__item col-lg-2 col-md-4">
                     <img class="services__img" src="./img/services/item-bg.png" alt="" srcset="">
                     <h5 class="services__title">Виготовлення коронки <span class="services__price">від &#8372;2000</span></h5>
                 </div>
 
-                <div class="services__item col-lg-2">
+                <div class="services__item col-lg-2 col-md-4">
                     <img class="services__img" src="./img/services/item-bg.png" alt="" srcset="">
                     <h5 class="services__title">Полімерна пломба <span class="services__price">від &#8372;2000</span></h5>
                 </div>
 
-                <div class="services__item col-lg-2">
+                <div class="services__item col-lg-2 col-md-4">
                     <img class="services__img" src="./img/services/item-bg.png" alt="" srcset="">
                     <h5 class="services__title">Виготовлення коронки <span class="services__price">від &#8372;2000</span></h5>
                 </div>
 
-                <div class="services__item col-lg-2">
+                <div class="services__item col-lg-2 col-md-4">
                     <img class="services__img" src="./img/services/item-bg.png" alt="" srcset="">
                     <h5 class="services__title">Встановлення імпланта <span class="services__price">від &#8372;2000</span></h5>
                 </div>
@@ -244,7 +283,7 @@
 
         <section class="faq">
             <div class="g-header">
-                <div class="g-header__logo offset-lg-1">
+                <div class="g-header__logo offset-xl-1">
                     <img class="g-header__img" src="./img/faq/title.png" alt="" srcset="">
                 </div>
     
@@ -253,7 +292,7 @@
                 </div>
             </div>
 
-            <div class="faq__wrapper col-lg-10 offset-lg-1">
+            <div class="faq__wrapper col-xl-10 offset-xl-1">
                 <div class="faq__item">
                     <h4 class="faq__title">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups ?</h4>
 
@@ -267,13 +306,15 @@
                 </div>
             </div>
 
-            <div class="faq__control offset-lg-1">
-                <div class="faq-prev">
-                    <img class="faq-prev__img" src="./img/faq/prev-icon.svg" alt="" srcset="">
-                </div>
-    
-                <div class="faq-next">
-                    <img class="faq-next__img" src="./img/faq/next-icon.svg" alt="" srcset="">
+            <div class="faq__control offset-xl-1">
+                <div class="faq-arrows">
+                    <div class="faq-prev">
+                        <img class="faq-prev__img" src="./img/faq/prev-icon.svg" alt="" srcset="">
+                    </div>
+        
+                    <div class="faq-next">
+                        <img class="faq-next__img" src="./img/faq/next-icon.svg" alt="" srcset="">
+                    </div>
                 </div>
 
                 <p class="faq-page">
@@ -287,7 +328,7 @@
 
         <section class="adr">
             <div class="g-header">
-                <div class="g-header__logo offset-lg-1">
+                <div class="g-header__logo offset-xl-1">
                     <img class="g-header__img" src="./img/adr/title.png" alt="" srcset="">
                 </div>
             </div>
@@ -323,13 +364,20 @@
                     </div>
                 </div>
 
-                <div class="adr__control col-lg-8 offset-lg-2">
+                <div class="adr__control col-xl-8 offset-xl-2">
                     <div class="adr-prev">
-                        <img class="adr-prev__img" src="./img/adr/prev-icon.svg" alt="" srcset="">
+                        <picture>
+                            <source media="(max-width: 1140px)" srcset="./img/adr/prev-icon-m.svg">
+                            <img class="adr-prev__img" src="./img/adr/prev-icon.svg" alt="" srcset="">
+                        </picture>
                     </div>
         
                     <div class="adr-next">
-                        <img class="adr-next__img" src="./img/adr/next-icon.svg" alt="" srcset="">
+                        <picture>
+                            <source media="(max-width: 1140px)" srcset="./img/adr/next-icon-m.svg">
+                            <img class="adr-next__img" src="./img/adr/next-icon.svg" alt="" srcset="">
+                        </picture>
+
                     </div>
                 </div>
             </div>
@@ -344,14 +392,14 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__item col-lg-4 offset-lg-1">
+        <div class="footer__wrapper row">
+            <div class="footer__item col-xl-4 offset-xl-1">
                 <h2 class="footer__title">Запишіться на прийом</h2>
                 <h5 class="footer__subtitle">Залиште контакти і ми вам передзвонимо</h5>
 
-                <form class="footer-form" action="#" method="POST">
+                <form class="footer-form col-md-8 col-xl-12" action="#" method="POST">
                     <input class="footer-form__input" type="text" placeholder="Ім&#39;я" required>
-                    <input class="footer-form__input" type="tel" placeholder="Телефон" required>
+                    <input class="footer-form__input" id="input-phone" type="tel" placeholder="Телефон" required>
 
                     <label class="footer-form__label">
                         <input class="footer-form_hidden" type="checkbox" name="" id="" required>
@@ -363,23 +411,31 @@
                 </form>
             </div>
 
-            <div class="footer__item col-lg-5 offset-lg-1">
-                <a class="footer__link" href="#">м. Київ вул. Назвавулиці, 34</a>
-
-                <a class="footer__link" href="#">clinictou@gmail.com</a>
-
-                <div class="footer__block">
-                    <a class="footer__link" href="#">+ 38 (097) 56 34 308</a>
-
-                    <a class="footer__link" href="#">+ 38 (097) 56 34 308</a>
+            <div class="footer__item col-xl-5 offset-xl-1">
+                <div class="footer__item-info">
+                    <div class="footer__contact">
+                        <a class="footer__link" href="#">м. Київ вул. Назвавулиці, 34</a>
+        
+                        <a class="footer__link" href="#">clinictou@gmail.com</a>
+                    </div>
+    
+                    <div class="footer__block">
+                        <a class="footer__link" href="#">+ 38 (097) 56 34 308</a>
+    
+                        <a class="footer__link" href="#">+ 38 (097) 56 34 308</a>
+                    </div>
                 </div>
 
                 <div class="footer-row">
                     <div class="footer-row__block">
-                        <a class="footer__link" href="#">facebook</a>
-                        <a class="footer__link" href="#">instagram</a>
-                        <a class="footer__link" href="#">viber</a>
-                        <a class="footer__link" href="#">telegram </a>
+                        <div class="footer-social">
+                            <a class="footer__link" href="#">facebook</a>
+                            <a class="footer__link" href="#">instagram</a>
+                        </div>
+                        <div class="footer-social">
+                            <a class="footer__link" href="#">viber</a>
+                            <a class="footer__link" href="#">telegram </a>
+                        </div>
                     </div>
 
                     <a class="footer-row__link" href="#home">
@@ -390,17 +446,17 @@
         </div>
 
         <div class="footer__wrapper">
-            <div class="footer__item col-lg-3 offset-lg-1">
-                <h6 class="">2019 ClinicToYou. All rights reserved.</h6>
+            <div class="footer__item col-xl-3 offset-xl-1">
+                <h6 class="footer__copyright">2019 ClinicToYou. All rights reserved.</h6>
             </div>
 
-            <div class="footer__item col-lg-3 offset-lg-4">
+            <div class="footer__item col-xl-3 offset-xl-4">
                 <h6 class="footer__studio">Designed and developed by <a class="footer__crayfish"href="https://crayfish.studio/" target="_blank">Crayfish Studio</a></h6>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -454,9 +510,117 @@
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            centerPadding: '-120px',
+            centerPadding: '-330px',
             prevArrow: $('.adr-prev'),
             nextArrow: $('.adr-next')
+        });
+
+        $(document).ready(function() {
+            if (screen.width <= 767) {
+                $('.services__wrapper').slick({
+                    centerMode: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerPadding: '120px',
+                    prevArrow: $('.services-prev'),
+                    nextArrow: $('.services-next'),
+                    responsive: [
+                        {
+                            breakpoint: 650,
+                            settings: {
+                                centerPadding: '100px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 590,
+                            settings: {
+                                centerPadding: '80px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 545,
+                            settings: {
+                                centerPadding: '70px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 520,
+                            settings: {
+                                centerPadding: '60px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 485,
+                            settings: {
+                                centerPadding: '50px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 460,
+                            settings: {
+                                centerPadding: '40px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 440,
+                            settings: {
+                                centerPadding: '30px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 410,
+                            settings: {
+                                centerPadding: '20px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 390,
+                            settings: {
+                                centerPadding: '15px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 365,
+                            settings: {
+                                centerPadding: '25px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 345,
+                            settings: {
+                                centerPadding: '18px'
+                            }
+                        },
+
+                        {
+                            breakpoint: 340,
+                            settings: {
+                                centerPadding: '5px'
+                            }
+                        }
+                    ]
+                });
+            }
+        });
+    </script>
+
+    <script src="https://unpkg.com/imask"></script>
+
+    <script>
+        var phoneMask = IMask(
+            document.getElementById('input-phone'), {
+                mask: '+{38}(000)000-00-00'
         });
     </script>
 

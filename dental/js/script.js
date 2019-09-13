@@ -29,3 +29,15 @@ $('.adr__slider').on('beforeChange', function() {
 $('.adr__slider').on('afterChange', function() {
     setSlideVisibility();
 });
+
+$('.nav-burger').click(function() {
+    $('.nav-list').slideToggle(300);
+    $('.nav-burger__icon').toggleClass('clicked');
+});
+
+$('body').on('click', function(e) {
+	if($(e.target).closest('.nav').length == 0) {
+        $('.nav-list').slideUp(300);
+        $('.nav-burger__icon').removeClass('clicked');
+	}
+});

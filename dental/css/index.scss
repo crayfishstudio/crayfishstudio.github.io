@@ -140,6 +140,7 @@ body {
             font-weight: 600;
             color: $colorDark;
             font-size: $fontSizeText-1;
+            padding-bottom: 30px;
 
             &:hover {
                 color: $colorDark;
@@ -159,6 +160,7 @@ body {
 
     &__title {
         font-size: $fontSizeTitle-1;
+        font-weight: 600;
         color: $colorLight;
         line-height: 62px;
         max-width: 585px;
@@ -204,13 +206,14 @@ body {
             display: flex;
             background-image: url("../img/why/item-1-bg.png");
             background-repeat: no-repeat;
+            transform: translateZ(20px);
+            
         }
 
         &__img {
             padding-left: 20px;
             transform-style: preserve-3d;
             transform: perspective(1000px);
-            transform: translateZ(20px);
         }
 
         &__item {
@@ -253,13 +256,6 @@ body {
                 }
             }
 
-            &::after {
-                display: block;
-                content: "";
-                height: 5px;
-                width: 71px;
-                background-color: $colorYellow;
-            }
         }
 
         &__title {
@@ -276,6 +272,16 @@ body {
             line-height: 22px;
             font-family: $fontFamily;
             font-size: $fontSizeText-2;
+
+            &::after {
+                display: block;
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 71px;
+                background-color: #FFDD8C;
+                bottom: 0px;
+            }
         }
     }
 }
@@ -314,6 +320,14 @@ body {
             position: absolute;
             left: -190px;
         }*/
+    }
+
+    .slick-slide {
+        opacity: 0 !important;
+    }
+
+    .slick-current {
+        opacity: 1 !important;
     }
 
     &__info {
@@ -376,6 +390,10 @@ body {
         top: -110px;
         right: 0;
         padding-right: 15px;
+
+        &_desk {
+            display: none;
+        }
     }
 
     &__action {
@@ -413,6 +431,10 @@ body {
 
         &__next {
             cursor: pointer;
+        }
+
+        &__desk {
+            display: none;
         }
     }
 }
@@ -462,6 +484,10 @@ body {
         font-size: $fontSizeTitle-5;
         line-height: 20px;
     }
+
+    &-prev, &-next {
+        display: none !important;
+    }
 }
 
 .faq {
@@ -484,6 +510,7 @@ body {
 
     &__text {
         font-size: $fontSizeText-1;
+        font-family: $fontFamily;
         line-height: 25px;
         color: $colorGray;
     }
@@ -526,6 +553,10 @@ body {
         position: absolute;
         right: 0;
         top: -200px;
+    }
+
+    &-arrows {
+        display: flex;
     }
 }
 
@@ -658,6 +689,8 @@ body {
 
     &__wrapper {
         display: flex;
+        margin-left: 0;
+        margin-right: 0;
 
         &:nth-child(1) {
             .footer__item {
@@ -706,6 +739,8 @@ body {
     &-form {
         display: flex;
         flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
 
         &__input {
             background-color: transparent;
@@ -794,6 +829,11 @@ body {
         }
     }
 
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__link {
         font-size: 18px;
         line-height: 20px;
@@ -836,5 +876,11 @@ body {
             color: $colorLight;
             text-decoration: none;
         }
+    }
+
+    
+    &-social {
+        display: flex;
+        flex-direction: column;
     }
 }
