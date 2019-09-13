@@ -109,8 +109,6 @@
   .nav-list__item:hover {
     -webkit-transform: none;
             transform: none;
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
   }
   .nav-list__item::after {
     display: none;
@@ -382,6 +380,10 @@
   .g-header__img {
     width: 210px;
   }
+  .nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .nav-header {
     padding-left: 0;
     padding-right: 0;
@@ -393,6 +395,10 @@
     padding-left: 0;
     top: 67px;
     height: 430px;
+  }
+  .nav-list__item:hover {
+    -webkit-transform: none !important;
+            transform: none !important;
   }
   .nav-list__link {
     font-size: 24px;
@@ -639,6 +645,20 @@
   .team-pr__wrapper {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 1460px) and (min-width: 1140px) {
+  .home {
+    background-position-y: top !important;
+  }
+}
+
+@media (min-width: 1140px) {
+  .nav-list {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 

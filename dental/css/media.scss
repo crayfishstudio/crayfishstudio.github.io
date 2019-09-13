@@ -104,7 +104,6 @@
 
                 &:hover {
                     transform: none;
-                    transform: translateX(10px);
                 }
 
                 &::after {
@@ -434,6 +433,9 @@
     }
 
     .nav {
+        padding-left: 20px;
+        padding-right: 20px;
+
         &-header {
             padding-left: 0;
             padding-right: 0;
@@ -447,6 +449,12 @@
             padding-left: 0;
             top: 67px;
             height: 430px;
+
+            &__item {
+                &:hover {
+                    transform: none !important;
+                }
+            }
 
             &__link {
                 font-size: 24px;
@@ -730,6 +738,20 @@
             &__wrapper {
                 flex-wrap: nowrap;
             }
+        }
+    }
+}
+
+@media (max-width: 1460px) and (min-width: 1140px) {
+    .home {
+        background-position-y: top !important;
+    }
+}
+
+@media (min-width: 1140px) {
+    .nav {
+        &-list {
+            display: flex !important; 
         }
     }
 }

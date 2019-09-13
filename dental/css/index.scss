@@ -76,6 +76,10 @@ $fontHard: 'HardToLove';
 
 $transitionTime: 400ms;
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Georgia';
 
@@ -83,7 +87,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 .header {
     background-color: $colorNav;

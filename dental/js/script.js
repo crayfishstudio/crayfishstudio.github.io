@@ -35,6 +35,11 @@ $('.nav-burger').click(function() {
     $('.nav-burger__icon').toggleClass('clicked');
 });
 
+$('.nav-list__item').click(function() {
+    $('.nav-list').slideUp(300);
+    $('.nav-burger__icon').removeClass('clicked');
+});
+
 $('body').on('click', function(e) {
 	if($(e.target).closest('.nav').length == 0) {
         $('.nav-list').slideUp(300);

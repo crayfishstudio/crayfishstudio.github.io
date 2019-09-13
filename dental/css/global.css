@@ -20,7 +20,7 @@
           transform: translateX(-60px);
 }
 
-.nav, .home, .why, .team, .services, .faq {
+.home, .why, .team, .services, .faq {
   padding-left: 20px;
   padding-right: 20px;
 }

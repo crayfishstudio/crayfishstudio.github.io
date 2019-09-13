@@ -38,6 +38,10 @@
   font-style: normal;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Georgia';
   background-image: url("../img/bg.png");
