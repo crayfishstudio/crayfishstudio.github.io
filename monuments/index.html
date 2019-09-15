@@ -944,9 +944,9 @@
                 <div class="col-md-1 order-md-3"></div>
                 <div class="col-lg-4 order-lg-3 text-lg-left text-center">
                     <h2 class="secondary-title">зв'яжіться з нами</h2>
-                    <form class="footer-form">
-                        <input type="text" placeholder="Ім'я">
-                        <input id="recipient-phone-1" type="text" placeholder="Номер телефону">
+                    <form class="footer-form" action="post.php" method="post">
+                        <input type="text" placeholder="Ім'я" required name="username">
+                        <input id="recipient-phone-1" type="text" placeholder="Номер телефону"  name="userphone" required>
                         <button type="submit">відправити</button>
                     </form>
                 </div>
