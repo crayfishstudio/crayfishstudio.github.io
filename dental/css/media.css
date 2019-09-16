@@ -377,8 +377,16 @@
   .g-header__dots {
     display: none;
   }
+  .g-header__logo {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    max-width: 100%;
+  }
   .g-header__img {
-    width: 210px;
+    -webkit-transform-origin: left;
+            transform-origin: left;
   }
   .nav {
     padding-left: 20px;
@@ -423,6 +431,9 @@
             justify-content: center;
     max-width: 100%;
     padding: 17px 0;
+  }
+  .why .g-header {
+    margin-bottom: 0;
   }
   .why-card {
     padding-bottom: 0;
@@ -474,6 +485,7 @@
             transform: translateX(15px) translateY(8px);
   }
   .services {
+    padding-top: 55px;
     padding-bottom: 70px;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -507,7 +519,7 @@
   .services-prev, .services-next {
     position: absolute;
     z-index: 1000;
-    top: 385px;
+    top: 415px;
     display: block !important;
   }
   .faq {
@@ -554,6 +566,9 @@
         -ms-flex-order: 1;
             order: 1;
     margin-right: 0;
+  }
+  .adr .g-header {
+    padding-left: 20px;
   }
   .adr__control {
     padding: 0 20px;
@@ -670,6 +685,17 @@
   .home, .why, .team, .services, .faq, .footer {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (min-width: 767px) {
+  .slick-arrow {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .slick-arrow:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 
