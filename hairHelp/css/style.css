@@ -1126,7 +1126,8 @@ input::-webkit-calendar-picker-indicator {
     padding: 0px 40px;
 }
 
-.sect5-card__image {
+.sect5-card__image {    
+    background-image: url(../img/sect5-photo.jpg);
     background-size: cover;
     background-position: center;
     height: 39vh;
@@ -1605,6 +1606,7 @@ input::-webkit-calendar-picker-indicator {
     background-size: contain;
     height: 100%;
     background-repeat: no-repeat;
+    background-image: url(../img/product.png);
 }
 
 .shopcart-card__number div {
@@ -1948,6 +1950,7 @@ input::-webkit-calendar-picker-indicator {
     background-size: contain;
     background-position: center;
     height: 100%;
+    background-image: url(../img/myjchina.png);
 }
 
 .doctors-card__text h2 {
@@ -2314,6 +2317,7 @@ input::-webkit-calendar-picker-indicator {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    background-image: url(../img/blog.png);
 }
 
 .blog__card h2 {
@@ -2420,6 +2424,7 @@ input::-webkit-calendar-picker-indicator {
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
+    background-image: url(../img/product.png);
 }
 
 .item-card-flex {
