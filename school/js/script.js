@@ -282,7 +282,7 @@ $('.home-slider').on('afterChange', function (event, slick, currentSlide) {
 
 	console.log(slickIndex);
 	
-	var homeCircleArray = ['home-circle_36', 'home-circle_72', 'home-circle_108', 'home-circle_144', 'home-circle_180', 'home-circle_240', 'home-circle_300', 'home-circle_360'];
+	var homeCircleArray = ['home-circle_0', 'home-circle_36', 'home-circle_72', 'home-circle_108', 'home-circle_144', 'home-circle_190', 'home-circle_250', 'home-circle_310'];
 
 	if(slickIndex == 0) {
 		circleBlock.addClass(homeCircleArray[0]);
@@ -373,38 +373,4 @@ $('.home-slider').on('afterChange', function (event, slick, currentSlide) {
 		circleBlock.removeClass(homeCircleArray[6]);
 
 	}
-
-	/*div.style.webkitTransform = 'rotate('+deg+'deg)'; 
-    div.style.mozTransform    = 'rotate('+deg+'deg)'; 
-    div.style.msTransform     = 'rotate('+deg+'deg)'; 
-    div.style.oTransform      = 'rotate('+deg+'deg)'; 
-	div.style.transform       = 'rotate('+deg+'deg)'; */
-
-	/*var tabContent = $(this).find('.slick-current').find('.tab-content');
-
-	deg+= 45;
-
-	circleBlock.css('transform','rotate('+deg+'deg)');
-
-	if($(this).find('.slick-current').find('.tab-content')) {
-		console.log($(this).find('.slick-current').find('.tab-content'));
-		console.log("true");
-
-		deg += 45;
-		console.log(deg);
-
-		circleBlock.css('transform','rotate('+deg+'deg)');
-
-		console.log(circleBlock);
-	} else {
-		console.log("false");
-	}
-
-	
-
-	$('.tab').change(function() {
-		  $(this).parent().parent().find('.select-header').find('p').find('span').text(text_for_p);
-
-		  alert("tab");
-	});*/
 });

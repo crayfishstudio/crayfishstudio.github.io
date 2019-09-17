@@ -1,0 +1,284 @@
+
+function initMap() {
+    var directionsRenderer = new google.maps.DirectionsRenderer;
+    var directionsService = new google.maps.DirectionsService;
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      disableDefaultUI: true,
+      center: {lat: 50.53921981931552, lng: 30.26712735000001},
+      styles: 
+      [
+      {
+          "elementType": "geometry",
+          "stylers": [
+          {
+              "color": "#1d2c4d"
+          }
+          ]
+      },
+      {
+          "elementType": "labels.icon",
+          "stylers": [
+          {
+              "color": "#000000"
+          }
+          ]
+      },
+      {
+          "elementType": "labels.text",
+          "stylers": [
+          {
+              "color": "#ffffff"
+          }
+          ]
+      },
+      {
+          "elementType": "labels.text.fill",
+          "stylers": [
+          {
+              "color": "#ffffff"
+          }
+          ]
+      },
+      {
+          "elementType": "labels.text.stroke",
+          "stylers": [
+          {
+              "color": "#000000"
+          }
+          ]
+      },
+      {
+          "featureType": "administrative.country",
+          "elementType": "geometry.stroke",
+          "stylers": [
+          {
+              "color": "#4b6878"
+          }
+          ]
+      },
+      {
+          "featureType": "administrative.land_parcel",
+          "elementType": "labels.text.fill",
+          "stylers": [
+          {
+              "color": "#64779e"
+          }
+          ]
+      },
+      {
+          "featureType": "administrative.province",
+          "elementType": "geometry.stroke",
+          "stylers": [
+          {
+              "color": "#4b6878"
+          }
+          ]
+      },
+      {
+          "featureType": "landscape.man_made",
+          "elementType": "geometry.stroke",
+          "stylers": [
+          {
+              "color": "#334e87"
+          }
+          ]
+      },
+      {
+          "featureType": "landscape.natural",
+          "elementType": "geometry",
+          "stylers": [
+          {
+              "color": "#023e58"
+          }
+          ]
+      },
+      {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [
+          {
+              "color": "#283d6a"
+          }
+          ]
+      },
+      {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [
+          {
+              "color": "#6f9ba5"
+          }
+          ]
+      },
+      {
+          "featureType": "poi",
+          "elementType": "labels.text.stroke",
+          "stylers": [
+          {
+              "color": "#1d2c4d"
+          }
+          ]
+      },
+      {
+          "featureType": "poi.park",
+          "elementType": "geometry.fill",
+          "stylers": [
+          {
+              "color": "#023e58"
+          }
+          ]
+      },
+      {
+          "featureType": "poi.park",
+          "elementType": "labels.text.fill",
+          "stylers": [
+          {
+              "color": "#3C7680"
+          }
+          ]
+      },
+      {
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [
+          {
+              "color": "#304a7d"
+          }
+          ]
+      },
+      {
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+          {
+              "color": "#98a5be"
+          }
+          ]
+      },
+      {
+          "featureType": "road",
+          "elementType": "labels.text.stroke",
+          "stylers": [
+          {
+              "color": "#1d2c4d"
+          }
+          ]
+      },
+      {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+          {
+              "color": "#2c6675"
+          }
+          ]
+      },
+      {
+          "featureType": "road.highway",
+          "elementType": "geometry.stroke",
+          "stylers": [
+          {
+              "color": "#255763"
+          }
+          ]
+      },
+      {
+          "featureType": "road.highway",
+          "elementType": "labels.text.fill",
+          "stylers": [
+          {
+              "color": "#b0d5ce"
+          }
+          ]
+      },
+      {
+          "featureType": "road.highway",
+          "elementType": "labels.text.stroke",
+          "stylers": [
+          {
+              "color": "#023e58"
+          }
+          ]
+      },
+      {
+          "featureType": "transit",
+          "elementType": "labels.text.fill",
+          "stylers": [
+          {
+              "color": "#98a5be"
+          }
+          ]
+      },
+      {
+          "featureType": "transit",
+          "elementType": "labels.text.stroke",
+          "stylers": [
+          {
+              "color": "#1d2c4d"
+          }
+          ]
+      },
+      {
+          "featureType": "transit.line",
+          "elementType": "geometry.fill",
+          "stylers": [
+          {
+              "color": "#283d6a"
+          }
+          ]
+      },
+      {
+          "featureType": "transit.station",
+          "elementType": "geometry",
+          "stylers": [
+          {
+              "color": "#3a4762"
+          }
+          ]
+      },
+      {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [
+          {
+              "color": "#0e1626"
+          }
+          ]
+      },
+      {
+          "featureType": "water",
+          "elementType": "labels.text.fill",
+          "stylers": [
+          {
+              "color": "#4e6d70"
+          }
+          ]
+      }
+      ]
+    });
+    directionsRenderer.setMap(map);
+
+    calculateAndDisplayRoute(directionsService, directionsRenderer);
+    document.getElementById('mode').addEventListener('change', function() {
+      calculateAndDisplayRoute(directionsService, directionsRenderer);
+    });
+  }
+
+  function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+    var selectedMode = document.getElementById('mode').value;
+    directionsService.route({
+      origin: {lat: 50.510702, lng: 30.420473},  // Haight.
+      destination: {lat: 50.539377, lng: 30.267145},  // Ocean Beach.
+      // Note that Javascript allows us to access the constant
+      // using square brackets and a string value as its
+      // "property."
+      travelMode: google.maps.TravelMode["DRIVING"]
+    }, function(response, status) {
+      if (status == 'OK') {
+        directionsRenderer.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+  }

@@ -1,0 +1,58 @@
+.main {
+	background-image: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.export {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    &__header {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    &__button {
+        background-color: #454d55;
+        border: 3px solid #313131;
+        color: #ffffff;
+        padding: 10px 25px;
+    }
+
+    &__table {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .export {
+        &__header {
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-right: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        &__table {
+            max-width: 100%;
+        }
+    }
+
+}

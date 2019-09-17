@@ -137,7 +137,7 @@
         transition: 1s;
         position: relative;
         background-color: #070E2D;
-        z-index: 40;
+        z-index: 100;
         height: 105%;
 
         & .nav__wrapper {
@@ -216,7 +216,13 @@
             &__block {
                 &_centered {
                     transition: 400ms;
+                    margin-left: 0;
+                    margin-top: 0;
                 }
+            }
+
+            &_0 {
+                transform: rotate(0deg);
             }
 
             &_36 {
@@ -235,26 +241,23 @@
                 transform: rotate(144deg);
             }
 
-            &_180 {
-                transform: rotate(180deg);
+            &_190 {
+                transform: rotate(190deg);
             }
 
-            &_240 {
-                transform: rotate(240deg);
+            &_250 {
+                transform: rotate(250deg);
             }
 
-            &_300 {
-                transform: rotate(300deg);
-            }
-
-            &_360 {
-                transform: rotate(360deg);
+            &_310 {
+                transform: rotate(310deg);
             }
 
             &__img {
                 &_rotation {
-                    width: 516px;
-                    transform: translateX(-12px) translateY(2px);
+                    width: auto;
+                    transform: none;
+                    height: auto;
                 }
             }
 
@@ -276,6 +279,9 @@
         display: flex;
         position: relative;
         padding-bottom: 280px;
+
+        position: relative;
+        overflow: hidden;
 
         .home-slider {
             padding-left: 0;
@@ -994,7 +1000,7 @@
         transition: 1s;
         position: relative;
         background: #070E2D;
-        z-index: 30;
+        z-index: 3000;
         height: 100%;
         flex-wrap: nowrap;
 

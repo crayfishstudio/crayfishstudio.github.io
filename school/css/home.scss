@@ -1,10 +1,14 @@
 html, body { scroll-behavior: smooth }
 
+#map {
+	height: 100%;
+}
+
 .header {
     position: fixed;
     border-bottom: 2px solid #0AA9CC;
 	width: 100%;
-	z-index: 20;
+	z-index: 100;
 	display: block;
 	background-color: rgba(19, 26, 57, 0.66);
 }
@@ -581,6 +585,7 @@ html, body { scroll-behavior: smooth }
 
 		&__boy {
 			position: absolute;
+			z-index: 1000;
 		}
 
 		&__block {
@@ -1440,7 +1445,7 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 			overflow: hidden;
 			border-radius: 50%;
 			border: 5px solid #0DFFFF;
-			z-index: 10;
+			z-index: 90;
 		}
 
 		&__img {
@@ -1794,7 +1799,7 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 
 .calc {
 	background-color: #070E2D;
-	z-index: 30;
+	z-index: 3000;
 	width: 100%;
 	position: fixed;
 	top: 0;

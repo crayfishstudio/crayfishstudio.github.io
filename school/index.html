@@ -760,7 +760,7 @@
                 </div>
 
                 <div class="home-circle__block home-circle__block_centered home-circle__block-second" id="circleBlock">
-                    <img class="home-circle__img home-circle__img_rotation" src="./img/home-circle-2.svg" alt="" srcset="">
+                    <img class="home-circle__img home-circle__img_rotation" src="./img/home-circle-m-2.svg" alt="" srcset="">
                 </div>
 
                 <div class="home-circle__block home-circle__block-third">
@@ -1390,7 +1390,7 @@
             <div class="contact__wrapper">
                 <div class="contact-map">
                     <div class="contact-map__block">
-                        <img class="contact-map__img" src="./img/contact-map.png" alt="">
+                        <div id="map"></div>
                     </div>
 
                     <svg class="contact-svg" viewBox='0 0 100 100'>
@@ -1643,6 +1643,7 @@
             </div>
 
         </section>
+
     </main>
 
     <footer class="footer">
@@ -1872,5 +1873,11 @@
     </script>
 
     <script src="./js/zenscroll-min.js"></script>
+
+    <script src="./js/map.js"></script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCaoITp8CCWSs37dP92vc4dZUBP60A-JM&callback=initMap">
+    </script>
 </body>
 </html>
