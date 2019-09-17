@@ -1,3 +1,18 @@
+var phoneMask = IMask(
+    document.getElementById('phone_us'), {
+        mask: '+{38}(000)000-00-00'
+    });
+
+var phoneMask = IMask(
+    document.getElementById('footer-phone'), {
+        mask: '+{38}(000)000-00-00'
+    });
+
+var phoneMask = IMask(
+    document.getElementById('footer-phone-survey'), {
+        mask: '+{38}(000)000-00-00'
+    });
+
 var svgList = document.getElementsByClassName("logo-svg-element");    
 
 function classToggle() {

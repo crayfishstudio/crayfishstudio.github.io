@@ -141,26 +141,26 @@
         </form>
     </div>
 
-    <footer class="bg-black text-white mt-5">
+    <footer class="bg-black text-white mt-13">
         <div class="container-fluid px-7">
             <div class="row no-gutters">
-                <div class="col-md-3 mt-13">
+                <div class="col-lg-3 mt-13">
                     <img src="svg/logofinalsymbol.svg" width="50px" class="mb-lg-5 mb-3"><br>
                     <small class="gilroy-bold-13 grey">З увагою до деталей.</small>
                 </div>
-                <div class="col-md-4 mt-13" id="contacts">
+                <div class="col-lg-4 mt-13" id="contacts">
                     <h2 class="section-header mb-4">
-                        Маєте чудову ідею?<br>Розкажіть нам про неї
+                        Маєте чудову ідею?<br>Зв'яжіться з нами
                     </h2>
                     <form method="post" action="bot.php" id="footer-form">
                         <input class="mb-3" type="text" placeholder="Ім'я" name="userName" required>
-                        <input class="mb-3" type="text" placeholder="Телефон або e-mail" name="userContact" required>
+                        <input class="mb-3" type="text" placeholder="Номер телефону" name="userContact" id="footer-phone" required>
                         <textarea class="mb-4" rows="3" placeholder="Що у вас на думці?" name="userMessage"></textarea>
                         <button class="btn btn-custom-outline-white w-100" type="submit" id="form-send-button">Відправити</button>
                     </form>
                 </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-3 mt-13 contacts">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 mt-13 contacts">
                     <h3 class="footer-contacts-h3 mb-3">Контакти</h3>
                     <a href="mailto:contact@crayfish.studio">contact@crayfish.studio</a><br>
                     <a href="tel:+380964143851">+38 (096) 41 43 851</a><br>
@@ -168,24 +168,28 @@
                     <h3 class="footer-contacts-h3 mb-3 mt-5">Наш офіс</h3>
                     <a href="https://goo.gl/maps/shBBGzWJu7T5najh8" target="_blank">
                         Україна, м. Львів<br>
-                        вул. Римлянина, 1<br>
-                        79008
+                        вул. Граб'янки, 5Б<br>
+                        79053
                     </a><br>
-                    <a href="https://crayfish.studio#portfolio">
+                    <a href="#portfolio">
                         <h3 class="footer-contacts-h3 mt-5">
                             <div class="v-8-fat"></div>Портфоліо</h3>
                     </a>
-                    <a href="https://crayfish.studio#process">
+                    <a href="#process">
                         <h3 class="footer-contacts-h3">
                             <div class="v-8-fat"></div>Процес</h3>
                     </a>
-                    <a href="https://crayfish.studio#packets">
+                    <a href="#advantages">
                         <h3 class="footer-contacts-h3">
-                            <div class="v-8-fat"></div>Пакети</h3>
+                            <div class="v-8-fat"></div>Переваги</h3>
                     </a>
-                    <a href="https://crayfish.studio/brief.html" id="brief-third-button">
+                    <a href="survey.html" id="brief-third-button">
                         <h3 class="footer-contacts-h3">
                             <div class="v-8-fat"></div>Бриф</h3>
+                    </a>
+                    <a href="#" id="consult-footer-button" data-toggle="modal" data-target="#exampleModal">
+                        <h3 class="footer-contacts-h3">
+                            <div class="v-8-fat"></div>Консультація</h3>
                     </a>
                 </div>
             </div>
@@ -200,11 +204,8 @@
         </div>
     </footer>
 
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/imask.js"></script>
     <script src="js/script.js"></script>
-</body>
-
-</html>

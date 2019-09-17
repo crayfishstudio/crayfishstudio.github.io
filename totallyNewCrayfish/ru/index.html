@@ -144,6 +144,19 @@
                 <a href="https://crayfishstudio.github.io/rutetskiy/" target="_blank" class="btn btn-custom-outline-white absolute">посмотреть</a>
             </div>
         </div>
+        <div class="image-container" style="background-image: url(../img/image-second.png)">
+            <div class="content-container justify-content-between">
+                <small class="portfolio-title">
+                    <div class="v-34-white"></div>
+                    Сайт-презентація забудовника
+                </small>
+                <h3 class="portfolio-header">Modern Home</h3>
+                <p class="portfolio-description">
+                    Котеджный городок от БК Сучасний Дім – это жилая недвижимость премиум-класса. Новостройки расположены недалеко от лесной местности, что гарантирует свежий воздух, красивый краевид с окна и живописные места для прогулок
+                </p>
+                <a href="https://www.modernhome.com.ua/" target="_blank" class="btn btn-custom-outline-white absolute">переглянути</a>
+            </div>
+        </div>
         <div class="image-container" style="background-image: url(../img/IMG_0706.jpg)">
             <div class="content-container justify-content-between">
                 <small class="portfolio-title">
@@ -256,13 +269,13 @@
 
     <div class="container-fluid px-7 mt-13" id="advantages">
         <div class="row no-gutters">
-            <div class="col-xl-1 col-lg-2">
+            <div class="col-lg-2">
                 <small class="gilroy-bold-13 grey">
                     03 -<br>
                     Преимущества
                 </small>
             </div>
-            <div class="col-xl-10 col-lg-8">
+            <div class="col-lg-10">
                 <h2 class="section-header mb-3">
                     Вам не нужно жертвовать качеством ради стоимости. Наш опыт позволит сделать всё наилучшим образом
                 </h2>
@@ -270,7 +283,7 @@
             </div>
         </div>
         <div class="row no-gutters mt-5">
-            <div class="col-lg-4 pr-xl-5 pr-md-2">
+            <div class="col-lg-4 pr-xl-4 pr-md-2">
                 <div class="custom-card text-center">
                     <span class="card-advantage-number mt-5">57</span>
                     <h2 class="section-header">Проектов</h2>
@@ -278,7 +291,7 @@
                     <p class="cards-options mt-5">От самых простых сайтов-визиток до интернет-магазинов и сложных систем администрирования</p>
                 </div>
             </div>
-            <div class="col-lg-4 pr-xl-5 pr-md-2">
+            <div class="col-lg-4 px-xl-3 px-md-1">
                 <div class="custom-card text-center">
                     <span class="card-advantage-number mt-5">28</span>
                     <h2 class="section-header">Отраслей</h2>
@@ -286,7 +299,7 @@
                     <p class="cards-options mt-5">Мы работали с клиентами из самых разных отраслей, поэтому умеем находить особенный подход</p>
                 </div>
             </div>
-            <div class="col-lg-4 pr-xl-5 pr-md-2">
+            <div class="col-lg-4 pl-xl-4 pl-md-2">
                 <div class="custom-card text-center">
                     <span class="card-advantage-number mt-5">46</span>
                     <h2 class="section-header">Курсов</h2>
@@ -352,7 +365,7 @@
                     </h2>
                     <form method="post" action="bot.php" id="footer-form">
                         <input class="mb-3" type="text" placeholder="Имя" name="userName" required>
-                        <input class="mb-3" type="text" placeholder="Телефон или e-mail" name="userContact" required>
+                        <input class="mb-3" type="text" placeholder="Номер телефона" name="userContact" id="footer-phone" required>
                         <textarea class="mb-4" rows="3" placeholder="О чём вы хотите рассказать?" name="userMessage"></textarea>
                         <button class="btn btn-custom-outline-white w-100" type="submit" id="form-send-button">Отправить</button>
                     </form>
@@ -366,8 +379,8 @@
                     <h3 class="footer-contacts-h3 mb-3 mt-5">Наш офис</h3>
                     <a href="https://goo.gl/maps/shBBGzWJu7T5najh8" target="_blank">
                         Украина, г. Львов<br>
-                        ул. Римлянина, 1<br>
-                        79008
+                        ул. Грабянки, 5Б<br>
+                        79053
                     </a><br>
                     <a href="#portfolio">
                         <h3 class="footer-contacts-h3 mt-5">
@@ -415,7 +428,7 @@
                     </p>
                     <form id="consult-form" method="post" action="consult.php">
                         <input name="consultName" type="text" placeholder="Имя" required>
-                        <input name="consultContact" type="text" placeholder="Телефон или e-mail" required>
+                        <input name="consultContact" type="text" placeholder="Номер телефона" id="phone_us" required>
                         <button class="btn btn-custom-outline w-100 mt-4" type="submit" id="consult-send-button">Отправить</button>
                     </form>
                 </div>
@@ -426,6 +439,7 @@
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/imask.js"></script>
     <script src="../js/script.js"></script>
 </body>
 

@@ -199,7 +199,7 @@
                     </h2>
                     <form method="post" action="bot.php" id="footer-form">
                         <input class="mb-3" type="text" placeholder="Ім'я" name="userName" required>
-                        <input class="mb-3" type="text" placeholder="Телефон або e-mail" name="userContact" required>
+                        <input class="mb-3" type="text" placeholder="Номер телефону" name="userContact" id="footer-phone-survey" required>
                         <textarea class="mb-4" rows="3" placeholder="Що у вас на думці?" name="userMessage"></textarea>
                         <button class="btn btn-custom-outline-white w-100" type="submit" id="form-send-button">Відправити</button>
                     </form>
@@ -213,18 +213,18 @@
                     <h3 class="footer-contacts-h3 mb-3 mt-5">Наш офіс</h3>
                     <a href="https://goo.gl/maps/shBBGzWJu7T5najh8" target="_blank">
                         Україна, м. Львів<br>
-                        вул. Римлянина, 1<br>
-                        79008
+                        вул. Граб'янки, 5Б<br>
+                        79053
                     </a><br>
-                    <a href="index.html#portfolio">
+                    <a href="#portfolio">
                         <h3 class="footer-contacts-h3 mt-5">
                             <div class="v-8-fat"></div>Портфоліо</h3>
                     </a>
-                    <a href="index.html#process">
+                    <a href="#process">
                         <h3 class="footer-contacts-h3">
                             <div class="v-8-fat"></div>Процес</h3>
                     </a>
-                    <a href="index.html#advantages">
+                    <a href="#advantages">
                         <h3 class="footer-contacts-h3">
                             <div class="v-8-fat"></div>Переваги</h3>
                     </a>
@@ -249,30 +249,10 @@
         </div>
     </footer>
 
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div id="modal-container" class="p-5">
-                    <h2 class="section-header">
-                        Залиште ваші контакти
-                    </h2>
-                    <p class="cards-options">
-                        Ми надамо вам безкоштовну консультацію
-                    </p>
-                    <form id="consult-form" method="post" action="consult.php">
-                        <input name="consultName" type="text" placeholder="Ім'я" required>
-                        <input name="consultContact" type="text" placeholder="Телефон або e-mail" required>
-                        <button class="btn btn-custom-outline w-100 mt-4" type="submit" id="consult-send-button">Відправити</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/imask.js"></script>
     <script src="js/script.js"></script>
 </body>
 
