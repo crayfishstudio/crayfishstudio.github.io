@@ -13,13 +13,15 @@ $time=date("H:i"); // часы:минуты:секунды
  
 $name=$_POST['username'];
 $phone=$_POST['userphone'];
+$userRequest=$_POST['request'];
 
 
 // Проверяем валидность e-mail 
  
 
 
-$msg=" 
+$msg="
+Заявка на оптову співпрацю:
 Ім'я: $name
 Телефон: $phone
 "; 

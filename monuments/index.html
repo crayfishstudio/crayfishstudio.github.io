@@ -108,9 +108,9 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="footer-form-modal">
-                                        <input type="text" placeholder="Ім'я">
-                                        <input id="recipient-phone-2" type="text" placeholder="Номер телефону">
+                                    <form class="footer-form-modal" action="post1.php" method="post">
+                                        <input name="username" type="text" placeholder="Ім'я">
+                                        <input name="userphone" id="recipient-phone-2" type="text" placeholder="Номер телефону">
                                         <button type="submit">відправити</button>
                                     </form>
                                 </div>
@@ -924,9 +924,9 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="footer-form-modal">
-                                        <input type="text" placeholder="Ім'я">
-                                        <input id="recipient-phone-3" type="text" placeholder="Номер телефону">
+                                    <form class="footer-form-modal" action="post2.php" method="post">
+                                        <input name="username" type="text" placeholder="Ім'я">
+                                        <input name="userphone" id="recipient-phone-3" type="text" placeholder="Номер телефону">
                                         <button type="submit">відправити</button>
                                     </form>
                                 </div>
@@ -944,7 +944,7 @@
                 <div class="col-md-1 order-md-3"></div>
                 <div class="col-lg-4 order-lg-3 text-lg-left text-center">
                     <h2 class="secondary-title">зв'яжіться з нами</h2>
-                    <form class="footer-form" action="post.php" method="post">
+                    <form class="footer-form" action="post3.php" method="post">
                         <input type="text" placeholder="Ім'я" required name="username">
                         <input id="recipient-phone-1" type="text" placeholder="Номер телефону"  name="userphone" required>
                         <button type="submit">відправити</button>
@@ -974,7 +974,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2571.4547306407107!2d23.9633864!3d49.8714865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ade7839c1d147%3A0x42a0a11eaef42eff!2z0LLRg9C70LjRhtGPINCl0L7Qu9C-0LTQvdCwLCAxMTIsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1564740444876!5m2!1suk!2sua" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen></iframe></div>
         <div class="row no-gutters my-4 justify-content-between px-container">
             <div class="col-md-3 text-md-left text-center pb-md-0 pb-2">
-                <div class="footer-studio-links"><a href="#">STONE MASTERS</a> 2019 © Всі права захищено</div>
+                <div class="footer-studio-links"><a href="https://stonemasters.lviv.ua">STONE MASTERS</a> 2019 © Всі права захищено</div>
             </div>
             <div class="col-md-2 text-md-right text-center pt-md-0 pt-3">
                 <div class="footer-crayfish-links">Розроблено в <a href="https://crayfish.studio" target="_blank">Crayfish Studio</a></div>
@@ -992,7 +992,6 @@
     <script src="js/transition.js"></script>
     <script src="js/zoom.js"></script>
     <script src="https://kit.fontawesome.com/69b66b6d53.js"></script>
-    <script src="js/jQuery.loadScroll.js"></script>
 
     <script>
         var phoneMask = IMask(

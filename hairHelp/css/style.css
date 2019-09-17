@@ -43,10 +43,10 @@
         margin-top: 51px;
         padding-bottom: 210px;
     }
-    
-   .product-card__border {
-    padding: 20px !important;
-}
+
+    .product-card__border {
+        padding: 20px !important;
+    }
 
     .header-shop__social a:nth-child(1) {
         padding-right: 36px !important;
@@ -68,6 +68,7 @@
 }
 
 @media (max-width: 991.98px) {
+
     [type="checkbox"]:not(:checked) + label:after,
     [type="checkbox"]:checked + label:after {
         padding-left: 0.1em !important;
@@ -626,18 +627,23 @@
         left: 0px !important;
         width: 100% !important;
     }
-    .filters-card, .product-card {
-    width: 100% !important;
-    position: relative;
-}
+
+    .filters-card,
+    .product-card {
+        width: 100% !important;
+        position: relative;
+    }
 
 }
 
 @media (min-width: 992px) {
-    .filters-card, .product-card {
-    width: 24% !important;
-    position: relative;
-}
+
+    .filters-card,
+    .product-card {
+        width: 24% !important;
+        position: relative;
+    }
+
     #hamburger {
         display: none;
     }
@@ -694,6 +700,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+input, input:focus {
+    outline: none !important;
 }
 
 a {
@@ -1126,7 +1136,7 @@ input::-webkit-calendar-picker-indicator {
     padding: 0px 40px;
 }
 
-.sect5-card__image {    
+.sect5-card__image {
     background-image: url(.././img/sect5-photo.jpg);
     background-size: cover;
     background-position: center;
@@ -2070,8 +2080,9 @@ input::-webkit-calendar-picker-indicator {
     transition: .4s all;
 }
 
-.header-shop__phone a:hover, .header-shop__links a:hover,
-.header-shop__social a:hover{
+.header-shop__phone a:hover,
+.header-shop__links a:hover,
+.header-shop__social a:hover {
     transform: translateY(-4px);
 }
 
@@ -2998,7 +3009,7 @@ input::-webkit-calendar-picker-indicator {
     position: absolute;
     width: 40px;
     height: 30px;
-    top: 10px;
+    top: 7px;
     right: 10px;
     transition: .3s;
 }
@@ -3195,6 +3206,7 @@ input::-webkit-calendar-picker-indicator {
     background-color: #1f1f1f;
     color: #fff;
 }
+
 .modal-text {
     font-weight: 700 !important;
     font-size: 16px;
@@ -3203,7 +3215,7 @@ input::-webkit-calendar-picker-indicator {
     padding-top: 15px;
 }
 
-.modal-record button{
+.modal-record button {
     font-size: 18px;
     line-height: 20px;
     color: #FFFFFF;
@@ -3215,7 +3227,7 @@ input::-webkit-calendar-picker-indicator {
     outline: none !important;
 }
 
-.modal-record input{
+.modal-record input {
     background-color: #E0C0B4;
     border: none;
     outline: none;
@@ -3224,7 +3236,7 @@ input::-webkit-calendar-picker-indicator {
     width: 100%;
 }
 
-.modal-record input::placeholder{
+.modal-record input::placeholder {
     color: #0b0b0b;
 }
 

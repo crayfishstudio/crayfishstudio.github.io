@@ -801,3 +801,14 @@ li:hover .nav-link {
     color: #262626 !important;
     font-weight: 500;
 }
+
+body::-webkit-scrollbar {
+    width: 13px;
+    background-color: #fff;
+    position: fixed;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #14B358;
+    border-radius: 10px;
+}
