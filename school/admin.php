@@ -20,6 +20,16 @@ if(isset($_GET["logout"])) {
     exit;
 }
 
+$cats = array("Процес навчання",
+"Оцінювання в школі",
+"Законодавча база",
+"Новини з життя школи",
+"Наші ідеї",
+"В що ми віримо",
+"Чому саме школа");
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,13 +54,14 @@ if(isset($_GET["logout"])) {
 <main class="main">
     <section class="admin">
         <a href="./admin.php?logout=true" class="btn btn-light" style="" type="submit" value="">Вихід</a>
-        <a href="#" class="btn btn-light" style="" type="submit" value="Додати">Додати</a>
+        <a href="./create.php" class="btn btn-light" style="" type="submit" value="Додати">Додати</a>
 
         <table class="admin__table table table-striped table-dark">
             <thead>
                 <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
+                <th scope="col">Category</th>
                 <th scope="col">Slug</th>
                 <th scope="col">Date</th>
                 <th scope="col">Options</th>
@@ -58,83 +69,36 @@ if(isset($_GET["logout"])) {
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>First article</td>
-                    <td>somebody</td>
-                    <td>01.01.1991</td>
-                    <td class="admin_flex">
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/link-solid.svg" alt="" srcset="">
-                        </a>
+                  <?php
+                    $sql = "SELECT * FROM posts ORDER BY id desc";
+                    if(!$stmt = $db->query($sql)){
+                      echo $db->errno . "  " . $db->error;
+                    }else {
+                      // code
+                    while($row = $stmt->fetch_assoc()){
+                      echo <<<EOT
+                      <th scope="row">{$row["id"]}</th>
+                      <td>{$row['name']}</td>
+                      <td>{$cats[($row['cat_id']-1)]}</td>
+                      <td>{$row['slug']}</td>
+                      <td>{$row['date']}</td>
+                      <td class="admin_flex">
+                          <a class="admin__link" href="./article.php?id={$row['id']}">
+                              <img src="./img/admin/link-solid.svg" alt="" srcset="">
+                          </a>
 
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/edit-regular.svg" alt="" srcset="">
-                        </a>
+                          <a class="admin__link" href="./edit.php?id={$row['id']}">
+                              <img src="./img/admin/edit-regular.svg" alt="" srcset="">
+                          </a>
 
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/plus-solid.svg" alt="" srcset="">
-                        </a>
-
-
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Second article</td>
-                    <td>just</td>
-                    <td>01.01.1991</td>
-                    <td class="admin_flex">
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/link-solid.svg" alt="" srcset="">
-                        </a>
-
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/edit-regular.svg" alt="" srcset="">
-                        </a>
-
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/plus-solid.svg" alt="" srcset="">
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Third article</td>
-                    <td>told</td>
-                    <td>01.01.1991</td>
-                    <td class="admin_flex">
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/link-solid.svg" alt="" srcset="">
-                        </a>
-
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/edit-regular.svg" alt="" srcset="">
-                        </a>
-
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/plus-solid.svg" alt="" srcset="">
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Fourth article</td>
-                    <td>me</td>
-                    <td>01.01.1991</td>
-                    <td class="admin_flex">
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/link-solid.svg" alt="" srcset="">
-                        </a>
-
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/edit-regular.svg" alt="" srcset="">
-                        </a>
-
-                        <a class="admin__link" href="#">
-                            <img src="./img/admin/plus-solid.svg" alt="" srcset="">
-                        </a>
-                    </td>
-                </tr>
+                          <a class="admin__link" href="./delete.php={$row['id']}">
+                              <img src="./img/admin/plus-solid.svg" alt="" srcset="">
+                          </a>
+                      </td>
+                      EOT;
+                    }
+                  }
+                   ?>
             </tbody>
         </table>
     </section>

@@ -34,9 +34,9 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
                 <img class="login__img" src="./img/school-logo.svg" alt="" srcset="">
             </div>
             <form class="login__form" action="auth.php" method="post">
-                <input class="login__name g-input" type="text" name="username" placeholder="Логін">
+                <input class="login__name g-input" name="username" type="text" placeholder="Логін">
                 <input class="login__password g-input" type="password" name="password" id="" placeholder="Пароль">
-                <input class="login__submit g-input g-submit" type="submit" name="login_user" value="ВХІД">
+                <input class="login__submit g-input g-submit" name="login_user" type="submit" value="Вхід">
             </form>
 
         </div>

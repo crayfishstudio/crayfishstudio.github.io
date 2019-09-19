@@ -2,21 +2,21 @@
 session_start();
 require_once("config.php");
 // Check if the user is logged in, if not then redirect him to login page
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: login.php");
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: adminlog.php");
     exit;
 }
-if (isset($_GET["logout"])) {
+if(isset($_GET["logout"])) {
 
 
 // Unset all of the session variables
     $_SESSION = array();
 
-    // Destroy the session.
+// Destroy the session.
     session_destroy();
 
-    // Redirect to login page
-    header("location: login.php");
+// Redirect to login page
+    header("location: adminlog.php");
     exit;
 }
 
@@ -33,11 +33,16 @@ if (isset($_GET["logout"])) {
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+
+<!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.6/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.6/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="./css/global.css">
 
     <link rel="stylesheet" href="./css/create.css">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jodit/3.1.39/jodit.min.css">
 </head>
 
 <body>
@@ -46,28 +51,33 @@ if (isset($_GET["logout"])) {
 <main class="main">
 
     <section class="create">
-        <form class="create__form" action="">
+        <form class="create__form" action="post.php" method="post">
             <div class="create__block">
-                <select class="create__select form-control">
-                    <option>Категорія 1</option>
-                    <option>Категорія 2</option>
-                    <option>Категорія 3</option>
-                    <option>Категорія 4</option>
-                    <option>Категорія 5</option>
+                <select class="create__select form-control" name="categories">
+                  <?php
+                    $sql = "SELECT * FROM categories";
+                    $optar = $db->query($sql);
+                    while($row = $optar->fetch_assoc()){
+                      echo "<option value = ".$row['id'].">".$row["name"]."</option>";
+                    }
+                  ?>
                 </select>
 
-                <input class="create__name" type="text" placeholder="name">
+                <input class="create__name" type="text" name="name" placeholder="name">
 
-                <input class="create__slug" type="text" placeholder="slug">
+                <input class="create__slug" type="text" name="slug" placeholder="slug">
             </div>
 
-            <textarea name="content" id="editor">
+            <div>
+                <textarea class="create__textarea" name="textarea" id="" placeholder="text"></textarea>
+            </div>
 
-            </textarea>
+            <div >
+                <input type="checkbox" name="main"> Встановити як основний <br>
+            </div>
 
             <div class="create__btn">
-                <input class="g-submit" type="submit" value="Добавити">
-                <input class="g-submit" type="submit" value="Редагувати">
+                <input class="g-submit" type="submit" name="add" value="Додати">
             </div>
         </form>
 
@@ -75,17 +85,44 @@ if (isset($_GET["logout"])) {
 </main>
 
 </body>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jodit/3.1.39/jodit.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
 
+<!-- Include Editor JS files. -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.6/js/froala_editor.pkgd.min.js"></script>
+
+<!-- Initialize the editor. -->
 <script>
-var editor = new Jodit("#editor", {
-  filebrowser: {
-        ajax: {
-            url: 'connector/index.php'
-        }
-    },
-  "defaultMode": "1"
-});
+  $(function() {
+    $('textarea').froalaEditor({
+      // Set the image upload URL.
+      imageUploadURL: 'image_upload.php',
+      imageUploadParams: {
+        path: 'uploads/'
+      },
+      imageManagerLoadURL: 'image_load.php',
+      imageManagerLoadParams: {
+        path: 'uploads/'
+      },
+      imageManagerLoadMethod: 'POST',
+      imageManagerDeleteURL: 'image_delete.php',
+    })
+  });
 </script>
 
+<?php
+
+// Include the editor SDK.
+require 'froala-php/lib/FroalaEditor.php';
+
+// Store the image.
+try {
+    $response = FroalaEditor_Image::upload('/uploads/');
+    echo stripslashes(json_encode($response));
+} catch (Exception $e) {
+    http_response_code(404);
+}
+
+?>
 </html>

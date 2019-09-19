@@ -14,13 +14,14 @@ if(isset($_GET["logout"])){
     exit;
 
 }
-session_start();
+
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: admin.php");
-
     exit;
 }
+
+
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
@@ -72,29 +73,25 @@ if(isset($_POST["login_user"])){
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
-                            echo "LUL";
+
                             // Redirect user to welcome page
                             header("location: admin.php");
                         } else{
                             // Display an error message if password is not valid
-                            $password_err = "The password you entered was not valid";
-                            echo $password_err;
+                            $password_err = "The password you entered was not valid.";
                         }
                     }
                 } else{
                     // Display an error message if username doesn't exist
                     $username_err = "No account found with that username.";
-                    echo $username_err;
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
         }
-
         // Close statement
         mysqli_stmt_close($stmt);
     }
-
 
     // Close connection
     mysqli_close($db);

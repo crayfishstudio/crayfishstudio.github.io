@@ -1,3 +1,19 @@
+<?php
+session_start();
+require_once("config.php");
+if(isset($_GET['cat'])){
+  $sql="SELECT * FROM posts WHERE cat_id=".$_GET['cat'];
+}else {
+  $sql="SELECT * FROM posts";
+}
+$main = "SELECT * FROM posts WHERE main_post=1";
+if(!$main=$db->query($main)){
+
+}
+
+$sql = $db->query($sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +36,8 @@
             <div class="sub col-md-3">
                 <h5 class="sub__title">Отримайте підписку на актуальні статті</h5>
 
-                <form class="sub__msg" action="#" method="POST">
-                    <input class="sub__email g-input" type="email" name="" id="" placeholder="Е-mail" required>
+                <form class="sub__msg" action="mail.php" method="POST">
+                    <input class="sub__email g-input" type="email" name="email" placeholder="Е-mail" required>
 
                     <input class="sub__submit g-input g-submit" type="submit" value="Підписатись">
                 </form>
@@ -29,35 +45,21 @@
                 <h5 class="sub__subtitle">РУБРИКИ</h5>
 
                 <ul class="sub-list">
+                <?php
+                  $sql = "SELECT * FROM categories";
+                  $optar = $db->query($sql);
+                  while($row = $optar->fetch_assoc()){
+                    echo <<<EOT
                     <li class="sub-list__item">
-                        <a class="sub-list__link" href="">Процесс навчання</a>
+                        <a class="sub-list__link" href="blog.php?cat={$row['id']}">{$row['name']}</a>
                     </li>
+                    EOT;
+                  }
+                ?>
 
-                    <li class="sub-list__item">
-                        <a class="sub-list__link" href="">Оцінювання в школі</a>
-                    </li>
-
-                    <li class="sub-list__item">
-                        <a class="sub-list__link" href="">законодавча база</a>
-                    </li>
-
-                    <li class="sub-list__item">
-                        <a class="sub-list__link" href="">новини з життя школи</a>
-                    </li>
-                    <li class="sub-list__item">
-                        <a class="sub-list__link" href="">наші ідеї</a>
-                    </li>
-
-                    <li class="sub-list__item">
-                        <a class="sub-list__link" href="">У що ми віримо</a>
-                    </li>
-
-                    <li class="sub-list__item">
-                        <a class="sub-list__link" href="">Чому саме школа</a>
-                    </li>
 
                     <li class="sub-list__item sub-list__item_blue">
-                        <a class="sub-list__link sub-list__link_blue" href="">ВСІ СТАТТІ
+                        <a class="sub-list__link sub-list__link_blue" href="blog.php">ВСІ СТАТТІ
                         <img class="sub-list__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></a>
                     </li>
                 </ul>
@@ -70,38 +72,38 @@
                         <h3 class="blog-header__title">Сценарії життя</h4>
                     </a>
                 </div>
-                
+
                 <div class="blog__wrapper">
                     <div class="blog-item ">
                         <div class="blog-item__intro">
                             <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                         </div>
-                        
-    
+
+
                         <h4 class="blog-item__title">Оцінювання в школі</h4>
                         <a class="blog-item__link" href="#">Читати статтю
                             <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
                         </a>
                     </div>
-    
+
                     <div class="blog-item ">
                             <div class="blog-item__intro">
                                 <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                             </div>
-                            
-        
+
+
                             <h4 class="blog-item__title">Оцінювання в школі</h4>
                             <a class="blog-item__link" href="#">Читати статтю
                                 <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
                             </a>
                     </div>
-    
+
                     <div class="blog-item ">
                                 <div class="blog-item__intro">
                                     <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                                 </div>
-                                
-            
+
+
                                 <h4 class="blog-item__title">Оцінювання в школі</h4>
                                 <a class="blog-item__link" href="#">Читати статтю
                                     <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
@@ -112,8 +114,8 @@
                         <div class="blog-item__intro">
                             <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                         </div>
-                        
-    
+
+
                         <h4 class="blog-item__title">Оцінювання в школі</h4>
                         <a class="blog-item__link" href="#">Читати статтю
                             <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
@@ -124,8 +126,8 @@
                         <div class="blog-item__intro">
                             <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                         </div>
-                        
-    
+
+
                         <h4 class="blog-item__title">Оцінювання в школі</h4>
                         <a class="blog-item__link" href="#">Читати статтю
                             <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
@@ -136,8 +138,8 @@
                         <div class="blog-item__intro">
                             <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                         </div>
-                        
-    
+
+
                         <h4 class="blog-item__title">Оцінювання в школі</h4>
                         <a class="blog-item__link" href="#">Читати статтю
                             <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
@@ -148,8 +150,8 @@
                         <div class="blog-item__intro">
                             <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                         </div>
-                        
-    
+
+
                         <h4 class="blog-item__title">Оцінювання в школі</h4>
                         <a class="blog-item__link" href="#">Читати статтю
                             <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
@@ -160,8 +162,8 @@
                         <div class="blog-item__intro">
                             <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                         </div>
-                        
-    
+
+
                         <h4 class="blog-item__title">Оцінювання в школі</h4>
                         <a class="blog-item__link" href="#">Читати статтю
                             <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
@@ -172,8 +174,8 @@
                         <div class="blog-item__intro">
                             <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
                         </div>
-                        
-    
+
+
                         <h4 class="blog-item__title">Оцінювання в школі</h4>
                         <a class="blog-item__link" href="#">Читати статтю
                             <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">

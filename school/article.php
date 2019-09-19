@@ -1,3 +1,15 @@
+<?php
+require_once('config.php');
+$sql = "SELECT * FROM posts WHERE id=".$_GET['id'];
+$stmt = $db->query($sql);
+$stmt = $stmt->fetch_assoc();
+$sql = "SELECT * FROM categories WHERE id=".$stmt['cat_id'];
+$cats = $db->query($sql);
+$cats = $cats->fetch_assoc();
+$id = (int)$_GET['id'];
+$next = $id+1;
+$prev = $id -1;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,41 +29,24 @@
 
     <main class="main wrapper">
         <section class="article">
-            <h5 class="article__subtitle">Процес навчання</h5>
-            
+            <h5 class="article__subtitle"><?php echo $cats['name'];?></h5>
+
             <div class="article__content col-lg-9">
-                <h2 class="article__title">Сценарії життя</h2>
+                <h2 class="article__title"><?php echo $stmt['name'];?></h2>
 
-                <p class="article__text article__text_lg">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.</p>
-
-                <p class="article__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.</p>
-
-                <img class="article__img" src="./img/blog/header-img.png" alt="" srcset="">
-
-                <p class="article__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.</p>
-
-                <p class="article__text"><i>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.</i></p>
-
-                <img class="article__img" src="./img/blog/header-img.png" alt="" srcset="">
-
-                <p class="article__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.</p>
-
-                <p class="article__text"><i>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.</i></p>
-
-                <img class="article__img" src="./img/blog/header-img.png" alt="" srcset="">
-
-                <p class="article__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.</p>
-
-                <p class="article__text"><i>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.</i></p>
+                <?php echo $stmt['text'];?>
 
                 <div class="article_flex">
-                    <a class="article__link" href="#">Наступна стаття</a>
+                  <?php
+                  if($id<2){
+                    echo '<a class="article__link" href="article.php?id=' . $next . '">Наступна стаття</a>';
+                  }else{
+                    echo '<a class="article__link" href="article.php?id=' . $next . '">Наступна стаття</a>';
 
-                    <a class="article__link" href="#">Попередня стаття</a>
-
-                    <a class="article__link" href="#">Блог</a>
-
-                    <a class="article__link" href="#">Поділитися <img src="./img/share-icon.svg" alt="" srcset=""></a>
+                    echo '<a class="article__link" href="article.php?id=' . $prev . '">Попередня стаття</a>';
+                  }
+                  ?>
+                    <a class="article__link" href="blog.php">Блог</a
                 </div>
 
             </div>
