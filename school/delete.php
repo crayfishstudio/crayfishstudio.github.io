@@ -21,5 +21,7 @@ if(isset($_GET["logout"])) {
 }
 $id = $_GET['id'];
 $sql = "DELETE FROM posts WHERE id = $id";
-header("Location : admin.php")
+$db->query($sql);
+header("Location: admin.php");
+exit;
 ?>

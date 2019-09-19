@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once("config.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,12 +233,6 @@
                     </div>
                 </div>
 
-                <h5 class="calc-main__deposit">ЩОМІСЯЧНИЙ ПЛАТІЖ <span  class="calc-main__deposit_blue" id="school-year-output-1">&#8372;0</span></h5>
-
-                <h5 class="calc-main__deposit">ВСТУПНИЙ РАЗОВИЙ ВНЕСОК <span  class="calc-main__deposit_blue" id="school-year-output-2">&#8372;0</span></h5>
-
-                <h5 class="calc-main__deposit">РАЗОВИЙ ЩОРІЧНИЙ ВНЕСОК <span  class="calc-main__deposit_blue" id="school-year-output-3">&#8372;0</span></h5>
-
                 <div class="calc-main__wrapper">
 
                     <h5 class="calc-main__subtitle">Харчування:</h5>
@@ -297,6 +295,36 @@
                         </div>
                     </div>
                 </div>
+
+                <h5 class="calc-main__deposit">ЩОМІСЯЧНИЙ ПЛАТІЖ
+                    <img id="tooltip-1" class="calc-main__tooltip" src="./img/calc-tooltip.svg">
+                    <div class="g-borders" id="tooltip-1-text">
+                        <div class="g-borders__content">
+                            <h2 class="g-borders__title">Вноситься тільки один раз, при вступі дитини в школу.</h2>
+                        </div>
+                    </div>
+                    <span  class="calc-main__deposit_blue" id="school-year-output-1">&#8372;0</span>
+                </h5>
+
+                <h5 class="calc-main__deposit">ВСТУПНИЙ РАЗОВИЙ ВНЕСОК
+                    <img id="tooltip-2" class="calc-main__tooltip calc-main__tooltip_right" src="./img/calc-tooltip.svg">
+                    <div class="g-borders" id="tooltip-2-text">
+                        <div class="g-borders__content">
+                            <h2 class="g-borders__title">Вноситься тільки один раз, при вступі дитини в школу.</h2>
+                        </div>
+                    </div>
+                    <span  class="calc-main__deposit_blue" id="school-year-output-2">&#8372;0</span>
+                </h5>
+
+                <h5 class="calc-main__deposit">РАЗОВИЙ ЩОРІЧНИЙ ВНЕСОК
+                    <img id="tooltip-3" class="calc-main__tooltip calc-main__tooltip_righter" src="./img/calc-tooltip.svg">
+                    <div class="g-borders" id="tooltip-3-text">
+                        <div class="g-borders__content">
+                            <h2 class="g-borders__title">Вноситься тільки один раз, при вступі дитини в школу.</h2>
+                        </div>
+                    </div>
+                    <span  class="calc-main__deposit_blue" id="school-year-output-3">&#8372;0</span>
+                </h5>
             </div>
 
 
@@ -633,11 +661,12 @@
 
             <div class="home__block home-circle" data-tilt data-tilt-full-page-listening data-tilt-reverse="true">
                 <div class="home-circle__block home-circle__block-first">
-                    <img class="home-circle__img" src="./img/home-circle-1.svg" alt="" srcset="">
+                    <img class="home-circle__boy" src="./img/home-boy.png" alt="" srcset="">
+                    <img class="home-circle__img home-circle__img_mobile" src="./img/home-circle-1.svg" alt="" srcset="">
                 </div>
 
                 <div class="home-circle__block home-circle__block_centered home-circle__block-second">
-                    <img class="home-circle__img" src="./img/home-circle-2.svg" alt="" srcset="">
+                    <img class="home-circle__img home-circle__img_rotation" src="./img/home-circle-2.svg" alt="" srcset="">
                 </div>
 
                 <div class="home-circle__block home-circle__block-third">
@@ -712,6 +741,214 @@
                                     <li class="tab-content__item">- Почекун: Я-, а Ти-</li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="home__title">Дитина очима школи &#8220;Галілео&#8221;</h1>
+
+            <h2 class="home__subtitle">Ми навчаємо не наосліп</h2>
+
+            <a class="g-arrow__link" href="#purpose">
+                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
+            </a>
+        </section>
+
+        <section class="home home_mobile" id="home">
+
+            <div class="home__block home-circle">
+                <div class="home-circle__block home-circle__block-first">
+                    <img class="home-circle__boy" src="./img/home-boy.png" alt="" srcset="">
+                    <img class="home-circle__img home-circle__img_mobile" src="./img/home-circle-1.svg" alt="" srcset="">
+                </div>
+
+                <div class="home-circle__block home-circle__block_centered home-circle__block-second" id="circleBlock">
+                    <img class="home-circle__img home-circle__img_rotation" src="./img/home-circle-m-2.svg" alt="" srcset="">
+                </div>
+
+                <div class="home-circle__block home-circle__block-third">
+                    <img class="home-circle__img" src="./img/home-circle-3.svg" alt="" srcset="">
+                </div>
+            </div>
+
+            <div class="home__block_flex home-slider col-md-12">
+                <div class="tab">
+                    <div class="tab-btn">
+                        <div class="tab-btn__item tab-btn__item_dark"></div>
+                        <div class="tab-btn__item tab-btn__item_light"></div>
+                        <div class="tab-btn__item tab-btn__item_long"></div>
+                        <div class="tab-btn__item tab-btn__item--skew"></div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-content_border">
+                            <h2 class="tab-content__title">Навички</h2>
+                            <h3 class="tab-content__subtitle">Високі когнітивні</h3>
+                            <ul class="tab-content__list">
+                                <li class="tab-content__item">- Розвинута грамотність та письмо</li>
+                                <li class="tab-content__item">- Обчислення та статистична розробка</li>
+                                <li class="tab-content__item">- Критичне мислення</li>
+                                <li class="tab-content__item">- Керування проектами</li>
+                                <li class="tab-content__item">- Креативність</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <div class="tab-btn">
+                        <div class="tab-btn__item tab-btn__item_dark"></div>
+                        <div class="tab-btn__item tab-btn__item_light"></div>
+                        <div class="tab-btn__item tab-btn__item_long"></div>
+                        <div class="tab-btn__item tab-btn__item--skew"></div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-content_border">
+                            <h2 class="tab-content__title">Навички</h2>
+                            <h3 class="tab-content__subtitle">Когнітивні</h3>
+                            <ul class="tab-content__list">
+                                <li class="tab-content__item">- Спілкування</li>
+                                <li class="tab-content__item">- Базова грамотність</li>
+                                <li class="tab-content__item">- Обробка інформації</li>
+                                <li class="tab-content__item">- Введення інформації</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                        <div class="tab-btn">
+                            <div class="tab-btn__item tab-btn__item_dark"></div>
+                            <div class="tab-btn__item tab-btn__item_light"></div>
+                            <div class="tab-btn__item tab-btn__item_long"></div>
+                            <div class="tab-btn__item tab-btn__item--skew"></div>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-content_border">
+                                <h2 class="tab-content__title">Навички</h2>
+                                <h3 class="tab-content__subtitle">Цифрові та технологічні</h3>
+                                <ul class="tab-content__list">
+                                    <li class="tab-content__item">- Базові комп’ютерні навички</li>
+                                    <li class="tab-content__item">- Програмування та ІТ-навички</li>
+                                    <li class="tab-content__item">- Наукові дослідження та розробки</li>
+                                    <li class="tab-content__item">- Розширений аналіз даних та математичні навички</li>
+                                    <li class="tab-content__item">- Проектування, інжирінг та технологічні обслуговування</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="tab">
+                    <div class="tab-btn">
+                        <div class="tab-btn__item tab-btn__item_dark"></div>
+                        <div class="tab-btn__item tab-btn__item_light"></div>
+                        <div class="tab-btn__item tab-btn__item_long"></div>
+                        <div class="tab-btn__item tab-btn__item--skew"></div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-content_border">
+                            <h2 class="tab-content__title">Навички</h2>
+                            <h3 class="tab-content__subtitle">Соціально-економічні</h3>
+                            <ul class="tab-content__list">
+                                <li class="tab-content__item">- Емпатія та міжособистісна комунікація</li>
+                                <li class="tab-content__item">- Адаптивність та безперервне навчання</li>
+                                <li class="tab-content__item">- Лідерство та управління іншими</li>
+                                <li class="tab-content__item">- Ініціативність та винахідливість</li>
+                                <li class="tab-content__item">- Викладання та навчання інших</li>
+                                <li class="tab-content__item">- Спілкування та переговори</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <div class="tab-btn">
+                        <div class="tab-btn__item tab-btn__item_dark"></div>
+                        <div class="tab-btn__item tab-btn__item_light"></div>
+                        <div class="tab-btn__item tab-btn__item_long"></div>
+                        <div class="tab-btn__item tab-btn__item--skew"></div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-content_border">
+                            <h2 class="tab-content__title">Навички</h2>
+                            <h3 class="tab-content__subtitle">Фізичні</h3>
+                            <ul class="tab-content__list">
+                                <li class="tab-content__item">- Навігація</li>
+                                <li class="tab-content__item">- Фізична сила</li>
+                                <li class="tab-content__item">- Операція з обладнанням</li>
+                                <li class="tab-content__item">- Спостереження та увага</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab tab_left">
+                    <div class="tab-btn">
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item--skew tab-btn-w__item"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_long tab-btn-w__item"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_light tab-btn-w__item tab-btn-w__item_light"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_dark tab-btn-w__item tab-btn-w__item_dark"></div>
+                    </div>
+
+                    <div class="tab-content tab-content_left tab-content-w">
+                        <div class="tab-content_border tab-content_borderLeft tab-content_border-w">
+                            <h2 class="tab-content__title">Життєвий сценарій</h2>
+                            <ul class="tab-content__list">
+                                <li class="tab-content__item">- Переможець: Я+ та й Ти+</li>
+                                <li class="tab-content__item">- НеПереможець: Я+, а Ти-</li>
+                                <li class="tab-content__item">- Втікач: Я-, а Ти+</li>
+                                <li class="tab-content__item">- Почекун: Я-, а Ти-</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab tab_left">
+                    <div class="tab-btn">
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item--skew tab-btn-p__item"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_long tab-btn-p__item"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_light tab-btn-p__item tab-btn-p__item_light"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_dark tab-btn-p__item tab-btn-p__item_dark"></div>
+                    </div>
+
+                    <div class="tab-content tab-content_left tab-content-p">
+                        <div class="tab-content_border tab-content_borderLeft tab-content_border-p">
+                            <h2 class="tab-content__title">Творчість</h2>
+                            <ul class="tab-content__list">
+                                <li class="tab-content__item">- Оперує сенсами</li>
+                                <li class="tab-content__item">- Оперує іноваціями</li>
+                                <li class="tab-content__item">- Оперує парадоксами</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab tab_left">
+                    <div class="tab-btn">
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item--skew tab-btn-y__item"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_long tab-btn-y__item"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_light tab-btn-y__item tab-btn-y__item_light"></div>
+                        <div class="tab-btn__item tab-btn__item_left tab-btn__item_dark tab-btn-y__item tab-btn-y__item_dark"></div>
+                    </div>
+
+                    <div class="tab-content tab-content_left tab-content-y">
+                        <div class="tab-content_border tab-content_borderLeft tab-content_border-y">
+                            <h2 class="tab-content__title">Мислення</h2>
+                            <ul class="tab-content__list">
+                                <li class="tab-content__item">- Оперує зв’язками</li>
+                                <li class="tab-content__item">- Оперує ролями</li>
+                                <li class="tab-content__item">- Оперує способами</li>
+                                <li class="tab-content__item">- Впорядковує</li>
+                                <li class="tab-content__item">- Розрізняє</li>
+                                <li class="tab-content__item">- Ідентифікує</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -1072,81 +1309,58 @@
             </div>
 
             <div class="devs__wrapper">
-                <div class="devs__item">
-                    <div class="g-tab devs-cyan">
-                        <div class="g-tab-btn">
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                        </div>
+              <?php
+              $sql = "SELECT * FROM posts ORDER BY id desc";
+              $res = $db->query($sql);
+              while($row=$res->fetch_assoc()){
+                $sql = "SELECT * FROM categories WHERE id=".$row['cat_id'];
+                $cat = $db->query($sql);
+                $cat=$cat->fetch_assoc();
+                $string = $row['text'];
+                $string = strip_tags($string);
+                if (strlen($string) > 140) {
 
-                        <div class="g-tab-content">
-                            <a class="g-tab-content__link" href="#">
-                            <div class="g-tab-content_border">
-                                <img class="g-tab-content__preview" src="./img/devs/devs-img-1.png" alt="" srcset="">
+                    // truncate string
+                    $stringCut = substr($string, 0, 140);
+                    $endPoint = strrpos($stringCut, ' ');
 
-                                <h2 class="g-tab-content__title">Оцінювання в школі</h2>
-                                <h3 class="g-tab-content__subtitle">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print.....</h3>
-                                <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
+                    //if the string doesn't contain any space then it will cut without word basis.
+                    $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                    $string .= '...';
+                  }
+                    echo <<<EOT
+                    "<div class="devs__item">
+                        <div class="g-tab devs-cyan">
+                            <div class="g-tab-btn">
+                                <div class="g-tab-btn__item"></div>
+                                <div class="g-tab-btn__item"></div>
+                                <div class="g-tab-btn__item"></div>
+                                <div class="g-tab-btn__item"></div>
                             </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="devs__item">
-                    <div class="g-tab devs-cyan">
-                        <div class="g-tab-btn">
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                        </div>
+                            <div class="g-tab-content">
+                                <a class="g-tab-content__link" href="article.php?id={$row['id']}">
+                                <div class="g-tab-content_border">
+                                    <img class="g-tab-content__preview" src="./uploads/{$row['path']}" alt="" srcset="">
 
-                        <div class="g-tab-content">
-                            <a class="g-tab-content__link" href="#">
-                            <div class="g-tab-content_border">
-                                <img class="g-tab-content__preview" src="./img/devs/devs-img-1.png" alt="" srcset="">
-
-                                <h2 class="g-tab-content__title">Оцінювання в школі</h2>
-                                <h3 class="g-tab-content__subtitle">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print.....</h3>
-                                <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
+                                    <h2 class="g-tab-content__title">{$cat['name']}</h2>
+                                    <h3 class="g-tab-content__subtitle">{$string}</h3>
+                                    <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
+                                </div>
+                                </a>
                             </div>
-                            </a>
                         </div>
-                    </div>
-                </div>
-
-                <div class="devs__item">
-                    <div class="g-tab devs-cyan">
-                        <div class="g-tab-btn">
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                            <div class="g-tab-btn__item"></div>
-                        </div>
-
-                        <div class="g-tab-content">
-                            <a class="g-tab-content__link" href="#">
-                            <div class="g-tab-content_border">
-                                <img class="g-tab-content__preview" src="./img/devs/devs-img-1.png" alt="" srcset="">
-
-                                <h2 class="g-tab-content__title">Оцінювання в школі</h2>
-                                <h3 class="g-tab-content__subtitle">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print.....</h3>
-                                <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                      </div>"
+                    EOT;
+              }
+               ?>
             </div>
 
             <div class="devs__next col-md-1">
                 <img class="devs__img" src="./img/team/team-m-next-icon.svg" alt="" srcset="">
             </div>
 
-            <a class="g-input g-submit" href="#">УСІ СТАТТІ</a>
+            <a class="g-input g-submit" href="./blog.php">УСІ СТАТТІ</a>
 
             <a class="g-arrow__link" href="#contact">
                 <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
@@ -1157,7 +1371,7 @@
             <div class="contact__wrapper">
                 <div class="contact-map">
                     <div class="contact-map__block">
-                        <img class="contact-map__img" src="./img/contact-map.png" alt="">
+                        <div id="map"></div>
                     </div>
 
                     <svg class="contact-svg" viewBox='0 0 100 100'>
@@ -1410,6 +1624,7 @@
             </div>
 
         </section>
+
     </main>
 
     <footer class="footer">
@@ -1464,6 +1679,23 @@
 
     <script>
         $(document).ready(function(){
+
+            $('.home-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                loop: false,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+            });
 
             $('.team-slider').slick({
                 loop: true,
@@ -1587,6 +1819,25 @@
 
             $('#calc-to-contact').on('click', function() {
                 document.location.hash = "#contact";
+                $('.calc').removeClass('active');
+            });
+
+            $('#tooltip-1').hover(function() {
+                $('#tooltip-1-text').fadeIn(500);
+            }, function() {
+                $('#tooltip-1-text').fadeOut(500);;
+            });
+
+            $('#tooltip-2').hover(function() {
+                $('#tooltip-2-text').fadeIn(500);
+            }, function() {
+                $('#tooltip-2-text').fadeOut(500);;
+            });
+
+            $('#tooltip-3').hover(function() {
+                $('#tooltip-3-text').fadeIn(500);
+            }, function() {
+                $('#tooltip-3-text').fadeOut(500);;
             });
         });
     </script>
@@ -1603,5 +1854,11 @@
     </script>
 
     <script src="./js/zenscroll-min.js"></script>
+
+    <script src="./js/map.js"></script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCaoITp8CCWSs37dP92vc4dZUBP60A-JM&callback=initMap">
+    </script>
 </body>
 </html>

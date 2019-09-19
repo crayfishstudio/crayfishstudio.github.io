@@ -51,7 +51,7 @@ if(isset($_GET["logout"])) {
 <main class="main">
 
     <section class="create">
-        <form class="create__form" action="post.php" method="post">
+        <form class="create__form" action="post.php" method="post" enctype="multipart/form-data">
             <div class="create__block">
                 <select class="create__select form-control" name="categories">
                   <?php
@@ -71,9 +71,12 @@ if(isset($_GET["logout"])) {
             <div>
                 <textarea class="create__textarea" name="textarea" id="" placeholder="text"></textarea>
             </div>
-
             <div >
-                <input type="checkbox" name="main"> Встановити як основний <br>
+                <label for="#imgfile">Додати прев'ю</label>
+                <input type="file" id="imgfile" name="imgfile" >
+            </div>
+            <div >
+                <input type="checkbox" value="1" name="main"> Встановити як основний <br>
             </div>
 
             <div class="create__btn">

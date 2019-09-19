@@ -68,7 +68,6 @@ $cats = array("Процес навчання",
                 </tr>
             </thead>
             <tbody>
-                <tr>
                   <?php
                     $sql = "SELECT * FROM posts ORDER BY id desc";
                     if(!$stmt = $db->query($sql)){
@@ -77,6 +76,7 @@ $cats = array("Процес навчання",
                       // code
                     while($row = $stmt->fetch_assoc()){
                       echo <<<EOT
+                      <tr>
                       <th scope="row">{$row["id"]}</th>
                       <td>{$row['name']}</td>
                       <td>{$cats[($row['cat_id']-1)]}</td>
@@ -91,10 +91,11 @@ $cats = array("Процес навчання",
                               <img src="./img/admin/edit-regular.svg" alt="" srcset="">
                           </a>
 
-                          <a class="admin__link" href="./delete.php={$row['id']}">
+                          <a class="admin__link" href="./delete.php?id={$row['id']}">
                               <img src="./img/admin/plus-solid.svg" alt="" srcset="">
                           </a>
                       </td>
+                      </tr>
                       EOT;
                     }
                   }

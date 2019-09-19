@@ -2,9 +2,9 @@
 session_start();
 require_once("config.php");
 if(isset($_GET['cat'])){
-  $sql="SELECT * FROM posts WHERE cat_id=".$_GET['cat'];
+  $sql1="SELECT * FROM posts WHERE cat_id=".$_GET['cat']." ORDER BY date Desc";
 }else {
-  $sql="SELECT * FROM posts";
+  $sql1="SELECT * FROM posts ORDER BY date desc";
 }
 $main = "SELECT * FROM posts WHERE main_post=1";
 if(!$main=$db->query($main)){
@@ -66,121 +66,48 @@ $sql = $db->query($sql);
             </div>
 
             <div class="blog col-md-9">
-                <div class="blog-header">
-                    <a class="blog-header__link" href="#">
-                        <h5 class="blog-header__subtitle col-md-4">ПРОЦЕС НАВЧАННЯ</h5>
-                        <h3 class="blog-header__title">Сценарії життя</h4>
+              <?php
+              $sql = "SELECT * FROM posts WHERE main_post=1";
+              if(!$res = $db->query($sql)){
+                $sql = "SELECT * FROM posts ORDER BY id desc LIMIT 1";
+                $res - $db->query($sql);
+              }
+              $row = $res->fetch_assoc();
+              $sql = "SELECT * FROM categories WHERE id=".$row['cat_id'];
+              $cat_row = $db->query($sql);
+              $cat_row =$cat_row->fetch_assoc();
+              echo <<<EOT
+                <div class="blog-header" style="background-image: url(./uploads/{$row['path']});">
+                    <a class="blog-header__link" href="./article.php?id={$row['id']}">
+                        <h5 class="blog-header__subtitle col-md-4">{$cat_row['name']}</h5>
+                      <h3 class="blog-header__title">{$row['name']}</h4>
                     </a>
                 </div>
-
+                EOT;
+                ?>
                 <div class="blog__wrapper">
-                    <div class="blog-item ">
-                        <div class="blog-item__intro">
-                            <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                        </div>
+
+                    <?php
+                    $res = $db->query($sql1);
+                    while($row=$res->fetch_assoc()){
+                      // code...
+                      echo <<<EOT
+                      <div class="blog-item ">
+
+                          <div class="blog-item__intro">
+                              <img class="blog-item__img" src="./uploads/{$row['path']}" alt="" srcset="">
+                          </div>
 
 
-                        <h4 class="blog-item__title">Оцінювання в школі</h4>
-                        <a class="blog-item__link" href="#">Читати статтю
-                            <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                        </a>
-                    </div>
+                          <h4 class="blog-item__title">{$row['name']}</h4>
+                          <a class="blog-item__link" href="./blog.php?id={$row['id']}">Читати статтю
+                              <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
+                          </a>
+                      </div>
+                      EOT;
+                    }
 
-                    <div class="blog-item ">
-                            <div class="blog-item__intro">
-                                <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                            </div>
-
-
-                            <h4 class="blog-item__title">Оцінювання в школі</h4>
-                            <a class="blog-item__link" href="#">Читати статтю
-                                <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                            </a>
-                    </div>
-
-                    <div class="blog-item ">
-                                <div class="blog-item__intro">
-                                    <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                                </div>
-
-
-                                <h4 class="blog-item__title">Оцінювання в школі</h4>
-                                <a class="blog-item__link" href="#">Читати статтю
-                                    <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                                </a>
-                    </div>
-
-                    <div class="blog-item ">
-                        <div class="blog-item__intro">
-                            <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                        </div>
-
-
-                        <h4 class="blog-item__title">Оцінювання в школі</h4>
-                        <a class="blog-item__link" href="#">Читати статтю
-                            <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                        </a>
-                    </div>
-
-                    <div class="blog-item ">
-                        <div class="blog-item__intro">
-                            <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                        </div>
-
-
-                        <h4 class="blog-item__title">Оцінювання в школі</h4>
-                        <a class="blog-item__link" href="#">Читати статтю
-                            <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                        </a>
-                    </div>
-
-                    <div class="blog-item ">
-                        <div class="blog-item__intro">
-                            <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                        </div>
-
-
-                        <h4 class="blog-item__title">Оцінювання в школі</h4>
-                        <a class="blog-item__link" href="#">Читати статтю
-                            <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                        </a>
-                    </div>
-
-                    <div class="blog-item ">
-                        <div class="blog-item__intro">
-                            <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                        </div>
-
-
-                        <h4 class="blog-item__title">Оцінювання в школі</h4>
-                        <a class="blog-item__link" href="#">Читати статтю
-                            <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                        </a>
-                    </div>
-
-                    <div class="blog-item ">
-                        <div class="blog-item__intro">
-                            <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                        </div>
-
-
-                        <h4 class="blog-item__title">Оцінювання в школі</h4>
-                        <a class="blog-item__link" href="#">Читати статтю
-                            <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                        </a>
-                    </div>
-
-                    <div class="blog-item ">
-                        <div class="blog-item__intro">
-                            <img class="blog-item__img" src="./img/blog/item-img.png" alt="" srcset="">
-                        </div>
-
-
-                        <h4 class="blog-item__title">Оцінювання в школі</h4>
-                        <a class="blog-item__link" href="#">Читати статтю
-                            <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
-                        </a>
-                    </div>
+                    ?>
                 </div>
 
 

@@ -61,7 +61,7 @@ if($_GET['export']){
 <main class="main">
     <section class="export">
         <div class="export__header">
-            <h5 class="export__title">Загальна кількість користувачів: <span>10</span></h5>
+            <h5 class="export__title">Загальна кількість користувачів: <span><?php echo mysqli_num_rows($sql);?></span></h5>
             <a href="export.php?export=true" class="export__button">Експортувати</a>
         </div>
 
@@ -75,7 +75,7 @@ if($_GET['export']){
             <tbody>
                 <tr>
                   <?php
-                    while($row=$sql->fetch_assoc){
+                    while($row=$sql->fetch_assoc()){
                       echo <<<EOT
                       "<th scope="row">{$row['id']}</th>
                       <td>{$row['email']}</td>"

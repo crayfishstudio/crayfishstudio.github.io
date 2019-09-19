@@ -128,7 +128,8 @@ body {
 }
 
 .blog-header {
-  background-image: url("../img/blog/header-img.png");
+  background-size: cover;
+  background-position: center;
   min-height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;

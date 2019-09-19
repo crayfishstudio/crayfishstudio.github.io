@@ -75,7 +75,7 @@ if(!$stmt=$db->query($sql)){
                 <?php
                   echo <<<EOT
                   <input class="create__name" type="text" name="name" placeholder="name" value="{$row['name']}">
-
+                  <input type="hidden" name="id" value="{$row['id']}">
                   <input class="create__slug" type="text" name="slug" placeholder="slug" value="{$row['slug']}">
                   </div>
 
@@ -84,7 +84,7 @@ if(!$stmt=$db->query($sql)){
                   </div>
 
                   <div >
-                    <input type="checkbox" name="main"> Встановити як основний <br>
+                    <input type="checkbox" value="1" name="main"> Встановити як основний <br>
                     </div>
                   EOT;
                 ?>
