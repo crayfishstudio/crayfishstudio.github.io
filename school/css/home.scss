@@ -1392,6 +1392,15 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 		}
 	}
 
+	.g-tab {
+		&-content {
+			&__preview {
+				width: 320px;
+				height: 215px;
+			}
+		}
+	}
+
 	& .g-submit {
 		padding-top: 15px;
 		padding-bottom: 15px;

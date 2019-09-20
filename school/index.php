@@ -1341,7 +1341,7 @@ require_once("config.php");
                             <div class="g-tab-content">
                                 <a class="g-tab-content__link" href="article.php?id={$row['id']}">
                                 <div class="g-tab-content_border">
-                                    <img class="g-tab-content__preview" src="./uploads/{$row['path']}" alt="" srcset="">
+                                    <div class="g-tab-content__preview" style="background-image: url('./uploads/{$row["path"]}')"></div>
 
                                     <h2 class="g-tab-content__title">{$cat['name']}</h2>
                                     <h3 class="g-tab-content__subtitle">{$string}</h3>

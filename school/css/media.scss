@@ -1138,6 +1138,13 @@
             }
         }
     }
+
+    .devs {
+        .g-tab-content__preview {
+            width: 250px;
+            height: 168px;
+        }
+    }
 }
 
 @media (max-width: 1050px) {

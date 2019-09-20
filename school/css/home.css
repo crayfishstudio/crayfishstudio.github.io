@@ -1646,6 +1646,11 @@ html, body {
   margin-left: 10px;
 }
 
+.devs .g-tab-content__preview {
+  width: 320px;
+  height: 215px;
+}
+
 .devs .g-submit {
   padding-top: 15px;
   padding-bottom: 15px;
