@@ -19,9 +19,11 @@ if(isset($_GET["logout"])) {
     header("location: adminlog.php");
     exit;
 }
+if(isset($_GET['id'])){
 $id = $_GET['id'];
-$sql = "DELETE FROM posts WHERE id = $id";
+$sql = "DELETE FROM posts WHERE id={$id};";
 $db->query($sql);
+}
 header("Location: admin.php");
 exit;
 ?>

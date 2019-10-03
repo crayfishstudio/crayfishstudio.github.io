@@ -1,8 +1,17 @@
 html, body { scroll-behavior: smooth }
 
 #map {
-	height: 110%;
+	height: 440px;
+	width: 440px;
+
+	img {
+		max-width: none;
+		max-height: none;
+	}
 }
+
+.gm-style img { max-width: none; }
+.gm-style label { width: auto; display: inline; }
 
 .header {
     position: fixed;
@@ -17,6 +26,10 @@ html, body { scroll-behavior: smooth }
     display: flex;
 	justify-content: center;
 	align-items: center;
+
+	&-open__modal {
+		cursor: pointer;
+	}
 
     &__wrapper {
 		display: flex;
@@ -1355,6 +1368,10 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 				&__preview {
 					border: 2px solid #00FFFF;
 					margin-top: 22px;
+					width: 321px;
+					height: 216px;
+					background-size: cover;
+    				background-repeat: no-repeat;
 				}
 
 				&_border {
@@ -1374,6 +1391,9 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 					line-height: 19px;
 					max-width: 315px;
 					margin-bottom: 17px;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
 				}
 
 				&__text {
@@ -1388,15 +1408,6 @@ $purposeTitleOptions: 4px solid #FFFFFF;
 				&__img {
 					margin-left: 10px;
 				}
-			}
-		}
-	}
-
-	.g-tab {
-		&-content {
-			&__preview {
-				width: 320px;
-				height: 215px;
 			}
 		}
 	}

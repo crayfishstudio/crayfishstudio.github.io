@@ -113,8 +113,6 @@ body {
 
     &-header {
         background-image: url("../img/blog/header-img.png");
-        background-size: cover;
-        background-position: center;
         min-height: 260px;
         display: flex;
         flex-direction: column;
@@ -142,7 +140,7 @@ body {
 
         &__title {
             font-size: 30px;
-            font-weight: 600;
+            font-weight: 600;   
             background-color: rgba(0, 0, 0, 0.56);
             padding: 22px 0 21px 60px;
             margin: 0;
@@ -155,10 +153,10 @@ body {
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     &-item {
+        width: 361px;
         border: 1px solid #00FFFF;
         padding: 0;
         padding-bottom: 20px;
@@ -172,6 +170,7 @@ body {
             margin-top: 18px;
             margin-left: 18px;
             margin-right: 18px;
+            background-size: cover;
         }
 
         &__img {
@@ -210,10 +209,6 @@ body {
             padding-bottom: 3px;
         }
     }
-
-    &-item:nth-child(3n+1), &-item:nth-child(3n+2) {
-        margin-right: 10px;
-    }
 }
 
 @media (min-width: 1600px) {
@@ -228,18 +223,7 @@ body {
 
             &__intro {
                 width: auto;
-                height: auto;
                 max-width: 100%;
-            }
-        }
-    }
-}
-
-@media (min-width: 1500px) {
-    .blog {
-        &-item {
-            &:nth-child(3n+1), &:nth-child(3n+2) {
-                margin-right: 0;
             }
         }
     }
@@ -248,12 +232,6 @@ body {
 @media (max-width: 1500px) {
     .blog {
         padding-right: 20px;
-
-        &-item {
-            &__intro {
-                max-width: 282px;
-            }
-        }
     }
 
     .wrapper {
@@ -262,25 +240,7 @@ body {
     }
 }
 
-@media (max-width: 1360px) and (min-width: 1000px) {
-    .blog {
-        &__wrapper {
-            justify-content: space-evenly;
-        }
-    }
-}
-
-@media (max-width: 1000px) and (min-width: 910px) {
-    .blog {
-        &-item {
-            &:nth-child(2n), &:nth-child(n) {
-                margin-right: 0;
-            }
-        }
-    }
-}
-
-@media (max-width: 910px) {
+@media (max-width: 1000px) {
     .wrapper {
         flex-direction: column;
         margin-left: 20px;
@@ -360,10 +320,6 @@ body {
         &-item {
             width: 100%;
             max-width: 100%;
-
-            &__intro {
-                height: auto;
-            }
         }
     }
 }
@@ -380,6 +336,77 @@ body {
             &__title {
                 font-size: 19px;
             }
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    .blog {
+        .col-lg-4 {
+            flex: 0 0 32.5%;
+            max-width: 32.5%;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .blog {
+        &-item:nth-child(3n+2) {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (max-width: 1300px) and (min-width: 1000px)  {
+    .wrapper {
+        justify-content: unset;
+    }
+
+    .sub {
+        margin-right: 3%;
+        flex: 0 0 27%;
+        max-width: 27%;
+    }
+
+    .blog {
+        flex: 0 0 70%;
+        max-width: 70%;
+
+        &-item {
+            flex: 0 0 48% !important;
+            max-width: 48% !important;
+
+            &__intro {
+                max-width: 100%;
+            }
+
+            &:nth-child(2n) {
+                margin-left: 2%;
+            }
+        }
+    }
+}
+
+@media (min-width: 940px) and (max-width: 1000px) {
+    .blog {
+        &__wrapper {
+            justify-content: unset;
+        }
+
+        &-item {
+            &:nth-child(2n) {
+                margin-left: 2%;
+            }
+
+            &__intro {
+                max-width: 100%;
+            }
+        }
+
+        .col-lg-4 {
+            flex: 0 0 48%;
+            max-width: 48%;
         }
     }
 }

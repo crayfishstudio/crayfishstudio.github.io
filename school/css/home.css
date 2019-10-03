@@ -3,7 +3,22 @@ html, body {
 }
 
 #map {
-  height: 110%;
+  height: 440px;
+  width: 440px;
+}
+
+#map img {
+  max-width: none;
+  max-height: none;
+}
+
+.gm-style img {
+  max-width: none;
+}
+
+.gm-style label {
+  width: auto;
+  display: inline;
 }
 
 .header {
@@ -25,6 +40,10 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav-open__modal {
+  cursor: pointer;
 }
 
 .nav__wrapper {
@@ -1610,6 +1629,10 @@ html, body {
 .devs-cyan .g-tab-content__preview {
   border: 2px solid #00FFFF;
   margin-top: 22px;
+  width: 321px;
+  height: 216px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .devs-cyan .g-tab-content_border {
@@ -1629,6 +1652,9 @@ html, body {
   line-height: 19px;
   max-width: 315px;
   margin-bottom: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .devs-cyan .g-tab-content__text {
@@ -1644,11 +1670,6 @@ html, body {
 
 .devs-cyan .g-tab-content__img {
   margin-left: 10px;
-}
-
-.devs .g-tab-content__preview {
-  width: 320px;
-  height: 215px;
 }
 
 .devs .g-submit {

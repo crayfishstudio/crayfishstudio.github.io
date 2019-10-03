@@ -91,41 +91,81 @@ if(isset($_GET["logout"])) {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
-
+<script src='https://cdn.tiny.cloud/1/64hppx111ucresct5oxmg1gjisu33n7wx10tq3wodr9cu3br/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
 <!-- Include Editor JS files. -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.6/js/froala_editor.pkgd.min.js"></script>
 
 <!-- Initialize the editor. -->
 <script>
-  $(function() {
-    $('textarea').froalaEditor({
-      // Set the image upload URL.
-      imageUploadURL: 'image_upload.php',
-      imageUploadParams: {
-        path: 'uploads/'
+  // $(function() {
+  //   $('textarea').froalaEditor({
+  //     // Set the image upload URL.
+  //     imageUploadURL: 'image_upload.php',
+  //     imageUploadParams: {
+  //       path: 'uploads/'
+  //     },
+  //     imageManagerLoadURL: 'image_load.php',
+  //     imageManagerLoadParams: {
+  //       path: 'uploads/'
+  //     },
+  //     imageManagerLoadMethod: 'POST',
+  //     imageManagerDeleteURL: 'image_delete.php',
+  //   })
+  // });
+  tinymce.init({
+      selector: 'Textarea',
+      plugins: 'image code',
+      toolbar: 'undo redo | image code',
+
+      // without images_upload_url set, Upload tab won't show up
+      images_upload_url: 'img_upload.php',
+
+      // override default upload handler to simulate successful upload
+      images_upload_handler: function (blobInfo, success, failure) {
+          var xhr, formData;
+
+          xhr = new XMLHttpRequest();
+          xhr.withCredentials = false;
+          xhr.open('POST', 'img_upload.php');
+
+          xhr.onload = function() {
+              var json;
+
+              if (xhr.status != 200) {
+                  failure('HTTP Error: ' + xhr.status);
+                  return;
+              }
+
+              json = JSON.parse(xhr.responseText);
+
+              if (!json || typeof json.location != 'string') {
+                  failure('Invalid JSON: ' + xhr.responseText);
+                  return;
+              }
+
+              success(json.location);
+          };
+
+          formData = new FormData();
+          formData.append('file', blobInfo.blob(), blobInfo.filename());
+
+          xhr.send(formData);
       },
-      imageManagerLoadURL: 'image_load.php',
-      imageManagerLoadParams: {
-        path: 'uploads/'
-      },
-      imageManagerLoadMethod: 'POST',
-      imageManagerDeleteURL: 'image_delete.php',
-    })
   });
 </script>
 
 <?php
 
 // Include the editor SDK.
-require 'froala-php/lib/FroalaEditor.php';
-
-// Store the image.
-try {
-    $response = FroalaEditor_Image::upload('/uploads/');
-    echo stripslashes(json_encode($response));
-} catch (Exception $e) {
-    http_response_code(404);
-}
+// require 'froala-php/lib/FroalaEditor.php';
+//
+// // Store the image.
+// try {
+//     $response = FroalaEditor_Image::upload('/uploads/');
+//     echo stripslashes(json_encode($response));
+// } catch (Exception $e) {
+//     http_response_code(404);
+// }
 
 ?>
 </html>

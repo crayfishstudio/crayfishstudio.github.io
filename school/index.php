@@ -3,7 +3,7 @@ session_start();
 require_once("config.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,12 +31,12 @@ require_once("config.php");
             <div class="nav__wrapper">
                 <div class="nav-logo">
                     <a class="nav-logo__link" href="#home">
-                        <img class="nav-logo__img" src="./img/nav-logo.svg" alt=""> ШКОЛА
+                        <img class="nav-logo__img" src="./img/nav-logo.svg" alt="Школа"> ШКОЛА
                     </a>
                 </div>
 
                 <div class="nav-burger" id="nav-open">
-                    <img src="./img/nav-burger.svg" alt="" srcset="">
+                    <img src="./img/nav-burger.svg" alt="Меню">
                 </div>
             </div>
 
@@ -67,19 +67,19 @@ require_once("config.php");
                     </li>
 
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="./blog.html">Блог</a>
+                        <a class="nav-list__link" href="./blog.php">Блог</a>
                     </li>
                 </ul>
 
                 <div class="nav-close">
-                    <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="" srcset="">
+                    <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="Закрити">
                 </div>
             </div>
 
             <div class="nav__wrapper">
                 <a class="nav__link nav-open__modal">вартість навчання</a>
 
-                <a class="nav__link" href="#">ЗАМОВИТИ ДЗВІНОК</a>
+                <a class="nav__link" href="#contact">ЗАМОВИТИ ДЗВІНОК</a>
             </div>
 
             <div class="nav__wrapper">
@@ -94,7 +94,7 @@ require_once("config.php");
         <div class="nav__wrapper">
             <div class="nav-logo">
                 <a class="nav-logo__link" href="#home">
-                    <img class="nav-logo__img" src="./img/nav-logo.svg" alt=""> ШКОЛА
+                    <img class="nav-logo__img" src="./img/nav-logo.svg" alt="Школа"> ШКОЛА
                 </a>
             </div>
         </div>
@@ -126,12 +126,12 @@ require_once("config.php");
                 </li>
 
                 <li class="nav-list__item">
-                    <a class="nav-list__link" href="./blog.html">Блог</a>
+                    <a class="nav-list__link" href="./blog.php">Блог</a>
                 </li>
             </ul>
 
             <div class="nav-close" id="nav-close">
-                <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="" srcset="">
+                <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="Закрити">
             </div>
         </div>
 
@@ -152,7 +152,7 @@ require_once("config.php");
         <div class="calc-header">
             <h2 class="calc__title">Розрахуйте вартість навчання</h2>
             <div class="nav-close nav-close__modal">
-                <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="" srcset="">
+                <img class="nav-close__img" src="./img/nav-close-icon.svg" alt="Закрити">
             </div>
         </div>
 
@@ -251,7 +251,7 @@ require_once("config.php");
 
                     <label class="g-radio__label calc-main__food">
                         БЕЗ ХАРЧУВАННЯ
-                        <input type="radio" class="calc-food__radio g-radio__input" name="calc-food" value="0">
+                        <input type="radio" class="calc-food__radio g-radio__input" name="calc-food" value="0" checked>
                         <span class="g-radio__span"></span>
                     </label>
 
@@ -267,7 +267,7 @@ require_once("config.php");
                         <div class="calc-main-pay_flex">
                             <label class="g-radio__label calc-main-pay__title">
                                 <span class="calc-main-pay__span">МІСЯЦЬ</span>
-                                <input id="calc-time-month" type="radio" class="g-radio__input" name="paytime">
+                                <input id="calc-time-month" type="radio" class="g-radio__input" name="paytime" checked>
                                 <span class="g-radio__span"></span>
                             </label>
 
@@ -297,7 +297,7 @@ require_once("config.php");
                 </div>
 
                 <h5 class="calc-main__deposit">ЩОМІСЯЧНИЙ ПЛАТІЖ
-                    <img id="tooltip-1" class="calc-main__tooltip" src="./img/calc-tooltip.svg">
+                    <img id="tooltip-1" class="calc-main__tooltip" src="./img/calc-tooltip.svg" alt="Інформація">
                     <div class="g-borders" id="tooltip-1-text">
                         <div class="g-borders__content">
                             <h2 class="g-borders__title">Вноситься тільки один раз, при вступі дитини в школу.</h2>
@@ -307,7 +307,7 @@ require_once("config.php");
                 </h5>
 
                 <h5 class="calc-main__deposit">ВСТУПНИЙ РАЗОВИЙ ВНЕСОК
-                    <img id="tooltip-2" class="calc-main__tooltip calc-main__tooltip_right" src="./img/calc-tooltip.svg">
+                    <img id="tooltip-2" class="calc-main__tooltip calc-main__tooltip_right" src="./img/calc-tooltip.svg" alt="Інформація">
                     <div class="g-borders" id="tooltip-2-text">
                         <div class="g-borders__content">
                             <h2 class="g-borders__title">Вноситься тільки один раз, при вступі дитини в школу.</h2>
@@ -317,7 +317,7 @@ require_once("config.php");
                 </h5>
 
                 <h5 class="calc-main__deposit">РАЗОВИЙ ЩОРІЧНИЙ ВНЕСОК
-                    <img id="tooltip-3" class="calc-main__tooltip calc-main__tooltip_righter" src="./img/calc-tooltip.svg">
+                    <img id="tooltip-3" class="calc-main__tooltip calc-main__tooltip_righter" src="./img/calc-tooltip.svg" alt="Інформація">
                     <div class="g-borders" id="tooltip-3-text">
                         <div class="g-borders__content">
                             <h2 class="g-borders__title">Вноситься тільки один раз, при вступі дитини в школу.</h2>
@@ -513,11 +513,11 @@ require_once("config.php");
 
                 <p class="calc-main__text">Адміністрація розглядає можливості відкриття додаткових секцій для груп бажаючих від 5 чоловік</p>
 
-                <form class="calc-main-form" action="">
-                    <input class="calc-main-form__input g-input" type="text" name="" id="" placeholder="Запропонувати секцію" required>
+                <form class="calc-main-form" action="#">
+                    <input class="calc-main-form__input g-input" type="text" placeholder="Запропонувати секцію" required>
 
                     <button class="calc-main-form__btn" type="submit">
-                        <img class="calc-main-form__img" src="./img/send-arrow.svg" alt="" srcset="">
+                        <img class="calc-main-form__img" src="./img/send-arrow.svg" alt="Надіслати">
                     </button>
                 </form>
             </div>
@@ -635,7 +635,7 @@ require_once("config.php");
                         </div>
                     </div>
 
-                    <div class="tab" data-tilt  data-tilt-reverse="true">
+                    <div class="tab" data-tilt  data-tilt-reverse="true" data-tilt-scale="1.05">
                         <div class="tab-btn">
                             <div class="tab-btn__item tab-btn__item_dark"></div>
                             <div class="tab-btn__item tab-btn__item_light"></div>
@@ -661,16 +661,16 @@ require_once("config.php");
 
             <div class="home__block home-circle" data-tilt data-tilt-full-page-listening data-tilt-reverse="true">
                 <div class="home-circle__block home-circle__block-first">
-                    <img class="home-circle__boy" src="./img/home-boy.png" alt="" srcset="">
-                    <img class="home-circle__img home-circle__img_mobile" src="./img/home-circle-1.svg" alt="" srcset="">
+                    <img class="home-circle__boy" src="./img/home-boy.png" alt="Учень">
+                    <img class="home-circle__img home-circle__img_mobile" src="./img/home-circle-1.svg" alt="Коло">
                 </div>
 
                 <div class="home-circle__block home-circle__block_centered home-circle__block-second">
-                    <img class="home-circle__img home-circle__img_rotation" src="./img/home-circle-2.svg" alt="" srcset="">
+                    <img class="home-circle__img home-circle__img_rotation" src="./img/home-circle-2.svg" alt="Коло">
                 </div>
 
                 <div class="home-circle__block home-circle__block-third">
-                    <img class="home-circle__img" src="./img/home-circle-3.svg" alt="" srcset="">
+                    <img class="home-circle__img" src="./img/home-circle-3.svg" alt="Коло">
                 </div>
             </div>
 
@@ -751,7 +751,7 @@ require_once("config.php");
             <h2 class="home__subtitle">Ми навчаємо не наосліп</h2>
 
             <a class="g-arrow__link" href="#purpose">
-                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
+                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="Вниз">
             </a>
         </section>
 
@@ -759,16 +759,16 @@ require_once("config.php");
 
             <div class="home__block home-circle">
                 <div class="home-circle__block home-circle__block-first">
-                    <img class="home-circle__boy" src="./img/home-boy.png" alt="" srcset="">
-                    <img class="home-circle__img home-circle__img_mobile" src="./img/home-circle-1.svg" alt="" srcset="">
+                    <img class="home-circle__boy" src="./img/home-boy.png" alt="Учень">
+                    <img class="home-circle__img home-circle__img_mobile" src="./img/home-circle-1.svg" alt="Коло">
                 </div>
 
                 <div class="home-circle__block home-circle__block_centered home-circle__block-second" id="circleBlock">
-                    <img class="home-circle__img home-circle__img_rotation" src="./img/home-circle-m-2.svg" alt="" srcset="">
+                    <img class="home-circle__img home-circle__img_rotation" src="./img/home-circle-m-2.svg" alt="Коло">
                 </div>
 
                 <div class="home-circle__block home-circle__block-third">
-                    <img class="home-circle__img" src="./img/home-circle-3.svg" alt="" srcset="">
+                    <img class="home-circle__img" src="./img/home-circle-3.svg" alt="Коло">
                 </div>
             </div>
 
@@ -959,7 +959,7 @@ require_once("config.php");
             <h2 class="home__subtitle">Ми навчаємо не наосліп</h2>
 
             <a class="g-arrow__link" href="#purpose">
-                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
+                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="Вниз">
             </a>
         </section>
 
@@ -984,7 +984,7 @@ require_once("config.php");
 
             <div class="purpose__wrapper">
                 <div class="purpose__item">
-                    <img class="purpose__img" src="./img/purpose/purpose-img-1.png" alt="" srcset="">
+                    <img class="purpose__img" src="./img/purpose/purpose-img-1.png" alt="Призначення">
 
                     <div class="g-tab purpose-fuchsia">
                         <div class="g-tab-btn">
@@ -1000,14 +1000,14 @@ require_once("config.php");
                                 <h3 class="g-tab-content__subtitle">Граюся, творю, навчаюсь, <br> насолоджуюсь</h3>
                                 <h3 class="g-tab-content__text">Батьки</h3>
 
-                                <img class="g-tab-content__img" src="./img/purpose/purpose-mother-icon.svg" alt="" srcset="">
+                                <img class="g-tab-content__img" src="./img/purpose/purpose-mother-icon.svg" alt="Матір">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="purpose__item">
-                    <img class="purpose__img" src="./img/purpose/purpose-img-2.png" alt="" srcset="">
+                    <img class="purpose__img" src="./img/purpose/purpose-img-2.png" alt="Мета">
 
                     <div class="g-tab purpose-lime">
                         <div class="g-tab-btn">
@@ -1023,14 +1023,14 @@ require_once("config.php");
                                 <h3 class="g-tab-content__subtitle">Підтримую, оберігаю, навчаю<br>життю</h3>
                                 <h3 class="g-tab-content__text">Діти</h3>
 
-                                <img class="g-tab-content__img" src="./img/purpose/purpose-baby-icon.svg" alt="" srcset="">
+                                <img class="g-tab-content__img" src="./img/purpose/purpose-baby-icon.svg" alt="Дитина">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="purpose__item">
-                    <img class="purpose__img" src="./img/purpose/purpose-img-3.png" alt="" srcset="">
+                    <img class="purpose__img" src="./img/purpose/purpose-img-3.png" alt="Мета">
 
                     <div class="g-tab purpose-cyan">
                         <div class="g-tab-btn">
@@ -1046,9 +1046,9 @@ require_once("config.php");
                                 <h3 class="g-tab-content__subtitle">Підтримую, оберігаю, навчаю<br>життю</h3>
                                 <h3 class="g-tab-content__text">Діти, батьки, дорослі</h3>
 
-                                <img class="g-tab-content__img" src="./img/purpose/purpose-baby-icon.svg" alt="" srcset="">
-                                <img class="g-tab-content__img" src="./img/purpose/purpose-mother-icon.svg" alt="" srcset="">
-                                <img class="g-tab-content__img" src="./img/purpose/purpose-father-icon.svg" alt="" srcset="">
+                                <img class="g-tab-content__img" src="./img/purpose/purpose-baby-icon.svg" alt="Дитина">
+                                <img class="g-tab-content__img" src="./img/purpose/purpose-mother-icon.svg" alt="Матір">
+                                <img class="g-tab-content__img" src="./img/purpose/purpose-father-icon.svg" alt="Батько">
                             </div>
                         </div>
                     </div>
@@ -1057,13 +1057,13 @@ require_once("config.php");
 
             <div class="purpose-info col-md-10">
                 <div class="purpose-info__icon">
-                    <img src="./img/purpose/purpose-icon.svg" alt="">
+                    <img src="./img/purpose/purpose-icon.svg" alt="Інформація">
                 </div>
 
                 <p class="purpose-info__text">Процес дорослішання кожен проживає та усвідомлює по-різному і це залежить від моделі стосунків між усіма членами родини, у якій зростає дитина. Починаючи шлях з позиції «Я - дитина», ми поступово переймаємо шаблони поведінки, установки й обмеження від навколишніх і тих, хто їх оточує. На основі цього формуються моделі «Я - батько (мати)» чи «Я - дорослий».</p>
 
                 <a class="g-arrow__link" href="#about">
-                    <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
+                    <img class="g-arrow__down" src="./img/arrow-down.svg" alt="Вниз">
                 </a>
             </div>
 
@@ -1079,7 +1079,7 @@ require_once("config.php");
 
             <div class="about__block">
                 <div class="about-item col-md-5">
-                    <img src="./img/about-icon-1.svg" alt="">
+                    <img src="./img/about-icon-1.svg" alt="Хто ми">
 
                     <div class="about-item__content">
                         <h2 class="about-item__title">ХТО МИ?</h2>
@@ -1088,7 +1088,7 @@ require_once("config.php");
                 </div>
 
                 <div class="about-item col-md-5">
-                    <img src="./img/about-icon-2.svg" alt="">
+                    <img src="./img/about-icon-2.svg" alt="Місія">
 
                     <div class="about-item__content">
                         <h2 class="about-item__title">НАША МІСІЯ</h2>
@@ -1097,7 +1097,7 @@ require_once("config.php");
                 </div>
 
                 <div class="about-item col-md-8">
-                    <img src="./img/about-icon-3.svg" alt="">
+                    <img src="./img/about-icon-3.svg" alt="Колектив">
 
                     <div class="about-item__content">
                         <h2 class="about-item__title">НАШ КОЛЕКТИВ</h2>
@@ -1111,7 +1111,7 @@ require_once("config.php");
 
 
             <a class="g-arrow__link" href="#team">
-                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
+                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="Вниз">
             </a>
         </section>
 
@@ -1127,7 +1127,7 @@ require_once("config.php");
                 <div class="team__prev col-md-1">
                     <picture>
                         <source media="(max-width: 900px)" srcset="./img/team/team-m-prev-icon.svg">
-                        <img class="team__img" src="./img/team/team-prev-icon.svg" alt="" srcset="">
+                        <img class="team__img" src="./img/team/team-prev-icon.svg" alt="Назад">
                     </picture>
 
                 </div>
@@ -1136,11 +1136,11 @@ require_once("config.php");
                     <div class="team-slider__item">
                         <div class="team-slider__item_center">
                             <div class="team-slider__picture">
-                                <img class="team-slider__img" src="./img/team/team-1.png" alt="" srcset="">
+                                <img class="team-slider__img" src="./img/team/team-1.png" alt="Колектив">
                             </div>
                         </div>
 
-                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="" srcset="">
+                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="Коло">
 
                         <div class="g-borders team-borders">
                             <div class="g-borders__content team-borders__content">
@@ -1153,11 +1153,11 @@ require_once("config.php");
                     <div class="team-slider__item">
                         <div class="team-slider__item_center">
                             <div class="team-slider__picture">
-                                <img class="team-slider__img" src="./img/team/team-1.png" alt="" srcset="">
+                                <img class="team-slider__img" src="./img/team/team-1.png" alt="Колектив">
                             </div>
                         </div>
 
-                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="" srcset="">
+                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="Коло">
 
                         <div class="g-borders team-borders">
                             <div class="g-borders__content team-borders__content">
@@ -1170,11 +1170,11 @@ require_once("config.php");
                     <div class="team-slider__item">
                         <div class="team-slider__item_center">
                             <div class="team-slider__picture">
-                                <img class="team-slider__img" src="./img/team/team-1.png" alt="" srcset="">
+                                <img class="team-slider__img" src="./img/team/team-1.png" alt="Колектив">
                             </div>
                         </div>
 
-                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="" srcset="">
+                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="Коло">
 
                         <div class="g-borders team-borders">
                             <div class="g-borders__content team-borders__content">
@@ -1187,11 +1187,11 @@ require_once("config.php");
                     <div class="team-slider__item">
                         <div class="team-slider__item_center">
                             <div class="team-slider__picture">
-                                <img class="team-slider__img" src="./img/team/team-1.png" alt="" srcset="">
+                                <img class="team-slider__img" src="./img/team/team-1.png" alt="Колектив">
                             </div>
                         </div>
 
-                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="" srcset="">
+                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="Коло">
 
                         <div class="g-borders team-borders">
                             <div class="g-borders__content team-borders__content">
@@ -1204,11 +1204,11 @@ require_once("config.php");
                     <div class="team-slider__item">
                         <div class="team-slider__item_center">
                             <div class="team-slider__picture">
-                                <img class="team-slider__img" src="./img/team/team-1.png" alt="" srcset="">
+                                <img class="team-slider__img" src="./img/team/team-1.png" alt="Колектив">
                             </div>
                         </div>
 
-                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="" srcset="">
+                        <img class="team-slider__circle" src="./img/team-circle-img.svg" alt="Коло">
 
                         <div class="g-borders team-borders">
                             <div class="g-borders__content team-borders__content">
@@ -1222,7 +1222,7 @@ require_once("config.php");
                 <div class="team__next col-md-1">
                     <picture>
                         <source media="(max-width: 900px)" srcset="./img/team/team-m-next-icon.svg">
-                        <img class="team__img" src="./img/team/team-next-icon.svg" alt="" srcset="">
+                        <img class="team__img" src="./img/team/team-next-icon.svg" alt="Вперед">
                     </picture>
                 </div>
 
@@ -1230,7 +1230,7 @@ require_once("config.php");
             </div>
 
             <a class="g-arrow__link" href="#goal">
-                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
+                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="Вниз">
             </a>
         </section>
 
@@ -1248,7 +1248,7 @@ require_once("config.php");
                 <div class="goal-list col-md-9">
                     <div class="goal-list__item">
                         <div class="goal-list__number">
-                            <img class="goal-list__img" src="./img/goal/goal-number-1.svg" alt="" srcset="">
+                            <img class="goal-list__img" src="./img/goal/goal-number-1.svg" alt="Мета">
                         </div>
 
                         <p class="goal-list__text">Допомогти дитині виростити в собі психологічну фігуру усвідомленого Дорослого, підготувати його до комунікацій як з власною дитиною і  Батьками, так і з іншими Дорослими, Батьками і Дітьми. Це вкрай необхідно для усвідомленого життя й реалізації права Людини на щастя.</p>
@@ -1256,7 +1256,7 @@ require_once("config.php");
 
                     <div class="goal-list__item">
                         <div class="goal-list__number">
-                            <img class="goal-list__img" src="./img/goal/goal-number-2.svg" alt="" srcset="">
+                            <img class="goal-list__img" src="./img/goal/goal-number-2.svg" alt="Мета">
                         </div>
 
                         <p class="goal-list__text">Приймаючи дитину в перший клас, - заглядати в майбутнє на 12 років вперед, розуміти, яким Дорослим там можна/важливо бути з точки зору освіченості й навичок для успішної інтеграції в майбутній світ людей,речей, машин. Сьогодні наш горизонт планування - 2030 + рік.</p>
@@ -1264,7 +1264,7 @@ require_once("config.php");
 
                     <div class="goal-list__item">
                         <div class="goal-list__number">
-                            <img class="goal-list__img" src="./img/goal/goal-number-3.svg" alt="" srcset="">
+                            <img class="goal-list__img" src="./img/goal/goal-number-3.svg" alt="Мета">
                         </div>
 
                         <p class="goal-list__text">Розвинути у дитини не тільки навички 2030 року, але й універсальне мислення, яке дозволяє вирішувати завдання ідентифікації, розбірки, збірки, абстракції, точності, індукції, дедукції, класифікації та узагальнення.</p>
@@ -1272,7 +1272,7 @@ require_once("config.php");
 
                     <div class="goal-list__item">
                         <div class="goal-list__number">
-                            <img class="goal-list__img" src="./img/goal/goal-number-4.svg" alt="" srcset="">
+                            <img class="goal-list__img" src="./img/goal/goal-number-4.svg" alt="Мета">
                         </div>
 
                         <p class="goal-list__text goal-list__text_bg">Розкрити інноваційний потенціал людини через усвідомлену творчу діяльність.</p>
@@ -1280,7 +1280,7 @@ require_once("config.php");
 
                     <div class="goal-list__item">
                         <div class="goal-list__number">
-                            <img class="goal-list__img" src="./img/goal/goal-number-5.svg" alt="" srcset="">
+                            <img class="goal-list__img" src="./img/goal/goal-number-5.svg" alt="Мета">
                         </div>
 
                         <p class="goal-list__text">Змінити парадигму освіти: з позиції "я+статус" (я лікар, інженер), на позицію "я+роблю" (моє життя=проект, моя мета - зробити те, змінити це і «я це роблю»).</p>
@@ -1292,7 +1292,7 @@ require_once("config.php");
 
 
             <a class="g-arrow__link" href="#devs">
-                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
+                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="Вниз">
             </a>
 
         </section>
@@ -1305,7 +1305,7 @@ require_once("config.php");
             </div>
 
             <div class="devs__prev col-md-1">
-                <img class="devs__img" src="./img/team/team-m-prev-icon.svg" alt="" srcset="">
+                <img class="devs__img" src="./img/team/team-m-prev-icon.svg" alt="Назад">
             </div>
 
             <div class="devs__wrapper">
@@ -1345,7 +1345,7 @@ require_once("config.php");
 
                                     <h2 class="g-tab-content__title">{$cat['name']}</h2>
                                     <h3 class="g-tab-content__subtitle">{$string}</h3>
-                                    <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="" srcset=""></h3>
+                                    <h3 class="g-tab-content__text">Детальніше <img class="g-tab-content__img" src="./img/blog/item-link-arrow.svg" alt="Вперед"></h3>
                                 </div>
                                 </a>
                             </div>
@@ -1357,13 +1357,13 @@ require_once("config.php");
             </div>
 
             <div class="devs__next col-md-1">
-                <img class="devs__img" src="./img/team/team-m-next-icon.svg" alt="" srcset="">
+                <img class="devs__img" src="./img/team/team-m-next-icon.svg" alt="Вперед">
             </div>
 
             <a class="g-input g-submit" href="./blog.php">УСІ СТАТТІ</a>
 
             <a class="g-arrow__link" href="#contact">
-                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="" srcset="">
+                <img class="g-arrow__down" src="./img/arrow-down.svg" alt="Вниз">
             </a>
         </section>
 
@@ -1379,7 +1379,7 @@ require_once("config.php");
                         <circle class="contact-svg__circle contact-svg__circle_dash" cx='50' cy='50' r='45' id='sm-one'/>
                     </svg>
 
-                    <img class="contact-map__background" src="./img/contact-side-img.svg" alt="" srcset="">
+                    <img class="contact-map__background" src="./img/contact-side-img.svg" alt="Контакти">
                 </div>
 
                 <div class="contact-mail">
@@ -1522,14 +1522,14 @@ require_once("config.php");
                         <div class="contact-info_border">
                             <a class="contact-info__link" href="#">м. Ірпінь, вул Варшавська 116</a>
                         </div>
-                        <img class="contact-info__img" src="./img/contact/contact-info-location.svg" alt="" srcset="">
+                        <img class="contact-info__img" src="./img/contact/contact-info-location.svg" alt="Розташування">
                     </div>
 
                     <div class="contact-info__item">
                         <div class="contact-info_border">
                             <a class="contact-info__link" href="#">+380679354248</a>
                         </div>
-                        <img class="contact-info__img" src="./img/contact/contact-info-phone.svg" alt="" srcset="">
+                        <img class="contact-info__img" src="./img/contact/contact-info-phone.svg" alt="Телефон">
                     </div>
                 </div>
 
@@ -1538,7 +1538,7 @@ require_once("config.php");
                         <div class="contact-info_border">
                             <a class="contact-info__link" href="#">os.platforma@gmail.com</a>
                         </div>
-                        <img class="contact-info__img" src="./img/contact/contact-info-mail.svg" alt="" srcset="">
+                        <img class="contact-info__img" src="./img/contact/contact-info-mail.svg" alt="E-пошта">
                     </div>
 
                     <div class="contact-info__item">
@@ -1546,7 +1546,7 @@ require_once("config.php");
                             <a class="contact-info__link" href="#">Facebook</a>
                             <a class="contact-info__link contact-info__link_margin" href="#">Instagram</a>
                         </div>
-                        <img class="contact-info__img" src="./img/contact/contact-info-social.svg" alt="" srcset="">
+                        <img class="contact-info__img" src="./img/contact/contact-info-social.svg" alt="Соц. мережі">
                     </div>
                 </div>
             </div>
@@ -1561,7 +1561,7 @@ require_once("config.php");
 
             <div class="video__wrapper col-md-12">
                 <div class="video__prev col-md-1">
-                    <img src="./img/video/video-prev-icon.svg" alt="" srcset="">
+                    <img src="./img/video/video-prev-icon.svg" alt="Назад">
                 </div>
 
                 <div class="video__slider col-md-10">
@@ -1569,8 +1569,8 @@ require_once("config.php");
                         <div class="video-preview">
                             <a class="video-preview__link" href="#">
                                 <div class="video-preview__block">
-                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="" srcset="">
-                                    <img class="video-preview__img" src="./img/video/video-preview-1.png" alt="" srcset="">
+                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="Відтворити">
+                                    <img class="video-preview__img" src="./img/video/video-preview-1.png" alt="Відео">
                                 </div>
 
                                 <h3 class="video-preview__title">Якою буде освіта майбутнього ?</h3>
@@ -1582,8 +1582,8 @@ require_once("config.php");
                         <div class="video-preview">
                             <a class="video-preview__link" href="#">
                                 <div class="video-preview__block">
-                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="" srcset="">
-                                    <img class="video-preview__img" src="./img/video/video-preview-2.png" alt="" srcset="">
+                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="Відтворити">
+                                    <img class="video-preview__img" src="./img/video/video-preview-2.png" alt="Відео">
                                 </div>
 
                                 <h3 class="video-preview__title">Що означає “бути Дорослим”.</h3>
@@ -1595,8 +1595,8 @@ require_once("config.php");
                         <div class="video-preview">
                             <a class="video-preview__link" href="#">
                                 <div class="video-preview__block">
-                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="" srcset="">
-                                    <img class="video-preview__img" src="./img/video/video-preview-1.png" alt="" srcset="">
+                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="Відтворити">
+                                    <img class="video-preview__img" src="./img/video/video-preview-1.png" alt="Відео">
                                 </div>
 
                                 <h3 class="video-preview__title">Що означає “бути Дорослим”.</h3>
@@ -1608,8 +1608,8 @@ require_once("config.php");
                         <div class="video-preview">
                             <a class="video-preview__link" href="#">
                                 <div class="video-preview__block">
-                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="" srcset="">
-                                    <img class="video-preview__img" src="./img/video/video-preview-2.png" alt="" srcset="">
+                                    <img class="video-preview__play" src="./img/video/video-play-btn.svg" alt="Відтворити">
+                                    <img class="video-preview__img" src="./img/video/video-preview-2.png" alt="Відео">
                                 </div>
 
                                 <h3 class="video-preview__title">Що означає “бути Дорослим”.</h3>
@@ -1619,7 +1619,7 @@ require_once("config.php");
                 </div>
 
                 <div class="video__next col-md-1">
-                    <img src="./img/video/video-next-icon.svg" alt="" srcset="">
+                    <img src="./img/video/video-next-icon.svg" alt="Вперед">
                 </div>
             </div>
 
@@ -1631,27 +1631,27 @@ require_once("config.php");
         <div class="footer_bg">
             <div class="footer-info col-md-10">
                 <div class="footer-info__wrapper col-lg-3">
-                    <a href="#" class="footer-info__item">Дитина очима школи &#8220;Галілео&#8221;</a>
-                    <a href="#" class="footer-info__item">Навіщо навчати дітей ?</a>
-                    <a href="#" class="footer-info__item">Про школу</a>
+                    <a href="#home" class="footer-info__item">Дитина очима школи &#8220;Галілео&#8221;</a>
+                    <a href="#purpose" class="footer-info__item">Навіщо навчати дітей ?</a>
+                    <a href="#about" class="footer-info__item">Про школу</a>
                 </div>
 
                 <div class="footer-info__wrapper col-lg-2">
-                    <a href="#" class="footer-info__item">Команда</a>
-                    <a href="#" class="footer-info__item">Мета школи</a>
-                    <a href="#" class="footer-info__item">Розробки</a>
+                    <a href="#team" class="footer-info__item">Команда</a>
+                    <a href="#goal" class="footer-info__item">Мета школи</a>
+                    <a href="#devs" class="footer-info__item">Розробки</a>
                 </div>
 
                 <div class="footer-info__wrapper col-lg-2">
-                    <a href="#" class="footer-info__item">Вартість навчання</a>
-                    <a href="#" class="footer-info__item">Замовити дзвінок</a>
-                    <a href="#" class="footer-info__item">Блог</a>
+                    <a class="footer-info__item nav-open__modal">Вартість навчання</a>
+                    <a href="#contact" class="footer-info__item">Замовити дзвінок</a>
+                    <a href="./blog.php" class="footer-info__item">Блог</a>
                 </div>
 
                 <div class="footer-info__wrapper col-lg-3 footer-info_right">
-                    <a class="footer-info__link" href="#">м. Ірпінь, вул. Варшавська, 116</a>
-                    <a class="footer-info__link" href="#">+38 (067) 935 4248</a>
-                    <a class="footer-info__link" href="#">os.platforma@gmail.com</a>
+                    <a class="footer-info__link" href="https://goo.gl/maps/TG26HSGQaKVQAReE6" target="_blank">м. Ірпінь, вул. Варшавська, 116</a>
+                    <a class="footer-info__link" href="tel:+380679354248">+38 (067) 935 4248</a>
+                    <a class="footer-info__link" href="mailto:os.platforma@gmail.com">os.platforma@gmail.com</a>
                     <div class="footer-info_flex">
                         <a class="footer-info__link" href="#">facebook</a>
                         <a class="footer-info__link" href="#">instagram</a>

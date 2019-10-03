@@ -7,11 +7,12 @@ if(isset($_GET['cat'])){
   $sql1="SELECT * FROM posts ORDER BY date desc";
 }
 $main = "SELECT * FROM posts WHERE main_post=1";
-if(!$main=$db->query($main)){
-
+if(mysqli_num_rows($main=$db->query($main))===0){
+  $main = "SELECT * FROM posts ORDER BY id DESC LIMIT 1";
+  $main=$db->query($main);
 }
 
-$sql = $db->query($sql);
+
 
 ?>
 <!DOCTYPE html>
@@ -51,7 +52,7 @@ $sql = $db->query($sql);
                   while($row = $optar->fetch_assoc()){
                     echo <<<EOT
                     <li class="sub-list__item">
-                        <a class="sub-list__link" href="blog.php?cat={$row['id']}">{$row['name']}</a>
+                        <a class="sub-list__link" href="article.php?cat={$row['id']}">{$row['name']}</a>
                     </li>
                     EOT;
                   }
@@ -67,13 +68,8 @@ $sql = $db->query($sql);
 
             <div class="blog col-md-9">
               <?php
-              $sql = "SELECT * FROM posts WHERE main_post=1";
-              if(!$res = $db->query($sql)){
-                $sql = "SELECT * FROM posts ORDER BY id desc LIMIT 1";
-                $res - $db->query($sql);
-              }
-              $row = $res->fetch_assoc();
-              $sql = "SELECT * FROM categories WHERE id=".$row['cat_id'];
+              $row = $main->fetch_assoc();
+              $sql = "SELECT * FROM categories WHERE id={$row['cat_id']}";
               $cat_row = $db->query($sql);
               $cat_row =$cat_row->fetch_assoc();
               echo <<<EOT
@@ -92,15 +88,14 @@ $sql = $db->query($sql);
                     while($row=$res->fetch_assoc()){
                       // code...
                       echo <<<EOT
-                      <div class="blog-item ">
+                      <div class="blog-item col-md-6 col-lg-4">
 
-                          <div class="blog-item__intro">
-                              <img class="blog-item__img" src="./uploads/{$row['path']}" alt="" srcset="">
+                          <div class="blog-item__intro" style="background-image: url('./uploads/{$row["path"]}')">
                           </div>
 
 
                           <h4 class="blog-item__title">{$row['name']}</h4>
-                          <a class="blog-item__link" href="./blog.php?id={$row['id']}">Читати статтю
+                          <a class="blog-item__link" href="./article.php?id={$row['id']}">Читати статтю
                               <img class="blog-item__arrow" src="./img/blog/item-link-arrow.svg" alt="" srcset="">
                           </a>
                       </div>

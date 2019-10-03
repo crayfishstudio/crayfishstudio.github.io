@@ -2,8 +2,9 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
       center: {
-        lat: 50.507708, 
-        lng: 30.336616
+        lat: 50.455747, 
+        lng: 30.345826
+        
       },
       styles: [
     {
@@ -357,4 +358,3 @@ function initMap() {
     return marker;
   }
   google.maps.event.addDomListener(window, "load", initMap);
-  
