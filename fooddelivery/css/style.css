@@ -1,0 +1,54 @@
+body {
+    background-color: #F6F6F6;   
+}
+#login-modal {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(225, 225, 225, 0.25);
+    padding: 60px 50px;
+    margin-top: 20vh;
+}
+
+input[type='checkbox'] {
+    height: 16px;
+    width: 16px;
+}
+
+.navbar .nav-item {
+    padding: 0px 15px;
+}
+
+.nav-item.active {
+    background-color: #3287AB;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    border: 2px solid #3287AB;
+    color: #000;
+}
+
+.btn {
+    padding: 8px 30px;
+}
+
+.food-image-preview {
+    height: 70px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.table span {
+    display: block;
+    white-space: nowrap;
+}
+
+.control-icons a img{
+    transition: all .3s;
+}
+
+.control-icons a:hover img{
+    transform: translateY(-3px);
+}
