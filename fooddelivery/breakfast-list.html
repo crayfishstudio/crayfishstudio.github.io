@@ -16,6 +16,9 @@
         <a class="navbar-brand" href="#">ClubPH Adminpanel</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Інгредієнти</a>
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Страви</a>
                 </li>
@@ -23,16 +26,13 @@
                     <a class="nav-link" href="#">Календар</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Замовлення</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Інгредієнти</a>
+                    <a class="nav-link" href="#">Промо-коди</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Промо-коди</a>
+                    <a class="nav-link" href="#">Замовлення</a>
                 </li>
             </ul>
             <form class="form-inline ml-auto">
@@ -64,7 +64,7 @@
                         <a class="nav-link" href="#">Напої</a>
                     </li>
                     <form class="form-inline ml-auto">
-                        <button type="button" class="btn btn-primary">Додати страву</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Додати страву</button>
                     </form>
                 </ul>
             </div>
@@ -88,96 +88,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Охуєнний бургер</td>
-                                <td>
-                                    <div class="food-image-preview" style="background-image: url(img/tmg-article_default_mobile.jpg)"></div>
-                                </td>
-                                <td>228</td>
-                                <td>1488</td>
-                                <td>
-                                    <span>Вегетеріанська</span>
-                                    <span>Без глютену</span>
-                                </td>
-                                <td>
-                                    <span>Перший інгредієнт</span>
-                                    <span>Другий тут</span>
-                                    <span>І третій теж</span>
-                                    <span>Четвертий в списку</span>
-                                    <span>П'ятий з довгою назвою для тесту</span>
-                                </td>
-                                <td>
-                                    <span>Непотрібний інгредієнт</span>
-                                    <span>Його друган</span>
-                                    <span>Салат в бургері</span>
-                                </td>
-                                <td>322</td>
-                                <td class="control-icons">
-                                    <a href="#"><img src="svg/editIcon.svg"></a>
-                                    <a href="#"><img src="svg/deleteIcon.svg"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Охуєнний бургер</td>
-                                <td>
-                                    <div class="food-image-preview" style="background-image: url(img/tmg-article_default_mobile.jpg)"></div>
-                                </td>
-                                <td>228</td>
-                                <td>1488</td>
-                                <td>
-                                    <span>Вегетеріанська</span>
-                                    <span>Без глютену</span>
-                                </td>
-                                <td>
-                                    <span>Перший інгредієнт</span>
-                                    <span>Другий тут</span>
-                                    <span>І третій теж</span>
-                                    <span>Четвертий в списку</span>
-                                    <span>П'ятий з довгою назвою для тесту</span>
-                                </td>
-                                <td>
-                                    <span>Непотрібний інгредієнт</span>
-                                    <span>Його друган</span>
-                                    <span>Салат в бургері</span>
-                                </td>
-                                <td>322</td>
-                                <td class="control-icons">
-                                    <a href="#"><img src="svg/editIcon.svg"></a>
-                                    <a href="#"><img src="svg/deleteIcon.svg"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Охуєнний бургер</td>
-                                <td>
-                                    <div class="food-image-preview" style="background-image: url(img/tmg-article_default_mobile.jpg)"></div>
-                                </td>
-                                <td>228</td>
-                                <td>1488</td>
-                                <td>
-                                    <span>Вегетеріанська</span>
-                                    <span>Без глютену</span>
-                                </td>
-                                <td>
-                                    <span>Перший інгредієнт</span>
-                                    <span>Другий тут</span>
-                                    <span>І третій теж</span>
-                                    <span>Четвертий в списку</span>
-                                    <span>П'ятий з довгою назвою для тесту</span>
-                                </td>
-                                <td>
-                                    <span>Непотрібний інгредієнт</span>
-                                    <span>Його друган</span>
-                                    <span>Салат в бургері</span>
-                                </td>
-                                <td>322</td>
-                                <td class="control-icons">
-                                    <a href="#"><img src="svg/editIcon.svg"></a>
-                                    <a href="#"><img src="svg/deleteIcon.svg"></a>
-                                </td>
-                            </tr>
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Охуєнний бургер</td>
@@ -352,6 +262,116 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Редагування страви</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="my-2">Назва страви</p>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">UA</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="foodNameUA" placeholder="Назва страви українською" required>
+                                    </div>
+                                    <div class="input-group my-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">RU</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="foodNameRU" placeholder="Назва страви російською" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">EN</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="foodNameEN" placeholder="Назва страви англійською" required>
+                                    </div>
+                                    <div class="form-row mt-4">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="foodPrice">Ціна</label>
+                                            <input type="number" class="form-control" id="foodPrice" placeholder="Гривень" required>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="foodWeight">Вага</label>
+                                            <input type="number" class="form-control" id="foodWeight" placeholder="Грамів" required>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="foodCalority">Калорійність</label>
+                                            <input type="number" class="form-control" id="foodCalority" placeholder="Калорій" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p class="my-2">Тип страви</p>
+                                    <select class="custom-select" required>
+                                        <option disabled selected>Обрати тип страви</option>
+                                        <option value="breakfast">Сніданок</option>
+                                        <option value="lunch">Ланч</option>
+                                        <option value="dinner">Обід</option>
+                                        <option value="nooning">Підвечірок</option>
+                                        <option value="supper">Вечеря</option>
+                                    </select>
+                                    <p class="mt-4 mb-0">Особливості</p>
+                                    <div class="input-group">
+                                        <div class="form-check-inline">
+                                            <label class="badge-checkbox">
+                                                <input type="checkbox" id="feature-forvegans">
+                                                <span>Для веганів</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="badge-checkbox">
+                                                <input type="checkbox" id="feature-forveganns">
+                                                <span>Гостре</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="badge-checkbox">
+                                                <input type="checkbox" id="feature-forveganns">
+                                                <span>Без глютену</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="badge-checkbox">
+                                                <input type="checkbox" id="feature-forveganns">
+                                                <span>З цибулею</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="badge-checkbox">
+                                                <input type="checkbox" id="feature-forveganns">
+                                                <span>Для вегетеріанців</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="badge-checkbox">
+                                                <input type="checkbox" id="feature-forveganns">
+                                                <span>З часником</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Скасувати</button>
+                        <button type="button" class="btn btn-primary">Зберегти</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

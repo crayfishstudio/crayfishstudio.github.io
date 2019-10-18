@@ -52,3 +52,33 @@ input[type='checkbox'] {
 .control-icons a:hover img{
     transform: translateY(-3px);
 }
+
+input[type='text'], input[type='number'] {
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+
+ .custom-select {
+    background-color: #FAFAFA;
+    height: 42px;
+    padding-left: 20px;
+}
+
+.badge-checkbox {
+    margin-top: 20px;
+}
+
+.badge-checkbox input {
+    display: none;
+}
+
+.badge-checkbox span {
+    background-color: #FAFAFA;
+    padding: 8px 20px 11px 20px;
+    border-radius: 4px;
+    border: 1px solid #FAFAFA;
+}
+
+.badge-checkbox input:checked ~ span {
+    border: 1px solid #111;
+}
