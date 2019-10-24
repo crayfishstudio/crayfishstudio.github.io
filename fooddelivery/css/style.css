@@ -119,3 +119,123 @@ input[type='file'] {
 .bb-1 {
     border-bottom: 1px solid #AAA;
 }
+
+.btn-order-details {
+    border: 1px solid #3287AB;
+    padding: 1px 10px 4px 10px;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.btn-order-details:hover {
+    background-color: #3287AB !important;  
+    color: #fff;
+}
+
+.food-card {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.badge-card-checkbox input {
+    display: none;
+}
+
+.badge-card-checkbox {
+    font-size: 14px;
+    padding: 1px 7px 4px 7px;
+    border-radius: 4px;
+    border: 1px solid #3287AB;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.badge-card-checkbox input:checked ~ span{
+    text-decoration: line-through;
+    color: #BB1058;
+}
+
+.badge-card-checkbox input:disabled ~ img {
+    display: none;
+}
+
+.badge-card-checkbox img {
+    transform: rotate(45deg);
+    transition: all .3s;
+}
+
+.badge-card-checkbox input:checked ~ img {
+    transform: rotate(0deg);
+}
+
+.badges-father {
+    margin-right: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.qty-counter input {
+    text-align: center;
+    width: 40px;
+    height: 35px;
+    border: 1px solid #3287AB;
+    padding: 0px;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #3287AB;
+    font-size: 18px;
+}
+
+.qty-counter input:focus {
+    outline: none;
+}
+
+.qty-counter {
+    display: inline-flex;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.qty-counter div {
+    width: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    color: #BB1058;
+    border-radius: 3px;
+    transition: all .2s;
+}
+
+.qty-counter div:hover {
+    background-color: #3287AB22;
+}
+.added {
+    border: 1px solid #34AB32;
+}
+
+.food-card.added input {
+    background-color: #3287AB;
+    color: #fff;
+}
+
+.lead-collapse-button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.card-filled {
+    background-color: #C2F8C7;
+}
+
+.lead-details {
+    background-color: #F6F6F6;
+}
