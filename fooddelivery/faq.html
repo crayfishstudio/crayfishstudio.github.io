@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>ClubPH food adminpanel</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">ClubPH Adminpanel</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Інгредієнти</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Страви</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Календар</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Промо-коди</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Замовлення</a>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <button type="button" class="btn btn-outline-light">Вихід</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mt-5 pt-4 mb-3">
+                <ul class="nav nav-pills">
+                    <form class="form-inline ml-auto">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".add-new-food">Додати питання</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-striped table-borderless">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">№</th>
+                                <th scope="col" width="250px">Питання</th>
+                                <th scope="col">Відповідь</th>
+                                <th scope="col" width="80px"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Географічно в яких межах доступна доставка ?</td>
+                                <td>
+                                    Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.
+                                    Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення. Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр). Після відходу кур'єра претензії до замовлення не приймаються.
+                                </td>
+                                <td class="control-icons">
+                                    <a href="#" data-toggle="modal" data-target=".add-new-food"><img src="svg/editIcon.svg"></a>
+                                    <a href="#" data-toggle="modal" data-target="#deleteModal"><img src="svg/deleteIcon.svg"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Географічно в яких межах доступна доставка ?</td>
+                                <td>
+                                    Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.
+                                    Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення. Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр). Після відходу кур'єра претензії до замовлення не приймаються.
+                                </td>
+                                <td class="control-icons">
+                                    <a href="#" data-toggle="modal" data-target=".add-new-food"><img src="svg/editIcon.svg"></a>
+                                    <a href="#" data-toggle="modal" data-target="#deleteModal"><img src="svg/deleteIcon.svg"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Географічно в яких межах доступна доставка ?</td>
+                                <td>
+                                    Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.
+                                    Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення. Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр). Після відходу кур'єра претензії до замовлення не приймаються.
+                                </td>
+                                <td class="control-icons">
+                                    <a href="#" data-toggle="modal" data-target=".add-new-food"><img src="svg/editIcon.svg"></a>
+                                    <a href="#" data-toggle="modal" data-target="#deleteModal"><img src="svg/deleteIcon.svg"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Географічно в яких межах доступна доставка ?</td>
+                                <td>
+                                    Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.
+                                    Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення. Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр). Після відходу кур'єра претензії до замовлення не приймаються.
+                                </td>
+                                <td class="control-icons">
+                                    <a href="#" data-toggle="modal" data-target=".add-new-food"><img src="svg/editIcon.svg"></a>
+                                    <a href="#" data-toggle="modal" data-target="#deleteModal"><img src="svg/deleteIcon.svg"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Географічно в яких межах доступна доставка ?</td>
+                                <td>
+                                    Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.
+                                    Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення. Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр). Після відходу кур'єра претензії до замовлення не приймаються.
+                                </td>
+                                <td class="control-icons">
+                                    <a href="#" data-toggle="modal" data-target=".add-new-food"><img src="svg/editIcon.svg"></a>
+                                    <a href="#" data-toggle="modal" data-target="#deleteModal"><img src="svg/deleteIcon.svg"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Географічно в яких межах доступна доставка ?</td>
+                                <td>
+                                    Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.
+                                    Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення. Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр). Після відходу кур'єра претензії до замовлення не приймаються.
+                                </td>
+                                <td class="control-icons">
+                                    <a href="#" data-toggle="modal" data-target=".add-new-food"><img src="svg/editIcon.svg"></a>
+                                    <a href="#" data-toggle="modal" data-target="#deleteModal"><img src="svg/deleteIcon.svg"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Географічно в яких межах доступна доставка ?</td>
+                                <td>
+                                    Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.
+                                    Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення. Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр). Після відходу кур'єра претензії до замовлення не приймаються.
+                                </td>
+                                <td class="control-icons">
+                                    <a href="#" data-toggle="modal" data-target=".add-new-food"><img src="svg/editIcon.svg"></a>
+                                    <a href="#" data-toggle="modal" data-target="#deleteModal"><img src="svg/deleteIcon.svg"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade add-new-food" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Редагування FAQ</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="my-2">Запитання</p>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">UA</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="foodNameUA" placeholder="Запитання українською" required>
+                                    </div>
+                                    <div class="input-group my-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">RU</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="foodNameRU" placeholder="Запитання російською" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">EN</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="foodNameEN" placeholder="Запитання англійською" required>
+                                    </div>
+                                    <p class="my-2 pt-3">Відповіді</p>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">UA</div>
+                                        </div>
+                                        <textarea type="text" class="form-control" rows="5" id="foodNameUA" placeholder="Відповідь українською" required></textarea>
+                                    </div>
+                                    <div class="input-group my-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">RU</div>
+                                        </div>
+                                        <textarea type="text" class="form-control" rows="5" id="foodNameUA" placeholder="Відповідь російською" required></textarea>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">EN</div>
+                                        </div>
+                                        <textarea type="text" class="form-control" rows="5" id="foodNameUA" placeholder="Відповідь англійською" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Скасувати</button>
+                        <button type="button" class="btn btn-primary">Зберегти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Видалення страви</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Ти точно хочеш це видалити? Можливо, станеться щось непоправне. Краще подумай перед тим як це робити, серйозно.
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Страшно, вирубай</button>
+                    <button type="button" class="btn btn-danger">ВИДАЛИТИ!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
