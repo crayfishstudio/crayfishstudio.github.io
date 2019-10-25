@@ -239,3 +239,16 @@ input[type=number]::-webkit-outer-spin-button {
 .lead-details {
     background-color: #F6F6F6;
 }
+
+.img-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+#tag-image-upload {
+    width: 50px !important;
+    height: 50px !important;
+}
