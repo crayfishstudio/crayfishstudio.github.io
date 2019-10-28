@@ -508,6 +508,10 @@ button:focus {
     transition: .4s all;
 }
 
+.city-switch:nth-child(1) {
+    margin-bottom: 8px;
+}
+
 .city {
     border: 2px solid #F5CA2D;
     padding: 5px 12px 8px  !important;
