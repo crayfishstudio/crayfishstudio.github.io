@@ -349,6 +349,18 @@
     .info-bg-text {
         background-image: url(.././img/info-bg-text-phone.svg) !important;
         background-size: cover !important;
+        width: 40% !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+        padding-right: 5.5vw !important;
+        padding-left: calc(0vw + 16px) !important;
+    }
+}
+
+@media (max-width:668px) {
+    .info-bg-text {
+        background-image: url(.././img/info-bg-text-phone.svg) !important;
+        background-size: cover !important;
         width: 70% !important;
         font-size: 14px !important;
         padding: 5px !important;
@@ -572,7 +584,7 @@ textarea:focus {
 .info-title {
     font-size: 56px;
     line-height: 120%;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     color: #FFFFFF;
     padding-right: 24%;
@@ -682,6 +694,7 @@ textarea:focus {
     line-height: 36px;
     color: #FFFFFF;
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 .card-discount span {
