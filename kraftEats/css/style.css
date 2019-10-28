@@ -622,7 +622,7 @@ button:focus {
 }
 
 .ordering button:hover {
-    background-color: var(--lightolor);
+    background-color: var(--lightColor);
 }
 
 .ordering input,
@@ -1010,6 +1010,11 @@ span.regular-text {
     border-radius: 25.5px;
     text-transform: uppercase;
     font-weight: 600;
+    transition: .4s all;
+}
+
+.burger-card button:hover {
+    background-color: var(--lightColor);
 }
 
 .burger-card h3 {
