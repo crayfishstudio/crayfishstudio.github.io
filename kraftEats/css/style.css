@@ -1076,3 +1076,6 @@ span.regular-text {
     max-height: 47.3vh;
     max-width: 43vw;
 }
+.order-button {
+    padding: 18px 0 !important;
+}
