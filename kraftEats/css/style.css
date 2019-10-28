@@ -153,6 +153,7 @@
         font-size: 36px !important;
         margin-bottom: 12px !important;
     }
+
     .px-body {
         padding: 0 2.25vw !important;
     }
@@ -298,10 +299,10 @@
     .ordering {
         margin-top: 12vh !important;
     }
-    
+
     .ordering {
-    margin-top: 52px !important;
-}
+        margin-top: 52px !important;
+    }
 
     .px-table {
         padding: 0 !important;
@@ -317,17 +318,17 @@
         font-size: 20px !important;
         line-height: 20px !important;
     }
-    
+
     .card-discount span {
         font-size: 12px !important;
     }
 
     .info-bg {
         padding-bottom: 7vh !important;
-    background-image: url(.././img/qwerty.svg) !important;
-    background-size: 60% !important;
-    background-position: 100% 100% !important;
-    padding-bottom: 15vh;
+        background-image: url(.././img/qwerty.svg) !important;
+        background-size: 60% !important;
+        background-position: 100% 100% !important;
+        padding-bottom: 15vh;
     }
 
     .sushi-card__custom small {
@@ -345,7 +346,7 @@
 }
 
 @media (max-width:768px) {
-        .info-bg-text {
+    .info-bg-text {
         background-image: url(.././img/info-bg-text-phone.svg) !important;
         background-size: cover !important;
         width: 70% !important;
@@ -375,7 +376,9 @@ a:hover {
 input,
 input:focus,
 button,
-button:focus {
+button:focus,
+textarea,
+textarea:focus {
     outline: none;
     border: none;
 }
@@ -440,7 +443,8 @@ button:focus {
     margin: 0rem 0 0.75rem 0;
 }
 
-.popover__content a:hover, .popover__wrapper button:hover {
+.popover__content a:hover,
+.popover__wrapper button:hover {
     color: var(--yellowColor);
 }
 
@@ -514,7 +518,7 @@ button:focus {
 
 .city {
     border: 2px solid #F5CA2D;
-    padding: 5px 12px 8px  !important;
+    padding: 5px 12px 8px !important;
     margin-left: 1.6875vw;
     box-sizing: border-box;
     margin-right: 2vw;
