@@ -685,7 +685,7 @@ textarea:focus {
 .card-discount {
     transform: rotate(-5.5deg);
     border: 2px dashed #FFFFFF;
-    padding: 30px 20px;
+    padding: 30px 40px;
     margin-top: 7vh;
 }
 
@@ -694,7 +694,7 @@ textarea:focus {
     line-height: 36px;
     color: #FFFFFF;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .card-discount span {
