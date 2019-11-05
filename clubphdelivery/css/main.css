@@ -107,9 +107,9 @@ body * {
 }
 
 .nav-dropdown div {
-    position: relative;
-    opacity: 0;
     visibility: collapse;
+    position: absolute;
+    opacity: 0;
 }
 
 .nav-dropdown a {
