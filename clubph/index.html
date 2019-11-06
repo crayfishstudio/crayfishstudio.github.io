@@ -21,7 +21,7 @@
         <a href="#" class="d-md-none nav-phone"><img src="img/phone-alt-solid.svg"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div id="hamburger">
+            <div id="hamburger" onclick="burgerToggle()">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -95,12 +95,12 @@
 
     <section class="container-fluid mt-sm-5 pt-sm-5">
        <div class="row no-gutters px-6vw">
-           <div class="col-lg-5 col-md-4 col-3 d-none d-sm-block">
+           <div class="col-lg-5 col-md-4">
                <div id="about-img">
                    <div style="background-image: url(img/main%20photo.png)"></div>
                </div>
            </div>
-           <div class="col-lg-7 col-md-8 col-sm-9">
+           <div class="col-lg-7 col-md-8">
                <div class="row about-content pl-sm-5">
                    <div class="col-12">
                        <h3>Замовляйте готову їжу<br>в офіс або додому</h3>
@@ -129,8 +129,67 @@
            </div>
        </div>
     </section>
+    
+    <section class="container-fluid px-6vw mt-sm-5 pt-sm-5">
+        <div class="row text-center">
+            <div class="col-lg-3 col-sm-6 mb-5">
+                <img src="img/Group%20335.png" class="img-fluid mb-4">
+                <h3>Для дому</h3>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+                <img src="img/Group%20335.png" class="img-fluid mb-4">
+                <h3>Для офісу</h3>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+                <img src="img/Group%20335.png" class="img-fluid mb-4">
+                <h3>Для спорту</h3>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+                <img src="img/Group%20335.png" class="img-fluid mb-4">
+                <h3>Для кожного</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-8 pl-6vw">
+                <div class="row"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="container-fluid bg-white px-6vw">
+        <div class="row">
+            <div class="col-xl-3 col-md-4 text-center text-center text-md-left">
+                <img src="img/logo.svg" class="d-md-block mb-md-4">
+                <img src="img/vmc.png" class="ml-md-1 ml-3">
+            </div>
+            <div class="col-xl-6 col-md-5 col-sm-7 text-center text-sm-left mb-sm-0 mt-md-0 mt-5">
+                <a href="#" id="footer-phone">(093) 170 7917</a>
+                <a href="#" id="footer-mail">office@clubph.com</a>
+                <p id="work-time">Працюємо з 10:00 до 21:00</p>
+            </div>
+            <div class="col-md-3 col-sm-5 footer-links text-center text-sm-right mt-md-0 mt-5">
+                <a href="#">Доставка</a>
+                <a href="#">Меню</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="row no-gutters mt-3 justify-content-between tech-links">
+            <a href="#">2019 ClubpH Всі права захищено</a>
+            <a href="#">Публічна оферта</a>
+            <a href="#">розроблено Crayfish Studio</a>
+        </div>
+    </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        function burgerToggle() {
+            document.getElementById("hamburger").classList.toggle("chrested");
+        }
+    </script>
 </body></html>
