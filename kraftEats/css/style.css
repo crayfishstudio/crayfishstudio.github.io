@@ -151,7 +151,8 @@
 @media (max-width: 992px) {
     .ordering h1 {
         font-size: 36px !important;
-        margin-bottom: 12px !important;
+        margin-bottom: 12px !important;        
+        margin-top: 3vh !important;   
     }
 
     .px-body {
@@ -188,12 +189,13 @@
     }
 
     .sushi-card__custom {
-        padding: 10px 8px 15px 8px !important;
         margin-bottom: 8px !important;
         border-radius: 5px !important;
     }
-
-
+    
+    .bottom-padding {
+        padding: 0px 8px 15px 8px !important;
+}
 
     .mobile-hide {
         display: none !important;
@@ -214,6 +216,12 @@
         font-size: 10px !important;
         margin-bottom: 10px !important;
     }
+    
+    .radio-sushi-burger p{
+    font-size: 20px !important;
+    line-height: 20px !important;
+    margin-bottom: 15px;
+}
 
     .sushi-card__custom span {
         font-size: 16px !important;
@@ -223,6 +231,19 @@
     .burger-card span {
         font-size: 26px !important;
     }
+    
+    .radio-sushi-burger span{
+    font-size: 20px !important;
+    line-height: 20px !important;
+    margin-bottom: 3vh !important;
+}
+    
+    .radio-sushi-burger label {
+    padding: 14px 0 16px;
+    font-size: 20px !important;
+    line-height: 20px !important;
+    margin-bottom: 15px !important;
+}
 
     .sushi-card__custom button {
         font-size: 12px !important;
@@ -230,6 +251,16 @@
         border-radius: 14px !important;
         padding: 6px 0 !important;
     }
+    
+    .ordering button {
+    line-height: 140% !important;
+}
+    
+    .order-button {
+    padding: 16px 0 !important;
+    line-height: 16px !important;
+        font-size: 14px !important
+}
 
     .custom-card__discount {
         top: 8% !important;
@@ -343,6 +374,11 @@
         padding: 4px 9px;
         display: block;
     }
+    
+    a.studio-link {
+    font-size: 18px !important;
+    line-height: 18px !important;
+}
 }
 
 @media (max-width:768px) {
@@ -425,6 +461,18 @@ textarea:focus {
     width: auto;
 }
 
+.popover__content-burger {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -28px;
+    transform: translate(0, 10px);
+    background-color: #262626;
+    border-radius: 10px;
+    padding: 0.75rem 0.5rem;
+    width: 152px;
+}
+
 .popover__content-city,
 .popover__content-language {
     opacity: 0;
@@ -462,7 +510,7 @@ textarea:focus {
 
 .popover__content:before,
 .popover__content-city:before,
-.popover__content-language:before {
+.popover__content-language:before, .popover__content-burger:before {
     position: absolute;
     z-index: -1;
     content: "";
@@ -477,7 +525,8 @@ textarea:focus {
 
 .popover__wrapper:hover .popover__content,
 .popover__wrapper:hover .popover__content-city,
-.popover__wrapper:hover .popover__content-language {
+.popover__wrapper:hover .popover__content-language, 
+.popover__wrapper:hover .popover__content-burger {
     z-index: 10;
     opacity: 1;
     visibility: visible;
@@ -735,7 +784,6 @@ textarea:focus {
 }
 
 .sushi-card__custom {
-    padding: 35px 32px 40px 32px;
     margin-bottom: 3.8vh;
     background-color: #262626;
     background-repeat: no-repeat;
@@ -818,7 +866,7 @@ textarea:focus {
 .card-bg {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-image: url(.././img/card-bg.png);
     height: 38vh;
     margin-bottom: 20px;
@@ -1019,6 +1067,7 @@ span.regular-text {
     line-height: 140%;
     text-align: center;
     color: #FFFFFF;
+    font-weight: 600;
 }
 
 .burger-card button {
@@ -1078,4 +1127,69 @@ span.regular-text {
 }
 .order-button {
     padding: 18px 0 !important;
+}
+
+.bottom-padding {
+    padding: 0px 32px 40px 32px;
+}
+
+.radio-sushi-burger p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #0b0b0b;
+}
+
+.radio-sushi-burger span{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    text-transform: uppercase;
+    margin-bottom: 4.6vh;
+}
+
+.radio-sushi-burger label {
+    width: 100%;
+    padding: 14px 0 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    border: 3px solid #F5CA2D;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.radio-sushi-burger input[type="radio"] {
+    display: none;
+}
+
+.radio-sushi-burger input[type="radio"]:checked + label {
+    background-color: #F5CA2D;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 12px rgba(152, 152, 152, 0.5);
+}
+.studio-reference {
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.studio-reference a{
+    display: inline-block;
+    transition: .8s all;
+}
+
+.studio-reference a:hover{
+    text-decoration: underline;
+}
+
+a.studio-link {
+    font-size: 18px;
+    line-height: 18px;
 }

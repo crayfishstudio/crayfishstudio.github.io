@@ -45,7 +45,11 @@ if(isset($_POST["login_user"])){
 
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
+//$password_hash = password_hash($password, PASSWORD_DEFAULT);
         // Prepare a select statement
+   //     $sql = "INSERT INTO users (username, password_hash) VALUES ('admin' , '{$password_hash}')";
+//echo $sql;
+//$db->query($sql);
         $sql = "SELECT id, username, password_hash FROM users WHERE username = ?";
 
         if($stmt = mysqli_prepare($db, $sql)){
@@ -78,12 +82,12 @@ if(isset($_POST["login_user"])){
                             header("location: admin.php");
                         } else{
                             // Display an error message if password is not valid
-                            $password_err = "The password you entered was not valid.";
+                           echo $password_err = "The password you entered was not valid.";
                         }
                     }
                 } else{
                     // Display an error message if username doesn't exist
-                    $username_err = "No account found with that username.";
+                   echo $username_err = "No account found with that username.";
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
