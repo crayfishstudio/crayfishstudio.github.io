@@ -148,15 +148,28 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 991.99px) {
+    
+}
+
+@media (max-width: 991.98px) {
     .ordering h1 {
         font-size: 36px !important;
-        margin-bottom: 12px !important;        
-        margin-top: 3vh !important;   
+        margin-bottom: 12px !important;
+        margin-top: 3vh !important;
     }
 
     .px-body {
         padding: 0 2.25vw !important;
+    }
+
+    .cart-bg {
+        padding: 24px 15px 8px 15px !important;
+        width: 100% !important;
+    }
+
+    .cart-bg:nth-child(1) {
+        margin-right: 0 !important;
     }
 
     .info-bg-text {
@@ -192,10 +205,10 @@
         margin-bottom: 8px !important;
         border-radius: 5px !important;
     }
-    
+
     .bottom-padding {
         padding: 0px 8px 15px 8px !important;
-}
+    }
 
     .mobile-hide {
         display: none !important;
@@ -216,12 +229,12 @@
         font-size: 10px !important;
         margin-bottom: 10px !important;
     }
-    
-    .radio-sushi-burger p{
-    font-size: 20px !important;
-    line-height: 20px !important;
-    margin-bottom: 15px;
-}
+
+    .radio-sushi-burger p {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin-bottom: 15px;
+    }
 
     .sushi-card__custom span {
         font-size: 16px !important;
@@ -231,19 +244,27 @@
     .burger-card span {
         font-size: 26px !important;
     }
+
+    .radio-sushi-burger span {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin-bottom: 3vh !important;
+    }
     
-    .radio-sushi-burger span{
-    font-size: 20px !important;
-    line-height: 20px !important;
-    margin-bottom: 3vh !important;
+    .cart-bg p,
+.cart-bg span,
+.cart-bg small,
+.cart-text {
+    font-size: 18px !important;
+    line-height: 18px !important;
 }
-    
+
     .radio-sushi-burger label {
-    padding: 14px 0 16px;
-    font-size: 20px !important;
-    line-height: 20px !important;
-    margin-bottom: 15px !important;
-}
+        padding: 14px 0 16px;
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin-bottom: 15px !important;
+    }
 
     .sushi-card__custom button {
         font-size: 12px !important;
@@ -251,16 +272,16 @@
         border-radius: 14px !important;
         padding: 6px 0 !important;
     }
-    
+
     .ordering button {
-    line-height: 140% !important;
-}
-    
+        line-height: 140% !important;
+    }
+
     .order-button {
-    padding: 16px 0 !important;
-    line-height: 16px !important;
+        padding: 16px 0 !important;
+        line-height: 16px !important;
         font-size: 14px !important
-}
+    }
 
     .custom-card__discount {
         top: 8% !important;
@@ -349,6 +370,15 @@
         font-size: 20px !important;
         line-height: 20px !important;
     }
+    
+    .cart-plus ,
+.cart-minus  {
+    transform: translateY(-3px) scale(0.9);
+}
+    
+.cart-plus {
+    margin-right: 2px !important;
+}
 
     .card-discount span {
         font-size: 12px !important;
@@ -374,11 +404,11 @@
         padding: 4px 9px;
         display: block;
     }
-    
+
     a.studio-link {
-    font-size: 18px !important;
-    line-height: 18px !important;
-}
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
 }
 
 @media (max-width:768px) {
@@ -412,6 +442,7 @@
 }
 
 body {
+    font-family: 'HelveticaNeueCyr', sans-serif;
     background-color: var(--blackColor);
     margin: 0;
     padding: 0;
@@ -510,7 +541,8 @@ textarea:focus {
 
 .popover__content:before,
 .popover__content-city:before,
-.popover__content-language:before, .popover__content-burger:before {
+.popover__content-language:before,
+.popover__content-burger:before {
     position: absolute;
     z-index: -1;
     content: "";
@@ -525,7 +557,7 @@ textarea:focus {
 
 .popover__wrapper:hover .popover__content,
 .popover__wrapper:hover .popover__content-city,
-.popover__wrapper:hover .popover__content-language, 
+.popover__wrapper:hover .popover__content-language,
 .popover__wrapper:hover .popover__content-burger {
     z-index: 10;
     opacity: 1;
@@ -1022,6 +1054,11 @@ textarea:focus {
 
 .inline-flex {
     display: inline-flex;
+    justify-content: center;
+}
+
+.inline-flex img{
+    margin: 0 7.5px;
 }
 
 .sidebar-content a {
@@ -1125,6 +1162,7 @@ span.regular-text {
     max-height: 47.3vh;
     max-width: 43vw;
 }
+
 .order-button {
     padding: 18px 0 !important;
 }
@@ -1133,7 +1171,7 @@ span.regular-text {
     padding: 0px 32px 40px 32px;
 }
 
-.radio-sushi-burger p{
+.radio-sushi-burger p {
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
@@ -1141,7 +1179,7 @@ span.regular-text {
     color: #0b0b0b;
 }
 
-.radio-sushi-burger span{
+.radio-sushi-burger span {
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
@@ -1174,18 +1212,19 @@ span.regular-text {
     box-sizing: border-box;
     box-shadow: 0px 3px 12px rgba(152, 152, 152, 0.5);
 }
+
 .studio-reference {
     font-size: 18px;
     line-height: 18px;
     color: #FFFFFF;
 }
 
-.studio-reference a{
+.studio-reference a {
     display: inline-block;
     transition: .8s all;
 }
 
-.studio-reference a:hover{
+.studio-reference a:hover {
     text-decoration: underline;
 }
 
@@ -1193,3 +1232,125 @@ a.studio-link {
     font-size: 18px;
     line-height: 18px;
 }
+
+.cart-bg {
+    background-color: var(--yellowColor);
+    padding: 24px 40px 34px 40px;
+    width: 49%;
+}
+
+.cart-bg:nth-child(1) {
+    margin-right: 2%;
+}
+
+.cart-bg p,
+.cart-bg span,
+.cart-bg small,
+.cart-text {
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.cart h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #0b0b0b;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+.cart-plus,
+.cart-minus {
+    background: transparent;
+    padding: 0;
+    transition: .4s all;
+}
+
+.cart-plus {
+    margin-right: 5px;
+}
+
+.cart-plus:hover,
+.cart-minus:hover {
+    transform: scale(1.1);
+}
+
+.counters {
+    display: inline-flex;
+}
+.your-order {
+    margin-top:  6.72vh;
+}
+
+.your-order h2{
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+    color: var(--yellowColor);
+}
+
+.your-order__card {
+    width: 49%;
+}
+
+.your-order__card h6{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.your-order__card:nth-child(1) {
+    background-color: #262626;
+}
+
+.your-order__card:nth-child(2) {
+    margin-right: 2%;
+}
+
+.your-order-button {
+    background: transparent;
+    padding: 0;
+}
+
+
+
+.sushi-order-display {
+    display: inline-flex;
+}
+
+.sushi-order__text, .sushi-order__text small, .sushi-order__text span{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.price-counters {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.button-hide div{
+    background-color: var(--yellowColor);
+    height: 18px;
+    margin-right: 10px;
+}
+
+.button-hide div:nth-child(1){
+    width: 2px;
+    transform: rotate(45deg);
+}
+
+.button-hide div:nth-child(2){
+    width: 2px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 3px;
+}
+
+
