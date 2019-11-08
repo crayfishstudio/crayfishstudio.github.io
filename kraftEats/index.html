@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
@@ -777,36 +777,48 @@
                         </div>
                     </div>
                     <div class="row no-gutters your-order">
-                        <div class="your-order__card order-lg-2">
-                            
+                        <div class="your-order__card order-lg-2 mb-lg-0 mb-3">
+                            <div class="your-order__card-bg">
+                                <div class="total-price text-lg-left text-center">
+                                    Сума: <span>768 грн</span>
+                                    <div class="total-price-range">
+                                        <div class="range-bar">
+                                            <span class="range-handler green-handler" style="left: 23.2%;"></span>
+                                            <span class="range-progress green-progress" style="width: 23.2%;"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <p class="total-price-text text-lg-left text-center">Безкоштовна доставка від 250 грн</p>
+                            </div>
                         </div>
 
                         <div class="your-order__card order-lg-1">
                             <h2>Ваше замовлення</h2>
                             <div class="row no-gutters mb-3 sushi-order align-items-center">
-                                <div class="col-8 sushi-order-display">
-                                    <button class="your-order-button mr-lg-3" type="button"><img src="./img/your-order-plus.svg"></button>
+                                <div class="col-8 align-items-center sushi-order-display">
+                                    <button class="your-order-button mr-lg-3 mr-2" type="button"><img src="./img/your-order-plus.svg"></button>
                                     <h6>рол футомакі (6шт)</h6>
                                 </div>
-                                <div class="col-4 text-right price-counters">
+                                <div class="col-4 align-items-center text-right price-counters">
                                     <div class="sushi-order__text"><span>2 шт</span>/<small>115 грн</small></div>
                                     <button class="your-order-button" type="button"><img src="./img/your-order-minus.svg"></button>
                                 </div>
                             </div>
                             <div class="row no-gutters mb-3 align-items-center sushi-order">
-                                <div class="col-8 sushi-order-display">
-                                    <button class="your-order-button mr-lg-3" type="button"><img src="./img/your-order-plus.svg"></button>
+                                <div class="col-8 align-items-center sushi-order-display">
+                                    <button class="your-order-button mr-lg-3 mr-2" type="button"><img src="./img/your-order-plus.svg"></button>
                                     <h6>рол футомакі (6шт)</h6>
                                 </div>
-                                <div class="col-4 text-right price-counters">
+                                <div class="col-4 align-items-center text-right price-counters">
                                     <div class="sushi-order__text"><span>2 шт</span>/<small>115 грн</small></div>
                                     <button class="your-order-button" type="button"><img src="./img/your-order-minus.svg"></button>
                                 </div>
                             </div>
 
                             <div class="row no-gutters mb-3 burger-order align-items-center">
-                                <div class="col-4 sushi-order-display">
-                                    <button class="your-order-button mr-lg-3" type="button"><img src="./img/your-order-plus.svg"></button>
+                                <div class="col-4 align-items-center sushi-order-display">
+                                    <button class="your-order-button mr-lg-3 mr-2" type="button"><img src="./img/your-order-plus.svg"></button>
                                     <h6>майкл джордан
                                     </h6>
                                 </div>
@@ -816,15 +828,15 @@
                                     <img src="./img/fire.svg">
                                     <img src="./img/fire.svg">
                                 </div>
-                                <div class="col-4 text-right price-counters">
+                                <div class="col-4 text-right align-items-center price-counters">
                                     <div class="sushi-order__text"><span>2 шт</span>/<small>115 грн</small></div>
                                     <button class="your-order-button" type="button"><img src="./img/your-order-minus.svg"></button>
                                 </div>
                             </div>
 
                             <div class="row no-gutters mb-3 burger-order align-items-center">
-                                <div class="col-4 sushi-order-display">
-                                    <button class="your-order-button mr-lg-3" type="button"><img src="./img/your-order-plus.svg"></button>
+                                <div class="col-4 align-items-center sushi-order-display">
+                                    <button class="your-order-button mr-lg-3 mr-2" type="button"><img src="./img/your-order-plus.svg"></button>
                                     <h6>майкл джордан
                                     </h6>
                                 </div>
@@ -834,7 +846,7 @@
                                     <img src="./img/fire.svg">
                                     <img src="./img/fire.svg">
                                 </div>
-                                <div class="col-4 text-right price-counters">
+                                <div class="col-4 align-items-center text-right price-counters">
                                     <div class="sushi-order__text"><span>2 шт</span>/<small>115 грн</small></div>
                                     <button class="your-order-button" type="button">
                                         <div class="button-hide">
@@ -844,6 +856,12 @@
                                     </button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-4">
+                            <p class="order-text">Безкоштовна доставка</p>
+                            <button class="order-complete" type="submit">оформлення замовлення</button>
                         </div>
                     </div>
                 </form>
@@ -866,8 +884,8 @@
                         </picture>
                     </a>
                     <div class="footer-social">
-                        <a class="pr-3" href="#"><img src="./img/fb.svg"></a>
-                        <a href="#"><img src="./img/inst.svg"></a>
+                        <a class="pr-3" href="#" target="_blank"><img src="./img/fb.svg"></a>
+                        <a href="#" target="_blank"><img src="./img/inst.svg"></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-6 text-lg-left text-right">
@@ -897,7 +915,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
