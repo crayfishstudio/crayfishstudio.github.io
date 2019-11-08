@@ -961,6 +961,11 @@ textarea {
     margin-top: -4px;
 }
 
+.success {
+	height: 65vh;
+    text-align: center;
+}
+
 @media screen and (max-width: 1199px) {
     h1 {
         font-size: 48px;
