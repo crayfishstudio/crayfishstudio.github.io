@@ -45,7 +45,7 @@
     --not-white: #FDFAF8;
     --almost-black: #161616;
     --pink: #F9EEEE;
-    --tr-sm: all .3s;
+    --tr-sm: all .69s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 }
 
 body * {
-    transition: var(--tr-sm);
+    transition: var(--tr-sm) !important;
 }
 
 .px-6vw {
@@ -82,6 +82,7 @@ body * {
 }
 
 #order-button {
+    position: relative;
     display: block;
     width: 170px;
     padding: 12px;
@@ -119,6 +120,11 @@ body * {
     visibility: collapse;
     position: absolute;
     opacity: 0;
+    background-color: #fff;
+    padding: 0px 12px 4px 12px;
+    transform: translateX(-12px);
+    border-radius: 5px;
+    box-shadow: 0px 4px 14px rgba(202, 202, 202, 0.25);
 }
 
 .nav-dropdown a {
@@ -139,11 +145,12 @@ body * {
 .nav-dropdown:hover div {
     visibility: visible !important;
     opacity: 1;
+    margin-top: 4px;
 }
 
 .nav-dropdown a:hover {
     text-decoration: none;
-    padding-left: 3px;
+    color: var(--brand-orange-hover);
 }
 
 .navbar-toggler {
@@ -194,6 +201,42 @@ body * {
 #hamburger.chrested div:nth-child(3) {
     top: 24px;
     opacity: 0;
+}
+
+#cart-shortlist {
+	position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    padding: 24px;
+    color: var(--almost-black);
+    border-radius: 5px;
+    visibility: collapse;
+    opacity: 0;
+    box-shadow: 0px 4px 14px rgba(202, 202, 202, 0.25);
+}
+
+#order-button:hover #cart-shortlist {
+	visibility: visible;
+    opacity: 1;
+    margin-top: 8px;
+}
+
+#cart-shortlist div {
+	display: flex;
+    justify-content: space-between;
+}
+
+#cart-shortlist div span:first-child {
+    padding-right: 80px;
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+#cart-shortlist div span:last-child{
+	font-size: 20px;
+    font-weight: 500;
 }
 
 .nav-phone {
@@ -424,6 +467,10 @@ footer {
 
 .day-tab:hover {
     background-color: var(--brand-orange-hover);
+}
+
+.day-tab[aria-expanded=true] {
+    background-color: var(--dark-orange) !important;
 }
 
 .day-tab[aria-expanded=true] img {
@@ -732,6 +779,9 @@ input::-webkit-inner-spin-button {
     .food-card-image {
         height: 45vw;
     }
+    #cart-shortlist {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -857,4 +907,7 @@ input::-webkit-inner-spin-button {
     .food-card-button {
 	padding: 8px;
 }
+    .nav-dropdown div {
+        transform: none;
+    }
 }

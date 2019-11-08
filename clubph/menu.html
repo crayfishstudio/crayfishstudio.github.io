@@ -21,6 +21,28 @@
             <!--Замовити-->
             <img class="mr-1" src="img/shopping-cart.svg" height="20px">
             ₴<span>760</span>
+            <div id="cart-shortlist">
+                <div>
+                    <span>13.10 (Вівторок)</span>
+                    <span>₴280</span>
+                </div>
+                <div>
+                    <span>13.10 (Довга назва дня для тесту)</span>
+                    <span>₴1488</span>
+                </div>
+                <div>
+                    <span>13.10 (Вівторок)</span>
+                    <span>₴280</span>
+                </div>
+                <div>
+                    <span>13.10 (Вівторок)</span>
+                    <span>₴280</span>
+                </div>
+                <div>
+                    <span>13.10 (Вівторок)</span>
+                    <span>₴280</span>
+                </div>
+            </div>
         </a>
         <a href="#" class="d-md-none nav-phone"><img src="img/phone-alt-solid.svg"></a>
 
@@ -92,7 +114,7 @@
         <div class="row no-gutters">
             <div class="col">
                 <div class="accordion" id="daysAccordion">
-                    <div class="day-tab" id="head1" data-toggle="collapse" data-target="#day1" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="day-tab" id="head1" data-toggle="collapse" data-target="#day1" aria-expanded="true" aria-controls="collapseOne" onclick="ScrollOn(this.id)">
                         <h4><img src="img/arrow-menu.svg">13.10 (Вівторок)</h4>
                         <h4><small>660 Kcal</small>₴750</h4>
                     </div>
@@ -1659,7 +1681,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="day-tab" id="head2" data-toggle="collapse" data-target="#day2" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="day-tab" id="head2" data-toggle="collapse" data-target="#day2" aria-expanded="false" aria-controls="collapseOne" onclick="ScrollOn(this.id)">
                         <h4><img src="img/arrow-menu.svg">13.10 (Вівторок)</h4>
                         <h4><small>660 Kcal</small>₴750</h4>
                     </div>
@@ -3226,11 +3248,11 @@
                             </div>
                         </div>
                     </div>
-                    <div href="#day3" class="day-tab" id="head3" data-toggle="collapse" data-target="#day3" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="day-tab" id="head3" data-toggle="collapse" data-target="#day3" aria-expanded="false" aria-controls="collapseOne">
                         <h4><img src="img/arrow-menu.svg">13.10 (Вівторок)</h4>
                         <h4><small>660 Kcal</small>₴750</h4>
                     </div>
-                    <div id="day3" class="collapse" aria-labelledby="head3" data-parent="#daysAccordion" onclick="scrollTo(this)">
+                    <div id="day3" class="collapse" aria-labelledby="head3" data-parent="#daysAccordion">
                         <div class="row pb-5 justify-content-center px-2">
                             <div class="col-12 text-center py-3">
                                 <h3>Сніданок</h3>
@@ -4799,7 +4821,7 @@
         </div>
     </section>
 
-    <footer class="container-fluid px-6vw">
+    <footer id="dfgnm" class="container-fluid px-6vw">
         <div class="row">
             <div class="col-xl-3 col-md-4 text-center text-center text-md-left">
                 <img src="img/logo.svg" class="d-md-block mb-md-4">
@@ -4836,13 +4858,22 @@
             document.getElementById("hamburger").classList.toggle("chrested");
         }
 
-        function scrolTo(element) {
+        var classname = document.getElementsByClassName("day-tab");
 
-            
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+        function scrollOn() {
+            var element = document.getElementById(this.id);
+            var headerOffset = 45;
+            var elementPosition = element.getBoundingClientRect().top;
+            var offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
             });
+        }
+
+        for (var i = 0; i < classname.length; i++) {
+            classname[i].addEventListener('click', scrollOn, false);
         }
     </script>
 </body></html>
