@@ -55,7 +55,7 @@ body {
 }
 
 body * {
-    transition: var(--tr-sm) !important;
+    transition: var(--tr-sm);
 }
 
 .px-6vw {
