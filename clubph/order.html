@@ -99,378 +99,124 @@
     </nav>
 
     <section class="container-fluid">
-        <div class="row no-gutters py-4  px-6vw">
-            <div class="col-md-3 text-md-left text-center">
-                <a href="#" class="back-button">
+        <div class="row no-gutters py-4 px-6vw justify-content-between">
+            <div class="col-12 text-md-left text-center">
+                <a href="#" class="back-button mb-4">
                     <img src="img/left-arrow.svg">
-                    До замовлення
+                    Корзина
                 </a>
+                <h3><b>Оформлення замовлення</b></h3>
             </div>
-            <div class="col-md-6 text-center">
-                <h3>Корзина</h3>
-                <h3><b>₴1250</b></h3>
-                <a href="#" class="button-filled mt-4">Оформити замовлення</a>
+            <div class="col-md-5 mt-5">
+                <form id="submit-form">
+                    <div class="form-group">
+                        <label>Ваше ім'я</label>
+                        <input type="text" placeholder="Ваше ім'я" required>
+                    </div>
+                    <div class="form-group mb-5">
+                        <label>Номер телефону</label>
+                        <input type="text" placeholder="Номер телефону" required>
+                    </div>
+                    <div class="v-line"></div>
+                    <div class="form-group">
+                        <label>Вулиця</label>
+                        <input type="text" placeholder="Вулиця" required>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col pr-2">
+                            <div class="form-group">
+                                <label>Будинок</label>
+                                <input type="text" placeholder="№ будинку" required>
+                            </div>
+                        </div>
+                        <div class="col pl-2">
+                            <div class="form-group">
+                                <label>Квартира</label>
+                                <input type="text" placeholder="№ квартири">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-line"></div>
+                    <div class="form-group">
+                        <label>Промокод</label>
+                        <input type="text" placeholder="Промокод">
+                    </div>
+                    <label class="radio mt-4">
+                        <input type="radio" name="r" value="1" checked>
+                        <span>Оплата готівкою</span>
+                    </label>
+                    <label class="radio mb-5">
+                        <input type="radio" name="r" value="2">
+                        <span>Онлайн-оплата</span>
+                    </label>
+                    <div class="v-line"></div>
+                    <div class="form-group">
+                        <label>Коментар</label>
+                        <textarea placeholder="Наприклад, 'код домофону 1488'" rows="3"></textarea>
+                    </div>
+                    <label class="check mb-5">
+                        <input type="checkbox" required>
+                        <p>Погоджуюсь з політикою персональних даних</p>
+                    </label>
+                    <button type="submit" id="order-sumbit-button">Підтвердити замовлення</button>
+                </form>
             </div>
-        </div>
-    </section>
-
-    <section class="container-fluid px-6vw bg-pink pt-3">
-        <p class="text-center">Обрані вами страви:</p>
-        <div class="row no-gutters">
-            <div class="col">
-                <div class="accordion" id="daysAccordion">
-                    <div class="day-tab" id="head1" data-toggle="collapse" data-target="#day1" aria-expanded="false" aria-controls="collapseOne" onclick="ScrollOn(this.id)">
-                        <h4><img src="img/arrow-menu.svg">13.10 (Вівторок)</h4>
-                        <h4><small>660 Kcal</small>₴750</h4>
+            <div class="col-md-6 mt-5">
+                <div id="submit-total">
+                    <div>
+                        <h5>Сума замовлення:</h5>
+                        <h5>₴750</h5>
                     </div>
-                    <div id="day1" class="collapse" aria-labelledby="head1" data-parent="#daysAccordion">
-                        <div class="row py-4 justify-content-xl-start justify-content-center px-2">
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small>
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!--<small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small>-->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <h5 class="mt-4" >13.10 (Вівторок)</h5>
+                    <div>
+                        <span>
+                           Тост з яйцями бенедикт
+                           <small>(без: помідор, бекон)</small> 
+                        </span>
+                        <span>₴140</span>
+                        
                     </div>
-                    <div class="day-tab" id="head2" data-toggle="collapse" data-target="#day2" aria-expanded="false" aria-controls="collapseOne" onclick="ScrollOn(this.id)">
-                        <h4><img src="img/arrow-menu.svg">13.10 (Вівторок)</h4>
-                        <h4><small>660 Kcal</small>₴750</h4>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
                     </div>
-                    <div id="day2" class="collapse" aria-labelledby="head2" data-parent="#daysAccordion">
-                        <div class="row py-4 justify-content-xl-start justify-content-center px-2">
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small>
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!--<small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small>-->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
                     </div>
-                    <div class="day-tab" id="head3" data-toggle="collapse" data-target="#day3" aria-expanded="false" aria-controls="collapseOne">
-                        <h4><img src="img/arrow-menu.svg">13.10 (Вівторок)</h4>
-                        <h4><small>660 Kcal</small>₴750</h4>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
                     </div>
-                    <div id="day3" class="collapse" aria-labelledby="head3" data-parent="#daysAccordion">
-                         <div class="row py-4 justify-content-xl-start justify-content-center px-2">
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small>
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!--<small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small>-->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-col col-xl-4 col-lg-5 col-md-6 col-sm-8">
-                                <div class="cart-food-card">
-                                    <img src="img/chrest.svg" class="cart-food-close">
-                                    <div class="cart-food-img" style="background-image: url(img/main%20photo.png)"></div>
-                                    <div class="cart-food-content">
-                                        <h5>
-                                            <!-- <small data-toggle="tooltip" data-placement="bottom" title="Без: інгредієнт, інгредієнт, сіль, перець">ред.</small> -->
-                                            Тост з довгим яйцем бенедикт
-                                        </h5>
-                                        <div class="food-card-info">
-                                            <div>
-                                                <span><img src="img/minus.svg"></span>
-                                                <input type="number" value="1">
-                                                <span><img src="img/plus.svg"></span>
-                                            </div>
-                                            <small>660Kcal</small>
-                                            <h6>₴999</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
+                    </div>
+                    <h5 class="mt-4" >13.10 (Вівторок)</h5>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
+                    </div>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
+                    </div>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
+                    </div>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
+                    </div>
+                    <div>
+                        <span>Тост з яйцями бенедикт</span>
+                        <span>₴140</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
-    <div class="container-fluid px-6vw">
-        <div class="row no-gutters">
-            <div class="col text-center">
-                <a href="#" class="button-filled mt-4">Оформити замовлення</a>
-            </div>
-        </div>
-    </div>
 
     <footer id="dfgnm" class="container-fluid px-6vw">
         <div class="row">
@@ -507,24 +253,6 @@
 
         function burgerToggle() {
             document.getElementById("hamburger").classList.toggle("chrested");
-        }
-
-        var classname = document.getElementsByClassName("day-tab");
-
-        function scrollOn() {
-            var element = document.getElementById(this.id);
-            var headerOffset = 45;
-            var elementPosition = element.getBoundingClientRect().top;
-            var offsetPosition = elementPosition - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        }
-
-        for (var i = 0; i < classname.length; i++) {
-            classname[i].addEventListener('click', scrollOn, false);
-        }
+        }        
     </script>
 </body></html>
