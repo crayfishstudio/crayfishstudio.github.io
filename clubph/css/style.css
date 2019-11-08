@@ -204,7 +204,7 @@ body * {
 }
 
 #cart-shortlist {
-	position: absolute;
+    position: absolute;
     right: 0;
     top: 100%;
     background-color: #fff;
@@ -217,13 +217,13 @@ body * {
 }
 
 #order-button:hover #cart-shortlist {
-	visibility: visible;
+    visibility: visible;
     opacity: 1;
     margin-top: 8px;
 }
 
 #cart-shortlist div {
-	display: flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -234,8 +234,8 @@ body * {
     font-weight: 400;
 }
 
-#cart-shortlist div span:last-child{
-	font-size: 20px;
+#cart-shortlist div span:last-child {
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -601,9 +601,11 @@ input[type=checkbox]:checked ~ span {
 
 
 .food-card-info {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
+    width: 100% !important;
+    flex-direction: row;
 }
 
 .food-card-info div {
@@ -614,7 +616,7 @@ input[type=checkbox]:checked ~ span {
 
 .food-card-info div span {
     display: inline-block;
-    width: 20px;
+    width: 16px;
     text-align: center;
     font-weight: 700;
     cursor: pointer;
@@ -679,7 +681,75 @@ input::-webkit-inner-spin-button {
     padding: 0px 8px;
 }
 
-@media screen and (max-width: 1200px) {
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.back-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--almost-black);
+}
+
+.back-button img {
+    margin-right: 8px;
+}
+
+.back-button:hover {
+    color: var(--almost-black);
+    text-decoration: none;
+    transform: translateX(-4px);
+}
+
+.cart-food-card {
+    width: 100%;
+    box-shadow: 0px 4px 14px rgba(202, 202, 202, 0.25);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 16px;
+    display: inline-flex;
+    margin-bottom: 16px;
+}
+
+.cart-food-close {
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.cart-food-content h5 {
+    padding-right: 30px;
+    margin-top: -4px;
+    margin-bottom: 4px;
+}
+
+.cart-food-content h5 small {
+    font-size: 14px;
+    border: 1px solid #E9E9E9;
+    padding: 0px 4px 2px 4px;
+    margin-right: 4px;
+    border-radius: 3px;
+    cursor: context-menu;
+}
+
+.cart-food-img {
+    width: 8vw;
+    height: 8vw;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.cart-food-content {
+    width: calc(100% - 8vw - 16px);
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1199px) {
     h1 {
         font-size: 48px;
     }
@@ -695,7 +765,15 @@ input::-webkit-inner-spin-button {
     .food-card-tags {
         right: 24px;
         top: 16px;
+    }
 
+    .cart-food-img {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .cart-food-content {
+        width: calc(100% - 12vw - 16px);
     }
 }
 
@@ -779,8 +857,42 @@ input::-webkit-inner-spin-button {
     .food-card-image {
         height: 45vw;
     }
+
     #cart-shortlist {
         display: none;
+    }
+
+    .back-button {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 32px;
+    }
+
+    .cart-food-card {
+        padding: 8px;
+    }
+
+    .cart-food-img {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .cart-food-content {
+        width: calc(100% - 16vw - 8px);
+    }
+    
+    .cart-food-close {
+        top: 8px;
+        right: 16px;
+    }
+    
+    .cart-food-content h5 {
+        padding-right: 18px;
+        font-size: 18px;
+    }
+    
+    .cart-food-content {
+         margin-left: 8px;   
     }
 }
 
@@ -898,16 +1010,41 @@ input::-webkit-inner-spin-button {
     .food-card-image {
         height: 55vw;
     }
-    
-    
-.food-card-content h5 {
-    font-size: 24px;
+
+
+    .food-card-content h5 {
+        font-size: 24px;
     }
-    
+
     .food-card-button {
-	padding: 8px;
-}
+        padding: 8px;
+    }
+
     .nav-dropdown div {
         transform: none;
+    }
+
+    .cart-food-img {
+        width: 23vw;
+        height: 23vw;
+    }
+
+    .cart-food-content {
+        width: calc(100% - 23vw - 8px);
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .cart-food-card .food-card-info small {
+        display: none;
+    }
+    
+    .cart-food-img {
+        width: 27vw;
+        height: 27vw;
+    }
+
+    .cart-food-content {
+        width: calc(100% - 27vw - 8px);
     }
 }
