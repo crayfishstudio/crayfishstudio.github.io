@@ -296,7 +296,7 @@ require_once("config.php");
                         <a class="document-list__link" href="./pdf/vishykaniy/dozvil-na-vikonannya-robit-andrysiva-13.pdf" download>Дозвіл на виконання робіт</a>
                     </div>
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Право власності на земельну ділянку</a>
+                        <a class="document-list__link" href="./pdf/vishykaniy/property-rights-13-vishykanyi.pdf" download>Право власності на земельну ділянку</a>
                     </div>
                 </div>
 

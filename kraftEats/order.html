@@ -47,7 +47,7 @@
                         <a href="#">
                             <h2 class="popover__title">Бургери<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
                         </a>
-                        <div class="popover__content">
+                        <div class="popover__content popover__content-burger">
                             <a href="#">Бургер меню</a>
                             <a href="#">Бургери</a>
                             <a href="#">Крафт Бургери</a>
@@ -136,7 +136,30 @@
                     <div class="col-12 text-center">
                         <h1>оформлення замовлення</h1>
                     </div>
-                    <div class="col-lg-5">
+
+                    <div class="col-lg-6 order-lg-2 radio-sushi-burger">
+                        <p>Оберіть акцію:</p>
+                        <form action="">
+                            <div class="row no-gutters">
+                                <div class="col-lg-6 pr-lg-2">
+                                    <input id="sushi-action-button" type="radio" name="action-buttons" value="sushiSale">
+                                    <label for="sushi-action-button">Суші 2+1</label>
+                                </div>
+                                <div class="col-lg-6 pl-lg-2">
+                                    <input id="burger-action-button" type="radio" name="action-buttons" value="burgerSale">
+                                    <label for="burger-action-button">Бургери 3+1</label>
+                                </div>
+                            </div>
+                            <p>Застосовані промокоди:</p>
+                            <span>FREEBURGER4</span>
+                        </form>
+
+                        <!--                        ВАШЕ ЗАМОВЛЕННЯ, ЯКЕ ТЕЖ ТРЕБА ВЗЯТИ З ОСНОВНОГО САЙТУ ТУТЬ-->
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40673.51543390977!2d30.421490813892014!3d50.420706931875635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb43292f307%3A0x62d718976a4ab868!2z0KHQvtC70L7QvCfRj9C90YHRjNC60LjQuSDRgNCw0LnQvtC9LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1572286991013!5m2!1suk!2sua" width="100%" height="415" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+
+                    <div class="col-lg-5 mt-lg-0 mt-4 order-lg-1">
                         <form action="">
                             <span>Ім'я</span>
                             <input type="text" name="name" required="">
@@ -161,8 +184,8 @@
 
                             <span>Промокод</span>
                             <div class="row no-gutters">
-                                <div class="col-8 pr-3">
-                            <input type="text" name="promocode">
+                                <div class="col-8 pr-lg-3 pr-2">
+                                    <input type="text" name="promocode">
                                 </div>
                                 <div class="col-4">
                                     <button class="mb-0 order-button">Застосувати</button>
@@ -182,18 +205,13 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-lg-5">
-                        <!--                        ВАШЕ ЗАМОВЛЕННЯ, ЯКЕ ТЕЖ ТРЕБА ВЗЯТИ З ОСНОВНОГО САЙТУ ТУТЬ-->
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40673.51543390977!2d30.421490813892014!3d50.420706931875635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb43292f307%3A0x62d718976a4ab868!2z0KHQvtC70L7QvCfRj9C90YHRjNC60LjQuSDRgNCw0LnQvtC9LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1572286991013!5m2!1suk!2sua" width="100%" height="415" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
                 </div>
             </div>
         </section>
     </main>
 
 
-    <footer class="footer mb-lg-4">
+    <footer class="footer mb-lg-0 mb-3">
         <div class="container-fluid px-body">
             <div class="px-lg-3 px-1">
                 <div class="footer-line"></div>
@@ -221,10 +239,15 @@
                 <div class="col-lg-7 text-lg-right text-center">
                     <h4><a class="footer-phone" href="tel:+380931707917">(093) 17 079 17</a></h4>
                     <a class="footer-mail" href="mailto:info@kraftburger.com.ua">info@kraftburger.com.ua</a>
-                    <div class="footer-social pb-lg-0 pb-5">
+                    <div class="footer-social">
                         <img class="pr-4" src="./img/visa.svg">
                         <img src="./img/mastercard.svg">
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-end no-gutters px-lg-3 px-1 mt-3">
+                <div class="col-lg-12 text-lg-right text-center">
+                    <div class="studio-reference">Розроблено в <a class="studio-link" target="_blank" href="https://crayfish.studio">Crayfish studio</a></div>
                 </div>
             </div>
         </div>

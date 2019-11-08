@@ -7,11 +7,11 @@
         });
 
         $(document).ready(function () {
-            $('.sidebar-search__anchors a, .nav__chrested, .mobile-sidebar__logo, .sidebar-search__language a').on('click', function () {
+            $('.sidebar-content a, .city-switch').on('click', function () {
                 $('.sidebar__mobile').removeClass('active-sidebar');
             });
 
-            $('.sidebar-search__anchors a, .mobile-sidebar__logo, .sidebar-search__language a').on('click', function () {
+            $('.sidebar-content a, .city-switch').on('click', function () {
                 $('.hamburger').removeClass('nav__chrested');
             });
 

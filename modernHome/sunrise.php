@@ -293,7 +293,7 @@ require_once("config.php");
                     </div>
 
                     <div class="document-list__item">
-                        <a class="document-list__link" href="#">Право власності на земельну ділянку</a>
+                        <a class="document-list__link" href="./pdf/sunrise/property-rights-10-sunrise.pdf" download>Право власності на земельну ділянку</a>
                     </div>
                 </div>
 
