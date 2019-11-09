@@ -143,6 +143,45 @@
 }
 
 @media (max-width: 1024px) {
+    #map {
+        margin-bottom: -13px !important;
+        transform: translateX(6px) !important;
+    }
+
+    .order-total-price,
+    .order-total-price span {
+        font-size: 26px !important;
+        line-height: 26px !important;
+    }
+
+    .order-item-count,
+    .order-item-count span,
+    .order-item-count small {
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+
+    .order-text {
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+
+    .order-fry-level {
+        transform: scale(0.8);
+    }
+
+    .order-card h6 {
+        font-size: 16px !important;
+        line-height: 16px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .order-card h3 {
+        font-size: 26px !important;
+        line-height: 26px !important;
+        margin-bottom: 15px !important;
+    }
+
     .burger-card {
         padding: 23px 24px 23px 24px !important;
         margin-bottom: 2vh !important;
@@ -171,7 +210,8 @@
         height: 25vh !important;
     }
 
-    .ordering h1 {
+    .ordering h1,
+    .delivery h1 {
         font-size: 48px !important;
         margin-bottom: 4.05vh !important;
     }
@@ -247,10 +287,50 @@
     .cutlet-double {
         font-size: 12px !important;
     }
+
+    .delivery-card p {
+        margin-bottom: 5vh !important;
+    }
 }
 
 @media (max-width: 991.98px) {
-    .ordering h1 {
+    #map {
+        border: 0;
+        margin-bottom: -13px;
+        transform: translateX(5px);
+    }
+
+    .order-card h6 {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+
+    .order-item-count,
+    .order-item-count span,
+    .order-item-count small {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+
+    .order-total-price,
+    .order-total-price span {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .order-card h3 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .order-card {
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .ordering h1,
+    .delivery h1 {
         font-size: 36px !important;
         margin-bottom: 12px !important;
         margin-top: 3vh !important;
@@ -345,7 +425,6 @@
     .radio-sushi-burger span {
         font-size: 20px !important;
         line-height: 20px !important;
-        margin-bottom: 3vh !important;
     }
 
     .cart-bg p,
@@ -377,7 +456,7 @@
     .order-button {
         padding: 16px 0 !important;
         line-height: 16px !important;
-        font-size: 14px !important
+        font-size: 13px !important
     }
 
     .custom-card__discount {
@@ -451,11 +530,13 @@
     }
 
     .info,
-    .ordering {
+    .ordering,
+    .delivery {
         margin-top: 12vh !important;
     }
 
-    .ordering {
+    .ordering,
+    .delivery {
         margin-top: 52px !important;
     }
 
@@ -602,6 +683,41 @@
         padding-right: 5.5vw !important;
         padding-left: calc(0vw + 16px) !important;
     }
+
+    .order-item-count,
+    .order-item-count span,
+    .order-item-count small {
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+
+    .delivery-card h2 {
+        font-size: 24px !important;
+        line-height: 120%;
+    }
+
+    .delivery-card {
+        padding: 0 !important;
+        border: none !important;
+    }
+
+    .delivery-card p {
+        font-size: 18px !important;
+        padding-right: 0 !important;
+        margin-bottom: 4vh !important;
+    }
+
+    .zone-search button {
+        width: 100% !important;
+    }
+
+    #map {
+        transform: translateX(0px) !important;
+    }
+
+    .delivery-info h4 {
+        font-size: 18px !important;
+    }
 }
 
 @media (max-width:668px) {
@@ -613,6 +729,11 @@
         padding: 5px !important;
         padding-right: 5.5vw !important;
         padding-left: calc(0vw + 16px) !important;
+    }
+
+    p.order-text {
+        font-size: 14px !important;
+        line-height: 14px !important;
     }
 }
 
@@ -897,7 +1018,8 @@ textarea:focus {
     margin-top: calc(10.5vh + 100px);
 }
 
-.ordering {
+.ordering,
+.delivery {
     margin-top: 116px;
 }
 
@@ -947,14 +1069,19 @@ textarea:focus {
     display: block;
 }
 
-.ordering h1 {
+.ordering h1,
+.delivery h1 {
     font-size: 56px;
     line-height: 120%;
     text-transform: uppercase;
     margin-bottom: 5.7vh;
     margin-top: 5vh;
     color: #000000;
-    font-weight: 700;
+    font-weight: 900;
+}
+
+.delivery h1 {
+    color: #fff;
 }
 
 .card-discount {
@@ -1389,7 +1516,6 @@ span.regular-text {
     line-height: 24px;
     color: #0b0b0b;
     text-transform: uppercase;
-    margin-bottom: 4.6vh;
 }
 
 .radio-sushi-burger label {
@@ -1685,7 +1811,6 @@ a.studio-link {
     font-weight: 300;
     margin-top: 4.2vh;
     margin-bottom: 4.8vh;
-    ;
     color: #FFFFFF;
     padding-right: 12%;
 }
@@ -1793,4 +1918,308 @@ input[type="checkbox"]:checked + label .color-change {
     line-height: 120%;
     text-align: center;
     color: #FFFFFF;
+}
+
+.order-card h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--yellowColor);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.order-card {
+    border: 5px solid var(--yellowColor);
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 40px;
+}
+
+.order-card h6 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.order-total-price,
+.order-total-price span {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--yellowColor);
+    font-weight: 700;
+}
+
+.order-item-count,
+.order-item-count span,
+.order-item-count small {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    font-weight: 400;
+}
+
+.radio-payment label {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--almost-black);
+}
+
+.radio {
+    margin: 16px 0;
+    display: block;
+    cursor: pointer;
+}
+
+.radio input + span:not(:empty) {
+    padding-left: 30px;
+}
+
+.radio input + span {
+    font-size: 18px;
+    line-height: 22px;
+    height: 20px;
+    display: block;
+    position: relative;
+}
+
+label span {
+    position: relative;
+    color: #D0D0D0;
+}
+
+.radio input + span {
+    font-size: 18px;
+    line-height: 120%;
+    display: block;
+    position: relative;
+}
+
+.radio input + span:not(:empty) {
+    padding-left: 30px;
+}
+
+.radio input + span:before,
+.radio input + span:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.radio input + span:before {
+    background: #d1d7e3;
+    transition: background 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+
+.radio input + span:after {
+    background: #fff;
+    transform: scale(0.8);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+
+.radio input:checked + span:before {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    background: var(--yellowColor);
+}
+
+.radio input:checked + span:after {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.radio:hover input + span:before {
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+}
+
+.radio:hover input + span:after {
+    -webkit-transform: scale(0.74);
+    transform: scale(0.74);
+}
+
+.radio:hover input:checked + span:after {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.delivery-card {
+    padding: 6.34vh 0 0 3.625vw;
+    border: 6px solid var(--yellowColor);
+}
+
+.delivery-card a {
+    text-transform: uppercase;
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #0b0b0b;
+    background-color: var(--yellowColor);
+    padding: 16px 0;
+    border-radius: 25.5px;
+    font-weight: 600;
+    transition: .4s all;
+}
+
+.delivery-card a:hover {
+    background-color: var(--lightColor);
+}
+
+.delivery-card p {
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding-right: 15%;
+    margin-bottom: 9.5vh;
+}
+
+.delivery-info ul {
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.delivery-card h2 {
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.delivery-info h4 {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+
+.delivery-info li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.delivery-info li:before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    left: 0;
+    top: -3px;
+    height: 34px;
+    width: 34px;
+    background-color: #f3d445;
+}
+
+.delivery-zones li.red-zone:before {
+    background-color: #FE3D00;
+}
+
+.delivery-zones li.green-zone:before {
+    background-color: #02D310;
+}
+
+.delivery-info li:after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    height: 18px;
+    border-radius: 100%;
+    width: 18px;
+    background-color: #000;
+}
+
+.delivery-zones li.active.green-zone,
+.delivery-zones li.active.green-zone h4 {
+    color: #02D310;
+}
+
+.delivery-zones li.active.red-zone,
+.delivery-zones li.active.red-zone h4 {
+    color: #FE3D00;
+}
+
+.delivery-zones li.active:after {
+    top: calc(50% - 12px);
+    left: 11px;
+    right: 0;
+    width: 12px;
+    height: 21px;
+    border-radius: 0%;
+    background: transparent;
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.zone-search span {
+    display: block;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.zone-search input {
+    width: 100%;
+    font-size: 18px;
+    line-height: 120%;
+    padding: 15px 0;
+    padding-left: 20px;
+    color: #0b0b0b;
+    border-radius: 10px;
+}
+
+.zone-search button {
+    margin-top: 25px;
+    width: 40%;
+    text-transform: uppercase;
+    padding: 16px 0;
+    background-color: var(--yellowColor);
+    transition: .4s all;
+    border-radius: 25.5px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #0b0b0b;
+    font-weight: 600;
+}
+
+.zone-search button:hover {
+    background-color: var(--lightColor);
+}
+
+.zone-search label {
+    width: 100%;
+}
+
+.zone-search {
+    margin-bottom: 10vh;
+}
+
+#map {
+    border: 0;
+    margin-bottom: -13px;
+    transform: translateX(5px);
 }
