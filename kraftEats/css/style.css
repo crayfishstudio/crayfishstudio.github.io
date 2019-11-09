@@ -718,6 +718,12 @@
     .delivery-info h4 {
         font-size: 18px !important;
     }
+    
+    
+.delivery-zones li.active:after {
+    top: 10% !important;
+}
+
 }
 
 @media (max-width:668px) {
