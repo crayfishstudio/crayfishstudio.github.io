@@ -49,7 +49,6 @@
 }
 
 @media (min-width: 1499.98px) {
-
     .meat-choose {
         margin-right: 1.25vw !important;
     }
@@ -123,7 +122,6 @@
     .burger-card__bg {
         height: 25vh !important;
     }
-
 
     .your-order__card h6 {
         font-size: 18px !important;
@@ -211,7 +209,8 @@
     }
 
     .ordering h1,
-    .delivery h1 {
+    .delivery h1,
+    .action h1 {
         font-size: 48px !important;
         margin-bottom: 4.05vh !important;
     }
@@ -291,6 +290,21 @@
     .delivery-card p {
         margin-bottom: 5vh !important;
     }
+
+    .action-card-bg {
+        height: 59vh !important;
+    }
+
+    .action-custom-card {
+        width: 296px !important;
+        height: 164px !important;
+    }
+
+    .action-card {
+        border: 0 !important;
+        border-top: 1px solid #4F4F4F !important;
+        border-bottom: 1px solid #4F4F4F !important;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -330,7 +344,8 @@
     }
 
     .ordering h1,
-    .delivery h1 {
+    .delivery h1,
+    .action h1 {
         font-size: 36px !important;
         margin-bottom: 12px !important;
         margin-top: 3vh !important;
@@ -531,12 +546,14 @@
 
     .info,
     .ordering,
-    .delivery {
+    .delivery,
+    .action {
         margin-top: 12vh !important;
     }
 
     .ordering,
-    .delivery {
+    .delivery,
+    .action {
         margin-top: 52px !important;
     }
 
@@ -718,12 +735,10 @@
     .delivery-info h4 {
         font-size: 18px !important;
     }
-    
-    
-.delivery-zones li.active:after {
-    top: 10% !important;
-}
 
+    .delivery-zones li.active:after {
+        top: 10% !important;
+    }
 }
 
 @media (max-width:668px) {
@@ -762,11 +777,30 @@
     --lightColor: #FCDA5E;
 }
 
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+    background-color: var(--yellowColor);
+    outline: 1px solid #708090;
+}
+
 body {
+    min-width: 320px;
     font-family: 'HelveticaNeueCyr', sans-serif;
     background-color: var(--blackColor);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -969,7 +1003,7 @@ textarea:focus {
     font-size: 18px;
     line-height: 18px;
     color: #0b0b0b;
-    font-weight: 500;
+    font-weight: 600;
     background-color: var(--yellowColor);
     border-radius: 25.5px;
     padding: 16px 0px;
@@ -1025,7 +1059,8 @@ textarea:focus {
 }
 
 .ordering,
-.delivery {
+.delivery,
+.action {
     margin-top: 116px;
 }
 
@@ -1058,6 +1093,7 @@ textarea:focus {
     font-size: 18px;
     line-height: 120%;
     color: #0b0b0b;
+    transition: .4s all;
     margin-bottom: 16px;
 }
 
@@ -1076,7 +1112,8 @@ textarea:focus {
 }
 
 .ordering h1,
-.delivery h1 {
+.delivery h1,
+.action h1 {
     font-size: 56px;
     line-height: 120%;
     text-transform: uppercase;
@@ -1086,7 +1123,8 @@ textarea:focus {
     font-weight: 900;
 }
 
-.delivery h1 {
+.delivery h1,
+.action h1 {
     color: #fff;
 }
 
@@ -1392,8 +1430,6 @@ textarea:focus {
     justify-content: center;
 }
 
-
-
 .inline-flex img {
     margin: 0 7.5px;
 }
@@ -1641,7 +1677,6 @@ a.studio-link {
     margin-bottom: 0;
     text-transform: uppercase;
 }
-
 
 .your-order__card:nth-child(2) {
     margin-right: 2%;
@@ -2228,4 +2263,149 @@ ul {
     border: 0;
     margin-bottom: -13px;
     transform: translateX(5px);
+}
+
+.action-card {
+    border: 1px solid #4F4F4F;
+}
+
+.action-card a:nth-child(2) {
+    margin: 25px auto 0;
+    border-radius: 25.5px;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 16px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+    color: #0b0b0b;
+    display: block;
+    background-color: var(--yellowColor);
+    transition: .4s all;
+}
+
+.action-card a:nth-child(2):hover {
+    background-color: var(--lightColor)
+}
+
+.action-card-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+}
+
+.action-card__border {
+    border: 0px;
+    border-bottom: 1px solid #4F4F4F;
+    border-top: 1px solid #4F4F4F;
+}
+
+.bg-first {
+    background-image: url(.././img/action-burger-bg.svg);
+}
+
+.bg-second {
+    background-image: url(.././img/action-delivery-bg.svg);
+}
+
+.bg-third {
+    background-image: url(.././img/action-sushi-bg.svg);
+}
+
+.action-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action-custom-card {
+    border: 2px dashed #FFFFFF;
+    width: 18.5vw;
+    height: 20.79vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .4s all;
+}
+
+.action-custom-card:hover {
+    transform: scale(1.075);
+}
+
+
+.action-custom-card h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.action-custom-card p,
+.action-custom-card span {
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.ordering-focus input:focus,
+.ordering-focus textarea:focus {
+    border: 1px solid var(--yellowColor);
+}
+
+.modal-content-custom {
+    border: 5px solid #F5CA2D;
+    padding: 30px 0px;
+}
+
+.modal-content-custom h3 {
+    font-size: 34px;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #0b0b0b;
+}
+
+.modal-content-custom span {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: block;
+    color: #0b0b0b;
+}
+
+.modal-content-custom input {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #0b0b0b;
+    padding: 10px 0 10px 20px;
+    border: 1px solid #C4C4C4;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.modal-content-custom input:focus {
+    border: 1px solid var(--yellowColor);
+}
+
+.modal-content-custom button {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #0b0b0b;
+    padding: 12px 0 10px;
+    width: 100%;
+    background-color: var(--yellowColor);
+    border-radius: 25.5px;
+    margin-top: 20px
 }
