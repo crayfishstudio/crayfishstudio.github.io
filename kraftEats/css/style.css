@@ -283,6 +283,7 @@
     .burgers-card__title {
         font-size: 16px !important;
         padding: 4px 0 !important;
+        width: 45% !important;
     }
 
     .burger-card__content {
