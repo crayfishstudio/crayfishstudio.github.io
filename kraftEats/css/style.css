@@ -1947,6 +1947,7 @@ a.studio-link {
     padding: 26px 9px 26px 27px;
     margin-bottom: 4.8vh;
     width: 90%;
+    z-index: 2;
 }
 
 .craft-burgers button {
@@ -2505,4 +2506,33 @@ ul {
     height: 9.5vh;
     display: grid;
     align-content: center;
+}
+
+.product-added {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    bottom: 0px;
+    right: 10%;
+    padding: 4px 20px;
+    opacity: 0;
+    font-size: 14px;
+    color: #000;
+    border-radius: 25.5px;
+    background-color: var(--yellowColor);
+    z-index: -1;
+    -webkit-transition: top .5s ease-out;
+    transition: top .5s ease-out;
+}
+
+.craft-burgers__card {
+    position: relative;
+    z-index: 10;
+}
+
+.product-added-active {
+    bottom: -40px;
+    opacity: 1;
+    -webkit-transition: top .5s ease-out;
+    transition: top .5s ease-out;
 }
