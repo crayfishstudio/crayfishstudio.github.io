@@ -1914,7 +1914,7 @@ a.studio-link {
 
 .craft-burgers h2 {
     font-size: 90px;
-    line-height: 120%;
+    line-height: 100%;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -1944,8 +1944,8 @@ a.studio-link {
 
 .burger-card__content {
     border: 2px solid #F5CA2D;
-    padding: 10px 9px 10px 3px;
-    margin-bottom: 4.8vh;
+    padding: 10px 9px 0px 3px;
+    margin-bottom: 3.22vh;
     width: 90%;
     z-index: 2;
 }
