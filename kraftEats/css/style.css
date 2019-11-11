@@ -339,11 +339,6 @@
         margin-bottom: -13px;
         transform: translateX(5px);
     }
-    
-    .burger-meat-element {
-    display: flex;
-    justify-content: space-between !important;
-}
 
     .card-height-title {
         height: 4vh !important;
