@@ -202,7 +202,6 @@
 
     .burger-card {
         padding: 23px 24px 23px 24px !important;
-        margin-bottom: 2vh !important;
     }
 
     .info-title {
@@ -217,7 +216,6 @@
 
     .burger-card p {
         font-size: 16px !important;
-        margin-bottom: 2.5vh !important;
     }
 
     span.regular-text {
@@ -1542,9 +1540,9 @@ span.regular-text {
 
 .burger-card {
     padding: 35px 50px 40px 50px;
-    margin-bottom: 3.8vh;
     background-color: #262626;
     border-radius: 10px;
+    height: 100%;
 }
 
 .burger-card span {
@@ -1586,7 +1584,7 @@ span.regular-text {
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
-    margin-bottom: 4.3vh;
+    margin-bottom: 0;
 }
 
 .burger-card__bg {
@@ -1595,7 +1593,6 @@ span.regular-text {
     background-size: contain;
     background-image: url(.././img/card-burger.png);
     height: 38vh;
-    margin-bottom: 20px;
 }
 
 .modal {
@@ -2424,8 +2421,8 @@ ul {
 
 .action-custom-card p,
 .action-custom-card span {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 24px;
     color: #FFFFFF;
     margin-bottom: 8px;
     font-weight: 600;
