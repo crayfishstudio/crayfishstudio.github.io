@@ -814,6 +814,16 @@
         font-size: 40px !important;
         margin-bottom: 10px !important;
     }
+    
+    .header-phone a {
+    font-size: 20px !important;
+    line-height: 20px !important;
+}
+    
+    .header-phone p {
+    font-size: 12px !important;
+    line-height: 12px !important;
+}
 }
 
 @media (max-width:375.99px) {
