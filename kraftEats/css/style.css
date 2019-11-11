@@ -49,9 +49,7 @@
 }
 
 @media (min-width: 1499.98px) {
-    .meat-choose {
-        margin-right: 1.25vw !important;
-    }
+
 }
 
 @media (min-width: 1599.98px) {
@@ -341,6 +339,11 @@
         margin-bottom: -13px;
         transform: translateX(5px);
     }
+    
+    .burger-meat-element {
+    display: flex;
+    justify-content: space-between !important;
+}
 
     .card-height-title {
         height: 4vh !important;
@@ -784,12 +787,12 @@
         top: 10% !important;
     }
 
-    .meat-choose {
-        margin-right: 5.25vw !important;
-    }
-
     .burger-card__content {
         width: 100% !important;
+    }
+
+    .height-subtitle__burger {
+        height: 10vh !important;
     }
 }
 
@@ -811,14 +814,13 @@
 }
 
 @media (max-width:375.99px) {
-
-    .meat-choose {
-        margin-right: 3vw !important;
+    .craft-burgers h2 {
+        font-size: 40px !important;
+        margin-bottom: 10px !important;
     }
 
-    .craft-burgers h2 {
-        font-size: 42px !important;
-        margin-bottom: 10px !important;
+    .info-title {
+        padding-right: 7% !important;
     }
 }
 
@@ -830,7 +832,6 @@
 
     .meat-choose {
         font-size: 12px !important;
-        margin-right: 5px !important;
     }
 }
 
@@ -914,12 +915,12 @@ textarea:focus {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    left: -28px;
+    left: -32px;
     transform: translate(0, 10px);
     background-color: #262626;
     border-radius: 10px;
     padding: 0.75rem 0.5rem;
-    width: 152px;
+    width: 160px;
 }
 
 .popover__content-city,
@@ -1576,7 +1577,7 @@ span.regular-text {
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
 }
 
 .burger-card p {
@@ -1910,7 +1911,7 @@ a.studio-link {
 }
 
 .craft-burgers h2 {
-    font-size: 90px;
+    font-size: 85px;
     line-height: 100%;
     font-weight: 700;
     text-transform: uppercase;
@@ -1998,7 +1999,6 @@ input[type="checkbox"]:checked + label .color-change {
     font-size: 18px;
     line-height: 120%;
     color: #FFFFFF;
-    margin-right: 0.625vw;
     margin-bottom: 0;
 }
 
@@ -2532,4 +2532,8 @@ ul {
     opacity: 1;
     -webkit-transition: top .5s ease-out;
     transition: top .5s ease-out;
+}
+.burger-meat-element {
+    display: flex;
+    justify-content: space-evenly;
 }
