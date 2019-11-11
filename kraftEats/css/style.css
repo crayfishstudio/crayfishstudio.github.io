@@ -384,6 +384,7 @@
     .order-card {
         border: none !important;
         padding: 0 !important;
+        margin-bottom: 0px !important;
     }
 
     .ordering h1,
@@ -509,6 +510,7 @@
 
     .ordering button {
         line-height: 140% !important;
+        margin-bottom: 4vh !important;
     }
 
     .order-button {
@@ -821,8 +823,8 @@
 }
     
     .header-phone p {
-    font-size: 12px !important;
-    line-height: 12px !important;
+    font-size: 11px !important;
+    line-height: 11px !important;
 }
 }
 
@@ -1623,7 +1625,7 @@ span.regular-text {
 }
 
 .order-button {
-    padding: 18px 0 !important;
+    padding: 12px 0 !important;
 }
 
 .bottom-padding {
