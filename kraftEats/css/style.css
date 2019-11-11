@@ -1915,7 +1915,7 @@ a.studio-link {
 .craft-burgers h2 {
     font-size: 90px;
     line-height: 120%;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 16px;
     color: #FFFFFF;
@@ -1926,25 +1926,25 @@ a.studio-link {
     line-height: 1;
     text-transform: uppercase;
     font-weight: 300;
-    margin-top: 4.2vh;
-    margin-bottom: 4.8vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     color: #FFFFFF;
 }
 
 .burgers-card__title {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 120%;
     color: #0b0b0b;
     padding: 7px 0;
     background-color: var(--yellowColor);
     text-align: center;
-    width: 60%;
+    width: 30%;
     border-radius: 20px 20px 0px 0px;
 }
 
 .burger-card__content {
     border: 2px solid #F5CA2D;
-    padding: 26px 9px 26px 27px;
+    padding: 10px 9px 10px 3px;
     margin-bottom: 4.8vh;
     width: 90%;
     z-index: 2;
