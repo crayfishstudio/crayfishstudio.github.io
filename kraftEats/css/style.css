@@ -808,6 +808,13 @@
     }
 }
 
+@media (max-width:450.99px) {
+    .craft-burgers h2 {
+        font-size: 40px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
 @media (max-width:375.99px) {
     .craft-burgers h2 {
         font-size: 36px !important;
