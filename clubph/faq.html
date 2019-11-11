@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.svg">
+        </a>
+
+        <a href="#" id="order-button" class="order-md-1">
+            <!--Замовити-->
+            <img class="mr-1" src="img/shopping-cart.svg" height="20px">
+            ₴<span>760</span>
+            <div id="cart-shortlist">
+                <div>
+                    <span>13.10 (Вівторок)</span>
+                    <span>₴280</span>
+                </div>
+                <div>
+                    <span>13.10 (Довга назва дня для тесту)</span>
+                    <span>₴1488</span>
+                </div>
+                <div>
+                    <span>13.10 (Вівторок)</span>
+                    <span>₴280</span>
+                </div>
+                <div>
+                    <span>13.10 (Вівторок)</span>
+                    <span>₴280</span>
+                </div>
+                <div>
+                    <span>13.10 (Вівторок)</span>
+                    <span>₴280</span>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="d-md-none nav-phone"><img src="img/phone-alt-solid.svg"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="hamburger" onclick="burgerToggle()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <span class="nav-link nav-dropdown">
+                        Київ
+                        <img src="img/arrow-down.svg">
+                        <div>
+                            <a href="#">Львів</a>
+                            <a href="#">Одеса</a>
+                        </div>
+                    </span>
+                    <span class="nav-link nav-dropdown">
+                        UA
+                        <img src="img/arrow-down.svg">
+                        <div>
+                            <a href="#">EN</a>
+                            <a href="#">RU</a>
+                        </div>
+                    </span>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Доставка</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Меню</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-md-none">
+                <li class="nav-item social">
+                    <a href="#" class="nav-link">Facebook</a>
+                    <a href="#" class="nav-link">Instagram</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">096 414 38 51</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid pr-6vw mb-5 menu-top-container">
+        <div id="menu-topbar" style="background-image: url(img/faq.png)">
+            <div class="row no-gutters pl-6vw">
+                <div class="col-12 my-sm-4 py-3 text-center text-sm-left">
+                    <h3>FAQ (Часті питання)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-6vw">
+        <div class="row no-gutters">
+            <div class="col">
+                <div class="accordion" id="daysAccordion">
+                    <div class="day-tab" id="head1" data-toggle="collapse" data-target="#day1" aria-expanded="false" aria-controls="collapseOne">
+                        <h4><img src="img/arrow-menu.svg">В яких географічних межах доступна безкоштовна доставка ?</h4>
+                    </div>
+                    <div id="day1" class="collapse" aria-labelledby="head1" data-parent="#daysAccordion">
+                        <div class="faq-answer">
+                            Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.<br><br>
+                            Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення.
+                            Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр).
+                            Після відходу кур'єра претензії до замовлення не приймаються.
+                        </div>
+                    </div>
+                    <div class="day-tab" id="head2" data-toggle="collapse" data-target="#day2" aria-expanded="false" aria-controls="collapseOne">
+                        <h4><img src="img/arrow-menu.svg">В яких географічних межах доступна безкоштовна доставка ?</h4>
+                    </div>
+                    <div id="day2" class="collapse" aria-labelledby="head2" data-parent="#daysAccordion">
+                        <div class="faq-answer">
+                            Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.<br><br>
+                            Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення.
+                            Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр).
+                            Після відходу кур'єра претензії до замовлення не приймаються.
+                        </div>
+                    </div>
+                    <div class="day-tab" id="head3" data-toggle="collapse" data-target="#day3" aria-expanded="false" aria-controls="collapseOne">
+                        <h4><img src="img/arrow-menu.svg">В яких географічних межах доступна безкоштовна доставка ?</h4>
+                    </div>
+                    <div id="day3" class="collapse" aria-labelledby="head3" data-parent="#daysAccordion">
+                        <div class="faq-answer">
+                            Коли Ваше замовлення буде зроблений і підтверджено в телефонній розмові з нашим менеджером, воно буде відправлено за вказаною Вами адресою. Коли замовлення відправлене і доставлене Вам, Ви зобов'язані сплатити замовлені продукти.<br><br>
+                            Клієнт отримує повідомлення по електронній пошті з описом всіх деталей замовлення.
+                            Якщо в силу якихось причин склад доставки відрізняється від замовленого Вами, або ж знаходиться в некондиційному вигляді, ви маєте право відмовитися від Вашого замовлення. В такому випадку Вам необхідно зв'язатися з нашим менеджером по телефону В ПРИСУТНОСТІ нашого кур'єра. Може знадобитися відправка фотографії замовлення (це зробить наш кур'єр).
+                            Після відходу кур'єра претензії до замовлення не приймаються.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="dfgnm" class="container-fluid px-6vw">
+        <div class="row">
+            <div class="col-xl-3 col-md-4 text-center text-center text-md-left">
+                <img src="img/logo.svg" class="d-md-block mb-md-2">
+                <img src="img/vmc.png" class="ml-md-1 ml-3">
+            </div>
+            <div class="col-xl-6 col-md-5 col-sm-7 text-center text-sm-left mb-sm-0 mt-md-0 mt-5">
+                <a href="#" id="footer-phone">(093) 170 7917</a>
+                <a href="#" id="footer-mail">office@clubph.com</a>
+                <p id="work-time">Працюємо з 10:00 до 21:00</p>
+            </div>
+            <div class="col-md-3 col-sm-5 footer-links text-center text-sm-right mt-md-0 mt-5">
+                <a href="#">Доставка</a>
+                <a href="#">Меню</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="row no-gutters mt-3 justify-content-between tech-links">
+            <a href="#">2019 ClubpH Всі права захищено</a>
+            <a href="#">Публічна оферта</a>
+            <a href="https://crayfish.studio" target="_blank">розроблено Crayfish Studio</a>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        function burgerToggle() {
+            document.getElementById("hamburger").classList.toggle("chrested");
+        }
+    </script>
+</body></html>

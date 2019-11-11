@@ -48,6 +48,19 @@
     --tr-sm: all .69s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+    padding: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--brand-orange);
+}
+
 body {
     background-color: var(--not-white);
     font-family: "FuturaNew", sans-serif;
@@ -79,6 +92,7 @@ body * {
 
 .navbar-brand {
     margin-right: 8px;
+    padding: 0px;
 }
 
 #order-button {
@@ -328,12 +342,34 @@ h5 {
     border-radius: 5px;
     font-size: 24px;
     color: #fff;
+    border: 2px solid var(--brand-orange);
+}
+
+.button-outline {
+    display: inline-block;
+    padding: 16px 52px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 24px;
+    color: var(--brand-orange);
+    border: 2px solid var(--brand-orange);
 }
 
 .button-filled:hover {
     text-decoration: none;
     background-color: var(--brand-orange-hover);
     color: #fff;
+    border: 2px solid var(--brand-orange-hover);
+}
+
+.button-outline:hover {
+    text-decoration: none;
+    background-color: var(--brand-orange);
+    color: #fff;
+}
+
+.main-social {
+    margin-top: calc(18vh - 100px);
 }
 
 .main-social a {
@@ -435,7 +471,6 @@ footer {
 }
 
 #menu-topbar {
-    background-image: url(../img/menutop.png);
     width: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -546,9 +581,11 @@ label img {
     margin-left: 4px;
 }
 
-label span {
+.ingredients label span {
     position: relative;
     color: var(--almost-black);
+    text-transform: lowercase;
+
 }
 
 label span::after {
@@ -683,6 +720,18 @@ input::-webkit-inner-spin-button {
 
 .bg-pink {
     background-color: var(--pink);
+}
+
+.bg-green {
+    background-color: #E4EBE4;
+}
+
+.bg-blue {
+    background-color: #ECEDF5;
+}
+
+.bg-yellow {
+    background-color: #F4ECD7;
 }
 
 .back-button {
@@ -870,6 +919,7 @@ textarea {
 .check p {
     padding-left: 32px;
     margin-top: -18px;
+    position: relative;
 }
 
 .check p::before {
@@ -894,6 +944,7 @@ textarea {
     width: 6px;
     height: 10px;
     transform: rotate(10deg) translateY(7px);
+    top: 0;
     left: 11px;
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
@@ -911,7 +962,11 @@ textarea {
     background-color: var(--brand-orange);
 }
 
-#order-sumbit-button {
+.order-submit-button:disabled {
+    background-color: #CBBFB9 !important;
+}
+
+.order-submit-button {
     background-color: var(--brand-orange);
     border: none;
     border-radius: 5px;
@@ -921,7 +976,7 @@ textarea {
     font-size: 24px;
 }
 
-#order-sumbit-button:hover {
+.order-submit-button:hover {
     background-color: var(--brand-orange-hover);
 }
 
@@ -959,11 +1014,130 @@ textarea {
     display: block;
     font-size: 14px;
     margin-top: -4px;
+    text-transform: lowercase;
 }
 
 .success {
-	height: 65vh;
+    height: 65vh;
     text-align: center;
+}
+
+.faq-answer {
+    padding: 40px 64px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 14px rgba(202, 202, 202, 0.25);
+    margin-bottom: 32px;
+}
+
+.promo-success {
+    color: #3EC290;
+}
+
+.promo-fail {
+    color: #D41C1C;
+}
+
+.text-orange h3 {
+    color: var(--brand-orange) !important;
+}
+
+.questions-bg {
+    height: 100%;
+    width: 73vw;
+    background-color: var(--pink);
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#questions-top-img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 97%;
+    background-image: url(../img/Rectangle%20252.png);
+    height: calc(100% + 25vh);
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: cover;
+}
+
+#questions-bottom-img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 97%;
+    background-image: url(../img/Rectangle%20254.png);
+    height: calc(100% - 25vh);
+    background-position: bottom;
+    border-bottom-left-radius: 10px;
+    background-size: cover;
+}
+
+.questions {
+    position: relative;
+}
+
+.py-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.questions p {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.answers h5 {
+    margin-top: -45px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.bg-orange {
+	background-color: var(--brand-orange);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.bg-orange img {
+	padding: 8px;
+    width: 100%;
+}
+
+.bg-orange img:hover {
+    transform: scale(1.05);
+}
+
+
+.process-cards div {
+	padding: 8px;
+}
+
+.p-card {
+    padding: 44px 44px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.p-card span {
+	font-size: 48px;
+    font-weight: 700;
+    color: #ffffffaa;
+    position: absolute;
+    bottom: 0px;
+    left: 36px;
+    margin-bottom: 0xp;
+    line-height: 130%;
+}
+
+.border-top {
+    border-top: 1px solid #CBBFB9;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1006,6 +1180,10 @@ textarea {
 
     .food-card-image {
         height: 36vw;
+    }
+
+    #submit-total span {
+        font-size: 20px;
     }
 }
 
@@ -1111,6 +1289,18 @@ textarea {
     .cart-food-content {
         margin-left: 8px;
     }
+
+    .questions-bg {
+        width: 100% !important;
+        border-radius: 0px !important;
+    }
+
+    .answers h5 {
+        margin-top: -45px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1156,10 +1346,11 @@ textarea {
         padding-top: 32px;
     }
 
-    .button-filled {
+    .button-filled, .button-outline {
         width: 100%;
         font-size: 20px;
         padding: 12px;
+        text-align: center;
     }
 
     .px-6vw {
@@ -1228,7 +1419,6 @@ textarea {
         height: 55vw;
     }
 
-
     .food-card-content h5 {
         font-size: 24px;
     }
@@ -1253,13 +1443,24 @@ textarea {
     #submit-total {
         padding: 32px 16px;
     }
-    
-    #submit-total span {
-        font-size: 20px;
-    }
-    
+
     #order-sumbit-button {
         width: 100%;
+    }
+
+    .faq-answer {
+        padding: 20px 16px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    .py-90 {
+        padding: 40px 0px;
+    }
+    
+    .bg-orange {
+        padding: 8px;
     }
 }
 
@@ -1276,4 +1477,12 @@ textarea {
     .cart-food-content {
         width: calc(100% - 27vw - 8px);
     }
+}
+
+.questions-bg {
+    position: absolute;
+    background-color: var(--pink);
+    width: 71vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
