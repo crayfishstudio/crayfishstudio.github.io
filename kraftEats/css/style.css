@@ -400,9 +400,12 @@
     }
 
     .cart-bg {
-        padding: 24px 15px 8px 15px !important;
         width: 100% !important;
     }
+    
+    .cart-bg__content {
+        padding: 24px 15px 8px 15px !important;
+}
 
     .cart-bg:nth-child(1) {
         margin-right: 0 !important;
@@ -689,24 +692,24 @@
         line-height: 24px !important;
         margin-bottom: 20px !important;
     }
+        .total-price span{
+    font-size: 36px !important;
+line-height: 36px !important;
+    }
 
     .total-price-text {
         font-size: 14px !important;
         line-height: 14px !important;
     }
 
-    .your-order__card:nth-child(2) {
-        margin-right: 0 !important;
-    }
+
 
     .your-order__card-bg {
         background-color: #262626;
         padding: 30px 25px 30px !important;
     }
 
-    .your-order {
-        margin-top: 0 !important;
-    }
+
 
     .info-bg {
         padding-bottom: 7vh !important;
@@ -1079,7 +1082,7 @@ textarea:focus {
     color: var(--yellowColor);
 }
 
-.button-order {
+.button-order, .button-order__price {
     font-size: 18px;
     line-height: 18px;
     color: #0b0b0b;
@@ -1090,6 +1093,12 @@ textarea:focus {
     display: block;
     transition: .4s all;
     text-align: center;
+}
+
+.button-order__price span{
+    font-size: 16px;
+line-height: 16px;
+color: #000000;
 }
 
 .button-order:hover {
@@ -1695,8 +1704,6 @@ a.studio-link {
 }
 
 .cart-bg {
-    background-color: var(--yellowColor);
-    padding: 24px 40px 34px 40px;
     width: 49%;
 }
 
@@ -1743,9 +1750,7 @@ a.studio-link {
     display: inline-flex;
 }
 
-.your-order {
-    margin-top: 6.72vh;
-}
+
 
 .your-order h2 {
     font-size: 48px;
@@ -1755,8 +1760,10 @@ a.studio-link {
 }
 
 .your-order__card {
-    width: 49%;
+    width: 100%;
 }
+
+
 
 .your-order__card h6 {
     font-size: 24px;
@@ -1767,8 +1774,9 @@ a.studio-link {
     text-transform: uppercase;
 }
 
-.your-order__card:nth-child(2) {
+.your-order__card_first {
     margin-right: 2%;
+    width: 49%;
 }
 
 .your-order-button {
@@ -1854,7 +1862,7 @@ a.studio-link {
     margin-top: 25px;
     line-height: 18px;
     margin-bottom: 0;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 .total-price span {
@@ -2556,4 +2564,10 @@ ul {
 
 .cutlet-choose {
     margin-bottom: 0;
+}
+
+.cart-bg__content {
+    background-color: var(--yellowColor);
+    padding: 24px 40px 18px 40px;
+    margin-bottom: 30px;
 }
