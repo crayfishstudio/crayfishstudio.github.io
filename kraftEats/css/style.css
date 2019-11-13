@@ -48,9 +48,7 @@
     font-style: normal;
 }
 
-@media (min-width: 1499.98px) {
-
-}
+@media (min-width: 1499.98px) {}
 
 @media (min-width: 1599.98px) {
     .info-title {
@@ -86,6 +84,8 @@
     .info-title {
         padding-right: 20% !important;
     }
+
+
 }
 
 @media (max-width: 1299.98px) {
@@ -402,13 +402,11 @@
     .cart-bg {
         width: 100% !important;
     }
-    
+
     .cart-bg__content {
         padding: 24px 15px 8px 15px !important;
-    margin-bottom: 20px !important;
-}
-    
-
+        margin-bottom: 20px !important;
+    }
 
     .cart-bg:nth-child(1) {
         margin-right: 0 !important;
@@ -449,7 +447,7 @@
     }
 
     .bottom-padding {
-        padding: 0px 8px 15px 8px !important;
+        padding: 0px 4px 15px 4px !important;
     }
 
     .mobile-hide {
@@ -464,7 +462,6 @@
     .sushi-card__custom h3 {
         font-size: 12px !important;
         line-height: 12px !important;
-        padding: 0px 5px !important;
     }
 
     .sushi-card__custom p {
@@ -644,11 +641,11 @@
     .your-order__card {
         width: 100% !important;
     }
-    
-    
-.your-order__card-mr:nth-child(2) {
-    margin-right: 0 !important;
-}
+
+
+    .your-order__card-mr:nth-child(2) {
+        margin-right: 0 !important;
+    }
 
     .inline-flex img {
         transform: scale(0.8);
@@ -700,9 +697,10 @@
         line-height: 24px !important;
         margin-bottom: 20px !important;
     }
-        .total-price span{
-    font-size: 36px !important;
-line-height: 36px !important;
+
+    .total-price span {
+        font-size: 36px !important;
+        line-height: 36px !important;
     }
 
     .total-price-text {
@@ -828,16 +826,16 @@ line-height: 36px !important;
         font-size: 40px !important;
         margin-bottom: 10px !important;
     }
-    
+
     .header-phone a {
-    font-size: 20px !important;
-    line-height: 20px !important;
-}
-    
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
     .header-phone p {
-    font-size: 11px !important;
-    line-height: 11px !important;
-}
+        font-size: 11px !important;
+        line-height: 11px !important;
+    }
 }
 
 @media (max-width:375.99px) {
@@ -859,6 +857,19 @@ line-height: 36px !important;
 
     .meat-choose {
         font-size: 12px !important;
+    }
+
+    .sushi-card__custom h3 {
+        font-size: 11px !important;
+        line-height: 12px !important;
+    }
+
+    .bottom-padding {
+        padding: 0px 2px 15px 2px !important;
+    }
+
+    .card-height-subtitle {
+        height: 16vh !important;
     }
 }
 
@@ -1090,7 +1101,8 @@ textarea:focus {
     color: var(--yellowColor);
 }
 
-.button-order, .button-order__price {
+.button-order,
+.button-order__price {
     font-size: 18px;
     line-height: 18px;
     color: #0b0b0b;
@@ -1103,13 +1115,14 @@ textarea:focus {
     text-align: center;
 }
 
-.button-order__price span{
+.button-order__price span {
     font-size: 16px;
-line-height: 16px;
-color: #000000;
+    line-height: 16px;
+    color: #000000;
 }
 
-.button-order:hover {
+.button-order:hover,
+.button-order__price:hover {
     color: #0b0b0b;
     background-color: var(--lightColor);
 }
@@ -1307,7 +1320,6 @@ color: #000000;
     line-height: 28px;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 0px 20px;
     margin-bottom: 0px;
 }
 
@@ -1647,7 +1659,7 @@ span.regular-text {
 }
 
 .bottom-padding {
-    padding: 0px 32px 20px 32px;
+    padding: 0px 10px 20px 10px;
 }
 
 .radio-sushi-burger p {
@@ -1772,6 +1784,7 @@ a.studio-link {
 .your-order__card {
     width: 100%;
 }
+
 .your-order__card-mr:nth-child(2) {
     margin-right: 2%;
 }
@@ -2219,7 +2232,7 @@ label span {
     border: 6px solid var(--yellowColor);
 }
 
-.delivery-card a {
+.delivery-card-link {
     text-transform: uppercase;
     display: block;
     font-size: 18px;
@@ -2233,8 +2246,9 @@ label span {
     transition: .4s all;
 }
 
-.delivery-card a:hover {
+.delivery-card-link:hover {
     background-color: var(--lightColor);
+    color: #0b0b0b;
 }
 
 .delivery-card p {
@@ -2575,6 +2589,7 @@ ul {
     -webkit-transition: top .5s ease-out;
     transition: top .5s ease-out;
 }
+
 .burger-meat-element {
     display: flex;
     justify-content: space-evenly;
@@ -2588,4 +2603,8 @@ ul {
     background-color: var(--yellowColor);
     padding: 24px 40px 18px 40px;
     margin-bottom: 30px;
+}
+
+.image-mr {
+    margin-right: 0.4vw;
 }
