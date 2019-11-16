@@ -48,7 +48,16 @@
     font-style: normal;
 }
 
-@media (min-width: 1499.98px) {}
+@media (min-width: 1499.98px) {
+    .info {
+        margin-top: 20vh !important;
+    }
+
+    .info-bg-text {
+        background-size: cover !important;
+        width: 65% !important;
+    }
+}
 
 @media (min-width: 1599.98px) {
     .info-title {
@@ -728,7 +737,7 @@
     .sushi-card__custom small {
         font-size: 12px !important;
         border: 1px solid #676767;
-        padding: 4px 9px;
+        padding: 4px;
     }
 
     .burger-card small {
@@ -836,6 +845,11 @@
         font-size: 11px !important;
         line-height: 11px !important;
     }
+
+    .sidebar__mobile {
+        margin-top: 51px !important;
+        height: calc(100vh - 51px) !important;
+    }
 }
 
 @media (max-width:375.99px) {
@@ -869,7 +883,35 @@
     }
 
     .card-height-subtitle {
-        height: 16vh !important;
+        height: 12vh !important;
+    }
+
+    .info-bg-text {
+        background-image: url(.././img/info-bg-text-phone.svg) !important;
+        background-size: cover !important;
+        width: 80% !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+        padding-bottom: 4px !important;
+        padding-right: 5.5vw !important;
+        padding-left: calc(0vw + 16px) !important;
+    }
+
+    .card-height-title {
+        height: 7vh !important;
+    }
+
+    .nav__chrested div:nth-child(3) {
+        margin-top: -12px !important;
+    }
+
+    a.sidebar-content__title {
+        margin-top: 2vh !important;
+    }
+
+    .city,
+    .language {
+        padding: 6px 12px 5px !important;
     }
 }
 
@@ -2541,7 +2583,7 @@ ul {
 }
 
 .line-height-text {
-    line-height: 20px !important;
+    line-height: 28px !important;
 }
 
 .ml-table {
