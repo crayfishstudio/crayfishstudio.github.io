@@ -866,11 +866,11 @@
 @media (max-width:360.99px) {
 
     .card-height-subtitle {
-        height: 95px !important;
+        height: 90px !important;
     }
 
     .card-height-title {
-        height: 55px !important;
+        height: 30px !important;
     }
     
 }
