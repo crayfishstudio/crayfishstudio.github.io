@@ -863,6 +863,18 @@
     }
 }
 
+@media (max-width:360.99px) {
+
+    .card-height-subtitle {
+        height: 95px !important;
+    }
+
+    .card-height-title {
+        height: 55px !important;
+    }
+    
+}
+
 @media (max-width:350px) {
     .burger-meat-element svg {
         width: 30px !important;
@@ -882,10 +894,6 @@
         padding: 0px 2px 15px 2px !important;
     }
 
-    .card-height-subtitle {
-        height: 12vh !important;
-    }
-
     .info-bg-text {
         background-image: url(.././img/info-bg-text-phone.svg) !important;
         background-size: cover !important;
@@ -895,10 +903,6 @@
         padding-bottom: 4px !important;
         padding-right: 5.5vw !important;
         padding-left: calc(0vw + 16px) !important;
-    }
-
-    .card-height-title {
-        height: 7vh !important;
     }
 
     .nav__chrested div:nth-child(3) {
