@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top" onclick="showNotification()">
         <a class="navbar-brand" href="#">
             <img src="img/logo.svg">
         </a>
@@ -44,6 +44,11 @@
                     <span>₴280</span>
                 </div>
             </div>
+
+            <div id="notification" class="hidden">
+                Додано: 1х Назвастрави (без: інгредієнт, сіль)
+            </div>
+
         </a>
         <a href="#" class="d-md-none nav-phone"><img src="img/phone-alt-solid.svg"></a>
 
@@ -4875,5 +4880,14 @@
         for (var i = 0; i < classname.length; i++) {
             classname[i].addEventListener('click', scrollOn, false);
         }
+
+        function showNotification() {
+            document.getElementById('notification').classList.toggle('hidden');
+            setTimeout(function() {
+                document.getElementById('notification').classList.toggle('hidden');
+            }, 4000);
+        }
     </script>
 </body></html>
+
+

@@ -84,16 +84,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto nav-links text-center">
                     <li class="nav-item mt-lg-0 mt-4">
-                        <a class="nav-link" href="#portfolio" onclick="classToggle()" data-toggle="collapse" data-target="#navbarSupportedContent">Портфолио</a>
+                        <a class="nav-link" href="#portfolio">Портфолио</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#process" onclick="classToggle()" data-toggle="collapse" data-target="#navbarSupportedContent">Процесс</a>
+                        <a class="nav-link" href="#process">Процесс</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#advantages" onclick="classToggle()" data-toggle="collapse" data-target="#navbarSupportedContent">Преимущества</a>
+                        <a class="nav-link" href="#advantages">Преимущества</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts" onclick="classToggle()" data-toggle="collapse" data-target="#navbarSupportedContent">Контакты</a>
+                        <a class="nav-link" href="#contacts">Контакты</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">UA</a>
@@ -441,6 +441,43 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../js/imask.js"></script>
     <script src="../js/script.js"></script>
+    
+    <script>
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 100
+                        }, 1000, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
 </body>
 
 </html>
