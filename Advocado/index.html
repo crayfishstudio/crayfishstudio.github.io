@@ -35,7 +35,7 @@
                     <h5>Он бесплатно ознакомится с вопросом
                         и даст профессиональную консультацию
                     </h5>
-                    <a href="#" class="btn-custom mt-4 mb-3">
+                    <a href="#quest" class="btn-custom mt-4 mb-3">
                         Задать вопрос
                     </a>
                 </div>
@@ -43,7 +43,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="quest">
         <section class="container mt-5 pb-sm-5">
             <div class="row pt-3 mb-5 align-items-center">
                 <div class="col-12 text-center text-sm-left">
@@ -79,8 +79,8 @@
         <div class="container text-md-left text-center">
             <div>
                 <h4 id="footer-logo">Адвокат <span class="mx-2">|</span> <b>Виталий Габрев</b></h4>
-                <a href="tel:0686430202" id="footer-phone">Личный мобильный: <br><span>068 643 02 02</span></a>
-                <a href="" id="public-offer">Разработано командой Crayfish Studio</a>
+                <a href="tel:0686430202" id="footer-phone">Личный мобильный: <br class="d-sm-none"><span>068 643 02 02</span></a>
+                <a href="https://crayfish.studio" id="public-offer" target="_blank">Разработано командой Crayfish Studio</a>
             </div>
             <div>
                 <div>
@@ -120,4 +120,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body></html>
