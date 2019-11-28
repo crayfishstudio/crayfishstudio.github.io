@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Hello, world!</title>
+   	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <title>Адвокат Виталий Габрев</title>
 </head>
 
 <body>
@@ -50,16 +51,16 @@
                     <p id="free-answer">Мы с коллегами ознакомимся и<br class="d-sm-none"><span> дадим ответ бесплатно!</span></p>
                 </div>
                 <div class="col-md-6">
-                    <form>
+                    <form method="post" action="post.php">
                         <div class="row no-gutters">
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" placeholder="Ваше имя">
+                                <input type="text" class="form-control" placeholder="Ваше имя" name="user_name">
                             </div>
                             <div class="col-sm-7 pl-sm-3 mt-3 mt-sm-0">
-                                <input type="text" class="form-control" placeholder="Номер телефона или e-mail для связи">
+                                <input type="text" class="form-control" placeholder="Номер телефона или e-mail для связи" name="user_contact">
                             </div>
                             <div class="col-12 mt-3">
-                                <textarea rows="12" placeholder="Опишите ваш вопрос"></textarea>
+                                <textarea rows="12" placeholder="Опишите ваш вопрос" name="user_question"></textarea>
                             </div>
                             <div class="col-12 mt-3">
                                 <button class="btn-custom" type="submit">Задать вопрос</button>
