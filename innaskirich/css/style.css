@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto+Condensed&display=swap');
+
+:root {
+	--not-black: #262524;
+	--gold: #D3AA68;
+	--not-white: #EFEFEF;
+}
+
+#nav-logo {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 28px;
+	border-bottom: 2px solid var(--gold);
+	padding-bottom: 10px;
+	cursor: context-menu;
+	margin-bottom: 0px;
+}
+
+#nav-logo span {
+	font-weight: 700;
+}
+
+#nav-phone {
+	transition: transform .4s;
+}
+
+#nav-phone:hover {
+	transform: translateY(-4px);
+}
+
+#main-block {
+	background: url(../img/funky-lines.png);
+	width: 100%;
+	padding: 32px 40px;
+	margin-top: 10vh;
+}
+
+#main-block h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 76px;
+	color: var(--not-black);
+	margin-bottom: 24px;
+}
+
+#main-block p {
+	font-family: 'Cormorant Garamond', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 130%;
+	color: var(--not-black);
+}
+
+.btn-custom {
+	background: var(--gold);
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.2em;
+	font-weight: 700;
+	padding: 20px 40px;
+	display: inline-block;
+	margin-top: 24px;
+	border: none;
+	transition: all .4s;
+}
+
+.btn-custom:hover {
+	color: #fff;
+	text-decoration: none;
+	transform: translateY(-4px);
+}
+
+button.btn-custom {
+	width: 100%;
+}
+
+main {
+	background: var(--not-black);
+	padding: 88px 0px;
+}
+
+input,
+textarea {
+	font-family: 'Cormorant Garamond', sans-serif;
+	border: 2px solid var(--not-white);
+	width: 100%;
+	background: transparent;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 150%;
+	color: #fff;
+	padding: 12px 28px;
+}
+
+#services div {
+	display: flex;
+	align-items: flex-start;
+}
+
+#services p {
+	font-family: 'Cormorant Garamond', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 150%;
+	color: #FFFFFF;
+	margin-bottom: 0px;
+	padding-left: 36px;
+}
+
+#services div:not(:last-child) p {
+	margin-bottom: 52px;
+}
+
+footer {
+	padding: 24px 0px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.2em;
+	font-weight: 700;
+}
+
+footer span {
+	color: var(--gold);
+}
+
+footer a {
+	color: var(--not-black);
+	transition: all .4s;
+}
+
+footer a:hover {
+	color: var(--not-black);
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+	#main-block h1 {
+		font-size: 56px;
+		line-height: 120%;
+	}
+
+	#main-block p {
+		font-size: 24px;
+	}
+
+
+}
+
+@media screen and (max-width: 992px) {
+	#main-block {
+		margin-top: 5vh;
+		padding: 20px 28px;
+	}
+
+	#main-block h1 {
+		font-size: 40px;
+		line-height: 120%;
+	}
+
+	#main-block p {
+		font-size: 18px;
+	}
+
+	#services p {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.btn-custom {
+		display: block;
+		text-align: center;
+		margin: 15px 0px;
+	}
+
+	#main-block {
+		margin-top: 0px;
+	}
+
+	#services div {
+		display: block;
+		text-align: center;
+	}
+
+	#services img {}
+
+	#services p {
+		padding-left: 0px !important;
+		margin-bottom: 36px;
+		margin-top: 20px;
+	}
+
+	#quest {
+		padding: 60px 0px 4px 0px;
+	}
+	
+	footer span {
+		display: block;
+	}
+	
+	footer span:first-child {
+		margin-bottom: 16px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+
+	#nav-logo {
+		font-size: 18px;
+		padding-bottom: 8px;
+	}
+
+	#nav-logo span {
+		font-size: 20px;
+	}
+
+	#main-block {
+		padding: 20px 16px;
+	}
+}

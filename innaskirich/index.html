@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	<title>Hello, world!</title>
+</head>
+
+<body>
+	<header class="container">
+		<nav class="d-flex justify-content-between py-sm-4 py-3 align-items-sm-end align-items-center">
+			<h3 id="nav-logo">Адвокат <br class="d-sm-none"><span>Инна Скирич</span></h3>
+			<a id="nav-phone" href="tel:0964190202"><img src="img/phone-svg.svg"></a>
+		</nav>
+		<div class="row justify-content-center">
+			<div class="col-md-5 col-8 pl-lg-5 pl-md-3 order-md-1">
+				<img src="img/%D0%A4%D0%BE%D1%82%D0%BE_%D0%98%D0%BD%D0%BD%D0%B0_%D0%A1%D0%BA%D0%B8%D1%80%D0%B8%D1%87__1_-removebg%201-min.png" class="img-fluid">
+			</div>
+			<div class="col-md-7 text-md-left text-center">
+				<div id="main-block">
+					<h1>Адвокат ответит вам бесплатно</h1>
+					<p>Задайте волнующий вас вопрос и получите профессиональную консультацию</p>
+				</div>
+				<a href="#quest-form" class="btn-custom">ЗАДАТЬ ВОПРОС</a>
+			</div>
+
+		</div>
+	</header>
+
+	<main id="quest">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-lg-5 col-md-6 pl-lg-0 pl-md-5 order-md-2" id="services">
+					<div>
+						<img src="img/romb.svg">
+						<p>
+							Земельные споры<br>
+							Семейные споры<br>
+							Жилищные споры
+						</p>
+					</div>
+					<div>
+						<img src="img/circle.svg">
+						<p>
+							Договорное право<br>
+							Сопровождение бизнеса<br>
+							Арбитражные споры
+						</p>
+					</div>
+					<div>
+						<img src="img/triangle.svg">
+						<p>
+							Банкротство физ лиц<br>
+							Банкротство юр лиц<br>
+							Ликвиадция юр лиц
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 order-md-1 mt-md-0 mt-5">
+					<form id="quest-form" method="post" action="post.php">
+						<div class="form-row">
+							<div class="col-sm-6 pr-sm-3">
+								<input type="text" placeholder="Ваше имя" required name="user_name">
+							</div>
+							<div class="col-sm-6 pl-sm-2 mt-3 mt-sm-0">
+								<input type="text" placeholder="Номер или e-mail" required name="user_contact">
+							</div>
+							<div class="col-12 mt-sm-4 mt-3">
+								<textarea name="user_question" id="" rows="10" placeholder="Опишите ваш вопрос" required></textarea>
+							</div>
+						</div>
+						<button type="submit" class="btn-custom">ОТПРАВИТЬ ВОПРОС</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	<footer class="container">
+		<div class="d-md-flex justify-content-between text-center">
+			<span>
+				Адвокат Инна Скирич ·
+				<a href="tel:0964190202">(096) 419 02 02</a>
+			</span>
+			<span>
+				Разработано командой
+				<a href="https://crayfish.studio" target="_blank">Crayfish Studio</a>
+			</span>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+	</script>
+</body></html>
