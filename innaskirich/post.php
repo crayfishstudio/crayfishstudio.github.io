@@ -1,5 +1,5 @@
 <?
-$adminemail="advokatgabrev@gmail.com";  // e-mail админа 
+$adminemail="Innaskiric@gmail.com";  // e-mail админа 
  
 $date=date("d.m.y"); // число.месяц.год 
 $time=date("H:i"); // часы:минуты:секунды 
@@ -29,7 +29,7 @@ mail("$adminemail", "$date $time", "$msg");
 // Выводим сообщение пользователю 
  
 print "<script language='Javascript'><!-- 
-function reload() {location.replace('https://advokat-gabriev.com.ua/thanks.html')}; setTimeout('reload()', 0); 
+function reload() {location.replace('https://advokat-skirich.com.ua/thanks.html')}; setTimeout('reload()', 0); 
 //--></script>   
 exit; "
 ?>
