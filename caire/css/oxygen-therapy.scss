@@ -1,0 +1,159 @@
+$fontTitle: 'Montserrat', sans-serif;
+$fontText: 'Roboto Slab', serif;
+$fontColor: #595959;
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-family: $fontTitle;
+    line-height: 1.17;
+}
+
+body {
+    background-color: #f5f3f1 !important;
+}
+
+.main {
+    padding-top: 100px;
+}
+
+.banner {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    background-image:url("../img/products/masthead-product-overview.jpg");
+    background-color: #145ca6;
+    background-position: 56% 54%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 255px;
+
+    &__title {
+        font-size: 25px;
+        font-family: $fontTitle;
+        color: #ffffff;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        line-height: 1.17;
+        margin: 0 0 .9375rem;
+        text-transform: uppercase;
+    }
+
+    &_margin {
+        margin-bottom: 30px;
+    }
+}
+
+.headline-sm {
+    padding: 60px 0;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+
+    &__title {
+        color: $fontColor;
+        display: flex;
+        align-self: center;
+    }
+
+    &__text {
+        color: $fontColor;
+        font-family: $fontText;
+        margin: 0;
+    }
+}
+
+
+
+.card-info {
+    margin-bottom: 40px;
+
+    &__item {
+        background-color: #ffffff;
+    }
+
+    &-row {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+
+    &-image {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 30px 32px;
+    }
+
+    &__title {
+        color: $fontColor;
+        text-transform: capitalize;
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+
+    &__text {
+        color: $fontColor;
+        font-family: $fontText;
+        font-size: 0.8rem;
+        line-height: 1.83;
+    }
+}
+
+@media (min-width: 992px) {
+    .copd {
+        &__photo_right {
+            margin-right: 0;
+            background-image: url("../img/feature-focus.png");
+        }
+
+        &__title--transport {
+            transform: none;
+        }
+
+        &__text--margin {
+            margin: 0;
+        }
+
+        &_margin {
+            margin-bottom: 30px;
+        }
+
+        &_pdng {
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        padding-top: 68px;
+    }
+
+    .headline-sm {
+        & > .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .copd {
+        &__photo_right {
+            margin-right: 0;
+            background-image: url("../img/feature-focus.png");
+        }
+    }
+
+    .card-info {
+        margin-top: 20px;
+
+        &__item:first-child {
+            margin-bottom: 15px;
+        }
+
+        &-row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+}

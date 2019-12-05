@@ -1,0 +1,382 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.17;
+}
+
+body {
+  background-color: #f5f3f1 !important;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.banner {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/products/masthead-product-overview.jpg");
+  background-color: #145ca6;
+  background-position: 56% 54%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 255px;
+}
+
+.banner__title {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  line-height: 1.17;
+  margin: 0 0 .9375rem;
+  text-transform: uppercase;
+}
+
+.pulseflow {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.pulseflow_padding {
+  padding: 30px;
+}
+
+.pulseflow__title {
+  padding: 16px 0 0;
+  margin-bottom: 40px;
+  border: 0;
+  margin-top: 15px;
+  padding-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.pulseflow-title__text {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  font-size: 2.15rem;
+  letter-spacing: 4px;
+  color: #595959;
+}
+
+.pulseflow-title__text::before {
+  display: none;
+}
+
+.pulseflow-title__span {
+  background-color: #ffffff;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.pulseflow__text {
+  color: #595959;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  background-color: #f8f8f8;
+}
+
+.product-card_padding {
+  padding-bottom: 71px;
+}
+
+.product-card__image {
+  padding: 24px 20px 0;
+}
+
+.product-card__content {
+  padding: 24px 20px;
+}
+
+.product-card__title {
+  position: relative;
+  z-index: 1;
+  font-size: 1.75rem;
+  color: #595959;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.product-card-title__span {
+  background-color: #f8f8f8;
+  padding-right: 15px;
+}
+
+.product-card-title__span::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #ebebeb;
+  position: absolute;
+  right: 0;
+  bottom: .5em;
+  width: 100%;
+  z-index: -1;
+}
+
+.product-card__text {
+  font-family: "Roboto Slab", serif;
+  color: #595959;
+  font-size: 0.8rem;
+  line-height: 1.83;
+}
+
+.product-card-list__link {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.8rem;
+  line-height: 1.83;
+  color: #145ca6;
+}
+
+.product-card-image__source {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.caire {
+  background-color: #ffffff;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.caire_margin {
+  margin-bottom: 60px;
+}
+
+.caire_margin::before {
+  background: #f8f8f8;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  bottom: 64px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 65%;
+}
+
+.caire__intro {
+  font-size: .8125rem;
+  padding: 40px;
+  margin-bottom: 30px;
+  width: 52%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.caire-intro__text {
+  margin: 0;
+  line-height: 1.4375rem;
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: #595959;
+}
+
+.caire__item {
+  background-color: none !important;
+  min-height: auto;
+}
+
+.caire__item-green {
+  background-color: #afc124;
+}
+
+.caire__item-blue {
+  background-color: #79bde8;
+}
+
+.caire__item-orange {
+  background-color: #fcaf40;
+}
+
+.caire__title {
+  text-align: center;
+  width: 100%;
+}
+
+.caire-title__text {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 2.7rem;
+  margin-top: 2.15rem;
+  font-size: 2.15rem;
+  color: #595959;
+}
+
+.caire-title__text::before {
+  display: none;
+}
+
+.caire-title__span {
+  background-color: #fff;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.caire-item__block {
+  padding: 40px;
+}
+
+.caire-item__title {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+
+.caire-item__text {
+  font-family: "Roboto Slab", serif;
+  font-size: .8125rem;
+  line-height: 1.4375rem;
+}
+
+.caire-item__title, .caire-item__text {
+  color: #ffffff;
+}
+
+@media (min-width: 900px) {
+  .product-card__image {
+    padding: 40px 40px 0;
+  }
+  .caire__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .caire__item {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin-right: auto;
+    -webkit-transition: none;
+    transition: none;
+    min-height: auto;
+    margin: 0 10px;
+  }
+  .caire__arrowLeft {
+    display: none;
+  }
+  .caire__arrowRight {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .pulseflow-title__text::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #ebebeb;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+  }
+  .product-card__image {
+    padding: 47px 47px 0;
+  }
+  .product-card-image__source {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .product-card__content {
+    padding: 30px 32px;
+  }
+  .caire-title__text::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #ebebeb;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding-top: 68px;
+  }
+  .pulseflow {
+    padding: 20px;
+  }
+  .pulseflow_padding {
+    padding: 0;
+  }
+  .caire {
+    margin-top: 30px;
+  }
+  .caire__arrowLeft, .caire__arrowRight {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    background: url("../img/icon-arrow-narrow.png") center center no-repeat #145ca6;
+    background-position: 22px center !important;
+    background-size: 16px auto;
+    height: 50px !important;
+    width: 50px;
+    border: none !important;
+    padding: 28px !important;
+    padding-bottom: 0px;
+    opacity: 1;
+    top: 45%;
+  }
+  .caire__arrowLeft {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    left: -1%;
+  }
+  .caire__arrowRight {
+    right: -1%;
+  }
+  .caire__intro {
+    width: 100%;
+  }
+  .caire_margin::before {
+    width: 100%;
+  }
+  .caire-item__block {
+    padding: 50px;
+  }
+  .caire-item__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .caire__arrowLeft, .caire__arrowRight {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .caire__arrowLeft {
+    -webkit-transform: scale(0.6) rotate(180deg);
+            transform: scale(0.6) rotate(180deg);
+  }
+  .pulseflow__item_margin {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=oxygen-concentrators.css.map */

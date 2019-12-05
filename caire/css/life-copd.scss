@@ -1,0 +1,347 @@
+$fontTitle: 'Montserrat', sans-serif;
+$fontText: 'Roboto Slab', serif;
+$fontColor: #595959;
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-family: $fontTitle;
+    line-height: 1.17;
+}
+
+body {
+    background-color: #f5f3f1 !important;
+}
+
+.main {
+    padding-top: 100px;
+}
+
+.banner {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    background-image:url("../img/products/masthead-product-overview.jpg");
+    background-color: #145ca6;
+    background-position: 56% 54%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 255px;
+
+    &__title {
+        font-size: 25px;
+        font-family: $fontTitle;
+        color: #ffffff;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        line-height: 1.17;
+        margin: 0 0 .9375rem;
+        text-transform: uppercase;
+    }
+}
+
+.headline-sm {
+    padding: 60px 0;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+
+    &_padding {
+        padding: 40px 0;
+    }
+
+    &__title {
+        color: $fontColor;
+        display: flex;
+        align-self: center;
+    }
+
+    &__text {
+        color: $fontColor;
+        font-family: $fontText;
+        margin: 0;
+    }
+
+    &__text_size {
+        font-size: 0.8rem;
+    }
+}
+
+
+.symp {
+    display: flex;
+    background-size: contain;
+    background-position: 100% 0;
+    height: 712px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+
+    &__block {
+        align-self: center;
+        margin-left: 6.5%;
+        position: absolute;
+    }
+
+    &__intro {
+        padding: 0;
+        margin-bottom: 55px;
+        background-color: transparent;
+        width: 57%;
+        max-width: 425px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        line-height: 1.17;
+        font-size: 2.15rem;
+        color: $fontColor;
+        letter-spacing: 4px;
+    }
+
+    &__text {
+        color: $fontColor;
+        font-family: $fontText;
+        font-size: .8rem;
+        margin: 0 0 1.4rem;
+        line-height: 1.83;
+    }
+
+    &__item {
+        height: 100%;
+        background-color: #f8f8f8;
+        padding: 30px 32px;
+        border: 2px solid #ebebeb;
+        border-left: none;
+        border-right: none;
+    }
+
+    &-item__title {
+        font-size: 1.625rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+        color: $fontColor;
+        text-transform: capitalize;
+        width: 68%;
+    }
+
+    &-item__title_orange {
+        color: #fcaf40;
+    }
+
+    &-item__title_red {
+        color: #d0021b;
+    }
+
+    &-item__text {
+        font-family: $fontText;
+        color: $fontColor;
+        font-size: 0.9rem;
+    }
+}
+
+
+.des {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 40px;
+
+    &__heading {
+        text-align: center;
+        width: 100%;
+        padding: 16px 0 0;
+        margin-bottom: 40px;
+        border: 0;
+        margin-top: 15px;
+        padding-bottom: 0;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        font-size: 2.15rem;
+        font-weight: 500;
+        color: $fontColor;
+    }
+
+    &__title::before {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: #ebebeb;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 100%;
+        z-index: -1;    
+    }
+
+    &__span {
+        background-color: #ffffff;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    &__row {
+        width: 100%;
+        margin: 0;
+    }
+
+    &_flex {
+        display: flex;
+    }
+
+    &__item {
+        background-color: #f8f8f8;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    &-image__source {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 30px 32px;
+    }
+
+    &-content__title {
+        font-size: 1.75rem;
+        color: $fontColor;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+
+    &-content__text {
+        margin-bottom: 0;
+        font-size: .8rem;
+        margin: 0 0 1.4rem;
+        line-height: 1.83;
+        overflow-wrap: break-word;
+        font-family: $fontText;
+        color: $fontColor;
+    }
+}
+
+
+
+.res {
+    background-color: #ffffff;
+    min-height: 200px;
+    margin-bottom: 30px;
+
+    &__block {
+        padding: 40px;
+    }
+
+    &__title {
+        letter-spacing: 4px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        margin: 0 0 1rem;
+        font-size: 2.15rem;
+        color: $fontColor;
+    }
+
+    &__text {
+        line-height: 1.83;
+        overflow-wrap: break-word;
+        font-size: .8rem;
+        margin: 0 0 1.4rem;
+        font-family: $fontText;
+        color: $fontColor;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+        font-weight: 500;
+        background: url("../img/icon-triangle-right-blue.png") right 5px no-repeat;
+        display: block;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        background-size: 10px;
+        font-size: .8125rem;
+        margin-top: 20px;
+        padding-right: 24px;
+        width: 92%;
+        font-family: $fontTitle;
+        color: #145ca6;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding-top: 68px;
+    }
+
+    .headline-sm {
+        & > .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .symp {
+        background-position: center;
+
+        &_align {
+            align-content: flex-start;
+        }
+
+        &__block {
+            position: relative;
+        }
+
+        &__intro {
+            background-color: #ffffff;
+            width: auto;
+            max-width: none;
+            margin-left: 5px;
+            margin-right: 4px;
+            margin-top: -1px;
+            padding: 24px;
+            padding-top: 34px;
+            text-align: center;
+        }
+
+        &_maxWidth {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .symp {
+        &__block {
+            margin-left: auto !important;
+        }
+
+        &_align {
+            justify-content: center;
+        }
+
+        &_maxWidth {
+            transform: translateY(-22px);
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .symp {
+        height: 740px;
+
+        &__intro, &_maxWidth {
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.17;
+}
+
+body {
+  background-color: #f5f3f1 !important;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.banner {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/products/masthead-product-overview.jpg");
+  background-color: #145ca6;
+  background-position: 56% 54%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 255px;
+}
+
+.banner__title {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  line-height: 1.17;
+  margin: 0 0 .9375rem;
+  text-transform: uppercase;
+}
+
+.who {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.who__wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-bottom: 5%;
+  width: 66%;
+}
+
+.who__heading {
+  position: relative;
+  margin: 0 auto;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.who__heading::before {
+  background-color: #f5f3f1;
+  content: "";
+  height: 4px;
+  left: 0;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 1;
+}
+
+.who__title {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 3%;
+  position: relative;
+  z-index: 2;
+  font-size: 2.15rem;
+  margin: 0;
+  letter-spacing: 4px;
+  line-height: 1.17;
+  color: #595959;
+}
+
+.who-story__image {
+  position: relative;
+  z-index: 1;
+}
+
+.who-story__source {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.who-story__content {
+  background-color: #f8f8f8;
+  margin: -30px auto 0;
+  padding: 24px 20px;
+  width: 86%;
+  position: relative;
+  z-index: 2;
+}
+
+.who-story__title {
+  font-size: 1.4rem;
+  color: #595959;
+  font-weight: 400;
+}
+
+.who-story__text {
+  line-height: 1.83;
+  overflow-wrap: break-word;
+  font-size: .8rem;
+  margin: 0 0 1.4rem;
+  color: #595959;
+  font-family: "Roboto Slab", serif;
+}
+
+.who__logo {
+  position: relative;
+  text-align: center;
+  margin: 6% auto 0;
+}
+
+.who__logo::before {
+  background-color: #f5f3f1;
+  content: "";
+  top: 50%;
+  display: block;
+  height: 4px;
+  left: 0;
+  margin-top: -2px;
+  position: absolute;
+  width: 100%;
+}
+
+.who-logo__source {
+  background-color: #fff;
+  text-align: center;
+  padding: 0 3%;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  z-index: 2;
+}
+
+.feature_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.button_transform {
+  right: auto;
+  top: auto;
+  -webkit-transform: translateY(-52px) translateX(20px);
+          transform: translateY(-52px) translateX(20px);
+}
+
+@media (min-width: 768px) {
+  .who-story__content {
+    padding: 40px 55px;
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding-top: 68px;
+  }
+  .who__wrapper {
+    width: auto;
+  }
+  .who-story__content {
+    width: auto;
+  }
+  .who-logo__source {
+    width: 140px;
+  }
+  .feature__title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+/*# sourceMappingURL=whoweare.css.map */

@@ -1,0 +1,161 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f5f3f1 !important;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.faq {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.faq__block_padding {
+  padding: 90px 15px 65px;
+}
+
+.faq__head, .faq__accordion {
+  background-color: #ffffff;
+}
+
+.faq__accordion {
+  padding-bottom: 60px;
+}
+
+.faq__title {
+  font-size: 2.15rem;
+  margin: 0 0 2rem;
+  padding-bottom: 30px;
+  letter-spacing: 4px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  position: relative;
+  color: #595959;
+}
+
+.faq__title::before {
+  height: 4px;
+  background-color: #f5f3f1;
+  right: 0;
+  width: 100%;
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+
+.faq__text {
+  line-height: 1.83;
+  font-size: 0.8rem;
+  margin: 1rem 0 0;
+  overflow-wrap: break-word;
+  font-family: "Roboto Slab", serif;
+  color: #595959;
+}
+
+.card {
+  border: none;
+  min-height: 100px;
+  margin-bottom: 18px;
+}
+
+.card-header {
+  padding: 23px 33px;
+  border-bottom: none;
+}
+
+.card-icon::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 42px;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+  pointer-events: none;
+  right: 30px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #145ca6;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.card-icon.collapsed::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  top: 35px;
+}
+
+.card-body {
+  line-height: 1.83;
+  font-size: .8rem;
+  margin: 0 0 1.4rem;
+  overflow-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
+  padding: 30px 45px;
+  color: #595959;
+}
+
+.card-collapse {
+  background-color: #f8f8f8;
+  margin-top: 5px;
+}
+
+/*.faq__accordion .btn-link.collapsed:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 42px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    right: 30px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #145ca6;
+    transition: 300ms;
+}
+
+.faq__accordion .btn-link:after {
+    transform: rotate(180deg);
+    transition: 300ms;
+    top: 35px;
+}*/
+.btn-link {
+  font-family: "Montserrat", sans-serif;
+  color: #145ca6;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}
+
+.btn-link:hover {
+  text-decoration: none !important;
+  color: #4979a8;
+}
+
+.btn-link:active {
+  text-decoration: none !important;
+}
+
+.btn-link:focus {
+  text-decoration: none !important;
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding-top: 68px;
+  }
+  .card-icon {
+    padding-right: 20px;
+  }
+}
+/*# sourceMappingURL=faq.css.map */

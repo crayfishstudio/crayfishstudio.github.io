@@ -1,0 +1,339 @@
+$fontTitle: 'Montserrat', sans-serif;
+$fontText: 'Roboto Slab', serif;
+$fontColor: #595959;
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-family: $fontTitle;
+    line-height: 1.17;
+}
+
+body {
+    background-color: #f5f3f1 !important;
+}
+
+.main {
+    padding-top: 100px;
+}
+
+.order_first {
+    order: 2;
+}
+
+.order_second {
+    order: 1;
+}
+
+
+.banner {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    background-image:url("../img/products/masthead-product-overview.jpg");
+    background-color: #145ca6;
+    background-position: 56% 54%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 255px;
+
+    &_margin {
+        background-image: none;
+    }
+
+    &__title {
+        font-size: 25px;
+        font-family: $fontTitle;
+        color: #ffffff;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        line-height: 1.17;
+        margin: 0 0 .9375rem;
+        text-transform: uppercase;
+    }
+
+    &_margin {
+        margin-bottom: 30px;
+    }
+}
+
+
+.contact-form {
+    margin-bottom: 40px;
+    padding-top: 60px;
+    background-color: #ffffff;
+
+    &_paddingLeftRight {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    &__block {
+        justify-content: center;
+        margin: 0 auto !important;
+        padding: 0 20px 25px;
+    }
+
+    &__block_padding {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    &__block--padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__title {
+        font-family: $fontTitle;
+        font-size: 2.15rem;
+        letter-spacing: 4px;
+        line-height: 1.17;
+        margin: 0 0 .9375rem;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: $fontText;
+        font-size: 0.9rem;
+    }
+
+    &__title, &__text {
+        text-align: left;
+        color: $fontColor;
+    }
+
+    &__item {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    &__label {
+        font-family: $fontText;
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: #555555;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__input {
+        font-family: $fontText;
+        font-style: normal;
+        font-weight: 400;
+        background-color: #f8f8f8;
+        border: 1px solid #ebebeb;
+        color: #145ca6;
+        font-size: 1rem;
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        height: auto;
+    }
+
+    &__input:focus {
+        border-color: #66afe9;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+        background-color: #fff;
+        border-color: #5cb3fd;
+        outline: 0;
+    }
+
+    &__checkbox {
+        height: 1px;
+        margin: 0;
+        opacity: 0.01;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    &__checkbox + &__terms {
+        background: url("../img/icon-checkbox.png") left .4em no-repeat;
+        cursor: pointer;
+        overflow: visible;
+        background-size: 30px;
+    }
+
+    &__checkbox:checked + &__terms {
+        background-image: url("../img/icon-checkbox-checked.png");
+        background-size: 30px;
+    }
+
+    &__terms {
+        line-height: 1.83;
+        font-size: .8rem;
+        margin: 0 0 1.25rem;
+        overflow-wrap: break-word;
+        font-family: $fontTitle;
+        text-align: left;
+        padding-top: 5px;
+        background-size: 30px;
+        padding-left: 50px;
+    }
+
+    &__textarea {
+        color: $fontColor;
+    }
+
+    &_marginBottom {
+        margin-bottom: 30px;
+    }
+}
+
+.contact-info {
+    &__item {
+        background-color: #ffffff;
+        padding: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__item--padding {
+        padding: 0;
+    }
+
+    &__content_padding {
+        padding: 40px;
+    }
+
+    &__title {
+        font-size: 1.75rem;
+        text-transform: capitalize;
+        color: $fontColor;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        color: #145ca6;
+        margin-top: 5px;
+    }
+
+    &__link:hover {
+        color: #5cb3fd;
+        text-decoration: none;
+    }
+
+    &__text, &__link {
+        font-family: $fontText;
+        font-size: .8rem;
+        margin: 0 0 1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-form {   
+        &__input {
+            font-size: 1.125rem;
+            padding: 20px;
+        }
+    }
+
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+    
+@media (min-width: 992px) {
+    .contact-form {
+        
+        &__input {
+            margin-bottom: 0;
+        }
+    }
+
+    .contact-info {
+        &__item {
+        }
+    }
+
+    &__checkbox + &__terms {
+        background-position: left top;
+        background-size: 30px;
+        padding-left: 54px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .main {
+        padding-top: 68px;
+    }
+
+    .order_first {
+        order: 1;
+    }
+
+    .order_second {
+        order: 2;
+    }
+
+    .banner {
+        &_background {
+            height: 150px;
+        }
+
+        &__title {
+            margin: 0;
+        }
+
+        &-title__text {
+            font-size: 1.75rem;
+        }
+    }
+
+    .contact-form {
+        &_marginBottom {
+            margin: 0;
+        }
+    
+        &__block_padding {
+            padding: 0 !important;
+        }
+
+        &__button_text {
+            position: relative;
+            display: flex;
+            top: -5px;
+        }
+
+        &__title {
+            font-size: 1.875rem;
+            text-align: center;
+        }
+
+        &__item {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        &_paddingBottom {
+            padding-bottom: 30px;
+        }
+    }
+
+    .contact-info {
+        &__item {
+            padding: 20px;
+            padding-top: 30px;
+        }
+
+        &__title {
+            font-size: 1rem;
+        }
+
+        &__content {
+            padding-left: 14px;
+        }
+
+        &__content_padding {
+            padding: 20px;
+        }
+    }
+
+
+}

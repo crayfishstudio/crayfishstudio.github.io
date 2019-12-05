@@ -1,0 +1,147 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.17;
+}
+
+body {
+  background-color: #f5f3f1 !important;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.banner {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/products/masthead-product-overview.jpg");
+  background-color: #145ca6;
+  background-position: 56% 54%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 255px;
+}
+
+.banner__title {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  line-height: 1.17;
+  margin: 0 0 .9375rem;
+  text-transform: uppercase;
+}
+
+.banner_margin {
+  margin-bottom: 30px;
+}
+
+.headline-sm {
+  padding: 60px 0;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.headline-sm__title {
+  color: #595959;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.headline-sm__text {
+  color: #595959;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+}
+
+.card-info {
+  margin-bottom: 40px;
+}
+
+.card-info__item {
+  background-color: #ffffff;
+}
+
+.card-info-row {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.card-info-image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.card-info__content {
+  padding: 30px 32px;
+}
+
+.card-info__title {
+  color: #595959;
+  text-transform: capitalize;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.card-info__text {
+  color: #595959;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.8rem;
+  line-height: 1.83;
+}
+
+@media (min-width: 992px) {
+  .copd__photo_right {
+    margin-right: 0;
+    background-image: url("../img/feature-focus.png");
+  }
+  .copd__title--transport {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .copd__text--margin {
+    margin: 0;
+  }
+  .copd_margin {
+    margin-bottom: 30px;
+  }
+  .copd_pdng {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding-top: 68px;
+  }
+  .headline-sm > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .copd__photo_right {
+    margin-right: 0;
+    background-image: url("../img/feature-focus.png");
+  }
+  .card-info {
+    margin-top: 20px;
+  }
+  .card-info__item:first-child {
+    margin-bottom: 15px;
+  }
+  .card-info-row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+/*# sourceMappingURL=oxygen-therapy.css.map */

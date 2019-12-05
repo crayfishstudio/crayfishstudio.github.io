@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.17;
+}
+
+body {
+  background-color: #f5f3f1 !important;
+}
+
+.main {
+  padding-top: 130px;
+  padding-bottom: 30px;
+}
+
+.thanks {
+  background-color: #ffffff;
+  padding: 170px;
+  text-align: center;
+}
+
+.thanks__title {
+  font-size: 3.6rem;
+  color: #595959;
+}
+
+.thanks__text {
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  color: #595959;
+  padding: 20px;
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding-top: 68px;
+  }
+  .thanks {
+    padding: 100px;
+  }
+  .thanks__title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .thanks {
+    padding: 35px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 50px;
+  }
+  .thanks__title {
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=thanks.css.map */

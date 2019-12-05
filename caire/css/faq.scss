@@ -1,0 +1,171 @@
+$fontTitle: 'Montserrat', sans-serif;
+$fontText: 'Roboto Slab', serif;
+$fontColor: #595959;
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-family: $fontTitle;
+}
+
+body {
+    background-color: #f5f3f1 !important;
+}
+
+.main {
+    padding-top: 100px;
+}
+
+.faq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__block_padding {
+        padding: 90px 15px 65px;
+    }
+
+    &__head, &__accordion {
+        background-color: #ffffff;
+    }
+
+    &__accordion {
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        font-size: 2.15rem;
+        margin: 0 0 2rem;
+        padding-bottom: 30px;
+        letter-spacing: 4px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        position: relative;
+        color: $fontColor;
+    }
+
+    &__title::before {
+        height: 4px;
+        background-color: #f5f3f1;
+        right: 0;
+        width: 100%;
+        content: "";
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__text {
+        line-height: 1.83;
+        font-size: 0.8rem;
+        margin: 1rem 0 0;
+        overflow-wrap: break-word;
+        font-family: $fontText;
+        color: $fontColor;
+    }
+}
+
+.card {
+    border: none;
+    min-height: 100px;
+    margin-bottom: 18px;
+
+    &-header {
+        padding: 23px 33px;
+        border-bottom: none;
+    }
+
+    &-icon::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 42px;
+        transform: translateY(-50%) rotate(180deg);
+        pointer-events: none;
+        right: 30px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 12px solid #145ca6;
+        transition: 300ms;
+    }
+
+    &-icon.collapsed::after {
+        transform: rotate(0deg);
+        transition: 300ms;
+        top: 35px;
+    }
+
+    &-body {
+        line-height: 1.83;    
+        font-size: .8rem;
+        margin: 0 0 1.4rem;
+        overflow-wrap: break-word;
+        font-family: $fontTitle;
+        padding: 30px 45px;
+        color: $fontColor;
+    }
+
+    &-collapse {
+        background-color: #f8f8f8;
+        margin-top: 5px;
+    }
+
+    .show &-icon::after {
+        
+    }
+}
+
+
+/*.faq__accordion .btn-link.collapsed:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 42px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    right: 30px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #145ca6;
+    transition: 300ms;
+}
+
+.faq__accordion .btn-link:after {
+    transform: rotate(180deg);
+    transition: 300ms;
+    top: 35px;
+}*/
+
+.btn {
+    &-link {
+        font-family: $fontTitle;
+        color: #145ca6;
+        font-weight: 500;
+        width: 100%;
+        text-align: left;
+    }
+
+    &-link:hover {
+        text-decoration: none !important;
+        color: #4979a8;
+    }
+
+    &-link:active {
+        text-decoration: none !important;
+    }
+
+    &-link:focus {
+        text-decoration: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding-top: 68px;
+    }
+
+    .card {
+        &-icon {
+            padding-right: 20px;
+        }
+    }
+}
