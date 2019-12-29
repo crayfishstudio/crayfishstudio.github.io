@@ -12,11 +12,10 @@ let dynamic = () => {
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[1]) {
+        setTimeout(openModal, 2000);
         socialLink.forEach(el => {
             el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 0.5;
-            setTimeout(openModal, 2000);
-
         });
         socialBlock.style.zIndex = 1;
 
@@ -118,17 +117,14 @@ for (var i = 0; i < radioButton.length; i++) {
 }
 
 var modal = document.getElementById("myModal");
-
 var btn = document.getElementById("myBtn");
-
 var span = document.getElementsByClassName("close")[0];
 
-var wasOpened = false;
-
 function openModal() {
-    if (wasOpened == false) {
+    if (localStorage.modalWasOpened) {
+    } else{
+        localStorage.modalWasOpened = 1;
         modal.style.display = "block";
-        wasOpened = true
     }
 }
 
