@@ -195,8 +195,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-left: 1px solid #000000;
-  height: 80px;
+  border-left: 1px solid #0000007a;
+  height: 160px;
   position: absolute;
   bottom: 29px;
   left: 50%;
@@ -303,6 +303,9 @@
   background-image: url("../img/knife-bg.jpg");
   background-size: cover;
   background-position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mail {
@@ -379,7 +382,6 @@
   background-image: url("../img/knife-bg.jpg");
   background-size: cover;
   background-position: center;
-  background-image: url("../img/knife-example.gif");
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

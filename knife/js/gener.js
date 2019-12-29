@@ -88,41 +88,39 @@ let getSizeCheckedValue = (sizeChecked) => {
   paramGroup[3] = +sizeChecked;
 	console.log(...paramGroup);
   
-  if(paramGroup[2] == 1 && paramGroup[3] == 3) {
-      let img = document.getElementById("img");
-     	img.src = "https://external-preview.redd.it/805rp8519zSGN2C_WECC4-o4n6A04qtzazHD1nb0Ukc.jpg?width=768&auto=webp&s=a2ac4717a2f59876968af617bb80625ddc8933a3";
-  }
-
   let paramGroupString = paramGroup.join('');
 
   console.log(paramGroupString);
 
-  console.log("./img/" + paramGroupString + ".png");
+  console.log("img/gif/100mm/" + paramGroupString + ".gif");
 }
 
 let generateButton = document.getElementById('generate__button');
 let generateNumber = document.getElementById('generate__number');
+let generateGif = document.getElementById('generate-block');
+
 
 generateButton.addEventListener('click', function() {
     
     let paramGroupString = paramGroup.join('');
     
     if(paramGroup[0] == 0) {
-        console.log("1 - zero");
+        console.log("1 - is empty");
         fullpage_api.moveTo(2);
     } else if(paramGroup[1] == 0) {
-        console.log("2 - zero");
+        console.log("2 - is empty");
         fullpage_api.moveTo(3);
     } else if(paramGroup[2] == 0) {
-        console.log("3 - zero");
+        console.log("3 - is empty");
         fullpage_api.moveTo(4);
     } else if(paramGroup[3] == 0) {
-        console.log("4 - zero");
+        console.log("4 - is empty");
         fullpage_api.moveTo(5);
     } else {
         console.log("all okay");
-        /*fullpage_api.moveSectionDown();*/
-        console.log(paramGroupString);
+        console.log('generateButton: ', paramGroupString);
         generateNumber.innerHTML = paramGroupString;
+        // change background gif 
+        generateGif.style.backgroundImage = "url('img/knifes/" + paramGroupString + ".gif')";
     }
 });
