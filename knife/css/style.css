@@ -679,3 +679,73 @@
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+/* The Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 9995; 
+  transition: .5s;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px 40px;
+  border: 1px solid #888;
+  width: 50%; 
+  animation-name: animatetop;
+  animation-duration: 0.3s
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content p.modal-title{
+text-align: center;
+font-size: 28px;
+margin-top: 0;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.modal-content p{
+  font-family: 'ClearSans', sans-serif;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+@keyframes animatetop {
+  from {
+    /* top: -300px;  */
+    transform: scale(1.2);
+    opacity: 0
+  }
+  to {
+    /* top: 0;  */
+    transform: scale(1);
+    opacity: 1
+  }
+}
