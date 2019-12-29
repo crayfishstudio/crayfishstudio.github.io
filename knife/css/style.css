@@ -702,11 +702,12 @@
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  padding: 20px 40px;
+  padding: 30px 60px;
   border: 1px solid #888;
-  width: 50%; 
+  width: 60%; 
+  box-sizing: border-box;
   animation-name: animatetop;
-  animation-duration: 0.3s
+  animation-duration: 0.3s;
 }
 
 .close {
@@ -730,6 +731,8 @@ font-size: 28px;
 margin-top: 0;
 font-weight: bold;
 text-transform: uppercase;
+letter-spacing: 4.4px;
+
 }
 
 .modal-content p{
@@ -737,6 +740,21 @@ text-transform: uppercase;
   text-align: center;
   font-size: 18px;
 
+}
+
+@media only screen and (max-width: 767px){
+  .modal-content {
+    width: 80%; 
+    padding: 20px 30px;
+
+  }
+  .modal-content p.modal-title{
+    font-size: 16px;
+  }
+
+  .modal-content p{
+    font-size: 14px;
+  }
 }
 
 @keyframes animatetop {
