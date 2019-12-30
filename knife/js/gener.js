@@ -138,13 +138,13 @@ generateButton.addEventListener('click', function () {
 
       // change button text
       generate__button.innerHTML = 'GET YOUR PERSONAL CONFIGURATION';
-      generate__button.setAttribute('onclick', 'fullpage_api.moveTo(8)');
+      generate__button.setAttribute('onclick', 'fullpage_api.moveTo(7)');
 
       // show counters
-      generateCounters.style.left = '0';
+      // generateCounters.style.left = '0';
 
       // show counters
-      generateCounters.style.display = 'block';
+      generateCounters.style.display = 'flex';
       if(paramGroup[3] == 1){
         finalCount1.innerHTML = '100';
         finalCount2.innerHTML = '50';
