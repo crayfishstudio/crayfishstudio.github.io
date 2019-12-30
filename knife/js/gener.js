@@ -101,6 +101,7 @@ let generateGif = document.getElementById('generate-block');
 let generateTitle = document.getElementById('generate__title');
 let generateCounters = document.getElementById('final-counters');
 let generateBlock = document.getElementById('generate-block');
+let download = document.getElementById('downloadJpg');
 
 let finalCount1 = document.getElementById('final-count1')
 let finalCount2 = document.getElementById('final-count2')
@@ -132,6 +133,11 @@ generateButton.addEventListener('click', function () {
     function changeKnife() {
       // change background gif 
       generateGif.style.backgroundImage = "url('img/knifes/" + paramGroupString + ".gif')";
+
+      // download link
+      download.setAttribute('download', paramGroupString + '.pdf');
+      download.setAttribute('href', 'img/knifes/jpg/' + paramGroupString + '.pdf');
+      download.style.display = 'block';
 
       // change title
       generateTitle.innerHTML = 'THIS IS YOUR PERSONAL INERTIX CONFIGURATION';

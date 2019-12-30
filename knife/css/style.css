@@ -851,3 +851,21 @@
 #final-counters {
 	display: none;
 }
+
+.downloadJpg{
+	display: none;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'ClearSans';
+	text-decoration: none;
+	letter-spacing: 4px;
+	padding: 10px 0;
+	transform: translateY(-30px);
+	cursor: pointer;
+	opacity: .8;
+
+}
+
+.downloadJpg:hover{
+opacity: 1;	
+}
