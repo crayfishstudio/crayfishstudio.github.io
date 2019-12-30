@@ -417,8 +417,9 @@
 
 .final-counter {
   position: relative;
-  top: -53px;
+  top: 0px;
   margin-left: 80px;
+  transition: .4s;
 }
 
 .final-counter__item {
@@ -739,7 +740,6 @@ letter-spacing: 4.4px;
   font-family: 'ClearSans', sans-serif;
   text-align: center;
   font-size: 18px;
-
 }
 
 @media only screen and (max-width: 767px){
@@ -768,4 +768,17 @@ letter-spacing: 4.4px;
     transform: scale(1);
     opacity: 1
   }
+}
+
+#generate__title{
+	position: relative;
+	transition: .5s;
+}
+
+#generate-block{
+	transition: .5s;
+}
+
+#final-counters{
+	display: none;
 }
