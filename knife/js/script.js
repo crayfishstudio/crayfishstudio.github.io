@@ -3,70 +3,80 @@ let socialLink = document.querySelectorAll(".social__link");
 
 let anchorsArr = ['#home', '#blade-style', '#blade-finish', '#handle', '#size', '#generate', '#final', '#mail', '#devby'];
 
+// var socialBlock = document.getElementsByClassName('social')[0];
+
+function hideSocial() {
+    socialBlock.style.display = 'none';
+}
+
+function showSocial() {
+    socialBlock.style.display = 'flex';
+}
+
 let dynamic = () => {
     if (window.location.hash == anchorsArr[0]) {
+        showSocial()
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 1;
         });
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[1]) {
         setTimeout(openModal, 2000);
+        showSocial()
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 0.5;
         });
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[2]) {
+        showSocial()
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 0.5;
         });
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[3]) {
+        showSocial()
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 0.5;
         });
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[4]) {
+        showSocial()
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 0.5;
         });
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[5]) {
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0s linear 0s";
             el.style.opacity = 0;
         });
+        showSocial()
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[7]) {
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0s linear 0s";
             el.style.opacity = 0;
         });
+        setTimeout(hideSocial, 500);
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[6]) {
+        showSocial()
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 0.5;
         });
         socialBlock.style.zIndex = 1;
 
     } else if (window.location.hash == anchorsArr[8]) {
+        showSocial()
         socialLink.forEach(el => {
-            el.style.transition = "opacity 0.5s linear 0s";
             el.style.opacity = 0.5;
         });
-        socialBlock.style.zIndex = 0;
+        socialBlock.style.zIndex = '-5';
     }
 
 }
@@ -121,8 +131,7 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 function openModal() {
-    if (localStorage.modalWasOpened) {
-    } else{
+    if (localStorage.modalWasOpened) {} else {
         localStorage.modalWasOpened = 1;
         modal.style.display = "block";
     }

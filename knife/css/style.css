@@ -47,6 +47,7 @@
 	left: 0;
 	right: 0;
 	margin-left: -85px;
+	transition: 5s;
 }
 
 .social__link {
@@ -58,6 +59,7 @@
 	letter-spacing: 2.9px;
 	font-size: 16px;
 	margin-left: 38px;
+	transition: .5s;
 }
 
 .section {
@@ -449,6 +451,7 @@
 	height: 100px;
 	background-color: #ebebeb;
 	padding: 20px;
+	z-index: 9000;
 }
 
 .devby__title {
@@ -517,6 +520,7 @@
 
 	.sectionAnton{
 		bottom: 32vh;
+		z-index: 9000;
 	}
 
 	#generate__title {
@@ -661,6 +665,7 @@
 		justify-content: space-between;
 		padding: 5px 10px;
 		flex-direction: row;
+		z-index: 0;
 	}
 
 	.final-counter__item {
@@ -850,6 +855,7 @@
 
 #final-counters {
 	display: none;
+	z-index: -1;
 }
 
 .downloadJpg{

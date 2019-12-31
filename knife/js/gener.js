@@ -136,7 +136,7 @@ generateButton.addEventListener('click', function () {
 
       // download link
       download.setAttribute('download', paramGroupString + '.pdf');
-      download.setAttribute('href', 'img/knifes/jpg/' + paramGroupString + '.pdf');
+      download.setAttribute('href', 'img/knifes/jpg/' + paramGroupString + '.jpg');
       download.style.display = 'block';
 
       // change title
