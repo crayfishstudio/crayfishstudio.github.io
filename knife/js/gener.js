@@ -96,6 +96,7 @@ let getSizeCheckedValue = (sizeChecked) => {
 }
 
 let generateButton = document.getElementById('generate__button');
+let changeButton = document.getElementById('change__button');
 let generateNumber = document.getElementById('generate__number');
 let generateGif = document.getElementById('generate-block');
 let generateTitle = document.getElementById('generate__title');
@@ -125,7 +126,6 @@ generateButton.addEventListener('click', function () {
     fullpage_api.moveTo(5);
   } else {
     console.log("all okay");
-    console.log('generateButton: ', paramGroupString);
 
     //fading bg
     generateBlock.style.opacity = '0';
@@ -135,7 +135,7 @@ generateButton.addEventListener('click', function () {
       generateGif.style.backgroundImage = "url('img/knifes/" + paramGroupString + ".gif')";
 
       // download link
-      download.setAttribute('download', paramGroupString + '.pdf');
+      download.setAttribute('download', paramGroupString + '.gif');
       download.setAttribute('href', 'img/knifes/jpg/' + paramGroupString + '.jpg');
       download.style.display = 'block';
 
@@ -145,9 +145,6 @@ generateButton.addEventListener('click', function () {
       // change button text
       generate__button.innerHTML = 'GET YOUR PERSONAL CONFIGURATION';
       generate__button.setAttribute('onclick', 'fullpage_api.moveTo(7)');
-
-      // show counters
-      // generateCounters.style.left = '0';
 
       // show counters
       generateCounters.style.display = 'flex';
@@ -164,11 +161,49 @@ generateButton.addEventListener('click', function () {
       } else{
         generateCounters.style.display = 'none';
       }
+
+      // show button for changing config
+      changeButton.style.display = 'block';
       
-      setTimeout("generateBlock.style.opacity = '1';", 100);
+      setTimeout("generateBlock.style.opacity = '1'", 300);
     }
 
     setTimeout(changeKnife, 500);
-
   }
+
+
+  
+
 });
+
+changeButton.addEventListener('click', function () {
+  //fading bg
+  generateBlock.style.opacity = '0';
+
+  function clearKnife(){
+    fullpage_api.moveTo(2);
+    generateGif.style.backgroundImage = "url('img/knifes/knife-model.gif')";
+
+    //hide download link
+    download.style.display = 'none';
+
+    // change title
+    generateTitle.innerHTML = 'GENERATE YOUR PERSONAL KNIFE MODEL';
+
+    // change button text
+    generate__button.innerHTML = 'GENERATE';
+    generate__button.setAttribute('onclick', 'console.log("created by crayfish.studio")');
+
+    // hide counters
+    generateCounters.style.display = 'none';
+
+    // hide button for changing config
+    changeButton.style.display = 'none';
+
+    setTimeout("generateBlock.style.opacity = '1'", 300);
+  }
+
+  setTimeout(clearKnife, 500);
+
+});
+
