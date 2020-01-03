@@ -471,7 +471,7 @@
 }
 
 .sectionAnton{
-	bottom: 32vh;
+	bottom: 15vh;
 	z-index: 9000;
 }
 
@@ -992,4 +992,20 @@ opacity: 1;
 	.info__text{
 		padding: 0 20px;
 	}
+
+	.info__text3{
+		display: none;
+	}
+
+	.info__text4{
+		display: none;
+	}
 }
+
+
+@media (max-width: 700px){
+	.info__text5{
+		display: none;
+	}
+}
+
