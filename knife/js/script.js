@@ -1,7 +1,7 @@
 let socialBlock = document.querySelector(".social");
 let socialLink = document.querySelectorAll(".social__link");
 
-let anchorsArr = ['#home', '#blade-style', '#blade-finish', '#handle', '#size', '#generate', '#final', '#mail', '#devby'];
+let anchorsArr = ['#home', '#blade-style', '#blade-finish', '#handle', '#size', '#generate', '#mail', '#info', '#devby'];
 
 // var socialBlock = document.getElementsByClassName('social')[0];
 
@@ -57,13 +57,6 @@ let dynamic = () => {
         showSocial()
         socialBlock.style.zIndex = 1;
 
-    } else if (window.location.hash == anchorsArr[7]) {
-        socialLink.forEach(el => {
-            el.style.opacity = 0;
-        });
-        setTimeout(hideSocial, 500);
-        socialBlock.style.zIndex = 1;
-
     } else if (window.location.hash == anchorsArr[6]) {
         showSocial()
         socialLink.forEach(el => {
@@ -71,7 +64,21 @@ let dynamic = () => {
         });
         socialBlock.style.zIndex = 1;
 
-    } else if (window.location.hash == anchorsArr[8]) {
+    } else if (window.location.hash == anchorsArr[7]) {
+        socialLink.forEach(el => {
+            el.style.opacity = 0;
+        });
+        setTimeout(hideSocial, 500);
+        socialBlock.style.zIndex = 1;
+
+    }  else if (window.location.hash == anchorsArr[8]) {
+        showSocial()
+        socialLink.forEach(el => {
+            el.style.opacity = 0.5;
+        });
+        socialBlock.style.zIndex = 1;
+
+    } else if (window.location.hash == anchorsArr[9]) {
         showSocial()
         socialLink.forEach(el => {
             el.style.opacity = 0.5;

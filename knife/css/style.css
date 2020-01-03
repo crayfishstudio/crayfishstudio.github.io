@@ -477,8 +477,8 @@
 
 
 .sectionAnton2{
-	bottom: 25vh !important;
-	bottom: calc(32vh - 50px) !important;
+	bottom: 15vh !important;
+	bottom: calc(15vh - 50px) !important;
 }
 
 .sectionAnton2 a{
@@ -961,9 +961,6 @@ opacity: 1;
 
 }
 
-@media (max-width: 320px){
-
-}
 
 @media (max-width: 768px) {
 	.social__link{
@@ -973,5 +970,26 @@ opacity: 1;
 	.downloadJpg{
 		font-size: 12px;
 		padding-top: 14px;
+	}
+}
+
+.info .fp-tableCell{
+	vertical-align: top;
+}
+
+#infoT{
+	font-size: 0.9em;
+	margin-top: 10px;
+	line-height: 20px;
+}
+.info__text{
+	padding: 0 50px;
+	text-align: center;
+	font-size: rgb(51, 51, 51);
+}
+
+@media (max-width: 480px){
+	.info__text{
+		padding: 0 20px;
 	}
 }
