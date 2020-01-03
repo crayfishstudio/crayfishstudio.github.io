@@ -220,10 +220,12 @@
             <div class="mail__block">
                 <h2 class="section__title m-show">LEAVE E-MAIL TO DISCOVER PROGRESS*</h2>
 
-                <form action="post.php" method="POST" class="mail__form">
+                <form action="send.php" method="post" class="mail__form">
                     <input class="mail__input" type="text" name="name" id="name" placeholder="name or pseudo" required>
 
                     <input class="mail__input" type="email" name="email" id="email" placeholder="e-mail@" required>
+
+                    <input type="hidden" value="1" name="generationId" id="generationId">
 
                     <button class="mail__submit" type="submit">I AM IN</button>
                 </form>

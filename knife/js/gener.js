@@ -131,6 +131,8 @@ generateButton.addEventListener('click', function () {
     generateBlock.style.opacity = '0';
 
     function changeKnife() {
+      document.getElementById('generationId').value = paramGroupString;
+
       // change background gif 
       generateGif.style.backgroundImage = "url('img/knifes/" + paramGroupString + ".gif')";
 
