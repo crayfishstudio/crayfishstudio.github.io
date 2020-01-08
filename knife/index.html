@@ -19,11 +19,21 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" id="closeModal">&times;</span>
             <p class="modal-title">Thanks for joining us!</p>
             <p>Choose the perfect configuration for you.</p>
             <p>After 2077 people vote, the winning configuration will be available for purchase in the spring of 2020
             </p>
+        </div>
+
+    </div>
+
+    <div id="emailModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="closeEmailModal">&times;</span>
+            <p class="modal-title"> Thanks! </p>
+            <p> Visit your email and confirm configuration. </p>
         </div>
 
     </div>
@@ -175,7 +185,6 @@
             <div class="section__block sectionAnton">
                 <a id="generate__button" class="section__button" href="#">GENERATE <span
                         id="generate__number"></span></a>
-
             </div>
             <div class="section__block sectionAnton2">
                <a id="change__button" class="section__button" href="#">CHANGE CONFIGURATION</a>
@@ -225,9 +234,9 @@
 
                     <input class="mail__input" type="email" name="email" id="email" placeholder="e-mail@" required>
 
-                    <input type="hidden" value="1" name="generationId" id="generationId">
+                    <input type="hidden" value="none" name="generationId" id="generationId">
 
-                    <button class="mail__submit" type="submit">I AM IN</button>
+                    <button class="mail__submit" id="mail__submit" type="submit">I AM IN</button>
                 </form>
             </div>
 

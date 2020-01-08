@@ -71,7 +71,7 @@ let dynamic = () => {
         setTimeout(hideSocial, 500);
         socialBlock.style.zIndex = 1;
 
-    }  else if (window.location.hash == anchorsArr[8]) {
+    } else if (window.location.hash == anchorsArr[8]) {
         showSocial()
         socialLink.forEach(el => {
             el.style.opacity = 0.5;
@@ -134,8 +134,7 @@ for (var i = 0; i < radioButton.length; i++) {
 }
 
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementById("closeModal")
 
 function openModal() {
     if (localStorage.modalWasOpened) {} else {
@@ -153,3 +152,18 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+function openEmailModal() {
+    emailModal.style.display = "block";
+    console.log('openEmailModal');
+  }
+
+  emailSpan.onclick = function () {
+    emailModal.style.display = "none";
+  }
+
+  window.onclick = function (event) {
+    if (event.target == emailModal) {
+      emailModal.style.display = "none";
+    }
+  }

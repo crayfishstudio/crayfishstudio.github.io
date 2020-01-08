@@ -1,11 +1,10 @@
 <? 
 // ----------------------------конфигурация-------------------------- // 
  
-$adminemail="cyberinertix@gmail.com";  // e-mail админа 
+$adminemail="yurii.skarbek@gmail.com";  // e-mail админа 
  
 $date=date("d.m.y"); // число.месяц.год 
 $time=date("H:i"); // часы:минуты:секунды 
-  // На какую страничку переходит после отправки письма 
  
 //---------------------------------------------------------------------- // 
  
@@ -26,22 +25,28 @@ Email: $email
 Generation: $generation
 "; 
 
- // Отправляем письмо админу  
-mail("$adminemail", "$date $time Нова заявка з cyberinertix.com", "$msg");  
+
+
+
+// Отправляем письмо админу  
+mail("$adminemail", "cyberinertix.com | $date $time", "$msg");  
+
+
+
+$headers = "From: " . $adminemail . "\r\n";
+$headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
+// $headers .= "CC: cyberinertix@gmail.com\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+$message = "
+<b> Good choise! </b>
+Press for <a href='https://facebook.com/groups/1705700912898000'>confirmation and visit our community.</a>
+";
+
+mail("$email","cyberinertix",$message,$headers);
  
-// Выводим сообщение пользователю 
- 
-// print "<script language='Javascript'><!-- 
-// function reload() {location.replace('https://cyberinertix.com/popup.html')}; setTimeout('reload()', 0); 
-// //--></script>";  
-// exit; 
 ?>
 
 <script language="JavaScript" type="text/javascript">
-function afterSendForm(){
-  alert('Thanks, we will connect with you in the near future');
-  window.location.href = "http://cyberinertix.com/";
-  console.log('afterSendForm')
-  }
-  window.setTimeout("afterSendForm();",1000);
+    window.location.href = "http://cyberinertix.com/thanks.html";
 </script>
