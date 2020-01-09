@@ -1,7 +1,7 @@
 <? 
 // ----------------------------конфигурация-------------------------- // 
  
-$adminemail="yurii.skarbek@gmail.com";  // e-mail админа 
+$adminemail="cyberinertix@gmail.com";  // e-mail админа 
  
 $date=date("d.m.y"); // число.месяц.год 
 $time=date("H:i"); // часы:минуты:секунды 
