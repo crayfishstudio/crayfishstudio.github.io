@@ -3,8 +3,6 @@ let socialLink = document.querySelectorAll(".social__link");
 
 let anchorsArr = ['#home', '#blade-style', '#blade-finish', '#handle', '#size', '#generate', '#mail', '#info', '#devby'];
 
-// var socialBlock = document.getElementsByClassName('social')[0];
-
 function hideSocial() {
     socialBlock.style.display = 'none';
 }
@@ -156,14 +154,11 @@ window.onclick = function (event) {
 function openEmailModal() {
     emailModal.style.display = "block";
     console.log('openEmailModal');
-  }
+}
 
-  emailSpan.onclick = function () {
-    emailModal.style.display = "none";
-  }
-
-  window.onclick = function (event) {
+window.onclick = function (event) {
     if (event.target == emailModal) {
-      emailModal.style.display = "none";
+        emailModal.style.display = "none";
     }
-  }
+}
+

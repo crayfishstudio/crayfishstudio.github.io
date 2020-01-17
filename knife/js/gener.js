@@ -157,7 +157,7 @@ generateButton.addEventListener('click', function () {
         finalCount4.innerHTML = '130g';
       } else if(paramGroup[3] == 2){
         finalCount1.innerHTML = '150';
-        finalCount2.innerHTML = '50';
+        finalCount2.innerHTML = '100';
         finalCount3.innerHTML = '4';
         finalCount4.innerHTML = '217g';
       } else{
